@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Droga do karty pobytu — gra | Centrum Obsługi Spraw Cudzoziemców</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#1B2A4A;--navy-d:#13203A;--gold:#C9A961;--gold-l:#DCC38A;--cream:#FAF8F5;--ink:#232A3A;--mut:#5B6478;--line:#E7E0D3;--ok:#2E7D4F;--red:#B33A3A;--amber:#C07A1E}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:linear-gradient(160deg,var(--navy),var(--navy-d));min-height:100vh;display:flex;align-items:center;justify-content:center;padding:14px;color:var(--ink)}
+.game{width:100%;max-width:430px;background:var(--cream);border-radius:20px;overflow:hidden;box-shadow:0 24px 70px rgba(0,0,0,.4)}
+.top{background:var(--navy);color:#fff;padding:16px 18px;display:flex;justify-content:space-between;align-items:center}
+.top h1{font-family:'Cormorant Garamond',serif;font-size:19px;color:#fff}
+.top .tury{font-size:11.5px;color:#B9C3D6;text-align:right}
+.top .tury b{display:block;color:var(--gold-l);font-size:16px;font-family:'Cormorant Garamond',serif}
+
+/* PLANSZA */
+.board{position:relative;padding:14px;background:
+ radial-gradient(circle at 85% 12%, rgba(201,169,97,.14), transparent 40%),
+ radial-gradient(circle at 10% 90%, rgba(27,42,74,.06), transparent 45%),#fff}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}
+.pole{aspect-ratio:1;border-radius:13px;border:1.5px solid var(--line);background:var(--cream);display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:17px;position:relative;transition:.3s}
+.pole small{font-size:8px;font-weight:700;color:var(--mut);text-transform:uppercase;letter-spacing:.04em;margin-top:2px;text-align:center;line-height:1.1;padding:0 2px}
+.pole.start{background:var(--navy);border-color:var(--navy)}
+.pole.start small{color:var(--gold-l)}
+.pole.meta{background:linear-gradient(135deg,#F4EFE4,#EAE0C9);border-color:var(--gold)}
+.pole.dobre{border-color:#BFE0CC;background:#F3FAF5}
+.pole.zle{border-color:#E8C4C4;background:#FDF6F6}
+.pole.aktywne{border-color:var(--gold);box-shadow:0 0 0 3px rgba(201,169,97,.3);transform:scale(1.05)}
+.pole.visited::after{content:"";position:absolute;inset:0;border-radius:12px;background:rgba(201,169,97,.08)}
+
+/* POSTAĆ — animowany ludzik */
+#hero{position:absolute;width:44px;height:56px;z-index:10;transition:left .55s cubic-bezier(.4,0,.2,1),top .55s cubic-bezier(.4,0,.2,1);pointer-events:none;filter:drop-shadow(0 6px 6px rgba(0,0,0,.25))}
+#hero svg{width:100%;height:100%}
+#hero .body-g{animation:idle 2.2s ease-in-out infinite;transform-origin:22px 46px}
+@keyframes idle{0%,100%{transform:translateY(0)}50%{transform:translateY(-2.5px)}}
+#hero.walk .body-g{animation:walk .3s ease-in-out infinite}
+@keyframes walk{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-5px) rotate(3deg)}}
+#hero .arm-l{transform-origin:15px 26px}
+#hero .arm-r{transform-origin:29px 26px}
+#hero.walk .arm-l{animation:swingL .3s ease-in-out infinite}
+#hero.walk .arm-r{animation:swingR .3s ease-in-out infinite}
+@keyframes swingL{0%,100%{transform:rotate(22deg)}50%{transform:rotate(-22deg)}}
+@keyframes swingR{0%,100%{transform:rotate(-22deg)}50%{transform:rotate(22deg)}}
+#hero .leg-l{transform-origin:19px 38px}
+#hero .leg-r{transform-origin:25px 38px}
+#hero.walk .leg-l{animation:swingL .3s ease-in-out infinite}
+#hero.walk .leg-r{animation:swingR .3s ease-in-out infinite}
+#hero.happy .body-g{animation:jump .5s ease-in-out 3}
+@keyframes jump{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+#hero.sad{filter:drop-shadow(0 6px 6px rgba(0,0,0,.25)) grayscale(.5)}
+#hero .teczka{animation:teczka 2.2s ease-in-out infinite;transform-origin:34px 34px}
+@keyframes teczka{0%,100%{transform:rotate(0)}50%{transform:rotate(4deg)}}
+
+/* PANEL */
+.panel{padding:16px 18px 20px;background:#fff;border-top:1px solid var(--line)}
+.msg{min-height:64px;border-radius:12px;padding:12px 14px;font-size:13.5px;line-height:1.45;background:var(--cream);border:1px solid var(--line);margin-bottom:12px}
+.msg.dobre{background:#EEF7F1;border-color:#BFE0CC;animation:fadein .3s}
+.msg.zle{background:#FBEEEE;border-color:#E8C4C4;animation:fadein .3s}
+.msg b{color:var(--navy)}
+@keyframes fadein{from{opacity:0;transform:translateY(5px)}to{opacity:1}}
+.controls{display:flex;gap:10px;align-items:center}
+#dice{flex:none;width:62px;height:62px;background:var(--navy);border-radius:15px;border:none;color:var(--gold-l);font-size:30px;cursor:pointer;font-family:inherit;transition:.15s;display:flex;align-items:center;justify-content:center}
+#dice:active{transform:scale(.94)}
+#dice.rolling{animation:roll .5s ease-in-out}
+@keyframes roll{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+#dice:disabled{opacity:.45;cursor:default}
+.hint{font-size:12.5px;color:var(--mut)}
+.final{display:none;text-align:center;padding:6px 0}
+.final .karta{position:relative;width:230px;margin:0 auto 14px;background:linear-gradient(135deg,#F4EFE4,#EAE0C9);border:1px solid var(--gold);border-radius:12px;padding:14px;color:var(--navy);transform:rotate(-2deg);box-shadow:0 14px 34px rgba(0,0,0,.2)}
+.final .karta .n{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:17px}
+.final .karta .t{font-size:9px;text-transform:uppercase;letter-spacing:.1em;color:#8A7C58}
+.final .stamp{position:absolute;right:-14px;bottom:-12px;border:2.5px solid var(--ok);color:var(--ok);font-weight:800;font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:6px 10px;border-radius:8px;background:rgba(250,248,245,.95);opacity:0;transform:rotate(10deg) scale(2.2)}
+.final .stamp.go{animation:stamp .5s .5s cubic-bezier(.2,1.4,.4,1) forwards}
+@keyframes stamp{to{opacity:1;transform:rotate(10deg) scale(1)}}
+.final h2{font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--navy);margin-bottom:4px}
+.final p{font-size:13.5px;color:var(--mut);margin-bottom:14px}
+.final .cta{display:block;background:var(--gold);color:var(--navy);text-decoration:none;font-weight:800;font-size:14px;padding:13px;border-radius:12px;margin-bottom:8px}
+.again{background:none;border:none;color:var(--mut);font-size:12.5px;text-decoration:underline;cursor:pointer;font-family:inherit}
+.disc{font-size:10px;color:#9AA3B5;margin-top:12px;line-height:1.4;padding:0 18px 16px;background:#fff}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.final .stamp{opacity:1;transform:rotate(10deg) scale(1)}}
+</style>
+</head>
+<body>
+<div class="game">
+  <div class="top">
+    <h1>Droga do karty pobytu 🎲</h1>
+    <div class="tury">tura<b id="tura">1</b></div>
+  </div>
+  <div class="board" id="board">
+    <div class="grid" id="grid"></div>
+    <div id="hero">
+      <svg viewBox="0 0 46 58">
+        <g class="body-g">
+          <g class="leg-l"><rect x="17" y="38" width="4.5" height="13" rx="2.2" fill="#1B2A4A"/></g>
+          <g class="leg-r"><rect x="24" y="38" width="4.5" height="13" rx="2.2" fill="#13203A"/></g>
+          <rect x="13" y="22" width="20" height="19" rx="7" fill="#1B2A4A"/>
+          <g class="arm-l"><rect x="11" y="24" width="4.5" height="13" rx="2.2" fill="#13203A"/></g>
+          <g class="arm-r"><rect x="30" y="24" width="4.5" height="13" rx="2.2" fill="#1B2A4A"/></g>
+          <g class="teczka"><rect x="31" y="32" width="12" height="9" rx="2" fill="#C9A961"/><rect x="35" y="30" width="4" height="3" rx="1" fill="#C9A961"/></g>
+          <circle cx="23" cy="13" r="8.5" fill="#E8C39E"/>
+          <path d="M14.5 11 a8.5 8.5 0 0 1 17 0 l-2 -1 -3 1.5 -4 -2 -4 2 -2 -1.5z" fill="#3A2E22"/>
+          <circle cx="20" cy="13" r="1.1" fill="#232A3A"/><circle cx="26" cy="13" r="1.1" fill="#232A3A"/>
+          <path d="M20.5 16.5 q2.5 2 5 0" stroke="#232A3A" stroke-width="1.1" fill="none" stroke-linecap="round"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+  <div class="panel">
+    <div id="gra">
+      <div class="msg" id="msg"><b>Witaj w Polsce! 👋</b> Rzuć kostką i przejdź drogę od przyjazdu do karty pobytu. Uważaj na pułapki — i korzystaj z pomocy!</div>
+      <div class="controls">
+        <button id="dice">🎲</button>
+        <div class="hint">Dotknij kostki, aby rzucić.<br>Zielone pola pomagają, czerwone cofają.</div>
+      </div>
+    </div>
+    <div class="final" id="final">
+      <div class="karta">
+        <div class="t">Rzeczpospolita Polska · Karta pobytu</div>
+        <div class="n">TWOJE NAZWISKO</div>
+        <div class="t" style="margin-top:6px">pobyt czasowy · ważna do 2029</div>
+        <div class="stamp" id="stamp">✦ Decyzja pozytywna</div>
+      </div>
+      <h2 id="f-tit">Masz kartę pobytu! 🎉</h2>
+      <p id="f-txt"></p>
+      <a class="cta" href="https://wa.me/48539999549">W prawdziwym życiu też Cię przeprowadzimy — napisz</a>
+      <button class="again" onclick="location.reload()">Zagraj jeszcze raz</button>
+    </div>
+  </div>
+  <p class="disc">Gra ma charakter edukacyjno-rozrywkowy i nie stanowi porady prawnej. Sytuacje w grze są uproszczone — stan prawny na 07.2026, wymaga weryfikacji. Centrum Obsługi Spraw Cudzoziemców.</p>
+</div>
+<script>
+/* 16 pól, serpentyna 4x4: rząd0 →, rząd1 ←, rząd2 →, rząd3 ← */
+const POLA=[
+ {i:"🛬",t:"Start: przyjazd",typ:"start"},
+ {i:"🏠",t:"Meldunek",typ:"dobre",msg:"<b>Meldunek załatwiony!</b> Masz adres — łatwiej o PESEL i sprawy urzędowe. Idź o 1 pole dalej.",eff:1},
+ {i:"🪪",t:"PESEL",typ:"norm",msg:"Masz numer PESEL — przyda się do profilu zaufanego."},
+ {i:"📵",t:"„Agent” z FB",typ:"zle",msg:"<b>Oszust z Facebooka!</b> „Gwarantowana karta za 2000 USD”. Straciłeś czas i pieniądze — cofnij się o 2 pola.",eff:-2},
+ {i:"🔑",t:"Profil zaufany",typ:"dobre",msg:"<b>Profil zaufany gotowy!</b> Klucz do systemu MOS w Twojej kieszeni. Idź o 1 pole dalej.",eff:1},
+ {i:"💼",t:"Umowa o pracę",typ:"norm",msg:"Prawdziwa umowa z prawdziwym pracodawcą. Fundament Twojego wniosku."},
+ {i:"📄",t:"Fikcyjne papiery",typ:"zle",msg:"<b>Ktoś oferował „kupną umowę”!</b> Odmówiłeś — ale straciłeś turę na szukanie prawdziwej pracy. Cofnij się o 1 pole.",eff:-1},
+ {i:"🖥️",t:"Wniosek w MOS",typ:"dobre",msg:"<b>Wniosek złożony w MOS — bez błędów!</b> Masz UPO i zaświadczenie. Pobyt legalny na czas sprawy. Idź o 2 pola!",eff:2},
+ {i:"✉️",t:"Pismo z urzędu",typ:"norm",msg:"List po polsku. Nie odkładasz go — od razu sprawdzasz, co oznacza. Dobrze!"},
+ {i:"⏰",t:"Przegapiony termin",typ:"zle",msg:"<b>Wezwanie poszło na stary adres!</b> Były pracodawca nic nie przekazał. Braki formalne — cofnij się o 3 pola.",eff:-3},
+ {i:"🤝",t:"Pomoc prawnika",typ:"dobre",msg:"<b>Twój niezależny polski prawnik przejmuje sprawę!</b> Nie zależy od Twojego pracodawcy, ma kancelarię w Polsce i zawsze odbiera telefon. Pilnuje terminów i pism. Idź o 2 pola dalej.",eff:2},
+ {i:"🏛️",t:"Urząd wojewódzki",typ:"norm",msg:"Sprawa w toku. Spokojnie — wszystko jest pilnowane."},
+ {i:"💸",t:"„Przyspieszenie”",typ:"zle",msg:"<b>Ktoś oferuje „znajomego w urzędzie”.</b> Odmawiasz — to korupcja! Ale nerwy kosztowały: cofnij się o 1 pole.",eff:-1},
+ {i:"📸",t:"Odciski i zdjęcie",typ:"norm",msg:"Wizyta w urzędzie: odciski palców do karty złożone."},
+ {i:"📬",t:"Decyzja pozytywna",typ:"dobre",msg:"<b>Jest decyzja pozytywna!</b> Ostatni krok przed Tobą. Idź o 1 pole.",eff:1},
+ {i:"🪪",t:"META: karta pobytu",typ:"meta"}
+];
+const grid=document.getElementById('grid');
+POLA.forEach((p,k)=>{
+ const d=document.createElement('div');
+ d.className='pole '+(p.typ==='start'?'start':p.typ==='meta'?'meta':p.typ==='dobre'?'dobre':p.typ==='zle'?'zle':'');
+ d.innerHTML=`<span>${p.i}</span><small>${p.t}</small>`;d.id='p'+k;grid.appendChild(d);
+});
+/* mapowanie indeksu na komórkę serpentyny */
+function cell(k){const r=Math.floor(k/4),c=k%4;return r%2===0?[r,c]:[r,3-c]}
+const hero=document.getElementById('hero');
+let pos=0,tura=1,busy=false;
+function place(k,instant){
+ const [r,c]=cell(k),el=document.getElementById('p'+k),b=document.getElementById('board');
+ const br=b.getBoundingClientRect(),er=el.getBoundingClientRect();
+ if(instant)hero.style.transition='none';
+ hero.style.left=(er.left-br.left+er.width/2-22)+'px';
+ hero.style.top=(er.top-br.top+er.height/2-38)+'px';
+ if(instant)requestAnimationFrame(()=>hero.style.transition='');
+ document.querySelectorAll('.pole').forEach(p=>p.classList.remove('aktywne'));
+ el.classList.add('aktywne','visited');
+}
+async function moveTo(target){
+ hero.classList.add('walk');
+ const step=target>pos?1:-1;
+ while(pos!==target){pos+=step;place(pos);await new Promise(r=>setTimeout(r,580));}
+ hero.classList.remove('walk');
+}
+const dice=document.getElementById('dice'),msg=document.getElementById('msg');
+dice.onclick=async()=>{
+ if(busy)return;busy=true;dice.disabled=true;
+ dice.classList.add('rolling');
+ const roll=1+Math.floor(Math.random()*3); /* 1-3: plansza 16 pól, tempo gry */
+ await new Promise(r=>setTimeout(r,500));
+ dice.classList.remove('rolling');dice.textContent=['','⚀','⚁','⚂'][roll];
+ msg.className='msg';msg.innerHTML=`Wyrzuciłeś <b>${roll}</b> — idziesz!`;
+ await moveTo(Math.min(pos+roll,POLA.length-1));
+ const p=POLA[pos];
+ if(p.typ==='meta'){win();return}
+ if(p.msg){
+  msg.className='msg '+(p.typ==='zle'?'zle':p.typ==='dobre'?'dobre':'');
+  msg.innerHTML=p.msg;
+  if(navigator.vibrate)navigator.vibrate(p.typ==='zle'?[30,40,30]:15);
+  if(p.eff){
+   hero.classList.add(p.eff>0?'happy':'sad');
+   await new Promise(r=>setTimeout(r,900));
+   hero.classList.remove('happy','sad');
+   const t=Math.max(0,Math.min(pos+p.eff,POLA.length-1));
+   await moveTo(t);
+   if(POLA[pos].typ==='meta'){win();return}
+  }
+ }
+ tura++;document.getElementById('tura').textContent=tura;
+ dice.textContent='🎲';dice.disabled=false;busy=false;
+};
+function win(){
+ hero.classList.add('happy');
+ document.getElementById('gra').style.display='none';
+ const f=document.getElementById('final');f.style.display='block';
+ document.getElementById('stamp').classList.add('go');
+ document.getElementById('f-txt').textContent=`Doszedłeś do karty pobytu w ${tura} turach. W prawdziwym życiu ta droga trwa miesiące i ma te same pułapki — różnica jest jedna: nie musisz iść nią sam. Wybierz towarzysza mądrze: niezależnego od pracodawcy, polskiego prawnika, który nie wyjedzie z kraju w połowie Twojej sprawy.`;
+ if(navigator.vibrate)navigator.vibrate([20,50,20,50,60]);
+}
+window.addEventListener('resize',()=>place(pos,true));
+place(0,true);
+</script>
+
+<!-- Znak marki COSC -->
+<div id="cosc-brand" style="position:fixed;left:14px;bottom:14px;z-index:99999;display:flex;align-items:center;gap:9px;background:rgba(19,32,58,.85);border:1px solid rgba(201,169,97,.6);border-radius:999px;padding:7px 16px 7px 8px;pointer-events:none;font-family:'Inter',Arial,sans-serif;backdrop-filter:blur(2px)">
+<span style="width:26px;height:26px;border:1.5px solid #C9A961;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#C9A961;font-size:11px;font-weight:700;font-family:'Cormorant Garamond',Georgia,serif">CO</span>
+<span style="color:#FAF8F5;font-size:12.5px;font-weight:600;letter-spacing:.02em">Centrum Obsługi Spraw Cudzoziemców</span>
+</div>
+</body>
+</html>

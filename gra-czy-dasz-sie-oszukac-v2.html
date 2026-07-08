@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Czy dasz się oszukać? Quiz v2 | Centrum Obsługi Spraw Cudzoziemców</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#1B2A4A;--navy-d:#13203A;--gold:#C9A961;--gold-l:#DCC38A;--cream:#FAF8F5;--ink:#232A3A;--mut:#5B6478;--line:#E7E0D3;--ok:#2E7D4F;--red:#B33A3A}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:linear-gradient(160deg,var(--navy),var(--navy-d));min-height:100vh;display:flex;align-items:center;justify-content:center;padding:16px;color:var(--ink)}
+.game{width:100%;max-width:460px;background:var(--cream);border-radius:20px;overflow:hidden;box-shadow:0 24px 70px rgba(0,0,0,.4)}
+.top{background:var(--navy);color:#fff;padding:18px 20px;position:relative;overflow:hidden}
+.top h1{font-family:'Cormorant Garamond',serif;font-size:22px;color:#fff;line-height:1.2}
+.top p{font-size:12px;color:#B9C3D6;margin-top:4px}
+.zycie{display:flex;gap:5px;position:absolute;top:16px;right:16px;font-size:15px}
+.zycie span.dead{filter:grayscale(1);opacity:.35;transform:scale(.85)}
+.stamps{display:flex;gap:6px;padding:12px 20px;background:#fff;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.stampslot{width:30px;height:30px;border:2px dashed var(--line);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;color:#C8C2B4;transition:.3s}
+.stampslot.won{border:2.5px solid var(--ok);color:var(--ok);animation:pop .45s cubic-bezier(.2,1.5,.4,1)}
+.stampslot.lost{border:2.5px solid var(--red);color:var(--red);animation:shake .4s}
+@keyframes pop{0%{transform:scale(.4) rotate(-20deg)}100%{transform:scale(1)}}
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
+.body{padding:20px 20px 24px}
+.scen{font-size:11.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.pyt{font-family:'Cormorant Garamond',serif;font-size:19.5px;font-weight:700;color:var(--navy);line-height:1.3;margin-bottom:16px;min-height:96px}
+.odp{display:flex;flex-direction:column;gap:10px}
+.odp button{background:#fff;border:1.5px solid var(--line);border-radius:12px;padding:13px;font-family:inherit;font-size:14px;text-align:left;cursor:pointer;transition:.2s;color:var(--ink)}
+.odp button:active{transform:scale(.98)}
+.odp button.ok{background:#EEF7F1;border-color:var(--ok);color:var(--ok);font-weight:700}
+.odp button.zle{background:#FBEEEE;border-color:var(--red);color:var(--red)}
+.fb{margin-top:14px;border-radius:12px;padding:13px;font-size:13px;line-height:1.5;display:none}
+.fb.show{display:block;animation:fadein .3s}
+.fb.good{background:#EEF7F1;border:1px solid #BFE0CC}
+.fb.bad{background:#FBEEEE;border:1px solid #E8C4C4}
+@keyframes fadein{from{opacity:0;transform:translateY(6px)}to{opacity:1}}
+.next{margin-top:14px;width:100%;background:var(--gold);color:var(--navy);border:none;border-radius:10px;padding:13px;font-family:inherit;font-weight:800;font-size:14.5px;cursor:pointer;display:none}
+.next.show{display:block}
+.final{text-align:center;display:none;padding:8px 0}
+.final .medal{width:96px;height:96px;margin:0 auto 14px;border-radius:50%;border:3px solid var(--gold);display:flex;align-items:center;justify-content:center;font-size:40px;animation:pop .6s cubic-bezier(.2,1.5,.4,1)}
+.final h2{font-family:'Cormorant Garamond',serif;font-size:25px;color:var(--navy);margin-bottom:6px}
+.final p{font-size:14px;color:var(--mut);margin-bottom:16px}
+.final .cta{display:block;background:var(--navy);color:#fff;text-decoration:none;font-weight:800;font-size:14.5px;padding:14px;border-radius:12px;margin-bottom:10px}
+.final .cta.gold{background:var(--gold);color:var(--navy)}
+.again{background:none;border:none;color:var(--mut);font-size:12.5px;text-decoration:underline;cursor:pointer;font-family:inherit}
+.disc{font-size:10.5px;color:#9AA3B5;margin-top:16px;line-height:1.4}
+.pasek{height:6px;background:var(--line)}
+.pasek div{height:100%;width:0;background:var(--gold);transition:width .4s}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="game">
+  <div class="top">
+    <h1>Czy dasz się oszukać? 🕵️</h1>
+    <p>10 prawdziwych pułapek. 3 życia. Przetrwaj w urzędowej dżungli.</p>
+    <div class="zycie" id="zycie"><span>❤️</span><span>❤️</span><span>❤️</span></div>
+  </div>
+  <div class="pasek"><div id="pas"></div></div>
+  <div class="stamps" id="stamps"></div>
+  <div class="body">
+    <div id="quiz">
+      <div class="scen" id="scen"></div>
+      <div class="pyt" id="pyt"></div>
+      <div class="odp" id="odp"></div>
+      <div class="fb" id="fb"></div>
+      <button class="next" id="next">Następna sytuacja →</button>
+    </div>
+    <div class="final" id="final">
+      <div class="medal" id="medal">🏆</div>
+      <h2 id="f-tit"></h2>
+      <p id="f-txt"></p>
+      <a class="cta gold" href="https://wa.me/48539999549">Zapytaj o swoją sytuację na WhatsApp — za darmo</a>
+      <a class="cta" href="/uslugi/karta-pobytu-czasowego/">Zobacz, jak naprawdę pomagamy</a>
+      <button class="again" onclick="location.reload()">Zagraj jeszcze raz</button>
+    </div>
+    <p class="disc">Quiz ma charakter edukacyjno-rozrywkowy i nie stanowi porady prawnej. Opisane sytuacje wymagają indywidualnej oceny prawnej — stan prawny na 07.2026, wymaga weryfikacji. Centrum Obsługi Spraw Cudzoziemców.</p>
+  </div>
+</div>
+<script>
+const Q=[
+ {s:"Pułapka 1 · „Prawnik z internetu”",p:"Znajdujesz „prawnika od polskich spraw”. Nie mówi po polsku, ale twierdzi, że zna polskie prawo. Obiecuje wniosek i „przyspieszenie w urzędzie”. Chce przedpłatę. Co robisz?",
+  o:["Płacę — mówi w moim języku, rozumie mnie","STOP. Sprawdzam, kim jest, zanim zapłacę cokolwiek","Płacę połowę, resztę po karcie"],ok:1,
+  g:"Brawo! Prawnik prowadzący sprawy w Polsce musi znać polski — w tym języku pisze pisma i czyta akta. „Przyspieszenia w urzędzie” nie da się kupić. Najbezpieczniejszy wybór: polski prawnik z kancelarią w Polsce — sprawdzisz go w rejestrach, ma tu adres, odpowiedzialność zawodową i nie wyjedzie nagle z kraju, zostawiając Twoją sprawę.",
+  b:"Właśnie straciłeś pieniądze. Po przedpłacie „prawnik” przestaje odbierać telefon — a często po prostu wyjeżdża z kraju. Ktoś, kto nie zna polskiego i nie ma kancelarii w Polsce, nie napisze za Ciebie ani jednego pisma do urzędu. Wybieraj polskiego prawnika, którego znajdziesz w rejestrach i pod stałym adresem."},
+ {s:"Pułapka 2 · Były pracodawca",p:"We wniosku podałeś adres firmy, w której już NIE pracujesz. Urząd wysyła tam wezwanie. Były pracodawca nikomu nic nie mówi. Co Ci grozi?",
+  o:["Nic — urząd znajdzie mnie sam","Przegapione wezwanie może zakończyć sprawę, a nawet doprowadzić do decyzji o zobowiązaniu do powrotu","Urząd zadzwoni, jak coś ważnego"],ok:1,
+  g:"Dokładnie. Korespondencję wysłaną na wskazany adres uznaje się co do zasady za doręczoną. Nieodebrane wezwanie = braki formalne = sprawa przepada. ZAWSZE aktualizuj swój adres i dane kontaktowe w urzędzie.",
+  b:"Niestety — urząd uznaje pismo wysłane na podany adres za doręczone, nawet jeśli nigdy go nie zobaczyłeś. Tak ludzie tracą sprawy i legalny pobyt. Aktualizuj adres natychmiast po każdej zmianie!"},
+ {s:"Pułapka 3 · „Załatwię przyspieszenie”",p:"Pośrednik szepcze: „Mam znajomego w urzędzie, za 2000 zł twoja sprawa pójdzie na początek kolejki”. Co robisz?",
+  o:["Płacę — wszyscy tak robią","Odmawiam. To propozycja przestępstwa, które może zniszczyć MOJĄ sprawę","Targuję się do 1000 zł"],ok:1,
+  g:"Tak! To propozycja korupcji — przestępstwo, w które wciąga też CIEBIE. Nawet próba może oznaczać odmowę, wpis do rejestrów i zakaz wjazdu. Legalne „przyspieszenie” to tylko: kompletny wniosek bez braków i ponaglenie zgodne z procedurą.",
+  b:"Fatalnie. Właśnie wziąłeś udział w korupcji — przestępstwie, które może skończyć Twoją sprawę, dać wpis do rejestrów i zakaz wjazdu. A „znajomy w urzędzie” najczęściej… nie istnieje."},
+ {s:"Pułapka 4 · Fikcyjna umowa",p:"Nie masz pracy, a potrzebujesz jej do karty. Ktoś oferuje: „Kupisz umowę o pracę — tylko na papierze, 3000 zł”. Co robisz?",
+  o:["Kupuję — papier to papier","Odmawiam. Fikcyjne dokumenty to przestępstwo i pewna przegrana sprawa","Kupuję, ale negocjuję niższą cenę"],ok:1,
+  g:"Brawo! Posłużenie się fikcyjnymi dokumentami to przestępstwo. Urzędy weryfikują pracodawców (ZUS, kontrole). Wykrycie = odmowa, możliwy zakaz wjazdu i sprawa karna. Lepsza prawdziwa praca za niższą stawkę niż fałszywy papier.",
+  b:"Katastrofa. Urzędy sprawdzają pracodawców w ZUS i prowadzą kontrole. Fikcyjna umowa = odmowa, ryzyko zakazu wjazdu i sprawy karnej. 3000 zł poszło na Twój własny problem."},
+ {s:"Pułapka 5 · Paszport w „depozycie”",p:"„Biuro pomocy” mówi: zostaw u nas paszport na czas sprawy, tak będzie szybciej. Co robisz?",
+  o:["Zostawiam — profesjonaliści wiedzą lepiej","Nigdy. Do sprawy wystarczą skany — paszport zostaje ze mną","Zostawiam za pokwitowaniem"],ok:1,
+  g:"Tak! Paszport to TWÓJ dokument. Do wniosku w MOS wystarczą skany. Zatrzymywanie cudzego paszportu to narzędzie nacisku i uzależnienia — bywa elementem przestępstwa.",
+  b:"Niebezpieczne! Bez paszportu jesteś na łasce „biura”. To klasyczna metoda uzależnienia klienta. Do sprawy wystarczą skany — oryginał pokazujesz tylko urzędowi, gdy wezwie."},
+ {s:"Pułapka 6 · Wniosek papierowy",p:"Jest lipiec 2026. Kolega radzi: „Wydrukuj wniosek o kartę i wyślij pocztą, ja tak zrobiłem w 2024 i działało”. Co robisz?",
+  o:["Słucham kolegi — jemu się udało","Składam online przez system MOS — od 27.04.2026 tylko tak","Zanoszę wydruk osobiście do urzędu"],ok:1,
+  g:"Dokładnie! Od 27.04.2026 wnioski o pobyt składa się WYŁĄCZNIE elektronicznie przez MOS. Papierowy wniosek zostanie bez rozpoznania — a Ty możesz stracić termin i legalny pobyt. Rady kolegów bywają nieaktualne.",
+  b:"Pułapka nieaktualnej rady! Od 27.04.2026 papierowe wnioski nie są rozpatrywane. Stracisz termin — a z nim legalny pobyt. Przepisy się zmieniają; kolega nie ponosi odpowiedzialności za Twoją sprawę."},
+ {s:"Pułapka 7 · Prawnik pracodawcy",p:"Pracodawca: „Nasz prawnik prowadzi twoją kartę, nie musisz nic wiedzieć”. Tracisz pracę w trakcie sprawy. Czyj prawnik Ci teraz pomoże?",
+  o:["Ten sam — przecież zna moją sprawę","Niczyj — prawnik firmy pracował dla firmy. Potrzebuję własnego","Urząd z automatu mi pomoże"],ok:1,
+  g:"Właśnie tak. Prawnik pracodawcy reprezentuje pracodawcę — gdy przestajesz być pracownikiem, przestajesz być jego sprawą. Najlepszy prawnik to prawnik NIEZALEŻNY od Twojego pracodawcy, pracujący tylko dla Ciebie. Miej własnego i ZAWSZE wiedz, co dzieje się w Twojej sprawie.",
+  b:"Bolesna lekcja: prawnik firmy zniknął razem z pracą. Nikt nie poinformował Cię o wezwaniach. Twoja karta, Twoja sprawa — Twój prawnik. Nigdy nie oddawaj kontroli nad własnym losem."},
+ {s:"Pułapka 8 · Dni bezwizowe",p:"Jesteś z Brazylii, w Polsce bez wizy. Ile możesz legalnie zostać w strefie Schengen?",
+  o:["90 dni w każdym okresie 180 dni","180 dni w roku kalendarzowym","Ile chcę, jeśli mam bilet powrotny"],ok:0,
+  g:"Tak — 90 dni w każdym 180-dniowym okresie, liczonym ruchomo wstecz. Chcesz zostać dłużej? Złóż wniosek o pobyt PRZED końcem limitu — w trakcie legalnego pobytu.",
+  b:"Nie! Limit to 90/180. Każdy dzień ponad limit = nielegalny pobyt, ryzyko zakazu wjazdu do całej strefy Schengen. Policz swoje dni — i działaj zanim się skończą."},
+ {s:"Pułapka 9 · Zignorowane pismo",p:"Dostajesz list z urzędu po polsku. Nic nie rozumiesz, więc odkładasz go „na później”. Mija miesiąc. Co się mogło stać?",
+  o:["Nic — urząd przypomni","Minął termin z wezwania. Sprawa mogła zostać zakończona","Urząd wyśle wersję angielską"],ok:1,
+  g:"Dokładnie. Pisma urzędowe mają TERMINY — często 7 lub 14 dni. Ich przekroczenie może oznaczać pozostawienie sprawy bez rozpoznania. Nie rozumiesz pisma? Sfotografuj i wyślij komuś, kto rozumie — TEGO SAMEGO DNIA.",
+  b:"Niestety — w tym liście był termin 7 dni na uzupełnienie braków. Minął. Urzędy nie wysyłają przypomnień ani tłumaczeń. Każde pismo z urzędu = pilne, nawet jeśli go nie rozumiesz."},
+ {s:"Pułapka 10 · „Wiza od agenta” przed przyjazdem",p:"Jesteś jeszcze w swoim kraju. Agent z Facebooka oferuje „gwarantowaną polską wizę pracowniczą” za 2000 USD płatne z góry przelewem. Co robisz?",
+  o:["Płacę — chcę szybko wyjechać","Sprawdzam: wizę wydaje tylko polski konsulat, a oferty pracy weryfikuję u źródła","Płacę połowę teraz, połowę na lotnisku"],ok:1,
+  g:"Brawo! Wizę wydaje wyłącznie polski konsul — żaden agent nie może jej „zagwarantować”. Sprawdzaj pracodawcę (KRS/CEIDG), żądaj dokumentów, nie płać obcym z góry. Tysiące osób traci tak oszczędności życia jeszcze przed wyjazdem.",
+  b:"Właśnie zasiliłeś konto oszusta. Wizę wydaje TYLKO polski konsulat. „Gwarantowana wiza od agenta z Facebooka” to jeden z najczęstszych schematów okradania ludzi marzących o pracy w Europie."}
+];
+let i=0,score=0,lives=3;
+const stamps=document.getElementById('stamps');
+Q.forEach(()=>{const d=document.createElement('div');d.className='stampslot';d.textContent='✦';stamps.appendChild(d)});
+function show(){
+ const q=Q[i];
+ document.getElementById('scen').textContent=q.s;
+ document.getElementById('pyt').textContent=q.p;
+ document.getElementById('pas').style.width=(i/Q.length*100)+'%';
+ const box=document.getElementById('odp');box.innerHTML='';
+ q.o.forEach((t,k)=>{const b=document.createElement('button');b.textContent=t;b.onclick=()=>pick(k,b);box.appendChild(b)});
+ const fb=document.getElementById('fb');fb.className='fb';fb.textContent='';
+ document.getElementById('next').classList.remove('show');
+}
+function pick(k,btn){
+ const q=Q[i],fb=document.getElementById('fb'),good=k===q.ok;
+ document.querySelectorAll('#odp button').forEach((b,j)=>{b.disabled=true;if(j===q.ok)b.classList.add('ok')});
+ if(!good){btn.classList.add('zle');lives--;
+  const hearts=document.querySelectorAll('#zycie span');
+  if(hearts[lives])hearts[lives].classList.add('dead');
+  if(navigator.vibrate)navigator.vibrate([30,40,30]);
+ }else{score++;if(navigator.vibrate)navigator.vibrate(15)}
+ fb.textContent=good?q.g:q.b;fb.classList.add('show',good?'good':'bad');
+ const slot=stamps.children[i];slot.classList.add(good?'won':'lost');slot.textContent=good?'✓':'✕';
+ document.getElementById('next').textContent=(lives===0||i===Q.length-1)?'Zobacz wynik →':'Następna sytuacja →';
+ document.getElementById('next').classList.add('show');
+}
+document.getElementById('next').onclick=()=>{
+ i++;
+ if(i<Q.length&&lives>0){show()}else{
+  document.getElementById('quiz').style.display='none';
+  document.getElementById('pas').style.width='100%';
+  const f=document.getElementById('final');f.style.display='block';
+  const t=document.getElementById('f-tit'),x=document.getElementById('f-txt'),m=document.getElementById('medal');
+  if(lives===0){m.textContent='💸';t.textContent='Oszuści Cię rozłożyli!';x.textContent=`Straciłeś 3 życia po ${i} pułapkach. W prawdziwym życiu nie ma drugiej szansy. Zapamiętaj jedno: najlepszy prawnik to niezależny polski prawnik — nie zniknie, nie wyjedzie i pracuje wyłącznie dla Ciebie.`}
+  else if(score===10){m.textContent='🏆';t.textContent='Mistrz przetrwania! 10/10';x.textContent='Nikt Cię nie oszuka. Ale nawet mistrz nie musi walczyć sam — my pilnujemy terminów, pism i urzędów, Ty żyjesz swoim życiem.'}
+  else if(score>=8){m.textContent='🥈';t.textContent=`Bardzo dobrze! ${score}/10`;x.textContent='Masz świetną intuicję — ale zauważ: pułapki, w które wpadłeś, to te najdroższe. Jedna z nich w realu kosztuje sprawę albo tysiące złotych.'}
+  else if(score>=5){m.textContent='😬';t.textContent=`Ostrożnie! ${score}/10`;x.textContent='Połowa pułapek Cię złapała. Oszuści żyją właśnie z tej połowy. Zanim komuś zapłacisz lub coś podpiszesz — zapytaj kogoś, kto pracuje dla Ciebie.'}
+  else{m.textContent='🆘';t.textContent=`Alarm! ${score}/10`;x.textContent='W urzędowej dżungli nie przetrwasz sam — i nie musisz. Napisz do nas, zanim ktoś wykorzysta Twoją niewiedzę. Pierwsza rozmowa nic nie kosztuje.'}
+ }
+};
+show();
+</script>
+
+<!-- Znak marki COSC -->
+<div id="cosc-brand" style="position:fixed;left:14px;bottom:14px;z-index:99999;display:flex;align-items:center;gap:9px;background:rgba(19,32,58,.85);border:1px solid rgba(201,169,97,.6);border-radius:999px;padding:7px 16px 7px 8px;pointer-events:none;font-family:'Inter',Arial,sans-serif;backdrop-filter:blur(2px)">
+<span style="width:26px;height:26px;border:1.5px solid #C9A961;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#C9A961;font-size:11px;font-weight:700;font-family:'Cormorant Garamond',Georgia,serif">CO</span>
+<span style="color:#FAF8F5;font-size:12.5px;font-weight:600;letter-spacing:.02em">Centrum Obsługi Spraw Cudzoziemców</span>
+</div>
+</body>
+</html>

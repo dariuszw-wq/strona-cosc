@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Misja: Karta Pobytu — gra | Centrum Obsługi Spraw Cudzoziemców</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#1B2A4A;--navy-d:#13203A;--gold:#C9A961;--gold-l:#DCC38A;--cream:#FAF8F5;--ink:#232A3A;--mut:#5B6478;--line:#E7E0D3;--ok:#2E7D4F;--red:#B33A3A;--amber:#C07A1E}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:linear-gradient(160deg,var(--navy),var(--navy-d));min-height:100vh;display:flex;align-items:center;justify-content:center;padding:12px;color:var(--ink)}
+.game{width:100%;max-width:440px;background:var(--cream);border-radius:20px;overflow:hidden;box-shadow:0 24px 70px rgba(0,0,0,.45)}
+
+/* HUD */
+.hud{background:var(--navy);color:#fff;padding:12px 16px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.hud h1{font-family:'Cormorant Garamond',serif;font-size:17px;color:#fff;flex:1}
+.stat{display:flex;align-items:center;gap:5px;font-size:12.5px;font-weight:700;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);padding:5px 9px;border-radius:999px}
+.stat.hit{animation:hit .5s}
+@keyframes hit{0%,100%{transform:scale(1)}50%{transform:scale(1.25);background:rgba(179,58,58,.4)}}
+.stat.gain{animation:gain .5s}
+@keyframes gain{0%,100%{transform:scale(1)}50%{transform:scale(1.25);background:rgba(46,125,79,.4)}}
+.pasek{height:5px;background:rgba(255,255,255,.12)}
+.pasek div{height:100%;width:0;background:var(--gold);transition:width .5s}
+
+/* SCENA */
+.scena{position:relative;height:250px;background:linear-gradient(180deg,#6FA8E0 0%,#A8CDF0 45%,#DCEBFA 62%);overflow:hidden}
+.tlo-svg{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+.slonce{position:absolute;top:16px;right:26px;width:46px;height:46px;border-radius:50%;background:radial-gradient(#FFF3C4,#FFD86B);box-shadow:0 0 34px 12px rgba(255,216,107,.45);animation:pulsuj 4s ease-in-out infinite;z-index:1}
+@keyframes pulsuj{0%,100%{box-shadow:0 0 30px 10px rgba(255,216,107,.4)}50%{box-shadow:0 0 44px 18px rgba(255,216,107,.6)}}
+.chmura{position:absolute;background:#fff;border-radius:999px;opacity:.9;animation:drift 34s linear infinite;z-index:1;box-shadow:14px 6px 0 -4px #fff,-12px 7px 0 -5px #fff}
+@keyframes drift{from{transform:translateX(-140px)}to{transform:translateX(540px)}}
+.ptak{position:absolute;font-size:11px;opacity:.7;animation:lot 18s linear infinite;z-index:1}
+@keyframes lot{0%{transform:translate(-40px,0)}50%{transform:translate(240px,-14px)}100%{transform:translate(520px,4px)}}
+.aktor{z-index:4}
+/* REAKCJE */
+#fx{position:absolute;inset:0;pointer-events:none;z-index:9;overflow:hidden}
+.konf{position:absolute;width:9px;height:13px;border-radius:2px;animation:spadaj 1.5s ease-in forwards}
+@keyframes spadaj{0%{transform:translateY(-16px) rotate(0);opacity:1}80%{opacity:1}100%{transform:translateY(260px) rotate(560deg);opacity:0}}
+.gwiazdka{position:absolute;font-size:22px;animation:wzlot 1.4s ease-out forwards}
+@keyframes wzlot{0%{transform:translateY(0) scale(.5);opacity:0}25%{opacity:1;transform:translateY(-18px) scale(1.15)}100%{transform:translateY(-90px) scale(.8);opacity:0}}
+.kropla{position:absolute;width:3px;height:11px;border-radius:2px;background:#5F87C9;animation:deszcz .7s linear infinite}
+@keyframes deszcz{from{transform:translateY(-8px);opacity:.9}to{transform:translateY(64px);opacity:0}}
+.chmurka-zla{position:absolute;font-size:40px;animation:zlachmura 1.8s ease-in-out forwards;filter:grayscale(.3)}
+@keyframes zlachmura{0%{transform:translateY(-26px) scale(.5);opacity:0}25%{transform:translateY(0) scale(1);opacity:1}80%{opacity:1}100%{opacity:0}}
+.stamp-fx{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%) rotate(-12deg) scale(2.6);border:4px solid;border-radius:10px;padding:8px 18px;font-weight:900;font-size:24px;letter-spacing:.12em;text-transform:uppercase;background:rgba(250,248,245,.92);opacity:0;animation:przybij 1.7s cubic-bezier(.2,1.3,.4,1) forwards}
+.stamp-fx.ok{color:var(--ok);border-color:var(--ok)}
+.stamp-fx.zle{color:var(--red);border-color:var(--red)}
+@keyframes przybij{0%{opacity:0;transform:translate(-50%,-50%) rotate(-12deg) scale(2.6)}18%{opacity:1;transform:translate(-50%,-50%) rotate(-12deg) scale(1)}75%{opacity:1}100%{opacity:0;transform:translate(-50%,-50%) rotate(-12deg) scale(.96)}}
+.papier{position:absolute;font-size:22px;animation:frunie 1.6s ease-in forwards}
+@keyframes frunie{0%{transform:translateY(-10px) rotate(0);opacity:1}100%{transform:translateY(230px) rotate(300deg) translateX(40px);opacity:0}}
+.moneta{position:absolute;font-size:24px;animation:wzlot 1.5s ease-out forwards}
+.blysk{position:absolute;inset:0;animation:blysk .9s ease-out forwards}
+.blysk.ok{background:radial-gradient(circle at 50% 55%,rgba(103,196,143,.45),transparent 62%)}
+.blysk.zle{background:radial-gradient(circle at 50% 55%,rgba(197,90,90,.4),transparent 62%)}
+@keyframes blysk{0%{opacity:0}25%{opacity:1}100%{opacity:0}}
+.scena.trzesie{animation:trzes .45s}
+@keyframes trzes{0%,100%{transform:translateX(0)}20%{transform:translateX(-6px)}40%{transform:translateX(5px)}60%{transform:translateX(-4px)}80%{transform:translateX(3px)}}
+
+/* POSTACIE */
+.aktor{position:absolute;bottom:38px;width:74px;height:104px;transition:left .7s cubic-bezier(.4,0,.2,1),transform .3s}
+.aktor svg{width:100%;height:100%}
+.aktor .b{animation:idle 2.4s ease-in-out infinite;transform-origin:center bottom}
+@keyframes idle{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+.aktor.walk .b{animation:walkb .28s ease-in-out infinite}
+@keyframes walkb{0%,100%{transform:translateY(0) rotate(-2.5deg)}50%{transform:translateY(-5px) rotate(2.5deg)}}
+.aktor .al{transform-origin:26px 47px}.aktor .ar{transform-origin:48px 47px}
+.aktor .ll{transform-origin:33px 70px}.aktor .lr{transform-origin:41px 70px}
+.aktor.walk .al,.aktor.walk .ll{animation:sw .28s ease-in-out infinite}
+.aktor.walk .ar,.aktor.walk .lr{animation:sw2 .28s ease-in-out infinite}
+@keyframes sw{0%,100%{transform:rotate(20deg)}50%{transform:rotate(-20deg)}}
+@keyframes sw2{0%,100%{transform:rotate(-20deg)}50%{transform:rotate(20deg)}}
+.aktor.happy .b{animation:jump .45s ease-in-out 3}
+@keyframes jump{0%,100%{transform:translateY(0)}50%{transform:translateY(-16px)}}
+.aktor.sad{filter:grayscale(.55)}
+.aktor.sad .b{animation:sadb 2s ease-in-out infinite}
+@keyframes sadb{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(2px) rotate(-2deg)}}
+.aktor.flip{transform:scaleX(-1)}
+.aktor.pop{animation:popin .5s cubic-bezier(.2,1.4,.4,1)}
+@keyframes popin{from{opacity:0;transform:translateY(16px) scale(.8)}to{opacity:1;transform:translateY(0) scale(1)}}
+.aktor.out{opacity:0;transition:opacity .4s,left .7s}
+
+/* DYMEK */
+.dymek{position:absolute;max-width:240px;background:#fff;border:1.5px solid var(--line);border-radius:14px;padding:10px 13px;font-size:12.5px;line-height:1.45;box-shadow:0 8px 22px rgba(27,42,74,.14);animation:popin .35s cubic-bezier(.2,1.4,.4,1);z-index:6}
+.dymek::after{content:"";position:absolute;top:100%;left:32px;border:8px solid transparent;border-top-color:#fff}
+.dymek b{color:var(--navy)}
+.dymek.zly{border-color:#E4BBBB}
+.dymek.zly::after{border-top-color:#fff}
+.dymek .kto{display:block;font-size:9.5px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--gold);margin-bottom:3px}
+.dymek.zly .kto{color:var(--red)}
+
+/* PANEL DECYZJI */
+.panel{padding:16px 18px 20px;background:#fff;border-top:1px solid var(--line)}
+.nar{font-size:13.5px;color:var(--mut);margin-bottom:12px;line-height:1.5;min-height:40px}
+.nar b{color:var(--navy)}
+.wybory{display:flex;flex-direction:column;gap:9px}
+.wybory button{background:var(--cream);border:1.5px solid var(--line);border-radius:12px;padding:13px 14px;font-family:inherit;font-size:13.5px;text-align:left;cursor:pointer;transition:.18s;color:var(--ink);line-height:1.35}
+.wybory button:active{transform:scale(.98)}
+.wybory button b{color:var(--navy)}
+.wybory button .koszt{display:block;font-size:11px;color:var(--mut);margin-top:3px}
+.dalej{margin-top:12px;width:100%;background:var(--gold);color:var(--navy);border:none;border-radius:11px;padding:13px;font-family:inherit;font-weight:800;font-size:14px;cursor:pointer;display:none}
+.dalej.show{display:block;animation:popin .3s}
+.wynik-fb{margin-top:12px;border-radius:12px;padding:12px 13px;font-size:12.5px;line-height:1.5;display:none}
+.wynik-fb.show{display:block;animation:popin .3s}
+.wynik-fb.good{background:#EEF7F1;border:1px solid #BFE0CC}
+.wynik-fb.bad{background:#FBEEEE;border:1px solid #E8C4C4}
+
+/* FINAŁ */
+.final{display:none;text-align:center;padding:10px 0 4px}
+.final .karta{position:relative;width:230px;margin:0 auto 16px;background:linear-gradient(135deg,#F4EFE4,#EAE0C9);border:1px solid var(--gold);border-radius:12px;padding:14px;color:var(--navy);transform:rotate(-2deg);box-shadow:0 14px 34px rgba(0,0,0,.2)}
+.final .karta .t{font-size:9px;text-transform:uppercase;letter-spacing:.1em;color:#8A7C58}
+.final .karta .n{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:17px}
+.final .stamp{position:absolute;right:-14px;bottom:-12px;border:2.5px solid var(--ok);color:var(--ok);font-weight:800;font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:6px 10px;border-radius:8px;background:rgba(250,248,245,.95);opacity:0;transform:rotate(10deg) scale(2.2)}
+.final .stamp.go{animation:stampin .5s .4s cubic-bezier(.2,1.4,.4,1) forwards}
+@keyframes stampin{to{opacity:1;transform:rotate(10deg) scale(1)}}
+.final h2{font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--navy);margin-bottom:5px}
+.final p{font-size:13.5px;color:var(--mut);margin-bottom:14px;padding:0 6px}
+.final .cta{display:block;background:var(--gold);color:var(--navy);text-decoration:none;font-weight:800;font-size:14px;padding:13px;border-radius:12px;margin-bottom:8px}
+.final .cta.navy{background:var(--navy);color:#fff}
+.again{background:none;border:none;color:var(--mut);font-size:12.5px;text-decoration:underline;cursor:pointer;font-family:inherit}
+.disc{font-size:10px;color:#9AA3B5;line-height:1.4;padding:0 18px 15px;background:#fff}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.final .stamp{opacity:1;transform:rotate(10deg) scale(1)}}
+</style>
+</head>
+<body>
+<div class="game">
+  <div class="hud">
+    <h1>Misja: Karta Pobytu</h1>
+    <div class="stat" id="s-kasa">💰 <span id="kasa">3000</span> zł</div>
+    <div class="stat" id="s-bezp">🛡️ <span id="bezp">3</span></div>
+  </div>
+  <div class="pasek"><div id="pas"></div></div>
+
+  <div class="scena" id="scena">
+    <svg class="tlo-svg" viewBox="0 0 440 250" preserveAspectRatio="xMidYMax slice">
+      <!-- panorama daleka -->
+      <g opacity=".55">
+        <rect x="-10" y="92" width="60" height="70" fill="#7D9CCB"/><rect x="58" y="76" width="46" height="86" fill="#8FA9D2"/>
+        <rect x="112" y="98" width="54" height="64" fill="#7D9CCB"/><rect x="300" y="84" width="50" height="78" fill="#8FA9D2"/>
+        <rect x="358" y="96" width="66" height="66" fill="#7D9CCB"/>
+      </g>
+      <!-- budynki kolorowe -->
+      <g>
+        <rect x="18" y="70" width="74" height="92" rx="3" fill="#E39A5B"/>
+        <rect x="18" y="70" width="74" height="12" rx="3" fill="#C97F42"/>
+        <g fill="#FFF3D6">
+          <rect x="28" y="92" width="13" height="15" rx="2"/><rect x="49" y="92" width="13" height="15" rx="2"/><rect x="70" y="92" width="13" height="15" rx="2"/>
+          <rect x="28" y="116" width="13" height="15" rx="2"/><rect x="70" y="116" width="13" height="15" rx="2"/>
+          <rect x="28" y="140" width="13" height="15" rx="2"/><rect x="49" y="140" width="13" height="15" rx="2"/>
+        </g>
+        <rect x="49" y="118" width="13" height="13" rx="2" fill="#FFE07A"/>
+        <rect x="104" y="46" width="84" height="116" rx="3" fill="#6E93C4"/>
+        <rect x="104" y="46" width="84" height="10" rx="3" fill="#57799F"/>
+        <g fill="#DDEBFA">
+          <rect x="114" y="66" width="14" height="16" rx="2"/><rect x="138" y="66" width="14" height="16" rx="2"/><rect x="162" y="66" width="14" height="16" rx="2"/>
+          <rect x="114" y="92" width="14" height="16" rx="2"/><rect x="162" y="92" width="14" height="16" rx="2"/>
+          <rect x="114" y="118" width="14" height="16" rx="2"/><rect x="138" y="118" width="14" height="16" rx="2"/><rect x="162" y="118" width="14" height="16" rx="2"/>
+        </g>
+        <rect x="138" y="92" width="14" height="16" rx="2" fill="#FFE07A"/>
+        <!-- URZĄD z kolumnami -->
+        <rect x="238" y="72" width="120" height="90" rx="3" fill="#F0E6CE"/>
+        <polygon points="232,74 298,44 364,74" fill="#C9A961"/>
+        <rect x="238" y="74" width="120" height="10" fill="#DCC38A"/>
+        <g fill="#D9CBAA"><rect x="248" y="94" width="10" height="68"/><rect x="272" y="94" width="10" height="68"/><rect x="314" y="94" width="10" height="68"/><rect x="338" y="94" width="10" height="68"/></g>
+        <rect x="288" y="112" width="20" height="50" rx="2" fill="#7A5A2E"/>
+        <text x="298" y="90" font-family="Georgia,serif" font-size="10" font-weight="700" fill="#1B2A4A" text-anchor="middle">URZĄD</text>
+        <rect x="392" y="88" width="52" height="74" rx="3" fill="#C4788C"/>
+        <g fill="#FBE4EA"><rect x="400" y="102" width="12" height="14" rx="2"/><rect x="422" y="102" width="12" height="14" rx="2"/><rect x="400" y="128" width="12" height="14" rx="2"/><rect x="422" y="128" width="12" height="14" rx="2"/></g>
+      </g>
+      <!-- drzewa -->
+      <g>
+        <rect x="205" y="140" width="6" height="22" fill="#7A5A2E"/><circle cx="208" cy="132" r="17" fill="#5E9A5B"/><circle cx="198" cy="140" r="11" fill="#6FAF6B"/><circle cx="218" cy="140" r="11" fill="#6FAF6B"/>
+        <rect x="372" y="144" width="5" height="18" fill="#7A5A2E"/><circle cx="374" cy="138" r="13" fill="#5E9A5B"/>
+      </g>
+      <!-- chodnik i ulica -->
+      <rect x="0" y="162" width="440" height="30" fill="#D8CDB6"/>
+      <g stroke="#C4B79C" stroke-width="1.5"><line x1="40" y1="162" x2="34" y2="192"/><line x1="120" y1="162" x2="114" y2="192"/><line x1="200" y1="162" x2="194" y2="192"/><line x1="280" y1="162" x2="274" y2="192"/><line x1="360" y1="162" x2="354" y2="192"/></g>
+      <rect x="0" y="192" width="440" height="58" fill="#4A5568"/>
+      <g fill="#F4EFE0"><rect x="14" y="216" width="34" height="6" rx="3"/><rect x="86" y="216" width="34" height="6" rx="3"/><rect x="158" y="216" width="34" height="6" rx="3"/><rect x="230" y="216" width="34" height="6" rx="3"/><rect x="302" y="216" width="34" height="6" rx="3"/><rect x="374" y="216" width="34" height="6" rx="3"/></g>
+      <!-- latarnia -->
+      <rect x="228" y="118" width="4" height="44" fill="#39445A"/><circle cx="230" cy="114" r="7" fill="#FFE9A8"/>
+    </svg>
+    <div class="slonce"></div>
+    <div class="chmura" style="width:66px;height:20px;top:20px"></div>
+    <div class="chmura" style="width:46px;height:15px;top:48px;animation-delay:-15s"></div>
+    <div class="ptak" style="top:36px">🕊️</div>
+    <div class="ptak" style="top:58px;animation-delay:-9s">🕊️</div>
+    <div id="fx"></div>
+
+    <!-- BOHATER -->
+    <div class="aktor" id="hero" style="left:16px">
+      <svg viewBox="0 0 74 104">
+        <g class="b">
+          <g class="ll"><rect x="30" y="70" width="7" height="24" rx="3.5" fill="#1B2A4A"/></g>
+          <g class="lr"><rect x="40" y="70" width="7" height="24" rx="3.5" fill="#13203A"/></g>
+          <rect x="24" y="42" width="28" height="32" rx="10" fill="#1B2A4A"/>
+          <g class="al"><rect x="21" y="46" width="7" height="22" rx="3.5" fill="#13203A"/></g>
+          <g class="ar"><rect x="48" y="46" width="7" height="22" rx="3.5" fill="#1B2A4A"/>
+            <rect x="50" y="62" width="18" height="13" rx="3" fill="#C9A961"/><rect x="56" y="59" width="6" height="4" rx="1.5" fill="#C9A961"/></g>
+          <circle cx="38" cy="26" r="14" fill="#E8C39E"/>
+          <path d="M24 22 a14 14 0 0 1 28 0 l-3.5-1.8 -5 2.6 -6-3.4 -6 3.4 -4-2z" fill="#3A2E22"/>
+          <circle cx="33" cy="26" r="1.8" fill="#232A3A"/><circle cx="43" cy="26" r="1.8" fill="#232A3A"/>
+          <path d="M33.5 32 q4.5 3.5 9 0" stroke="#232A3A" stroke-width="1.8" fill="none" stroke-linecap="round" id="usta"/>
+        </g>
+      </svg>
+    </div>
+
+    <!-- NPC -->
+    <div class="aktor flip" id="npc" style="left:calc(100% - 96px);display:none">
+      <svg viewBox="0 0 74 104">
+        <g class="b">
+          <g class="ll"><rect x="30" y="70" width="7" height="24" rx="3.5" fill="#2A2A2A" id="n-ll"/></g>
+          <g class="lr"><rect x="40" y="70" width="7" height="24" rx="3.5" fill="#1E1E1E" id="n-lr"/></g>
+          <rect x="24" y="42" width="28" height="32" rx="10" fill="#2A2A2A" id="n-body"/>
+          <g class="al"><rect x="21" y="46" width="7" height="22" rx="3.5" fill="#1E1E1E" id="n-al"/></g>
+          <g class="ar"><rect x="48" y="46" width="7" height="22" rx="3.5" fill="#2A2A2A" id="n-ar"/></g>
+          <circle cx="38" cy="26" r="14" fill="#E8C39E"/>
+          <path id="n-wlosy" d="M24 22 a14 14 0 0 1 28 0 l-28 0z" fill="#555"/>
+          <g id="n-okulary" style="display:none"><rect x="27" y="22" width="9" height="7" rx="2" fill="#111"/><rect x="40" y="22" width="9" height="7" rx="2" fill="#111"/><rect x="36" y="24" width="4" height="2" fill="#111"/></g>
+          <g id="n-kask" style="display:none"><path d="M23 20 a15 12 0 0 1 30 0 l0 3 -30 0z" fill="#E8B722"/></g>
+          <circle cx="33" cy="27" r="1.8" fill="#232A3A"/><circle cx="43" cy="27" r="1.8" fill="#232A3A"/>
+          <path d="M33.5 33 q4.5 2.5 9 0" stroke="#232A3A" stroke-width="1.8" fill="none" stroke-linecap="round" id="n-usta"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="dymek" id="dymek" style="display:none"></div>
+  </div>
+
+  <div class="panel">
+    <div id="gra">
+      <div class="nar" id="nar"></div>
+      <div class="wybory" id="wybory"></div>
+      <div class="wynik-fb" id="fb"></div>
+      <button class="dalej" id="dalej">Idź dalej →</button>
+    </div>
+    <div class="final" id="final">
+      <div class="karta" id="f-karta" style="display:none">
+        <div class="t">Rzeczpospolita Polska · Karta pobytu</div>
+        <div class="n">TWOJE NAZWISKO</div>
+        <div class="t" style="margin-top:6px">pobyt czasowy · ważna do 2029</div>
+        <div class="stamp" id="stamp">✦ Decyzja pozytywna</div>
+      </div>
+      <div id="f-medal" style="font-size:56px;margin-bottom:8px;display:none">💸</div>
+      <h2 id="f-tit"></h2>
+      <p id="f-txt"></p>
+      <a class="cta" href="https://wa.me/48539999549" id="f-cta">W prawdziwym życiu nie idź sam — napisz do nas</a>
+      <a class="cta navy" href="/kalkulator-dni-pobytu/">Sprawdź swoje dni pobytu →</a>
+      <button class="again" onclick="location.reload()">Zagraj jeszcze raz</button>
+    </div>
+  </div>
+  <p class="disc">Gra ma charakter edukacyjno-rozrywkowy i nie stanowi porady prawnej. Sytuacje są uproszczone; stan prawny na 07.2026 wymaga weryfikacji. Centrum Obsługi Spraw Cudzoziemców · Administrator danych: Dariusz Włodarczyk Kancelaria TRC.</p>
+</div>
+
+<script>
+/* ============== SILNIK ============== */
+const $=id=>document.getElementById(id);
+let kasa=3000,bezp=3,krok=0;
+function setStat(dk,db){
+ if(dk){kasa=Math.max(0,kasa+dk);$('kasa').textContent=kasa;flash('s-kasa',dk>0)}
+ if(db){bezp=Math.max(0,Math.min(5,bezp+db));$('bezp').textContent=bezp;flash('s-bezp',db>0)}
+}
+function flash(id,good){const el=$(id);el.classList.remove('hit','gain');void el.offsetWidth;el.classList.add(good?'gain':'hit')}
+function vibe(p){if(navigator.vibrate)navigator.vibrate(p)}
+/* ---- REAKCJE WIZUALNE (losowe warianty) ---- */
+const KOLORY=['#C9A961','#2E7D4F','#E39A5B','#6E93C4','#FFD86B','#C4788C'];
+function fxEl(cls,style,txt){const e=document.createElement('div');e.className=cls;e.style.cssText=style;if(txt)e.textContent=txt;$('fx').appendChild(e);return e}
+function fxClear(ms){setTimeout(()=>$('fx').innerHTML='',ms)}
+function heroX(){return ($('hero').offsetLeft||16)+37}
+const GOOD_FX=[
+ ()=>{ // konfetti
+  for(let i=0;i<26;i++)fxEl('konf',`left:${Math.random()*100}%;top:-10px;background:${KOLORY[i%KOLORY.length]};animation-delay:${Math.random()*.4}s`);
+  fxEl('blysk ok','');fxClear(2000);},
+ ()=>{ // pieczątka TAK
+  const s=fxEl('stamp-fx ok','','✓ DOBRA DECYZJA');fxEl('blysk ok','');fxClear(1800);},
+ ()=>{ // gwiazdki nad bohaterem
+  const x=heroX();
+  for(let i=0;i<7;i++)fxEl('gwiazdka',`left:${x-34+Math.random()*68}px;bottom:${96+Math.random()*20}px;animation-delay:${i*.12}s`,['⭐','✨','🌟'][i%3]);
+  fxClear(2300);},
+ ()=>{ // monety + kciuk
+  const x=heroX();
+  fxEl('gwiazdka',`left:${x-10}px;bottom:118px;font-size:30px`,'👍');
+  for(let i=0;i<5;i++)fxEl('moneta',`left:${x-40+Math.random()*80}px;bottom:${90+Math.random()*16}px;animation-delay:${.1+i*.14}s`,'🪙');
+  fxEl('blysk ok','');fxClear(2100);}
+];
+const BAD_FX=[
+ ()=>{ // pieczątka BŁĄD
+  fxEl('stamp-fx zle','','✕ ZŁA DECYZJA');fxEl('blysk zle','');
+  $('scena').classList.add('trzesie');setTimeout(()=>$('scena').classList.remove('trzesie'),500);fxClear(1800);},
+ ()=>{ // deszczowa chmura nad bohaterem
+  const x=heroX();
+  fxEl('chmurka-zla',`left:${x-22}px;bottom:128px`,'🌧️');
+  for(let i=0;i<8;i++)fxEl('kropla',`left:${x-20+Math.random()*44}px;bottom:118px;animation-delay:${Math.random()*.6}s`);
+  fxClear(1900);},
+ ()=>{ // rozsypane papiery
+  for(let i=0;i<9;i++)fxEl('papier',`left:${10+Math.random()*80}%;top:-14px;animation-delay:${Math.random()*.5}s`,['📄','🧾','📋'][i%3]);
+  fxEl('blysk zle','');
+  $('scena').classList.add('trzesie');setTimeout(()=>$('scena').classList.remove('trzesie'),500);fxClear(2200);},
+ ()=>{ // uciekające pieniądze
+  const x=heroX();
+  fxEl('chmurka-zla',`left:${x-20}px;bottom:126px`,'💸');
+  for(let i=0;i<5;i++)fxEl('papier',`left:${x-36+Math.random()*72}px;top:110px;font-size:19px;animation-delay:${i*.12}s`,'💸');
+  fxEl('blysk zle','');fxClear(2000);}
+];
+let lastG=-1,lastB=-1;
+function react(good){
+ let arr=good?GOOD_FX:BAD_FX,i;
+ do{i=Math.floor(Math.random()*arr.length)}while(i===(good?lastG:lastB)&&arr.length>1);
+ if(good)lastG=i;else lastB=i;
+ arr[i]();
+}
+function heroMood(m){const h=$('hero');h.classList.remove('happy','sad');if(m)h.classList.add(m);
+ $('usta').setAttribute('d',m==='sad'?'M33.5 34 q4.5 -3 9 0':'M33.5 32 q4.5 3.5 9 0')}
+function npcShow(cfg){
+ const n=$('npc');n.style.display='block';n.classList.remove('out');n.classList.add('pop');
+ $('n-body').setAttribute('fill',cfg.c1);$('n-al').setAttribute('fill',cfg.c2);$('n-ar').setAttribute('fill',cfg.c1);
+ $('n-ll').setAttribute('fill',cfg.c1);$('n-lr').setAttribute('fill',cfg.c2);
+ $('n-okulary').style.display=cfg.okulary?'block':'none';
+ $('n-kask').style.display=cfg.kask?'block':'none';
+ $('n-usta').setAttribute('d',cfg.zly?'M33.5 34 q4.5 -2.5 9 0':'M33.5 33 q4.5 2.5 9 0');
+ setTimeout(()=>n.classList.remove('pop'),500);
+}
+function npcHide(){const n=$('npc');n.classList.add('out');setTimeout(()=>n.style.display='none',450)}
+function say(html,zly,left){
+ const d=$('dymek');d.style.display='block';d.className='dymek'+(zly?' zly':'');
+ d.innerHTML=html;
+ d.style.left=left?'12px':'auto';d.style.right=left?'auto':'12px';
+ d.style.top='10px';
+}
+function hush(){$('dymek').style.display='none'}
+function heroWalk(px,cb){const h=$('hero');h.classList.add('walk');h.style.left=px+'px';
+ setTimeout(()=>{h.classList.remove('walk');cb&&cb()},750)}
+
+/* ============== SCENARIUSZ ============== */
+const S=[
+ {nar:"<b>Rozdział 1 · Praca.</b> Masz 3000 zł oszczędności i wielkie plany. Na mieście czekają dwie oferty pracy. Ktoś do Ciebie podchodzi…",
+  npc:{c1:'#2A2A2A',c2:'#1E1E1E',okulary:true,zly:true},
+  dymek:"<span class='kto'>„Biznesmen” w ciemnych okularach</span>Praca od zaraz! <b>30 zł/h na rękę, bez papierów.</b> Umowa? Po co ci umowa, bracie. Kasa co piątek.",
+  wybory:[
+   {t:"<b>Biorę!</b> 30 zł/h to dużo, papiery potem",koszt:"szybka kasa…?",kasa:+500,bezp:-2,fb:"Pracujesz na czarno. Po 3 tygodniach „szef” znika z Twoją wypłatą — a Ty nie masz umowy, więc nie masz nic. Gorzej: praca bez zezwolenia to ryzyko dla Twojego pobytu.",bad:true},
+   {t:"<b>Odmawiam.</b> Szukam pracodawcy z prawdziwą umową",koszt:"wolniej, ale bezpiecznie",bezp:+1,fb:"Dobry wybór! Bez legalnej pracy nie zbudujesz wniosku o kartę. „Bez papierów” = bez praw, bez ZUS, bez podstawy pobytu."}
+  ]},
+ {nar:"<b>Rozdział 2 · Dwóch pracodawców.</b> Po tygodniu masz dwie prawdziwe rozmowy. Pierwszy: budowa, kask na głowie, konkrety. Drugi: „menedżer” obiecuje złote góry.",
+  npc:{c1:'#3E5C46',c2:'#33503C',kask:true},
+  dymek:"<span class='kto'>Kierownik budowy „Solidna”</span>Umowa o pracę od pierwszego dnia, <b>28 zł/h, ZUS, wszystko na piśmie.</b> Podpiszemy też załącznik do twojego wniosku w MOS — elektronicznie, jak trzeba.",
+  wybory:[
+   {t:"<b>Podpisuję z „Solidną”.</b> Umowa, ZUS, załącznik do MOS",koszt:"28 zł/h legalnie",bezp:+1,fb:"Świetnie! Pracodawca, który zna MOS i podpisuje dokumenty elektronicznie, to skarb — bez jego załącznika Twój wniosek o pobyt i pracę nie ruszy."},
+   {t:"<b>Idę do „menedżera”.</b> Obiecał 40 zł/h „po okresie próbnym bez umowy”",koszt:"40 zł/h… kiedyś",kasa:-400,bezp:-1,fb:"„Okres próbny bez umowy” trwał 2 miesiące i skończył się niczym. Straciłeś czas i pieniądze na dojazdy. Wracasz do „Solidnej” — na szczęście jeszcze czekają.",bad:true}
+  ]},
+ {nar:"<b>Rozdział 3 · Pośrednik.</b> Składasz wniosek — czas na MOS. Nagle na WhatsAppie odzywa się „pomocnik”, o którym słyszałeś od znajomych…",
+  npc:{c1:'#5A2E2E',c2:'#4A2424',okulary:true,zly:true},
+  dymek:"<span class='kto'>Pośrednik „Załatwiacz”</span>Znam ludzi w urzędzie. <b>2000 zł i twoja sprawa idzie na początek kolejki.</b> Wszyscy tak robią, nie bądź frajerem.",
+  wybory:[
+   {t:"<b>Płacę 2000 zł.</b> Nie chcę czekać miesiącami",koszt:"−2000 zł",kasa:-2000,bezp:-2,fb:"„Załatwiacz” zniknął z pieniędzmi. A gdyby nie zniknął — byłaby to korupcja: przestępstwo, które mogło zakończyć Twoją sprawę odmową i zakazem wjazdu.",bad:true},
+   {t:"<b>Blokuję numer.</b> Kolejki nie da się legalnie kupić",koszt:"0 zł, czyste sumienie",bezp:+1,fb:"Dokładnie! Nikt nie może legalnie „przyspieszyć” sprawy za pieniądze. Jedyne prawdziwe przyspieszenie to kompletny wniosek bez braków formalnych."}
+  ]},
+ {nar:"<b>Rozdział 4 · Wniosek w MOS.</b> Formularz jest tylko po polsku. 14 sekcji, załączniki, podpis elektroniczny pracodawcy. Jak go składasz?",
+  npc:{c1:'#1B2A4A',c2:'#13203A'},
+  dymek:"<span class='kto'>Znajomy z pracy</span>Ja wypełniałem sam przez tłumacza w telefonie… potem dostałem <b>wezwanie do uzupełnienia braków</b> i sprawa stała 3 miesiące.",
+  wybory:[
+   {t:"<b>Wypełniam sam</b> z translatorem — zaoszczędzę",koszt:"0 zł… na razie",bezp:-1,fb:"Wniosek poszedł, ale z błędem w danych z paszportu. Wezwanie do uzupełnienia braków — stres i stracone tygodnie. Udało się poprawić, ale było blisko.",bad:true},
+   {t:"<b>Składam z pomocą prawnika</b> — dobrze za pierwszym razem",koszt:"−800 zł",kasa:-800,bezp:+2,fb:"Wniosek kompletny, UPO pobrane, zaświadczenie o legalnym pobycie w ręku. 800 zł, które chroni całą sprawę. Kluczowe: to TWÓJ prawnik — niezależny od pracodawcy, z kancelarią w Polsce. Nie zniknie i nie przestanie odbierać telefonów."}
+  ]},
+ {nar:"<b>Rozdział 5 · Przeprowadzka.</b> Zmieniasz mieszkanie i… pracę (lepsze warunki, legalnie). We wniosku został stary adres. Co robisz?",
+  npc:{c1:'#3E5C46',c2:'#33503C',kask:true},
+  dymek:"<span class='kto'>Twój prawnik</span>Pamiętaj: <b>urząd pisze na adres, który zna.</b> Pismo wysłane na stary adres uznaje się co do zasady za doręczone — nawet jeśli nigdy go nie zobaczysz.",
+  wybory:[
+   {t:"<b>Natychmiast aktualizuję adres</b> i zgłaszam zmianę pracodawcy",koszt:"1 pismo, 0 stresu",bezp:+1,fb:"Perfekcyjnie. Wezwania i decyzja trafią do Ciebie, a zmiana pracodawcy została zgłoszona zgodnie z przepisami. Twoja sprawa jest bezpieczna."},
+   {t:"<b>Zajmę się tym później</b> — teraz przeprowadzka",koszt:"„później” = nigdy?",bezp:-2,fb:"Wezwanie poszło na stary adres. Były wynajmujący wyrzucił list. Termin minął… Na szczęście prawnik monitorował sprawę i uratował ją w ostatniej chwili. To było o włos od katastrofy.",bad:true}
+  ]},
+ {nar:"<b>Rozdział 6 · Ostatnia pokusa.</b> Czekasz na decyzję. Dzwoni „kancelaria”, która „widzi Twoją sprawę w systemie”…",
+  npc:{c1:'#5A2E2E',c2:'#4A2424',okulary:true,zly:true},
+  dymek:"<span class='kto'>Głos w telefonie</span>Pana sprawa ma problem! Ale spokojnie — <b>wpłaci pan 1500 zł „opłaty administracyjnej”</b> na to konto i wszystko wyprostujemy. Szybko, bo termin mija dziś!",
+  wybory:[
+   {t:"<b>Płacę szybko</b> — nie mogę stracić sprawy!",koszt:"−1500 zł",kasa:-1500,bezp:-1,fb:"To był oszust. Żaden urząd ani prawdziwa kancelaria nie żąda nagłych wpłat „na konto, bo termin mija dziś”. Presja czasu to podpis oszustwa.",bad:true},
+   {t:"<b>Rozłączam się</b> i dzwonię do SWOJEGO prawnika",koszt:"1 telefon",bezp:+1,fb:"Brawo! Twój prawnik potwierdza: sprawa idzie dobrze, żadnych „opłat administracyjnych” nie ma. Presja czasu i nagłe wpłaty = zawsze oszustwo."}
+  ]}
+];
+
+function scene(){
+ const s=S[krok];
+ $('pas').style.width=(krok/S.length*100)+'%';
+ $('nar').innerHTML=s.nar;
+ heroMood(null);hush();
+ heroWalk(16,()=>{
+  npcShow(s.npc);
+  setTimeout(()=>say(s.dymek,s.npc.zly,false),350);
+ });
+ const w=$('wybory');w.innerHTML='';
+ s.wybory.forEach(op=>{
+  const b=document.createElement('button');
+  b.innerHTML=op.t+(op.koszt?`<span class="koszt">${op.koszt}</span>`:'');
+  b.onclick=()=>choose(op);
+  w.appendChild(b);
+ });
+ $('fb').className='wynik-fb';$('fb').textContent='';
+ $('dalej').classList.remove('show');
+}
+function choose(op){
+ document.querySelectorAll('#wybory button').forEach(b=>b.disabled=true);
+ setStat(op.kasa,op.bezp);
+ heroMood(op.bad?'sad':'happy');
+ react(!op.bad);
+ vibe(op.bad?[30,40,30]:15);
+ hush();npcHide();
+ const fb=$('fb');fb.innerHTML=op.fb;fb.classList.add('show',op.bad?'bad':'good');
+ if(bezp===0||kasa===0){setTimeout(()=>lose(),1200);return}
+ $('dalej').classList.add('show');
+}
+$('dalej').onclick=()=>{krok++;if(krok<S.length)scene();else win()};
+function win(){
+ $('pas').style.width='100%';
+ $('gra').style.display='none';
+ heroMood('happy');hush();npcHide();
+ const f=$('final');f.style.display='block';
+ $('f-karta').style.display='block';$('stamp').classList.add('go');
+ GOOD_FX[0]();setTimeout(()=>GOOD_FX[2](),700);
+ $('f-tit').textContent='Masz kartę pobytu! 🎉';
+ $('f-txt').textContent=`Doszedłeś do celu z ${kasa} zł w kieszeni i bezpieczeństwem ${bezp}/5. Zauważyłeś? Każda pułapka w tej grze zdarza się naprawdę, codziennie. Różnica między grą a życiem: w życiu nie ma przycisku „zagraj jeszcze raz”.`;
+ vibe([20,50,20,50,60]);
+}
+function lose(){
+ $('gra').style.display='none';heroMood('sad');hush();npcHide();
+ const f=$('final');f.style.display='block';
+ $('f-medal').style.display='block';
+ $('f-tit').textContent=kasa===0?'Zostałeś bez grosza…':'Twoja sprawa upadła…';
+ $('f-txt').textContent='Oszuści i błędy Cię pokonały. W prawdziwym życiu wygląda to tak samo — tylko boli bardziej. Dobra wiadomość: z niezależnym polskim prawnikiem, który zna te pułapki na pamięć, nie zależy od Twojego pracodawcy i nie wyjedzie nagle z kraju, ta historia kończy się kartą pobytu.';
+ vibe([60,80,60]);
+}
+scene();
+</script>
+
+<!-- Znak marki COSC -->
+<div id="cosc-brand" style="position:fixed;left:14px;bottom:14px;z-index:99999;display:flex;align-items:center;gap:9px;background:rgba(19,32,58,.85);border:1px solid rgba(201,169,97,.6);border-radius:999px;padding:7px 16px 7px 8px;pointer-events:none;font-family:'Inter',Arial,sans-serif;backdrop-filter:blur(2px)">
+<span style="width:26px;height:26px;border:1.5px solid #C9A961;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#C9A961;font-size:11px;font-weight:700;font-family:'Cormorant Garamond',Georgia,serif">CO</span>
+<span style="color:#FAF8F5;font-size:12.5px;font-weight:600;letter-spacing:.02em">Centrum Obsługi Spraw Cudzoziemców</span>
+</div>
+</body>
+</html>

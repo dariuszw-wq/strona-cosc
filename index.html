@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centrum Obsługi Spraw Cudzoziemców — Twój osobisty opiekun w polskich urzędach</title>
+<meta name="description" content="Jesteś bezpieczny. Prowadzimy Twoją sprawę o kartę pobytu i legalną pracę w Polsce — od wniosku w systemie MOS do odbioru karty. Gwarancja albo zwrot wynagrodzenia.">
+<meta name="robots" content="noindex,nofollow"><!-- USUNĄĆ PRZY PUBLIKACJI -->
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1B2A4A; --navy-d:#13203A; --gold:#C9A961; --gold-l:#DCC38A;
+  --cream:#FAF8F5; --ink:#232A3A; --mut:#5B6478; --line:#E7E0D3;
+  --ok:#2E7D4F;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;font-size:16px}
+h1,h2,h3{font-family:'Cormorant Garamond',serif;color:var(--navy);line-height:1.15}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.btn{display:inline-block;text-decoration:none;font-weight:700;font-size:15px;padding:14px 26px;border-radius:10px;transition:.2s;text-align:center}
+.btn-gold{background:var(--gold);color:var(--navy)}
+.btn-gold:hover{background:var(--gold-l);transform:translateY(-1px)}
+.btn-line{border:1.5px solid var(--gold);color:var(--cream)}
+.btn-line:hover{background:rgba(201,169,97,.15)}
+.eyebrow{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+
+.mos{background:var(--gold);color:var(--navy);font-size:13.5px;font-weight:600;text-align:center;padding:9px 16px}
+.mos a{color:inherit;font-weight:800}
+
+header{background:var(--navy);position:sticky;top:0;z-index:50;box-shadow:0 2px 12px rgba(19,32,58,.25)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none}
+.logo .mark{width:40px;height:40px;border:1.5px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-weight:700;color:var(--gold);font-size:15px}
+.logo .name{color:#fff;font-size:14px;line-height:1.3;font-weight:600;max-width:220px}
+.menu{display:flex;gap:24px;align-items:center}
+.menu a{color:#E9ECF3;text-decoration:none;font-size:14px;font-weight:500}
+.menu a:hover{color:var(--gold-l)}
+.lang{display:flex;gap:2px;border:1px solid rgba(255,255,255,.25);border-radius:8px;padding:2px}
+.lang a{padding:4px 8px;font-size:11.5px;font-weight:700;border-radius:6px;text-decoration:none;color:#cfd6e4}
+.lang a.on{background:var(--gold);color:var(--navy)}
+.burger{display:none;background:none;border:none;color:#fff;font-size:26px;cursor:pointer}
+
+/* HERO */
+.hero{background:linear-gradient(160deg,var(--navy) 0%,var(--navy-d) 100%);color:#fff;padding:72px 0 0;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:460px;height:460px;border:1px solid rgba(201,169,97,.22);border-radius:50%}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;position:relative;z-index:2}
+.hero h1{color:#fff;font-size:clamp(34px,4.6vw,52px);font-weight:600}
+.hero h1 em{font-style:normal;color:var(--gold-l)}
+.hero p.lead{margin:18px 0 26px;font-size:17px;color:#D7DDE9;max-width:540px}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap}
+/* ANIMACJA 1: rotujący wielojęzyczny wers */
+.rotator{height:30px;overflow:hidden;margin-top:20px;font-size:16.5px;color:var(--gold-l);font-weight:600}
+.rotator ul{animation:spin 12s cubic-bezier(.6,0,.2,1) infinite;list-style:none}
+.rotator li{height:30px;display:flex;align-items:center;gap:8px}
+.rotator .fl{font-size:14px;opacity:.8}
+@keyframes spin{
+ 0%,20%{transform:translateY(0)} 25%,45%{transform:translateY(-30px)}
+ 50%,70%{transform:translateY(-60px)} 75%,95%{transform:translateY(-90px)}
+ 100%{transform:translateY(-120px)}
+}
+.gwar{margin-top:24px;display:flex;align-items:center;gap:12px;background:rgba(201,169,97,.12);border:1px solid rgba(201,169,97,.4);border-radius:12px;padding:13px 16px;max-width:560px}
+.gwar .seal{flex:none;width:44px;height:44px;border-radius:50%;border:1.5px solid var(--gold);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:20px;animation:pulse 3s ease-in-out infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(201,169,97,.35)}50%{box-shadow:0 0 0 9px rgba(201,169,97,0)}}
+.gwar p{font-size:13.5px;color:#EDE6D6;line-height:1.45}
+.gwar strong{color:var(--gold-l)}
+
+.card-visual{position:relative;padding:20px 0 70px}
+.residence-card{background:linear-gradient(135deg,#F4EFE4,#EAE0C9);border-radius:16px;padding:28px 28px 22px;color:var(--navy);box-shadow:0 24px 60px rgba(0,0,0,.35);transform:rotate(-3deg);max-width:480px;margin:0 auto;border:1px solid rgba(201,169,97,.6);animation:floaty 6s ease-in-out infinite}
+@keyframes floaty{0%,100%{transform:rotate(-3deg) translateY(0)}50%{transform:rotate(-3deg) translateY(-8px)}}
+.residence-card .rc-top{display:flex;justify-content:space-between;font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#7A6A45;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid rgba(122,106,69,.3)}
+.residence-card .rc-main{display:flex;gap:18px}
+.residence-card .rc-photo{flex:none;width:74px;height:92px;border-radius:8px;background:linear-gradient(160deg,#DED0AC,#C4B387);border:1px solid rgba(122,106,69,.5);display:flex;align-items:center;justify-content:center;font-size:38px;box-shadow:inset 0 0 0 3px rgba(255,255,255,.4)}
+.residence-card .rc-fields{flex:1;min-width:0}
+.residence-card .rc-name{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:700}
+.residence-card .rc-row{display:flex;flex-wrap:wrap;gap:14px 18px;margin-top:14px;font-size:12px}
+.residence-card .rc-row div span{display:block;color:#8A7C58;font-size:10px;text-transform:uppercase;letter-spacing:.08em}
+.residence-card .rc-chip{width:38px;height:29px;border-radius:5px;background:linear-gradient(135deg,var(--gold),#B8964E);margin-top:16px}
+.residence-card .rc-mrz{margin-top:20px;padding-top:14px;border-top:1px dashed rgba(122,106,69,.4);font-family:'Courier New',monospace;font-size:12px;letter-spacing:.05em;color:#6B5E3E;line-height:1.7;white-space:pre}
+/* ANIMACJA 4: pieczęć przybijająca się po załadowaniu */
+.rc-stamp{position:absolute;bottom:34px;right:8%;border:2.5px solid var(--ok);color:var(--ok);font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding:7px 14px;border-radius:8px;background:rgba(250,248,245,.94);opacity:0;transform:rotate(8deg) scale(2.4);animation:stamp .5s .9s cubic-bezier(.2,1.4,.4,1) forwards}
+@keyframes stamp{to{opacity:1;transform:rotate(8deg) scale(1)}}
+
+/* ANIMACJA 3: liczniki zaufania */
+.trustbar{background:#fff;border-bottom:1px solid var(--line)}
+.trust{display:flex;justify-content:space-between;gap:16px;padding:24px 0;flex-wrap:wrap}
+.trust div{text-align:center;flex:1;min-width:130px}
+.trust .n{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:700;color:var(--navy)}
+.trust .l{font-size:12.5px;color:var(--mut)}
+
+section{padding:72px 0}
+.sec-head{max-width:660px;margin-bottom:40px}
+.sec-head h2{font-size:clamp(28px,3.4vw,40px);font-weight:600}
+.sec-head p{color:var(--mut);margin-top:10px}
+
+/* ANIMACJA 2: złota ścieżka SVG */
+.path-sec{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:64px 0}
+.path-svg{width:100%;height:auto;display:block}
+.path-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:8px;text-align:center}
+.path-steps h3{font-size:20px;margin-bottom:6px}
+.path-steps p{font-size:13.5px;color:var(--mut)}
+#goldpath{stroke-dasharray:1400;stroke-dashoffset:1400;transition:stroke-dashoffset 2.2s ease}
+.path-sec.inview #goldpath{stroke-dashoffset:0}
+.pnode{opacity:0;transition:opacity .5s ease}
+.path-sec.inview .pnode{opacity:1}
+.path-sec.inview .pnode:nth-child(2){transition-delay:.6s}
+.path-sec.inview .pnode:nth-child(3){transition-delay:1.3s}
+.path-sec.inview .pnode:nth-child(4){transition-delay:2s}
+
+.serv{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.s-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;display:flex;flex-direction:column;position:relative;overflow:hidden}
+.s-card::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--gold),var(--gold-l));transform:scaleX(0);transform-origin:left;transition:transform .35s ease}
+.s-card:hover::before{transform:scaleX(1)}
+.s-card:hover{border-color:var(--gold);box-shadow:0 20px 60px rgba(27,42,74,.16);transform:translateY(-6px)}
+.s-card .ic{width:44px;height:44px;border-radius:10px;background:var(--cream);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:14px;transition:transform .3s cubic-bezier(.34,1.56,.64,1),background .3s ease,border-color .3s ease}
+.s-card:hover .ic{background:var(--gold);border-color:var(--gold);transform:scale(1.18) rotate(-8deg)}
+.s-card h3{font-size:21px;margin-bottom:8px;position:relative;z-index:1}
+.s-card p{font-size:14px;color:var(--mut);flex:1;position:relative;z-index:1}
+.s-card a{margin-top:14px;font-size:13.5px;font-weight:700;color:var(--navy);text-decoration:none;display:inline-flex;align-items:center;gap:4px}
+.s-card a::after{content:"→";color:var(--gold);transition:transform .25s ease}
+.s-card:hover a::after{transform:translateX(5px)}
+.s-num{position:absolute;top:14px;right:18px;font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:700;color:var(--line);z-index:0;pointer-events:none}
+
+.mos-sec{background:var(--navy);color:#fff}
+.mos-sec h2{color:#fff}
+.mos-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.mos-list{list-style:none;margin-top:18px}
+.mos-list li{padding:10px 0 10px 30px;position:relative;font-size:15px;color:#D7DDE9;border-bottom:1px solid rgba(255,255,255,.08)}
+.mos-list li::before{content:"✓";position:absolute;left:0;color:var(--gold);font-weight:700}
+.mos-panel{background:rgba(255,255,255,.05);border:1px solid rgba(201,169,97,.35);border-radius:16px;padding:28px}
+.mos-panel .price{font-family:'Cormorant Garamond',serif;font-size:44px;color:var(--gold-l);font-weight:700}
+.mos-panel .per{font-size:13px;color:#AAB4C8}
+
+.plany{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:stretch}
+.plan{background:#fff;border:1px solid var(--line);border-radius:16px;padding:30px 26px;display:flex;flex-direction:column;position:relative}
+.plan.best{border:2px solid var(--gold);box-shadow:0 14px 40px rgba(27,42,74,.10)}
+.plan .tag{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--gold);color:var(--navy);font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:5px 14px;border-radius:999px;white-space:nowrap}
+.plan h3{font-size:22px}
+.plan .cena{font-family:'Cormorant Garamond',serif;font-size:42px;font-weight:700;color:var(--navy);margin:8px 0 2px}
+.plan .cena small{font-size:16px;color:var(--mut);font-family:'Inter',sans-serif;font-weight:500}
+.plan ul{list-style:none;margin:18px 0;flex:1}
+.plan li{font-size:14px;padding:7px 0 7px 26px;position:relative}
+.plan li::before{content:"✓";position:absolute;left:0;color:var(--gold);font-weight:800}
+.plan .btn{width:100%}
+.plan .gw{font-size:12px;color:var(--mut);margin-top:10px;text-align:center}
+
+.calc-teaser{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.ct-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.ct-demo{background:var(--cream);border:1px solid var(--line);border-radius:16px;padding:26px}
+.ct-demo .bar{height:12px;background:#E7E0D3;border-radius:8px;overflow:hidden;margin:14px 0 8px}
+.ct-demo .bar div{width:0;height:100%;background:linear-gradient(90deg,var(--ok),#7FB894);transition:width 1.4s ease}
+.ct-demo.inview .bar div{width:71%}
+.ct-demo .big{font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:700;color:var(--navy)}
+
+.faq details{background:#fff;border:1px solid var(--line);border-radius:12px;margin-bottom:10px;overflow:hidden}
+.faq summary{cursor:pointer;padding:18px 20px 18px 24px;font-weight:600;font-size:15.5px;color:var(--navy);list-style:none;display:flex;justify-content:space-between;gap:16px;position:relative;transition:background .25s ease,padding-left .25s ease}
+.faq summary::before{content:"";position:absolute;left:0;top:0;bottom:0;width:0;background:var(--gold);transition:width .25s ease}
+.faq summary:hover{background:var(--cream);padding-left:30px}
+.faq summary:hover::before{width:4px}
+.faq summary::after{content:"+";color:var(--gold);font-size:22px}
+.faq details[open] summary::after{content:"–"}
+.faq .a{padding:0 20px 18px;font-size:14.5px;color:var(--mut)}
+
+.kontakt{background:var(--navy);color:#fff}
+.kontakt h2{color:#fff}
+.k-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.k-ways{display:flex;flex-direction:column;gap:12px;margin-top:22px}
+.k-way{display:flex;align-items:center;gap:14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:14px 16px;text-decoration:none;color:#fff;transition:.2s}
+.k-way:hover{border-color:var(--gold)}
+.k-way .ki{width:42px;height:42px;border-radius:10px;background:var(--gold);color:var(--navy);display:flex;align-items:center;justify-content:center;font-size:19px;flex:none}
+.k-way b{display:block;font-size:15px}
+.k-way span{font-size:12.5px;color:#AAB4C8}
+.k-info{background:rgba(255,255,255,.05);border:1px solid rgba(201,169,97,.3);border-radius:16px;padding:28px;font-size:14.5px;color:#D7DDE9}
+.k-info h3{color:var(--gold-l);font-size:22px;margin-bottom:12px}
+.k-info p{margin-bottom:8px}
+
+footer{background:var(--navy-d);color:#93A0B8;font-size:12.5px;padding:34px 0}
+.f-grid{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer a{color:#B9C3D6;text-decoration:none}
+footer .upd{margin-top:14px;font-size:11.5px;color:#6B7890}
+
+.wa-float{position:fixed;bottom:20px;right:20px;width:56px;height:56px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:26px;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.28);z-index:60}
+
+@media(max-width:900px){
+  .menu{display:none}
+  .burger{display:block}
+  .hero-grid,.mos-grid,.ct-grid,.k-grid{grid-template-columns:1fr}
+  .serv,.plany,.path-steps{grid-template-columns:1fr}
+  .hero{padding-top:48px}
+  section{padding:52px 0}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .rc-stamp{opacity:1;transform:rotate(8deg) scale(1)}
+  #goldpath{stroke-dashoffset:0}
+  .pnode{opacity:1}
+  .ct-demo .bar div{width:71%}
+}
+</style>
+</head>
+<body>
+
+<div class="mos">⚠ Od 27.04.2026 wnioski o pobyt składa się <strong>wyłącznie elektronicznie przez system MOS</strong>. <a href="#mos">Złożymy go za Ciebie, bez błędów →</a></div>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="/">
+      <div class="mark">CO</div>
+      <div class="name">Centrum Obsługi<br>Spraw Cudzoziemców</div>
+    </a>
+    <nav class="menu">
+      <a href="#uslugi">Usługi</a>
+      <a href="#mos">Wniosek MOS</a>
+      <a href="#cennik">Cennik</a>
+      <a href="#kalkulator">Kalkulator 90/180</a>
+      <a href="#faq">FAQ</a>
+      <a href="#kontakt">Kontakt</a>
+      <div class="lang"><a class="on" href="#">PL</a><a href="#">EN</a><a href="#">ES</a><a href="#">PT</a></div>
+    </nav>
+    <button class="burger" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Legalizacja pobytu i pracy w Polsce</span>
+      <h1>Tu jesteś bezpieczny.<br><em>Nie musisz znać się na urzędach — my się znamy.</em></h1>
+      <p class="lead">Twoja rodzina może przestać się martwić — kartą pobytu zajmujemy się my, albo zwrócimy ci pieniądze.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-gold" href="#kontakt">Zacznij sprawę dziś — bez ryzyka odmowy</a>
+        <a class="btn btn-line" href="#cennik">Zobacz pakiety i ceny</a>
+      </div>
+      <div class="rotator" aria-hidden="true">
+        <ul>
+          <li><span class="fl">PL</span> Rozumiemy Cię — w Twoim języku.</li>
+          <li><span class="fl">EN</span> We understand you — in your language.</li>
+          <li><span class="fl">ES</span> Te entendemos — en tu idioma.</li>
+          <li><span class="fl">PT</span> Nós te entendemos — no seu idioma.</li>
+          <li><span class="fl">PL</span> Rozumiemy Cię — w Twoim języku.</li>
+        </ul>
+      </div>
+      <div class="gwar">
+        <div class="seal">✦</div>
+        <p><strong>Twoja karta pobytu — albo zwrot wynagrodzenia*</strong><br>*Warunki gwarancji określa Regulamin. Dotyczy pakietów z reprezentacją.</p>
+      </div>
+    </div>
+    <div class="card-visual">
+      <div class="residence-card">
+        <div class="rc-top"><span>Rzeczpospolita Polska · Poland</span><span>Karta pobytu</span></div>
+        <div class="rc-main">
+          <div class="rc-photo">🧑</div>
+          <div class="rc-fields">
+            <div class="rc-name">TWOJE NAZWISKO</div>
+            <div class="rc-row">
+              <div><span>Rodzaj</span>pobyt czasowy</div>
+              <div><span>Ważna do</span>2029</div>
+              <div><span>Dostęp do rynku pracy</span>tak</div>
+            </div>
+            <div class="rc-chip"></div>
+          </div>
+        </div>
+        <div class="rc-mrz">KP&lt;POLXXXXXXXXX&lt;&lt;TWOJE&lt;&lt;NAZWISKO&lt;&lt;&lt;&lt;&lt;<br>1234567890POL2912319&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;06</div>
+      </div>
+      <div class="rc-stamp">Decyzja pozytywna</div>
+    </div>
+  </div>
+</div>
+
+<div class="trustbar">
+  <div class="wrap trust">
+    <div><div class="n"><span class="cnt" data-to="1240">0</span>+</div><div class="l">złożonych wniosków <em style="color:#B99;font-style:normal">[LICZBA DO POTWIERDZENIA]</em></div></div>
+    <div><div class="n"><span class="cnt" data-to="4">0</span></div><div class="l">języki, w których się dogadamy</div></div>
+    <div><div class="n">1</div><div class="l">opiekun Twojej sprawy — od początku do końca</div></div>
+    <div><div class="n">0 zł</div><div class="l">ryzyka — gwarancja na piśmie*</div></div>
+  </div>
+</div>
+
+<div class="path-sec" id="droga">
+  <div class="wrap">
+    <div class="sec-head" style="text-align:center;margin:0 auto 10px">
+      <span class="eyebrow">Twoja droga do karty pobytu</span>
+      <h2>Trzy kroki. My idziemy z Tobą przez wszystkie.</h2>
+    </div>
+    <svg class="path-svg" viewBox="0 0 1000 190" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path id="goldpath" d="M60 150 C 250 40, 420 40, 500 95 S 780 170, 940 60" fill="none" stroke="#C9A961" stroke-width="3" stroke-linecap="round"/>
+      <g class="pnode"><circle cx="60" cy="150" r="26" fill="#FAF8F5" stroke="#C9A961" stroke-width="2"/><text x="60" y="157" text-anchor="middle" font-size="20">📄</text></g>
+      <g class="pnode"><circle cx="500" cy="95" r="26" fill="#FAF8F5" stroke="#C9A961" stroke-width="2"/><text x="500" y="102" text-anchor="middle" font-size="20">🏛️</text></g>
+      <g class="pnode"><circle cx="940" cy="60" r="26" fill="#FAF8F5" stroke="#C9A961" stroke-width="2"/><text x="940" y="67" text-anchor="middle" font-size="20">🪪</text></g>
+    </svg>
+    <div class="path-steps">
+      <div><h3>1. Wniosek</h3><p>Przygotowujemy i składamy Twój wniosek w systemie MOS — poprawnie za pierwszym razem, w Twoim języku.</p></div>
+      <div><h3>2. Urząd</h3><p>Pilnujemy Twojej sprawy w urzędzie: terminy, wezwania, uzupełnienia. Ty dostajesz jasne informacje, nie urzędowe pisma.</p></div>
+      <div><h3>3. Karta pobytu</h3><p>Odbierasz kartę i masz spokój na lata. A gdyby coś poszło nie tak — zwracamy wynagrodzenie*.</p></div>
+    </div>
+  </div>
+</div>
+
+<section id="uslugi">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Jak możemy Ci pomóc</span>
+      <h2>Twoja sytuacja — nasze rozwiązanie</h2>
+    </div>
+    <div class="serv">
+      <div class="s-card"><div class="s-num">01</div><div class="ic">🪪</div><h3>Chcesz zostać w Polsce legalnie</h3><p>Karta pobytu czasowego daje Ci spokój na lata — legalny pobyt, pracę i podróże. Poprowadzimy Cię od pierwszego dokumentu do odbioru karty.</p><a href="artykul-karta-pobytu-czasowego.html">Zobacz, jak to działa</a></div>
+      <div class="s-card"><div class="s-num">02</div><div class="ic">🖥️</div><h3>Nie wiesz, jak złożyć wniosek online</h3><p>Wniosek w systemie MOS jest tylko po polsku. Wypełnimy go i złożymy razem z Tobą — bez błędów, które kosztują sprawę.</p><a href="artykul-mos-jak-zlozyc-wniosek.html">Zobacz, jak to działa</a></div>
+      <div class="s-card"><div class="s-num">03</div><div class="ic">💼</div><h3>Chcesz legalnie pracować</h3><p>Zezwolenie na pracę, zezwolenie jednolite, oświadczenie — dobierzemy właściwą drogę dla Ciebie i Twojego pracodawcy.</p><a href="#kontakt">Zobacz, jak to działa</a></div>
+      <div class="s-card"><div class="s-num">04</div><div class="ic">🏛️</div><h3>Planujesz przyszłość w Polsce</h3><p>Pobyt stały lub rezydent długoterminowy UE — dla Ciebie i Twojej rodziny, na zawsze, bez odnawiania co kilka lat.</p><a href="#kontakt">Zobacz, jak to działa</a></div>
+      <div class="s-card"><div class="s-num">05</div><div class="ic">🔁</div><h3>Zmieniasz pracę</h3><p>Nowa praca nie musi oznaczać problemów z kartą. Przeprowadzimy zmianę pracodawcy tak, żeby Twój status był bezpieczny.</p><a href="#kontakt">Zobacz, jak to działa</a></div>
+      <div class="s-card"><div class="s-num">06</div><div class="ic">⚖️</div><h3>Dostałeś decyzję odmowną</h3><p>To nie koniec Twojej sprawy. Przeanalizujemy akta i poprowadzimy odwołanie — wiele odmów da się odwrócić.</p><a href="#kontakt">Zobacz, jak to działa</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="mos-sec" id="mos">
+  <div class="wrap mos-grid">
+    <div>
+      <span class="eyebrow">System MOS — obowiązkowy od 27.04.2026</span>
+      <h2 style="font-size:clamp(26px,3.2vw,38px)">Wniosek tylko online i tylko po polsku? Spokojnie — zrobimy to razem.</h2>
+      <ul class="mos-list">
+        <li>Zakładamy z Tobą profil zaufany i konto w systemie MOS</li>
+        <li>Wypełniamy wniosek poprawnie — zgodnie z Twoimi dokumentami</li>
+        <li>Pilnujemy załącznika pracodawcy i podpisów elektronicznych</li>
+        <li>Składamy wniosek i pobieramy urzędowe potwierdzenie (UPO)</li>
+        <li>Otrzymujesz zaświadczenie legalizujące pobyt na czas sprawy</li>
+      </ul>
+    </div>
+    <div class="mos-panel">
+      <span class="eyebrow">Pakiet „Wniosek bez błędów"</span>
+      <div class="price">800 zł</div>
+      <div class="per">jednorazowo · wniosek złożony z prawnikiem</div>
+      <p style="margin:16px 0 22px;font-size:14.5px;color:#D7DDE9">Jeden błąd we wniosku może oznaczać pozostawienie sprawy bez rozpoznania — i utratę legalnego pobytu. Z nami składasz wniosek dobrze za pierwszym razem.</p>
+      <a class="btn btn-gold" style="width:100%" href="#kontakt">Umów złożenie wniosku</a>
+    </div>
+  </div>
+</section>
+
+<section id="cennik">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Cennik</span>
+      <h2>Wybierz, ile spokoju potrzebujesz</h2>
+      <p>*Warunki gwarancji określa Regulamin. Gwarancja dotyczy pakietów z reprezentacją.</p>
+    </div>
+    <div class="plany">
+      <div class="plan">
+        <h3>Wniosek bez błędów</h3>
+        <div class="cena">800 <small>zł</small></div>
+        <ul>
+          <li>Wypełnienie i złożenie wniosku w MOS</li>
+          <li>Pomoc w założeniu profilu zaufanego</li>
+          <li>Własny profil sprawy w Centrum</li>
+          <li>Lista wymaganych dokumentów</li>
+        </ul>
+        <a class="btn btn-gold" href="#kontakt">Wybieram ten pakiet</a>
+      </div>
+      <div class="plan best">
+        <div class="tag">Najczęściej wybierany</div>
+        <h3>Wniosek + reprezentacja</h3>
+        <div class="cena">1850 <small>zł</small></div>
+        <ul>
+          <li>Wszystko z pakietu podstawowego</li>
+          <li>Pełna dokumentacja pracodawcy</li>
+          <li>Weryfikacja wszystkich dokumentów</li>
+          <li>Jednorazowa reprezentacja w urzędzie</li>
+          <li>Twoja karta pobytu — albo zwrot wynagrodzenia*</li>
+        </ul>
+        <a class="btn btn-gold" href="#kontakt">Wybieram ten pakiet</a>
+        <div class="gw">✦ Gwarancja na piśmie*</div>
+      </div>
+      <div class="plan">
+        <h3>VIP — Pełna obsługa pełnomocnika</h3>
+        <div class="cena">3500 <small>zł</small></div>
+        <ul>
+          <li>Prowadzenie sprawy od A do Z</li>
+          <li>Pełnomocnik przez całe postępowanie</li>
+          <li>Obsługa do decyzji i odwołania</li>
+          <li>Kontakt priorytetowy</li>
+          <li>Twoja karta pobytu — albo zwrot wynagrodzenia*</li>
+        </ul>
+        <a class="btn btn-gold" href="#kontakt">Wybieram ten pakiet</a>
+        <div class="gw">✦ Gwarancja na piśmie*</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="calc-teaser" id="kalkulator">
+  <div class="wrap ct-grid">
+    <div>
+      <span class="eyebrow">Bezpłatne narzędzie</span>
+      <h2 style="font-size:clamp(26px,3.2vw,36px)">Ile dni pobytu Ci zostało? Sprawdź w 30 sekund</h2>
+      <p style="color:var(--mut);margin:12px 0 22px">Jesteś w Polsce bez wizy? Policz swoje dni w strefie Schengen, zanim przekroczysz limit 90/180 — a gdy dni zaczyna brakować, pokażemy Ci, jak zostać legalnie na dłużej.</p>
+      <a class="btn btn-gold" href="kalkulator-90-180.html">Oblicz swoje dni pobytu</a>
+    </div>
+    <div class="ct-demo">
+      <div style="font-size:13px;font-weight:700;color:var(--mut);text-transform:uppercase;letter-spacing:.08em">Wykorzystane dni</div>
+      <div class="big">64 / 90</div>
+      <div class="bar"><div></div></div>
+      <div style="font-size:13.5px;color:var(--ok);font-weight:600">Pozostało 26 dni w bieżącym oknie 180 dni</div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Najczęstsze pytania</span>
+      <h2>FAQ — legalizacja pobytu w 2026 roku</h2>
+    </div>
+    <div class="faq">
+      <details><summary>Czy mogę jeszcze złożyć papierowy wniosek o kartę pobytu?</summary><div class="a">Nie. Od 27 kwietnia 2026 r. wnioski o zezwolenie na pobyt czasowy, stały i rezydenta długoterminowego UE składa się wyłącznie elektronicznie przez system MOS. Wniosek papierowy zostanie pozostawiony bez rozpoznania. Istnieją wyjątki (np. niektóre sprawy rodzinne i ICT) — sprawdzimy, czy dotyczą Twojej sytuacji.</div></details>
+      <details><summary>Nie znam polskiego. Jak wypełnię wniosek w MOS?</summary><div class="a">Formularz MOS dostępny jest wyłącznie po polsku. Właśnie dlatego oferujemy pakiet „Wniosek bez błędów" — wypełniamy i składamy wniosek razem z Tobą, rozmawiając w Twoim języku (angielski, hiszpański, portugalski).</div></details>
+      <details><summary>Czy mogę legalnie przebywać w Polsce w trakcie rozpatrywania wniosku?</summary><div class="a">Co do zasady tak — po skutecznym złożeniu wniosku otrzymujesz zaświadczenie, które legalizuje pobyt do czasu decyzji. Warunkiem jest złożenie wniosku w terminie, w czasie legalnego pobytu. Każda sytuacja wymaga indywidualnej oceny.</div></details>
+      <details><summary>Na czym polega gwarancja?</summary><div class="a">W pakietach z reprezentacją zobowiązujemy się do zwrotu naszego wynagrodzenia, jeśli nie uzyskasz karty pobytu. Szczegółowe warunki, w tym wyłączenia (np. podanie nieprawdziwych danych), określa Regulamin dostępny na stronie.</div></details>
+      <details><summary>Ile trwa uzyskanie karty pobytu?</summary><div class="a">Terminy różnią się w zależności od urzędu wojewódzkiego i rodzaju sprawy — od kilku miesięcy wzwyż. Prawidłowo złożony wniosek bez braków formalnych to najskuteczniejszy sposób na skrócenie oczekiwania.</div></details>
+    </div>
+  </div>
+</section>
+
+<section class="kontakt" id="kontakt">
+  <div class="wrap k-grid">
+    <div>
+      <span class="eyebrow">Porozmawiajmy</span>
+      <h2 style="font-size:clamp(26px,3.2vw,38px)">Zacznij sprawę dziś — bez ryzyka odmowy</h2>
+      <div class="k-ways">
+        <a class="k-way" href="https://wa.me/48539999549"><div class="ki">✆</div><div><b>WhatsApp — odpowiadamy najszybciej</b><span>+48 539 999 549 · PL / EN / ES / PT</span></div></a>
+        <a class="k-way" href="tel:+48539999549"><div class="ki">☎</div><div><b>Telefon</b><span>+48 539 999 549</span></div></a>
+        <a class="k-way" href="mailto:dariusz.w@kancelaria-trc.pl"><div class="ki">✉</div><div><b>E-mail</b><span>dariusz.w@kancelaria-trc.pl</span></div></a>
+      </div>
+    </div>
+    <div class="k-info">
+      <h3>Centrum Obsługi Spraw Cudzoziemców</h3>
+      <p>ul. Fabryczna 18, 02-892 Warszawa</p>
+      <p>Kontaktujemy się w języku polskim, angielskim, hiszpańskim i portugalskim</p>
+      <p style="margin-top:16px;font-size:12.5px;color:#93A0B8">Administratorem danych osobowych jest Dariusz Włodarczyk Kancelaria TRC, ul. Fabryczna 18, 02-892 Warszawa. Szczegóły w Polityce prywatności.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>© 2026 Centrum Obsługi Spraw Cudzoziemców · Dariusz Włodarczyk Kancelaria TRC</div>
+      <div><a href="/regulamin/">Regulamin</a> · <a href="/polityka-prywatnosci/">Polityka prywatności</a></div>
+    </div>
+    <div class="upd">Treści na stronie mają charakter informacyjny i nie stanowią porady prawnej. Stan prawny na: 07.07.2026. Data ostatniej aktualizacji: 07.07.2026.</div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/48539999549" aria-label="Napisz na WhatsApp">✆</a>
+
+<script>
+// liczniki nabijające się przy scrollu
+const io=new IntersectionObserver(es=>es.forEach(e=>{
+  if(!e.isIntersecting)return;
+  if(e.target.classList.contains('trust')){
+    e.target.querySelectorAll('.cnt').forEach(c=>{
+      const to=+c.dataset.to,t0=performance.now(),dur=1400;
+      const tick=n=>{const p=Math.min(1,(n-t0)/dur);c.textContent=Math.round(to*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(tick)};
+      requestAnimationFrame(tick);
+    });
+  }
+  e.target.classList.add('inview');io.unobserve(e.target);
+}),{threshold:.35});
+document.querySelectorAll('.trust,.path-sec,.ct-demo').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
