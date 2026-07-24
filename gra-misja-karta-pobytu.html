@@ -4,16 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Misja: Karta Pobytu — gra | Centrum Obsługi Spraw Cudzoziemców</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--navy:#1B2A4A;--navy-d:#13203A;--gold:#C9A961;--gold-l:#DCC38A;--cream:#FAF8F5;--ink:#232A3A;--mut:#5B6478;--line:#E7E0D3;--ok:#2E7D4F;--red:#B33A3A;--amber:#C07A1E}
+:root{--navy:#16244c;--navy-d:#111a3a;--gold:#4636c9;--gold-l:#6d6ae0;--cream:#f4f6fb;--ink:#16244c;--mut:#5B6478;--line:#e6e9f0;--ok:#2E7D4F;--red:#B33A3A;--amber:#C07A1E}
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Inter',sans-serif;background:linear-gradient(160deg,var(--navy),var(--navy-d));min-height:100vh;display:flex;align-items:center;justify-content:center;padding:12px;color:var(--ink)}
+body{font-family:'IBM Plex Sans',sans-serif;background:linear-gradient(160deg,var(--navy),var(--navy-d));min-height:100vh;display:flex;align-items:center;justify-content:center;padding:12px;color:var(--ink)}
 .game{width:100%;max-width:440px;background:var(--cream);border-radius:20px;overflow:hidden;box-shadow:0 24px 70px rgba(0,0,0,.45)}
 
 /* HUD */
 .hud{background:var(--navy);color:#fff;padding:12px 16px;display:flex;justify-content:space-between;align-items:center;gap:10px}
-.hud h1{font-family:'Cormorant Garamond',serif;font-size:17px;color:#fff;flex:1}
+.hud h1{font-family:'IBM Plex Serif',serif;font-size:17px;color:#fff;flex:1}
 .stat{display:flex;align-items:center;gap:5px;font-size:12.5px;font-weight:700;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);padding:5px 9px;border-radius:999px}
 .stat.hit{animation:hit .5s}
 @keyframes hit{0%,100%{transform:scale(1)}50%{transform:scale(1.25);background:rgba(179,58,58,.4)}}
@@ -108,11 +108,11 @@ body{font-family:'Inter',sans-serif;background:linear-gradient(160deg,var(--navy
 .final{display:none;text-align:center;padding:10px 0 4px}
 .final .karta{position:relative;width:230px;margin:0 auto 16px;background:linear-gradient(135deg,#F4EFE4,#EAE0C9);border:1px solid var(--gold);border-radius:12px;padding:14px;color:var(--navy);transform:rotate(-2deg);box-shadow:0 14px 34px rgba(0,0,0,.2)}
 .final .karta .t{font-size:9px;text-transform:uppercase;letter-spacing:.1em;color:#8A7C58}
-.final .karta .n{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:17px}
+.final .karta .n{font-family:'IBM Plex Serif',serif;font-weight:700;font-size:17px}
 .final .stamp{position:absolute;right:-14px;bottom:-12px;border:2.5px solid var(--ok);color:var(--ok);font-weight:800;font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:6px 10px;border-radius:8px;background:rgba(250,248,245,.95);opacity:0;transform:rotate(10deg) scale(2.2)}
 .final .stamp.go{animation:stampin .5s .4s cubic-bezier(.2,1.4,.4,1) forwards}
 @keyframes stampin{to{opacity:1;transform:rotate(10deg) scale(1)}}
-.final h2{font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--navy);margin-bottom:5px}
+.final h2{font-family:'IBM Plex Serif',serif;font-size:24px;color:var(--navy);margin-bottom:5px}
 .final p{font-size:13.5px;color:var(--mut);margin-bottom:14px;padding:0 6px}
 .final .cta{display:block;background:var(--gold);color:var(--navy);text-decoration:none;font-weight:800;font-size:14px;padding:13px;border-radius:12px;margin-bottom:8px}
 .final .cta.navy{background:var(--navy);color:#fff}
@@ -158,11 +158,11 @@ body{font-family:'Inter',sans-serif;background:linear-gradient(160deg,var(--navy
         <rect x="138" y="92" width="14" height="16" rx="2" fill="#FFE07A"/>
         <!-- URZĄD z kolumnami -->
         <rect x="238" y="72" width="120" height="90" rx="3" fill="#F0E6CE"/>
-        <polygon points="232,74 298,44 364,74" fill="#C9A961"/>
-        <rect x="238" y="74" width="120" height="10" fill="#DCC38A"/>
+        <polygon points="232,74 298,44 364,74" fill="#4636c9"/>
+        <rect x="238" y="74" width="120" height="10" fill="#6d6ae0"/>
         <g fill="#D9CBAA"><rect x="248" y="94" width="10" height="68"/><rect x="272" y="94" width="10" height="68"/><rect x="314" y="94" width="10" height="68"/><rect x="338" y="94" width="10" height="68"/></g>
         <rect x="288" y="112" width="20" height="50" rx="2" fill="#7A5A2E"/>
-        <text x="298" y="90" font-family="Georgia,serif" font-size="10" font-weight="700" fill="#1B2A4A" text-anchor="middle">URZĄD</text>
+        <text x="298" y="90" font-family="Georgia,serif" font-size="10" font-weight="700" fill="#16244c" text-anchor="middle">URZĄD</text>
         <rect x="392" y="88" width="52" height="74" rx="3" fill="#C4788C"/>
         <g fill="#FBE4EA"><rect x="400" y="102" width="12" height="14" rx="2"/><rect x="422" y="102" width="12" height="14" rx="2"/><rect x="400" y="128" width="12" height="14" rx="2"/><rect x="422" y="128" width="12" height="14" rx="2"/></g>
       </g>
@@ -190,16 +190,16 @@ body{font-family:'Inter',sans-serif;background:linear-gradient(160deg,var(--navy
     <div class="aktor" id="hero" style="left:16px">
       <svg viewBox="0 0 74 104">
         <g class="b">
-          <g class="ll"><rect x="30" y="70" width="7" height="24" rx="3.5" fill="#1B2A4A"/></g>
-          <g class="lr"><rect x="40" y="70" width="7" height="24" rx="3.5" fill="#13203A"/></g>
-          <rect x="24" y="42" width="28" height="32" rx="10" fill="#1B2A4A"/>
-          <g class="al"><rect x="21" y="46" width="7" height="22" rx="3.5" fill="#13203A"/></g>
-          <g class="ar"><rect x="48" y="46" width="7" height="22" rx="3.5" fill="#1B2A4A"/>
-            <rect x="50" y="62" width="18" height="13" rx="3" fill="#C9A961"/><rect x="56" y="59" width="6" height="4" rx="1.5" fill="#C9A961"/></g>
+          <g class="ll"><rect x="30" y="70" width="7" height="24" rx="3.5" fill="#16244c"/></g>
+          <g class="lr"><rect x="40" y="70" width="7" height="24" rx="3.5" fill="#111a3a"/></g>
+          <rect x="24" y="42" width="28" height="32" rx="10" fill="#16244c"/>
+          <g class="al"><rect x="21" y="46" width="7" height="22" rx="3.5" fill="#111a3a"/></g>
+          <g class="ar"><rect x="48" y="46" width="7" height="22" rx="3.5" fill="#16244c"/>
+            <rect x="50" y="62" width="18" height="13" rx="3" fill="#4636c9"/><rect x="56" y="59" width="6" height="4" rx="1.5" fill="#4636c9"/></g>
           <circle cx="38" cy="26" r="14" fill="#E8C39E"/>
           <path d="M24 22 a14 14 0 0 1 28 0 l-3.5-1.8 -5 2.6 -6-3.4 -6 3.4 -4-2z" fill="#3A2E22"/>
-          <circle cx="33" cy="26" r="1.8" fill="#232A3A"/><circle cx="43" cy="26" r="1.8" fill="#232A3A"/>
-          <path d="M33.5 32 q4.5 3.5 9 0" stroke="#232A3A" stroke-width="1.8" fill="none" stroke-linecap="round" id="usta"/>
+          <circle cx="33" cy="26" r="1.8" fill="#16244c"/><circle cx="43" cy="26" r="1.8" fill="#16244c"/>
+          <path d="M33.5 32 q4.5 3.5 9 0" stroke="#16244c" stroke-width="1.8" fill="none" stroke-linecap="round" id="usta"/>
         </g>
       </svg>
     </div>
@@ -217,8 +217,8 @@ body{font-family:'Inter',sans-serif;background:linear-gradient(160deg,var(--navy
           <path id="n-wlosy" d="M24 22 a14 14 0 0 1 28 0 l-28 0z" fill="#555"/>
           <g id="n-okulary" style="display:none"><rect x="27" y="22" width="9" height="7" rx="2" fill="#111"/><rect x="40" y="22" width="9" height="7" rx="2" fill="#111"/><rect x="36" y="24" width="4" height="2" fill="#111"/></g>
           <g id="n-kask" style="display:none"><path d="M23 20 a15 12 0 0 1 30 0 l0 3 -30 0z" fill="#E8B722"/></g>
-          <circle cx="33" cy="27" r="1.8" fill="#232A3A"/><circle cx="43" cy="27" r="1.8" fill="#232A3A"/>
-          <path d="M33.5 33 q4.5 2.5 9 0" stroke="#232A3A" stroke-width="1.8" fill="none" stroke-linecap="round" id="n-usta"/>
+          <circle cx="33" cy="27" r="1.8" fill="#16244c"/><circle cx="43" cy="27" r="1.8" fill="#16244c"/>
+          <path d="M33.5 33 q4.5 2.5 9 0" stroke="#16244c" stroke-width="1.8" fill="none" stroke-linecap="round" id="n-usta"/>
         </g>
       </svg>
     </div>
@@ -262,7 +262,7 @@ function setStat(dk,db){
 function flash(id,good){const el=$(id);el.classList.remove('hit','gain');void el.offsetWidth;el.classList.add(good?'gain':'hit')}
 function vibe(p){if(navigator.vibrate)navigator.vibrate(p)}
 /* ---- REAKCJE WIZUALNE (losowe warianty) ---- */
-const KOLORY=['#C9A961','#2E7D4F','#E39A5B','#6E93C4','#FFD86B','#C4788C'];
+const KOLORY=['#4636c9','#2E7D4F','#E39A5B','#6E93C4','#FFD86B','#C4788C'];
 function fxEl(cls,style,txt){const e=document.createElement('div');e.className=cls;e.style.cssText=style;if(txt)e.textContent=txt;$('fx').appendChild(e);return e}
 function fxClear(ms){setTimeout(()=>$('fx').innerHTML='',ms)}
 function heroX(){return ($('hero').offsetLeft||16)+37}
@@ -354,7 +354,7 @@ const S=[
    {t:"<b>Blokuję numer.</b> Kolejki nie da się legalnie kupić",koszt:"0 zł, czyste sumienie",bezp:+1,fb:"Dokładnie! Nikt nie może legalnie „przyspieszyć” sprawy za pieniądze. Jedyne prawdziwe przyspieszenie to kompletny wniosek bez braków formalnych."}
   ]},
  {nar:"<b>Rozdział 4 · Wniosek w MOS.</b> Formularz jest tylko po polsku. 14 sekcji, załączniki, podpis elektroniczny pracodawcy. Jak go składasz?",
-  npc:{c1:'#1B2A4A',c2:'#13203A'},
+  npc:{c1:'#16244c',c2:'#111a3a'},
   dymek:"<span class='kto'>Znajomy z pracy</span>Ja wypełniałem sam przez tłumacza w telefonie… potem dostałem <b>wezwanie do uzupełnienia braków</b> i sprawa stała 3 miesiące.",
   wybory:[
    {t:"<b>Wypełniam sam</b> z translatorem — zaoszczędzę",koszt:"0 zł… na razie",bezp:-1,fb:"Wniosek poszedł, ale z błędem w danych z paszportu. Wezwanie do uzupełnienia braków — stres i stracone tygodnie. Udało się poprawić, ale było blisko.",bad:true},
@@ -431,8 +431,8 @@ scene();
 
 <!-- Znak marki COSC -->
 <div id="cosc-brand" style="position:fixed;left:14px;bottom:14px;z-index:99999;display:flex;align-items:center;gap:9px;background:rgba(19,32,58,.85);border:1px solid rgba(201,169,97,.6);border-radius:999px;padding:7px 16px 7px 8px;pointer-events:none;font-family:'Inter',Arial,sans-serif;backdrop-filter:blur(2px)">
-<span style="width:26px;height:26px;border:1.5px solid #C9A961;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#C9A961;font-size:11px;font-weight:700;font-family:'Cormorant Garamond',Georgia,serif">CO</span>
-<span style="color:#FAF8F5;font-size:12.5px;font-weight:600;letter-spacing:.02em">Centrum Obsługi Spraw Cudzoziemców</span>
+<span style="width:26px;height:26px;border:1.5px solid #4636c9;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#4636c9;font-size:11px;font-weight:700;font-family:'IBM Plex Serif',Georgia,serif">CO</span>
+<span style="color:#f4f6fb;font-size:12.5px;font-weight:600;letter-spacing:.02em">Centrum Obsługi Spraw Cudzoziemców</span>
 </div>
 </body>
 </html>

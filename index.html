@@ -5,33 +5,45 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Centrum Obsługi Spraw Cudzoziemców — Twój osobisty opiekun w polskich urzędach</title>
 <meta name="description" content="Jesteś bezpieczny. Prowadzimy Twoją sprawę o kartę pobytu i legalną pracę w Polsce — od wniosku w systemie MOS do odbioru karty. Gwarancja albo zwrot wynagrodzenia.">
-<meta name="robots" content="noindex,nofollow"><!-- USUNĄĆ PRZY PUBLIKACJI -->
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --navy:#1B2A4A; --navy-d:#13203A; --gold:#C9A961; --gold-l:#DCC38A;
-  --cream:#FAF8F5; --ink:#232A3A; --mut:#5B6478; --line:#E7E0D3;
+  --navy:#16244c; --navy-d:#111a3a; --gold:#4636c9; --gold-l:#6d6ae0;
+  --cream:#f4f6fb; --ink:#16244c; --mut:#5B6478; --line:#e6e9f0;
   --ok:#2E7D4F;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;font-size:16px}
-h1,h2,h3{font-family:'Cormorant Garamond',serif;color:var(--navy);line-height:1.15}
+body{font-family:'IBM Plex Sans',sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;font-size:16px}
+h1,h2,h3{font-family:'IBM Plex Serif',serif;color:var(--navy);line-height:1.15}
 .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
 .btn{display:inline-block;text-decoration:none;font-weight:700;font-size:15px;padding:14px 26px;border-radius:10px;transition:.2s;text-align:center}
-.btn-gold{background:var(--gold);color:var(--navy)}
-.btn-gold:hover{background:var(--gold-l);transform:translateY(-1px)}
-.btn-line{border:1.5px solid var(--gold);color:var(--cream)}
-.btn-line:hover{background:rgba(201,169,97,.15)}
+.btn-gold{background:#d4213d;color:#fff}
+.btn-gold:hover{background:#b81a32;transform:translateY(-1px)}
+.btn-line{border:1.5px solid rgba(255,255,255,.7);color:#fff}
+.hero .eyebrow{color:#e7e5ff}
+.hero h1 em{color:#ffd34d}
+.hero .rotator{color:#ffd34d}
+.gwar{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.35)}
+.gwar .seal{border-color:#ffd34d;color:#ffd34d}
+.gwar strong{color:#ffd34d}
+.btn-line:hover{background:rgba(70,54,201,.15)}
 .eyebrow{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
 
 .mos{background:var(--gold);color:var(--navy);font-size:13.5px;font-weight:600;text-align:center;padding:9px 16px}
 .mos a{color:inherit;font-weight:800}
 
-header{background:var(--navy);position:sticky;top:0;z-index:50;box-shadow:0 2px 12px rgba(19,32,58,.25)}
+header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);position:sticky;top:0;z-index:50;box-shadow:0 2px 12px rgba(19,32,58,.25)}
+.flagbar{height:8px;background:linear-gradient(to bottom,#f5f5f5 50%,#d4213d 50%);border-bottom:1px solid rgba(22,36,76,.18);position:sticky;top:66px;z-index:49}
+.flag{flex-shrink:0;width:44px;height:29px;border-radius:3px;box-shadow:0 0 0 1px rgba(255,255,255,.4);overflow:hidden;display:flex;align-items:center;justify-content:center}
+.flag-ue{background:#1e3a8a}
+.flag-pl{flex-direction:column}
+.flag-pl .fw{flex:1;width:100%;background:#f5f5f5}
+.flag-pl .fr{flex:1;width:100%;background:#d4213d}
+.hdr-flags{display:flex;gap:9px;align-items:center}
 .nav{display:flex;align-items:center;justify-content:space-between;height:66px}
 .logo{display:flex;align-items:center;gap:11px;text-decoration:none}
-.logo .mark{width:40px;height:40px;border:1.5px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-weight:700;color:var(--gold);font-size:15px}
+.logo .mark{width:40px;height:40px;border:1.5px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Serif',serif;font-weight:700;color:var(--gold);font-size:15px}
 .logo .name{color:#fff;font-size:14px;line-height:1.3;font-weight:600;max-width:220px}
 .menu{display:flex;gap:24px;align-items:center}
 .menu a{color:#E9ECF3;text-decoration:none;font-size:14px;font-weight:500}
@@ -42,12 +54,12 @@ header{background:var(--navy);position:sticky;top:0;z-index:50;box-shadow:0 2px 
 .burger{display:none;background:none;border:none;color:#fff;font-size:26px;cursor:pointer}
 
 /* HERO */
-.hero{background:linear-gradient(160deg,var(--navy) 0%,var(--navy-d) 100%);color:#fff;padding:72px 0 0;position:relative;overflow:hidden}
-.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:460px;height:460px;border:1px solid rgba(201,169,97,.22);border-radius:50%}
+.hero{background:linear-gradient(160deg,#4636c9 0%,#3b2fbf 60%,#2f2699 100%);color:#fff;padding:72px 0 0;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:460px;height:460px;border:1px solid rgba(70,54,201,.22);border-radius:50%}
 .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;position:relative;z-index:2}
 .hero h1{color:#fff;font-size:clamp(34px,4.6vw,52px);font-weight:600}
 .hero h1 em{font-style:normal;color:var(--gold-l)}
-.hero p.lead{margin:18px 0 26px;font-size:17px;color:#D7DDE9;max-width:540px}
+.hero p.lead{margin:18px 0 26px;font-size:17px;color:#dce4f5;max-width:540px}
 .hero-ctas{display:flex;gap:12px;flex-wrap:wrap}
 /* ANIMACJA 1: rotujący wielojęzyczny wers */
 .rotator{height:30px;overflow:hidden;margin-top:20px;font-size:16.5px;color:var(--gold-l);font-weight:600}
@@ -59,24 +71,24 @@ header{background:var(--navy);position:sticky;top:0;z-index:50;box-shadow:0 2px 
  50%,70%{transform:translateY(-60px)} 75%,95%{transform:translateY(-90px)}
  100%{transform:translateY(-120px)}
 }
-.gwar{margin-top:24px;display:flex;align-items:center;gap:12px;background:rgba(201,169,97,.12);border:1px solid rgba(201,169,97,.4);border-radius:12px;padding:13px 16px;max-width:560px}
+.gwar{margin-top:24px;display:flex;align-items:center;gap:12px;background:rgba(70,54,201,.12);border:1px solid rgba(70,54,201,.4);border-radius:12px;padding:13px 16px;max-width:560px}
 .gwar .seal{flex:none;width:44px;height:44px;border-radius:50%;border:1.5px solid var(--gold);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:20px;animation:pulse 3s ease-in-out infinite}
-@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(201,169,97,.35)}50%{box-shadow:0 0 0 9px rgba(201,169,97,0)}}
-.gwar p{font-size:13.5px;color:#EDE6D6;line-height:1.45}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(70,54,201,.35)}50%{box-shadow:0 0 0 9px rgba(70,54,201,0)}}
+.gwar p{font-size:13.5px;color:#e7e5ff;line-height:1.45}
 .gwar strong{color:var(--gold-l)}
 
 .card-visual{position:relative;padding:20px 0 70px}
-.residence-card{background:linear-gradient(135deg,#F4EFE4,#EAE0C9);border-radius:16px;padding:28px 28px 22px;color:var(--navy);box-shadow:0 24px 60px rgba(0,0,0,.35);transform:rotate(-3deg);max-width:480px;margin:0 auto;border:1px solid rgba(201,169,97,.6);animation:floaty 6s ease-in-out infinite}
+.residence-card{background:linear-gradient(135deg,#f4f6fb,#e6e9f0);border-radius:16px;padding:28px 28px 22px;color:var(--navy);box-shadow:0 24px 60px rgba(0,0,0,.35);transform:rotate(-3deg);max-width:480px;margin:0 auto;border:1px solid rgba(70,54,201,.6);animation:floaty 6s ease-in-out infinite}
 @keyframes floaty{0%,100%{transform:rotate(-3deg) translateY(0)}50%{transform:rotate(-3deg) translateY(-8px)}}
-.residence-card .rc-top{display:flex;justify-content:space-between;font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#7A6A45;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid rgba(122,106,69,.3)}
+.residence-card .rc-top{display:flex;justify-content:space-between;font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#4636c9;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid rgba(70,54,201,.3)}
 .residence-card .rc-main{display:flex;gap:18px}
-.residence-card .rc-photo{flex:none;width:74px;height:92px;border-radius:8px;background:linear-gradient(160deg,#DED0AC,#C4B387);border:1px solid rgba(122,106,69,.5);display:flex;align-items:center;justify-content:center;font-size:38px;box-shadow:inset 0 0 0 3px rgba(255,255,255,.4)}
+.residence-card .rc-photo{flex:none;width:74px;height:92px;border-radius:8px;background:linear-gradient(160deg,#d8dce6,#b9bff0);border:1px solid rgba(70,54,201,.5);display:flex;align-items:center;justify-content:center;font-size:38px;box-shadow:inset 0 0 0 3px rgba(255,255,255,.4)}
 .residence-card .rc-fields{flex:1;min-width:0}
-.residence-card .rc-name{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:700}
+.residence-card .rc-name{font-family:'IBM Plex Serif',serif;font-size:28px;font-weight:700}
 .residence-card .rc-row{display:flex;flex-wrap:wrap;gap:14px 18px;margin-top:14px;font-size:12px}
-.residence-card .rc-row div span{display:block;color:#8A7C58;font-size:10px;text-transform:uppercase;letter-spacing:.08em}
-.residence-card .rc-chip{width:38px;height:29px;border-radius:5px;background:linear-gradient(135deg,var(--gold),#B8964E);margin-top:16px}
-.residence-card .rc-mrz{margin-top:20px;padding-top:14px;border-top:1px dashed rgba(122,106,69,.4);font-family:'Courier New',monospace;font-size:12px;letter-spacing:.05em;color:#6B5E3E;line-height:1.7;white-space:pre}
+.residence-card .rc-row div span{display:block;color:#6f7691;font-size:10px;text-transform:uppercase;letter-spacing:.08em}
+.residence-card .rc-chip{width:38px;height:29px;border-radius:5px;background:linear-gradient(135deg,var(--gold),#3b2fbf);margin-top:16px}
+.residence-card .rc-mrz{margin-top:20px;padding-top:14px;border-top:1px dashed rgba(70,54,201,.4);font-family:'Courier New',monospace;font-size:12px;letter-spacing:.05em;color:#4636c9;line-height:1.7;white-space:pre}
 /* ANIMACJA 4: pieczęć przybijająca się po załadowaniu */
 .rc-stamp{position:absolute;bottom:34px;right:8%;border:2.5px solid var(--ok);color:var(--ok);font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding:7px 14px;border-radius:8px;background:rgba(250,248,245,.94);opacity:0;transform:rotate(8deg) scale(2.4);animation:stamp .5s .9s cubic-bezier(.2,1.4,.4,1) forwards}
 @keyframes stamp{to{opacity:1;transform:rotate(8deg) scale(1)}}
@@ -85,7 +97,7 @@ header{background:var(--navy);position:sticky;top:0;z-index:50;box-shadow:0 2px 
 .trustbar{background:#fff;border-bottom:1px solid var(--line)}
 .trust{display:flex;justify-content:space-between;gap:16px;padding:24px 0;flex-wrap:wrap}
 .trust div{text-align:center;flex:1;min-width:130px}
-.trust .n{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:700;color:var(--navy)}
+.trust .n{font-family:'IBM Plex Serif',serif;font-size:32px;font-weight:700;color:var(--navy)}
 .trust .l{font-size:12.5px;color:var(--mut)}
 
 section{padding:72px 0}
@@ -106,6 +118,18 @@ section{padding:72px 0}
 .path-sec.inview .pnode:nth-child(2){transition-delay:.6s}
 .path-sec.inview .pnode:nth-child(3){transition-delay:1.3s}
 .path-sec.inview .pnode:nth-child(4){transition-delay:2s}
+.pnode-final{transform:translate(940px,60px)}
+.card-pop{transform:scale(.25);transform-origin:0 0;transition:transform .85s cubic-bezier(.34,1.56,.64,1)}
+.path-sec.inview .card-pop{transform:scale(1);transition-delay:2s}
+.check-pop{transform:scale(0) rotate(-30deg);transform-origin:44px -28px;opacity:0;transition:transform .5s cubic-bezier(.34,1.8,.64,1),opacity .3s ease}
+.path-sec.inview .check-pop{transform:scale(1) rotate(8deg);opacity:1;transition-delay:2.5s}
+@keyframes cardPulse{0%,100%{opacity:.18;r:46}50%{opacity:.38;r:54}}
+.path-sec.inview .card-glow{animation:cardPulse 2.1s ease-in-out 2.8s infinite}
+.path-steps>div{opacity:0;transform:translateY(10px);transition:opacity .5s ease,transform .5s ease}
+.path-sec.inview .path-steps>div{opacity:1;transform:translateY(0)}
+.path-sec.inview .path-steps>div:nth-child(1){transition-delay:.6s}
+.path-sec.inview .path-steps>div:nth-child(2){transition-delay:1.3s}
+.path-sec.inview .path-steps>div:nth-child(3){transition-delay:2s}
 
 .serv{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .s-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;display:flex;flex-direction:column;position:relative;overflow:hidden}
@@ -119,25 +143,229 @@ section{padding:72px 0}
 .s-card a{margin-top:14px;font-size:13.5px;font-weight:700;color:var(--navy);text-decoration:none;display:inline-flex;align-items:center;gap:4px}
 .s-card a::after{content:"→";color:var(--gold);transition:transform .25s ease}
 .s-card:hover a::after{transform:translateX(5px)}
-.s-num{position:absolute;top:14px;right:18px;font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:700;color:var(--line);z-index:0;pointer-events:none}
+.s-card--side{flex-direction:row;align-items:center;gap:16px}
+.s-card--side .mascot-box{flex:none;margin-bottom:0}
+.s-card--side .ic{flex:none;margin-bottom:0}
+.s-card--side .s-text{flex:1;min-width:0;display:flex;flex-direction:column}
+@media(max-width:520px){.s-card--side{flex-direction:column;align-items:flex-start}}
+.s-num{position:absolute;top:14px;right:18px;font-family:'IBM Plex Serif',serif;font-size:34px;font-weight:700;color:var(--line);z-index:0;pointer-events:none}
+
+/* MASKOTKA: postać reagująca na temat karty (test — karta "wniosek online") */
+.mascot-box{width:88px;height:88px;border-radius:14px;background:var(--cream);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;margin-bottom:14px;overflow:hidden}
+.mascot-box svg{width:100%;height:100%}
+.m-face-worried{opacity:0}
+.m-eyes-closed{opacity:0}
+.mascot.inview .m-eyes-open{animation:mBlinkOpen 4s ease-in-out infinite}
+.mascot.inview .m-eyes-closed{animation:mBlinkClosed 4s ease-in-out infinite}
+@keyframes mBlinkOpen{0%,90%,100%{opacity:1}94%,97%{opacity:0}}
+@keyframes mBlinkClosed{0%,90%,100%{opacity:0}94%,97%{opacity:1}}
+
+/* karta 02 — zagubienie przy wniosku online */
+.mascot-02.inview .m-head{animation:mHead02 5s ease-in-out infinite}
+.mascot-02.inview .m-arm-l{animation:mArmL02 5s ease-in-out infinite}
+.mascot-02.inview .m-arm-r{animation:mArmR02 5s ease-in-out infinite}
+.mascot-02.inview .m-face-worried{animation:mFaceIn02 5s ease infinite}
+.mascot-02.inview .m-face-focused{animation:mFaceOut02 5s ease infinite}
+@keyframes mHead02{
+  0%,10%{transform:rotate(0deg) translateY(0)}
+  20%{transform:rotate(-4deg) translateY(-2px)}
+  28%{transform:rotate(11deg)}
+  34%{transform:rotate(-11deg)}
+  40%{transform:rotate(9deg)}
+  46%{transform:rotate(-9deg)}
+  52%{transform:rotate(4deg)}
+  58%,80%{transform:rotate(2deg) translateY(-1px)}
+  92%,100%{transform:rotate(0deg) translateY(0)}
+}
+@keyframes mArmL02{
+  0%,50%{transform:rotate(0deg)}
+  60%{transform:rotate(-263deg)}
+  72%,82%{transform:rotate(-219deg)}
+  95%,100%{transform:rotate(0deg)}
+}
+@keyframes mArmR02{
+  0%,50%{transform:rotate(0deg)}
+  60%{transform:rotate(263deg)}
+  72%,82%{transform:rotate(219deg)}
+  95%,100%{transform:rotate(0deg)}
+}
+@keyframes mFaceIn02{0%,28%{opacity:0}45%,80%{opacity:1}95%,100%{opacity:0}}
+@keyframes mFaceOut02{0%,28%{opacity:1}45%,80%{opacity:0}95%,100%{opacity:1}}
+
+/* karta 01 — nadzieja/radość, ręce przy sercu, kiwanie na tak */
+.mascot-01.inview .m-head{animation:mHead01 5s ease-in-out infinite}
+.mascot-01.inview .m-arm-l{animation:mArmL01 5s ease-in-out infinite}
+.mascot-01.inview .m-arm-r{animation:mArmR01 5s ease-in-out infinite}
+.mascot-01.inview .m-face-worried{animation:mFaceIn01 5s ease infinite}
+.mascot-01.inview .m-face-focused{animation:mFaceOut01 5s ease infinite}
+.mascot-01.inview .m-pupils{animation:mPupilsUp01 5s ease infinite}
+@keyframes mHead01{
+  0%,15%{transform:rotate(0deg) translateY(0)}
+  30%{transform:rotate(-2deg) translateY(-1px)}
+  40%{transform:rotate(2deg) translateY(2px)}
+  50%{transform:rotate(-2deg) translateY(-1px)}
+  60%{transform:rotate(2deg) translateY(2px)}
+  70%,88%{transform:rotate(0deg) translateY(0)}
+  100%{transform:rotate(0deg) translateY(0)}
+}
+@keyframes mArmL01{
+  0%,35%{transform:rotate(0deg)}
+  50%,85%{transform:rotate(-95deg)}
+  95%,100%{transform:rotate(0deg)}
+}
+@keyframes mArmR01{
+  0%,35%{transform:rotate(0deg)}
+  50%,85%{transform:rotate(95deg)}
+  95%,100%{transform:rotate(0deg)}
+}
+@keyframes mFaceIn01{0%,30%{opacity:0}45%,85%{opacity:1}95%,100%{opacity:0}}
+@keyframes mFaceOut01{0%,30%{opacity:1}45%,85%{opacity:0}95%,100%{opacity:1}}
+@keyframes mPupilsUp01{0%,30%{transform:translateY(0)}45%,85%{transform:translateY(-1.5px)}95%,100%{transform:translateY(0)}}
+
+/* karta 03 — zagubienie w opcjach, potem uśmiech i kiwanie na tak */
+.m-face-alt03{opacity:0}
+.mascot-03.inview .m-head{animation:mHead03 5s ease-in-out infinite}
+.mascot-03.inview .m-arm-r{animation:mArmR03 5s ease-in-out infinite}
+.mascot-03.inview .m-face-worried{animation:mFaceIn03 5s ease infinite}
+.mascot-03.inview .m-face-focused{animation:mFaceOut03 5s ease infinite}
+.mascot-03.inview .m-face-alt03{animation:mFaceAlt03 5s ease infinite}
+@keyframes mHead03{
+  0%,15%{transform:rotate(0deg) translateY(0)}
+  30%,55%{transform:rotate(9deg) translateY(-1px)}
+  65%{transform:rotate(0deg) translateY(0)}
+  73%{transform:rotate(-3deg) translateY(-1px)}
+  80%{transform:rotate(3deg) translateY(2px)}
+  87%{transform:rotate(-3deg) translateY(-1px)}
+  93%,100%{transform:rotate(0deg) translateY(0)}
+}
+@keyframes mArmR03{
+  0%,20%{transform:rotate(0deg)}
+  35%,65%{transform:rotate(219deg)}
+  80%,100%{transform:rotate(0deg)}
+}
+@keyframes mFaceIn03{0%,20%{opacity:0}30%,65%{opacity:1}75%,100%{opacity:0}}
+@keyframes mFaceOut03{0%,20%{opacity:1}30%,70%{opacity:0}93%,100%{opacity:1}}
+@keyframes mFaceAlt03{0%,70%{opacity:0}78%,90%{opacity:1}97%,100%{opacity:0}}
+
+/* karta 04 — uśmiech, dzieci wjeżdżają z boków, mrugnięcie */
+.m-child-l{transform:translate(-25px,90px)}
+.m-child-r{transform:translate(145px,90px)}
+.mascot-04.inview .m-head{animation:mHead04 5s ease-in-out infinite}
+.mascot-04.inview .m-face-worried{animation:mFaceIn04 5s ease infinite}
+.mascot-04.inview .m-face-focused{animation:mFaceOut04 5s ease infinite}
+.mascot-04.inview .m-child-l{animation:mChildL04 5s ease-in-out infinite}
+.mascot-04.inview .m-child-r{animation:mChildR04 5s ease-in-out infinite}
+.mascot-04.inview .m-eyes-open{animation:mBlinkOpen04 5s ease-in-out infinite}
+.mascot-04.inview .m-eyes-closed{animation:mBlinkClosed04 5s ease-in-out infinite}
+@keyframes mHead04{
+  0%,15%{transform:rotate(0deg) translateY(0)}
+  30%{transform:rotate(-3deg) translateY(-1px)}
+  45%,85%{transform:rotate(2deg) translateY(-1px)}
+  95%,100%{transform:rotate(0deg) translateY(0)}
+}
+@keyframes mFaceIn04{0%,20%{opacity:0}32%,88%{opacity:1}96%,100%{opacity:0}}
+@keyframes mFaceOut04{0%,20%{opacity:1}32%,88%{opacity:0}96%,100%{opacity:1}}
+@keyframes mChildL04{0%,42%{transform:translate(-25px,90px)}60%,90%{transform:translate(14px,90px)}100%{transform:translate(-25px,90px)}}
+@keyframes mChildR04{0%,42%{transform:translate(145px,90px)}60%,90%{transform:translate(106px,90px)}100%{transform:translate(145px,90px)}}
+@keyframes mBlinkOpen04{0%,70%,100%{opacity:1}75%,79%{opacity:0}}
+@keyframes mBlinkClosed04{0%,70%,100%{opacity:0}75%,79%{opacity:1}}
+
+/* karta 05 — niepokój przed zmianą, splecione dłonie, zerkanie na boki */
+.mascot-05.inview .m-head{animation:mHead05 5s ease-in-out infinite}
+.mascot-05.inview .m-arm-l{animation:mArmL05 5s ease-in-out infinite}
+.mascot-05.inview .m-arm-r{animation:mArmR05 5s ease-in-out infinite}
+.mascot-05.inview .m-face-worried{animation:mFaceIn05 5s ease infinite}
+.mascot-05.inview .m-face-focused{animation:mFaceOut05 5s ease infinite}
+@keyframes mHead05{
+  0%,15%{transform:rotate(0deg)}
+  22%{transform:rotate(6deg)}
+  28%{transform:rotate(-6deg)}
+  34%{transform:rotate(6deg)}
+  40%{transform:rotate(-6deg)}
+  46%{transform:rotate(4deg)}
+  52%,66%{transform:rotate(0deg)}
+  100%{transform:rotate(0deg)}
+}
+@keyframes mArmL05{
+  0%,20%{transform:rotate(0deg)}
+  35%{transform:rotate(-75deg)}
+  40%{transform:rotate(-68deg)}
+  46%{transform:rotate(-78deg)}
+  52%{transform:rotate(-68deg)}
+  58%{transform:rotate(-78deg)}
+  64%{transform:rotate(-75deg)}
+  80%,100%{transform:rotate(0deg)}
+}
+@keyframes mArmR05{
+  0%,20%{transform:rotate(0deg)}
+  35%{transform:rotate(75deg)}
+  40%{transform:rotate(68deg)}
+  46%{transform:rotate(78deg)}
+  52%{transform:rotate(68deg)}
+  58%{transform:rotate(78deg)}
+  64%{transform:rotate(75deg)}
+  80%,100%{transform:rotate(0deg)}
+}
+@keyframes mFaceIn05{0%,15%{opacity:0}25%,75%{opacity:1}90%,100%{opacity:0}}
+@keyframes mFaceOut05{0%,15%{opacity:1}25%,75%{opacity:0}90%,100%{opacity:1}}
+
+/* karta 06 — rozczarowanie z iskrą determinacji */
+.m-face-alt06{opacity:0}
+.mascot-06.inview .m-head{animation:mHead06 5s ease-in-out infinite}
+.mascot-06.inview .m-arm-l{animation:mArmL06 5s ease-in-out infinite}
+.mascot-06.inview .m-face-worried{animation:mFaceIn06 5s ease infinite}
+.mascot-06.inview .m-face-focused{animation:mFaceOut06 5s ease infinite}
+.mascot-06.inview .m-face-alt06{animation:mFaceAlt06 5s ease infinite}
+@keyframes mHead06{
+  0%,15%{transform:rotate(0deg) translateY(0)}
+  30%,50%{transform:rotate(8deg) translateY(3px)}
+  65%{transform:rotate(0deg) translateY(0)}
+  78%,92%{transform:rotate(-4deg) translateY(-2px)}
+  100%{transform:rotate(0deg) translateY(0)}
+}
+@keyframes mArmL06{
+  0%,20%{transform:rotate(0deg)}
+  35%,55%{transform:rotate(-219deg)}
+  70%,100%{transform:rotate(0deg)}
+}
+@keyframes mFaceIn06{0%,20%{opacity:0}30%,55%{opacity:1}62%,100%{opacity:0}}
+@keyframes mFaceOut06{0%,20%{opacity:1}30%,90%{opacity:0}95%,100%{opacity:1}}
+@keyframes mFaceAlt06{0%,65%{opacity:0}72%,90%{opacity:1}96%,100%{opacity:0}}
+
+@media(prefers-reduced-motion:reduce){
+  .mascot .m-head,.mascot .m-arm-l,.mascot .m-arm-r,.mascot .m-face-worried,.mascot .m-face-focused{animation:none!important}
+  .mascot .m-face-worried{opacity:1}
+  .mascot .m-face-focused{opacity:0}
+  .mascot-02 .m-arm-l{transform:rotate(-219deg)}
+  .mascot-02 .m-arm-r{transform:rotate(219deg)}
+  .mascot-01 .m-arm-l{transform:rotate(-95deg)}
+  .mascot-01 .m-arm-r{transform:rotate(95deg)}
+  .mascot-03 .m-arm-r{transform:rotate(219deg)}
+  .mascot-04 .m-child-l,.mascot-04 .m-child-r{animation:none!important}
+  .mascot-04 .m-child-l{transform:translate(14px,90px)}
+  .mascot-04 .m-child-r{transform:translate(106px,90px)}
+  .mascot-05 .m-arm-l{transform:rotate(-75deg)}
+  .mascot-05 .m-arm-r{transform:rotate(75deg)}
+  .mascot-06 .m-arm-l{transform:rotate(-219deg)}
+}
 
 .mos-sec{background:var(--navy);color:#fff}
 .mos-sec h2{color:#fff}
 .mos-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
 .mos-list{list-style:none;margin-top:18px}
-.mos-list li{padding:10px 0 10px 30px;position:relative;font-size:15px;color:#D7DDE9;border-bottom:1px solid rgba(255,255,255,.08)}
+.mos-list li{padding:10px 0 10px 30px;position:relative;font-size:15px;color:#dce4f5;border-bottom:1px solid rgba(255,255,255,.08)}
 .mos-list li::before{content:"✓";position:absolute;left:0;color:var(--gold);font-weight:700}
-.mos-panel{background:rgba(255,255,255,.05);border:1px solid rgba(201,169,97,.35);border-radius:16px;padding:28px}
-.mos-panel .price{font-family:'Cormorant Garamond',serif;font-size:44px;color:var(--gold-l);font-weight:700}
-.mos-panel .per{font-size:13px;color:#AAB4C8}
+.mos-panel{background:rgba(255,255,255,.05);border:1px solid rgba(70,54,201,.35);border-radius:16px;padding:28px}
+.mos-panel .price{font-family:'IBM Plex Serif',serif;font-size:44px;color:var(--gold-l);font-weight:700}
+.mos-panel .per{font-size:13px;color:#cdd8ee}
 
 .plany{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:stretch}
 .plan{background:#fff;border:1px solid var(--line);border-radius:16px;padding:30px 26px;display:flex;flex-direction:column;position:relative}
 .plan.best{border:2px solid var(--gold);box-shadow:0 14px 40px rgba(27,42,74,.10)}
 .plan .tag{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--gold);color:var(--navy);font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:5px 14px;border-radius:999px;white-space:nowrap}
 .plan h3{font-size:22px}
-.plan .cena{font-family:'Cormorant Garamond',serif;font-size:42px;font-weight:700;color:var(--navy);margin:8px 0 2px}
-.plan .cena small{font-size:16px;color:var(--mut);font-family:'Inter',sans-serif;font-weight:500}
+.plan .cena{font-family:'IBM Plex Serif',serif;font-size:42px;font-weight:700;color:var(--navy);margin:8px 0 2px}
+.plan .cena small{font-size:16px;color:var(--mut);font-family:'IBM Plex Sans',sans-serif;font-weight:500}
 .plan ul{list-style:none;margin:18px 0;flex:1}
 .plan li{font-size:14px;padding:7px 0 7px 26px;position:relative}
 .plan li::before{content:"✓";position:absolute;left:0;color:var(--gold);font-weight:800}
@@ -147,10 +375,10 @@ section{padding:72px 0}
 .calc-teaser{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .ct-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
 .ct-demo{background:var(--cream);border:1px solid var(--line);border-radius:16px;padding:26px}
-.ct-demo .bar{height:12px;background:#E7E0D3;border-radius:8px;overflow:hidden;margin:14px 0 8px}
+.ct-demo .bar{height:12px;background:#e6e9f0;border-radius:8px;overflow:hidden;margin:14px 0 8px}
 .ct-demo .bar div{width:0;height:100%;background:linear-gradient(90deg,var(--ok),#7FB894);transition:width 1.4s ease}
 .ct-demo.inview .bar div{width:71%}
-.ct-demo .big{font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:700;color:var(--navy)}
+.ct-demo .big{font-family:'IBM Plex Serif',serif;font-size:40px;font-weight:700;color:var(--navy)}
 
 .faq details{background:#fff;border:1px solid var(--line);border-radius:12px;margin-bottom:10px;overflow:hidden}
 .faq summary{cursor:pointer;padding:18px 20px 18px 24px;font-weight:600;font-size:15.5px;color:var(--navy);list-style:none;display:flex;justify-content:space-between;gap:16px;position:relative;transition:background .25s ease,padding-left .25s ease}
@@ -169,8 +397,8 @@ section{padding:72px 0}
 .k-way:hover{border-color:var(--gold)}
 .k-way .ki{width:42px;height:42px;border-radius:10px;background:var(--gold);color:var(--navy);display:flex;align-items:center;justify-content:center;font-size:19px;flex:none}
 .k-way b{display:block;font-size:15px}
-.k-way span{font-size:12.5px;color:#AAB4C8}
-.k-info{background:rgba(255,255,255,.05);border:1px solid rgba(201,169,97,.3);border-radius:16px;padding:28px;font-size:14.5px;color:#D7DDE9}
+.k-way span{font-size:12.5px;color:#cdd8ee}
+.k-info{background:rgba(255,255,255,.05);border:1px solid rgba(70,54,201,.3);border-radius:16px;padding:28px;font-size:14.5px;color:#dce4f5}
 .k-info h3{color:var(--gold-l);font-size:22px;margin-bottom:12px}
 .k-info p{margin-bottom:8px}
 
@@ -194,6 +422,9 @@ footer .upd{margin-top:14px;font-size:11.5px;color:#6B7890}
   .rc-stamp{opacity:1;transform:rotate(8deg) scale(1)}
   #goldpath{stroke-dashoffset:0}
   .pnode{opacity:1}
+  .card-pop{transform:none}
+  .check-pop{transform:none;opacity:1}
+  .path-steps>div{opacity:1;transform:none}
   .ct-demo .bar div{width:71%}
 }
 </style>
@@ -205,12 +436,16 @@ footer .upd{margin-top:14px;font-size:11.5px;color:#6B7890}
 <header>
   <div class="wrap nav">
     <a class="logo" href="/">
-      <div class="mark">CO</div>
+      <span class="flag flag-ue" aria-label="Unia Europejska">
+        <svg width="26" height="26" viewBox="0 0 34 34" aria-hidden="true"><g fill="#ffcc00" style="font-size:7px" text-anchor="middle" dominant-baseline="central"><text x="17" y="5">★</text><text x="23" y="6.6">★</text><text x="27.4" y="11">★</text><text x="29" y="17">★</text><text x="27.4" y="23">★</text><text x="23" y="27.4">★</text><text x="17" y="29">★</text><text x="11" y="27.4">★</text><text x="6.6" y="23">★</text><text x="5" y="17">★</text><text x="6.6" y="11">★</text><text x="11" y="6.6">★</text></g></svg>
+      </span>
       <div class="name">Centrum Obsługi<br>Spraw Cudzoziemców</div>
+      <span class="flag flag-pl" aria-label="Polska"><span class="fw"></span><span class="fr"></span></span>
     </a>
     <nav class="menu">
       <a href="#uslugi">Usługi</a>
       <a href="#mos">Wniosek MOS</a>
+      <a href="formularz-pobyt-czasowy-praca-NOWA.html">Ankieta</a>
       <a href="#cennik">Cennik</a>
       <a href="#kalkulator">Kalkulator 90/180</a>
       <a href="#faq">FAQ</a>
@@ -220,6 +455,7 @@ footer .upd{margin-top:14px;font-size:11.5px;color:#6B7890}
     <button class="burger" aria-label="Menu">☰</button>
   </div>
 </header>
+<div class="flagbar" aria-hidden="true"></div>
 
 <div class="hero">
   <div class="wrap hero-grid">
@@ -270,7 +506,7 @@ footer .upd{margin-top:14px;font-size:11.5px;color:#6B7890}
 <div class="trustbar">
   <div class="wrap trust">
     <div><div class="n"><span class="cnt" data-to="1240">0</span>+</div><div class="l">złożonych wniosków <em style="color:#B99;font-style:normal">[LICZBA DO POTWIERDZENIA]</em></div></div>
-    <div><div class="n"><span class="cnt" data-to="4">0</span></div><div class="l">języki, w których się dogadamy</div></div>
+    <div><div class="n"><span class="cnt" data-to="6">0</span></div><div class="l">języki, w których się dogadamy</div></div>
     <div><div class="n">1</div><div class="l">opiekun Twojej sprawy — od początku do końca</div></div>
     <div><div class="n">0 zł</div><div class="l">ryzyka — gwarancja na piśmie*</div></div>
   </div>
@@ -283,10 +519,37 @@ footer .upd{margin-top:14px;font-size:11.5px;color:#6B7890}
       <h2>Trzy kroki. My idziemy z Tobą przez wszystkie.</h2>
     </div>
     <svg class="path-svg" viewBox="0 0 1000 190" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <path id="goldpath" d="M60 150 C 250 40, 420 40, 500 95 S 780 170, 940 60" fill="none" stroke="#C9A961" stroke-width="3" stroke-linecap="round"/>
-      <g class="pnode"><circle cx="60" cy="150" r="26" fill="#FAF8F5" stroke="#C9A961" stroke-width="2"/><text x="60" y="157" text-anchor="middle" font-size="20">📄</text></g>
-      <g class="pnode"><circle cx="500" cy="95" r="26" fill="#FAF8F5" stroke="#C9A961" stroke-width="2"/><text x="500" y="102" text-anchor="middle" font-size="20">🏛️</text></g>
-      <g class="pnode"><circle cx="940" cy="60" r="26" fill="#FAF8F5" stroke="#C9A961" stroke-width="2"/><text x="940" y="67" text-anchor="middle" font-size="20">🪪</text></g>
+      <defs>
+        <linearGradient id="cardGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#f4f6fb"/>
+          <stop offset="1" stop-color="#e6e9f0"/>
+        </linearGradient>
+        <linearGradient id="chipGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#4636c9"/>
+          <stop offset="1" stop-color="#3b2fbf"/>
+        </linearGradient>
+      </defs>
+      <path id="goldpath" d="M60 150 C 250 40, 420 40, 500 95 S 780 170, 940 60" fill="none" stroke="#4636c9" stroke-width="3" stroke-linecap="round"/>
+      <g class="pnode"><circle cx="60" cy="150" r="26" fill="#f4f6fb" stroke="#4636c9" stroke-width="2"/><text x="60" y="157" text-anchor="middle" font-size="20">📄</text></g>
+      <g class="pnode"><circle cx="500" cy="95" r="26" fill="#f4f6fb" stroke="#4636c9" stroke-width="2"/><text x="500" y="102" text-anchor="middle" font-size="20">🏛️</text></g>
+      <g class="pnode pnode-final">
+        <circle class="card-glow" cx="0" cy="0" r="46" fill="#4636c9" opacity="0.18"/>
+        <g class="card-pop">
+          <rect x="-50" y="-32" width="100" height="64" rx="9" fill="url(#cardGrad)" stroke="#4636c9" stroke-width="2"/>
+          <text x="0" y="-20" text-anchor="middle" font-size="8" font-weight="700" letter-spacing="1" fill="#4636c9">KARTA POBYTU</text>
+          <line x1="-42" y1="-14" x2="42" y2="-14" stroke="#4636c9" stroke-opacity="0.35" stroke-width="1"/>
+          <rect x="-42" y="-8" width="22" height="28" rx="4" fill="#d8dce6" stroke="#b9bff0" stroke-width="1"/>
+          <text x="-31" y="12" text-anchor="middle" font-size="16">🧑</text>
+          <rect x="-14" y="-4" width="56" height="4" rx="2" fill="#6f7691" opacity="0.55"/>
+          <rect x="-14" y="4" width="42" height="3" rx="1.5" fill="#6f7691" opacity="0.4"/>
+          <rect x="-14" y="11" width="48" height="3" rx="1.5" fill="#6f7691" opacity="0.4"/>
+          <rect x="-14" y="18" width="16" height="11" rx="2" fill="url(#chipGrad)"/>
+        </g>
+        <g class="check-pop">
+          <circle cx="44" cy="-28" r="13" fill="#1E8E5A" stroke="#f4f6fb" stroke-width="2.5"/>
+          <path d="M38 -28 l4 4.5 l9 -10" stroke="#fff" stroke-width="2.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+      </g>
     </svg>
     <div class="path-steps">
       <div><h3>1. Wniosek</h3><p>Przygotowujemy i składamy Twój wniosek w systemie MOS — poprawnie za pierwszym razem, w Twoim języku.</p></div>
@@ -303,12 +566,261 @@ footer .upd{margin-top:14px;font-size:11.5px;color:#6B7890}
       <h2>Twoja sytuacja — nasze rozwiązanie</h2>
     </div>
     <div class="serv">
-      <div class="s-card"><div class="s-num">01</div><div class="ic">🪪</div><h3>Chcesz zostać w Polsce legalnie</h3><p>Karta pobytu czasowego daje Ci spokój na lata — legalny pobyt, pracę i podróże. Poprowadzimy Cię od pierwszego dokumentu do odbioru karty.</p><a href="artykul-karta-pobytu-czasowego.html">Zobacz, jak to działa</a></div>
-      <div class="s-card"><div class="s-num">02</div><div class="ic">🖥️</div><h3>Nie wiesz, jak złożyć wniosek online</h3><p>Wniosek w systemie MOS jest tylko po polsku. Wypełnimy go i złożymy razem z Tobą — bez błędów, które kosztują sprawę.</p><a href="artykul-mos-jak-zlozyc-wniosek.html">Zobacz, jak to działa</a></div>
-      <div class="s-card"><div class="s-num">03</div><div class="ic">💼</div><h3>Chcesz legalnie pracować</h3><p>Zezwolenie na pracę, zezwolenie jednolite, oświadczenie — dobierzemy właściwą drogę dla Ciebie i Twojego pracodawcy.</p><a href="#kontakt">Zobacz, jak to działa</a></div>
-      <div class="s-card"><div class="s-num">04</div><div class="ic">🏛️</div><h3>Planujesz przyszłość w Polsce</h3><p>Pobyt stały lub rezydent długoterminowy UE — dla Ciebie i Twojej rodziny, na zawsze, bez odnawiania co kilka lat.</p><a href="#kontakt">Zobacz, jak to działa</a></div>
-      <div class="s-card"><div class="s-num">05</div><div class="ic">🔁</div><h3>Zmieniasz pracę</h3><p>Nowa praca nie musi oznaczać problemów z kartą. Przeprowadzimy zmianę pracodawcy tak, żeby Twój status był bezpieczny.</p><a href="#kontakt">Zobacz, jak to działa</a></div>
-      <div class="s-card"><div class="s-num">06</div><div class="ic">⚖️</div><h3>Dostałeś decyzję odmowną</h3><p>To nie koniec Twojej sprawy. Przeanalizujemy akta i poprowadzimy odwołanie — wiele odmów da się odwrócić.</p><a href="#kontakt">Zobacz, jak to działa</a></div>
+      <div class="s-card s-card--side"><div class="s-num">01</div><div class="mascot-box"><svg class="mascot mascot-01" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <path d="M30 120 L30 96 Q30 76 60 74 Q90 76 90 96 L90 120 Z" fill="#9B80C4"/>
+  <g class="m-arm-l" style="transform-origin:34px 86px"><rect x="30" y="86" width="8" height="26" rx="4" fill="#9B80C4"/><circle cx="34" cy="112" r="4.5" fill="#C98E5E"/></g>
+  <g class="m-arm-r" style="transform-origin:86px 86px"><rect x="82" y="86" width="8" height="26" rx="4" fill="#9B80C4"/><circle cx="86" cy="112" r="4.5" fill="#C98E5E"/></g>
+  <path d="M49 76 Q60 90 71 76 Q60 83 49 76 Z" fill="#C98E5E"/>
+  <path d="M45 93 Q52 99 46 105" stroke="#7C63A0" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.35"/>
+  <path d="M75 93 Q68 99 74 105" stroke="#7C63A0" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.35"/>
+  <g class="m-head" style="transform-origin:60px 52px">
+    <path d="M60 24 C34 24 26 46 30 66 C32 80 30 92 34 102 C40 96 44 82 44 68 C44 56 50 48 60 48 C70 48 76 56 76 68 C76 82 80 96 86 102 C90 92 88 80 90 66 C94 46 86 24 60 24 Z" fill="#2A1E14"/>
+    <circle cx="60" cy="52" r="19" fill="#C98E5E"/>
+    <circle cx="47" cy="59" r="3.2" fill="#E8977E" opacity="0.4"/>
+    <circle cx="73" cy="59" r="3.2" fill="#E8977E" opacity="0.4"/>
+    <g class="m-eyes-open">
+      <ellipse cx="52" cy="50" rx="4.5" ry="3.2" fill="#fff"/>
+      <ellipse cx="68" cy="50" rx="4.5" ry="3.2" fill="#fff"/>
+      <g class="m-pupils">
+        <circle cx="52.7" cy="50" r="2.3" fill="#3B2A1E"/>
+        <circle cx="68.7" cy="50" r="2.3" fill="#3B2A1E"/>
+      </g>
+      <path d="M47 47 L45.5 45" stroke="#2A1E14" stroke-width="1" stroke-linecap="round"/>
+      <path d="M73 47 L74.5 45" stroke="#2A1E14" stroke-width="1" stroke-linecap="round"/>
+    </g>
+    <g class="m-eyes-closed">
+      <path d="M48 50 Q52 52.5 56 50" stroke="#2A1E14" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+      <path d="M64 50 Q68 52.5 72 50" stroke="#2A1E14" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    </g>
+    <g class="m-face-focused">
+      <path d="M49 44 Q52.5 42 56 43.5" stroke="#2A1E14" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+      <path d="M64 43.5 Q67.5 42 71 44" stroke="#2A1E14" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+      <path d="M52 62 Q60 67 68 62" stroke="#B5574A" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    </g>
+    <g class="m-face-worried">
+      <path d="M48 42.5 Q52 41 56 42.5" stroke="#2A1E14" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+      <path d="M64 42.5 Q68 41 72 42.5" stroke="#2A1E14" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+      <path d="M49 60 Q60 71 71 60 Q60 66 49 60 Z" fill="#fff"/>
+      <path d="M49 60 Q60 71 71 60" stroke="#B5574A" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg></div><div class="s-text"><h3>Chcesz zostać w Polsce legalnie</h3><p>Karta pobytu czasowego daje Ci spokój na lata — legalny pobyt, pracę i podróże. Poprowadzimy Cię od pierwszego dokumentu do odbioru karty.</p><a href="artykul-karta-pobytu-czasowego.html">Zobacz, jak to działa</a></div></div>
+      <div class="s-card s-card--side"><div class="s-num">02</div><div class="mascot-box"><svg class="mascot mascot-02" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <path d="M30 120 L30 96 Q30 76 60 74 Q90 76 90 96 L90 120 Z" fill="#9B80C4"/>
+  <g class="m-arm-l" style="transform-origin:34px 86px"><rect x="30" y="86" width="8" height="26" rx="4" fill="#9B80C4"/><circle cx="34" cy="112" r="4.5" fill="#C98E5E"/></g>
+  <g class="m-arm-r" style="transform-origin:86px 86px"><rect x="82" y="86" width="8" height="26" rx="4" fill="#9B80C4"/><circle cx="86" cy="112" r="4.5" fill="#C98E5E"/></g>
+  <path d="M49 76 Q60 90 71 76 Q60 83 49 76 Z" fill="#C98E5E"/>
+  <path d="M45 93 Q52 99 46 105" stroke="#7C63A0" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.35"/>
+  <path d="M75 93 Q68 99 74 105" stroke="#7C63A0" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.35"/>
+  <g class="m-head" style="transform-origin:60px 52px">
+    <path d="M60 24 C34 24 26 46 30 66 C32 80 30 92 34 102 C40 96 44 82 44 68 C44 56 50 48 60 48 C70 48 76 56 76 68 C76 82 80 96 86 102 C90 92 88 80 90 66 C94 46 86 24 60 24 Z" fill="#2A1E14"/>
+    <circle cx="60" cy="52" r="19" fill="#C98E5E"/>
+    <circle cx="47" cy="59" r="3.2" fill="#E8977E" opacity="0.4"/>
+    <circle cx="73" cy="59" r="3.2" fill="#E8977E" opacity="0.4"/>
+    <g class="m-eyes-open">
+      <ellipse cx="52" cy="50" rx="4.5" ry="3.2" fill="#fff"/>
+      <ellipse cx="68" cy="50" rx="4.5" ry="3.2" fill="#fff"/>
+      <circle cx="52.7" cy="50" r="2.3" fill="#3B2A1E"/>
+      <circle cx="68.7" cy="50" r="2.3" fill="#3B2A1E"/>
+      <path d="M47 47 L45.5 45" stroke="#2A1E14" stroke-width="1" stroke-linecap="round"/>
+      <path d="M73 47 L74.5 45" stroke="#2A1E14" stroke-width="1" stroke-linecap="round"/>
+    </g>
+    <g class="m-eyes-closed">
+      <path d="M48 50 Q52 52.5 56 50" stroke="#2A1E14" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+      <path d="M64 50 Q68 52.5 72 50" stroke="#2A1E14" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    </g>
+    <g class="m-face-focused">
+      <path d="M49 44 Q52.5 42 56 43.5" stroke="#2A1E14" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+      <path d="M64 43.5 Q67.5 42 71 44" stroke="#2A1E14" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+      <path d="M52 62 Q60 67 68 62" stroke="#B5574A" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    </g>
+    <g class="m-face-worried">
+      <path d="M46 44 Q50 40.5 55 43" stroke="#2A1E14" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+      <path d="M65 43 Q70 40.5 74 44" stroke="#2A1E14" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+      <path d="M54 65 Q60 61 66 65" stroke="#B5574A" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg></div><div class="s-text"><h3>Nie wiesz, jak złożyć wniosek online</h3><p>Wniosek w systemie MOS jest tylko po polsku. Wypełnimy go i złożymy razem z Tobą — bez błędów, które kosztują sprawę.</p><a href="artykul-mos-jak-zlozyc-wniosek.html">Zobacz, jak to działa</a></div></div>
+      <div class="s-card s-card--side"><div class="s-num">03</div><div class="mascot-box"><svg class="mascot mascot-03" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <path d="M30 120 L30 96 Q30 76 60 74 Q90 76 90 96 L90 120 Z" fill="#9B80C4"/>
+  <g class="m-arm-l" style="transform-origin:34px 86px"><rect x="30" y="86" width="8" height="26" rx="4" fill="#9B80C4"/><circle cx="34" cy="112" r="4.5" fill="#C98E5E"/></g>
+  <g class="m-arm-r" style="transform-origin:86px 86px"><rect x="82" y="86" width="8" height="26" rx="4" fill="#9B80C4"/><circle cx="86" cy="112" r="4.5" fill="#C98E5E"/></g>
+  <path d="M49 76 Q60 90 71 76 Q60 83 49 76 Z" fill="#C98E5E"/>
+  <path d="M45 93 Q52 99 46 105" stroke="#7C63A0" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.35"/>
+  <path d="M75 93 Q68 99 74 105" stroke="#7C63A0" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.35"/>
+  <g class="m-head" style="transform-origin:60px 52px">
+    <path d="M60 24 C34 24 26 46 30 66 C32 80 30 92 34 102 C40 96 44 82 44 68 C44 56 50 48 60 48 C70 48 76 56 76 68 C76 82 80 96 86 102 C90 92 88 80 90 66 C94 46 86 24 60 24 Z" fill="#2A1E14"/>
+    <circle cx="60" cy="52" r="19" fill="#C98E5E"/>
+    <circle cx="47" cy="59" r="3.2" fill="#E8977E" opacity="0.4"/>
+    <circle cx="73" cy="59" r="3.2" fill="#E8977E" opacity="0.4"/>
+    <g class="m-eyes-open">
+      <ellipse cx="52" cy="50" rx="4.5" ry="3.2" fill="#fff"/>
+      <ellipse cx="68" cy="50" rx="4.5" ry="3.2" fill="#fff"/>
+      <circle cx="52.7" cy="50" r="2.3" fill="#3B2A1E"/>
+      <circle cx="68.7" cy="50" r="2.3" fill="#3B2A1E"/>
+      <path d="M47 47 L45.5 45" stroke="#2A1E14" stroke-width="1" stroke-linecap="round"/>
+      <path d="M73 47 L74.5 45" stroke="#2A1E14" stroke-width="1" stroke-linecap="round"/>
+    </g>
+    <g class="m-eyes-closed">
+      <path d="M48 50 Q52 52.5 56 50" stroke="#2A1E14" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+      <path d="M64 50 Q68 52.5 72 50" stroke="#2A1E14" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    </g>
+    <g class="m-face-focused">
+      <path d="M49 44 Q52.5 42 56 43.5" stroke="#2A1E14" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+      <path d="M64 43.5 Q67.5 42 71 44" stroke="#2A1E14" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+      <path d="M52 62 Q60 67 68 62" stroke="#B5574A" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    </g>
+    <g class="m-face-worried">
+      <path d="M48 43 Q52 40.5 56 42.5" stroke="#2A1E14" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+      <path d="M64 44 Q67.5 43 71 44.5" stroke="#2A1E14" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+      <path d="M53 63 Q60 64 67 63" stroke="#B5574A" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    </g>
+    <g class="m-face-alt03">
+      <path d="M48 42.5 Q52 41 56 42.5" stroke="#2A1E14" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+      <path d="M64 42.5 Q68 41 72 42.5" stroke="#2A1E14" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+      <path d="M49 60 Q60 71 71 60 Q60 66 49 60 Z" fill="#fff"/>
+      <path d="M49 60 Q60 71 71 60" stroke="#B5574A" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg></div><div class="s-text"><h3>Chcesz legalnie pracować</h3><p>Zezwolenie na pracę, zezwolenie jednolite, oświadczenie — dobierzemy właściwą drogę dla Ciebie i Twojego pracodawcy.</p><a href="#kontakt">Zobacz, jak to działa</a></div></div>
+      <div class="s-card s-card--side"><div class="s-num">04</div><div class="mascot-box"><svg class="mascot mascot-04" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <path d="M30 120 L30 96 Q30 76 60 74 Q90 76 90 96 L90 120 Z" fill="#9B80C4"/>
+  <g class="m-arm-l" style="transform-origin:34px 86px"><rect x="30" y="86" width="8" height="26" rx="4" fill="#9B80C4"/><circle cx="34" cy="112" r="4.5" fill="#C98E5E"/></g>
+  <g class="m-arm-r" style="transform-origin:86px 86px"><rect x="82" y="86" width="8" height="26" rx="4" fill="#9B80C4"/><circle cx="86" cy="112" r="4.5" fill="#C98E5E"/></g>
+  <path d="M49 76 Q60 90 71 76 Q60 83 49 76 Z" fill="#C98E5E"/>
+  <path d="M45 93 Q52 99 46 105" stroke="#7C63A0" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.35"/>
+  <path d="M75 93 Q68 99 74 105" stroke="#7C63A0" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.35"/>
+  <g class="m-child-l">
+    <path d="M-11 10 C-11 6 -6 3 0 3 C6 3 11 6 11 10 L11 24 L-11 24 Z" fill="#E0A94E"/>
+    <rect x="-9" y="22" width="6" height="10" rx="2" fill="#C98E5E"/>
+    <rect x="3" y="22" width="6" height="10" rx="2" fill="#C98E5E"/>
+    <circle cx="-11" cy="12" r="3.4" fill="#D9A876"/>
+    <circle cx="11" cy="12" r="3.4" fill="#D9A876"/>
+    <circle cx="0" cy="-2" r="10.5" fill="#D9A876"/>
+    <path d="M-8.5 -10 Q0 -19.5 8.5 -10 Q7.5 -14.5 0 -15.5 Q-7.5 -14.5 -8.5 -10 Z" fill="#3B2A1E"/>
+    <circle cx="-4" cy="-3" r="1.4" fill="#2A1E14"/>
+    <circle cx="4" cy="-3" r="1.4" fill="#2A1E14"/>
+    <path d="M-3.5 2 Q0 4.5 3.5 2" stroke="#8A4B3A" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+  </g>
+  <g class="m-child-r">
+    <path d="M-11 10 C-11 6 -6 3 0 3 C6 3 11 6 11 10 L11 24 L-11 24 Z" fill="#5FA8A3"/>
+    <rect x="-9" y="22" width="6" height="10" rx="2" fill="#C98E5E"/>
+    <rect x="3" y="22" width="6" height="10" rx="2" fill="#C98E5E"/>
+    <circle cx="-11" cy="12" r="3.4" fill="#D9A876"/>
+    <circle cx="11" cy="12" r="3.4" fill="#D9A876"/>
+    <circle cx="0" cy="-2" r="10.5" fill="#D9A876"/>
+    <path d="M-8.5 -10 Q0 -19.5 8.5 -10 Q7.5 -14.5 0 -15.5 Q-7.5 -14.5 -8.5 -10 Z" fill="#3B2A1E"/>
+    <circle cx="-4" cy="-3" r="1.4" fill="#2A1E14"/>
+    <circle cx="4" cy="-3" r="1.4" fill="#2A1E14"/>
+    <path d="M-3.5 2 Q0 4.5 3.5 2" stroke="#8A4B3A" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+  </g>
+  <g class="m-head" style="transform-origin:60px 52px">
+    <path d="M60 24 C34 24 26 46 30 66 C32 80 30 92 34 102 C40 96 44 82 44 68 C44 56 50 48 60 48 C70 48 76 56 76 68 C76 82 80 96 86 102 C90 92 88 80 90 66 C94 46 86 24 60 24 Z" fill="#2A1E14"/>
+    <circle cx="60" cy="52" r="19" fill="#C98E5E"/>
+    <circle cx="47" cy="59" r="3.2" fill="#E8977E" opacity="0.4"/>
+    <circle cx="73" cy="59" r="3.2" fill="#E8977E" opacity="0.4"/>
+    <g class="m-eyes-open">
+      <ellipse cx="52" cy="50" rx="4.5" ry="3.2" fill="#fff"/>
+      <ellipse cx="68" cy="50" rx="4.5" ry="3.2" fill="#fff"/>
+      <circle cx="52.7" cy="50" r="2.3" fill="#3B2A1E"/>
+      <circle cx="68.7" cy="50" r="2.3" fill="#3B2A1E"/>
+      <path d="M47 47 L45.5 45" stroke="#2A1E14" stroke-width="1" stroke-linecap="round"/>
+      <path d="M73 47 L74.5 45" stroke="#2A1E14" stroke-width="1" stroke-linecap="round"/>
+    </g>
+    <g class="m-eyes-closed">
+      <path d="M48 50 Q52 52.5 56 50" stroke="#2A1E14" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+      <path d="M64 50 Q68 52.5 72 50" stroke="#2A1E14" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    </g>
+    <g class="m-face-focused">
+      <path d="M49 44 Q52.5 42 56 43.5" stroke="#2A1E14" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+      <path d="M64 43.5 Q67.5 42 71 44" stroke="#2A1E14" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+      <path d="M52 62 Q60 67 68 62" stroke="#B5574A" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    </g>
+    <g class="m-face-worried">
+      <path d="M48 42.5 Q52 41 56 42.5" stroke="#2A1E14" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+      <path d="M64 42.5 Q68 41 72 42.5" stroke="#2A1E14" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+      <path d="M49 60 Q60 71 71 60 Q60 66 49 60 Z" fill="#fff"/>
+      <path d="M49 60 Q60 71 71 60" stroke="#B5574A" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg></div><div class="s-text"><h3>Planujesz przyszłość w Polsce</h3><p>Pobyt stały lub rezydent długoterminowy UE — dla Ciebie i Twojej rodziny, na zawsze, bez odnawiania co kilka lat.</p><a href="#kontakt">Zobacz, jak to działa</a></div></div>
+      <div class="s-card s-card--side"><div class="s-num">05</div><div class="mascot-box"><svg class="mascot mascot-05" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <path d="M30 120 L30 96 Q30 76 60 74 Q90 76 90 96 L90 120 Z" fill="#9B80C4"/>
+  <g class="m-arm-l" style="transform-origin:34px 86px"><rect x="30" y="86" width="8" height="26" rx="4" fill="#9B80C4"/><circle cx="34" cy="112" r="4.5" fill="#C98E5E"/></g>
+  <g class="m-arm-r" style="transform-origin:86px 86px"><rect x="82" y="86" width="8" height="26" rx="4" fill="#9B80C4"/><circle cx="86" cy="112" r="4.5" fill="#C98E5E"/></g>
+  <path d="M49 76 Q60 90 71 76 Q60 83 49 76 Z" fill="#C98E5E"/>
+  <path d="M45 93 Q52 99 46 105" stroke="#7C63A0" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.35"/>
+  <path d="M75 93 Q68 99 74 105" stroke="#7C63A0" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.35"/>
+  <g class="m-head" style="transform-origin:60px 52px">
+    <path d="M60 24 C34 24 26 46 30 66 C32 80 30 92 34 102 C40 96 44 82 44 68 C44 56 50 48 60 48 C70 48 76 56 76 68 C76 82 80 96 86 102 C90 92 88 80 90 66 C94 46 86 24 60 24 Z" fill="#2A1E14"/>
+    <circle cx="60" cy="52" r="19" fill="#C98E5E"/>
+    <circle cx="47" cy="59" r="3.2" fill="#E8977E" opacity="0.4"/>
+    <circle cx="73" cy="59" r="3.2" fill="#E8977E" opacity="0.4"/>
+    <g class="m-eyes-open">
+      <ellipse cx="52" cy="50" rx="4.5" ry="3.2" fill="#fff"/>
+      <ellipse cx="68" cy="50" rx="4.5" ry="3.2" fill="#fff"/>
+      <circle cx="52.7" cy="50" r="2.3" fill="#3B2A1E"/>
+      <circle cx="68.7" cy="50" r="2.3" fill="#3B2A1E"/>
+      <path d="M47 47 L45.5 45" stroke="#2A1E14" stroke-width="1" stroke-linecap="round"/>
+      <path d="M73 47 L74.5 45" stroke="#2A1E14" stroke-width="1" stroke-linecap="round"/>
+    </g>
+    <g class="m-eyes-closed">
+      <path d="M48 50 Q52 52.5 56 50" stroke="#2A1E14" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+      <path d="M64 50 Q68 52.5 72 50" stroke="#2A1E14" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    </g>
+    <g class="m-face-focused">
+      <path d="M49 44 Q52.5 42 56 43.5" stroke="#2A1E14" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+      <path d="M64 43.5 Q67.5 42 71 44" stroke="#2A1E14" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+      <path d="M52 62 Q60 67 68 62" stroke="#B5574A" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    </g>
+    <g class="m-face-worried">
+      <path d="M47 43 Q52 40.5 57 43" stroke="#2A1E14" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+      <path d="M63 43 Q68 40.5 73 43" stroke="#2A1E14" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+      <path d="M53 64 Q60 62.5 67 64" stroke="#B5574A" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg></div><div class="s-text"><h3>Zmieniasz pracę</h3><p>Nowa praca nie musi oznaczać problemów z kartą. Przeprowadzimy zmianę pracodawcy tak, żeby Twój status był bezpieczny.</p><a href="#kontakt">Zobacz, jak to działa</a></div></div>
+      <div class="s-card s-card--side"><div class="s-num">06</div><div class="mascot-box"><svg class="mascot mascot-06" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <path d="M30 120 L30 96 Q30 76 60 74 Q90 76 90 96 L90 120 Z" fill="#9B80C4"/>
+  <g class="m-arm-l" style="transform-origin:34px 86px"><rect x="30" y="86" width="8" height="26" rx="4" fill="#9B80C4"/><circle cx="34" cy="112" r="4.5" fill="#C98E5E"/></g>
+  <g class="m-arm-r" style="transform-origin:86px 86px"><rect x="82" y="86" width="8" height="26" rx="4" fill="#9B80C4"/><circle cx="86" cy="112" r="4.5" fill="#C98E5E"/></g>
+  <path d="M49 76 Q60 90 71 76 Q60 83 49 76 Z" fill="#C98E5E"/>
+  <path d="M45 93 Q52 99 46 105" stroke="#7C63A0" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.35"/>
+  <path d="M75 93 Q68 99 74 105" stroke="#7C63A0" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.35"/>
+  <g class="m-head" style="transform-origin:60px 52px">
+    <path d="M60 24 C34 24 26 46 30 66 C32 80 30 92 34 102 C40 96 44 82 44 68 C44 56 50 48 60 48 C70 48 76 56 76 68 C76 82 80 96 86 102 C90 92 88 80 90 66 C94 46 86 24 60 24 Z" fill="#2A1E14"/>
+    <circle cx="60" cy="52" r="19" fill="#C98E5E"/>
+    <circle cx="47" cy="59" r="3.2" fill="#E8977E" opacity="0.4"/>
+    <circle cx="73" cy="59" r="3.2" fill="#E8977E" opacity="0.4"/>
+    <g class="m-eyes-open">
+      <ellipse cx="52" cy="50" rx="4.5" ry="3.2" fill="#fff"/>
+      <ellipse cx="68" cy="50" rx="4.5" ry="3.2" fill="#fff"/>
+      <circle cx="52.7" cy="50" r="2.3" fill="#3B2A1E"/>
+      <circle cx="68.7" cy="50" r="2.3" fill="#3B2A1E"/>
+      <path d="M47 47 L45.5 45" stroke="#2A1E14" stroke-width="1" stroke-linecap="round"/>
+      <path d="M73 47 L74.5 45" stroke="#2A1E14" stroke-width="1" stroke-linecap="round"/>
+    </g>
+    <g class="m-eyes-closed">
+      <path d="M48 50 Q52 52.5 56 50" stroke="#2A1E14" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+      <path d="M64 50 Q68 52.5 72 50" stroke="#2A1E14" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    </g>
+    <g class="m-face-focused">
+      <path d="M49 44 Q52.5 42 56 43.5" stroke="#2A1E14" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+      <path d="M64 43.5 Q67.5 42 71 44" stroke="#2A1E14" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+      <path d="M52 62 Q60 67 68 62" stroke="#B5574A" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    </g>
+    <g class="m-face-worried">
+      <path d="M47 42 Q52 44.5 57 43.5" stroke="#2A1E14" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+      <path d="M63 43.5 Q68 44.5 73 42" stroke="#2A1E14" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+      <path d="M52 66 Q60 62 68 66" stroke="#B5574A" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    </g>
+    <g class="m-face-alt06">
+      <path d="M46 41.5 Q52 40 58 42.5" stroke="#2A1E14" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <path d="M62 42.5 Q68 40 74 41.5" stroke="#2A1E14" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <path d="M51 63 L69 63" stroke="#B5574A" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg></div><div class="s-text"><h3>Dostałeś decyzję odmowną</h3><p>To nie koniec Twojej sprawy. Przeanalizujemy akta i poprowadzimy odwołanie — wiele odmów da się odwrócić.</p><a href="#kontakt">Zobacz, jak to działa</a></div></div>
     </div>
   </div>
 </section>
@@ -327,11 +839,12 @@ footer .upd{margin-top:14px;font-size:11.5px;color:#6B7890}
       </ul>
     </div>
     <div class="mos-panel">
-      <span class="eyebrow">Pakiet „Wniosek bez błędów"</span>
-      <div class="price">800 zł</div>
-      <div class="per">jednorazowo · wniosek złożony z prawnikiem</div>
-      <p style="margin:16px 0 22px;font-size:14.5px;color:#D7DDE9">Jeden błąd we wniosku może oznaczać pozostawienie sprawy bez rozpoznania — i utratę legalnego pobytu. Z nami składasz wniosek dobrze za pierwszym razem.</p>
-      <a class="btn btn-gold" style="width:100%" href="#kontakt">Umów złożenie wniosku</a>
+      <span class="eyebrow">Zanim zapłacisz</span>
+      <div class="price" style="font-size:30px;line-height:1.15">Bezpłatna weryfikacja</div>
+      <div class="per">sprawdzimy Twoje dokumenty i szanse — bez zobowiązań</div>
+      <p style="margin:16px 0 22px;font-size:14.5px;color:#dce4f5">Jeden błąd we wniosku może oznaczać pozostawienie sprawy bez rozpoznania — i utratę legalnego pobytu. Zanim zdecydujesz się na pełną obsługę, bezpłatnie sprawdzimy Twoje dokumenty i powiemy, czy wniosek przejdzie za pierwszym razem.</p>
+      <a class="btn btn-gold" style="width:100%" href="#kontakt">Umów darmową weryfikację</a>
+      <a class="btn btn-line" style="width:100%;margin-top:10px" href="formularz-pobyt-czasowy-praca-NOWA.html">Wypełnij ankietę (pierwszy krok)</a>
     </div>
   </div>
 </section>
@@ -345,38 +858,40 @@ footer .upd{margin-top:14px;font-size:11.5px;color:#6B7890}
     </div>
     <div class="plany">
       <div class="plan">
-        <h3>Wniosek bez błędów</h3>
-        <div class="cena">800 <small>zł</small></div>
+        <h3>START</h3>
+        <div class="cena">1200 <small>zł · jednorazowo</small></div>
         <ul>
-          <li>Wypełnienie i złożenie wniosku w MOS</li>
-          <li>Pomoc w założeniu profilu zaufanego</li>
+          <li>Analiza dokumentów i lista braków</li>
+          <li>Stały adres korespondencyjny</li>
+          <li>Wypełnienie i złożenie wniosku online</li>
           <li>Własny profil sprawy w Centrum</li>
-          <li>Lista wymaganych dokumentów</li>
         </ul>
         <a class="btn btn-gold" href="#kontakt">Wybieram ten pakiet</a>
       </div>
       <div class="plan best">
         <div class="tag">Najczęściej wybierany</div>
-        <h3>Wniosek + reprezentacja</h3>
-        <div class="cena">1850 <small>zł</small></div>
+        <h3>STANDARD</h3>
+        <div class="cena">1950 <small>zł · w 2 ratach</small></div>
         <ul>
-          <li>Wszystko z pakietu podstawowego</li>
-          <li>Pełna dokumentacja pracodawcy</li>
-          <li>Weryfikacja wszystkich dokumentów</li>
-          <li>Jednorazowa reprezentacja w urzędzie</li>
+          <li>Wszystko z pakietu START</li>
+          <li>Komplet dokumentów od pracodawcy</li>
+          <li>Pełna weryfikacja i reprezentacja przy złożeniu</li>
+          <li>Odpowiedzi na wezwania i pisma z urzędu</li>
+          <li>Prowadzenie sprawy do decyzji + odwołanie</li>
           <li>Twoja karta pobytu — albo zwrot wynagrodzenia*</li>
         </ul>
         <a class="btn btn-gold" href="#kontakt">Wybieram ten pakiet</a>
         <div class="gw">✦ Gwarancja na piśmie*</div>
       </div>
       <div class="plan">
-        <h3>VIP — Pełna obsługa pełnomocnika</h3>
-        <div class="cena">3500 <small>zł</small></div>
+        <h3>ALL INCLUSIVE</h3>
+        <div class="cena">3500 <small>zł · w 3 ratach</small></div>
         <ul>
-          <li>Prowadzenie sprawy od A do Z</li>
-          <li>Pełnomocnik przez całe postępowanie</li>
-          <li>Obsługa do decyzji i odwołania</li>
-          <li>Kontakt priorytetowy</li>
+          <li>Wszystko z pakietu STANDARD</li>
+          <li>Konsultacja przy zmianie warunków / pracodawcy</li>
+          <li>Konsultacja: pobyt stały / obywatelstwo</li>
+          <li>Bezpłatna obsługa wybranych wniosków świadczeniowych</li>
+          <li>12 miesięcy wsparcia po decyzji</li>
           <li>Twoja karta pobytu — albo zwrot wynagrodzenia*</li>
         </ul>
         <a class="btn btn-gold" href="#kontakt">Wybieram ten pakiet</a>
@@ -425,15 +940,15 @@ footer .upd{margin-top:14px;font-size:11.5px;color:#6B7890}
       <span class="eyebrow">Porozmawiajmy</span>
       <h2 style="font-size:clamp(26px,3.2vw,38px)">Zacznij sprawę dziś — bez ryzyka odmowy</h2>
       <div class="k-ways">
-        <a class="k-way" href="https://wa.me/48539999549"><div class="ki">✆</div><div><b>WhatsApp — odpowiadamy najszybciej</b><span>+48 539 999 549 · PL / EN / ES / PT</span></div></a>
+        <a class="k-way" href="https://wa.me/48539999549"><div class="ki">✆</div><div><b>WhatsApp — odpowiadamy najszybciej</b><span>+48 539 999 549 · PL / EN / ES / PT / UA / FR</span></div></a>
         <a class="k-way" href="tel:+48539999549"><div class="ki">☎</div><div><b>Telefon</b><span>+48 539 999 549</span></div></a>
-        <a class="k-way" href="mailto:dariusz.w@kancelaria-trc.pl"><div class="ki">✉</div><div><b>E-mail</b><span>dariusz.w@kancelaria-trc.pl</span></div></a>
+        <a class="k-way" href="mailto:office@cosc.org.pl"><div class="ki">✉</div><div><b>E-mail</b><span>office@cosc.org.pl</span></div></a>
       </div>
     </div>
     <div class="k-info">
       <h3>Centrum Obsługi Spraw Cudzoziemców</h3>
       <p>ul. Fabryczna 18, 02-892 Warszawa</p>
-      <p>Kontaktujemy się w języku polskim, angielskim, hiszpańskim i portugalskim</p>
+      <p>Kontaktujemy się w języku polskim, angielskim, hiszpańskim, portugalskim, ukraińskim i francuskim</p>
       <p style="margin-top:16px;font-size:12.5px;color:#93A0B8">Administratorem danych osobowych jest Dariusz Włodarczyk Kancelaria TRC, ul. Fabryczna 18, 02-892 Warszawa. Szczegóły w Polityce prywatności.</p>
     </div>
   </div>
@@ -443,7 +958,7 @@ footer .upd{margin-top:14px;font-size:11.5px;color:#6B7890}
   <div class="wrap">
     <div class="f-grid">
       <div>© 2026 Centrum Obsługi Spraw Cudzoziemców · Dariusz Włodarczyk Kancelaria TRC</div>
-      <div><a href="/regulamin/">Regulamin</a> · <a href="/polityka-prywatnosci/">Polityka prywatności</a></div>
+      <div><a href="regulamin.html">Regulamin</a> · <a href="polityka-prywatnosci.html">Polityka prywatności</a></div>
     </div>
     <div class="upd">Treści na stronie mają charakter informacyjny i nie stanowią porady prawnej. Stan prawny na: 07.07.2026. Data ostatniej aktualizacji: 07.07.2026.</div>
   </div>
@@ -464,7 +979,7 @@ const io=new IntersectionObserver(es=>es.forEach(e=>{
   }
   e.target.classList.add('inview');io.unobserve(e.target);
 }),{threshold:.35});
-document.querySelectorAll('.trust,.path-sec,.ct-demo').forEach(el=>io.observe(el));
+document.querySelectorAll('.trust,.path-sec,.ct-demo,.mascot').forEach(el=>io.observe(el));
 </script>
 </body>
 </html>

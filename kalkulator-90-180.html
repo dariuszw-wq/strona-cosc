@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kalkulator dni pobytu 90/180 — Centrum Obsługi Spraw Cudzoziemców Polska</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#16244c;--gold:#4636c9;--cream:#f4f6fb;--red:#B33A3A;--amber:#C07A1E;--green:#2E7D4F;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'IBM Plex Sans',sans-serif;background:var(--cream);color:var(--navy);padding:20px;display:flex;justify-content:center}
+.calc{max-width:640px;width:100%;background:#fff;border:1px solid #e8e2d8;border-radius:14px;overflow:hidden;box-shadow:0 4px 24px rgba(27,42,74,.08)}
+.head{background:var(--navy);color:#fff;padding:22px 24px;position:relative}
+.head h1{font-family:'IBM Plex Serif',serif;font-size:26px;line-height:1.2}
+.head p{font-size:13px;opacity:.85;margin-top:6px}
+.langs{position:absolute;top:14px;right:16px;display:flex;gap:4px}
+.langs button{background:transparent;border:1px solid rgba(255,255,255,.35);color:#fff;font-size:11px;font-weight:600;padding:4px 8px;border-radius:6px;cursor:pointer}
+.langs button.on{background:var(--gold);border-color:var(--gold);color:var(--navy)}
+.body{padding:22px 24px}
+.row{display:flex;gap:10px;margin-bottom:10px;flex-wrap:wrap;align-items:end}
+.field{flex:1;min-width:140px}
+label{display:block;font-size:12px;font-weight:600;margin-bottom:5px;color:#5a6478}
+input[type=date]{width:100%;padding:10px;border:1px solid #d8d2c6;border-radius:8px;font-family:inherit;font-size:14px;background:var(--cream)}
+.btn{background:var(--navy);color:#fff;border:none;padding:11px 16px;border-radius:8px;font-weight:600;font-size:14px;cursor:pointer;font-family:inherit}
+.btn.gold{background:var(--gold);color:var(--navy)}
+.btn.ghost{background:transparent;color:var(--red);border:1px solid #e3c8c8;padding:8px 10px;font-size:12px}
+.trips{margin:14px 0}
+.trip{display:flex;justify-content:space-between;align-items:center;background:var(--cream);border:1px solid #eee6d9;border-radius:8px;padding:9px 12px;margin-bottom:6px;font-size:13px}
+.result{margin-top:16px;border-radius:10px;padding:18px;display:none}
+.result.green{display:block;background:#eef7f1;border:1px solid #bfe0cc}
+.result.amber{display:block;background:#fdf4e6;border:1px solid #ecd3a8}
+.result.red{display:block;background:#fbeeee;border:1px solid #e8c4c4}
+.big{font-family:'IBM Plex Serif',serif;font-size:34px;font-weight:700;line-height:1;display:flex;align-items:center;gap:10px}
+.face{font-size:32px;display:inline-block;transform:scale(0);transition:transform .35s cubic-bezier(.34,1.56,.64,1)}
+.face.show{transform:scale(1)}
+@keyframes bounce{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-4px) scale(1.05)}}
+.face.show{animation:bounce .6s ease .35s 1}
+.bar{height:10px;background:#e8e2d8;border-radius:6px;margin:12px 0 6px;overflow:hidden}
+.bar div{height:100%;border-radius:6px;transition:width .4s}
+.meta{font-size:13px;color:#5a6478;margin-top:6px}
+.cta{margin-top:14px;background:var(--navy);border-radius:10px;padding:16px;color:#fff}
+.cta p{font-size:14px;margin-bottom:10px}
+.cta a{display:inline-block;background:var(--gold);color:var(--navy);text-decoration:none;font-weight:700;font-size:14px;padding:10px 18px;border-radius:8px}
+.disc{font-size:11px;color:#8a8fa0;margin-top:16px;line-height:1.5;border-top:1px solid #eee6d9;padding-top:12px}
+</style>
+</head>
+<body>
+<div class="calc">
+  <div class="head">
+    <div class="langs">
+      <button data-l="pl" class="on">PL</button><button data-l="en">EN</button><button data-l="es">ES</button><button data-l="pt">PT</button>
+    </div>
+    <h1 id="t-title">Kalkulator dni pobytu 90/180</h1>
+    <p id="t-sub">Sprawdź, ile dni pobytu bezwizowego w strefie Schengen Ci pozostało</p>
+  </div>
+  <div class="body">
+    <div class="row">
+      <div class="field"><label id="t-in">Data wjazdu</label><input type="date" id="d-in"></div>
+      <div class="field"><label id="t-out">Data wyjazdu (lub dziś, jeśli trwa)</label><input type="date" id="d-out"></div>
+      <button class="btn" id="b-add">+ <span id="t-add">Dodaj pobyt</span></button>
+    </div>
+    <div class="trips" id="trips"></div>
+    <div class="row">
+      <div class="field"><label id="t-ref">Sprawdź stan na dzień</label><input type="date" id="d-ref"></div>
+      <button class="btn gold" id="b-calc"><span id="t-calc">Oblicz</span></button>
+    </div>
+    <div class="result" id="res">
+      <div class="big"><span id="r-days"></span><span class="face" id="r-face"></span></div>
+      <div class="bar"><div id="r-bar"></div></div>
+      <div class="meta" id="r-meta"></div>
+      <div class="meta" id="r-next"></div>
+    </div>
+    <div class="cta" id="cta" style="display:none">
+      <p id="t-cta">Kończą Ci się dni pobytu bezwizowego? Złóż wniosek o kartę pobytu, zanim będzie za późno.</p>
+      <a href="/uslugi/karta-pobytu-czasowego/" id="t-btn">Zacznij sprawę dziś — bez ryzyka odmowy</a>
+    </div>
+    <p class="disc" id="t-disc">Kalkulator ma charakter wyłącznie informacyjny i nie stanowi porady prawnej. Obliczenia oparte są na art. 6 ust. 1 Kodeksu Granicznego Schengen (rozporządzenie UE 2016/399) — 90 dni w każdym 180-dniowym okresie. Wynik nie uwzględnia umów bilateralnych, wiz krajowych ani indywidualnych okoliczności. Stan prawny wymaga weryfikacji — skontaktuj się z nami: tel. 539 999 549.</p>
+  </div>
+</div>
+<script>
+const T={
+pl:{title:"Kalkulator dni pobytu 90/180",sub:"Sprawdź, ile dni pobytu bezwizowego w strefie Schengen Ci pozostało",in:"Data wjazdu",out:"Data wyjazdu (lub dziś, jeśli trwa)",add:"Dodaj pobyt",ref:"Sprawdź stan na dzień",calc:"Oblicz",used:"dni wykorzystanych z 90",left:d=>`Pozostało: ${d} dni w bieżącym oknie 180 dni`,over:d=>`Przekroczenie limitu o ${d} dni — pobyt może być nielegalny!`,next:s=>`Najbliższe „odzyskanie" dni: ${s}`,cta:"Kończą Ci się dni pobytu bezwizowego? Złóż wniosek o kartę pobytu, zanim będzie za późno.",btn:"Zacznij sprawę dziś — bez ryzyka odmowy",del:"usuń",err:"Uzupełnij poprawnie daty (wyjazd ≥ wjazd).",disc:"Kalkulator ma charakter wyłącznie informacyjny i nie stanowi porady prawnej. Obliczenia oparte są na art. 6 ust. 1 Kodeksu Granicznego Schengen (rozporządzenie UE 2016/399) — 90 dni w każdym 180-dniowym okresie. Wynik nie uwzględnia umów bilateralnych, wiz krajowych ani indywidualnych okoliczności. Skontaktuj się z nami: tel. 539 999 549."},
+en:{title:"90/180 Days of Stay Calculator",sub:"Check how many visa-free days you have left in the Schengen area",in:"Entry date",out:"Exit date (or today if ongoing)",add:"Add stay",ref:"Check status as of",calc:"Calculate",used:"days used out of 90",left:d=>`Remaining: ${d} days in the current 180-day window`,over:d=>`Limit exceeded by ${d} days — your stay may be illegal!`,next:s=>`Next days “recovered”: ${s}`,cta:"Running out of visa-free days? Apply for a residence card before it's too late.",btn:"Start your case today",del:"remove",err:"Please fill in valid dates (exit ≥ entry).",disc:"This calculator is for information only and does not constitute legal advice. Based on Art. 6(1) of the Schengen Borders Code (Regulation EU 2016/399) — 90 days in any 180-day period. It does not account for bilateral agreements, national visas or individual circumstances. Contact us: +48 539 999 549."},
+es:{title:"Calculadora de días de estancia 90/180",sub:"Comprueba cuántos días sin visado te quedan en el espacio Schengen",in:"Fecha de entrada",out:"Fecha de salida (u hoy, si continúa)",add:"Añadir estancia",ref:"Comprobar al día",calc:"Calcular",used:"días usados de 90",left:d=>`Te quedan: ${d} días en la ventana actual de 180 días`,over:d=>`Límite superado en ${d} días — ¡tu estancia puede ser ilegal!`,next:s=>`Próxima “recuperación” de días: ${s}`,cta:"¿Se te acaban los días sin visado? Solicita la tarjeta de residencia antes de que sea tarde.",btn:"Empieza tu caso hoy",del:"eliminar",err:"Introduce fechas válidas (salida ≥ entrada).",disc:"Esta calculadora es solo informativa y no constituye asesoramiento jurídico. Basada en el art. 6(1) del Código de Fronteras Schengen (Reglamento UE 2016/399): 90 días en cualquier período de 180 días. No considera acuerdos bilaterales, visados nacionales ni circunstancias individuales. Contáctanos: +48 539 999 549."},
+pt:{title:"Calculadora de dias de estadia 90/180",sub:"Veja quantos dias sem visto ainda tem no espaço Schengen",in:"Data de entrada",out:"Data de saída (ou hoje, se em curso)",add:"Adicionar estadia",ref:"Verificar na data",calc:"Calcular",used:"dias usados de 90",left:d=>`Restam: ${d} dias na janela atual de 180 dias`,over:d=>`Limite excedido em ${d} dias — a sua estadia pode ser ilegal!`,next:s=>`Próxima “recuperação” de dias: ${s}`,cta:"Os seus dias sem visto estão a acabar? Peça o cartão de residência antes que seja tarde.",btn:"Comece o seu processo hoje",del:"remover",err:"Preencha datas válidas (saída ≥ entrada).",disc:"Esta calculadora é apenas informativa e não constitui aconselhamento jurídico. Baseada no art. 6(1) do Código de Fronteiras Schengen (Regulamento UE 2016/399) — 90 dias em qualquer período de 180 dias. Não considera acordos bilaterais, vistos nacionais nem circunstâncias individuais. Contacte-nos: +48 539 999 549."}
+};
+let L='pl',trips=[];
+const $=id=>document.getElementById(id);
+const DAY=86400000;
+function setLang(l){L=l;const t=T[l];
+ ['title','sub','in','out','add','ref','calc','cta','btn','disc'].forEach(k=>{const el=$('t-'+k);if(el)el.textContent=t[k];});
+ document.querySelectorAll('.langs button').forEach(b=>b.classList.toggle('on',b.dataset.l===l));
+ renderTrips();}
+document.querySelectorAll('.langs button').forEach(b=>b.onclick=()=>setLang(b.dataset.l));
+$('d-ref').valueAsDate=new Date();
+function renderTrips(){$('trips').innerHTML=trips.map((tr,i)=>
+ `<div class="trip"><span>${tr[0]} → ${tr[1]}</span><button class="btn ghost" onclick="delTrip(${i})">✕ ${T[L].del}</button></div>`).join('');}
+window.delTrip=i=>{trips.splice(i,1);renderTrips();};
+$('b-add').onclick=()=>{const a=$('d-in').value,b=$('d-out').value;
+ if(!a||!b||b<a){alert(T[L].err);return;}
+ trips.push([a,b]);trips.sort();$('d-in').value='';$('d-out').value='';renderTrips();};
+function daysUsed(refStr){
+ const ref=new Date(refStr+'T00:00:00');
+ const winStart=new Date(ref.getTime()-179*DAY);
+ let set=new Set();
+ trips.forEach(([a,b])=>{let d=new Date(a+'T00:00:00'),e=new Date(b+'T00:00:00');
+  for(;d<=e;d=new Date(d.getTime()+DAY)) if(d>=winStart&&d<=ref) set.add(d.toISOString().slice(0,10));});
+ return set.size;}
+$('b-calc').onclick=()=>{
+ const ref=$('d-ref').value; if(!ref||!trips.length){alert(T[L].err);return;}
+ const used=daysUsed(ref),left=90-used,t=T[L];
+ const res=$('res');res.className='result '+(left<0?'red':left<=14?'amber':'green');
+ $('r-days').textContent=used+' / 90';
+ const pct=Math.min(100,used/90*100);
+ $('r-bar').style.width=pct+'%';
+ $('r-bar').style.background=left<0?'var(--red)':left<=14?'var(--amber)':'var(--green)';
+ $('r-meta').textContent=left>=0?t.left(left):t.over(-left);
+ const face=$('r-face');face.classList.remove('show');void face.offsetWidth;
+ face.textContent=left<0?'😟':left<=14?'😐':'😊';face.classList.add('show');
+ // next recovery: first day within window that will drop out
+ let nxt='—';
+ for(let i=1;i<=180;i++){const f=new Date(new Date(ref+'T00:00:00').getTime()+i*DAY).toISOString().slice(0,10);
+  if(daysUsed(f)<used){nxt=f;break;}}
+ $('r-next').textContent=t.next(nxt);
+ $('cta').style.display=left<=30?'block':'none';
+};
+</script>
+</body>
+</html>

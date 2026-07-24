@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pakiet animacji mobilnych — demo | Centrum Obsługi Spraw Cudzoziemców</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#16244c;--navy-d:#111a3a;--gold:#4636c9;--gold-l:#6d6ae0;--cream:#f4f6fb;--ink:#16244c;--mut:#5B6478;--line:#e6e9f0;--ok:#2E7D4F;--amber:#C07A1E}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'IBM Plex Sans',sans-serif;background:var(--cream);color:var(--ink);line-height:1.55;font-size:15px;padding-bottom:60px}
+h1,h2,h3{font-family:'IBM Plex Serif',serif;color:var(--navy)}
+.wrap{max-width:520px;margin:0 auto;padding:0 16px}
+.demo-head{background:var(--navy);color:#fff;padding:22px 0;margin-bottom:8px}
+.demo-head h1{color:#fff;font-size:24px}
+.demo-head p{font-size:13px;color:#B9C3D6}
+.blok{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;margin:16px 0}
+.blok>h2{font-size:21px;margin-bottom:4px}
+.blok>.opis{font-size:12.5px;color:var(--mut);margin-bottom:16px;padding-bottom:12px;border-bottom:1px dashed var(--line)}
+
+/* ============ 1. OŚ ETAPÓW SPRAWY ============ */
+.oś{position:relative;padding-left:34px}
+.oś::before{content:"";position:absolute;left:13px;top:8px;bottom:8px;width:3px;background:var(--line);border-radius:2px}
+.oś .fill{position:absolute;left:13px;top:8px;width:3px;background:linear-gradient(var(--gold),var(--gold-l));border-radius:2px;height:0;transition:height 1.6s ease}
+.oś.go .fill{height:62%}
+.etap{position:relative;padding:0 0 22px}
+.etap .dot{position:absolute;left:-34px;top:2px;width:29px;height:29px;border-radius:50%;background:#fff;border:2.5px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:13px;color:var(--mut);transition:.4s}
+.etap.done .dot{background:var(--gold);border-color:var(--gold);color:var(--navy);font-weight:800}
+.etap.now .dot{border-color:var(--gold);color:var(--gold);animation:ring 2s ease-out infinite}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(201,169,97,.4)}100%{box-shadow:0 0 0 12px rgba(201,169,97,0)}}
+.etap b{display:block;font-size:14.5px;color:var(--navy)}
+.etap span{font-size:12.5px;color:var(--mut)}
+.etap.now b{color:var(--gold)}
+.etap .data{font-size:11px;color:#9AA3B5}
+
+/* ============ 2. STATUSY ============ */
+.status{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;padding:8px 14px;border-radius:999px;margin:4px 6px 4px 0}
+.st-toku{background:#FDF4E6;color:var(--amber)}
+.st-toku .kropka{width:8px;height:8px;border-radius:50%;background:var(--amber);animation:blink 1.4s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+.st-odbior{background:#EEF7F1;color:var(--ok);animation:bounce-in .6s cubic-bezier(.2,1.4,.4,1)}
+@keyframes bounce-in{0%{transform:scale(.6);opacity:0}100%{transform:scale(1);opacity:1}}
+.st-odbior .ping{position:relative;width:10px;height:10px}
+.st-odbior .ping::before,.st-odbior .ping::after{content:"";position:absolute;inset:0;border-radius:50%;background:var(--ok)}
+.st-odbior .ping::after{animation:ping 1.6s ease-out infinite}
+@keyframes ping{to{transform:scale(2.6);opacity:0}}
+.st-decyzja{border:2.5px solid var(--ok);color:var(--ok);background:rgba(250,248,245,.9);text-transform:uppercase;letter-spacing:.1em;font-size:12px;border-radius:8px;opacity:0;transform:rotate(-6deg) scale(2.2)}
+.st-decyzja.stamped{animation:stamp .45s cubic-bezier(.2,1.4,.4,1) forwards}
+@keyframes stamp{to{opacity:1;transform:rotate(-6deg) scale(1)}}
+.btn-mini{background:var(--navy);color:#fff;border:none;border-radius:8px;padding:9px 14px;font-family:inherit;font-weight:600;font-size:12.5px;cursor:pointer;margin-top:10px}
+
+/* ============ 3. CHECKLISTA ============ */
+.check{list-style:none}
+.check li{display:flex;align-items:center;gap:12px;padding:11px 4px;border-bottom:1px solid var(--line);cursor:pointer;user-select:none}
+.check .box{flex:none;width:24px;height:24px;border:2px solid var(--line);border-radius:7px;position:relative;transition:.25s}
+.check .box svg{position:absolute;inset:3px;stroke:var(--navy);stroke-width:3;fill:none;stroke-linecap:round;stroke-dasharray:24;stroke-dashoffset:24;transition:stroke-dashoffset .35s ease .1s}
+.check li.on .box{background:var(--gold);border-color:var(--gold);transform:scale(1.08)}
+.check li.on .box svg{stroke-dashoffset:0}
+.check li.on .txt{color:var(--mut);text-decoration:line-through;text-decoration-color:rgba(91,100,120,.5)}
+.check .pasek{height:9px;background:var(--line);border-radius:6px;margin-top:14px;overflow:hidden}
+.check-wrap .pasek div{height:100%;width:0;background:linear-gradient(90deg,var(--gold),var(--gold-l));transition:width .4s ease;border-radius:6px}
+.check-wrap .info{font-size:12.5px;color:var(--mut);margin-top:6px}
+.gotowe{display:none;margin-top:12px;background:#EEF7F1;border:1px solid #BFE0CC;color:var(--ok);font-weight:700;font-size:13.5px;border-radius:10px;padding:12px;text-align:center;animation:bounce-in .5s cubic-bezier(.2,1.4,.4,1)}
+
+/* ============ 4. TOOLTIPY ============ */
+.tip{position:relative;display:inline-block;border-bottom:1.5px dotted var(--gold);cursor:help;font-weight:600;color:var(--navy)}
+.tip .dymek{position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%) translateY(4px);background:var(--navy);color:#fff;font-size:12px;font-weight:400;line-height:1.45;padding:10px 12px;border-radius:10px;width:220px;opacity:0;pointer-events:none;transition:.25s;z-index:5}
+.tip .dymek::after{content:"";position:absolute;top:100%;left:50%;transform:translateX(-50%);border:6px solid transparent;border-top-color:var(--navy)}
+.tip:hover .dymek,.tip:focus .dymek,.tip.open .dymek{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* ============ 5. AKORDEONY ============ */
+.acc{border:1px solid var(--line);border-radius:12px;margin-bottom:10px;overflow:hidden;background:#fff}
+.acc summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:15px 16px;font-weight:600;font-size:14.5px;color:var(--navy);cursor:pointer}
+.acc summary::-webkit-details-marker{display:none}
+.acc .chev{flex:none;transition:transform .3s;color:var(--gold);font-size:18px}
+.acc[open] .chev{transform:rotate(180deg)}
+.acc .cont{padding:0 16px;max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s ease;font-size:13.5px;color:var(--mut)}
+.acc[open] .cont{max-height:300px;padding:0 16px 15px}
+
+/* ============ 6. NIEZALEŻNY PRAWNIK ============ */
+.prawnik{background:var(--navy);color:#fff;border-radius:16px;padding:24px;margin:16px 0}
+.prawnik h2{color:var(--gold-l);font-size:22px;margin-bottom:12px}
+.prawnik p{font-size:14px;color:#D7DDE9;margin-bottom:10px}
+.prawnik .vs{display:flex;gap:10px;margin-top:16px}
+.prawnik .vs div{flex:1;border-radius:12px;padding:14px;font-size:12.5px}
+.prawnik .zly{background:rgba(179,58,58,.15);border:1px solid rgba(179,58,58,.4)}
+.prawnik .dobry{background:rgba(201,169,97,.14);border:1px solid rgba(201,169,97,.5)}
+.prawnik .vs b{display:block;margin-bottom:6px;font-size:13px}
+.prawnik .zly b{color:#E89A9A}
+.prawnik .dobry b{color:var(--gold-l)}
+
+/* ============ 7. WIDEO ============ */
+.vid{display:flex;gap:12px;align-items:center;background:var(--cream);border:1px solid var(--line);border-radius:12px;padding:12px;margin-bottom:10px}
+.vid .thumb{flex:none;width:92px;height:58px;border-radius:9px;background:linear-gradient(135deg,var(--navy),var(--navy-d));position:relative;display:flex;align-items:center;justify-content:center}
+.vid .thumb::after{content:"▶";color:var(--gold);font-size:18px;animation:pulse-p 2.4s ease-in-out infinite}
+@keyframes pulse-p{0%,100%{transform:scale(1)}50%{transform:scale(1.18)}}
+.vid b{display:block;font-size:13.5px;color:var(--navy)}
+.vid span{font-size:11.5px;color:var(--mut)}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.oś .fill{height:62%}.st-decyzja{opacity:1;transform:rotate(-6deg) scale(1)}}
+</style>
+</head>
+<body>
+
+<div class="demo-head"><div class="wrap">
+  <h1>Pakiet animacji mobilnych — demo</h1>
+  <p>Wszystkie komponenty do akceptacji przed produkcją. Otwórz na telefonie i dotykaj elementów.</p>
+</div></div>
+
+<div class="wrap">
+
+<div class="blok">
+  <h2>1. Oś etapów Twojej sprawy</h2>
+  <p class="opis">Złota linia wypełnia się do bieżącego etapu przy wejściu na ekran. Bieżący etap pulsuje. Klient od razu widzi, gdzie jest jego sprawa.</p>
+  <div class="oś" id="oś">
+    <div class="fill"></div>
+    <div class="etap done"><div class="dot">✓</div><b>Wniosek złożony w MOS</b><span>Urzędowe potwierdzenie odbioru (UPO) pobrane</span><div class="data">12.05.2026</div></div>
+    <div class="etap done"><div class="dot">✓</div><b>Zaświadczenie o legalnym pobycie</b><span>Możesz legalnie przebywać w Polsce na czas sprawy</span><div class="data">14.05.2026</div></div>
+    <div class="etap now"><div class="dot">●</div><b>Sprawa w urzędzie wojewódzkim</b><span>Pilnujemy terminów i wezwań — nic Cię nie ominie</span><div class="data">teraz</div></div>
+    <div class="etap"><div class="dot">4</div><b>Decyzja</b><span>Powiadomimy Cię natychmiast</span></div>
+    <div class="etap" style="padding-bottom:0"><div class="dot">5</div><b>Odbiór karty pobytu</b><span>Twoja karta w Twojej ręce</span></div>
+  </div>
+</div>
+
+<div class="blok">
+  <h2>2. Animowane statusy sprawy</h2>
+  <p class="opis">Statusy „żyją": w toku — mruga, gotowe do odbioru — pulsuje radośnie, decyzja pozytywna — przybija się jak pieczęć (kliknij przycisk).</p>
+  <span class="status st-toku"><span class="kropka"></span> W toku — czekamy na urząd</span>
+  <span class="status st-odbior"><span class="ping"></span> Karta gotowa do odbioru!</span><br>
+  <span class="status st-decyzja" id="stamp">✦ Decyzja pozytywna</span><br>
+  <button class="btn-mini" onclick="document.getElementById('stamp').classList.remove('stamped');void document.getElementById('stamp').offsetWidth;document.getElementById('stamp').classList.add('stamped')">Przybij pieczęć ↻</button>
+</div>
+
+<div class="blok check-wrap">
+  <h2>3. Checklista dokumentów</h2>
+  <p class="opis">Klient odhacza dokumenty palcem — ptaszek „rysuje się", pasek postępu rośnie, a na końcu pojawia się nagroda. Dotknij pozycji listy.</p>
+  <ul class="check" id="check">
+    <li><div class="box"><svg viewBox="0 0 24 24"><path d="M4 12l5 5 11-11"/></svg></div><span class="txt">Paszport — skan wszystkich stron</span></li>
+    <li><div class="box"><svg viewBox="0 0 24 24"><path d="M4 12l5 5 11-11"/></svg></div><span class="txt">Zdjęcie biometryczne (cyfrowe)</span></li>
+    <li><div class="box"><svg viewBox="0 0 24 24"><path d="M4 12l5 5 11-11"/></svg></div><span class="txt">Potwierdzenie opłaty skarbowej</span></li>
+    <li><div class="box"><svg viewBox="0 0 24 24"><path d="M4 12l5 5 11-11"/></svg></div><span class="txt">Umowa o pracę / dokumenty pracodawcy</span></li>
+  </ul>
+  <div class="pasek"><div id="pas"></div></div>
+  <div class="info"><span id="ile">0</span> z 4 dokumentów gotowych</div>
+  <div class="gotowe" id="gotowe">🎉 Komplet! Możesz bezpiecznie złożyć wniosek — sprawdzimy go jeszcze raz z Tobą.</div>
+</div>
+
+<div class="blok">
+  <h2>4. Dymki z podpowiedziami</h2>
+  <p class="opis">Trudne urzędowe słowa dostają dymek po dotknięciu — klient nie musi opuszczać strony, żeby zrozumieć pismo. Dotknij podkreślonych słów.</p>
+  <p style="font-size:14px">Po złożeniu wniosku otrzymasz <span class="tip" tabindex="0">UPO<span class="dymek">Urzędowe Poświadczenie Odbioru — elektroniczny dowód, że Twój wniosek dotarł do urzędu. Zachowaj go!</span></span>, a następnie <span class="tip" tabindex="0">zaświadczenie<span class="dymek">Dokument, który legalizuje Twój pobyt w Polsce na czas rozpatrywania sprawy — zastępuje dawny stempel w paszporcie.</span></span>. Jeśli urząd znajdzie <span class="tip" tabindex="0">braki formalne<span class="dymek">Brakujące dokumenty lub błędy we wniosku. Urząd wyznacza termin na uzupełnienie — pilnujemy go za Ciebie.</span></span>, dostaniesz wezwanie.</p>
+</div>
+
+<div class="blok">
+  <h2>5. Płynne rozwijanie sekcji</h2>
+  <p class="opis">Sekcje „Twoja sprawa" i „Wymagane dokumenty" rozwijają się miękko, strzałka się obraca. Dotknij nagłówka.</p>
+  <details class="acc"><summary>Twoje sprawy <span class="chev">▾</span></summary><div class="cont">Karta pobytu czasowego — w toku (etap 3 z 5) · Zezwolenie na pracę żony — decyzja pozytywna ✓</div></details>
+  <details class="acc"><summary>Wymagane dokumenty <span class="chev">▾</span></summary><div class="cont">Twoja lista jest spersonalizowana: 4 dokumenty, z czego 2 już dostarczone. Wejdź do checklisty, aby zobaczyć szczegóły.</div></details>
+</div>
+
+<div class="prawnik">
+  <h2>Prawnik, który pracuje dla Ciebie</h2>
+  <p><strong style="color:#fff">Najlepszy prawnik to polski prawnik</strong> — zna polskie urzędy i polskie prawo od środka, nie z opowieści.</p>
+  <p><strong style="color:#fff">I najlepszy prawnik to prawnik niezależny od Twojego pracodawcy.</strong> Tylko on powie Ci, jak naprawdę wygląda Twoja sytuacja — nawet jeśli to niewygodne dla firmy, która Cię zatrudnia.</p>
+  <div class="vs">
+    <div class="zly"><b>Prawnik od pracodawcy</b>Dba przede wszystkim o interes firmy. O Twoich prawach powie Ci tyle, ile firmie wygodnie.</div>
+    <div class="dobry"><b>Twój niezależny prawnik</b>Pracuje tylko dla Ciebie. Mówi Ci całą prawdę o Twojej sprawie i Twoich prawach.</div>
+  </div>
+</div>
+
+<div class="blok">
+  <h2>6. Mini-filmy instruktażowe (do produkcji)</h2>
+  <p class="opis">Sekcja wideo na stronie — miniatury z pulsującym przyciskiem odtwarzania. Poniżej proponowane tematy pierwszej serii.</p>
+  <div class="vid"><div class="thumb"></div><div><b>Jak złożyć wniosek w systemie MOS</b><span>60 s · PL + napisy EN/ES/PT</span></div></div>
+  <div class="vid"><div class="thumb"></div><div><b>Nie daj się oszukać — jak rozpoznać nieuczciwego pośrednika</b><span>60 s · PL + napisy EN/ES/PT</span></div></div>
+  <div class="vid"><div class="thumb"></div><div><b>Zaświadczenie zamiast stempla — Twój legalny pobyt w toku sprawy</b><span>45 s · PL + napisy EN/ES/PT</span></div></div>
+  <div class="vid"><div class="thumb"></div><div><b>Kończą Ci się dni bezwizowe? Zrób to teraz</b><span>45 s · PL + napisy EN/ES/PT</span></div></div>
+  <div class="vid"><div class="thumb"></div><div><b>Droga do karty pobytu — krok po kroku</b><span>2–3 min · film przewodni</span></div></div>
+</div>
+
+</div>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('go');io.unobserve(e.target)}}),{threshold:.3});
+io.observe(document.getElementById('oś'));
+const ul=document.getElementById('check'),pas=document.getElementById('pas'),ile=document.getElementById('ile'),got=document.getElementById('gotowe');
+ul.addEventListener('click',e=>{const li=e.target.closest('li');if(!li)return;li.classList.toggle('on');
+ const n=ul.querySelectorAll('li.on').length;pas.style.width=(n/4*100)+'%';ile.textContent=n;
+ got.style.display=n===4?'block':'none';
+ if(navigator.vibrate&&li.classList.contains('on'))navigator.vibrate(12);});
+document.querySelectorAll('.tip').forEach(t=>t.addEventListener('click',()=>{document.querySelectorAll('.tip.open').forEach(o=>{if(o!==t)o.classList.remove('open')});t.classList.toggle('open')}));
+setTimeout(()=>document.getElementById('stamp').classList.add('stamped'),700);
+</script>
+
+<!-- Znak marki COSC -->
+<div id="cosc-brand" style="position:fixed;left:14px;bottom:14px;z-index:99999;display:flex;align-items:center;gap:9px;background:rgba(19,32,58,.85);border:1px solid rgba(201,169,97,.6);border-radius:999px;padding:7px 16px 7px 8px;pointer-events:none;font-family:'Inter',Arial,sans-serif;backdrop-filter:blur(2px)">
+<span style="width:26px;height:26px;border:1.5px solid #4636c9;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#4636c9;font-size:11px;font-weight:700;font-family:'IBM Plex Serif',Georgia,serif">CO</span>
+<span style="color:#f4f6fb;font-size:12.5px;font-weight:600;letter-spacing:.02em">Centrum Obsługi Spraw Cudzoziemców</span>
+</div>
+</body>
+</html>

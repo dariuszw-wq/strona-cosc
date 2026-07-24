@@ -4,16 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Droga do karty pobytu — gra | Centrum Obsługi Spraw Cudzoziemców</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--navy:#1B2A4A;--navy-d:#13203A;--gold:#C9A961;--gold-l:#DCC38A;--cream:#FAF8F5;--ink:#232A3A;--mut:#5B6478;--line:#E7E0D3;--ok:#2E7D4F;--red:#B33A3A;--amber:#C07A1E}
+:root{--navy:#16244c;--navy-d:#111a3a;--gold:#4636c9;--gold-l:#6d6ae0;--cream:#f4f6fb;--ink:#16244c;--mut:#5B6478;--line:#e6e9f0;--ok:#2E7D4F;--red:#B33A3A;--amber:#C07A1E}
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Inter',sans-serif;background:linear-gradient(160deg,var(--navy),var(--navy-d));min-height:100vh;display:flex;align-items:center;justify-content:center;padding:14px;color:var(--ink)}
+body{font-family:'IBM Plex Sans',sans-serif;background:linear-gradient(160deg,var(--navy),var(--navy-d));min-height:100vh;display:flex;align-items:center;justify-content:center;padding:14px;color:var(--ink)}
 .game{width:100%;max-width:430px;background:var(--cream);border-radius:20px;overflow:hidden;box-shadow:0 24px 70px rgba(0,0,0,.4)}
 .top{background:var(--navy);color:#fff;padding:16px 18px;display:flex;justify-content:space-between;align-items:center}
-.top h1{font-family:'Cormorant Garamond',serif;font-size:19px;color:#fff}
+.top h1{font-family:'IBM Plex Serif',serif;font-size:19px;color:#fff}
 .top .tury{font-size:11.5px;color:#B9C3D6;text-align:right}
-.top .tury b{display:block;color:var(--gold-l);font-size:16px;font-family:'Cormorant Garamond',serif}
+.top .tury b{display:block;color:var(--gold-l);font-size:16px;font-family:'IBM Plex Serif',serif}
 
 /* PLANSZA */
 .board{position:relative;padding:14px;background:
@@ -69,12 +69,12 @@ body{font-family:'Inter',sans-serif;background:linear-gradient(160deg,var(--navy
 .hint{font-size:12.5px;color:var(--mut)}
 .final{display:none;text-align:center;padding:6px 0}
 .final .karta{position:relative;width:230px;margin:0 auto 14px;background:linear-gradient(135deg,#F4EFE4,#EAE0C9);border:1px solid var(--gold);border-radius:12px;padding:14px;color:var(--navy);transform:rotate(-2deg);box-shadow:0 14px 34px rgba(0,0,0,.2)}
-.final .karta .n{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:17px}
+.final .karta .n{font-family:'IBM Plex Serif',serif;font-weight:700;font-size:17px}
 .final .karta .t{font-size:9px;text-transform:uppercase;letter-spacing:.1em;color:#8A7C58}
 .final .stamp{position:absolute;right:-14px;bottom:-12px;border:2.5px solid var(--ok);color:var(--ok);font-weight:800;font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:6px 10px;border-radius:8px;background:rgba(250,248,245,.95);opacity:0;transform:rotate(10deg) scale(2.2)}
 .final .stamp.go{animation:stamp .5s .5s cubic-bezier(.2,1.4,.4,1) forwards}
 @keyframes stamp{to{opacity:1;transform:rotate(10deg) scale(1)}}
-.final h2{font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--navy);margin-bottom:4px}
+.final h2{font-family:'IBM Plex Serif',serif;font-size:24px;color:var(--navy);margin-bottom:4px}
 .final p{font-size:13.5px;color:var(--mut);margin-bottom:14px}
 .final .cta{display:block;background:var(--gold);color:var(--navy);text-decoration:none;font-weight:800;font-size:14px;padding:13px;border-radius:12px;margin-bottom:8px}
 .again{background:none;border:none;color:var(--mut);font-size:12.5px;text-decoration:underline;cursor:pointer;font-family:inherit}
@@ -93,16 +93,16 @@ body{font-family:'Inter',sans-serif;background:linear-gradient(160deg,var(--navy
     <div id="hero">
       <svg viewBox="0 0 46 58">
         <g class="body-g">
-          <g class="leg-l"><rect x="17" y="38" width="4.5" height="13" rx="2.2" fill="#1B2A4A"/></g>
-          <g class="leg-r"><rect x="24" y="38" width="4.5" height="13" rx="2.2" fill="#13203A"/></g>
-          <rect x="13" y="22" width="20" height="19" rx="7" fill="#1B2A4A"/>
-          <g class="arm-l"><rect x="11" y="24" width="4.5" height="13" rx="2.2" fill="#13203A"/></g>
-          <g class="arm-r"><rect x="30" y="24" width="4.5" height="13" rx="2.2" fill="#1B2A4A"/></g>
-          <g class="teczka"><rect x="31" y="32" width="12" height="9" rx="2" fill="#C9A961"/><rect x="35" y="30" width="4" height="3" rx="1" fill="#C9A961"/></g>
+          <g class="leg-l"><rect x="17" y="38" width="4.5" height="13" rx="2.2" fill="#16244c"/></g>
+          <g class="leg-r"><rect x="24" y="38" width="4.5" height="13" rx="2.2" fill="#111a3a"/></g>
+          <rect x="13" y="22" width="20" height="19" rx="7" fill="#16244c"/>
+          <g class="arm-l"><rect x="11" y="24" width="4.5" height="13" rx="2.2" fill="#111a3a"/></g>
+          <g class="arm-r"><rect x="30" y="24" width="4.5" height="13" rx="2.2" fill="#16244c"/></g>
+          <g class="teczka"><rect x="31" y="32" width="12" height="9" rx="2" fill="#4636c9"/><rect x="35" y="30" width="4" height="3" rx="1" fill="#4636c9"/></g>
           <circle cx="23" cy="13" r="8.5" fill="#E8C39E"/>
           <path d="M14.5 11 a8.5 8.5 0 0 1 17 0 l-2 -1 -3 1.5 -4 -2 -4 2 -2 -1.5z" fill="#3A2E22"/>
-          <circle cx="20" cy="13" r="1.1" fill="#232A3A"/><circle cx="26" cy="13" r="1.1" fill="#232A3A"/>
-          <path d="M20.5 16.5 q2.5 2 5 0" stroke="#232A3A" stroke-width="1.1" fill="none" stroke-linecap="round"/>
+          <circle cx="20" cy="13" r="1.1" fill="#16244c"/><circle cx="26" cy="13" r="1.1" fill="#16244c"/>
+          <path d="M20.5 16.5 q2.5 2 5 0" stroke="#16244c" stroke-width="1.1" fill="none" stroke-linecap="round"/>
         </g>
       </svg>
     </div>
@@ -217,8 +217,8 @@ place(0,true);
 
 <!-- Znak marki COSC -->
 <div id="cosc-brand" style="position:fixed;left:14px;bottom:14px;z-index:99999;display:flex;align-items:center;gap:9px;background:rgba(19,32,58,.85);border:1px solid rgba(201,169,97,.6);border-radius:999px;padding:7px 16px 7px 8px;pointer-events:none;font-family:'Inter',Arial,sans-serif;backdrop-filter:blur(2px)">
-<span style="width:26px;height:26px;border:1.5px solid #C9A961;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#C9A961;font-size:11px;font-weight:700;font-family:'Cormorant Garamond',Georgia,serif">CO</span>
-<span style="color:#FAF8F5;font-size:12.5px;font-weight:600;letter-spacing:.02em">Centrum Obsługi Spraw Cudzoziemców</span>
+<span style="width:26px;height:26px;border:1.5px solid #4636c9;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#4636c9;font-size:11px;font-weight:700;font-family:'IBM Plex Serif',Georgia,serif">CO</span>
+<span style="color:#f4f6fb;font-size:12.5px;font-weight:600;letter-spacing:.02em">Centrum Obsługi Spraw Cudzoziemców</span>
 </div>
 </body>
 </html>
