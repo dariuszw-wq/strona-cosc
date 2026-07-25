@@ -31,9 +31,61 @@ canvas{display:block;width:100%;border-radius:16px;box-shadow:0 12px 40px rgba(0
 .ovbrand b{font-size:13px;color:var(--cream);font-weight:600}
 footer{font-size:12px;color:#7c89a5;margin:14px 0 20px;text-align:center;padding:0 16px}
 footer a{color:var(--gold-l)}
+
+/* COSC-CANON-HEADER — ujednolicony pasek (wzór: index.html) */
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);position:sticky;top:0;z-index:50;box-shadow:0 2px 12px rgba(19,32,58,.25)}
+.flagbar{height:8px;background:linear-gradient(to bottom,#f5f5f5 50%,#d4213d 50%);border-bottom:1px solid rgba(22,36,76,.18);position:sticky;top:66px;z-index:49}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none}
+.logo .name{color:#fff;font-size:14px;line-height:1.3;font-weight:600;max-width:220px;font-family:'IBM Plex Serif',serif}
+.flag{flex-shrink:0;width:44px;height:29px;border-radius:3px;box-shadow:0 0 0 1px rgba(255,255,255,.4);overflow:hidden;display:flex;align-items:center;justify-content:center}
+.flag-pl{flex-direction:column}
+.flag-pl .fw{flex:1;width:100%;background:#f5f5f5}
+.flag-pl .fr{flex:1;width:100%;background:#d4213d}
+.menu{display:flex;gap:24px;align-items:center}
+.menu a{color:#E9ECF3;text-decoration:none;font-size:14px;font-weight:500}
+.menu a:hover{color:#6d6ae0}
+.menu a.on{color:#6d6ae0}
+.lang{display:flex;gap:2px;border:1px solid rgba(255,255,255,.25);border-radius:8px;padding:2px}
+.lang a{padding:4px 8px;font-size:11.5px;font-weight:700;border-radius:6px;text-decoration:none;color:#cfd6e4}
+.lang a.on{background:#4636c9;color:#16244c}
+.burger{display:none;background:none;border:none;color:#fff;font-size:26px;cursor:pointer}
+@media(max-width:900px){
+  header .nav{position:relative;justify-content:center}
+  header .logo{justify-content:center;text-align:center}
+  .lang{position:absolute;right:54px;top:50%;transform:translateY(-50%)}
+  .burger{display:block;position:absolute;right:14px;top:50%;transform:translateY(-50%)}
+  .menu{display:none;position:absolute;top:66px;left:0;right:0;flex-direction:column;gap:0;background:#2f2699;padding:6px 0;box-shadow:0 12px 24px rgba(0,0,0,.25);z-index:48}
+  .menu.open{display:flex}
+  .menu a{padding:13px 22px;width:100%;font-size:15px;border-bottom:1px solid rgba(255,255,255,.08)}
+}
+
 </style>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="index.html">
+      <span aria-label="Godło Unii Europejskiej" style="display:inline-flex;align-items:center"><svg width="34" height="34" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" role="img"><rect width="36" height="36" rx="7" fill="#0A2A8C"/><g fill="#F5C518"><path id="euStar" d="M18,4.6 l0.85,1.75 l1.95,0.2 l-1.45,1.32 l0.42,1.9 l-1.77,-1.0 l-1.77,1.0 l0.42,-1.9 l-1.45,-1.32 l1.95,-0.2 Z"/><use href="#euStar" transform="rotate(30 18 18)"/><use href="#euStar" transform="rotate(60 18 18)"/><use href="#euStar" transform="rotate(90 18 18)"/><use href="#euStar" transform="rotate(120 18 18)"/><use href="#euStar" transform="rotate(150 18 18)"/><use href="#euStar" transform="rotate(180 18 18)"/><use href="#euStar" transform="rotate(210 18 18)"/><use href="#euStar" transform="rotate(240 18 18)"/><use href="#euStar" transform="rotate(270 18 18)"/><use href="#euStar" transform="rotate(300 18 18)"/><use href="#euStar" transform="rotate(330 18 18)"/></g></svg></span>
+      <div class="name">Centrum Obsługi<br>Spraw Cudzoziemców</div>
+      <span class="flag flag-pl" aria-label="Polska"><span class="fw"></span><span class="fr"></span></span>
+    </a>
+    <nav class="menu">
+      <a href="index.html#uslugi">Usługi</a>
+      <a href="swiadczenia-cudzoziemcy.html">Świadczenia i zasiłki</a>
+      <a href="aktualnosci.html">Aktualności</a>
+      <a href="baza-noclegowa.html">Baza noclegowa</a>
+      <a href="index.html#cennik">Pakiety</a>
+      <a href="index.html#kontakt">Kontakt</a>
+    </nav>
+    <div class="lang"><!-- przełącznik języków generuje i18n.js --></div>
+    <button class="burger" aria-label="Menu">☰</button>
+  </div>
+</header>
+<div class="flagbar" aria-hidden="true"></div>
+
 <h1>Bieg po Kartę Pobytu</h1>
 <div class="sub">Zbierz wszystkie dokumenty, omijaj przeszkody i dobiegnij do urzędu!</div>
 
@@ -263,6 +315,10 @@ cv.addEventListener('touchend',e=>{
 document.getElementById('startBtn').addEventListener('click',start);
 reset();sky();city();road();runner();brand();
 })();
+</script>
+
+<script>
+(function(){var b=document.querySelector('.burger'),m=document.querySelector('.menu');if(b&&m){b.addEventListener('click',function(){m.classList.toggle('open')});m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open')})});}})();
 </script>
 </body>
 </html>

@@ -158,6 +158,36 @@ footer .upd{margin-top:14px;font-size:11.5px;color:#6B7890}
   .tbl{display:block;overflow-x:auto;white-space:nowrap}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+
+/* COSC-CANON-HEADER — ujednolicony pasek (wzór: index.html) */
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);position:sticky;top:0;z-index:50;box-shadow:0 2px 12px rgba(19,32,58,.25)}
+.flagbar{height:8px;background:linear-gradient(to bottom,#f5f5f5 50%,#d4213d 50%);border-bottom:1px solid rgba(22,36,76,.18);position:sticky;top:66px;z-index:49}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none}
+.logo .name{color:#fff;font-size:14px;line-height:1.3;font-weight:600;max-width:220px;font-family:'IBM Plex Serif',serif}
+.flag{flex-shrink:0;width:44px;height:29px;border-radius:3px;box-shadow:0 0 0 1px rgba(255,255,255,.4);overflow:hidden;display:flex;align-items:center;justify-content:center}
+.flag-pl{flex-direction:column}
+.flag-pl .fw{flex:1;width:100%;background:#f5f5f5}
+.flag-pl .fr{flex:1;width:100%;background:#d4213d}
+.menu{display:flex;gap:24px;align-items:center}
+.menu a{color:#E9ECF3;text-decoration:none;font-size:14px;font-weight:500}
+.menu a:hover{color:#6d6ae0}
+.menu a.on{color:#6d6ae0}
+.lang{display:flex;gap:2px;border:1px solid rgba(255,255,255,.25);border-radius:8px;padding:2px}
+.lang a{padding:4px 8px;font-size:11.5px;font-weight:700;border-radius:6px;text-decoration:none;color:#cfd6e4}
+.lang a.on{background:#4636c9;color:#16244c}
+.burger{display:none;background:none;border:none;color:#fff;font-size:26px;cursor:pointer}
+@media(max-width:900px){
+  header .nav{position:relative;justify-content:center}
+  header .logo{justify-content:center;text-align:center}
+  .lang{position:absolute;right:54px;top:50%;transform:translateY(-50%)}
+  .burger{display:block;position:absolute;right:14px;top:50%;transform:translateY(-50%)}
+  .menu{display:none;position:absolute;top:66px;left:0;right:0;flex-direction:column;gap:0;background:#2f2699;padding:6px 0;box-shadow:0 12px 24px rgba(0,0,0,.25);z-index:48}
+  .menu.open{display:flex}
+  .menu a{padding:13px 22px;width:100%;font-size:15px;border-bottom:1px solid rgba(255,255,255,.08)}
+}
+
 </style>
 </head>
 <body>
@@ -171,15 +201,16 @@ footer .upd{margin-top:14px;font-size:11.5px;color:#6B7890}
       <div class="name">Centrum Obsługi<br>Spraw Cudzoziemców</div>
       <span class="flag flag-pl" aria-label="Polska"><span class="fw"></span><span class="fr"></span></span>
     </a>
-    <nav class="menu" id="menu">
-      <a href="index.html">Strona główna</a>
-      <a href="swiadczenia-cudzoziemcy.html">Świadczenia i zasiłki</a>
-      <a href="formularz-pobyt-czasowy-praca-NOWA.html">Ankieta</a>
-      <a href="index.html#cennik">Cennik</a>
+    <nav class="menu">
+      <a href="index.html#uslugi">Usługi</a>
+      <a href="swiadczenia-cudzoziemcy.html" class="on">Świadczenia i zasiłki</a>
+      <a href="aktualnosci.html">Aktualności</a>
+      <a href="baza-noclegowa.html">Baza noclegowa</a>
+      <a href="index.html#cennik">Pakiety</a>
       <a href="index.html#kontakt">Kontakt</a>
     </nav>
     <div class="lang"><!-- przełącznik języków generuje i18n.js --></div>
-    <button class="burger" aria-label="Menu" id="burger">☰</button>
+    <button class="burger" aria-label="Menu">☰</button>
   </div>
 </header>
 <div class="flagbar" aria-hidden="true"></div>
@@ -369,5 +400,9 @@ if(window.matchMedia('(max-width:900px)').matches){toc.classList.add('closed')}
 th&&th.addEventListener('click',function(){if(window.matchMedia('(max-width:900px)').matches)toc.classList.toggle('closed')});
 </script>
 <script src="i18n/i18n.js"></script>
+
+<script>
+(function(){var b=document.querySelector('.burger'),m=document.querySelector('.menu');if(b&&m){b.addEventListener('click',function(){m.classList.toggle('open')});m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open')})});}})();
+</script>
 </body>
 </html>
