@@ -49,6 +49,16 @@ header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);po
 .menu{display:flex;flex-wrap:wrap;gap:7px 20px;align-items:center;justify-content:center;flex:1 1 auto;min-width:0}
 .menu a{color:#E9ECF3;text-decoration:none;font-size:14px;font-weight:500}
 .menu a:hover{color:var(--gold-l)}
+.more{position:relative;display:flex;align-items:center}
+.more-btn{display:inline-flex;align-items:center;gap:6px;font-family:inherit;font-size:14px;font-weight:600;color:var(--gold-l);background:rgba(201,169,97,.10);border:1px solid rgba(201,169,97,.45);border-radius:8px;padding:7px 13px;cursor:pointer;line-height:1;transition:background .2s ease,border-color .2s ease}
+.more-btn:hover{background:rgba(201,169,97,.20);border-color:var(--gold)}
+.more-btn .chev{font-size:11px;transition:transform .2s ease}
+.more.open .more-btn{background:rgba(201,169,97,.22);border-color:var(--gold)}
+.more.open .more-btn .chev{transform:rotate(180deg)}
+.more-menu{position:absolute;top:calc(100% + 12px);right:0;min-width:264px;background:#241C86;border:1px solid rgba(201,169,97,.35);border-radius:14px;padding:8px;box-shadow:0 18px 40px rgba(10,16,40,.45);display:flex;flex-direction:column;gap:2px;opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .18s ease,transform .18s ease,visibility .18s;z-index:60}
+.more.open .more-menu{opacity:1;visibility:visible;transform:translateY(0)}
+.more-menu a{color:#E9ECF3;text-decoration:none;font-size:14px;font-weight:500;padding:11px 14px;border-radius:9px;white-space:nowrap;transition:background .15s ease,color .15s ease}
+.more-menu a:hover{background:rgba(201,169,97,.16);color:var(--gold-l)}
 .lang{display:flex;gap:2px;border:1px solid rgba(255,255,255,.25);border-radius:8px;padding:2px}
 .lang a{padding:4px 8px;font-size:11.5px;font-weight:700;border-radius:6px;text-decoration:none;color:#cfd6e4}
 .lang a.on{background:var(--gold);color:var(--navy)}
@@ -418,6 +428,10 @@ footer .upd{margin-top:14px;font-size:11.5px;color:#6B7890}
   .menu{display:none;position:absolute;top:var(--hh,66px);left:0;right:0;flex-wrap:nowrap;flex-direction:column;gap:0;background:#2f2699;padding:6px 0;box-shadow:0 12px 24px rgba(0,0,0,.25);z-index:48}
   .menu.open{display:flex}
   .menu a{padding:13px 22px;width:100%;font-size:15px;border-bottom:1px solid rgba(255,255,255,.08)}
+  .more{display:contents}
+  .more-btn{display:none}
+  .more-menu{position:static;opacity:1;visibility:visible;transform:none;display:flex;background:transparent;border:none;box-shadow:none;padding:0;min-width:0;gap:0}
+  .more-menu a{border-radius:0;padding:13px 22px;border-bottom:1px solid rgba(255,255,255,.08)}
   .hero-grid,.mos-grid,.ct-grid,.k-grid{grid-template-columns:1fr}
   .serv,.plany,.path-steps{grid-template-columns:1fr}
   .hero{padding-top:48px}
@@ -448,15 +462,20 @@ footer .upd{margin-top:14px;font-size:11.5px;color:#6B7890}
     </a>
         <nav class="menu">
       <a href="#uslugi">Nasze usługi</a>
-      <a href="#mos">Wniosek na kartę pobytu</a>
+      <a href="#mos">Wniosek karta pobytu</a>
       <a href="#cennik">Pakiety</a>
-      <a href="swiadczenia-cudzoziemcy.html">Świadczenia i zasiłki dla cudzoziemców</a>
-      <a href="#kalkulator">Kalkulator 90/180</a>
-      <a href="aktualnosci.html">Aktualności, gry i quizy</a>
-      <a href="#faq">FAQ</a>
-      <a href="baza-noclegowa.html">Baza noclegowa</a>
-      <a href="przewodnik-po-polsce.html">Przewodnik po Polsce</a>
       <a href="#kontakt">Kontakt</a>
+      <div class="more">
+        <button class="more-btn" aria-haspopup="true" aria-expanded="false">Więcej<span class="chev">▾</span></button>
+        <div class="more-menu">
+          <a href="swiadczenia-cudzoziemcy.html">Zasiłki dla Cudzoziemców</a>
+          <a href="#kalkulator">Kalkulator 90/180</a>
+          <a href="aktualnosci.html">Aktualności, gry i quizy</a>
+          <a href="#faq">FAQ</a>
+          <a href="baza-noclegowa.html">Baza noclegowa</a>
+          <a href="przewodnik-po-polsce.html">Przewodnik po Polsce</a>
+        </div>
+      </div>
     </nav>
     <div class="lang"><!-- przełącznik języków generuje i18n.js --></div>
     <button class="burger" aria-label="Menu">☰</button>
@@ -1054,6 +1073,7 @@ document.querySelectorAll('.trust,.path-sec,.ct-demo,.mascot').forEach(el=>io.ob
 // menu mobilne (hamburger)
 (function(){var b=document.querySelector('.burger'),m=document.querySelector('.menu');if(b&&m){b.addEventListener('click',function(){m.classList.toggle('open')});m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open')})});}})();
 (function(){var h=document.querySelector('header');if(!h)return;function set(){document.documentElement.style.setProperty('--hh',h.offsetHeight+'px');}set();window.addEventListener('resize',set);window.addEventListener('load',set);if(document.fonts&&document.fonts.ready){document.fonts.ready.then(set);}})();
+(function(){var more=document.querySelector('.more'),btn=more&&more.querySelector('.more-btn');if(!more||!btn)return;function close(){more.classList.remove('open');btn.setAttribute('aria-expanded','false');}btn.addEventListener('click',function(e){e.stopPropagation();var open=more.classList.toggle('open');btn.setAttribute('aria-expanded',open?'true':'false');});more.querySelectorAll('.more-menu a').forEach(function(a){a.addEventListener('click',close);});document.addEventListener('click',function(e){if(!more.contains(e.target))close();});document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});})();
 </script>
 <script src="i18n/i18n.js"></script>
 </body>
