@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zasiłek dla cudzoziemca i świadczenia w Polsce — kompletny przewodnik | COSC</title>
+<meta name="description" content="Jakie zasiłki i świadczenia przysługują cudzoziemcowi pracującemu w Polsce? ZUS, 800+, świadczenia rodzinne, zasiłek dla bezrobotnych, pomoc społeczna — warunki, podstawa prawna i pomoc w złożeniu wniosku.">
+<link rel="canonical" href="https://cosc.org.pl/swiadczenia-cudzoziemcy.html">
+<meta property="og:title" content="Zasiłek dla cudzoziemca i świadczenia w Polsce — przewodnik">
+<meta property="og:description" content="ZUS, 800+, świadczenia rodzinne, zasiłek dla bezrobotnych, pomoc społeczna. Warunki, podstawa prawna, pomoc w złożeniu wniosku.">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="i18n/i18n.css">
+<style>
+:root{
+  --navy:#16244c; --navy-d:#111a3a; --gold:#4636c9; --gold-l:#6d6ae0;
+  --cream:#f4f6fb; --ink:#16244c; --mut:#5B6478; --line:#e6e9f0;
+  --ok:#1a9a52; --red:#d4213d;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'IBM Plex Sans',sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;font-size:16px}
+h1,h2,h3,h4{font-family:'IBM Plex Serif',serif;color:var(--navy);line-height:1.18}
+a{color:var(--gold)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.btn{display:inline-block;text-decoration:none;font-weight:700;font-size:15px;padding:14px 26px;border-radius:10px;transition:.2s;text-align:center;cursor:pointer;border:none}
+.btn-gold{background:var(--red);color:#fff}
+.btn-gold:hover{background:#b81a32;transform:translateY(-1px)}
+.btn-line{border:1.5px solid rgba(255,255,255,.7);color:#fff}
+.btn-line:hover{background:rgba(255,255,255,.12)}
+.eyebrow{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#e7e5ff;margin-bottom:12px}
+
+/* TOP BARS */
+.mos{background:var(--gold);color:#fff;font-size:13.5px;font-weight:600;text-align:center;padding:9px 16px}
+.mos a{color:#ffd34d;font-weight:800}
+header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);position:sticky;top:0;z-index:50;box-shadow:0 2px 12px rgba(19,32,58,.25)}
+.flagbar{height:8px;background:linear-gradient(to bottom,#f5f5f5 50%,#d4213d 50%);border-bottom:1px solid rgba(22,36,76,.18);position:sticky;top:66px;z-index:49}
+.flag{flex-shrink:0;width:44px;height:29px;border-radius:3px;box-shadow:0 0 0 1px rgba(255,255,255,.4);overflow:hidden;display:flex;align-items:center;justify-content:center}
+.flag-ue{background:#1e3a8a}
+.flag-pl{flex-direction:column}
+.flag-pl .fw{flex:1;width:100%;background:#f5f5f5}
+.flag-pl .fr{flex:1;width:100%;background:#d4213d}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none}
+.logo .name{color:#fff;font-size:14px;line-height:1.3;font-weight:600;max-width:220px}
+.menu{display:flex;gap:22px;align-items:center}
+.menu a{color:#E9ECF3;text-decoration:none;font-size:14px;font-weight:500}
+.menu a:hover{color:var(--gold-l)}
+.lang{display:flex;gap:2px;border:1px solid rgba(255,255,255,.25);border-radius:8px;padding:2px}
+.lang a{padding:4px 8px;font-size:11.5px;font-weight:700;border-radius:6px;text-decoration:none;color:#cfd6e4}
+.lang a.on{background:var(--gold);color:#fff}
+.burger{display:none;background:none;border:none;color:#fff;font-size:26px;cursor:pointer;line-height:1}
+
+/* HERO */
+.hero{background:linear-gradient(160deg,#4636c9 0%,#3b2fbf 60%,#2f2699 100%);color:#fff;padding:54px 0 46px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border:1px solid rgba(255,255,255,.12);border-radius:50%}
+.crumb{font-size:12.5px;color:#c7cdf0;margin-bottom:14px}
+.crumb a{color:#c7cdf0;text-decoration:none}
+.crumb a:hover{color:#fff}
+.hero h1{color:#fff;font-size:clamp(28px,5.4vw,46px);font-weight:600;position:relative;z-index:2}
+.hero h1 em{font-style:normal;color:#ffd34d}
+.hero p.lead{margin:16px 0 24px;font-size:clamp(15px,2.4vw,18px);color:#dce4f5;max-width:640px;position:relative;z-index:2}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap;position:relative;z-index:2}
+.pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px;position:relative;z-index:2}
+.pill{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);color:#eef1fb;font-size:12.5px;font-weight:600;padding:7px 13px;border-radius:999px}
+
+/* LAYOUT */
+.layout{display:grid;grid-template-columns:260px 1fr;gap:40px;padding:44px 0 20px;align-items:start}
+/* TABLE OF CONTENTS */
+.toc{position:sticky;top:92px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 18px 14px;box-shadow:0 8px 24px rgba(19,32,58,.05)}
+.toc h2{font-size:13px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut);margin-bottom:12px}
+.toc ol{list-style:none;counter-reset:t}
+.toc li{counter-increment:t;margin:2px 0}
+.toc a{display:flex;gap:9px;align-items:baseline;text-decoration:none;color:var(--ink);font-size:14px;padding:7px 8px;border-radius:8px;font-weight:500}
+.toc a::before{content:counter(t);flex:none;width:20px;height:20px;font-size:11px;font-weight:700;color:var(--gold);background:#ece9fb;border-radius:6px;display:inline-flex;align-items:center;justify-content:center;font-family:'IBM Plex Sans'}
+.toc a:hover{background:var(--cream);color:var(--gold)}
+.toc-toggle{display:none}
+
+/* ARTICLE */
+article h2{font-size:clamp(23px,3.6vw,31px);font-weight:600;margin:8px 0 6px;scroll-margin-top:96px}
+article h3{font-size:19px;font-weight:600;margin:22px 0 6px}
+article p{margin:12px 0;color:#333b52}
+article .sec{padding:20px 0 8px;border-top:1px solid var(--line)}
+article .sec:first-child{border-top:none}
+.lead-in{font-size:17px;color:var(--mut)}
+.section-kicker{letter-spacing:.16em;text-transform:uppercase;font-size:12px;color:var(--gold);font-weight:700}
+
+/* CARDS */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:18px 0}
+.grid4{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:0 8px 24px rgba(19,32,58,.05)}
+.card .ic{font-size:30px;margin-bottom:8px}
+.card h3{margin:0 0 6px;font-size:18px}
+.card p{margin:0;font-size:14.5px;color:var(--mut)}
+a.card{text-decoration:none;color:inherit;display:block;transition:.2s}
+a.card:hover{transform:translateY(-3px);border-color:var(--gold-l);box-shadow:0 14px 32px rgba(70,54,201,.13)}
+a.card .go{display:inline-block;margin-top:12px;color:var(--gold);font-weight:700;font-size:14px}
+
+/* CALLOUT */
+.note{background:#f0f7ff;border-left:4px solid var(--gold);border-radius:0 12px 12px 0;padding:16px 18px;margin:18px 0;font-size:14.5px}
+.note.warn{background:#fff6ed;border-left-color:var(--red)}
+.note.ok{background:#f0faf3;border-left-color:var(--ok)}
+.note b{color:var(--navy)}
+
+/* TABLE */
+.tbl{width:100%;border-collapse:collapse;margin:16px 0;font-size:14px;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.tbl th,.tbl td{text-align:left;padding:11px 13px;border-bottom:1px solid var(--line);vertical-align:top}
+.tbl th{background:#f2f0fb;color:var(--navy);font-weight:700;font-size:13px}
+.tbl tr:last-child td{border-bottom:none}
+.tbl .yes{color:var(--ok);font-weight:700}
+.tbl .maybe{color:#b8791a;font-weight:700}
+
+/* FAQ */
+.faq details{background:#fff;border:1px solid var(--line);border-radius:12px;margin:10px 0;overflow:hidden}
+.faq summary{cursor:pointer;padding:16px 18px;font-weight:600;color:var(--navy);font-size:15.5px;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:22px;color:var(--gold);flex:none;transition:.2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq .a{padding:0 18px 16px;color:#333b52;font-size:14.5px}
+
+/* CTA */
+.cta{background:linear-gradient(150deg,#4636c9,#2f2699);color:#fff;border-radius:20px;padding:32px 26px;margin:36px 0;text-align:center;position:relative;overflow:hidden}
+.cta h2{color:#fff;font-size:clamp(22px,3.4vw,30px)}
+.cta p{color:#dce4f5;max-width:560px;margin:12px auto 20px}
+.cta .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* LEGAL SOURCES */
+.legal{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;margin:24px 0}
+.legal h3{font-size:16px;margin-bottom:8px}
+.legal ul{margin:6px 0 0 18px;font-size:13.5px;color:var(--mut);line-height:1.8}
+.legal .disc{margin-top:14px;font-size:12.5px;color:#8894ab;border-top:1px dashed var(--line);padding-top:12px}
+
+/* FOOTER */
+footer{background:var(--navy-d);color:#93A0B8;font-size:12.5px;padding:34px 0;margin-top:20px}
+.f-grid{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer a{color:#B9C3D6;text-decoration:none}
+footer .upd{margin-top:14px;font-size:11.5px;color:#6B7890}
+.wa-float{position:fixed;bottom:20px;right:20px;width:56px;height:56px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:26px;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.28);z-index:60}
+
+/* MOBILE */
+@media(max-width:900px){
+  .menu{display:none;position:absolute;top:66px;left:0;right:0;flex-direction:column;gap:0;background:#2f2699;padding:8px 0;box-shadow:0 12px 24px rgba(0,0,0,.25)}
+  .menu.open{display:flex}
+  .menu a{padding:13px 22px;width:100%;font-size:15px;border-bottom:1px solid rgba(255,255,255,.08)}
+  .burger{display:block}
+  .layout{grid-template-columns:1fr;gap:0;padding:22px 0 10px}
+  .toc{position:static;top:auto;margin-bottom:22px}
+  .toc h2{cursor:pointer;display:flex;justify-content:space-between;align-items:center;margin-bottom:0}
+  .toc h2::after{content:"▾";color:var(--gold);font-size:16px}
+  .toc.closed h2{margin-bottom:0}
+  .toc.closed ol{display:none}
+  .toc h2{margin-bottom:12px}
+  .grid2,.grid4{grid-template-columns:1fr}
+  .hero{padding:40px 0 36px}
+  .tbl{display:block;overflow-x:auto;white-space:nowrap}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="mos">⚠ Od 27.04.2026 wnioski o pobyt składa się <strong>wyłącznie przez system MOS</strong>. <a href="formularz-pobyt-czasowy-praca-NOWA.html">Wypełnij ankietę — pomożemy →</a></div>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="index.html">
+      <span aria-label="Godło Unii Europejskiej" style="display:inline-flex;align-items:center"><svg width="34" height="34" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" role="img"><rect width="36" height="36" rx="7" fill="#0A2A8C"/><g fill="#F5C518"><path id="euStar" d="M18,4.6 l0.85,1.75 l1.95,0.2 l-1.45,1.32 l0.42,1.9 l-1.77,-1.0 l-1.77,1.0 l0.42,-1.9 l-1.45,-1.32 l1.95,-0.2 Z"/><use href="#euStar" transform="rotate(30 18 18)"/><use href="#euStar" transform="rotate(60 18 18)"/><use href="#euStar" transform="rotate(90 18 18)"/><use href="#euStar" transform="rotate(120 18 18)"/><use href="#euStar" transform="rotate(150 18 18)"/><use href="#euStar" transform="rotate(180 18 18)"/><use href="#euStar" transform="rotate(210 18 18)"/><use href="#euStar" transform="rotate(240 18 18)"/><use href="#euStar" transform="rotate(270 18 18)"/><use href="#euStar" transform="rotate(300 18 18)"/><use href="#euStar" transform="rotate(330 18 18)"/></g></svg></span>
+      <div class="name">Centrum Obsługi<br>Spraw Cudzoziemców</div>
+      <span class="flag flag-pl" aria-label="Polska"><span class="fw"></span><span class="fr"></span></span>
+    </a>
+    <nav class="menu" id="menu">
+      <a href="index.html">Strona główna</a>
+      <a href="swiadczenia-cudzoziemcy.html">Świadczenia i zasiłki</a>
+      <a href="formularz-pobyt-czasowy-praca-NOWA.html">Ankieta</a>
+      <a href="index.html#cennik">Cennik</a>
+      <a href="index.html#kontakt">Kontakt</a>
+    </nav>
+    <div class="lang"><!-- przełącznik języków generuje i18n.js --></div>
+    <button class="burger" aria-label="Menu" id="burger">☰</button>
+  </div>
+</header>
+<div class="flagbar" aria-hidden="true"></div>
+
+<div class="hero">
+  <div class="wrap">
+    <nav class="crumb" aria-label="Ścieżka"><a href="index.html">Strona główna</a> › Świadczenia i zasiłki dla cudzoziemców</nav>
+    <span class="eyebrow">Przewodnik praktyczny · stan prawny 07.2026</span>
+    <h1>Zasiłek dla cudzoziemca i <em>świadczenia w Polsce</em></h1>
+    <p class="lead">Jakie zasiłki i świadczenia przysługują cudzoziemcowi, który legalnie mieszka i pracuje w Polsce — z ZUS, urzędu pracy, świadczeń rodzinnych (800+) i pomocy społecznej. Wyjaśniamy warunki, podstawę prawną i pomagamy złożyć wniosek.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-gold" href="formularz-pobyt-czasowy-praca-NOWA.html?wniosek=zasilek">Sprawdź swoje prawo do świadczenia →</a>
+      <a class="btn btn-line" href="#mapa">Zobacz mapę świadczeń</a>
+    </div>
+    <div class="pills">
+      <span class="pill">🏥 Zasiłki ZUS</span>
+      <span class="pill">👨‍👩‍👧 800+ i rodzinne</span>
+      <span class="pill">💼 Zasiłek dla bezrobotnych</span>
+      <span class="pill">🏠 Pomoc społeczna</span>
+    </div>
+  </div>
+</div>
+
+<div class="wrap layout">
+
+  <!-- SPIS TREŚCI -->
+  <aside class="toc" id="toc">
+    <h2 id="tocHead">Spis treści</h2>
+    <ol>
+      <li><a href="#zasada">Od czego zależy prawo do świadczeń</a></li>
+      <li><a href="#mapa">Mapa świadczeń — 4 grupy</a></li>
+      <li><a href="#zus">Zasiłki z ZUS</a></li>
+      <li><a href="#umowa">Umowa o pracę a zlecenie</a></li>
+      <li><a href="#rodzinne">800+ i świadczenia rodzinne</a></li>
+      <li><a href="#bezrobocie">Zasiłek dla bezrobotnych</a></li>
+      <li><a href="#pomoc">Pomoc społeczna</a></li>
+      <li><a href="#bledy">Najczęstsze błędy</a></li>
+      <li><a href="#faq">Pytania i odpowiedzi</a></li>
+      <li><a href="#podstawa">Podstawa prawna i źródła</a></li>
+    </ol>
+  </aside>
+
+  <article>
+    <!-- 1 -->
+    <section class="sec" id="zasada">
+      <span class="section-kicker">Najważniejsza zasada</span>
+      <h2>Od czego zależy prawo do świadczeń</h2>
+      <p class="lead-in">To nie obywatelstwo decyduje o prawie do zasiłku, lecz kombinacja czterech elementów. Ten sam cudzoziemiec może mieć prawo do jednego świadczenia, a nie mieć do drugiego.</p>
+      <div class="grid4">
+        <div class="card"><div class="ic">🪪</div><h3>Tytuł pobytu</h3><p>Rodzaj i podstawa Twojego legalnego pobytu (stempel po złożeniu wniosku, karta pobytu, pobyt stały). Im „mocniejszy”, tym szerszy dostęp do świadczeń.</p></div>
+        <div class="card"><div class="ic">📄</div><h3>Tytuł do pracy</h3><p>Zezwolenie na pracę, oświadczenie albo pobyt czasowy i praca — plus adnotacja „dostęp do rynku pracy”, która ma kluczowe znaczenie przy 800+.</p></div>
+        <div class="card"><div class="ic">🏥</div><h3>Podleganie ZUS</h3><p>Czy i do jakich ubezpieczeń jesteś zgłoszony — zwłaszcza chorobowego. Od tego zależą zasiłki: chorobowy, macierzyński, opiekuńczy.</p></div>
+        <div class="card"><div class="ic">💰</div><h3>Kryterium dochodu</h3><p>Część świadczeń rodzinnych i pomoc społeczna zależą od dochodu na osobę w rodzinie. Zasiłki z ZUS — nie.</p></div>
+      </div>
+      <div class="note ok"><b>W skrócie:</b> najpewniejsze są świadczenia z ZUS (zależą od składek, nie od obywatelstwa). Świadczenia rodzinne i pomoc społeczna częściej wymagają „twardszego” tytułu pobytowego niż sam stempel po złożeniu wniosku.</div>
+    </section>
+
+    <!-- 2 -->
+    <section class="sec" id="mapa">
+      <span class="section-kicker">Mapa świadczeń</span>
+      <h2>Cztery główne grupy uprawnień</h2>
+      <p>Każdą grupę opisujemy osobno — kliknij, aby przejść do szczegółowego poradnika z warunkami i podstawą prawną.</p>
+      <div class="grid4">
+        <a class="card" href="zasilki-zus-cudzoziemcy.html"><div class="ic">🏥</div><h3>Zasiłki z ZUS</h3><p>Chorobowy, opiekuńczy, macierzyński, rehabilitacyjny, wypadkowy oraz — długofalowo — renta i emerytura.</p><span class="go">Czytaj więcej →</span></a>
+        <a class="card" href="swiadczenia-rodzinne-800-plus-cudzoziemcy.html"><div class="ic">👨‍👩‍👧</div><h3>800+ i świadczenia rodzinne</h3><p>Świadczenie wychowawcze 800+, zasiłek rodzinny z dodatkami, świadczenie rodzicielskie.</p><span class="go">Czytaj więcej →</span></a>
+        <a class="card" href="zasilek-dla-cudzoziemca.html"><div class="ic">💼</div><h3>Zasiłek dla bezrobotnych</h3><p>Rejestracja w urzędzie pracy, warunki nabycia prawa do zasiłku, instrumenty rynku pracy.</p><span class="go">Czytaj więcej →</span></a>
+        <a class="card" href="pomoc-spoleczna-cudzoziemcy.html"><div class="ic">🏠</div><h3>Pomoc społeczna</h3><p>Zasiłek okresowy i celowy, dodatek mieszkaniowy i inne świadczenia gminne zależne od tytułu pobytu i dochodu.</p><span class="go">Czytaj więcej →</span></a>
+      </div>
+    </section>
+
+    <!-- 3 -->
+    <section class="sec" id="zus">
+      <span class="section-kicker">ZUS</span>
+      <h2>Zasiłki z ZUS — co otwiera legalna praca i składki</h2>
+      <p>Świadczenia z ubezpieczenia społecznego zależą od podlegania ubezpieczeniom (zwłaszcza chorobowemu), a nie od obywatelstwa. Jeśli pracujesz legalnie i jesteś zgłoszony do ZUS, masz do nich taki sam dostęp jak obywatel Polski.</p>
+      <div class="grid2">
+        <div class="card"><h3>Zasiłek chorobowy</h3><p>Po tzw. okresie wyczekiwania: <b>30 dni</b> przy ubezpieczeniu obowiązkowym (umowa o pracę) lub <b>90 dni</b> przy dobrowolnym (umowa zlecenia).</p></div>
+        <div class="card"><h3>Zasiłek opiekuńczy</h3><p>Na opiekę nad chorym dzieckiem lub innym członkiem rodziny. <b>Bez okresu wyczekiwania</b> — od pierwszego dnia ubezpieczenia chorobowego.</p></div>
+        <div class="card"><h3>Zasiłek macierzyński</h3><p>Przy objęciu ubezpieczeniem chorobowym i urodzeniu/przyjęciu dziecka. Również <b>bez okresu wyczekiwania</b>.</p></div>
+        <div class="card"><h3>Świadczenie rehabilitacyjne</h3><p>Po wyczerpaniu zasiłku chorobowego, gdy dalsze leczenie rokuje odzyskanie zdolności do pracy.</p></div>
+        <div class="card"><h3>Zasiłek wypadkowy</h3><p>Gdy niezdolność do pracy wynika z wypadku przy pracy lub choroby zawodowej — bez okresu wyczekiwania.</p></div>
+        <div class="card"><h3>Renta i emerytura</h3><p>Świadczenia długofalowe, zależne od przebiegu ubezpieczenia i ustawowych przesłanek.</p></div>
+      </div>
+      <div class="note"><a href="zasilki-zus-cudzoziemcy.html"><b>Pełny poradnik: zasiłki z ZUS dla cudzoziemców →</b></a></div>
+    </section>
+
+    <!-- 4 -->
+    <section class="sec" id="umowa">
+      <span class="section-kicker">Forma zatrudnienia</span>
+      <h2>Umowa o pracę a umowa zlecenia — najważniejsze różnice</h2>
+      <table class="tbl">
+        <thead><tr><th>Zagadnienie</th><th>Umowa o pracę</th><th>Umowa zlecenia</th></tr></thead>
+        <tbody>
+          <tr><td>Ubezpieczenie chorobowe</td><td class="yes">Obowiązkowe</td><td class="maybe">Dobrowolne — trzeba przystąpić</td></tr>
+          <tr><td>Okres wyczekiwania na chorobowy</td><td>30 dni</td><td>90 dni</td></tr>
+          <tr><td>Wykazanie ciągłości zatrudnienia</td><td class="yes">Najłatwiej</td><td>Zależy od zgłoszeń ZUS</td></tr>
+          <tr><td>Staż do zasiłku dla bezrobotnych</td><td class="yes">Liczy się wprost</td><td>Liczy się, jeśli odprowadzano Fundusz Pracy</td></tr>
+        </tbody>
+      </table>
+      <div class="note warn"><b>Przy zleceniu zawsze sprawdź:</b> czy zostałeś zgłoszony do ubezpieczenia chorobowego. Bez tego nie ma zasiłku chorobowego ani macierzyńskiego. Warto poprosić pracodawcę o potwierdzenie zgłoszenia (ZUS ZUA/RCA).</div>
+    </section>
+
+    <!-- 5 -->
+    <section class="sec" id="rodzinne">
+      <span class="section-kicker">Rodzina</span>
+      <h2>800+ i świadczenia rodzinne</h2>
+      <p>Świadczenie wychowawcze <b>800+</b> przysługuje cudzoziemcom m.in. posiadającym kartę pobytu z adnotacją <b>„dostęp do rynku pracy”</b>, jeżeli mieszkają w Polsce razem z dziećmi — a także osobom z pobytem stałym, statusem uchodźcy, ochroną uzupełniającą lub humanitarną. Wyłączeni są m.in. cudzoziemcy z prawem do pracy do 6 miesięcy, przebywający na studiach czy na podstawie samej wizy.</p>
+      <p>Zasiłek rodzinny zależy dodatkowo od <b>kryterium dochodowego</b>. Dla cudzoziemca kluczowy jest właściwy tytuł pobytowy oraz numery PESEL członków rodziny.</p>
+      <div class="note"><a href="swiadczenia-rodzinne-800-plus-cudzoziemcy.html"><b>Pełny poradnik: 800+ i świadczenia rodzinne dla cudzoziemców →</b></a></div>
+    </section>
+
+    <!-- 6 -->
+    <section class="sec" id="bezrobocie">
+      <span class="section-kicker">Urząd pracy</span>
+      <h2>Zasiłek dla bezrobotnych</h2>
+      <p>Aby zarejestrować się w urzędzie pracy jako osoba bezrobotna, cudzoziemiec musi mieć odpowiedni tytuł pobytowy (m.in. pobyt stały, pobyt czasowy dla członka rodziny obywatela RP, pobyt czasowy i praca albo wizę w celu wykonywania pracy). Prawo do <b>zasiłku</b> powstaje po wykazaniu co najmniej <b>365 dni</b> pracy z odprowadzaniem składek na Fundusz Pracy w okresie <b>18 miesięcy</b> przed rejestracją.</p>
+      <div class="note"><b>W praktyce:</b> po kilku miesiącach pracy staż zwykle jeszcze nie wystarcza; po około roku sytuacja wygląda znacznie lepiej. Nawet bez prawa do zasiłku można korzystać z części usług rynku pracy. <a href="zasilek-dla-cudzoziemca.html"><b>Pełny poradnik →</b></a></div>
+    </section>
+
+    <!-- 7 -->
+    <section class="sec" id="pomoc">
+      <span class="section-kicker">Pomoc społeczna</span>
+      <h2>Pomoc społeczna i świadczenia gminne</h2>
+      <p>Zasiłek okresowy, celowy czy dodatek mieszkaniowy mogą przysługiwać, ale <b>tylko cudzoziemcom z wąskiego katalogu ustawowego</b> — najczęściej z pobytem stałym, statusem rezydenta długoterminowego UE lub pobytem czasowym udzielonym z określonych przyczyn (np. jako członek rodziny obywatela RP). Sam pobyt czasowy „i praca” zwykle nie wystarcza. Dodatkowo obowiązuje kryterium dochodowe.</p>
+      <div class="note warn"><b>Tu najczęściej powstają spory</b> na styku rodzaju pobytu i interpretacji ośrodka pomocy społecznej. Przed złożeniem wniosku warto sprawdzić dokładną podstawę pobytową. <a href="pomoc-spoleczna-cudzoziemcy.html"><b>Pełny poradnik →</b></a></div>
+    </section>
+
+    <!-- 8 -->
+    <section class="sec" id="bledy">
+      <span class="section-kicker">Uwaga</span>
+      <h2>Najczęstsze błędy przy ocenie uprawnień</h2>
+      <div class="grid2">
+        <div class="card"><h3>1. Mylenie pobytu z prawem do świadczeń</h3><p>Legalny pobyt nie oznacza automatycznie prawa do wszystkich zasiłków.</p></div>
+        <div class="card"><h3>2. Pomijanie rodzaju ubezpieczenia</h3><p>Przy zleceniu trzeba osobno sprawdzić chorobowe — od niego zależy część świadczeń.</p></div>
+        <div class="card"><h3>3. Brak analizy dochodu i PESEL</h3><p>Częsty problem przy świadczeniach rodzinnych i lokalnych.</p></div>
+        <div class="card"><h3>4. Brak dowodów zatrudnienia</h3><p>Warto gromadzić umowę, zgłoszenia ZUS, paski wynagrodzeń i potwierdzenia składek.</p></div>
+        <div class="card"><h3>5. Ten sam schemat dla każdego</h3><p>Przy obywatelu państwa trzeciego trzeba sprawdzić dodatkową przesłankę pobytową.</p></div>
+        <div class="card"><h3>6. Niedocenienie etapu sprawy</h3><p>Inaczej oceniamy klienta „na stemplu”, a inaczej z wydaną kartą pobytu.</p></div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="cta">
+      <h2>Nie wiesz, które świadczenie Ci przysługuje?</h2>
+      <p>Wypełnij krótką ankietę — ocenimy Twoją sytuację (tytuł pobytu, forma zatrudnienia, ubezpieczenie) i wskażemy, o co realnie możesz wnioskować.</p>
+      <div class="btns">
+        <a class="btn btn-gold" href="formularz-pobyt-czasowy-praca-NOWA.html?wniosek=zasilek">Wypełnij ankietę o świadczenie</a>
+        <a class="btn btn-line" href="https://wa.me/48539999549">Zapytaj na WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- 9 FAQ -->
+    <section class="sec" id="faq">
+      <span class="section-kicker">FAQ</span>
+      <h2>Pytania i odpowiedzi</h2>
+      <div class="faq">
+        <details><summary>Czy cudzoziemiec na umowie zlecenia ma prawo do zasiłku chorobowego?</summary><div class="a">Tak, ale tylko jeśli przystąpił do dobrowolnego ubezpieczenia chorobowego i upłynął 90-dniowy okres wyczekiwania. Przy umowie o pracę ubezpieczenie chorobowe jest obowiązkowe, a okres wyczekiwania wynosi 30 dni.</div></details>
+        <details><summary>Czy dostanę 800+ na dziecko, mając pobyt czasowy i pracę?</summary><div class="a">Kluczowa jest adnotacja „dostęp do rynku pracy” na karcie pobytu oraz wspólne zamieszkanie z dzieckiem w Polsce. Sam stempel po złożeniu wniosku bywa niewystarczający — każdą sytuację trzeba ocenić indywidualnie.</div></details>
+        <details><summary>Po jakim czasie pracy mogę dostać zasiłek dla bezrobotnych?</summary><div class="a">Co do zasady po wykazaniu 365 dni pracy z opłacaniem składek na Fundusz Pracy w ciągu 18 miesięcy przed rejestracją w urzędzie pracy — i pod warunkiem posiadania odpowiedniego tytułu pobytowego.</div></details>
+        <details><summary>Czy prawo do świadczeń zależy od obywatelstwa?</summary><div class="a">Nie wprost. Decyduje kombinacja: tytuł pobytu, tytuł do pracy, podleganie ubezpieczeniom ZUS i — przy części świadczeń — kryterium dochodowe.</div></details>
+      </div>
+    </section>
+
+    <!-- 10 PODSTAWA PRAWNA -->
+    <section class="sec" id="podstawa">
+      <span class="section-kicker">Podstawa prawna</span>
+      <h2>Podstawa prawna i źródła</h2>
+      <div class="legal">
+        <h3>Akty prawne (stan na lipiec 2026)</h3>
+        <ul>
+          <li>Ustawa z 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa (tzw. ustawa zasiłkowa).</li>
+          <li>Ustawa z 13 października 1998 r. o systemie ubezpieczeń społecznych.</li>
+          <li>Ustawa z 30 października 2002 r. o ubezpieczeniu społecznym z tytułu wypadków przy pracy i chorób zawodowych.</li>
+          <li>Ustawa z 11 lutego 2016 r. o pomocy państwa w wychowywaniu dzieci (świadczenie 800+).</li>
+          <li>Ustawa z 28 listopada 2003 r. o świadczeniach rodzinnych.</li>
+          <li>Ustawa z 20 marca 2025 r. o rynku pracy i służbach zatrudnienia (obowiązuje od 1 czerwca 2025 r.; zastąpiła ustawę o promocji zatrudnienia).</li>
+          <li>Ustawa z 12 marca 2004 r. o pomocy społecznej (art. 5 — katalog uprawnionych cudzoziemców).</li>
+          <li>Ustawa z 12 grudnia 2013 r. o cudzoziemcach (podstawy pobytu, do których odsyłają powyższe ustawy).</li>
+        </ul>
+        <div class="disc">Treść ma charakter informacyjny i nie stanowi porady prawnej. Warunki i przesłanki bywają zmieniane oraz zależą od indywidualnej sytuacji (rodzaj tytułu pobytu, forma zatrudnienia, zgłoszenia ZUS, dochód). Konkretne numery artykułów i aktualne progi wymagają weryfikacji dla danej sprawy — chętnie ją przeprowadzimy. Stan prawny: 07.2026.</div>
+      </div>
+    </section>
+  </article>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>© 2026 Centrum Obsługi Spraw Cudzoziemców · Dariusz Włodarczyk Kancelaria TRC</div>
+      <div><a href="index.html">Strona główna</a> · <a href="regulamin.html">Regulamin</a> · <a href="polityka-prywatnosci.html">Polityka prywatności</a></div>
+    </div>
+    <div class="upd">Treści mają charakter informacyjny i nie stanowią porady prawnej. Stan prawny na: 25.07.2026.</div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/48539999549" aria-label="Napisz na WhatsApp">✆</a>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"Article",
+      "headline":"Zasiłek dla cudzoziemca i świadczenia w Polsce — kompletny przewodnik",
+      "inLanguage":"pl",
+      "author":{"@type":"Organization","name":"Centrum Obsługi Spraw Cudzoziemców — Dariusz Włodarczyk Kancelaria TRC"},
+      "publisher":{"@type":"Organization","name":"Centrum Obsługi Spraw Cudzoziemców"},
+      "dateModified":"2026-07-25",
+      "description":"Jakie zasiłki i świadczenia przysługują cudzoziemcowi pracującemu w Polsce: ZUS, 800+, świadczenia rodzinne, zasiłek dla bezrobotnych, pomoc społeczna."
+    },
+    {
+      "@type":"BreadcrumbList",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Strona główna","item":"https://cosc.org.pl/index.html"},
+        {"@type":"ListItem","position":2,"name":"Świadczenia i zasiłki dla cudzoziemców","item":"https://cosc.org.pl/swiadczenia-cudzoziemcy.html"}
+      ]
+    },
+    {
+      "@type":"FAQPage",
+      "mainEntity":[
+        {"@type":"Question","name":"Czy cudzoziemiec na umowie zlecenia ma prawo do zasiłku chorobowego?","acceptedAnswer":{"@type":"Answer","text":"Tak, jeśli przystąpił do dobrowolnego ubezpieczenia chorobowego i upłynął 90-dniowy okres wyczekiwania. Przy umowie o pracę ubezpieczenie chorobowe jest obowiązkowe, a okres wyczekiwania wynosi 30 dni."}},
+        {"@type":"Question","name":"Czy dostanę 800+ na dziecko, mając pobyt czasowy i pracę?","acceptedAnswer":{"@type":"Answer","text":"Kluczowa jest adnotacja „dostęp do rynku pracy” na karcie pobytu oraz wspólne zamieszkanie z dzieckiem w Polsce. Sam stempel po złożeniu wniosku bywa niewystarczający."}},
+        {"@type":"Question","name":"Po jakim czasie pracy mogę dostać zasiłek dla bezrobotnych?","acceptedAnswer":{"@type":"Answer","text":"Co do zasady po wykazaniu 365 dni pracy z opłacaniem składek na Fundusz Pracy w ciągu 18 miesięcy przed rejestracją oraz przy odpowiednim tytule pobytowym."}}
+      ]
+    }
+  ]
+}
+</script>
+
+<script>
+// menu mobilne
+var b=document.getElementById('burger'),m=document.getElementById('menu');
+b&&b.addEventListener('click',function(){m.classList.toggle('open')});
+m&&m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open')})});
+// spis treści — zwijany na telefonie
+var th=document.getElementById('tocHead'),toc=document.getElementById('toc');
+if(window.matchMedia('(max-width:900px)').matches){toc.classList.add('closed')}
+th&&th.addEventListener('click',function(){if(window.matchMedia('(max-width:900px)').matches)toc.classList.toggle('closed')});
+</script>
+<script src="i18n/i18n.js"></script>
+</body>
+</html>

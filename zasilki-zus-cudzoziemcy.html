@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zasiłki z ZUS dla cudzoziemca — chorobowy, macierzyński, opiekuńczy | COSC</title>
+<meta name="description" content="Jakie zasiłki z ZUS przysługują cudzoziemcowi: chorobowy (30/90 dni), macierzyński, opiekuńczy, rehabilitacyjny, wypadkowy. Warunki, okres wyczekiwania, podstawa prawna.">
+<link rel="canonical" href="https://cosc.org.pl/zasilki-zus-cudzoziemcy.html">
+<meta property="og:title" content="Zasiłki z ZUS dla cudzoziemca — chorobowy, macierzyński, opiekuńczy | COSC">
+<meta property="og:description" content="Jakie zasiłki z ZUS przysługują cudzoziemcowi: chorobowy (30/90 dni), macierzyński, opiekuńczy, rehabilitacyjny, wypadkowy. Warunki, okres wyczekiwania, podstawa prawna.">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="i18n/i18n.css">
+<style>
+:root{
+  --navy:#16244c; --navy-d:#111a3a; --gold:#4636c9; --gold-l:#6d6ae0;
+  --cream:#f4f6fb; --ink:#16244c; --mut:#5B6478; --line:#e6e9f0;
+  --ok:#1a9a52; --red:#d4213d;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'IBM Plex Sans',sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;font-size:16px}
+h1,h2,h3,h4{font-family:'IBM Plex Serif',serif;color:var(--navy);line-height:1.18}
+a{color:var(--gold)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.btn{display:inline-block;text-decoration:none;font-weight:700;font-size:15px;padding:14px 26px;border-radius:10px;transition:.2s;text-align:center;cursor:pointer;border:none}
+.btn-gold{background:var(--red);color:#fff}
+.btn-gold:hover{background:#b81a32;transform:translateY(-1px)}
+.btn-line{border:1.5px solid rgba(255,255,255,.7);color:#fff}
+.btn-line:hover{background:rgba(255,255,255,.12)}
+.eyebrow{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#e7e5ff;margin-bottom:12px}
+
+/* TOP BARS */
+.mos{background:var(--gold);color:#fff;font-size:13.5px;font-weight:600;text-align:center;padding:9px 16px}
+.mos a{color:#ffd34d;font-weight:800}
+header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);position:sticky;top:0;z-index:50;box-shadow:0 2px 12px rgba(19,32,58,.25)}
+.flagbar{height:8px;background:linear-gradient(to bottom,#f5f5f5 50%,#d4213d 50%);border-bottom:1px solid rgba(22,36,76,.18);position:sticky;top:66px;z-index:49}
+.flag{flex-shrink:0;width:44px;height:29px;border-radius:3px;box-shadow:0 0 0 1px rgba(255,255,255,.4);overflow:hidden;display:flex;align-items:center;justify-content:center}
+.flag-ue{background:#1e3a8a}
+.flag-pl{flex-direction:column}
+.flag-pl .fw{flex:1;width:100%;background:#f5f5f5}
+.flag-pl .fr{flex:1;width:100%;background:#d4213d}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none}
+.logo .name{color:#fff;font-size:14px;line-height:1.3;font-weight:600;max-width:220px}
+.menu{display:flex;gap:22px;align-items:center}
+.menu a{color:#E9ECF3;text-decoration:none;font-size:14px;font-weight:500}
+.menu a:hover{color:var(--gold-l)}
+.lang{display:flex;gap:2px;border:1px solid rgba(255,255,255,.25);border-radius:8px;padding:2px}
+.lang a{padding:4px 8px;font-size:11.5px;font-weight:700;border-radius:6px;text-decoration:none;color:#cfd6e4}
+.lang a.on{background:var(--gold);color:#fff}
+.burger{display:none;background:none;border:none;color:#fff;font-size:26px;cursor:pointer;line-height:1}
+
+/* HERO */
+.hero{background:linear-gradient(160deg,#4636c9 0%,#3b2fbf 60%,#2f2699 100%);color:#fff;padding:54px 0 46px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border:1px solid rgba(255,255,255,.12);border-radius:50%}
+.crumb{font-size:12.5px;color:#c7cdf0;margin-bottom:14px}
+.crumb a{color:#c7cdf0;text-decoration:none}
+.crumb a:hover{color:#fff}
+.hero h1{color:#fff;font-size:clamp(28px,5.4vw,46px);font-weight:600;position:relative;z-index:2}
+.hero h1 em{font-style:normal;color:#ffd34d}
+.hero p.lead{margin:16px 0 24px;font-size:clamp(15px,2.4vw,18px);color:#dce4f5;max-width:640px;position:relative;z-index:2}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap;position:relative;z-index:2}
+.pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px;position:relative;z-index:2}
+.pill{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);color:#eef1fb;font-size:12.5px;font-weight:600;padding:7px 13px;border-radius:999px}
+
+/* LAYOUT */
+.layout{display:grid;grid-template-columns:260px 1fr;gap:40px;padding:44px 0 20px;align-items:start}
+/* TABLE OF CONTENTS */
+.toc{position:sticky;top:92px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 18px 14px;box-shadow:0 8px 24px rgba(19,32,58,.05)}
+.toc h2{font-size:13px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut);margin-bottom:12px}
+.toc ol{list-style:none;counter-reset:t}
+.toc li{counter-increment:t;margin:2px 0}
+.toc a{display:flex;gap:9px;align-items:baseline;text-decoration:none;color:var(--ink);font-size:14px;padding:7px 8px;border-radius:8px;font-weight:500}
+.toc a::before{content:counter(t);flex:none;width:20px;height:20px;font-size:11px;font-weight:700;color:var(--gold);background:#ece9fb;border-radius:6px;display:inline-flex;align-items:center;justify-content:center;font-family:'IBM Plex Sans'}
+.toc a:hover{background:var(--cream);color:var(--gold)}
+.toc-toggle{display:none}
+
+/* ARTICLE */
+article h2{font-size:clamp(23px,3.6vw,31px);font-weight:600;margin:8px 0 6px;scroll-margin-top:96px}
+article h3{font-size:19px;font-weight:600;margin:22px 0 6px}
+article p{margin:12px 0;color:#333b52}
+article .sec{padding:20px 0 8px;border-top:1px solid var(--line)}
+article .sec:first-child{border-top:none}
+.lead-in{font-size:17px;color:var(--mut)}
+.section-kicker{letter-spacing:.16em;text-transform:uppercase;font-size:12px;color:var(--gold);font-weight:700}
+
+/* CARDS */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:18px 0}
+.grid4{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:0 8px 24px rgba(19,32,58,.05)}
+.card .ic{font-size:30px;margin-bottom:8px}
+.card h3{margin:0 0 6px;font-size:18px}
+.card p{margin:0;font-size:14.5px;color:var(--mut)}
+a.card{text-decoration:none;color:inherit;display:block;transition:.2s}
+a.card:hover{transform:translateY(-3px);border-color:var(--gold-l);box-shadow:0 14px 32px rgba(70,54,201,.13)}
+a.card .go{display:inline-block;margin-top:12px;color:var(--gold);font-weight:700;font-size:14px}
+
+/* CALLOUT */
+.note{background:#f0f7ff;border-left:4px solid var(--gold);border-radius:0 12px 12px 0;padding:16px 18px;margin:18px 0;font-size:14.5px}
+.note.warn{background:#fff6ed;border-left-color:var(--red)}
+.note.ok{background:#f0faf3;border-left-color:var(--ok)}
+.note b{color:var(--navy)}
+
+/* TABLE */
+.tbl{width:100%;border-collapse:collapse;margin:16px 0;font-size:14px;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.tbl th,.tbl td{text-align:left;padding:11px 13px;border-bottom:1px solid var(--line);vertical-align:top}
+.tbl th{background:#f2f0fb;color:var(--navy);font-weight:700;font-size:13px}
+.tbl tr:last-child td{border-bottom:none}
+.tbl .yes{color:var(--ok);font-weight:700}
+.tbl .maybe{color:#b8791a;font-weight:700}
+
+/* FAQ */
+.faq details{background:#fff;border:1px solid var(--line);border-radius:12px;margin:10px 0;overflow:hidden}
+.faq summary{cursor:pointer;padding:16px 18px;font-weight:600;color:var(--navy);font-size:15.5px;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:22px;color:var(--gold);flex:none;transition:.2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq .a{padding:0 18px 16px;color:#333b52;font-size:14.5px}
+
+/* CTA */
+.cta{background:linear-gradient(150deg,#4636c9,#2f2699);color:#fff;border-radius:20px;padding:32px 26px;margin:36px 0;text-align:center;position:relative;overflow:hidden}
+.cta h2{color:#fff;font-size:clamp(22px,3.4vw,30px)}
+.cta p{color:#dce4f5;max-width:560px;margin:12px auto 20px}
+.cta .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* LEGAL SOURCES */
+.legal{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;margin:24px 0}
+.legal h3{font-size:16px;margin-bottom:8px}
+.legal ul{margin:6px 0 0 18px;font-size:13.5px;color:var(--mut);line-height:1.8}
+.legal .disc{margin-top:14px;font-size:12.5px;color:#8894ab;border-top:1px dashed var(--line);padding-top:12px}
+
+/* FOOTER */
+footer{background:var(--navy-d);color:#93A0B8;font-size:12.5px;padding:34px 0;margin-top:20px}
+.f-grid{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer a{color:#B9C3D6;text-decoration:none}
+footer .upd{margin-top:14px;font-size:11.5px;color:#6B7890}
+.wa-float{position:fixed;bottom:20px;right:20px;width:56px;height:56px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:26px;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.28);z-index:60}
+
+/* MOBILE */
+@media(max-width:900px){
+  .menu{display:none;position:absolute;top:66px;left:0;right:0;flex-direction:column;gap:0;background:#2f2699;padding:8px 0;box-shadow:0 12px 24px rgba(0,0,0,.25)}
+  .menu.open{display:flex}
+  .menu a{padding:13px 22px;width:100%;font-size:15px;border-bottom:1px solid rgba(255,255,255,.08)}
+  .burger{display:block}
+  .layout{grid-template-columns:1fr;gap:0;padding:22px 0 10px}
+  .toc{position:static;top:auto;margin-bottom:22px}
+  .toc h2{cursor:pointer;display:flex;justify-content:space-between;align-items:center;margin-bottom:0}
+  .toc h2::after{content:"▾";color:var(--gold);font-size:16px}
+  .toc.closed h2{margin-bottom:0}
+  .toc.closed ol{display:none}
+  .toc h2{margin-bottom:12px}
+  .grid2,.grid4{grid-template-columns:1fr}
+  .hero{padding:40px 0 36px}
+  .tbl{display:block;overflow-x:auto;white-space:nowrap}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="mos">⚠ Od 27.04.2026 wnioski o pobyt składa się <strong>wyłącznie przez system MOS</strong>. <a href="formularz-pobyt-czasowy-praca-NOWA.html">Wypełnij ankietę — pomożemy →</a></div>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="index.html">
+      <span aria-label="Godło Unii Europejskiej" style="display:inline-flex;align-items:center"><svg width="34" height="34" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" role="img"><rect width="36" height="36" rx="7" fill="#0A2A8C"/><g fill="#F5C518"><path id="euStar" d="M18,4.6 l0.85,1.75 l1.95,0.2 l-1.45,1.32 l0.42,1.9 l-1.77,-1.0 l-1.77,1.0 l0.42,-1.9 l-1.45,-1.32 l1.95,-0.2 Z"/><use href="#euStar" transform="rotate(30 18 18)"/><use href="#euStar" transform="rotate(60 18 18)"/><use href="#euStar" transform="rotate(90 18 18)"/><use href="#euStar" transform="rotate(120 18 18)"/><use href="#euStar" transform="rotate(150 18 18)"/><use href="#euStar" transform="rotate(180 18 18)"/><use href="#euStar" transform="rotate(210 18 18)"/><use href="#euStar" transform="rotate(240 18 18)"/><use href="#euStar" transform="rotate(270 18 18)"/><use href="#euStar" transform="rotate(300 18 18)"/><use href="#euStar" transform="rotate(330 18 18)"/></g></svg></span>
+      <div class="name">Centrum Obsługi<br>Spraw Cudzoziemców</div>
+      <span class="flag flag-pl" aria-label="Polska"><span class="fw"></span><span class="fr"></span></span>
+    </a>
+    <nav class="menu" id="menu">
+      <a href="index.html">Strona główna</a>
+      <a href="swiadczenia-cudzoziemcy.html">Świadczenia i zasiłki</a>
+      <a href="formularz-pobyt-czasowy-praca-NOWA.html">Ankieta</a>
+      <a href="index.html#cennik">Cennik</a>
+      <a href="index.html#kontakt">Kontakt</a>
+    </nav>
+    <div class="lang"><!-- przełącznik języków generuje i18n.js --></div>
+    <button class="burger" aria-label="Menu" id="burger">☰</button>
+  </div>
+</header>
+<div class="flagbar" aria-hidden="true"></div>
+<div class="hero">
+  <div class="wrap">
+    <nav class="crumb" aria-label="Ścieżka"><a href="index.html">Strona główna</a> › <a href="swiadczenia-cudzoziemcy.html">Świadczenia</a> › Zasiłki z ZUS</nav>
+    <span class="eyebrow">Poradnik · ZUS · stan prawny 07.2026</span>
+    <h1>Zasiłki z ZUS dla <em>cudzoziemca</em></h1>
+    <p class="lead">Chorobowy, macierzyński, opiekuńczy, rehabilitacyjny i wypadkowy — komu i kiedy przysługują, jak liczy się okres wyczekiwania i czym różni się umowa o pracę od zlecenia.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-gold" href="formularz-pobyt-czasowy-praca-NOWA.html?wniosek=zasilek&amp;swiadczenie=zus">Sprawdź swoje prawo →</a>
+      <a class="btn btn-line" href="swiadczenia-cudzoziemcy.html">Wróć do przeglądu</a>
+    </div>
+    <div class="pills"><span class="pill">🏥 Chorobowy</span><span class="pill">🍼 Macierzyński</span><span class="pill">👶 Opiekuńczy</span><span class="pill">⚕️ Wypadkowy</span></div>
+  </div>
+</div>
+
+<div class="wrap layout">
+  <aside class="toc" id="toc">
+    <h2 id="tocHead">Spis treści</h2>
+    <ol><li><a href="#podleganie">Kto podlega i co daje ubezpieczenie</a></li><li><a href="#chorobowy">Zasiłek chorobowy</a></li><li><a href="#opieka">Macierzyński i opiekuńczy</a></li><li><a href="#dlugie">Rehabilitacyjne, wypadkowe, renta</a></li><li><a href="#umowa">Umowa o pracę a zlecenie</a></li><li><a href="#dokumenty">Jakie dokumenty zgromadzić</a></li><li><a href="#faq">Pytania i odpowiedzi</a></li><li><a href="#podstawa">Podstawa prawna i źródła</a></li></ol>
+  </aside>
+  <article>
+    <section class="sec" id="podleganie">
+      <span class="section-kicker">Podstawa</span>
+      <h2>Kto podlega i co daje ubezpieczenie</h2>
+      <p class="lead-in">Zasiłki z ZUS zależą od tego, czy i do jakich ubezpieczeń jesteś zgłoszony — nie od obywatelstwa. Jeśli pracujesz legalnie i podlegasz ubezpieczeniu chorobowemu, masz do nich taki sam dostęp jak obywatel Polski.</p>
+      <div class="grid2">
+        <div class="card"><h3>Umowa o pracę</h3><p>Ubezpieczenie chorobowe jest <b>obowiązkowe</b> — jesteś nim objęty od pierwszego dnia zatrudnienia.</p></div>
+        <div class="card"><h3>Umowa zlecenia</h3><p>Ubezpieczenie chorobowe jest <b>dobrowolne</b> — trzeba do niego przystąpić (zgłoszenie przez pracodawcę). Bez tego nie ma chorobowego ani macierzyńskiego.</p></div>
+      </div>
+      <div class="note warn"><b>Sprawdź to koniecznie:</b> poproś pracodawcę o potwierdzenie zgłoszenia do ubezpieczenia chorobowego (ZUS ZUA). Przy zleceniu to najczęstsza przyczyna odmowy zasiłku.</div>
+    </section>
+
+    <section class="sec" id="chorobowy">
+      <span class="section-kicker">Choroba</span>
+      <h2>Zasiłek chorobowy</h2>
+      <p>Przysługuje po tzw. <b>okresie wyczekiwania</b> — czyli po pewnym czasie nieprzerwanego ubezpieczenia chorobowego:</p>
+      <table class="tbl">
+        <thead><tr><th>Sytuacja</th><th>Okres wyczekiwania</th></tr></thead>
+        <tbody>
+          <tr><td>Ubezpieczenie obowiązkowe (umowa o pracę)</td><td class="yes">30 dni</td></tr>
+          <tr><td>Ubezpieczenie dobrowolne (umowa zlecenia)</td><td class="maybe">90 dni</td></tr>
+        </tbody>
+      </table>
+      <p>Do okresu wyczekiwania zalicza się poprzednie okresy ubezpieczenia chorobowego, jeżeli przerwa między nimi nie przekroczyła <b>30 dni</b>. Zasiłek chorobowy wynosi co do zasady 80% podstawy wymiaru (są wyjątki, np. 100% w okresie ciąży lub przy wypadku w drodze do/z pracy).</p>
+    </section>
+
+    <section class="sec" id="opieka">
+      <span class="section-kicker">Rodzina i dziecko</span>
+      <h2>Zasiłek macierzyński i opiekuńczy</h2>
+      <div class="grid2">
+        <div class="card"><h3>Zasiłek macierzyński</h3><p>Przy objęciu ubezpieczeniem chorobowym i urodzeniu/przyjęciu dziecka. <b>Bez okresu wyczekiwania</b> — od pierwszego dnia ubezpieczenia.</p></div>
+        <div class="card"><h3>Zasiłek opiekuńczy</h3><p>Na osobistą opiekę nad chorym dzieckiem lub innym członkiem rodziny. Również <b>bez okresu wyczekiwania</b>. Obowiązują limity dni w roku.</p></div>
+      </div>
+    </section>
+
+    <section class="sec" id="dlugie">
+      <span class="section-kicker">Dłuższa niezdolność</span>
+      <h2>Świadczenie rehabilitacyjne, wypadkowe, renta</h2>
+      <div class="grid2">
+        <div class="card"><h3>Świadczenie rehabilitacyjne</h3><p>Po wyczerpaniu zasiłku chorobowego, gdy dalsze leczenie lub rehabilitacja rokują odzyskanie zdolności do pracy.</p></div>
+        <div class="card"><h3>Zasiłek wypadkowy</h3><p>Gdy niezdolność wynika z wypadku przy pracy lub choroby zawodowej — z ubezpieczenia wypadkowego, bez okresu wyczekiwania.</p></div>
+        <div class="card"><h3>Renta z tytułu niezdolności</h3><p>Świadczenie długofalowe zależne od stażu ubezpieczenia i orzeczenia o niezdolności do pracy.</p></div>
+        <div class="card"><h3>Emerytura</h3><p>Zależna od przebiegu ubezpieczenia; okresy składkowe w Polsce liczą się do przyszłego świadczenia.</p></div>
+      </div>
+    </section>
+
+    <section class="sec" id="umowa">
+      <span class="section-kicker">Porównanie</span>
+      <h2>Umowa o pracę a umowa zlecenia</h2>
+      <table class="tbl">
+        <thead><tr><th>Zagadnienie</th><th>Umowa o pracę</th><th>Umowa zlecenia</th></tr></thead>
+        <tbody>
+          <tr><td>Ubezpieczenie chorobowe</td><td class="yes">Obowiązkowe</td><td class="maybe">Dobrowolne</td></tr>
+          <tr><td>Okres wyczekiwania na chorobowy</td><td>30 dni</td><td>90 dni</td></tr>
+          <tr><td>Macierzyński / opiekuńczy</td><td class="yes">Od 1. dnia</td><td>Od 1. dnia, jeśli objęty chorobowym</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="sec" id="dokumenty">
+      <span class="section-kicker">Praktyka</span>
+      <h2>Jakie dokumenty warto zgromadzić</h2>
+      <p>Aby sprawnie wykazać prawo do świadczenia, przygotuj: umowę (o pracę lub zlecenia), potwierdzenie zgłoszenia do ubezpieczeń (ZUS ZUA), paski/potwierdzenia wynagrodzeń, zwolnienie lekarskie (e-ZLA) oraz — przy zleceniu — dowód przystąpienia do dobrowolnego ubezpieczenia chorobowego.</p>
+    </section>
+
+    <div class="cta">
+      <h2>Sprawdź, czy należy Ci się zasiłek z ZUS</h2>
+      <p>Podaj rodzaj umowy i datę zgłoszenia do ubezpieczeń — ocenimy, czy minął okres wyczekiwania i o co możesz wnioskować.</p>
+      <div class="btns">
+        <a class="btn btn-gold" href="formularz-pobyt-czasowy-praca-NOWA.html?wniosek=zasilek&amp;swiadczenie=zus">Wypełnij ankietę o świadczenie</a>
+        <a class="btn btn-line" href="https://wa.me/48539999549">Zapytaj na WhatsApp</a>
+      </div>
+    </div>
+    <section class="sec" id="faq">
+      <span class="section-kicker">FAQ</span>
+      <h2>Pytania i odpowiedzi</h2>
+      <div class="faq"><details><summary>Czy cudzoziemiec na zleceniu ma prawo do zasiłku chorobowego?</summary><div class="a">Tak, jeśli przystąpił do dobrowolnego ubezpieczenia chorobowego i minął 90-dniowy okres wyczekiwania.</div></details><details><summary>Czy zasiłek macierzyński ma okres wyczekiwania?</summary><div class="a">Nie. Zasiłek macierzyński i opiekuńczy przysługują od pierwszego dnia podlegania ubezpieczeniu chorobowemu.</div></details><details><summary>Czy zmiana pracodawcy przerywa staż do chorobowego?</summary><div class="a">Poprzednie okresy ubezpieczenia chorobowego zalicza się, jeśli przerwa nie przekroczyła 30 dni.</div></details><details><summary>Czy okresy pracy w Polsce liczą się do emerytury?</summary><div class="a">Tak, okresy składkowe w polskim ZUS liczą się do przyszłej emerytury lub renty.</div></details></div>
+    </section>
+    <section class="sec" id="podstawa">
+      <span class="section-kicker">Podstawa prawna</span>
+      <h2>Podstawa prawna i źródła</h2>
+      <div class="legal">
+        <h3>Akty prawne (stan na lipiec 2026)</h3>
+        <ul><li>Ustawa z 25 czerwca 1999 r. o świadczeniach pieniężnych z ubezpieczenia społecznego w razie choroby i macierzyństwa (ustawa zasiłkowa).</li><li>Ustawa z 13 października 1998 r. o systemie ubezpieczeń społecznych.</li><li>Ustawa z 30 października 2002 r. o ubezpieczeniu społecznym z tytułu wypadków przy pracy i chorób zawodowych.</li><li>Ustawa z 12 grudnia 2013 r. o cudzoziemcach (legalny pobyt i dostęp do rynku pracy).</li></ul>
+        <div class="disc">Treść ma charakter informacyjny i nie stanowi porady prawnej. Warunki, przesłanki i progi bywają zmieniane oraz zależą od indywidualnej sytuacji (rodzaj tytułu pobytu, forma zatrudnienia, zgłoszenia ZUS, dochód). Konkretne numery artykułów i aktualne kwoty wymagają weryfikacji dla danej sprawy — chętnie ją przeprowadzimy. Stan prawny: 07.2026.</div>
+      </div>
+    </section>
+  </article>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>© 2026 Centrum Obsługi Spraw Cudzoziemców · Dariusz Włodarczyk Kancelaria TRC</div>
+      <div><a href="index.html">Strona główna</a> · <a href="regulamin.html">Regulamin</a> · <a href="polityka-prywatnosci.html">Polityka prywatności</a></div>
+    </div>
+    <div class="upd">Treści mają charakter informacyjny i nie stanowią porady prawnej. Stan prawny na: 25.07.2026.</div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/48539999549" aria-label="Napisz na WhatsApp">✆</a>
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "Zasiłki z ZUS dla cudzoziemca",
+   "inLanguage": "pl",
+   "author": {
+    "@type": "Organization",
+    "name": "Centrum Obsługi Spraw Cudzoziemców — Dariusz Włodarczyk Kancelaria TRC"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Centrum Obsługi Spraw Cudzoziemców"
+   },
+   "dateModified": "2026-07-25",
+   "description": "Jakie zasiłki z ZUS przysługują cudzoziemcowi: chorobowy (30/90 dni), macierzyński, opiekuńczy, rehabilitacyjny, wypadkowy. Warunki, okres wyczekiwania, podstawa prawna."
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Strona główna",
+     "item": "https://cosc.org.pl/index.html"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Świadczenia i zasiłki",
+     "item": "https://cosc.org.pl/swiadczenia-cudzoziemcy.html"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Zasiłki z ZUS",
+     "item": "https://cosc.org.pl/zasilki-zus-cudzoziemcy.html"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Czy cudzoziemiec na zleceniu ma prawo do zasiłku chorobowego?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Tak, jeśli przystąpił do dobrowolnego ubezpieczenia chorobowego i minął 90-dniowy okres wyczekiwania."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Czy zasiłek macierzyński ma okres wyczekiwania?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Nie. Zasiłek macierzyński i opiekuńczy przysługują od pierwszego dnia podlegania ubezpieczeniu chorobowemu."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Czy zmiana pracodawcy przerywa staż do chorobowego?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Poprzednie okresy ubezpieczenia chorobowego zalicza się, jeśli przerwa nie przekroczyła 30 dni."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Czy okresy pracy w Polsce liczą się do emerytury?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Tak, okresy składkowe w polskim ZUS liczą się do przyszłej emerytury lub renty."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<script>
+var b=document.getElementById('burger'),m=document.getElementById('menu');
+b&&b.addEventListener('click',function(){m.classList.toggle('open')});
+m&&m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open')})});
+var th=document.getElementById('tocHead'),toc=document.getElementById('toc');
+if(window.matchMedia('(max-width:900px)').matches){toc.classList.add('closed')}
+th&&th.addEventListener('click',function(){if(window.matchMedia('(max-width:900px)').matches)toc.classList.toggle('closed')});
+</script>
+<script src="i18n/i18n.js"></script>
+</body>
+</html>
