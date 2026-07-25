@@ -1,0 +1,45 @@
+/* COSC — przełącznik języków (dropdown flag) */
+.langbox{position:relative;display:inline-flex;align-items:center}
+
+.lang-btn{
+  display:inline-flex;align-items:center;gap:7px;cursor:pointer;
+  background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.30);
+  color:#fff;border-radius:9px;padding:6px 10px;font:inherit;font-size:13px;font-weight:700;
+  line-height:1;transition:background .18s ease,border-color .18s ease;
+}
+.lang-btn:hover{background:rgba(255,255,255,.18);border-color:rgba(255,255,255,.55)}
+.lang-btn .lang-cur{letter-spacing:.04em}
+.lang-fl{display:inline-flex;flex:none;line-height:0}
+.lang-fl svg{display:block;width:22px;height:15px;border-radius:2px;box-shadow:0 0 0 1px rgba(0,0,0,.18)}
+.lang-btn .lang-caret{font-size:11px;opacity:.85;transition:transform .18s ease}
+.langbox.open .lang-btn .lang-caret{transform:rotate(180deg)}
+.langbox.open .lang-btn{background:rgba(255,255,255,.20);border-color:rgba(255,255,255,.6)}
+
+.lang-menu{
+  position:absolute;top:calc(100% + 8px);right:0;min-width:186px;
+  background:#fff;border:1px solid #e6e9f0;border-radius:12px;
+  box-shadow:0 18px 44px rgba(19,32,58,.28);
+  padding:6px;display:none;flex-direction:column;gap:2px;z-index:120;
+}
+.langbox.open .lang-menu{display:flex;animation:langpop .16s ease}
+@keyframes langpop{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
+
+.lang-item{
+  display:flex;align-items:center;gap:10px;width:100%;cursor:pointer;
+  background:none;border:0;border-radius:8px;padding:9px 10px;font:inherit;
+  color:#16244c;text-align:left;transition:background .14s ease;
+}
+.lang-item:hover{background:#f4f6fb}
+.lang-item .lang-fl svg{width:28px;height:19px;border-radius:3px;box-shadow:0 0 0 1px rgba(0,0,0,.14)}
+.lang-item .lang-name{flex:1;font-size:14px;font-weight:600}
+.lang-item .lang-code{font-size:11px;font-weight:700;color:#8a93a8;letter-spacing:.06em}
+.lang-item.on{background:#eef0fb}
+.lang-item.on .lang-code{color:#4636c9}
+.lang-item.on::after{content:"✓";color:#4636c9;font-weight:800;margin-left:2px}
+
+/* Umiejscowienie w pasku nawigacji — widoczny także na telefonie */
+.nav>.lang,.nav>.langbox{margin-left:14px}
+@media(max-width:900px){
+  .nav>.lang,.nav>.langbox{margin-left:auto;margin-right:6px}
+  .lang-menu{right:0}
+}

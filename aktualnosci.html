@@ -203,21 +203,41 @@ header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);po
 </script>
 <script>
 (function(){
-  var LABELS = {Wszystkie:'Wszystkie'};
   var elNews = document.getElementById('news');
   var elFilters = document.getElementById('filters');
   var elUpd = document.getElementById('lastupd');
   var all = [];
   var active = 'Wydarzenia';
-  var CATS = [
-    {key:'Wydarzenia', label:'Wydarzenia (cudzoziemcy w Polsce)'},
-    {key:'Rynek pracy', label:'Rynek pracy'},
-    {key:'Urzędy', label:'Urzędy'},
-    {key:'Legislacja', label:'Legislacja'},
-    {key:'Orzecznictwo', label:'Orzecznictwo'}
-  ];
-  var KNOWN = {}; CATS.forEach(function(c){ KNOWN[c.key]=1; });
+
+  var ALLOWED = ['pl','en','es','uk','ru','fr'];
+  function curLang(){
+    var l = (window.COSCi18n && COSCi18n.current && COSCi18n.current())
+         || (function(){try{return localStorage.getItem('cosc_lang');}catch(e){return null;}})()
+         || (document.documentElement.getAttribute('lang')||'pl').slice(0,2);
+    return ALLOWED.indexOf(l)>=0 ? l : 'pl';
+  }
+  var UI = {
+    pl:{added:'Dodano:',source:'Źródło:',read:'Czytaj u źródła ↗',empty:'Brak wpisów w tej kategorii.',all:'Wszystkie'},
+    en:{added:'Added:',source:'Source:',read:'Read at source ↗',empty:'No entries in this category.',all:'All'},
+    es:{added:'Añadido:',source:'Fuente:',read:'Leer en la fuente ↗',empty:'No hay entradas en esta categoría.',all:'Todas'},
+    uk:{added:'Додано:',source:'Джерело:',read:'Читати в джерелі ↗',empty:'Немає записів у цій категорії.',all:'Усі'},
+    ru:{added:'Добавлено:',source:'Источник:',read:'Читать в источнике ↗',empty:'Нет записей в этой категории.',all:'Все'},
+    fr:{added:'Ajouté :',source:'Source :',read:'Lire à la source ↗',empty:'Aucune entrée dans cette catégorie.',all:'Toutes'}
+  };
+  var CAT = {
+    'Wydarzenia':{pl:'Wydarzenia',en:'Events',es:'Eventos',uk:'Події',ru:'События',fr:'Événements'},
+    'Rynek pracy':{pl:'Rynek pracy',en:'Labour market',es:'Mercado laboral',uk:'Ринок праці',ru:'Рынок труда',fr:'Marché du travail'},
+    'Urzędy':{pl:'Urzędy',en:'Authorities',es:'Administración',uk:'Установи',ru:'Учреждения',fr:'Administrations'},
+    'Legislacja':{pl:'Legislacja',en:'Legislation',es:'Legislación',uk:'Законодавство',ru:'Законодательство',fr:'Législation'},
+    'Orzecznictwo':{pl:'Orzecznictwo',en:'Case-law',es:'Jurisprudencia',uk:'Судова практика',ru:'Судебная практика',fr:'Jurisprudence'}
+  };
+  var CAT_FILTER0 = {pl:'Wydarzenia (cudzoziemcy w Polsce)',en:'Events (foreigners in Poland)',es:'Eventos (extranjeros en Polonia)',uk:'Події (іноземці в Польщі)',ru:'События (иностранцы в Польше)',fr:'Événements (étrangers en Pologne)'};
+  var CAT_ORDER = ['Wydarzenia','Rynek pracy','Urzędy','Legislacja','Orzecznictwo'];
+  var KNOWN = {}; CAT_ORDER.forEach(function(k){ KNOWN[k]=1; });
   function normCat(c){ return KNOWN[c] ? c : 'Wydarzenia'; }
+  function ui(){ return UI[curLang()]||UI.pl; }
+  function catLabel(key){ var m=CAT[key]||CAT['Wydarzenia']; return m[curLang()]||m.pl; }
+  function pick(it,field){ var l=curLang(); if(l!=='pl' && it.t && it.t[l] && it.t[l][field]) return it.t[l][field]; return it[field]; }
 
   function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
   function fmtDate(d){ if(!d) return ''; var p=String(d).split('-'); return p.length===3 ? (p[2]+'.'+p[1]+'.'+p[0]) : d; }
@@ -225,30 +245,35 @@ header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);po
 
   function render(){
     var items = all.filter(function(it){ return active==='Wszystkie' || normCat(it.category)===active; });
-    if(!items.length){ elNews.innerHTML = '<div class="empty">Brak wpisów w tej kategorii.</div>'; return; }
+    var U = ui();
+    if(!items.length){ elNews.innerHTML = '<div class="empty">'+esc(U.empty)+'</div>'; return; }
     elNews.innerHTML = items.map(function(it){
-      var cat = esc(normCat(it.category));
+      var catKey = normCat(it.category);
       var author = it.author ? (esc(it.author)+' · ') : '';
-      var link = it.url ? '<a href="'+esc(it.url)+'" target="_blank" rel="noopener nofollow">Czytaj u źródła ↗</a>' : '';
+      var link = it.url ? '<a href="'+esc(it.url)+'" target="_blank" rel="noopener nofollow">'+esc(U.read)+'</a>' : '';
       return '<article class="item">'
-        + '<div class="meta"><span class="tag '+cat+'">'+cat+'</span><span class="date">Dodano: '+esc(fmtDate(it.added))+'</span></div>'
-        + '<h3>'+esc(it.title)+'</h3>'
-        + '<p class="sum">'+esc(it.summary)+'</p>'
-        + '<div class="src">Źródło: '+author+'<b>'+esc(it.source_name||host(it.url))+'</b> &nbsp;·&nbsp; '+link+'</div>'
+        + '<div class="meta"><span class="tag '+esc(catKey)+'">'+esc(catLabel(catKey))+'</span><span class="date">'+esc(U.added)+' '+esc(fmtDate(it.added))+'</span></div>'
+        + '<h3>'+esc(pick(it,'title'))+'</h3>'
+        + '<p class="sum">'+esc(pick(it,'summary'))+'</p>'
+        + '<div class="src">'+esc(U.source)+' '+author+'<b>'+esc(it.source_name||host(it.url))+'</b> &nbsp;·&nbsp; '+link+'</div>'
         + '</article>';
     }).join('');
   }
 
   function buildFilters(){
-    var chips = CATS.map(function(c){
-      return '<button class="chip'+(c.key===active?' on':'')+'" data-cat="'+esc(c.key)+'">'+esc(c.label)+'</button>';
+    var L = curLang();
+    var chips = CAT_ORDER.map(function(key){
+      var label = key==='Wydarzenia' ? (CAT_FILTER0[L]||CAT_FILTER0.pl) : catLabel(key);
+      return '<button class="chip'+(key===active?' on':'')+'" data-cat="'+esc(key)+'">'+esc(label)+'</button>';
     });
-    chips.push('<button class="chip'+('Wszystkie'===active?' on':'')+'" data-cat="Wszystkie">Wszystkie</button>');
+    chips.push('<button class="chip'+('Wszystkie'===active?' on':'')+'" data-cat="Wszystkie">'+esc(ui().all)+'</button>');
     elFilters.innerHTML = chips.join('');
     Array.prototype.forEach.call(elFilters.querySelectorAll('.chip'), function(b){
       b.addEventListener('click', function(){ active=b.getAttribute('data-cat'); buildFilters(); render(); });
     });
   }
+
+  document.addEventListener('cosc:langchange', function(){ buildFilters(); render(); });
 
   function sortItems(a,b){
     var da=(a.added||'')+ (a.id||''), db=(b.added||'')+(b.id||'');
