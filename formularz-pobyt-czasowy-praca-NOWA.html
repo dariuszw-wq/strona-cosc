@@ -23,10 +23,11 @@ h1,h2,h3{font-family:'IBM Plex Sans',sans-serif;color:var(--violet);line-height:
 /* ===== HEADER (pas jak w ofercie) ===== */
 header{background:linear-gradient(120deg,var(--violet-l),var(--violet) 55%,var(--violet-d));padding:14px 0}
 header .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;max-width:1120px}
-.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
-.brand .emblem{flex:0 0 auto}
+header .wrap{justify-content:center;gap:18px}
+.emblem{flex:0 0 auto;display:flex;align-items:center}
+.brand{display:flex;flex-direction:column;align-items:center;text-align:center;gap:3px;text-decoration:none;color:#fff}
 .brand .pill{display:inline-block;background:#fff;color:var(--violet);font-weight:800;font-size:12px;letter-spacing:.06em;padding:4px 12px;border-radius:999px}
-.brand .btxt{display:flex;flex-direction:column;line-height:1.25}
+.brand .btxt{display:flex;flex-direction:column;align-items:center;line-height:1.25}
 .brand .btxt b{font-size:15px;font-weight:800;color:#fff}
 .brand .btxt small{font-size:11.5px;color:#DCD6FA;font-weight:500}
 .flag-pl{flex:0 0 auto}
@@ -123,9 +124,8 @@ footer .fbottom{max-width:1120px;margin:22px auto 0;padding-top:16px;border-top:
 <body>
 
 <header><div class="wrap">
-  <a class="brand" href="index.html">
-    <span class="emblem">
-      <svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Godło Unii Europejskiej">
+  <span class="emblem" aria-label="Godło Unii Europejskiej">
+      <svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" role="img">
         <rect width="36" height="36" rx="7" fill="#0A2A8C"/>
         <g fill="#F5C518">
           <path id="euStar" d="M18,4.6 l0.85,1.75 l1.95,0.2 l-1.45,1.32 l0.42,1.9 l-1.77,-1.0 l-1.77,1.0 l0.42,-1.9 l-1.45,-1.32 l1.95,-0.2 Z"/>
@@ -143,10 +143,10 @@ footer .fbottom{max-width:1120px;margin:22px auto 0;padding-top:16px;border-top:
         </g>
       </svg>
     </span>
-    <span class="pill">COSC</span>
+    <a class="brand" href="index.html">
     <span class="btxt">
       <b>Centrum Obsługi Spraw Cudzoziemców</b>
-      <small>Dariusz Włodarczyk Kancelaria · Legalizacja pobytu i pracy · cosc.org.pl</small>
+      <small>Legalizacja pobytu i pracy · cosc.org.pl</small>
     </span>
   </a>
   <span class="flag-pl">
@@ -171,6 +171,7 @@ footer .fbottom{max-width:1120px;margin:22px auto 0;padding-top:16px;border-top:
 <div class="progress" id="progress"></div>
 
 <form class="card" id="ankieta" novalidate>
+  <input type="hidden" name="rodzaj_wniosku" id="rodzajWniosku">
 
   <!-- KROK 0: RODO -->
   <div class="step-panel active" data-step="0">
@@ -247,11 +248,27 @@ footer .fbottom{max-width:1120px;margin:22px auto 0;padding-top:16px;border-top:
     <p class="hint">Miejsce aktualnego pobytu w Polsce oraz dane pracodawcy.</p>
     <div class="field"><label>Województwo miejsca pobytu <span class="req">*</span></label><select name="wojewodztwo_pobytu" class="ls-province" required></select></div>
     <div class="field"><label>Adres pobytu w Polsce (ulica, kod pocztowy, miasto) <span class="req">*</span></label><input type="text" name="adres_pobytu" placeholder="np. ul. Kwiatowa 5 m. 10, 00-001 Warszawa" required><div class="fh">Adres, pod którym teraz mieszkasz w Polsce.</div></div>
+    <div class="field" id="swiadczenieField" style="display:none"><label>Jakiego świadczenia dotyczy sprawa? <span class="req">*</span></label>
+      <select name="rodzaj_swiadczenia"><option value="">— Proszę wybrać —</option><option>Zasiłek chorobowy / macierzyński / opiekuńczy (ZUS)</option><option>800+ / świadczenia rodzinne</option><option>Zasiłek dla bezrobotnych</option><option>Pomoc społeczna</option><option>Nie wiem — proszę o poradę</option></select>
+      <div class="fh">Zaznacz, o jakie świadczenie chcesz się ubiegać. Jeśli nie masz pewności — wybierz „Nie wiem".</div></div>
     <div class="row2">
-      <div class="field"><label>Nazwa pracodawcy <span class="req">*</span></label><input type="text" name="pracodawca_nazwa" placeholder="Pełna nazwa firmy — jak w umowie" required></div>
-      <div class="field"><label>Stanowisko / rodzaj wykonywanej pracy <span class="req">*</span></label><input type="text" name="stanowisko" placeholder="np. magazynier, kucharz, kierowca" required></div>
+      <div class="field"><label>Nazwa pracodawcy powierzającego pracę <span class="req">*</span></label><input type="text" name="pracodawca_nazwa" placeholder="Pełna nazwa firmy — jak w umowie" required></div>
+      <div class="field"><label>NIP pracodawcy <span class="req">*</span></label><input type="text" name="pracodawca_nip" inputmode="numeric" placeholder="10 cyfr, np. 1250476187" required><div class="fh">Znajdziesz go na umowie lub w danych firmy.</div></div>
     </div>
-    <div class="field"><label>Adres miejsca pracy <span class="req">*</span></label><input type="text" name="pracodawca_adres" placeholder="Adres, gdzie faktycznie wykonujesz pracę" required></div>
+    <div class="row2">
+      <div class="field"><label>Stanowisko / rodzaj wykonywanej pracy <span class="req">*</span></label><input type="text" name="stanowisko" placeholder="np. magazynier, kucharz, kierowca" required></div>
+      <div class="field"><label>Adres miejsca pracy <span class="req">*</span></label><input type="text" name="pracodawca_adres" placeholder="Adres, gdzie faktycznie wykonujesz pracę" required></div>
+    </div>
+    <div class="row2">
+      <div class="field"><label>Od kiedy pracujesz u tego pracodawcy? <span class="req">*</span></label><input type="date" name="praca_od" required><div class="fh">Data rozpoczęcia pracy.</div></div>
+      <div class="field"><label>Rodzaj umowy <span class="req">*</span></label>
+        <select name="rodzaj_umowy" required><option value="">— Proszę wybrać —</option><option>Umowa o pracę</option><option>Umowa zlecenia</option><option>Umowa o dzieło</option><option>B2B (samozatrudnienie)</option><option>Umowa jeszcze nie podpisana</option><option>Brak / nie dotyczy</option></select></div>
+    </div>
+    <div class="row2">
+      <div class="field"><label>Wymiar / warunki pracy <span class="req">*</span></label>
+        <select name="wymiar_pracy" required><option value="">— Proszę wybrać —</option><option>Pełny etat</option><option>3/4 etatu</option><option>1/2 etatu</option><option>Część etatu (inny)</option><option>Umowa zlecenia — stawka godzinowa</option><option>Nie dotyczy</option></select></div>
+      <div class="field"><label>Wynagrodzenie miesięczne brutto <span class="req">*</span></label><input type="text" name="wynagrodzenie_brutto" inputmode="numeric" placeholder="np. 4666 zł (brutto)" required><div class="fh">Kwota brutto z umowy, miesięcznie.</div></div>
+    </div>
   </div>
 
   <!-- KROK 3: RODZINA -->
@@ -392,7 +409,46 @@ footer .fbottom{max-width:1120px;margin:22px auto 0;padding-top:16px;border-top:
 /* ================== KONFIGURACJA ================== */
 // TODO(Dariusz): po wdrożeniu Google Apps Script wklej tutaj adres URL Web Appu (patrz instrukcja).
 const APPS_SCRIPT_URL = "WKLEJ_TU_URL_WEB_APP_GOOGLE_APPS_SCRIPT";
-const FORM_NAME = "Pobyt czasowy i praca";
+/* ====== WARIANTY WNIOSKU (tytuł zależny od ?wniosek=) ====== */
+const WNIOSEK_WARIANTY = {
+  'pobyt-praca': {h1:'Ankieta danych do wniosku o zezwolenie na pobyt czasowy i pracę', e:'Pobyt czasowy i praca', title:'Ankieta — zezwolenie na pobyt czasowy i pracę | COSC Centrum Obsługi Spraw Cudzoziemców', name:'Pobyt czasowy i praca'},
+  'niebieska-karta': {h1:'Ankieta danych do wniosku o Niebieską Kartę UE', e:'Niebieska Karta UE', title:'Ankieta — Niebieska Karta UE | COSC Centrum Obsługi Spraw Cudzoziemców', name:'Niebieska Karta UE'},
+  'pobyt-staly': {h1:'Ankieta danych do wniosku o pobyt stały / pobyt rezydenta długoterminowego UE', e:'Pobyt stały / rezydent', title:'Ankieta — pobyt stały / rezydent długoterminowy UE | COSC', name:'Pobyt stały / rezydent długoterminowy UE'},
+  'praca': {h1:'Ankieta — legalna praca cudzoziemca (zezwolenie na pracę / oświadczenie)', e:'Legalna praca cudzoziemca', title:'Ankieta — legalna praca cudzoziemca, zezwolenie na pracę | COSC', name:'Zezwolenie na pracę / oświadczenie'},
+  'zasilek': {h1:'Ankieta — pomoc w uzyskaniu świadczenia lub zasiłku dla cudzoziemca', e:'Świadczenie / zasiłek dla cudzoziemca', title:'Ankieta — zasiłek i świadczenia dla cudzoziemca | COSC', name:'Świadczenie / zasiłek', zasilek:true}
+};
+const SWIADCZENIE_MAP = {
+  'zus':'Zasiłek chorobowy / macierzyński / opiekuńczy (ZUS)',
+  '800plus':'800+ / świadczenia rodzinne',
+  'bezrobocie':'Zasiłek dla bezrobotnych',
+  'pomoc-spoleczna':'Pomoc społeczna'
+};
+let FORM_NAME = "Pobyt czasowy i praca";
+(function initWariant(){
+  const qs = new URLSearchParams(location.search);
+  const w = (qs.get('wniosek')||'').toLowerCase();
+  const v = WNIOSEK_WARIANTY[w];
+  const rw = document.getElementById('rodzajWniosku');
+  if(v){
+    FORM_NAME = v.name;
+    document.title = v.title;
+    const h1 = document.querySelector('.hero h1'); if(h1) h1.textContent = v.h1;
+    const eb = document.querySelector('.hero .eyebrow'); if(eb) eb.textContent = 'Ankieta · ' + v.e;
+    if(rw) rw.value = v.name;
+    if(v.zasilek){
+      const sf = document.getElementById('swiadczenieField');
+      if(sf){
+        sf.style.display='';
+        const sel = sf.querySelector('select');
+        if(sel){
+          sel.setAttribute('required','required');
+          const s = (qs.get('swiadczenie')||'').toLowerCase();
+          if(SWIADCZENIE_MAP[s]) sel.value = SWIADCZENIE_MAP[s];
+        }
+      }
+    }
+  } else if(rw){ rw.value = FORM_NAME; }
+})();
 
 /* ================== SŁOWNIKI ================== */
 const COUNTRIES = ["Afganistan","Albania","Algieria","Andora","Angola","Antigua i Barbuda","Argentyna","Armenia","Australia","Austria","Azerbejdżan","Bahamy","Bahrajn","Bangladesz","Barbados","Białoruś","Belgia","Belize","Benin","Bhutan","Boliwia","Bośnia i Hercegowina","Botswana","Brazylia","Brunei","Bułgaria","Burkina Faso","Burundi","Chile","Chiny","Chorwacja","Cypr","Czad","Czechy","Dania","Kongo","Dominikana","Dominica","Dżibuti","Egipt","Ekwador","Erytrea","Estonia","Eswatini","Etiopia","Fidżi","Filipiny","Finlandia","Francja","Gabon","Gambia","Ghana","Grecja","Grenada","Gruzja","Gujana","Haiti","Holandia","Honduras","Indie","Indonezja","Irak","Iran","Irlandia","Islandia","Izrael","Jamajka","Japonia","Jemen","Kambodża","Kamerun","Kanada","Katar","Kazachstan","Kenia","Kirgistan","Kiribati","Kolumbia","Komory","Demokratyczna Republika Konga","Korea Północna","Korea Południowa","Kostaryka","Kuba","Kuwejt","Laos","Lesotho","Liban","Liberia","Libia","Liechtenstein","Litwa","Luksemburg","Łotwa","Macedonia","Madagaskar","Malawi","Malediwy","Malezja","Mali","Malta","Maroko","Mauretania","Mauritius","Meksyk","Mikronezja","Mołdawia","Monako","Mongolia","Mozambik","Namibia","Nauru","Nepal","Niemcy","Nigeria","Nikaragua","Norwegia","Oman","Pakistan","Palau","Panama","Papua-Nowa Gwinea","Paragwaj","Peru","Polska","Portugalia","Republika Południowej Afryki","Rosja","Rumunia","Rwanda","Saint Kitts i Nevis","Saint Lucia","Saint Vincent i Grenadyny","Salwador","Samoa","San Marino","Senegal","Serbia","Seszele","Sierra Leone","Singapur","Słowacja","Słowenia","Somalia","Sri Lanka","Stany Zjednoczone","Suazi","Sudan","Sudan Południowy","Surinam","Syria","Szwajcaria","Szwecja","Tadżykistan","Tajlandia","Tanzania","Timor Wschodni","Togo","Tonga","Trynidad i Tobago","Tunezja","Turcja","Turkmenistan","Tuvalu","Ukraina","Urugwaj","Uzbekistan","Vanuatu","Watykan","Wenezuela","Wielka Brytania","Wietnam","Włochy","Wybrzeże Kości Słoniowej","Wyspy Marshalla","Wyspy Salomona","Zambia","Zimbabwe"];
@@ -579,7 +635,13 @@ function buildSummary(){
     ['Telefon własny', fd.get('telefon_wlasny')||'—'],
     ['Telefon polski', fd.get('telefon_pl')||'—'],
     ['Dni od ostatniego wjazdu', fd.get('dni_od_ostatniego_wjazdu')||'—'],
+    ['Rodzaj wniosku', fd.get('rodzaj_wniosku')||FORM_NAME],
+    ...(fd.get('rodzaj_swiadczenia') ? [['Świadczenie', fd.get('rodzaj_swiadczenia')]] : []),
     ['Pracodawca', fd.get('pracodawca_nazwa')||'—'],
+    ['NIP pracodawcy', fd.get('pracodawca_nip')||'—'],
+    ['Rodzaj umowy', fd.get('rodzaj_umowy')||'—'],
+    ['Wynagrodzenie brutto', fd.get('wynagrodzenie_brutto')||'—'],
+    ['Praca od', fd.get('praca_od')||'—'],
     ['Województwo pobytu', fd.get('wojewodztwo_pobytu')||'—'],
     ['Rodzina w Polsce', fd.get('rodzina_w_pl')||'—'],
   ];
