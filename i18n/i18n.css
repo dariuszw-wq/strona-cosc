@@ -8,8 +8,9 @@
   line-height:1;transition:background .18s ease,border-color .18s ease;
 }
 .lang-btn:hover{background:rgba(255,255,255,.18);border-color:rgba(255,255,255,.55)}
-.lang-btn .lang-fl{font-size:16px;line-height:1}
 .lang-btn .lang-cur{letter-spacing:.04em}
+.lang-fl{display:inline-flex;flex:none;line-height:0}
+.lang-fl svg{display:block;width:22px;height:15px;border-radius:2px;box-shadow:0 0 0 1px rgba(0,0,0,.18)}
 .lang-btn .lang-caret{font-size:11px;opacity:.85;transition:transform .18s ease}
 .langbox.open .lang-btn .lang-caret{transform:rotate(180deg)}
 .langbox.open .lang-btn{background:rgba(255,255,255,.20);border-color:rgba(255,255,255,.6)}
@@ -29,7 +30,7 @@
   color:#16244c;text-align:left;transition:background .14s ease;
 }
 .lang-item:hover{background:#f4f6fb}
-.lang-item .lang-fl{font-size:18px;line-height:1;flex:none}
+.lang-item .lang-fl svg{width:28px;height:19px;border-radius:3px;box-shadow:0 0 0 1px rgba(0,0,0,.14)}
 .lang-item .lang-name{flex:1;font-size:14px;font-weight:600}
 .lang-item .lang-code{font-size:11px;font-weight:700;color:#8a93a8;letter-spacing:.06em}
 .lang-item.on{background:#eef0fb}

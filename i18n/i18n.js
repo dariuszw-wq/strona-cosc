@@ -21,13 +21,36 @@
 
   // Kolejność = kolejność w przełączniku
   var LANGS = [
-    { code: 'pl', label: 'PL', name: 'Polski',    flag: '🇵🇱' },
-    { code: 'en', label: 'EN', name: 'English',   flag: '🇬🇧' },
-    { code: 'es', label: 'ES', name: 'Español',   flag: '🇪🇸' },
-    { code: 'uk', label: 'UK', name: 'Українська', flag: '🇺🇦' },
-    { code: 'ru', label: 'RU', name: 'Русский',   flag: '🇷🇺' },
-    { code: 'fr', label: 'FR', name: 'Français',  flag: '🇫🇷' }
+    { code: 'pl', label: 'PL', name: 'Polski' },
+    { code: 'en', label: 'EN', name: 'English' },
+    { code: 'es', label: 'ES', name: 'Español' },
+    { code: 'uk', label: 'UK', name: 'Українська' },
+    { code: 'ru', label: 'RU', name: 'Русский' },
+    { code: 'fr', label: 'FR', name: 'Français' }
   ];
+
+  // Prawdziwe flagi krajów jako SVG (emoji flag NIE renderują się na Windows).
+  var _uid = 0;
+  var FLAGS = {
+    pl: '<svg viewBox="0 0 24 16"><rect width="24" height="16" fill="#fff"/><rect y="8" width="24" height="8" fill="#dc143c"/></svg>',
+    es: '<svg viewBox="0 0 24 16"><rect width="24" height="16" fill="#c60b1e"/><rect y="4" width="24" height="8" fill="#ffc400"/></svg>',
+    uk: '<svg viewBox="0 0 24 16"><rect width="24" height="8" fill="#0057b7"/><rect y="8" width="24" height="8" fill="#ffd700"/></svg>',
+    ru: '<svg viewBox="0 0 24 15"><rect width="24" height="15" fill="#fff"/><rect y="5" width="24" height="5" fill="#0039a6"/><rect y="10" width="24" height="5" fill="#d52b1e"/></svg>',
+    fr: '<svg viewBox="0 0 24 16"><rect width="8" height="16" fill="#0055a4"/><rect x="8" width="8" height="16" fill="#fff"/><rect x="16" width="8" height="16" fill="#ef4135"/></svg>',
+    // Wielka Brytania (flaga dla English) — clipPath z unikalnym ID (%U%)
+    en: '<svg viewBox="0 0 60 30">' +
+        '<clipPath id="gbs%U%"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath>' +
+        '<rect width="60" height="30" fill="#012169"/>' +
+        '<path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/>' +
+        '<path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#gbs%U%)" stroke="#C8102E" stroke-width="4"/>' +
+        '<path d="M30,0 V30 M0,15 H60" stroke="#fff" stroke-width="10"/>' +
+        '<path d="M30,0 V30 M0,15 H60" stroke="#C8102E" stroke-width="6"/>' +
+        '</svg>'
+  };
+  function flagMarkup(code) {
+    var s = FLAGS[code] || FLAGS.pl;
+    return s.replace(/%U%/g, 'f' + (_uid++));
+  }
   var DEFAULT_LANG = 'pl';
   var STORAGE_KEY = 'cosc_lang';
   var BASE = getBase();          // ścieżka do folderu i18n/ względem strony
@@ -51,6 +74,9 @@
   var dictCache = {};   // lang -> słownik
   var current = DEFAULT_LANG;
   var extracted = false;
+  var origTitle = '';   // oryginalny <title> (PL) — klucz per strona
+  var descEl = null;    // <meta name="description">
+  var origDesc = '';    // oryginalny opis (PL)
 
   /* ---------- pomocnicze ---------- */
 
@@ -118,6 +144,9 @@
         if (v && collapse(v).length) attrOrig.push({ el: el, attr: ATTRS[k], val: v });
       }
     }
+    origTitle = document.title || '';
+    descEl = document.querySelector('meta[name="description"]');
+    origDesc = descEl ? (descEl.getAttribute('content') || '') : '';
     extracted = true;
   }
 
@@ -148,15 +177,21 @@
       var t = strings[key];
       a.el.setAttribute(a.attr, (typeof t === 'string' && t.length) ? t : a.val);
     });
-    // title + meta description
-    if (dict && dict.title) document.title = dict.title;
-    var desc = document.querySelector('meta[name="description"]');
-    if (desc && dict && dict.description) desc.setAttribute('content', dict.description);
+    // <title> i meta description — tłumaczone po tekście źródłowym PL (klucz per strona),
+    // z awaryjnym polem dict.title/description (zgodność wstecz).
+    var tt = strings[collapse(origTitle)];
+    document.title = (typeof tt === 'string' && tt.length) ? tt : ((dict && dict.title) || origTitle);
+    if (descEl) {
+      var td = strings[collapse(origDesc)];
+      descEl.setAttribute('content', (typeof td === 'string' && td.length) ? td : ((dict && dict.description) || origDesc));
+    }
   }
 
   function restorePL() {
     originals.forEach(function (o) { o.el.innerHTML = o.html; });
     attrOrig.forEach(function (a) { a.el.setAttribute(a.attr, a.val); });
+    if (origTitle) document.title = origTitle;
+    if (descEl) descEl.setAttribute('content', origDesc);
   }
 
   function loadDict(lang) {
@@ -177,9 +212,13 @@
     updateUrl(lang);
     updateSwitcher(lang);
 
-    if (lang === DEFAULT_LANG) { restorePL(); return Promise.resolve(); }
+    function emit() {
+      try { document.dispatchEvent(new CustomEvent('cosc:langchange', { detail: { lang: lang } })); } catch (e) {}
+    }
+    if (lang === DEFAULT_LANG) { restorePL(); emit(); return Promise.resolve(); }
     return loadDict(lang).then(function (d) {
       if (d) applyDict(d); else restorePL();
+      emit();
     });
   }
 
@@ -207,7 +246,7 @@
       btn.setAttribute('aria-haspopup', 'listbox');
       btn.setAttribute('aria-expanded', 'false');
       btn.setAttribute('aria-label', 'Zmień język / Change language');
-      btn.innerHTML = '<span class="lang-fl">' + cur.flag + '</span><span class="lang-cur">' + cur.label +
+      btn.innerHTML = '<span class="lang-fl">' + flagMarkup(cur.code) + '</span><span class="lang-cur">' + cur.label +
         '</span><span class="lang-caret" aria-hidden="true">▾</span>';
 
       var list = document.createElement('div');
@@ -220,7 +259,7 @@
         it.setAttribute('role', 'option');
         it.setAttribute('data-lang', l.code);
         it.setAttribute('lang', l.code);
-        it.innerHTML = '<span class="lang-fl">' + l.flag + '</span><span class="lang-name">' + l.name +
+        it.innerHTML = '<span class="lang-fl">' + flagMarkup(l.code) + '</span><span class="lang-name">' + l.name +
           '</span><span class="lang-code">' + l.label + '</span>';
         it.addEventListener('click', function (e) {
           e.preventDefault();
@@ -261,7 +300,7 @@
     document.querySelectorAll('.langbox').forEach(function (h) {
       var fl = h.querySelector('.lang-btn .lang-fl');
       var lb = h.querySelector('.lang-btn .lang-cur');
-      if (fl) fl.textContent = cur.flag;
+      if (fl) fl.innerHTML = flagMarkup(cur.code);
       if (lb) lb.textContent = cur.label;
       h.querySelectorAll('.lang-item').forEach(function (it) {
         it.classList.toggle('on', it.getAttribute('data-lang') === lang);
