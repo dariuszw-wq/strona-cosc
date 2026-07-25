@@ -1,6 +1,17 @@
 {
-  "updated": "2026-07-25T12:38:15+02:00",
+  "updated": "2026-07-25T13:05:00+02:00",
   "items": [
+    {
+      "id": "2026-07-25-studenci-cudzoziemcy-1-lipca",
+      "added": "2026-07-25",
+      "category": "Rynek pracy",
+      "title": "Koniec okresu przejściowego: od 1 lipca 2026 r. praca studentów-cudzoziemców tylko po weryfikacji uczelni",
+      "summary": "Od 1 lipca 2026 r. sam status studenta nie wystarcza już, by cudzoziemiec był zwolniony z obowiązku uzyskania dokumentu legalizującego pracę. Zwolnienie obejmuje wyłącznie studentów uczelni publicznych oraz jednostek zatwierdzonych przez MSWiA na potrzeby przyjmowania cudzoziemców. Pracodawca musi teraz sprawdzić, czy dana uczelnia figuruje w odpowiednim wykazie; jeśli nie, konieczna jest standardowa podstawa legalizacji pracy (powiadomienie/oświadczenie/zezwolenie). Zaniedbanie obowiązku grozi ryzykiem nielegalnego powierzenia pracy. Szczegóły należy zweryfikować w źródle i obowiązujących przepisach.",
+      "source_name": "HRLaw.pl (Wardyński i Wspólnicy)",
+      "author": "",
+      "url": "https://hrlaw.pl/flesze/praca-studentow-cudzoziemcow-od-1-lipca-2026-r-tylko-po-weryfikacji-uczelni",
+      "scope": "PL"
+    },
     {
       "id": "2026-07-25-milczaca-zgoda-legalizacja",
       "added": "2026-07-25",
@@ -10,7 +21,29 @@
       "source_name": "Rynek Zdrowia (rynekzdrowia.pl)",
       "author": "",
       "url": "https://www.rynekzdrowia.pl/Polska-i-swiat/Szybsza-legalizacja-pobytu-dla-wybranych-cudzoziemcow-Rzad-szykuje-nowe-przepisy,286448,15.html",
-      "scope": "PL"
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "MSWiA plans a \"silent consent\" — faster residence legalisation for citizens of selected countries",
+          "summary": "According to reports by \"Rzeczpospolita\" (via rynekzdrowia.pl, 9 July 2026), the Ministry of the Interior is preparing a bill introducing a so-called silent consent: if the voivode does not conclude the proceedings within 60 days, the residence application would be deemed granted. The facilitation is to cover citizens of, among others, the USA, Japan, South Korea, the United Kingdom and Australia, and to make Poland more attractive to investors and skilled workers. Experts note that the solution concerns a small group of foreigners and will not solve the problem of months-long queues. The legislative status and details should be verified at the source."
+        },
+        "es": {
+          "title": "El Ministerio del Interior planea un \"consentimiento tácito\" — legalización más rápida de la residencia para ciudadanos de países seleccionados",
+          "summary": "Según informaciones de \"Rzeczpospolita\" (vía rynekzdrowia.pl, 9 de julio de 2026), el Ministerio del Interior (MSWiA) prepara un proyecto que introduce el llamado consentimiento tácito: si el voivoda no concluye el procedimiento en 60 días, la solicitud de residencia se consideraría resuelta favorablemente. La facilidad abarcaría a ciudadanos de, entre otros, EE. UU., Japón, Corea del Sur, el Reino Unido y Australia, y aumentaría el atractivo de Polonia para inversores y trabajadores cualificados. Los expertos señalan que la solución afecta a un grupo reducido de extranjeros y no resolverá el problema de las colas de varios meses. El estado legislativo y los detalles deben verificarse en la fuente."
+        },
+        "uk": {
+          "title": "МВС планує «мовчазну згоду» — швидша легалізація перебування для громадян окремих держав",
+          "summary": "За повідомленнями «Rzeczpospolita» (за rynekzdrowia.pl, 9 липня 2026 р.), МВС Польщі готує проєкт, що запроваджує так звану мовчазну згоду: якщо воєвода не завершить провадження протягом 60 днів, заяву на перебування вважатимуть розглянутою позитивно. Полегшення має охопити громадян, зокрема, США, Японії, Південної Кореї, Великої Британії та Австралії й підвищити привабливість Польщі для інвесторів і кваліфікованих працівників. Експерти зазначають, що рішення стосується невеликої групи іноземців і не розв'яже проблему багатомісячних черг. Законодавчий статус проєкту та деталі слід перевірити в джерелі."
+        },
+        "ru": {
+          "title": "МВД планирует «молчаливое согласие» — ускоренная легализация пребывания для граждан отдельных государств",
+          "summary": "По сообщениям «Rzeczpospolita» (со ссылкой на rynekzdrowia.pl, 9 июля 2026 г.), МВД Польши готовит законопроект, вводящий так называемое молчаливое согласие: если воевода не завершит производство в течение 60 дней, заявление о пребывании будет считаться рассмотренным положительно. Упрощение должно охватить граждан, в частности, США, Японии, Южной Кореи, Великобритании и Австралии и повысить привлекательность Польши для инвесторов и квалифицированных работников. Эксперты отмечают, что решение касается небольшой группы иностранцев и не решит проблему многомесячных очередей. Законодательный статус проекта и детали следует проверить в источнике."
+        },
+        "fr": {
+          "title": "Le ministère de l'Intérieur envisage un « consentement tacite » — légalisation accélérée du séjour pour les ressortissants de certains pays",
+          "summary": "Selon des informations de « Rzeczpospolita » (via rynekzdrowia.pl, 9 juillet 2026), le ministère de l'Intérieur prépare un projet introduisant un « consentement tacite » : si le voïvode ne clôt pas la procédure dans un délai de 60 jours, la demande de séjour serait réputée accordée. La facilitation concernerait notamment les ressortissants des États-Unis, du Japon, de la Corée du Sud, du Royaume-Uni et de l'Australie, et renforcerait l'attractivité de la Pologne pour les investisseurs et les travailleurs qualifiés. Les experts soulignent que la solution ne concerne qu'un petit groupe d'étrangers et ne résoudra pas le problème des files d'attente de plusieurs mois. Le statut législatif du projet et les détails sont à vérifier à la source."
+        }
+      }
     },
     {
       "id": "2026-07-25-gus-2-3-mln-cudzoziemcow",
@@ -21,7 +54,29 @@
       "source_name": "Rzeczpospolita (rp.pl)",
       "author": "Anita Błaszczak",
       "url": "https://www.rp.pl/gospodarka/art44750901-nowe-badanie-ludnosci-w-polsce-wcale-nie-jest-nas-tak-malo",
-      "scope": "PL"
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Statistics Poland: around 2.3 million foreigners were in Poland at the end of 2025",
+          "summary": "An experimental study by Statistics Poland (GUS) announced on 1 July 2026 showed that the number of foreigners staying in Poland rose by 214,500, to around 2.3 million at the end of 2025, which helped offset the decline in the number of Poles. The number of Ukrainian citizens was estimated using the \"traces of life\" method at 1.675 million (up by 153,000); the second-largest group were Belarusians (179,300), and the largest relative increase was recorded among Colombians (27,500). Foreigners are concentrated in large cities — in Wrocław they made up almost one in five residents, and in Warsaw about 14 percent."
+        },
+        "es": {
+          "title": "GUS: a finales de 2025 había en Polonia unos 2,3 millones de extranjeros",
+          "summary": "Un estudio experimental de la Oficina de Estadística (GUS) anunciado el 1 de julio de 2026 mostró que el número de extranjeros que residen en Polonia aumentó en 214 500, hasta unos 2,3 millones a finales de 2025, lo que ayudó a compensar la caída del número de polacos. El número de ciudadanos ucranianos se estimó con el método de las \"huellas de vida\" en 1,675 millones (un aumento de 153 000); el segundo grupo fueron los bielorrusos (179 300), y el mayor incremento relativo se registró entre los colombianos (27 500). Los extranjeros se concentran en las grandes ciudades — en Breslavia representaban casi una de cada cinco personas, y en Varsovia alrededor del 14 por ciento."
+        },
+        "uk": {
+          "title": "Держстат Польщі: на кінець 2025 р. у Польщі перебувало близько 2,3 млн іноземців",
+          "summary": "Експериментальне дослідження Держстату (GUS), оприлюднене 1 липня 2026 р., показало, що кількість іноземців, які перебувають у Польщі, зросла на 214,5 тис., до близько 2,3 млн на кінець 2025 р., що допомогло компенсувати зменшення кількості поляків. Кількість громадян України оцінили методом «слідів життя» у 1,675 млн (зростання на 153 тис.); другою групою були білоруси (179,3 тис.), а найбільше відносне зростання зафіксовано серед колумбійців (27,5 тис.). Іноземці зосереджені у великих містах — у Вроцлаві вони становили майже кожну п'яту особу, а у Варшаві близько 14 відсотків."
+        },
+        "ru": {
+          "title": "Росстат Польши (GUS): на конец 2025 г. в Польше находилось около 2,3 млн иностранцев",
+          "summary": "Экспериментальное исследование Статистического управления (GUS), обнародованное 1 июля 2026 г., показало, что число иностранцев, находящихся в Польше, выросло на 214,5 тыс., до примерно 2,3 млн на конец 2025 г., что помогло компенсировать сокращение числа поляков. Число граждан Украины оценили методом «следов жизни» в 1,675 млн (рост на 153 тыс.); второй группой были белорусы (179,3 тыс.), а наибольший относительный рост зафиксирован среди колумбийцев (27,5 тыс.). Иностранцы сосредоточены в крупных городах — во Вроцлаве они составляли почти каждого пятого, а в Варшаве около 14 процентов."
+        },
+        "fr": {
+          "title": "Office statistique polonais (GUS) : environ 2,3 millions d'étrangers en Pologne fin 2025",
+          "summary": "Une étude expérimentale de l'Office statistique (GUS) annoncée le 1er juillet 2026 a montré que le nombre d'étrangers séjournant en Pologne a augmenté de 214 500, pour atteindre environ 2,3 millions fin 2025, ce qui a contribué à compenser la baisse du nombre de Polonais. Le nombre de ressortissants ukrainiens a été estimé par la méthode des « traces de vie » à 1,675 million (+153 000) ; le deuxième groupe était les Biélorusses (179 300), et la plus forte hausse relative a été enregistrée chez les Colombiens (27 500). Les étrangers se concentrent dans les grandes villes — à Wrocław, ils représentaient près d'une personne sur cinq, et à Varsovie environ 14 pour cent."
+        }
+      }
     },
     {
       "id": "2026-07-25-deportacje-polrocze-2026",
@@ -32,7 +87,29 @@
       "source_name": "InfoSecurity24 (infosecurity24.pl)",
       "author": "",
       "url": "https://infosecurity24.pl/sluzby-mundurowe/straz-graniczna/przybywa-deportacji-w-pol-roku-polske-opuscilo-ponad-56-tys-cudzoziemcow",
-      "scope": "PL"
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Deportations on the rise: over 5,600 foreigners left Poland in the first half of 2026",
+          "summary": "As reported by \"Rzeczpospolita\" (via InfoSecurity24, 21 July 2026), in the first half of 2026 return flights covered 5,640 foreigners — 28 percent more than in the same period of 2025. March and April were record months (about 1,150 and 1,130 people respectively), and citizens of Georgia and Colombia returned most often. Between 85 and 90 percent of return operations are carried out with the support of the Frontex Agency, with costs covered by the state budget and EU funds. The data cover both voluntary and forced returns."
+        },
+        "es": {
+          "title": "Aumentan las deportaciones: en el primer semestre de 2026 más de 5600 extranjeros abandonaron Polonia",
+          "summary": "Según informó \"Rzeczpospolita\" (vía InfoSecurity24, 21 de julio de 2026), en el primer semestre de 2026 los vuelos de retorno abarcaron a 5640 extranjeros — un 28 por ciento más que en el mismo periodo de 2025. Marzo y abril fueron meses récord (unas 1150 y 1130 personas respectivamente), y los ciudadanos de Georgia y Colombia regresaron con más frecuencia. Entre el 85 y el 90 por ciento de las operaciones de retorno se realizan con el apoyo de la Agencia Frontex, y los costes los cubren el presupuesto del Estado y fondos de la UE. Los datos incluyen tanto retornos voluntarios como forzosos."
+        },
+        "uk": {
+          "title": "Зростає кількість депортацій: у I півріччі 2026 р. Польщу залишили понад 5,6 тис. іноземців",
+          "summary": "Як повідомила «Rzeczpospolita» (за InfoSecurity24, 21 липня 2026 р.), у першому півріччі 2026 р. зворотними рейсами охопили 5640 іноземців — на 28 відсотків більше, ніж за аналогічний період 2025 р. Рекордними були березень і квітень (відповідно близько 1150 і 1130 осіб), а найчастіше поверталися громадяни Грузії та Колумбії. Від 85 до 90 відсотків операцій повернення здійснюються за підтримки Агентства Frontex, а витрати покриваються з державного бюджету та коштів ЄС. Дані охоплюють як добровільні, так і примусові повернення."
+        },
+        "ru": {
+          "title": "Растёт число депортаций: в I полугодии 2026 г. Польшу покинули более 5,6 тыс. иностранцев",
+          "summary": "Как сообщила «Rzeczpospolita» (со ссылкой на InfoSecurity24, 21 июля 2026 г.), в первом полугодии 2026 г. возвратными рейсами охвачено 5640 иностранцев — на 28 процентов больше, чем за аналогичный период 2025 г. Рекордными были март и апрель (соответственно около 1150 и 1130 человек), а чаще всего возвращались граждане Грузии и Колумбии. От 85 до 90 процентов операций по возвращению осуществляются при поддержке Агентства Frontex, а расходы покрываются из государственного бюджета и средств ЕС. Данные включают как добровольные, так и принудительные возвращения."
+        },
+        "fr": {
+          "title": "Les expulsions augmentent : plus de 5 600 étrangers ont quitté la Pologne au premier semestre 2026",
+          "summary": "Comme l'a rapporté « Rzeczpospolita » (via InfoSecurity24, 21 juillet 2026), au premier semestre 2026 les vols de retour ont concerné 5 640 étrangers — soit 28 pour cent de plus qu'à la même période de 2025. Mars et avril ont été des mois record (environ 1 150 et 1 130 personnes respectivement), et les ressortissants de Géorgie et de Colombie sont revenus le plus souvent. De 85 à 90 pour cent des opérations de retour sont réalisées avec le soutien de l'Agence Frontex, les coûts étant couverts par le budget de l'État et des fonds de l'UE. Les données couvrent les retours volontaires comme forcés."
+        }
+      }
     },
     {
       "id": "2026-07-25-sg-somalia-granica-litwa",
@@ -43,7 +120,29 @@
       "source_name": "Straż Graniczna (strazgraniczna.pl)",
       "author": "",
       "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16003,16-obywateli-Somalii-zatrzymanych-po-nielegalnym-przekroczeniu-granicy-z-Litwa.html",
-      "scope": "PL"
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Border Guard: 16 Somali citizens detained after illegally crossing the border with Lithuania",
+          "summary": "According to the Border Guard, on the night of 23–24 July 2026 officers from Sejny stopped a car in which a 33-year-old Polish citizen was transporting six Somali citizens without residence documents; on the same day another ten were found who had crossed the Polish-Lithuanian border on foot. The driver was detained — organising an illegal border crossing carries up to 8 years' imprisonment (the presumption of innocence applies). The detained foreigners are to be handed over to Lithuania under readmission."
+        },
+        "es": {
+          "title": "Guardia de Fronteras: 16 ciudadanos de Somalia detenidos tras cruzar ilegalmente la frontera con Lituania",
+          "summary": "Según la Guardia de Fronteras, en la noche del 23 al 24 de julio de 2026 agentes de Sejny detuvieron un vehículo en el que un ciudadano polaco de 33 años transportaba a seis ciudadanos de Somalia sin documentos de residencia; el mismo día se descubrió a otros diez que habían cruzado a pie la frontera polaco-lituana. El conductor fue detenido — organizar un cruce ilegal de la frontera conlleva hasta 8 años de prisión (rige la presunción de inocencia). Los extranjeros detenidos serán entregados a Lituania en el marco de la readmisión."
+        },
+        "uk": {
+          "title": "Прикордонна служба: 16 громадян Сомалі затримано після незаконного перетину кордону з Литвою",
+          "summary": "Як повідомила Прикордонна служба, у ніч з 23 на 24 липня 2026 р. співробітники із Сейн зупинили автомобіль, яким 33-річний громадянин Польщі перевозив шістьох громадян Сомалі без документів на перебування; того ж дня виявили ще десятьох, які перетнули польсько-литовський кордон пішки. Водія затримали — за організацію незаконного перетину кордону загрожує до 8 років позбавлення волі (діє презумпція невинуватості). Затриманих іноземців мають передати литовській стороні в межах реадмісії."
+        },
+        "ru": {
+          "title": "Пограничная служба: 16 граждан Сомали задержаны после незаконного пересечения границы с Литвой",
+          "summary": "Как сообщила Пограничная служба, в ночь с 23 на 24 июля 2026 г. сотрудники из Сейн остановили автомобиль, в котором 33-летний гражданин Польши перевозил шестерых граждан Сомали без документов на пребывание; в тот же день выявили ещё десятерых, пересёкших польско-литовскую границу пешком. Водителя задержали — за организацию незаконного пересечения границы грозит до 8 лет лишения свободы (действует презумпция невиновности). Задержанных иностранцев должны передать литовской стороне в рамках реадмиссии."
+        },
+        "fr": {
+          "title": "Garde-frontières : 16 ressortissants somaliens interpellés après avoir franchi illégalement la frontière avec la Lituanie",
+          "summary": "Selon la Garde-frontières, dans la nuit du 23 au 24 juillet 2026, des agents de Sejny ont arrêté une voiture dans laquelle un citoyen polonais de 33 ans transportait six ressortissants somaliens sans documents de séjour ; le même jour, dix autres ont été découverts, ayant franchi à pied la frontière polono-lituanienne. Le conducteur a été interpellé — l'organisation d'un franchissement illégal de la frontière est passible de jusqu'à 8 ans d'emprisonnement (la présomption d'innocence s'applique). Les étrangers interpellés doivent être remis à la Lituanie dans le cadre de la réadmission."
+        }
+      }
     },
     {
       "id": "2026-07-25-sg-wietnam-praca-bez-zezwolen",
@@ -54,7 +153,29 @@
       "source_name": "Straż Graniczna (strazgraniczna.pl)",
       "author": "",
       "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16024,Pracowali-bez-zezwolen-Dwaj-obywatele-Wietnamu-z-nakazem-opuszczenia-Polski.html",
-      "scope": "PL"
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Border Guard: two Vietnamese citizens worked without permits — ordered to leave Poland",
+          "summary": "The Carpathian Border Guard Unit reported that during a check of the legality of employment at a catering company in Skarżysko-Kamienna (24 July 2026) two Vietnamese citizens were found working without the required permits — one held a residence card that had been invalid for two years, the other a Hungarian card listed as a document to be seized. The head of the post issued return decisions against them with a 12-month ban on entering the Schengen area. The employer was fined a total of PLN 6,000."
+        },
+        "es": {
+          "title": "Guardia de Fronteras: dos ciudadanos de Vietnam trabajaban sin permisos — orden de abandonar Polonia",
+          "summary": "La Unidad de los Cárpatos de la Guardia de Fronteras informó de que, durante un control de la legalidad del empleo en una empresa de hostelería en Skarżysko-Kamienna (24 de julio de 2026), se descubrió a dos ciudadanos de Vietnam trabajando sin los permisos requeridos — uno tenía una tarjeta de residencia caducada desde hacía dos años, el otro una tarjeta húngara figurada como documento a retener. El jefe del puesto dictó contra ellos decisiones de retorno con una prohibición de entrada de 12 meses en el espacio Schengen. Al empleador se le impuso una multa por un total de 6000 PLN."
+        },
+        "uk": {
+          "title": "Прикордонна служба: двоє громадян В'єтнаму працювали без дозволів — припис залишити Польщу",
+          "summary": "Карпатський загін Прикордонної служби повідомив, що під час перевірки законності працевлаштування в закладі громадського харчування у Скаржиську-Каменній (24 липня 2026 р.) виявлено двох громадян В'єтнаму, які працювали без потрібних дозволів — один мав недійсну два роки карту побиту, другий — угорську карту, що значилася як документ для вилучення. Начальник відділу виніс щодо них рішення про зобов'язання до повернення з 12-місячною забороною в'їзду до Шенгенської зони. Роботодавця оштрафували на загальну суму 6 тис. злотих."
+        },
+        "ru": {
+          "title": "Пограничная служба: двое граждан Вьетнама работали без разрешений — предписание покинуть Польшу",
+          "summary": "Карпатский отряд Пограничной службы сообщил, что при проверке законности трудоустройства в предприятии общепита в Скаржиско-Каменне (24 июля 2026 г.) выявлены двое граждан Вьетнама, работавших без требуемых разрешений — у одного была недействительная два года карта побыта, у другого — венгерская карта, числящаяся как документ для изъятия. Начальник отделения вынес в отношении них решения об обязании к возвращению с 12-месячным запретом на въезд в Шенгенскую зону. Работодателя оштрафовали на общую сумму 6 тыс. злотых."
+        },
+        "fr": {
+          "title": "Garde-frontières : deux ressortissants vietnamiens travaillaient sans permis — injonction de quitter la Pologne",
+          "summary": "L'Unité des Carpates de la Garde-frontières a indiqué que, lors d'un contrôle de la légalité de l'emploi dans un établissement de restauration à Skarżysko-Kamienna (24 juillet 2026), deux ressortissants vietnamiens ont été découverts en train de travailler sans les permis requis — l'un avait une carte de séjour périmée depuis deux ans, l'autre une carte hongroise figurant comme document à saisir. Le chef du poste a rendu à leur encontre des décisions de retour assorties d'une interdiction d'entrée de 12 mois dans l'espace Schengen. L'employeur a été condamné à une amende d'un montant total de 6 000 PLN."
+        }
+      }
     },
     {
       "id": "2026-07-25-sg-deportacja-lodz-gruzja",
@@ -65,7 +186,29 @@
       "source_name": "Straż Graniczna (strazgraniczna.pl)",
       "author": "Karolina Kowalczyk",
       "url": "https://strazgraniczna.pl/pl/aktualnosci/15850,Deportacja-z-lotniska-w-Lodzi-Obywatele-Gruzji-odeslani-do-kraju.html",
-      "scope": "PL"
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Border Guard: return operation from Łódź — 15 Georgian citizens sent back to their country",
+          "summary": "According to the National Border Guard Headquarters, on 2 July 2026 the fourth return operation this year took place from Łódź airport (in cooperation with the Frontex Agency), during which 15 Georgian citizens left Poland. For 11 of them the return decisions were enforced compulsorily on grounds of security and public order — these people had court sentences for crimes committed in Poland. The action was coordinated by the Return Operations Centre of the Foreigners' Affairs Board of the National Border Guard Headquarters."
+        },
+        "es": {
+          "title": "Guardia de Fronteras: operación de retorno desde Łódź — 15 ciudadanos de Georgia devueltos a su país",
+          "summary": "Según la Comandancia General de la Guardia de Fronteras, el 2 de julio de 2026 se realizó desde el aeropuerto de Łódź la cuarta operación de retorno de este año (en cooperación con la Agencia Frontex), en la que 15 ciudadanos de Georgia abandonaron Polonia. Contra 11 de ellos las decisiones de retorno se ejecutaron de forma forzosa por motivos de seguridad y orden público — estas personas tenían sentencias judiciales por delitos cometidos en Polonia. La acción fue coordinada por el Centro de Operaciones de Retorno de la Junta de Asuntos de Extranjeros de la Comandancia General."
+        },
+        "uk": {
+          "title": "Прикордонна служба: операція повернення з Лодзі — 15 громадян Грузії відправлено на батьківщину",
+          "summary": "За даними Головного управління Прикордонної служби, 2 липня 2026 р. з аеропорту в Лодзі відбулася четверта цьогоріч операція повернення (у співпраці з Агентством Frontex), у межах якої Польщу залишили 15 громадян Грузії. Щодо 11 із них рішення про повернення виконано примусово з міркувань безпеки та громадського порядку — ці особи мали вироки судів за злочини, скоєні в Польщі. Дії координував Центр операцій повернення Управління у справах іноземців ГУ Прикордонної служби."
+        },
+        "ru": {
+          "title": "Пограничная служба: операция возвращения из Лодзи — 15 граждан Грузии отправлены на родину",
+          "summary": "По данным Главного управления Пограничной службы, 2 июля 2026 г. из аэропорта Лодзи прошла четвёртая в этом году операция возвращения (в сотрудничестве с Агентством Frontex), в рамках которой Польшу покинули 15 граждан Грузии. В отношении 11 из них решения о возвращении исполнены принудительно по соображениям безопасности и общественного порядка — эти лица имели приговоры судов за преступления, совершённые в Польше. Действия координировал Центр операций возвращения Управления по делам иностранцев ГУ Пограничной службы."
+        },
+        "fr": {
+          "title": "Garde-frontières : opération de retour depuis Łódź — 15 ressortissants géorgiens renvoyés dans leur pays",
+          "summary": "Selon le Commandement général de la Garde-frontières, le 2 juillet 2026 s'est déroulée depuis l'aéroport de Łódź la quatrième opération de retour de l'année (en coopération avec l'Agence Frontex), au cours de laquelle 15 ressortissants géorgiens ont quitté la Pologne. Pour 11 d'entre eux, les décisions de retour ont été exécutées de force pour des raisons de sécurité et d'ordre public — ces personnes avaient des condamnations judiciaires pour des infractions commises en Pologne. L'action a été coordonnée par le Centre des opérations de retour de la Direction des affaires des étrangers du Commandement général."
+        }
+      }
     },
     {
       "id": "2026-07-25-pck-dzien-dobrych-spotkan",
@@ -76,7 +219,29 @@
       "source_name": "Polski Czerwony Krzyż (pck.pl)",
       "author": "",
       "url": "https://pck.pl/polski-czerwony-krzyz/aktualnosci/dzien-dobrych-spotkan-zapraszamy-na-pikniki-pck-w-calej-polsce",
-      "scope": "PL"
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Polish Red Cross: \"Day of Good Meetings\" integration picnics in seven cities",
+          "summary": "The Polish Red Cross organised open-air Integration Picnics \"Day of Good Meetings\" (27 June 2026) in Bydgoszcz, Gdańsk, Lublin, Łódź, Ostrowiec Świętokrzyski, Warsaw and Wrocław; some events were postponed due to the weather. The events were held as part of the \"Together Towards Independence\" project (Ministry of the Interior and the Polish Red Cross, Asylum, Migration and Integration Fund 2021–2027) and brought residents together with people with migration experience. At the stands one could obtain, among other things, consultations on residence legalisation and CUKR applications for Ukrainian citizens."
+        },
+        "es": {
+          "title": "Cruz Roja Polaca: picnics de integración \"Día de los Buenos Encuentros\" en siete ciudades",
+          "summary": "La Cruz Roja Polaca organizó Picnics de Integración al aire libre \"Día de los Buenos Encuentros\" (27 de junio de 2026) en Bydgoszcz, Gdańsk, Lublin, Łódź, Ostrowiec Świętokrzyski, Varsovia y Breslavia; parte de los eventos se aplazaron por el clima. Los actos se celebraron en el marco del proyecto \"Juntos hacia la Independencia\" (Ministerio del Interior y Cruz Roja Polaca, Fondo de Asilo, Migración e Integración 2021–2027) y reunieron a los residentes con personas con experiencia migratoria. En los estands se podían obtener, entre otras cosas, consultas sobre la legalización de la residencia y las solicitudes CUKR para ciudadanos ucranianos."
+        },
+        "uk": {
+          "title": "Польський Червоний Хрест: інтеграційні пікніки «День добрих зустрічей» у семи містах",
+          "summary": "Польський Червоний Хрест організував просто неба Інтеграційні пікніки «День добрих зустрічей» (27 червня 2026 р.) у Бидгощі, Гданську, Любліні, Лодзі, Островці-Свентокшиському, Варшаві та Вроцлаві; частину заходів перенесли через погоду. Заходи проходили в межах проєкту «Разом до незалежності» (МВС і ПЧХ, Фонд притулку, міграції та інтеграції 2021–2027) і об'єднували мешканців з людьми з досвідом міграції. На стендах можна було отримати, зокрема, консультації щодо легалізації перебування та заяв CUKR для громадян України."
+        },
+        "ru": {
+          "title": "Польский Красный Крест: интеграционные пикники «День добрых встреч» в семи городах",
+          "summary": "Польский Красный Крест организовал под открытым небом Интеграционные пикники «День добрых встреч» (27 июня 2026 г.) в Быдгоще, Гданьске, Люблине, Лодзи, Островце-Свентокшиском, Варшаве и Вроцлаве; часть мероприятий перенесли из-за погоды. Мероприятия проходили в рамках проекта «Вместе к независимости» (МВД и ПКК, Фонд убежища, миграции и интеграции 2021–2027) и объединяли жителей с людьми с миграционным опытом. На стендах можно было получить, в частности, консультации по легализации пребывания и заявлениям CUKR для граждан Украины."
+        },
+        "fr": {
+          "title": "Croix-Rouge polonaise : pique-niques d'intégration « Journée des bonnes rencontres » dans sept villes",
+          "summary": "La Croix-Rouge polonaise a organisé des Pique-niques d'intégration en plein air « Journée des bonnes rencontres » (27 juin 2026) à Bydgoszcz, Gdańsk, Lublin, Łódź, Ostrowiec Świętokrzyski, Varsovie et Wrocław ; une partie des événements a été reportée en raison de la météo. Les manifestations se sont tenues dans le cadre du projet « Ensemble vers l'indépendance » (ministère de l'Intérieur et Croix-Rouge polonaise, Fonds Asile, Migration et Intégration 2021–2027) et ont réuni les habitants et des personnes ayant une expérience de la migration. Aux stands, on pouvait notamment obtenir des consultations sur la légalisation du séjour et les demandes CUKR pour les ressortissants ukrainiens."
+        }
+      }
     },
     {
       "id": "2026-07-25-polonia-camp-2026",
@@ -87,7 +252,29 @@
       "source_name": "RMF24",
       "author": "Paweł Auguff, Jakub Rybski",
       "url": "https://www.rmf24.pl/regiony/warszawa/news-warszawa-centrum-mlodych-polakow-mieszkajacych-za-granica-in,nIdn,1011174",
-      "scope": "PL"
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Polonia Camp 2026: 1,500 young Poles from 50 countries met in Warsaw",
+          "summary": "From 23 to 26 July 2026, the second edition of Polonia Camp — the World Meeting of Young Polish Diaspora — is taking place on the SGGW campus in Warsaw, gathering about 1,500 people of Polish origin from 50 countries (aged 18–30). The programme includes panels and workshops on, among other things, the recognition of qualifications obtained abroad, starting a business, and studying in Poland. It is organised by the \"Wspólnota Polska\" Association together with partners, under the patronage of the Marshal of the Senate."
+        },
+        "es": {
+          "title": "Polonia Camp 2026: 1500 jóvenes polacos de 50 países se reunieron en Varsovia",
+          "summary": "Del 23 al 26 de julio de 2026, en el campus de la SGGW en Varsovia se celebra la segunda edición de Polonia Camp — el Encuentro Mundial de la Joven Diáspora Polaca, que reunió a unas 1500 personas de origen polaco de 50 países (de 18 a 30 años). El programa incluye paneles y talleres sobre, entre otras cosas, el reconocimiento de cualificaciones obtenidas en el extranjero, la creación de una empresa y estudiar en Polonia. Está organizado por la Asociación \"Wspólnota Polska\" junto con socios, bajo el patrocinio de la Mariscala del Senado."
+        },
+        "uk": {
+          "title": "Polonia Camp 2026: 1500 молодих поляків із 50 країн зустрілися у Варшаві",
+          "summary": "23–26 липня 2026 р. у кампусі SGGW у Варшаві відбувається друга едиція Polonia Camp — Всесвітньої зустрічі молодої польської діаспори, яка зібрала близько 1500 осіб польського походження з 50 країн (віком 18–30 років). У програмі — панелі та воркшопи, зокрема про визнання кваліфікацій, здобутих за кордоном, відкриття підприємницької діяльності та навчання в Польщі. Організатором є Товариство «Wspólnota Polska» разом із партнерами, під патронатом Маршалкині Сенату."
+        },
+        "ru": {
+          "title": "Polonia Camp 2026: 1500 молодых поляков из 50 стран встретились в Варшаве",
+          "summary": "23–26 июля 2026 г. в кампусе SGGW в Варшаве проходит второе издание Polonia Camp — Всемирной встречи молодой польской диаспоры, которая собрала около 1500 человек польского происхождения из 50 стран (в возрасте 18–30 лет). В программе — панели и воркшопы, в частности о признании квалификаций, полученных за рубежом, открытии предпринимательской деятельности и обучении в Польше. Организатор — Общество «Wspólnota Polska» вместе с партнёрами, под патронатом Маршала Сената."
+        },
+        "fr": {
+          "title": "Polonia Camp 2026 : 1 500 jeunes Polonais de 50 pays se sont réunis à Varsovie",
+          "summary": "Du 23 au 26 juillet 2026, le campus de la SGGW à Varsovie accueille la deuxième édition de Polonia Camp — la Rencontre mondiale de la jeune diaspora polonaise, qui a réuni environ 1 500 personnes d'origine polonaise de 50 pays (âgées de 18 à 30 ans). Le programme comprend des panels et des ateliers portant notamment sur la reconnaissance des qualifications obtenues à l'étranger, la création d'une entreprise et les études en Pologne. L'organisateur est l'association « Wspólnota Polska » avec ses partenaires, sous le patronage de la Maréchale du Sénat."
+        }
+      }
     },
     {
       "id": "2026-07-25-piknik-opolskie-goscinne",
@@ -98,7 +285,29 @@
       "source_name": "Fundusze Europejskie dla Opolskiego",
       "author": "Urząd Marszałkowski Województwa Opolskiego",
       "url": "https://funduszeue.opolskie.pl/wydarzenia/piknik-miedzynarodowy-opolskie-goscinnie",
-      "scope": "PL"
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "\"Opolskie Gościnne\" integration picnic — an international event for families (29 Aug, Opole)",
+          "summary": "The Voivodeship Labour Office in Opole and the Foreigners' Integration Centre invite you to the fifth edition of the \"Opolskie Gościnne\" integration picnic — on 29 August 2026 at the Museum of the Opole Village in Opole. The programme includes educational stands, artistic performances, handicraft presentations, tastings of dishes from around the world and a play zone for children. The event is held as part of a project supporting the social integration of third-country nationals, co-financed by European Funds for Opolskie 2021–2027."
+        },
+        "es": {
+          "title": "Picnic de integración \"Opolskie Gościnne\" — un evento internacional para familias (29.08, Opole)",
+          "summary": "La Oficina Provincial de Empleo de Opole y el Centro de Integración de Extranjeros invitan a la quinta edición del picnic de integración \"Opolskie Gościnne\" — el 29 de agosto de 2026 en el Museo de la Aldea de Opole, en Opole. El programa incluye estands educativos, actuaciones artísticas, presentaciones de artesanía, degustaciones de platos de distintas partes del mundo y una zona de juegos para niños. El evento se realiza en el marco de un proyecto de apoyo a la integración social de nacionales de terceros países, cofinanciado por Fondos Europeos para Opolskie 2021–2027."
+        },
+        "uk": {
+          "title": "Інтеграційний пікнік «Opolskie Gościnne» — міжнародна подія для родин (29.08, Ополе)",
+          "summary": "Воєводське управління праці в Ополе та Центр інтеграції іноземців запрошують на п'яту едицію інтеграційного пікніка «Opolskie Gościnne» — 29 серпня 2026 р. у Музеї опольського села в Ополе. У програмі — освітні стенди, мистецькі виступи, презентації рукоділля, дегустації страв з різних куточків світу та зона розваг для дітей. Захід реалізується в межах проєкту підтримки суспільної інтеграції громадян третіх країн, співфінансованого з Європейських фондів для Опольського 2021–2027."
+        },
+        "ru": {
+          "title": "Интеграционный пикник «Opolskie Gościnne» — международное событие для семей (29.08, Ополе)",
+          "summary": "Воеводское управление труда в Ополе и Центр интеграции иностранцев приглашают на пятое издание интеграционного пикника «Opolskie Gościnne» — 29 августа 2026 г. в Музее опольской деревни в Ополе. В программе — образовательные стенды, художественные выступления, презентации рукоделия, дегустации блюд из разных уголков мира и зона развлечений для детей. Мероприятие реализуется в рамках проекта поддержки социальной интеграции граждан третьих стран, софинансируемого из Европейских фондов для Опольского 2021–2027."
+        },
+        "fr": {
+          "title": "Pique-nique d'intégration « Opolskie Gościnne » — un événement international pour les familles (29.08, Opole)",
+          "summary": "L'Office régional de l'emploi d'Opole et le Centre d'intégration des étrangers invitent à la cinquième édition du pique-nique d'intégration « Opolskie Gościnne » — le 29 août 2026 au Musée du village d'Opole, à Opole. Au programme : stands éducatifs, spectacles artistiques, présentations d'artisanat, dégustations de plats du monde entier et espace de jeux pour enfants. L'événement est réalisé dans le cadre d'un projet de soutien à l'intégration sociale des ressortissants de pays tiers, cofinancé par les Fonds européens pour la Voïvodie d'Opole 2021–2027."
+        }
+      }
     },
     {
       "id": "2026-07-25-kgp-ataki-ukraincy",
@@ -109,7 +318,29 @@
       "source_name": "Rzeczpospolita (rp.pl)",
       "author": "",
       "url": "https://www.rp.pl/spoleczenstwo/art44836181-rosnie-liczba-atakow-na-ukraincow-w-polsce-tegoroczne-dane-kgp-niepokoja",
-      "scope": "PL"
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Police data: rising number of attacks on Ukrainian citizens in Poland",
+          "summary": "\"Rzeczpospolita\" describes cited data from the National Police Headquarters, according to which the number of reported attacks on Ukrainian citizens in Poland rose in 2026. The publication also refers to worsening social sentiment. The full figures and their methodology should be verified at the source."
+        },
+        "es": {
+          "title": "Datos de la policía: aumenta el número de ataques contra ciudadanos ucranianos en Polonia",
+          "summary": "\"Rzeczpospolita\" describe datos citados de la Comandancia General de la Policía, según los cuales en 2026 aumentó el número de ataques denunciados contra ciudadanos ucranianos en Polonia. La publicación se refiere también al empeoramiento del clima social. Las cifras completas y su metodología deben verificarse en la fuente."
+        },
+        "uk": {
+          "title": "Дані поліції: зростає кількість нападів на громадян України в Польщі",
+          "summary": "«Rzeczpospolita» описує наведені дані Головного управління поліції, за якими у 2026 р. зросла кількість зареєстрованих нападів на громадян України в Польщі. Публікація посилається також на погіршення суспільних настроїв. Повні числові дані та їхню методологію слід перевірити в джерелі."
+        },
+        "ru": {
+          "title": "Данные полиции: растёт число нападений на граждан Украины в Польше",
+          "summary": "«Rzeczpospolita» описывает приводимые данные Главного управления полиции, согласно которым в 2026 г. выросло число зарегистрированных нападений на граждан Украины в Польше. Публикация ссылается также на ухудшение общественных настроений. Полные числовые данные и их методологию следует проверить в источнике."
+        },
+        "fr": {
+          "title": "Données de la police : le nombre d'agressions contre des ressortissants ukrainiens augmente en Pologne",
+          "summary": "« Rzeczpospolita » décrit des données citées du Commandement général de la police, selon lesquelles le nombre d'agressions signalées contre des ressortissants ukrainiens en Pologne a augmenté en 2026. La publication évoque également la dégradation du climat social. Les chiffres complets et leur méthodologie sont à vérifier à la source."
+        }
+      }
     },
     {
       "id": "2026-07-25-incydent-bielsko-autobus",
@@ -120,7 +351,29 @@
       "source_name": "Interia Wydarzenia",
       "author": "",
       "url": "https://wydarzenia.interia.pl/kraj/news-ukraina-przestrzega-w-sprawie-nagrania-z-autobusu-jest-falsz,nId,23514777",
-      "scope": "PL"
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Bielsko-Biała: widely shared bus recording with the insulting of Ukrainian girls",
+          "summary": "In mid-July 2026 a recording from a bus in Bielsko-Biała circulated in the media, in which a man was said to have verbally insulted two 11-year-old Ukrainian citizens. The matter is being clarified, and the authenticity and context of the recording are sometimes questioned. The presumption of innocence applies — findings and details at the source."
+        },
+        "es": {
+          "title": "Bielsko-Biała: sonora grabación en un autobús con el insulto a unas niñas ucranianas",
+          "summary": "A mediados de julio de 2026 circuló en los medios una grabación de un autobús en Bielsko-Biała, en la que un hombre habría insultado verbalmente a dos ciudadanas ucranianas de 11 años. El caso se está esclareciendo, y la autenticidad y el contexto de la grabación a veces se cuestionan. Rige la presunción de inocencia — las conclusiones y los detalles, en la fuente."
+        },
+        "uk": {
+          "title": "Бельсько-Бяла: гучний запис з автобуса зі зневагою до українських дівчаток",
+          "summary": "У середині липня 2026 р. у медіа поширювався запис з автобуса в Бельсько-Бялій, на якому чоловік начебто словесно зневажав двох 11-річних громадянок України. Справу з'ясовують, а автентичність і контекст запису подекуди ставлять під сумнів. Діє презумпція невинуватості — висновки й деталі в джерелі."
+        },
+        "ru": {
+          "title": "Бельско-Бяла: громкая запись из автобуса с оскорблением украинских девочек",
+          "summary": "В середине июля 2026 г. в СМИ распространялась запись из автобуса в Бельско-Бялой, на которой мужчина якобы словесно оскорблял двух 11-летних гражданок Украины. Дело выясняется, а подлинность и контекст записи местами ставятся под сомнение. Действует презумпция невиновности — выводы и детали в источнике."
+        },
+        "fr": {
+          "title": "Bielsko-Biała : un enregistrement de bus très partagé avec l'insulte de fillettes ukrainiennes",
+          "summary": "À la mi-juillet 2026, un enregistrement réalisé dans un bus à Bielsko-Biała a circulé dans les médias, sur lequel un homme aurait verbalement insulté deux ressortissantes ukrainiennes de 11 ans. L'affaire est en cours d'élucidation, et l'authenticité et le contexte de l'enregistrement sont parfois mis en question. La présomption d'innocence s'applique — constatations et détails à la source."
+        }
+      }
     },
     {
       "id": "2026-07-25-sondaz-nastroje-ukraincy",
@@ -131,7 +384,29 @@
       "source_name": "Polsat News",
       "author": "",
       "url": "https://www.polsatnews.pl/wiadomosc/2026-07-02/co-teraz-polacy-sadza-o-ukraincach-widac-duza-zmiane-w-sondazu/",
-      "scope": "PL"
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Poll: a shift in the attitude of some Poles towards Ukrainians (July 2026)",
+          "summary": "Opinion polls from July 2026 point to a worsening in the attitude of some Poles towards Ukrainians following tensions in bilateral relations; in one poll the share declaring such a change reached about one third. The results differ between pollsters and the way the question is put — methodology and full data at the source."
+        },
+        "es": {
+          "title": "Encuesta: cambio de actitud de una parte de los polacos hacia los ucranianos (julio de 2026)",
+          "summary": "Los sondeos de opinión de julio de 2026 apuntan a un empeoramiento de la actitud de una parte de los polacos hacia los ucranianos tras las tensiones en las relaciones bilaterales; en una de las encuestas el porcentaje que declaraba tal cambio alcanzó alrededor de un tercio. Los resultados difieren entre institutos y según cómo se formule la pregunta — metodología y datos completos en la fuente."
+        },
+        "uk": {
+          "title": "Опитування: зміна ставлення частини поляків до українців (липень 2026)",
+          "summary": "Опитування громадської думки за липень 2026 р. вказують на погіршення ставлення частини поляків до українців після напруження у двосторонніх відносинах; в одному з опитувань частка тих, хто заявляв про таку зміну, сягала близько третини. Результати різняться між дослідницькими центрами та способом формулювання запитання — методологія й повні дані в джерелі."
+        },
+        "ru": {
+          "title": "Опрос: изменение отношения части поляков к украинцам (июль 2026)",
+          "summary": "Опросы общественного мнения за июль 2026 г. указывают на ухудшение отношения части поляков к украинцам после напряжённости в двусторонних отношениях; в одном из опросов доля заявивших о таком изменении достигала около трети. Результаты различаются между социологическими центрами и способом постановки вопроса — методология и полные данные в источнике."
+        },
+        "fr": {
+          "title": "Sondage : évolution de l'attitude d'une partie des Polonais envers les Ukrainiens (juillet 2026)",
+          "summary": "Les sondages d'opinion de juillet 2026 font état d'une détérioration de l'attitude d'une partie des Polonais envers les Ukrainiens après des tensions dans les relations bilatérales ; dans l'un des sondages, la part de ceux qui déclaraient un tel changement atteignait environ un tiers. Les résultats diffèrent selon les instituts et la formulation de la question — méthodologie et données complètes à la source."
+        }
+      }
     },
     {
       "id": "2026-07-25-nowelizacja-mos-podpisana",
@@ -142,7 +417,29 @@
       "source_name": "Rzeczpospolita (rp.pl)",
       "author": "",
       "url": "https://www.rp.pl/cudzoziemcy/art43496891-prezydent-podpisal-nowelizacje-ustawy-o-cudzoziemcach",
-      "scope": "PL"
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Amendment to the Foreigners Act signed — residence applications only electronically via MOS",
+          "summary": "The President signed an amendment to the Foreigners Act, which moves the filing of applications for temporary residence, permanent residence and EU long-term resident status from paper form to the electronic MOS system (mos.cudzoziemcy.gov.pl). Access to the portal is to be free of charge, and a foreigner is to be able to file the application on their own. The exact scope and dates on which particular provisions enter into force should be verified at the source."
+        },
+        "es": {
+          "title": "Firmada la reforma de la Ley de Extranjería — solicitudes de residencia solo electrónicamente a través de MOS",
+          "summary": "El Presidente firmó una reforma de la Ley de Extranjería que traslada la presentación de las solicitudes de residencia temporal, permanente y de residente de larga duración de la UE de la forma en papel al sistema electrónico MOS (mos.cudzoziemcy.gov.pl). El acceso al portal será gratuito y el extranjero podrá presentar la solicitud por sí mismo. El alcance exacto y las fechas de entrada en vigor de cada disposición deben verificarse en la fuente."
+        },
+        "uk": {
+          "title": "Підписано зміни до закону про іноземців — заяви на перебування лише електронно через MOS",
+          "summary": "Президент підписав зміни до закону про іноземців, що переносять подання заяв на дозвіл на тимчасове, постійне перебування та довгострокового резидента ЄС з паперової форми до електронної системи MOS (mos.cudzoziemcy.gov.pl). Доступ до порталу має бути безкоштовним, а іноземець зможе подати заяву самостійно. Точний обсяг і терміни набрання чинності окремих положень слід перевірити в джерелі."
+        },
+        "ru": {
+          "title": "Подписаны поправки к закону об иностранцах — заявления о пребывании только электронно через MOS",
+          "summary": "Президент подписал поправки к закону об иностранцах, переносящие подачу заявлений на разрешение на временное, постоянное пребывание и долгосрочного резидента ЕС с бумажной формы в электронную систему MOS (mos.cudzoziemcy.gov.pl). Доступ к порталу должен быть бесплатным, а иностранец сможет подать заявление самостоятельно. Точный объём и сроки вступления в силу отдельных положений следует проверить в источнике."
+        },
+        "fr": {
+          "title": "Amendement à la loi sur les étrangers signé — demandes de séjour uniquement par voie électronique via MOS",
+          "summary": "Le Président a signé un amendement à la loi sur les étrangers qui transfère le dépôt des demandes de séjour temporaire, de séjour permanent et de résident de longue durée de l'UE de la forme papier au système électronique MOS (mos.cudzoziemcy.gov.pl). L'accès au portail doit être gratuit et l'étranger pourra déposer sa demande lui-même. La portée exacte et les dates d'entrée en vigueur de chaque disposition sont à vérifier à la source."
+        }
+      }
     },
     {
       "id": "2026-07-25-mos-oplaty-cukr",
@@ -153,7 +450,29 @@
       "source_name": "Zielona Linia (zielonalinia.gov.pl)",
       "author": "",
       "url": "https://zielonalinia.gov.pl/zmiany-w-ustawie-o-cudzoziemcach/",
-      "scope": "PL"
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "MOS in practice: fees, 60 days to collect the card and obligations of CUKR card holders",
+          "summary": "The public Zielona Linia portal discusses the changes for 2026: the only costs are to be the stamp duty on filing the application and PLN 100 for issuing the residence card. Failure to collect the card within 60 days of notification may result in the permit not being granted and the card being cancelled. A holder of a card with a CUKR annotation must report a change of place of residence within 15 working days, and leaving Poland for more than 6 months may mean losing the temporary residence permit."
+        },
+        "es": {
+          "title": "MOS en la práctica: tasas, 60 días para recoger la tarjeta y obligaciones de los titulares de la tarjeta CUKR",
+          "summary": "El portal público Zielona Linia comenta los cambios para 2026: los únicos costes serían la tasa administrativa al presentar la solicitud y 100 PLN por la expedición de la tarjeta de residencia. No recoger la tarjeta en un plazo de 60 días desde la notificación puede suponer no obtener el permiso y la anulación de la tarjeta. El titular de una tarjeta con la anotación CUKR está obligado a comunicar el cambio de lugar de residencia en 15 días hábiles, y salir de Polonia por más de 6 meses puede significar la pérdida del permiso de residencia temporal."
+        },
+        "uk": {
+          "title": "MOS на практиці: оплати, 60 днів на отримання карти та обов'язки власників карти CUKR",
+          "summary": "Публічний портал Zielona Linia висвітлює зміни на 2026 р.: єдиними витратами мають бути гербовий збір при поданні заяви та 100 злотих за видачу карти побиту. Неотримання карти протягом 60 днів від повідомлення може призвести до відмови в дозволі та анулювання карти. Власник карти з відміткою CUKR зобов'язаний повідомити про зміну місця перебування протягом 15 робочих днів, а виїзд з Польщі понад 6 місяців може означати втрату дозволу на тимчасове перебування."
+        },
+        "ru": {
+          "title": "MOS на практике: оплаты, 60 дней на получение карты и обязанности владельцев карты CUKR",
+          "summary": "Публичный портал Zielona Linia разбирает изменения на 2026 г.: единственными расходами должны быть гербовый сбор при подаче заявления и 100 злотых за выдачу карты побыта. Неполучение карты в течение 60 дней с момента уведомления может привести к отказу в разрешении и аннулированию карты. Владелец карты с отметкой CUKR обязан сообщить об изменении места пребывания в течение 15 рабочих дней, а выезд из Польши более чем на 6 месяцев может означать утрату разрешения на временное пребывание."
+        },
+        "fr": {
+          "title": "MOS en pratique : frais, 60 jours pour retirer la carte et obligations des titulaires de la carte CUKR",
+          "summary": "Le portail public Zielona Linia commente les changements pour 2026 : les seuls frais seraient le droit de timbre lors du dépôt de la demande et 100 PLN pour la délivrance de la carte de séjour. Ne pas retirer la carte dans un délai de 60 jours à compter de la notification peut entraîner le refus du permis et l'annulation de la carte. Le titulaire d'une carte portant la mention CUKR doit signaler tout changement de lieu de séjour dans un délai de 15 jours ouvrables, et quitter la Pologne plus de 6 mois peut signifier la perte du permis de séjour temporaire."
+        }
+      }
     },
     {
       "id": "2026-07-25-rynek-pracy-elektronizacja",
@@ -164,7 +483,29 @@
       "source_name": "Grant Thornton",
       "author": "",
       "url": "https://grantthornton.pl/publikacja/zatrudnienie-cudzoziemcow-2026-najwazniejsze-zmiany-i-wazne-terminy-w-przepisach-imigracyjnych/",
-      "scope": "PL"
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Labour market: abolition of the labour market test and electronic work permits",
+          "summary": "According to expert commentaries, the 2026 changes in the employment of foreigners abolish the so-called labour market test and introduce full digitalisation of work-permit applications — filed via the praca.gov.pl portal; paper documents are to be left unexamined. It is also indicated that from 1 July 2026 some students of universities not on the ministerial list lose the right to work without an additional legalising document. The details and effective dates of particular solutions should be confirmed at the source."
+        },
+        "es": {
+          "title": "Mercado laboral: supresión del test de mercado de trabajo y permisos de trabajo electrónicos",
+          "summary": "Según análisis de expertos, los cambios de 2026 en el empleo de extranjeros suprimen el llamado test de mercado de trabajo e introducen la plena digitalización de las solicitudes de permiso de trabajo — presentadas a través del portal praca.gov.pl; los documentos en papel se dejarían sin examinar. También se indica que, a partir del 1 de julio de 2026, parte de los estudiantes de universidades no incluidas en la lista ministerial pierden el derecho a trabajar sin un documento legalizador adicional. Los detalles y las fechas de entrada en vigor de cada solución deben confirmarse en la fuente."
+        },
+        "uk": {
+          "title": "Ринок праці: скасування тесту ринку праці та електронні дозволи на роботу",
+          "summary": "За експертними оглядами, зміни 2026 р. у працевлаштуванні іноземців скасовують так званий тест ринку праці та запроваджують повну електронізацію заяв на дозвіл на роботу — які подаються через портал praca.gov.pl; паперові документи мають залишати без розгляду. Зазначається також, що з 1 липня 2026 р. частина студентів закладів поза міністерським переліком втрачає право на роботу без додаткового легалізаційного документа. Деталі й дати набрання чинності окремих рішень слід підтвердити в джерелі."
+        },
+        "ru": {
+          "title": "Рынок труда: отмена теста рынка труда и электронные разрешения на работу",
+          "summary": "Согласно экспертным обзорам, изменения 2026 г. в трудоустройстве иностранцев отменяют так называемый тест рынка труда и вводят полную электронизацию заявлений на разрешение на работу — подаваемых через портал praca.gov.pl; бумажные документы должны оставлять без рассмотрения. Указывается также, что с 1 июля 2026 г. часть студентов вузов вне министерского перечня теряет право на работу без дополнительного легализующего документа. Детали и даты вступления в силу отдельных решений следует подтвердить в источнике."
+        },
+        "fr": {
+          "title": "Marché du travail : suppression du test du marché du travail et permis de travail électroniques",
+          "summary": "Selon des analyses d'experts, les changements de 2026 dans l'emploi des étrangers suppriment le « test du marché du travail » et instaurent une dématérialisation complète des demandes de permis de travail — déposées via le portail praca.gov.pl ; les documents papier seraient laissés sans examen. Il est également indiqué qu'à partir du 1er juillet 2026, une partie des étudiants d'universités ne figurant pas sur la liste ministérielle perdent le droit de travailler sans document de légalisation supplémentaire. Les détails et les dates d'entrée en vigueur de chaque solution sont à confirmer à la source."
+        }
+      }
     },
     {
       "id": "2026-07-25-nsa-ii-osk-184-26",
@@ -175,7 +516,29 @@
       "source_name": "Centralna Baza Orzeczeń Sądów Administracyjnych (NSA)",
       "author": "Naczelny Sąd Administracyjny",
       "url": "https://orzeczenia.nsa.gov.pl/doc/A6A1802CE8",
-      "scope": "PL"
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Supreme Administrative Court dismissed a cassation appeal in a visa and residence case (II OSK 184/26)",
+          "summary": "The Supreme Administrative Court, by a judgment of 9 June 2026 (ref. II OSK 184/26), dismissed a cassation appeal in a case concerning visas and a residence permit. The full text of the ruling is available in the Central Database of Administrative Court Rulings. Assessing the significance of the judgment for a specific case requires an analysis of its statement of reasons."
+        },
+        "es": {
+          "title": "El Tribunal Supremo Administrativo desestimó un recurso de casación en un caso de visado y residencia (II OSK 184/26)",
+          "summary": "El Tribunal Supremo Administrativo, mediante sentencia de 9 de junio de 2026 (ref. II OSK 184/26), desestimó un recurso de casación en un caso relativo a visados y a un permiso de residencia. El texto íntegro de la resolución está disponible en la Base Central de Resoluciones de los Tribunales Administrativos. Para valorar la relevancia de la sentencia para un caso concreto es necesario analizar su fundamentación."
+        },
+        "uk": {
+          "title": "ВАС відхилив касаційну скаргу у візово-побутовій справі (II OSK 184/26)",
+          "summary": "Вищий адміністративний суд (NSA) вироком від 9 червня 2026 р. (справа II OSK 184/26) відхилив касаційну скаргу у справі щодо віз та дозволу на перебування. Повний текст рішення доступний у Центральній базі рішень адміністративних судів. Для оцінки значення вироку для конкретної справи потрібен аналіз його обґрунтування."
+        },
+        "ru": {
+          "title": "ВАС отклонил кассационную жалобу по визово-пребывательному делу (II OSK 184/26)",
+          "summary": "Высший административный суд (NSA) решением от 9 июня 2026 г. (дело II OSK 184/26) отклонил кассационную жалобу по делу, касающемуся виз и разрешения на пребывание. Полный текст решения доступен в Центральной базе решений административных судов. Для оценки значения решения для конкретного дела необходим анализ его обоснования."
+        },
+        "fr": {
+          "title": "La Cour administrative suprême a rejeté un pourvoi en cassation dans une affaire de visa et de séjour (II OSK 184/26)",
+          "summary": "La Cour administrative suprême (NSA), par un arrêt du 9 juin 2026 (réf. II OSK 184/26), a rejeté un pourvoi en cassation dans une affaire concernant des visas et un permis de séjour. Le texte intégral de la décision est disponible dans la Base centrale des décisions des tribunaux administratifs. Pour apprécier la portée de l'arrêt pour un cas concret, une analyse de sa motivation est nécessaire."
+        }
+      }
     },
     {
       "id": "2026-07-25-wsa-gdansk-iii-sab-gd-132-26",
@@ -186,7 +549,29 @@
       "source_name": "INFORLEX",
       "author": "WSA w Gdańsku",
       "url": "https://www.inforlex.pl/dok/tresc,FOB0000000000007579092,Wyrok-WSA-w-Gdansku-z-dnia-7-maja-2026-r-sygn-III-SAB-Gd-132-26.html",
-      "scope": "PL"
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Voivodeship Administrative Court in Gdańsk: gross inaction of the voivode, 30 days to examine the application (III SAB/Gd 132/26)",
+          "summary": "According to a commentary on the ruling, the Voivodeship Administrative Court in Gdańsk, by a judgment of 7 May 2026 (ref. III SAB/Gd 132/26), found gross inaction of the voivode in a temporary residence case and ordered the authority to examine the application within 30 days. The ruling is of practical importance in cases of protracted legalisation proceedings. The full text and reference number are worth verifying at the source."
+        },
+        "es": {
+          "title": "Tribunal Administrativo de Voivodato de Gdańsk: inacción flagrante del voivoda, 30 días para examinar la solicitud (III SAB/Gd 132/26)",
+          "summary": "Según un comentario de la resolución, el Tribunal Administrativo de Voivodato de Gdańsk, mediante sentencia de 7 de mayo de 2026 (ref. III SAB/Gd 132/26), constató la inacción flagrante del voivoda en un caso de residencia temporal y ordenó al órgano examinar la solicitud en un plazo de 30 días. La resolución tiene importancia práctica en casos de dilación de los procedimientos de legalización. Conviene verificar el texto íntegro y la referencia en la fuente."
+        },
+        "uk": {
+          "title": "ВАС у Гданську: кричуща бездіяльність воєводи, 30 днів на розгляд заяви (III SAB/Gd 132/26)",
+          "summary": "Згідно з оглядом рішення, Воєводський адміністративний суд у Гданську вироком від 7 травня 2026 р. (справа III SAB/Gd 132/26) констатував кричущу бездіяльність воєводи у справі про тимчасове перебування й зобов'язав орган розглянути заяву протягом 30 днів. Рішення має практичне значення за тяганини в легалізаційних провадженнях. Повний текст і номер справи варто перевірити в джерелі."
+        },
+        "ru": {
+          "title": "ВАС в Гданьске: вопиющее бездействие воеводы, 30 дней на рассмотрение заявления (III SAB/Gd 132/26)",
+          "summary": "Согласно обзору решения, Воеводский административный суд в Гданьске решением от 7 мая 2026 г. (дело III SAB/Gd 132/26) констатировал вопиющее бездействие воеводы по делу о временном пребывании и обязал орган рассмотреть заявление в течение 30 дней. Решение имеет практическое значение при волоките в легализационных производствах. Полный текст и номер дела стоит проверить в источнике."
+        },
+        "fr": {
+          "title": "Tribunal administratif de voïvodie de Gdańsk : inaction manifeste du voïvode, 30 jours pour examiner la demande (III SAB/Gd 132/26)",
+          "summary": "Selon un commentaire de la décision, le Tribunal administratif de voïvodie de Gdańsk, par un arrêt du 7 mai 2026 (réf. III SAB/Gd 132/26), a constaté une inaction manifeste du voïvode dans une affaire de séjour temporaire et a enjoint à l'autorité d'examiner la demande dans un délai de 30 jours. La décision revêt une importance pratique en cas de lenteur des procédures de légalisation. Le texte intégral et la référence méritent d'être vérifiés à la source."
+        }
+      }
     }
   ]
 }
