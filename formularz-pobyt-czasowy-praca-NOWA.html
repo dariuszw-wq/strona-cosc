@@ -163,7 +163,7 @@ footer .fbottom{max-width:1120px;margin:22px auto 0;padding-top:16px;border-top:
 <a class="back" href="index.html">← Strona główna</a>
 <span class="eyebrow">Ankieta · Pobyt czasowy i praca</span>
 <h1>Ankieta danych do wniosku o zezwolenie na pobyt czasowy i pracę</h1>
-<p>Wypełnij formularz raz — dzięki temu wspólnie przygotujemy i złożymy Twój wniosek w portalu MOS szybciej i bez błędów. Wniosek o pobyt czasowy i pracę wypełnia się wyłącznie online, dlatego dane zebrane tutaj posłużą nam do wypełnienia go razem z Tobą.</p>
+<p>Wypełnij formularz raz — dzięki temu wspólnie przygotujemy Twoją sprawę szybciej i bez błędów. Dane zebrane w tej ankiecie posłużą nam do przygotowania i złożenia właściwego wniosku razem z Tobą.</p>
 </div></div>
 
 <main><div class="wrap">
@@ -683,6 +683,15 @@ document.getElementById('submitBtn').addEventListener('click', async ()=>{
   });
   data['pobyty_zagraniczne'] = JSON.stringify(zagrItems);
 
+  // PDF ankiety wraz ze zgodą RODO: pobranie w przeglądarce + załącznik do arkusza/maili
+  try{
+    if(window.CoscPdf){
+      const pdf = await window.CoscPdf.generate(data);
+      data.pdfBase64 = pdf.base64;
+      data.pdfFilename = pdf.filename;
+    }
+  }catch(pdfErr){ console.warn('Nie udało się wygenerować PDF:', pdfErr); }
+
   try{
     if(!APPS_SCRIPT_URL || APPS_SCRIPT_URL.startsWith('WKLEJ_TU')){
       throw new Error('BRAK_KONFIGURACJI');
@@ -694,7 +703,7 @@ document.getElementById('submitBtn').addEventListener('click', async ()=>{
       body: JSON.stringify(data)
     });
     statusBox.className = 'status-box ok';
-    statusBox.textContent = 'Dziękujemy! Ankieta została wysłana. Skontaktujemy się z Tobą, aby wspólnie dokończyć wniosek. Pamiętaj o przesłaniu skanu paszportu na WhatsApp lub e-mail.';
+    statusBox.textContent = 'Dziękujemy! Ankieta została wysłana. Kopia PDF Twojej ankiety wraz ze zgodą została pobrana na to urządzenie oraz wysłana na podany adres e-mail. Skontaktujemy się z Tobą, aby wspólnie dokończyć wniosek. Pamiętaj o przesłaniu skanu paszportu na WhatsApp lub e-mail.';
     form.querySelectorAll('input,select,textarea,button').forEach(el=>el.disabled=true);
   }catch(err){
     statusBox.className = 'status-box err';
@@ -703,6 +712,7 @@ document.getElementById('submitBtn').addEventListener('click', async ()=>{
   }
 });
 </script>
+<script src="ankieta-pdf.js"></script>
 
 </body>
 </html>

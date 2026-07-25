@@ -31,8 +31,8 @@ h1,h2,h3{font-family:'IBM Plex Serif',serif;color:var(--navy);line-height:1.15}
 .btn-line:hover{background:rgba(70,54,201,.15)}
 .eyebrow{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
 
-.mos{background:var(--gold);color:var(--navy);font-size:13.5px;font-weight:600;text-align:center;padding:9px 16px}
-.mos a{color:inherit;font-weight:800}
+.mos{background:var(--gold);color:#fff;font-size:13.5px;font-weight:600;text-align:center;padding:9px 16px}
+.mos a{color:#ffd34d;font-weight:800}
 
 header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);position:sticky;top:0;z-index:50;box-shadow:0 2px 12px rgba(19,32,58,.25)}
 .flagbar{height:8px;background:linear-gradient(to bottom,#f5f5f5 50%,#d4213d 50%);border-bottom:1px solid rgba(22,36,76,.18);position:sticky;top:66px;z-index:49}
@@ -411,8 +411,13 @@ footer .upd{margin-top:14px;font-size:11.5px;color:#6B7890}
 .wa-float{position:fixed;bottom:20px;right:20px;width:56px;height:56px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:26px;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.28);z-index:60}
 
 @media(max-width:900px){
-  .menu{display:none}
-  .burger{display:block}
+  .nav{position:relative;justify-content:center}
+  .logo{justify-content:center;text-align:center}
+  .lang{position:absolute;right:54px;top:50%;transform:translateY(-50%)}
+  .burger{display:block;position:absolute;right:14px;top:50%;transform:translateY(-50%)}
+  .menu{display:none;position:absolute;top:66px;left:0;right:0;flex-direction:column;gap:0;background:#2f2699;padding:6px 0;box-shadow:0 12px 24px rgba(0,0,0,.25);z-index:48}
+  .menu.open{display:flex}
+  .menu a{padding:13px 22px;width:100%;font-size:15px;border-bottom:1px solid rgba(255,255,255,.08)}
   .hero-grid,.mos-grid,.ct-grid,.k-grid{grid-template-columns:1fr}
   .serv,.plany,.path-steps{grid-template-columns:1fr}
   .hero{padding-top:48px}
@@ -1012,9 +1017,9 @@ footer .upd{margin-top:14px;font-size:11.5px;color:#6B7890}
     </div>
     <div class="k-info">
       <h3>Centrum Obsługi Spraw Cudzoziemców</h3>
-      <p>ul. Fabryczna 18, 02-892 Warszawa</p>
+      <p>ul. Kuropatwy 34S, 02-892 Warszawa</p>
       <p>Kontaktujemy się w języku polskim, angielskim, hiszpańskim, portugalskim, ukraińskim i francuskim</p>
-      <p style="margin-top:16px;font-size:12.5px;color:#93A0B8">Administratorem danych osobowych jest Dariusz Włodarczyk Kancelaria TRC, ul. Fabryczna 18, 02-892 Warszawa. Szczegóły w Polityce prywatności.</p>
+      <p style="margin-top:16px;font-size:12.5px;color:#93A0B8">Administratorem danych osobowych jest Dariusz Włodarczyk Kancelaria TRC, ul. Kuropatwy 34S, 02-892 Warszawa. Szczegóły w Polityce prywatności.</p>
     </div>
   </div>
 </section>
@@ -1045,6 +1050,8 @@ const io=new IntersectionObserver(es=>es.forEach(e=>{
   e.target.classList.add('inview');io.unobserve(e.target);
 }),{threshold:.35});
 document.querySelectorAll('.trust,.path-sec,.ct-demo,.mascot').forEach(el=>io.observe(el));
+// menu mobilne (hamburger)
+(function(){var b=document.querySelector('.burger'),m=document.querySelector('.menu');if(b&&m){b.addEventListener('click',function(){m.classList.toggle('open')});m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open')})});}})();
 </script>
 <script src="i18n/i18n.js"></script>
 </body>
