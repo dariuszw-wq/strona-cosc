@@ -1,6 +1,138 @@
 {
-  "updated": "2026-07-25T12:00:00+02:00",
+  "updated": "2026-07-25T12:07:18+02:00",
   "items": [
+    {
+      "id": "2026-07-25-milczaca-zgoda-legalizacja",
+      "added": "2026-07-25",
+      "category": "Legislacja",
+      "title": "MSWiA planuje „milczącą zgodę” — szybsza legalizacja pobytu dla obywateli wybranych państw",
+      "summary": "Według doniesień „Rzeczpospolitej” (za rynekzdrowia.pl, 9 lipca 2026 r.) MSWiA przygotowuje projekt wprowadzający tzw. milczącą zgodę: jeśli wojewoda nie zakończy postępowania w ciągu 60 dni, wniosek pobytowy ma zostać uznany za rozpatrzony pozytywnie. Ułatwienie ma objąć obywateli m.in. USA, Japonii, Korei Południowej, Wielkiej Brytanii i Australii i zwiększyć atrakcyjność Polski dla inwestorów oraz wykwalifikowanych pracowników. Eksperci zaznaczają, że rozwiązanie dotyczy niewielkiej grupy cudzoziemców i nie rozwiąże problemu wielomiesięcznych kolejek. Status legislacyjny projektu i szczegóły należy zweryfikować w źródle.",
+      "source_name": "Rynek Zdrowia (rynekzdrowia.pl)",
+      "author": "",
+      "url": "https://www.rynekzdrowia.pl/Polska-i-swiat/Szybsza-legalizacja-pobytu-dla-wybranych-cudzoziemcow-Rzad-szykuje-nowe-przepisy,286448,15.html",
+      "scope": "PL"
+    },
+    {
+      "id": "2026-07-25-gus-2-3-mln-cudzoziemcow",
+      "added": "2026-07-25",
+      "category": "Wydarzenia",
+      "title": "GUS: na koniec 2025 r. w Polsce przebywało ok. 2,3 mln cudzoziemców",
+      "summary": "Eksperymentalne badanie GUS ogłoszone 1 lipca 2026 r. wykazało, że liczba cudzoziemców przebywających w Polsce wzrosła o 214,5 tys., do ok. 2,3 mln na koniec 2025 r., co pomogło wyrównać spadek liczby Polaków. Liczbę obywateli Ukrainy oszacowano metodą „śladów życia” na 1,675 mln (wzrost o 153 tys.); drugą grupą byli Białorusini (179,3 tys.), a największy względny wzrost odnotowano wśród Kolumbijczyków (27,5 tys.). Cudzoziemcy koncentrują się w dużych miastach — we Wrocławiu stanowili niemal co piątą osobę, a w Warszawie ok. 14 proc.",
+      "source_name": "Rzeczpospolita (rp.pl)",
+      "author": "Anita Błaszczak",
+      "url": "https://www.rp.pl/gospodarka/art44750901-nowe-badanie-ludnosci-w-polsce-wcale-nie-jest-nas-tak-malo",
+      "scope": "PL"
+    },
+    {
+      "id": "2026-07-25-deportacje-polrocze-2026",
+      "added": "2026-07-25",
+      "category": "Wydarzenia",
+      "title": "Rośnie liczba deportacji: w I półroczu 2026 r. Polskę opuściło ponad 5,6 tys. cudzoziemców",
+      "summary": "Jak podała „Rzeczpospolita” (za InfoSecurity24, 21 lipca 2026 r.), w pierwszym półroczu 2026 r. lotami powrotowymi objęto 5640 cudzoziemców — o 28 proc. więcej niż w analogicznym okresie 2025 r. Rekordowe były marzec i kwiecień (odpowiednio ok. 1150 i 1130 osób), a najczęściej wracali obywatele Gruzji i Kolumbii. Od 85 do 90 proc. operacji powrotowych realizowanych jest przy wsparciu Agencji Frontex, a koszty pokrywa budżet państwa oraz środki UE. Dane obejmują zarówno powroty dobrowolne, jak i przymusowe.",
+      "source_name": "InfoSecurity24 (infosecurity24.pl)",
+      "author": "",
+      "url": "https://infosecurity24.pl/sluzby-mundurowe/straz-graniczna/przybywa-deportacji-w-pol-roku-polske-opuscilo-ponad-56-tys-cudzoziemcow",
+      "scope": "PL"
+    },
+    {
+      "id": "2026-07-25-sg-somalia-granica-litwa",
+      "added": "2026-07-25",
+      "category": "Wydarzenia",
+      "title": "Straż Graniczna: 16 obywateli Somalii zatrzymanych po nielegalnym przekroczeniu granicy z Litwą",
+      "summary": "Jak podała Straż Graniczna, w nocy z 23 na 24 lipca 2026 r. funkcjonariusze z Sejn zatrzymali samochód, którym 33-letni obywatel Polski przewoził sześciu obywateli Somalii bez dokumentów pobytowych; tego samego dnia ujawniono kolejnych dziesięciu, którzy przekroczyli polsko-litewską granicę pieszo. Kierowcę zatrzymano — za organizowanie nielegalnego przekroczenia granicy grozi do 8 lat pozbawienia wolności (obowiązuje domniemanie niewinności). Zatrzymani cudzoziemcy mają zostać przekazani stronie litewskiej w ramach readmisji.",
+      "source_name": "Straż Graniczna (strazgraniczna.pl)",
+      "author": "",
+      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16003,16-obywateli-Somalii-zatrzymanych-po-nielegalnym-przekroczeniu-granicy-z-Litwa.html",
+      "scope": "PL"
+    },
+    {
+      "id": "2026-07-25-sg-wietnam-praca-bez-zezwolen",
+      "added": "2026-07-25",
+      "category": "Rynek pracy",
+      "title": "Straż Graniczna: dwaj obywatele Wietnamu pracowali bez zezwoleń — nakaz opuszczenia Polski",
+      "summary": "Karpacki Oddział Straży Granicznej podał, że podczas kontroli legalności zatrudnienia w firmie gastronomicznej w Skarżysku-Kamiennej (24 lipca 2026 r.) ujawniono dwóch obywateli Wietnamu wykonujących pracę bez wymaganych zezwoleń — jeden miał nieważną od dwóch lat kartę pobytu, drugi węgierską kartę figurującą jako dokument do zatrzymania. Komendant placówki wydał wobec nich decyzje o zobowiązaniu do powrotu z 12-miesięcznym zakazem wjazdu do strefy Schengen. Pracodawcę ukarano grzywną w łącznej wysokości 6 tys. zł.",
+      "source_name": "Straż Graniczna (strazgraniczna.pl)",
+      "author": "",
+      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16024,Pracowali-bez-zezwolen-Dwaj-obywatele-Wietnamu-z-nakazem-opuszczenia-Polski.html",
+      "scope": "PL"
+    },
+    {
+      "id": "2026-07-25-sg-deportacja-lodz-gruzja",
+      "added": "2026-07-25",
+      "category": "Wydarzenia",
+      "title": "Straż Graniczna: operacja powrotowa z Łodzi — 15 obywateli Gruzji odesłanych do kraju",
+      "summary": "Według Komendy Głównej Straży Granicznej 2 lipca 2026 r. z lotniska w Łodzi odbyła się czwarta w tym roku operacja powrotowa (we współpracy z Agencją Frontex), w ramach której Polskę opuściło 15 obywateli Gruzji. Wobec 11 z nich decyzje o zobowiązaniu do powrotu wykonano przymusowo ze względów bezpieczeństwa i porządku publicznego — osoby te miały wyroki sądów za przestępstwa popełnione w Polsce. Działania koordynowało Centrum Operacji Powrotowych Zarządu do Spraw Cudzoziemców KGSG.",
+      "source_name": "Straż Graniczna (strazgraniczna.pl)",
+      "author": "Karolina Kowalczyk",
+      "url": "https://strazgraniczna.pl/pl/aktualnosci/15850,Deportacja-z-lotniska-w-Lodzi-Obywatele-Gruzji-odeslani-do-kraju.html",
+      "scope": "PL"
+    },
+    {
+      "id": "2026-07-25-pck-dzien-dobrych-spotkan",
+      "added": "2026-07-25",
+      "category": "Wydarzenia",
+      "title": "PCK: pikniki integracyjne „Dzień Dobrych Spotkań” w siedmiu miastach",
+      "summary": "Polski Czerwony Krzyż zorganizował plenerowe Pikniki Integracyjne „Dzień Dobrych Spotkań” (27 czerwca 2026 r.) w Bydgoszczy, Gdańsku, Lublinie, Łodzi, Ostrowcu Świętokrzyskim, Warszawie i Wrocławiu; część wydarzeń przełożono z powodu pogody. Imprezy realizowano w ramach projektu „Wspólnie do Niezależności” (MSWiA i PCK, Fundusz Azylu, Migracji i Integracji 2021–2027) i łączyły mieszkańców z osobami z doświadczeniem migracji. Na stoiskach można było uzyskać m.in. konsultacje dotyczące legalizacji pobytu i wniosków CUKR dla obywateli Ukrainy.",
+      "source_name": "Polski Czerwony Krzyż (pck.pl)",
+      "author": "",
+      "url": "https://pck.pl/polski-czerwony-krzyz/aktualnosci/dzien-dobrych-spotkan-zapraszamy-na-pikniki-pck-w-calej-polsce",
+      "scope": "PL"
+    },
+    {
+      "id": "2026-07-25-polonia-camp-2026",
+      "added": "2026-07-25",
+      "category": "Wydarzenia",
+      "title": "Polonia Camp 2026: 1500 młodych Polaków z 50 krajów spotkało się w Warszawie",
+      "summary": "W dniach 23–26 lipca 2026 r. na kampusie SGGW w Warszawie odbywa się druga edycja Polonia Camp — Światowego Spotkania Młodej Polonii, które zgromadziło ok. 1500 osób polskiego pochodzenia z 50 krajów (w wieku 18–30 lat). W programie są panele i warsztaty, m.in. o uznawaniu kwalifikacji zdobytych za granicą, zakładaniu działalności gospodarczej i studiowaniu w Polsce. Organizatorem jest Stowarzyszenie „Wspólnota Polska” wraz z partnerami, pod patronatem Marszałek Senatu.",
+      "source_name": "RMF24",
+      "author": "Paweł Auguff, Jakub Rybski",
+      "url": "https://www.rmf24.pl/regiony/warszawa/news-warszawa-centrum-mlodych-polakow-mieszkajacych-za-granica-in,nIdn,1011174",
+      "scope": "PL"
+    },
+    {
+      "id": "2026-07-25-piknik-opolskie-goscinne",
+      "added": "2026-07-25",
+      "category": "Wydarzenia",
+      "title": "Piknik integracyjny „Opolskie Gościnne” — międzynarodowe wydarzenie dla rodzin (29.08, Opole)",
+      "summary": "Wojewódzki Urząd Pracy w Opolu i Centrum Integracji Cudzoziemców zapraszają na piątą edycję pikniku integracyjnego „Opolskie Gościnne” — 29 sierpnia 2026 r. w Muzeum Wsi Opolskiej w Opolu. W programie stoiska edukacyjne, występy artystyczne, prezentacje rękodzieła, degustacje potraw z różnych stron świata i strefa zabaw dla dzieci. Wydarzenie realizowane jest w ramach projektu wsparcia integracji społecznej obywateli państw trzecich, dofinansowanego z Funduszy Europejskich dla Opolskiego 2021–2027.",
+      "source_name": "Fundusze Europejskie dla Opolskiego",
+      "author": "Urząd Marszałkowski Województwa Opolskiego",
+      "url": "https://funduszeue.opolskie.pl/wydarzenia/piknik-miedzynarodowy-opolskie-goscinnie",
+      "scope": "PL"
+    },
+    {
+      "id": "2026-07-25-kgp-ataki-ukraincy",
+      "added": "2026-07-25",
+      "category": "Wydarzenia",
+      "title": "Dane policji: rośnie liczba ataków na obywateli Ukrainy w Polsce",
+      "summary": "Rzeczpospolita opisuje przytaczane dane Komendy Głównej Policji, według których w 2026 r. wzrosła liczba zgłoszonych ataków na obywateli Ukrainy w Polsce. Publikacja odnosi się także do pogarszających się nastrojów społecznych. Pełne dane liczbowe i ich metodologię należy zweryfikować w źródle.",
+      "source_name": "Rzeczpospolita (rp.pl)",
+      "author": "",
+      "url": "https://www.rp.pl/spoleczenstwo/art44836181-rosnie-liczba-atakow-na-ukraincow-w-polsce-tegoroczne-dane-kgp-niepokoja",
+      "scope": "PL"
+    },
+    {
+      "id": "2026-07-25-incydent-bielsko-autobus",
+      "added": "2026-07-25",
+      "category": "Wydarzenia",
+      "title": "Bielsko-Biała: głośne nagranie z autobusu ze znieważeniem ukraińskich dziewczynek",
+      "summary": "W połowie lipca 2026 r. w mediach krążyło nagranie z autobusu w Bielsku-Białej, na którym mężczyzna miał słownie znieważać dwie 11-letnie obywatelki Ukrainy. Sprawa jest wyjaśniana, a autentyczność i kontekst nagrania bywają kwestionowane. Obowiązuje domniemanie niewinności — ustalenia i szczegóły w źródle.",
+      "source_name": "Interia Wydarzenia",
+      "author": "",
+      "url": "https://wydarzenia.interia.pl/kraj/news-ukraina-przestrzega-w-sprawie-nagrania-z-autobusu-jest-falsz,nId,23514777",
+      "scope": "PL"
+    },
+    {
+      "id": "2026-07-25-sondaz-nastroje-ukraincy",
+      "added": "2026-07-25",
+      "category": "Wydarzenia",
+      "title": "Sondaż: zmiana nastawienia części Polaków wobec Ukraińców (lipiec 2026)",
+      "summary": "Badania opinii z lipca 2026 r. wskazują na pogorszenie nastawienia części Polaków wobec Ukraińców po napięciach w relacjach dwustronnych; w jednym z sondaży odsetek deklarujących taką zmianę sięgał ok. jednej trzeciej. Wyniki różnią się między pracowniami i sposobem pytania — metodologia i pełne dane w źródle.",
+      "source_name": "Polsat News",
+      "author": "",
+      "url": "https://www.polsatnews.pl/wiadomosc/2026-07-02/co-teraz-polacy-sadza-o-ukraincach-widac-duza-zmiane-w-sondazu/",
+      "scope": "PL"
+    },
     {
       "id": "2026-07-25-nowelizacja-mos-podpisana",
       "added": "2026-07-25",
