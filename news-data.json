@@ -1,0 +1,60 @@
+{
+  "updated": "2026-07-25T12:00:00+02:00",
+  "items": [
+    {
+      "id": "2026-07-25-nowelizacja-mos-podpisana",
+      "added": "2026-07-25",
+      "category": "Legislacja",
+      "title": "Nowelizacja ustawy o cudzoziemcach podpisana — wnioski pobytowe tylko elektronicznie przez MOS",
+      "summary": "Prezydent podpisał nowelizację ustawy o cudzoziemcach, która przenosi składanie wniosków o zezwolenie na pobyt czasowy, stały oraz rezydenta długoterminowego UE z formy papierowej do systemu elektronicznego Moduł Obsługi Spraw (MOS, mos.cudzoziemcy.gov.pl). Dostęp do portalu ma być bezpłatny, a cudzoziemiec ma móc złożyć wniosek samodzielnie. Dokładny zakres i terminy wejścia poszczególnych przepisów należy zweryfikować w źródle.",
+      "source_name": "Rzeczpospolita (rp.pl)",
+      "author": "",
+      "url": "https://www.rp.pl/cudzoziemcy/art43496891-prezydent-podpisal-nowelizacje-ustawy-o-cudzoziemcach",
+      "scope": "PL"
+    },
+    {
+      "id": "2026-07-25-mos-oplaty-cukr",
+      "added": "2026-07-25",
+      "category": "Urzędy",
+      "title": "MOS w praktyce: opłaty, 60 dni na odbiór karty i obowiązki posiadaczy karty CUKR",
+      "summary": "Publiczny portal Zielona Linia omawia zmiany na 2026 r.: jedynymi kosztami mają być opłata skarbowa przy złożeniu wniosku oraz 100 zł za wydanie karty pobytu. Nieodebranie karty w terminie 60 dni od zawiadomienia może skutkować brakiem uzyskania zezwolenia i unieważnieniem karty. Posiadacz karty z adnotacją CUKR ma obowiązek zgłosić zmianę miejsca pobytu w ciągu 15 dni roboczych, a wyjazd z Polski na ponad 6 miesięcy może oznaczać utratę zezwolenia na pobyt czasowy.",
+      "source_name": "Zielona Linia (zielonalinia.gov.pl)",
+      "author": "",
+      "url": "https://zielonalinia.gov.pl/zmiany-w-ustawie-o-cudzoziemcach/",
+      "scope": "PL"
+    },
+    {
+      "id": "2026-07-25-rynek-pracy-elektronizacja",
+      "added": "2026-07-25",
+      "category": "Rynek pracy",
+      "title": "Rynek pracy: likwidacja testu rynku pracy i elektroniczne zezwolenia na pracę",
+      "summary": "Według omówień eksperckich zmiany w zatrudnianiu cudzoziemców na 2026 r. znoszą tzw. test rynku pracy i wprowadzają pełną elektronizację wniosków o zezwolenie na pracę — składanych przez portal praca.gov.pl; dokumenty papierowe mają być pozostawiane bez rozpoznania. Wskazuje się też, że od 1 lipca 2026 r. część studentów uczelni spoza listy ministerialnej traci prawo do pracy bez dodatkowego dokumentu legalizującego. Szczegóły i daty wejścia poszczególnych rozwiązań należy potwierdzić w źródle.",
+      "source_name": "Grant Thornton",
+      "author": "",
+      "url": "https://grantthornton.pl/publikacja/zatrudnienie-cudzoziemcow-2026-najwazniejsze-zmiany-i-wazne-terminy-w-przepisach-imigracyjnych/",
+      "scope": "PL"
+    },
+    {
+      "id": "2026-07-25-nsa-ii-osk-184-26",
+      "added": "2026-07-25",
+      "category": "Orzecznictwo",
+      "title": "NSA oddalił skargę kasacyjną w sprawie wizowo-pobytowej (II OSK 184/26)",
+      "summary": "Naczelny Sąd Administracyjny wyrokiem z 9 czerwca 2026 r. (sygn. II OSK 184/26) oddalił skargę kasacyjną w sprawie dotyczącej wiz oraz zezwolenia na pobyt. Pełna treść orzeczenia jest dostępna w Centralnej Bazie Orzeczeń Sądów Administracyjnych. Dla oceny znaczenia wyroku dla konkretnej sprawy konieczna jest analiza jego uzasadnienia.",
+      "source_name": "Centralna Baza Orzeczeń Sądów Administracyjnych (NSA)",
+      "author": "Naczelny Sąd Administracyjny",
+      "url": "https://orzeczenia.nsa.gov.pl/doc/A6A1802CE8",
+      "scope": "PL"
+    },
+    {
+      "id": "2026-07-25-wsa-gdansk-iii-sab-gd-132-26",
+      "added": "2026-07-25",
+      "category": "Orzecznictwo",
+      "title": "WSA w Gdańsku: rażąca bezczynność wojewody, 30 dni na rozpoznanie wniosku (III SAB/Gd 132/26)",
+      "summary": "Zgodnie z omówieniem orzeczenia, Wojewódzki Sąd Administracyjny w Gdańsku wyrokiem z 7 maja 2026 r. (sygn. III SAB/Gd 132/26) stwierdził rażącą bezczynność wojewody w sprawie o zezwolenie na pobyt czasowy i zobowiązał organ do rozpatrzenia wniosku w terminie 30 dni. Orzeczenie ma znaczenie praktyczne przy przewlekłości postępowań legalizacyjnych. Pełną treść i sygnaturę warto zweryfikować w źródle.",
+      "source_name": "INFORLEX",
+      "author": "WSA w Gdańsku",
+      "url": "https://www.inforlex.pl/dok/tresc,FOB0000000000007579092,Wyrok-WSA-w-Gdansku-z-dnia-7-maja-2026-r-sygn-III-SAB-Gd-132-26.html",
+      "scope": "PL"
+    }
+  ]
+}
