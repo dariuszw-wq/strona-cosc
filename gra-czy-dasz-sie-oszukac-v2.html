@@ -78,6 +78,16 @@ header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);po
 }
 
 </style>
+<style id="fix-mobilny-2026-07-25">
+/* Poprawka mobilna: flaga PL nie nachodzi na logo, tytul hero nie jest uciety */
+@media(max-width:900px){
+  header .nav{justify-content:flex-start;padding-right:104px;box-sizing:border-box}
+  header .logo{justify-content:flex-start;text-align:left}
+  header .logo .flag-pl{display:flex!important;width:26px;height:17px}
+  header .logo .name{max-width:none}
+  .hero h1{font-size:clamp(23px,6.4vw,44px);overflow-wrap:break-word}
+}
+</style>
 </head>
 <body>
 <header>

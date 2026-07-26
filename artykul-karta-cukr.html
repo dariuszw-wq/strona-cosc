@@ -36,7 +36,8 @@ th{background:var(--navy);color:#fff;font-weight:600}
 .cta{background:linear-gradient(160deg,#4636c9,#2f2699);color:#fff;border-radius:16px;padding:32px;margin:40px 0;text-align:center}
 .cta h2{color:#fff;margin:0 0 10px}
 .cta p{color:#dce4f5;max-width:520px;margin:0 auto 18px}
-.btn{display:inline-block;text-decoration:none;font-weight:700;font-size:15px;padding:14px 28px;border-radius:10px;background:var(--gold);color:var(--navy)}
+.btn{display:inline-block;text-decoration:none;font-weight:700;font-size:15px;padding:14px 28px;border-radius:10px;background:#fff;color:#d81f2a}
+.btn:hover{background:#f4f6fb}
 .disclaimer{font-size:13px;color:var(--mut);border-top:1px solid var(--line);padding:22px 0 8px;margin-top:34px}
 .disclaimer a{color:var(--navy)}
 footer{background:var(--navy);color:#B9C2D4;text-align:center;font-size:13px;padding:22px 16px;margin-top:36px}
@@ -78,6 +79,16 @@ header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);po
   .menu a{padding:13px 22px;width:100%;font-size:15px;border-bottom:1px solid rgba(255,255,255,.08)}
 }
 
+</style>
+<style id="fix-mobilny-2026-07-25">
+/* Poprawka mobilna: flaga PL nie nachodzi na logo, tytul hero nie jest uciety */
+@media(max-width:900px){
+  header .nav{justify-content:flex-start;padding-right:104px;box-sizing:border-box}
+  header .logo{justify-content:flex-start;text-align:left}
+  header .logo .flag-pl{display:flex!important;width:26px;height:17px}
+  header .logo .name{max-width:none}
+  .hero h1{font-size:clamp(23px,6.4vw,44px);overflow-wrap:break-word}
+}
 </style>
 </head>
 <body>
