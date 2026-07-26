@@ -38,7 +38,7 @@ header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);po
 .flagbar{height:8px;background:linear-gradient(to bottom,#f5f5f5 50%,#d4213d 50%);border-bottom:1px solid rgba(22,36,76,.18);position:sticky;top:var(--hh,66px);z-index:49}
 .flag{flex-shrink:0;width:44px;height:29px;border-radius:3px;box-shadow:0 0 0 1px rgba(255,255,255,.4);overflow:hidden;display:flex;align-items:center;justify-content:center}
 .flag-ue{background:#1e3a8a}
-.flag-pl{flex-direction:column}
+.flag-pl{flex-direction:column;width:34px;height:34px;border-radius:6px;margin-left:4px}
 .flag-pl .fw{flex:1;width:100%;background:#f5f5f5}
 .flag-pl .fr{flex:1;width:100%;background:#d4213d}
 .hdr-flags{display:flex;gap:9px;align-items:center}
@@ -453,7 +453,7 @@ footer .upd{margin-top:14px;font-size:11.5px;color:#6B7890}
 @media(max-width:900px){
   header .nav{justify-content:flex-start;padding-right:104px;box-sizing:border-box}
   header .logo{justify-content:flex-start;text-align:left}
-  header .logo .flag-pl{display:flex!important;width:26px;height:17px}
+  header .logo .flag-pl{display:flex!important;width:34px;height:34px}
   header .logo .name{max-width:none}
   .hero h1{font-size:clamp(23px,6.4vw,44px);overflow-wrap:break-word}
 }
@@ -466,9 +466,9 @@ footer .upd{margin-top:14px;font-size:11.5px;color:#6B7890}
 <header>
   <div class="wrap nav">
     <a class="logo" href="/">
-      <span aria-label="Godło Unii Europejskiej" style="display:inline-flex;align-items:center"><svg width="34" height="34" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" role="img"><rect width="36" height="36" rx="7" fill="#0A2A8C"/><g fill="#F5C518"><path id="euStar" d="M18,4.6 l0.85,1.75 l1.95,0.2 l-1.45,1.32 l0.42,1.9 l-1.77,-1.0 l-1.77,1.0 l0.42,-1.9 l-1.45,-1.32 l1.95,-0.2 Z"/><use href="#euStar" transform="rotate(30 18 18)"/><use href="#euStar" transform="rotate(60 18 18)"/><use href="#euStar" transform="rotate(90 18 18)"/><use href="#euStar" transform="rotate(120 18 18)"/><use href="#euStar" transform="rotate(150 18 18)"/><use href="#euStar" transform="rotate(180 18 18)"/><use href="#euStar" transform="rotate(210 18 18)"/><use href="#euStar" transform="rotate(240 18 18)"/><use href="#euStar" transform="rotate(270 18 18)"/><use href="#euStar" transform="rotate(300 18 18)"/><use href="#euStar" transform="rotate(330 18 18)"/></g></svg></span>
-      <div class="name">Centrum Obsługi<br>Spraw Cudzoziemców</div>
       <span class="flag flag-pl" aria-label="Polska"><span class="fw"></span><span class="fr"></span></span>
+      <div class="name">Centrum Obsługi<br>Spraw Cudzoziemców</div>
+      <span aria-label="Godło Unii Europejskiej" style="display:inline-flex;align-items:center"><svg width="34" height="34" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" role="img"><rect width="36" height="36" rx="7" fill="#0A2A8C"/><g fill="#F5C518"><path id="euStar" d="M18,4.6 l0.85,1.75 l1.95,0.2 l-1.45,1.32 l0.42,1.9 l-1.77,-1.0 l-1.77,1.0 l0.42,-1.9 l-1.45,-1.32 l1.95,-0.2 Z"/><use href="#euStar" transform="rotate(30 18 18)"/><use href="#euStar" transform="rotate(60 18 18)"/><use href="#euStar" transform="rotate(90 18 18)"/><use href="#euStar" transform="rotate(120 18 18)"/><use href="#euStar" transform="rotate(150 18 18)"/><use href="#euStar" transform="rotate(180 18 18)"/><use href="#euStar" transform="rotate(210 18 18)"/><use href="#euStar" transform="rotate(240 18 18)"/><use href="#euStar" transform="rotate(270 18 18)"/><use href="#euStar" transform="rotate(300 18 18)"/><use href="#euStar" transform="rotate(330 18 18)"/></g></svg></span>
     </a>
         <nav class="menu">
       <a href="#uslugi">Nasze usługi</a>
