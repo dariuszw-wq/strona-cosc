@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-25T22:05:26+02:00",
+  "updated": "2026-07-26T09:15:00+02:00",
   "items": [
     {
       "added": "2026-07-25",
@@ -801,6 +801,138 @@
         "fr": {
           "title": "Interpellé en tentant de franchir illégalement la frontière avec la Biélorussie",
           "summary": "Les agents de l'unité de la Garde-frontière de Podlasie ont interpellé un ressortissant syrien qui tentait de franchir illégalement la frontière d'État de la Pologne vers la Biélorussie. L'incident s'inscrit dans la pression migratoire persistante sur le tronçon oriental de la frontière. Les suites et la qualification juridique relèvent des autorités compétentes ; les détails doivent être vérifiés dans le communiqué source."
+        }
+      }
+    },
+    {
+      "id": "2026-07-20-udsc-wymiana-dokumentow-ue",
+      "added": "2026-07-20",
+      "category": "Urzędy",
+      "title": "Zbliża się termin wymiany dokumentów obywateli UE i członków ich rodzin",
+      "summary": "Urząd do Spraw Cudzoziemców przypomina, że 3 sierpnia 2026 r. upływa ważność ostatnich dokumentów wydanych obywatelom Unii Europejskiej oraz członkom ich rodzin według wzorów obowiązujących przed 2 sierpnia 2021 r., które zachowały ważność na podstawie przepisów przejściowych ustawy z 10 grudnia 2020 r. Osoby posługujące się takimi dokumentami powinny wystąpić o ich wymianę. Szczegóły i tryb wymiany należy zweryfikować w komunikacie źródłowym.",
+      "source_name": "Urząd do Spraw Cudzoziemców (gov.pl/udsc)",
+      "author": "Urząd do Spraw Cudzoziemców",
+      "url": "https://www.gov.pl/web/udsc/wazne-zbliza-sie-termin-wymiany-dokumentow-wydanych-obywatelom-ue-i-czlonkom-ich-rodzin-wydanych-wedlug-wzorow-obowiazujacych-przed--2-sierpnia-2021-r",
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Deadline approaching to replace documents of EU citizens and their family members",
+          "summary": "The Office for Foreigners reminds that on 3 August 2026 the validity expires of the last documents issued to European Union citizens and their family members according to templates in force before 2 August 2021, which remained valid under the transitional provisions of the Act of 10 December 2020. Persons holding such documents should apply to replace them. The details and the replacement procedure should be verified in the source announcement."
+        },
+        "es": {
+          "title": "Se acerca el plazo para renovar los documentos de los ciudadanos de la UE y sus familiares",
+          "summary": "La Oficina de Extranjería recuerda que el 3 de agosto de 2026 caduca la validez de los últimos documentos expedidos a ciudadanos de la Unión Europea y a sus familiares según los modelos vigentes antes del 2 de agosto de 2021, que conservaron su validez en virtud de las disposiciones transitorias de la Ley de 10 de diciembre de 2020. Quienes posean tales documentos deberían solicitar su renovación. Los detalles y el procedimiento de renovación deben verificarse en el comunicado original."
+        },
+        "uk": {
+          "title": "Наближається термін обміну документів громадян ЄС та членів їхніх родин",
+          "summary": "Управління у справах іноземців нагадує, що 3 серпня 2026 р. спливає термін дії останніх документів, виданих громадянам Європейського Союзу та членам їхніх родин за зразками, чинними до 2 серпня 2021 р., які зберегли чинність на підставі перехідних положень Закону від 10 грудня 2020 р. Особи, які користуються такими документами, повинні звернутися по їх обмін. Деталі та порядок обміну слід перевірити у джерельному повідомленні."
+        },
+        "ru": {
+          "title": "Приближается срок обмена документов граждан ЕС и членов их семей",
+          "summary": "Управление по делам иностранцев напоминает, что 3 августа 2026 г. истекает срок действия последних документов, выданных гражданам Европейского Союза и членам их семей по образцам, действовавшим до 2 августа 2021 г., которые сохранили силу на основании переходных положений Закона от 10 декабря 2020 г. Лицам, пользующимся такими документами, следует обратиться за их обменом. Детали и порядок обмена следует проверить в исходном сообщении."
+        },
+        "fr": {
+          "title": "L'échéance approche pour remplacer les documents des citoyens de l'UE et des membres de leur famille",
+          "summary": "L'Office des étrangers rappelle que le 3 août 2026 expire la validité des derniers documents délivrés aux citoyens de l'Union européenne et aux membres de leur famille selon les modèles en vigueur avant le 2 août 2021, qui étaient restés valables en vertu des dispositions transitoires de la loi du 10 décembre 2020. Les personnes détenant de tels documents devraient demander leur remplacement. Les détails et la procédure de remplacement doivent être vérifiés dans le communiqué source."
+        }
+      }
+    },
+    {
+      "id": "2026-07-16-udsc-ograniczenie-ochrona-miedzynarodowa",
+      "added": "2026-07-16",
+      "category": "Legislacja",
+      "title": "Przedłużono ograniczenie prawa do wniosku o ochronę międzynarodową na granicy z Białorusią",
+      "summary": "Urząd do Spraw Cudzoziemców poinformował, że na wniosek Prezesa Rady Ministrów Sejm wyraził zgodę na przedłużenie o kolejne 60 dni czasowego ograniczenia prawa do złożenia wniosku o udzielenie ochrony międzynarodowej na granicy państwowej z Republiką Białorusi. Ograniczenie obowiązuje od 27 marca 2025 r. Dokładny zakres i daty obowiązywania należy zweryfikować w komunikacie źródłowym.",
+      "source_name": "Urząd do Spraw Cudzoziemców (gov.pl/udsc)",
+      "author": "Urząd do Spraw Cudzoziemców",
+      "url": "https://www.gov.pl/web/udsc/ograniczenie-prawa-do-zlozenia-wniosku-o-ochrone-miedzynarodowa",
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Restriction on the right to apply for international protection at the border with Belarus extended",
+          "summary": "The Office for Foreigners announced that, at the request of the Prime Minister, the Sejm agreed to extend by a further 60 days the temporary restriction of the right to submit an application for international protection at the state border with the Republic of Belarus. The restriction has been in force since 27 March 2025. The exact scope and dates of application should be verified in the source announcement."
+        },
+        "es": {
+          "title": "Se prorroga la restricción del derecho a solicitar protección internacional en la frontera con Bielorrusia",
+          "summary": "La Oficina de Extranjería informó de que, a petición del Presidente del Consejo de Ministros, el Sejm aprobó prorrogar 60 días más la restricción temporal del derecho a presentar una solicitud de protección internacional en la frontera estatal con la República de Bielorrusia. La restricción está en vigor desde el 27 de marzo de 2025. El alcance exacto y las fechas de aplicación deben verificarse en el comunicado original."
+        },
+        "uk": {
+          "title": "Продовжено обмеження права на подання заяви про міжнародний захист на кордоні з Білоруссю",
+          "summary": "Управління у справах іноземців повідомило, що за поданням Голови Ради Міністрів Сейм погодився продовжити ще на 60 днів тимчасове обмеження права на подання заяви про надання міжнародного захисту на державному кордоні з Республікою Білорусь. Обмеження діє з 27 березня 2025 р. Точний обсяг і строки дії слід перевірити у джерельному повідомленні."
+        },
+        "ru": {
+          "title": "Продлено ограничение права на подачу заявления о международной защите на границе с Беларусью",
+          "summary": "Управление по делам иностранцев сообщило, что по представлению Председателя Совета министров Сейм согласился продлить ещё на 60 дней временное ограничение права на подачу заявления о предоставлении международной защиты на государственной границе с Республикой Беларусь. Ограничение действует с 27 марта 2025 г. Точный объём и сроки действия следует проверить в исходном сообщении."
+        },
+        "fr": {
+          "title": "Prolongation de la restriction du droit de demander une protection internationale à la frontière avec la Biélorussie",
+          "summary": "L'Office des étrangers a annoncé que, à la demande du président du Conseil des ministres, la Diète (Sejm) a accepté de prolonger de 60 jours supplémentaires la restriction temporaire du droit de déposer une demande de protection internationale à la frontière d'État avec la République de Biélorussie. La restriction est en vigueur depuis le 27 mars 2025. La portée exacte et les dates d'application doivent être vérifiées dans le communiqué source."
+        }
+      }
+    },
+    {
+      "id": "2026-07-22-udsc-przerwa-profil-zaufany",
+      "added": "2026-07-22",
+      "category": "Urzędy",
+      "title": "Planowana przerwa techniczna w dostępie do Profilu Zaufanego",
+      "summary": "Urząd do Spraw Cudzoziemców zapowiedział planowaną przerwę techniczną w dostępie do Profilu Zaufanego, węzła krajowego oraz usług podpisu dokumentów. Ma to znaczenie dla cudzoziemców korzystających z Modułu Obsługi Spraw (MOS), gdzie Profil Zaufany służy m.in. do podpisywania wniosków pobytowych. Dokładny termin i zakres przerwy należy zweryfikować w komunikacie źródłowym.",
+      "source_name": "Urząd do Spraw Cudzoziemców (gov.pl/udsc)",
+      "author": "Urząd do Spraw Cudzoziemców",
+      "url": "https://www.gov.pl/web/udsc/planowana-przerwa-techniczna-w-dostepie-do-profilu-zaufanego",
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Planned technical break in access to the Trusted Profile",
+          "summary": "The Office for Foreigners has announced a planned technical break in access to the Trusted Profile (Profil Zaufany), the national node and document signing services. This matters for foreigners using the Case Handling Module (MOS), where the Trusted Profile is used, among other things, to sign residence applications. The exact time and scope of the break should be verified in the source announcement."
+        },
+        "es": {
+          "title": "Interrupción técnica planificada en el acceso al Perfil de Confianza",
+          "summary": "La Oficina de Extranjería ha anunciado una interrupción técnica planificada en el acceso al Perfil de Confianza (Profil Zaufany), al nodo nacional y a los servicios de firma de documentos. Esto es relevante para los extranjeros que utilizan el Módulo de Gestión de Casos (MOS), donde el Perfil de Confianza sirve, entre otras cosas, para firmar solicitudes de residencia. La fecha exacta y el alcance de la interrupción deben verificarse en el comunicado original."
+        },
+        "uk": {
+          "title": "Планова технічна перерва в доступі до Довіреного профілю",
+          "summary": "Управління у справах іноземців повідомило про заплановану технічну перерву в доступі до Довіреного профілю (Profil Zaufany), національного вузла та послуг підпису документів. Це має значення для іноземців, які користуються Модулем обслуговування справ (MOS), де Довірений профіль використовується, зокрема, для підписання заяв про перебування. Точний час і обсяг перерви слід перевірити у джерельному повідомленні."
+        },
+        "ru": {
+          "title": "Плановый технический перерыв в доступе к Доверенному профилю",
+          "summary": "Управление по делам иностранцев сообщило о запланированном техническом перерыве в доступе к Доверенному профилю (Profil Zaufany), национальному узлу и услугам подписания документов. Это важно для иностранцев, пользующихся Модулем обслуживания дел (MOS), где Доверенный профиль используется, в частности, для подписания заявлений о пребывании. Точное время и объём перерыва следует проверить в исходном сообщении."
+        },
+        "fr": {
+          "title": "Interruption technique planifiée de l'accès au Profil de confiance",
+          "summary": "L'Office des étrangers a annoncé une interruption technique planifiée de l'accès au Profil de confiance (Profil Zaufany), au nœud national et aux services de signature de documents. Cela concerne les étrangers utilisant le Module de traitement des dossiers (MOS), où le Profil de confiance sert notamment à signer les demandes de séjour. La date exacte et la portée de l'interruption doivent être vérifiées dans le communiqué source."
+        }
+      }
+    },
+    {
+      "id": "2026-07-26-ukr-potwierdzenie-tozsamosci",
+      "added": "2026-07-26",
+      "category": "Urzędy",
+      "title": "Do 31 sierpnia 2026 r. obywatele Ukrainy ze statusem UKR muszą potwierdzić tożsamość",
+      "summary": "Obywatele Ukrainy, którzy uzyskali numer PESEL ze statusem UKR na podstawie oświadczenia o danych osobowych (a nie na podstawie ważnego dokumentu tożsamości), mają obowiązek do 31 sierpnia 2026 r. okazać w organie gminy ważny dokument podróży i potwierdzić tożsamość. Według informacji urzędów wojewódzkich brak potwierdzenia w terminie ma skutkować utratą statusu UKR od 1 września 2026 r., a w konsekwencji utratą uprawnień związanych z ochroną czasową. Dokładny stan prawny i indywidualne skutki należy zweryfikować w urzędzie oraz w źródle.",
+      "source_name": "gov.pl (Opolski Urząd Wojewódzki)",
+      "author": "",
+      "url": "https://www.gov.pl/web/uw-opolski/zmiany-w-przepisach-dotyczacych-obywateli-ukrainy--najczesciej-zadawane-pytania",
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "By 31 August 2026, Ukrainian citizens with UKR status must confirm their identity",
+          "summary": "Ukrainian citizens who obtained a PESEL number with UKR status on the basis of a declaration of personal data (rather than a valid identity document) are required, by 31 August 2026, to present a valid travel document at the municipal office and confirm their identity. According to information from voivodeship offices, failure to confirm within the deadline is to result in loss of UKR status from 1 September 2026 and, consequently, loss of the rights associated with temporary protection. The exact legal status and individual consequences should be verified at the office and in the source."
+        },
+        "es": {
+          "title": "Hasta el 31 de agosto de 2026, los ciudadanos ucranianos con estatus UKR deben confirmar su identidad",
+          "summary": "Los ciudadanos ucranianos que obtuvieron un número PESEL con estatus UKR sobre la base de una declaración de datos personales (y no de un documento de identidad válido) están obligados, hasta el 31 de agosto de 2026, a presentar un documento de viaje válido en la oficina municipal y confirmar su identidad. Según la información de las oficinas de voivodato, no confirmarla dentro del plazo conllevaría la pérdida del estatus UKR a partir del 1 de septiembre de 2026 y, en consecuencia, la pérdida de los derechos asociados a la protección temporal. La situación jurídica exacta y las consecuencias individuales deben verificarse en la oficina y en la fuente."
+        },
+        "uk": {
+          "title": "До 31 серпня 2026 р. громадяни України зі статусом UKR повинні підтвердити особу",
+          "summary": "Громадяни України, які отримали номер PESEL зі статусом UKR на підставі заяви про особисті дані (а не на підставі дійсного документа, що посвідчує особу), зобов'язані до 31 серпня 2026 р. пред'явити в органі гміни дійсний проїзний документ і підтвердити особу. За інформацією воєводських управлінь, непідтвердження у встановлений строк має призвести до втрати статусу UKR з 1 вересня 2026 р. і, як наслідок, до втрати прав, пов'язаних із тимчасовим захистом. Точний правовий стан та індивідуальні наслідки слід перевірити в органі та у джерелі."
+        },
+        "ru": {
+          "title": "До 31 августа 2026 г. граждане Украины со статусом UKR должны подтвердить личность",
+          "summary": "Граждане Украины, получившие номер PESEL со статусом UKR на основании заявления о персональных данных (а не на основании действительного документа, удостоверяющего личность), обязаны до 31 августа 2026 г. предъявить в органе гмины действительный проездной документ и подтвердить личность. По информации воеводских управлений, отсутствие подтверждения в срок должно привести к утрате статуса UKR с 1 сентября 2026 г. и, как следствие, к утрате прав, связанных с временной защитой. Точное правовое положение и индивидуальные последствия следует проверить в органе и в источнике."
+        },
+        "fr": {
+          "title": "D'ici le 31 août 2026, les citoyens ukrainiens ayant le statut UKR doivent confirmer leur identité",
+          "summary": "Les citoyens ukrainiens ayant obtenu un numéro PESEL avec le statut UKR sur la base d'une déclaration de données personnelles (et non d'un document d'identité valide) sont tenus, d'ici le 31 août 2026, de présenter un document de voyage valide auprès de la commune et de confirmer leur identité. Selon les informations des offices de voïvodie, l'absence de confirmation dans le délai entraînerait la perte du statut UKR à partir du 1er septembre 2026 et, par conséquent, la perte des droits liés à la protection temporaire. La situation juridique exacte et les conséquences individuelles doivent être vérifiées auprès de l'office et dans la source."
         }
       }
     }
