@@ -1,39 +1,6 @@
 {
-  "updated": "2026-07-27T07:05:00+02:00",
+  "updated": "2026-07-26T12:05:34+02:00",
   "items": [
-    {
-      "id": "2026-07-27-ukr-potwierdzenie-tozsamosci-31-08-2026",
-      "added": "2026-07-27",
-      "category": "Urzędy",
-      "title": "Status UKR: obywatele Ukrainy muszą potwierdzić tożsamość do 31 sierpnia 2026 r. — inaczej stracą ochronę czasową",
-      "summary": "Obywatele Ukrainy, którzy uzyskali numer PESEL ze statusem UKR bez okazania dokumentu tożsamości ze zdjęciem (na podstawie samego oświadczenia), muszą do 31 sierpnia 2026 r. potwierdzić tożsamość, okazując ważny dokument podróży (paszport) w urzędzie gminy. Obowiązek dotyczy m.in. osób, które przy pierwszej rejestracji nie miały paszportu, w międzyczasie uzyskały nowy dokument albo zmieniły dane, a także dzieci zarejestrowanych bez własnego paszportu. Brak aktualizacji do 31 sierpnia 2026 r. oznacza utratę statusu UKR od 1 września 2026 r., a wraz z nim prawa pobytu, pracy oraz świadczeń. Aktualizacja jest bezpłatna i nie zmienia numeru PESEL. Szczegóły oraz swoją indywidualną sytuację należy zweryfikować w urzędzie gminy właściwym dla miejsca pobytu.",
-      "source_name": "INFORLEX",
-      "author": "",
-      "url": "https://www.inforlex.pl/dok/tresc,FOB0000000000007603153,Do-31-sierpnia-2026-r-obywatele-Ukrainy-maja-czas-na-potwierdzenie-statusu-UKR.html",
-      "scope": "PL",
-      "t": {
-        "en": {
-          "title": "UKR status: Ukrainian citizens must confirm their identity by 31 August 2026 — otherwise they lose temporary protection",
-          "summary": "Ukrainian citizens who obtained a PESEL number with UKR status without presenting a photo identity document (on the basis of a declaration alone) must confirm their identity by 31 August 2026 by presenting a valid travel document (passport) at a municipal office (urząd gminy). The obligation covers, among others, people who had no passport at first registration, obtained a new document in the meantime or changed their data, as well as children registered without their own passport. Failure to update by 31 August 2026 means loss of UKR status from 1 September 2026, and with it the right of residence, work and benefits. The update is free of charge and does not change the PESEL number. Details and your individual situation should be verified at the municipal office competent for your place of stay."
-        },
-        "es": {
-          "title": "Estatus UKR: los ciudadanos de Ucrania deben confirmar su identidad antes del 31 de agosto de 2026 — de lo contrario perderán la protección temporal",
-          "summary": "Los ciudadanos de Ucrania que obtuvieron un número PESEL con estatus UKR sin presentar un documento de identidad con fotografía (solo sobre la base de una declaración) deben confirmar su identidad antes del 31 de agosto de 2026 presentando un documento de viaje válido (pasaporte) en una oficina municipal (urząd gminy). La obligación afecta, entre otros, a las personas que no tenían pasaporte en el primer registro, que obtuvieron un nuevo documento entretanto o que cambiaron sus datos, así como a los niños registrados sin su propio pasaporte. No actualizar los datos antes del 31 de agosto de 2026 supone la pérdida del estatus UKR a partir del 1 de septiembre de 2026 y, con él, del derecho de residencia, de trabajo y de las prestaciones. La actualización es gratuita y no cambia el número PESEL. Los detalles y su situación individual deben verificarse en la oficina municipal competente para su lugar de estancia."
-        },
-        "uk": {
-          "title": "Статус UKR: громадяни України повинні підтвердити особу до 31 серпня 2026 р. — інакше втратять тимчасовий захист",
-          "summary": "Громадяни України, які отримали номер PESEL зі статусом UKR без пред'явлення документа, що посвідчує особу, з фотографією (лише на підставі заяви), повинні до 31 серпня 2026 р. підтвердити особу, пред'явивши дійсний проїзний документ (паспорт) в органі гміни (urząd gminy). Обов'язок стосується, зокрема, осіб, які під час першої реєстрації не мали паспорта, згодом отримали новий документ або змінили дані, а також дітей, зареєстрованих без власного паспорта. Відсутність оновлення до 31 серпня 2026 р. означає втрату статусу UKR з 1 вересня 2026 р., а разом з ним права на перебування, роботу та виплати. Оновлення безкоштовне і не змінює номер PESEL. Деталі та свою індивідуальну ситуацію слід перевірити в органі гміни за місцем перебування."
-        },
-        "ru": {
-          "title": "Статус UKR: граждане Украины должны подтвердить личность до 31 августа 2026 г. — иначе потеряют временную защиту",
-          "summary": "Граждане Украины, получившие номер PESEL со статусом UKR без предъявления документа, удостоверяющего личность, с фотографией (только на основании заявления), должны до 31 августа 2026 г. подтвердить личность, предъявив действующий проездной документ (паспорт) в органе гмины (urząd gminy). Обязанность касается, в частности, лиц, у которых при первой регистрации не было паспорта, кто впоследствии получил новый документ или изменил данные, а также детей, зарегистрированных без собственного паспорта. Отсутствие обновления до 31 августа 2026 г. означает потерю статуса UKR с 1 сентября 2026 г., а вместе с ним права на пребывание, работу и выплаты. Обновление бесплатное и не меняет номер PESEL. Подробности и свою индивидуальную ситуацию следует проверить в органе гмины по месту пребывания."
-        },
-        "fr": {
-          "title": "Statut UKR : les citoyens ukrainiens doivent confirmer leur identité avant le 31 août 2026 — sinon ils perdent la protection temporaire",
-          "summary": "Les citoyens ukrainiens ayant obtenu un numéro PESEL avec le statut UKR sans présenter de document d'identité avec photo (sur la seule base d'une déclaration) doivent confirmer leur identité avant le 31 août 2026 en présentant un document de voyage valide (passeport) dans une mairie (urząd gminy). L'obligation concerne notamment les personnes qui n'avaient pas de passeport lors de la première inscription, qui ont obtenu un nouveau document entre-temps ou qui ont modifié leurs données, ainsi que les enfants enregistrés sans passeport propre. L'absence de mise à jour avant le 31 août 2026 entraîne la perte du statut UKR à partir du 1er septembre 2026 et, avec lui, du droit de séjour, de travail et des prestations. La mise à jour est gratuite et ne change pas le numéro PESEL. Les détails et votre situation individuelle doivent être vérifiés auprès de la mairie compétente pour votre lieu de séjour."
-        }
-      }
-    },
     {
       "id": "2026-07-28-cosc-sn-i-pkn-558-99-nielegalne-zatrudnienie-cudzoziemca",
       "added": "2026-07-28",
@@ -64,6 +31,72 @@
         "fr": {
           "title": "Emploi illégal d'un étranger sans autorisation — le contrat de travail n'est pas nul. Arrêt de la Cour suprême (I PKN 558/99) [document propre de COSC]",
           "summary": "Document propre du Centre de gestion des affaires des étrangers (COSC). Dans un arrêt du 27 mars 2000 (réf. I PKN 558/99), la Cour suprême de Pologne a jugé que la sanction de nullité prévue à l'art. 58 du Code civil ne s'applique pas au contrat de travail conclu avec un étranger sans l'autorisation de travail ni l'accord de l'office de l'emploi requis. Ce contrat reste valable et l'étranger qui a effectivement accompli le travail conserve son droit à la rémunération (art. 80 du Code du travail). L'emploi illégal est puni d'une amende à la charge de l'employeur, et non de la nullité du contrat. Le commentaire couvre les faits, la question juridique, la décision et les sanctions actuelles (loi du 20 mars 2025 — amende de 3 000 à 50 000 PLN)."
+        }
+      }
+    },
+    {
+      "id": "2026-07-28-cosc-sn-iii-pk-11-16-zatrudnienie-cudzoziemca",
+      "added": "2026-07-28",
+      "category": "Orzecznictwo",
+      "title": "Czasowy pobyt nie skazuje cudzoziemca na umowy terminowe, a obywatelstwo może być dyskryminacją — wyrok SN (III PK 11/16) [materiał własny COSC]",
+      "summary": "Materiał własny Centrum Obsługi Spraw Cudzoziemców. Sąd Najwyższy w wyroku z 7 listopada 2016 r. (sygn. III PK 11/16) uznał, że czasowe zezwolenie na pobyt nie stoi na przeszkodzie zawarciu z cudzoziemcem umowy o pracę na czas nieokreślony — o dopuszczalności umowy terminowej z nauczycielem decyduje wyłącznie potrzeba organizacji nauczania lub zastępstwa (art. 10 ust. 7 Karty Nauczyciela), a nie sam fakt czasowego pobytu. SN stwierdził też, że obywatelstwo, choć nie jest wprost wymienione w katalogu z art. 11(3) i 18(3a) k.p., może — wobec otwartego charakteru katalogu — stanowić niedozwolone kryterium bezpośredniej dyskryminacji; przepisy o równym traktowaniu chronią także pracowników z państw trzecich. Sąd uchylił wyrok Sądu Okręgowego i przekazał sprawę do ponownego rozpoznania. W omówieniu: stan faktyczny, wskazane naruszenia, rozstrzygnięcie oraz ocena ryzyka dla pracujących cudzoziemców.",
+      "source_name": "Materiał własny COSC (źródło orzeczenia: baza orzeczeń Sądu Najwyższego, sn.pl)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-sn-zatrudnienie-cudzoziemca-iii-pk-11-16.html",
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Temporary residence does not condemn a foreigner to fixed-term contracts, and citizenship may be discrimination — Supreme Court judgment (III PK 11/16) [COSC own material]",
+          "summary": "Own material by the Centre for Foreigners' Affairs (COSC). In a judgment of 7 November 2016 (ref. III PK 11/16) the Polish Supreme Court held that a temporary residence permit does not preclude concluding an open-ended employment contract with a foreigner — whether a fixed-term contract with a teacher is admissible depends solely on a need arising from the organisation of teaching or a substitution (Art. 10(7) of the Teacher's Charter), not on the temporary nature of the stay. The Court also found that citizenship, although not expressly listed in Art. 11(3) and 18(3a) of the Labour Code, may — given the open catalogue of grounds — constitute a prohibited criterion of direct discrimination; equal-treatment rules protect third-country workers too. The Court set aside the Regional Court's judgment and remitted the case. The commentary covers the facts, the violations, the ruling and the risk assessment for working foreigners."
+        },
+        "es": {
+          "title": "La residencia temporal no condena al extranjero a contratos temporales, y la nacionalidad puede ser discriminación — sentencia del Tribunal Supremo (III PK 11/16) [material propio de COSC]",
+          "summary": "Material propio del Centro de Atención de Asuntos de Extranjeros (COSC). En sentencia de 7 de noviembre de 2016 (ref. III PK 11/16), el Tribunal Supremo polaco sostuvo que un permiso de residencia temporal no impide celebrar con un extranjero un contrato de trabajo por tiempo indefinido: la admisibilidad de un contrato temporal con un profesor depende únicamente de una necesidad derivada de la organización de la enseñanza o de una sustitución (art. 10.7 de la Carta del Profesor), y no del carácter temporal de la estancia. El Tribunal también declaró que la nacionalidad, aunque no figura expresamente en los art. 11.3 y 18.3a del Código de Trabajo, puede constituir —dado el catálogo abierto— un criterio prohibido de discriminación directa; las normas de igualdad de trato protegen también a los trabajadores de terceros países. El Tribunal anuló la sentencia del Tribunal Regional y devolvió el asunto. El comentario incluye los hechos, las infracciones, el fallo y la evaluación del riesgo para los extranjeros que trabajan."
+        },
+        "uk": {
+          "title": "Тимчасове проживання не прирікає іноземця на строкові договори, а громадянство може бути дискримінацією — рішення Верховного Суду (III PK 11/16) [власний матеріал COSC]",
+          "summary": "Власний матеріал Центру обслуговування справ іноземців (COSC). Рішенням від 7 листопада 2016 р. (ref. III PK 11/16) Верховний Суд Польщі визнав, що тимчасовий дозвіл на проживання не перешкоджає укладенню з іноземцем безстрокового трудового договору — допустимість строкового договору з учителем залежить виключно від потреби, що випливає з організації навчання чи заміщення (ст. 10 ч. 7 Хартії вчителя), а не від тимчасового характеру перебування. Суд також визнав, що громадянство, хоча прямо не перелічене у ст. 11(3) і 18(3a) Кодексу праці, може — з огляду на відкритий перелік підстав — бути забороненим критерієм прямої дискримінації; норми про рівне ставлення захищають і працівників із третіх країн. Суд скасував рішення Окружного суду та повернув справу на новий розгляд. В огляді — обставини справи, порушення, рішення та оцінка ризику для працюючих іноземців."
+        },
+        "ru": {
+          "title": "Временное проживание не обрекает иностранца на срочные договоры, а гражданство может быть дискриминацией — решение Верховного суда (III PK 11/16) [собственный материал COSC]",
+          "summary": "Собственный материал Центра обслуживания дел иностранцев (COSC). Решением от 7 ноября 2016 г. (ref. III PK 11/16) Верховный суд Польши признал, что временный вид на жительство не препятствует заключению с иностранцем бессрочного трудового договора — допустимость срочного договора с учителем зависит исключительно от потребности, вытекающей из организации обучения или замещения (ст. 10 ч. 7 Хартии учителя), а не от временного характера пребывания. Суд также указал, что гражданство, хотя прямо не перечислено в ст. 11(3) и 18(3a) Трудового кодекса, может — с учётом открытого перечня оснований — являться запрещённым критерием прямой дискриминации; нормы о равном обращении защищают и работников из третьих стран. Суд отменил решение Окружного суда и направил дело на новое рассмотрение. В обзоре — обстоятельства дела, нарушения, решение и оценка риска для работающих иностранцев."
+        },
+        "fr": {
+          "title": "Un séjour temporaire ne condamne pas l'étranger aux contrats à durée déterminée, et la nationalité peut constituer une discrimination — arrêt de la Cour suprême (III PK 11/16) [document propre COSC]",
+          "summary": "Document propre du Centre des affaires des étrangers (COSC). Dans un arrêt du 7 novembre 2016 (réf. III PK 11/16), la Cour suprême polonaise a jugé qu'un titre de séjour temporaire ne fait pas obstacle à la conclusion avec un étranger d'un contrat de travail à durée indéterminée : l'admissibilité d'un contrat à durée déterminée avec un enseignant dépend uniquement d'un besoin lié à l'organisation de l'enseignement ou d'un remplacement (art. 10 al. 7 de la Charte de l'enseignant), et non du caractère temporaire du séjour. La Cour a également retenu que la nationalité, bien que non expressément mentionnée aux art. 11(3) et 18(3a) du Code du travail, peut — compte tenu du catalogue ouvert — constituer un critère prohibé de discrimination directe ; les règles d'égalité de traitement protègent aussi les travailleurs de pays tiers. La Cour a annulé l'arrêt du Tribunal régional et renvoyé l'affaire. Le commentaire présente les faits, les violations, la décision et l'évaluation du risque pour les étrangers qui travaillent."
+        }
+      }
+    },
+    {
+      "id": "2026-07-27-cosc-wsa-1092-06-termin-14-dni-pomoc-integracyjna",
+      "added": "2026-07-27",
+      "category": "Orzecznictwo",
+      "title": "Termin 14 dni na pomoc integracyjną dla uchodźcy to termin zawity — wyrok WSA (I SA/Wa 1092/06) [materiał własny COSC]",
+      "summary": "Materiał własny Centrum Obsługi Spraw Cudzoziemców. WSA w Warszawie w wyroku z 28 września 2006 r. (sygn. I SA/Wa 1092/06) potwierdził, że 14-dniowy termin na wniosek uchodźcy o pomoc integracyjną (art. 91 ust. 3 ustawy o pomocy społecznej) jest terminem zawitym prawa materialnego i co do zasady nie podlega przywróceniu w trybie art. 58–59 k.p.a. Jednocześnie Sąd uchylił oba postanowienia: organ odwoławczy błędnie umorzył postępowanie jako bezprzedmiotowe, zamiast wydać odmowę na właściwej podstawie materialnoprawnej, a w aktach zabrakło dowodu doręczenia decyzji (art. 77 § 1 k.p.a.). W omówieniu: krótki stan faktyczny, wskazane naruszenia i rozstrzygnięcie oraz praktyczny wniosek o ryzyku utraty uprawnienia przy spóźnionym wniosku.",
+      "source_name": "Materiał własny COSC (źródło orzeczenia: Centralna Baza Orzeczeń Sądów Administracyjnych, nsa.gov.pl)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-wsa-termin-14-dni-pomoc-integracyjna-uchodzcy.html",
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "14-day deadline for refugee integration assistance is a strict statutory term — WSA judgment (I SA/Wa 1092/06) [COSC own material]",
+          "summary": "Own material by the Centre for Foreigners' Affairs (COSC). The Regional Administrative Court in Warsaw, in a judgment of 28 September 2006 (ref. I SA/Wa 1092/06), confirmed that the 14-day deadline for a refugee's application for integration assistance (Art. 91(3) of the Social Assistance Act) is a strict substantive-law term that, as a rule, cannot be restored under Art. 58–59 of the Administrative Procedure Code. At the same time the Court quashed both decisions: the appeal body wrongly discontinued the proceedings as devoid of purpose instead of issuing a refusal on the correct substantive basis, and the case file lacked proof of service of the decision (Art. 77 § 1 APC). The commentary covers the facts, the violations, the ruling and the practical risk of losing the entitlement with a late application."
+        },
+        "es": {
+          "title": "El plazo de 14 días para la ayuda de integración del refugiado es un término perentorio — sentencia del WSA (I SA/Wa 1092/06) [material propio de COSC]",
+          "summary": "Material propio del Centro de Atención de Asuntos de Extranjeros (COSC). El Tribunal Administrativo de Voivodato de Varsovia, en sentencia de 28 de septiembre de 2006 (ref. I SA/Wa 1092/06), confirmó que el plazo de 14 días para la solicitud de ayuda de integración de un refugiado (art. 91.3 de la Ley de asistencia social) es un término perentorio de derecho material y, por regla general, no puede restituirse conforme a los art. 58–59 del Código de Procedimiento Administrativo. A la vez, el Tribunal anuló ambas resoluciones: el órgano de apelación sobreseyó indebidamente el procedimiento por falta de objeto en lugar de denegar sobre la base material correcta, y en el expediente faltaba la prueba de notificación de la resolución (art. 77 § 1 CPA). El comentario incluye los hechos, las infracciones, el fallo y el riesgo práctico de perder el derecho con una solicitud tardía."
+        },
+        "uk": {
+          "title": "14-денний строк на інтеграційну допомогу біженцю є преклюзивним — рішення WSA (I SA/Wa 1092/06) [власний матеріал COSC]",
+          "summary": "Власний матеріал Центру обслуговування справ іноземців (COSC). Воєводський адміністративний суд у Варшаві рішенням від 28 вересня 2006 р. (ref. I SA/Wa 1092/06) підтвердив, що 14-денний строк для заяви біженця про інтеграційну допомогу (ст. 91 ч. 3 Закону про соціальну допомогу) є преклюзивним строком матеріального права і, за загальним правилом, не підлягає поновленню за ст. 58–59 КПА. Водночас Суд скасував обидві постанови: апеляційний орган помилково закрив провадження як безпредметне замість відмови на правильній матеріально-правовій підставі, а в матеріалах бракувало доказу вручення рішення (ст. 77 § 1 КПА). В огляді — обставини справи, порушення, рішення та практичний ризик втрати права при поданні заяви із запізненням."
+        },
+        "ru": {
+          "title": "14-дневный срок на интеграционную помощь беженцу является пресекательным — решение WSA (I SA/Wa 1092/06) [собственный материал COSC]",
+          "summary": "Собственный материал Центра обслуживания дел иностранцев (COSC). Воеводский административный суд в Варшаве решением от 28 сентября 2006 г. (ref. I SA/Wa 1092/06) подтвердил, что 14-дневный срок для заявления беженца об интеграционной помощи (ст. 91 ч. 3 Закона о социальной помощи) является пресекательным сроком материального права и, как правило, не подлежит восстановлению по ст. 58–59 КАП. Одновременно Суд отменил оба постановления: апелляционный орган ошибочно прекратил производство как беспредметное вместо отказа на правильном материально-правовом основании, а в материалах отсутствовало доказательство вручения решения (ст. 77 § 1 КАП). В обзоре — обстоятельства дела, нарушения, решение и практический риск утраты права при подаче заявления с опозданием."
+        },
+        "fr": {
+          "title": "Le délai de 14 jours pour l'aide à l'intégration du réfugié est un délai de forclusion — arrêt du WSA (I SA/Wa 1092/06) [document propre COSC]",
+          "summary": "Document propre du Centre des affaires des étrangers (COSC). Le Tribunal administratif de voïvodie de Varsovie, dans un arrêt du 28 septembre 2006 (réf. I SA/Wa 1092/06), a confirmé que le délai de 14 jours pour la demande d'aide à l'intégration d'un réfugié (art. 91 al. 3 de la loi sur l'aide sociale) est un délai de forclusion de droit matériel qui, en règle générale, ne peut être relevé au titre des art. 58–59 du Code de procédure administrative. Le Tribunal a également annulé les deux décisions : l'organe d'appel a clôturé à tort la procédure comme sans objet au lieu de refuser sur la base matérielle correcte, et le dossier ne contenait pas la preuve de la notification de la décision (art. 77 § 1 CPA). Le commentaire présente les faits, les violations, la décision et le risque pratique de perdre le droit en cas de demande tardive."
         }
       }
     },
