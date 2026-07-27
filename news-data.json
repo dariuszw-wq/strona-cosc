@@ -1,6 +1,39 @@
 {
-  "updated": "2026-07-27T08:08:56+02:00",
+  "updated": "2026-07-27T17:10:00+02:00",
   "items": [
+    {
+      "id": "2026-07-27-udsc-pesel-ukr-dokument-podrozy",
+      "added": "2026-07-27",
+      "category": "Urzędy",
+      "scope": "PL",
+      "source_name": "Urząd do Spraw Cudzoziemców",
+      "author": "",
+      "url": "https://www.gov.pl/web/udsc/wazna-informacja-dla-obywateli-ukrainy-posiadajacych-numer-pesel-ze-statusem-ukr",
+      "title": "UDSC: obywatele Ukrainy ze statusem UKR muszą do 31 sierpnia 2026 r. okazać ważny paszport w urzędzie gminy",
+      "summary": "Urząd do Spraw Cudzoziemców przypomina, że cudzoziemcy, którzy uzyskali numer PESEL ze statusem UKR wyłącznie na podstawie deklaracji (bez okazania ważnego dokumentu podróży), mają obowiązek do 31 sierpnia 2026 r. okazać w urzędzie gminy ważny paszport. Dotyczy to zwłaszcza dzieci poniżej 18. roku życia, których tożsamość potwierdzano wcześniej na podstawie zdjęć w paszportach rodziców lub opiekunów. Aktualizacja jest bezpłatna i nie zmienia numeru PESEL — poprawiane są tylko dane dokumentu. Brak aktualizacji w terminie oznacza utratę statusu UKR i ochrony czasowej, a bez ważnego numeru PESEL UKR nie można otrzymać karty pobytu CUKR.",
+      "t": {
+        "en": {
+          "title": "UDSC: Ukrainian nationals with UKR status must present a valid passport at the municipal office by 31 August 2026",
+          "summary": "The Office for Foreigners (UDSC) reminds that foreigners who received a PESEL number with UKR status solely on the basis of a declaration (without presenting a valid travel document) are required to present a valid passport at the municipal (gmina) office by 31 August 2026. This is especially important for children under 18, whose identity was previously confirmed on the basis of photos attached to their parents' or guardians' passports. The update is free of charge and does not change the PESEL number — only the document data is corrected. Failure to update on time means loss of UKR status and temporary protection, and without a valid PESEL UKR number it is not possible to obtain a CUKR residence card."
+        },
+        "es": {
+          "title": "UDSC: los ciudadanos ucranianos con estatus UKR deben presentar un pasaporte válido en la oficina municipal antes del 31 de agosto de 2026",
+          "summary": "La Oficina de Extranjeros (UDSC) recuerda que los extranjeros que obtuvieron un número PESEL con estatus UKR únicamente sobre la base de una declaración (sin presentar un documento de viaje válido) están obligados a presentar un pasaporte válido en la oficina municipal (gmina) antes del 31 de agosto de 2026. Esto es especialmente importante para los menores de 18 años, cuya identidad se confirmaba anteriormente sobre la base de las fotos adjuntas a los pasaportes de sus padres o tutores. La actualización es gratuita y no cambia el número PESEL — solo se corrigen los datos del documento. No actualizarlo a tiempo supone la pérdida del estatus UKR y de la protección temporal, y sin un número PESEL UKR válido no es posible obtener la tarjeta de residencia CUKR."
+        },
+        "uk": {
+          "title": "УДСЦ: громадяни України зі статусом UKR мають до 31 серпня 2026 р. пред’явити дійсний паспорт у ґміні",
+          "summary": "Управління у справах іноземців (UDSC) нагадує, що іноземці, які отримали номер PESEL зі статусом UKR лише на підставі декларації (без пред’явлення дійсного проїзного документа), зобов’язані до 31 серпня 2026 р. пред’явити дійсний паспорт в органі ґміни. Це особливо важливо для дітей до 18 років, чию особу раніше підтверджували на підставі фотографій, доданих до паспортів батьків або опікунів. Оновлення є безкоштовним і не змінює номер PESEL — коригуються лише дані документа. Невиконання цього у визначений термін означає втрату статусу UKR і тимчасового захисту, а без дійсного номера PESEL UKR неможливо отримати карту перебування CUKR."
+        },
+        "ru": {
+          "title": "УДСЦ: граждане Украины со статусом UKR должны до 31 августа 2026 г. предъявить действующий паспорт в гмине",
+          "summary": "Управление по делам иностранцев (UDSC) напоминает, что иностранцы, получившие номер PESEL со статусом UKR только на основании декларации (без предъявления действительного проездного документа), обязаны до 31 августа 2026 г. предъявить действующий паспорт в органе гмины. Это особенно важно для детей младше 18 лет, личность которых ранее подтверждалась на основании фотографий, вклеенных в паспорта родителей или опекунов. Обновление бесплатно и не меняет номер PESEL — исправляются только данные документа. Непредставление в срок означает утрату статуса UKR и временной защиты, а без действительного номера PESEL UKR невозможно получить карту пребывания CUKR."
+        },
+        "fr": {
+          "title": "UDSC : les ressortissants ukrainiens ayant le statut UKR doivent présenter un passeport valide à la mairie avant le 31 août 2026",
+          "summary": "L'Office des étrangers (UDSC) rappelle que les étrangers ayant obtenu un numéro PESEL avec le statut UKR uniquement sur la base d'une déclaration (sans présenter de document de voyage valide) sont tenus de présenter un passeport valide au bureau de la commune (gmina) avant le 31 août 2026. Cela est particulièrement important pour les enfants de moins de 18 ans, dont l'identité était auparavant confirmée sur la base des photos jointes aux passeports de leurs parents ou tuteurs. La mise à jour est gratuite et ne modifie pas le numéro PESEL — seules les données du document sont corrigées. À défaut de mise à jour dans les délais, l'intéressé perd le statut UKR et la protection temporaire, et sans numéro PESEL UKR valide il est impossible d'obtenir la carte de séjour CUKR."
+        }
+      }
+    },
     {
       "id": "2026-07-27-cosc-nowa-ustawa-powierzanie-pracy-2025",
       "added": "2026-07-27",
