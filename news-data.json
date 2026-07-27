@@ -1,6 +1,39 @@
 {
-  "updated": "2026-07-26T12:05:34+02:00",
+  "updated": "2026-07-27T08:08:56+02:00",
   "items": [
+    {
+      "id": "2026-07-27-cosc-nowa-ustawa-powierzanie-pracy-2025",
+      "added": "2026-07-27",
+      "category": "Rynek pracy",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-nowa-ustawa-powierzanie-pracy-2025.html",
+      "title": "Nowa ustawa o powierzaniu pracy cudzoziemcom — co zmieniło się od 1 czerwca 2025 r. [materiał własny COSC]",
+      "summary": "Ustawa z 20 marca 2025 r. o powierzaniu pracy cudzoziemcom (Dz.U. 2025 poz. 621) obowiązuje od 1 czerwca 2025. Zniesienie testu rynku pracy, elektronizacja, wyższe kary. Dla pracodawców i kadr.",
+      "t": {
+        "en": {
+          "title": "New act on entrusting work to foreigners — what changed from 1 June 2025 [COSC own material]",
+          "summary": "The act of 20 March 2025 on entrusting work to foreigners (Journal of Laws 2025 item 621) applies from 1 June 2025. Abolition of the labour market test, electronisation, higher penalties. For employers and HR."
+        },
+        "es": {
+          "title": "Nueva ley sobre la contratación de trabajo a extranjeros — qué cambió desde el 1 de junio de 2025 [material propio de COSC]",
+          "summary": "La ley del 20 de marzo de 2025 sobre la contratación de trabajo a extranjeros (Boletín Oficial 2025 pos. 621) está en vigor desde el 1 de junio de 2025. Supresión de la prueba del mercado laboral, digitalización, sanciones más altas. Para empleadores y recursos humanos."
+        },
+        "uk": {
+          "title": "Новий закон про доручення роботи іноземцям — що змінилося з 1 червня 2025 р. [власний матеріал COSC]",
+          "summary": "Закон від 20 березня 2025 р. про доручення роботи іноземцям (Dz.U. 2025 поз. 621) діє з 1 червня 2025 р. Скасування тесту ринку праці, електронізація, вищі штрафи. Для роботодавців і кадрових служб."
+        },
+        "ru": {
+          "title": "Новый закон о поручении работы иностранцам — что изменилось с 1 июня 2025 г. [собственный материал COSC]",
+          "summary": "Закон от 20 марта 2025 г. о поручении работы иностранцам (Dz.U. 2025 поз. 621) действует с 1 июня 2025 г. Отмена теста рынка труда, электронизация, более высокие штрафы. Для работодателей и кадровых служб."
+        },
+        "fr": {
+          "title": "Nouvelle loi sur l'attribution de travail aux étrangers — ce qui a changé depuis le 1er juin 2025 [document propre COSC]",
+          "summary": "La loi du 20 mars 2025 sur l'attribution de travail aux étrangers (Journal des lois 2025 pos. 621) est en vigueur depuis le 1er juin 2025. Suppression du test du marché du travail, dématérialisation, sanctions plus élevées. Pour les employeurs et les RH."
+        }
+      }
+    },
     {
       "id": "2026-07-28-cosc-sn-i-pkn-558-99-nielegalne-zatrudnienie-cudzoziemca",
       "added": "2026-07-28",
