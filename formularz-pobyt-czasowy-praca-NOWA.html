@@ -6,6 +6,7 @@
 <title>Ankieta — zezwolenie na pobyt czasowy i pracę | COSC Centrum Obsługi Spraw Cudzoziemców</title>
 <meta name="description" content="Wypełnij ankietę z danymi do wniosku o zezwolenie na pobyt czasowy i pracę. Dane trafiają bezpiecznie do kancelarii, która pomoże złożyć wniosek przez portal MOS.">
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="i18n/i18n.css">
 <style>
 :root{
   --violet:#4636c9; --violet-d:#37248F; --violet-l:#6d6ae0;
@@ -532,15 +533,15 @@ function validateStep(i){
   return true;
 }
 
-document.getElementById('nextBtn').addEventListener('click', ()=>{
+function goNext(){
   if(!validateStep(current)) return;
   current = Math.min(current+1, panels.length-1);
   showStep(current);
-});
-document.getElementById('prevBtn').addEventListener('click', ()=>{
+}
+function goPrev(){
   current = Math.max(current-1, 0);
   showStep(current);
-});
+}
 showStep(0); renderProgress();
 
 /* pokaż/ukryj sekcje warunkowe */
@@ -580,19 +581,19 @@ function addFamilyMember(){
   document.getElementById('famList').appendChild(div);
   fillSelect(div.querySelector('.ls-citizenship'), CITIZENSHIPS);
   fillSelect(div.querySelector(`[name=fam_pokrewienstwo_${idx}]`), KINSHIP);
-  div.querySelector('.fam-remove').addEventListener('click', ()=>div.remove());
   document.getElementById('famAdd').classList.toggle('hidden', famCount>=MAX_FAM);
 }
-document.getElementById('famAdd').addEventListener('click', addFamilyMember);
 
 /* ================== LICZBA DNI OD OSTATNIEGO WJAZDU ================== */
-document.getElementById('dataOstWjazdu').addEventListener('change', function(){
+function recalcLastEntry(){
+  const inp = document.getElementById('dataOstWjazdu');
   const box = document.getElementById('dniOdWjazdu');
-  const d = new Date(this.value);
-  if(!this.value || isNaN(d)){ box.value=''; return; }
+  if(!inp || !box) return;
+  const d = new Date(inp.value);
+  if(!inp.value || isNaN(d)){ box.value=''; return; }
   const diff = Math.round((new Date() - d)/86400000);
   box.value = diff >= 0 ? diff + ' dni' : 'data w przyszłości';
-});
+}
 
 /* ================== PODRÓŻE I POBYTY (wiersze z automatyczną liczbą dni) ================== */
 const STAY_BASIS = ["Wiza","Ruch bezwizowy","Karta pobytu","Inny dokument"];
@@ -620,34 +621,34 @@ function makeTravelRow(prefix, idx, kind){
       <div class="field"><label>Liczba dni</label><input type="text" name="${prefix}_dni_${idx}" readonly tabindex="-1" placeholder="—"></div>
     </div>
     <div class="row3">${thirdField}</div>`;
-  const wjazd = div.querySelector(`[name="${prefix}_wjazd_${idx}"]`);
-  const wyjazd = div.querySelector(`[name="${prefix}_wyjazd_${idx}"]`);
-  const dni = div.querySelector(`[name="${prefix}_dni_${idx}"]`);
-  function recalc(){ dni.value = daysBetween(wjazd.value, wyjazd.value); }
-  wjazd.addEventListener('change', recalc);
-  wyjazd.addEventListener('change', recalc);
-  div.querySelector('.fam-remove').addEventListener('click', ()=>div.remove());
   if(kind === 'zagr'){ fillSelect(div.querySelector('.ls-country-row'), COUNTRIES); }
   return div;
+}
+function recalcTravelRow(input){
+  const row = input.closest('.fam-item'); if(!row) return;
+  const wjazd = row.querySelector('[name*="_wjazd_"]');
+  const wyjazd = row.querySelector('[name*="_wyjazd_"]');
+  const dni = row.querySelector('[name*="_dni_"]');
+  if(dni) dni.value = daysBetween(wjazd && wjazd.value, wyjazd && wyjazd.value);
 }
 
 let rpCount = 0, zagrCount = 0;
 const MAX_TRAVEL = 8;
-document.getElementById('rpAdd').addEventListener('click', ()=>{
+function addRpRow(){
   if(rpCount >= MAX_TRAVEL) return;
   rpCount++;
   document.getElementById('rpList').appendChild(makeTravelRow('rp', rpCount, 'rp'));
   document.getElementById('rpAdd').classList.toggle('hidden', rpCount>=MAX_TRAVEL);
-});
-document.getElementById('zagrAdd').addEventListener('click', ()=>{
+}
+function addZagrRow(){
   if(zagrCount >= MAX_TRAVEL) return;
   zagrCount++;
   document.getElementById('zagrList').appendChild(makeTravelRow('zagr', zagrCount, 'zagr'));
   document.getElementById('zagrAdd').classList.toggle('hidden', zagrCount>=MAX_TRAVEL);
-});
+}
 // pierwszy wiersz w obu tabelach od razu widoczny
-document.getElementById('rpAdd').click();
-document.getElementById('zagrAdd').click();
+addRpRow();
+addZagrRow();
 
 /* ================== PODSUMOWANIE ================== */
 function buildSummary(){
@@ -674,7 +675,7 @@ function buildSummary(){
 }
 
 /* ================== WYSYŁKA ================== */
-document.getElementById('submitBtn').addEventListener('click', async ()=>{
+async function submitForm(){
   if(!validateStep(0)) { current=0; showStep(0); return; }
   const btn = document.getElementById('submitBtn');
   const statusBox = document.getElementById('statusBox');
@@ -735,7 +736,26 @@ document.getElementById('submitBtn').addEventListener('click', async ()=>{
     statusBox.innerHTML = 'Nie udało się wysłać ankiety automatycznie. Skontaktuj się z nami bezpośrednio: <a href="https://wa.me/48539999549">WhatsApp +48 539 999 549</a> lub <a href="mailto:office@cosc.org.pl">office@cosc.org.pl</a>, a Twoje odpowiedzi prześlemy ręcznie.';
     btn.disabled = false; btn.textContent = 'Spróbuj wysłać ponownie';
   }
+}
+
+/* ===== Delegacja zdarzeń (odporna na podmianę treści przez i18n) ===== */
+document.addEventListener('click', function(e){
+  const t = e.target.closest('button'); if(!t) return;
+  if(t.id === 'nextBtn'){ goNext(); return; }
+  if(t.id === 'prevBtn'){ goPrev(); return; }
+  if(t.id === 'submitBtn'){ submitForm(); return; }
+  if(t.id === 'famAdd'){ addFamilyMember(); return; }
+  if(t.id === 'rpAdd'){ addRpRow(); return; }
+  if(t.id === 'zagrAdd'){ addZagrRow(); return; }
+  if(t.classList.contains('fam-remove')){ const it = t.closest('.fam-item'); if(it) it.remove(); return; }
 });
+document.addEventListener('change', function(e){
+  const n = (e.target && e.target.name) || '';
+  if(e.target && e.target.id === 'dataOstWjazdu'){ recalcLastEntry(); return; }
+  if(/^(rp|zagr)_(wjazd|wyjazd)_/.test(n)){ recalcTravelRow(e.target); return; }
+});
+/* po zmianie języka i18n podmienia innerHTML — przywróć stan przycisków kroku */
+document.addEventListener('cosc:langchange', function(){ try{ showStep(current); }catch(e){} });
 </script>
 <script src="ankieta-pdf.js"></script>
 
@@ -743,5 +763,6 @@ document.getElementById('submitBtn').addEventListener('click', async ()=>{
 <script>
 (function(){var b=document.querySelector('.burger'),m=document.querySelector('.menu');if(b&&m){b.addEventListener('click',function(){m.classList.toggle('open')});m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open')})});}})();
 </script>
+<script src="i18n/i18n.js"></script>
 </body>
 </html>
