@@ -1,6 +1,39 @@
 {
-  "updated": "2026-07-26T12:06:27+02:00",
+  "updated": "2026-07-27T07:05:00+02:00",
   "items": [
+    {
+      "id": "2026-07-27-ukr-potwierdzenie-tozsamosci-31-08-2026",
+      "added": "2026-07-27",
+      "category": "Urzędy",
+      "title": "Status UKR: obywatele Ukrainy muszą potwierdzić tożsamość do 31 sierpnia 2026 r. — inaczej stracą ochronę czasową",
+      "summary": "Obywatele Ukrainy, którzy uzyskali numer PESEL ze statusem UKR bez okazania dokumentu tożsamości ze zdjęciem (na podstawie samego oświadczenia), muszą do 31 sierpnia 2026 r. potwierdzić tożsamość, okazując ważny dokument podróży (paszport) w urzędzie gminy. Obowiązek dotyczy m.in. osób, które przy pierwszej rejestracji nie miały paszportu, w międzyczasie uzyskały nowy dokument albo zmieniły dane, a także dzieci zarejestrowanych bez własnego paszportu. Brak aktualizacji do 31 sierpnia 2026 r. oznacza utratę statusu UKR od 1 września 2026 r., a wraz z nim prawa pobytu, pracy oraz świadczeń. Aktualizacja jest bezpłatna i nie zmienia numeru PESEL. Szczegóły oraz swoją indywidualną sytuację należy zweryfikować w urzędzie gminy właściwym dla miejsca pobytu.",
+      "source_name": "INFORLEX",
+      "author": "",
+      "url": "https://www.inforlex.pl/dok/tresc,FOB0000000000007603153,Do-31-sierpnia-2026-r-obywatele-Ukrainy-maja-czas-na-potwierdzenie-statusu-UKR.html",
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "UKR status: Ukrainian citizens must confirm their identity by 31 August 2026 — otherwise they lose temporary protection",
+          "summary": "Ukrainian citizens who obtained a PESEL number with UKR status without presenting a photo identity document (on the basis of a declaration alone) must confirm their identity by 31 August 2026 by presenting a valid travel document (passport) at a municipal office (urząd gminy). The obligation covers, among others, people who had no passport at first registration, obtained a new document in the meantime or changed their data, as well as children registered without their own passport. Failure to update by 31 August 2026 means loss of UKR status from 1 September 2026, and with it the right of residence, work and benefits. The update is free of charge and does not change the PESEL number. Details and your individual situation should be verified at the municipal office competent for your place of stay."
+        },
+        "es": {
+          "title": "Estatus UKR: los ciudadanos de Ucrania deben confirmar su identidad antes del 31 de agosto de 2026 — de lo contrario perderán la protección temporal",
+          "summary": "Los ciudadanos de Ucrania que obtuvieron un número PESEL con estatus UKR sin presentar un documento de identidad con fotografía (solo sobre la base de una declaración) deben confirmar su identidad antes del 31 de agosto de 2026 presentando un documento de viaje válido (pasaporte) en una oficina municipal (urząd gminy). La obligación afecta, entre otros, a las personas que no tenían pasaporte en el primer registro, que obtuvieron un nuevo documento entretanto o que cambiaron sus datos, así como a los niños registrados sin su propio pasaporte. No actualizar los datos antes del 31 de agosto de 2026 supone la pérdida del estatus UKR a partir del 1 de septiembre de 2026 y, con él, del derecho de residencia, de trabajo y de las prestaciones. La actualización es gratuita y no cambia el número PESEL. Los detalles y su situación individual deben verificarse en la oficina municipal competente para su lugar de estancia."
+        },
+        "uk": {
+          "title": "Статус UKR: громадяни України повинні підтвердити особу до 31 серпня 2026 р. — інакше втратять тимчасовий захист",
+          "summary": "Громадяни України, які отримали номер PESEL зі статусом UKR без пред'явлення документа, що посвідчує особу, з фотографією (лише на підставі заяви), повинні до 31 серпня 2026 р. підтвердити особу, пред'явивши дійсний проїзний документ (паспорт) в органі гміни (urząd gminy). Обов'язок стосується, зокрема, осіб, які під час першої реєстрації не мали паспорта, згодом отримали новий документ або змінили дані, а також дітей, зареєстрованих без власного паспорта. Відсутність оновлення до 31 серпня 2026 р. означає втрату статусу UKR з 1 вересня 2026 р., а разом з ним права на перебування, роботу та виплати. Оновлення безкоштовне і не змінює номер PESEL. Деталі та свою індивідуальну ситуацію слід перевірити в органі гміни за місцем перебування."
+        },
+        "ru": {
+          "title": "Статус UKR: граждане Украины должны подтвердить личность до 31 августа 2026 г. — иначе потеряют временную защиту",
+          "summary": "Граждане Украины, получившие номер PESEL со статусом UKR без предъявления документа, удостоверяющего личность, с фотографией (только на основании заявления), должны до 31 августа 2026 г. подтвердить личность, предъявив действующий проездной документ (паспорт) в органе гмины (urząd gminy). Обязанность касается, в частности, лиц, у которых при первой регистрации не было паспорта, кто впоследствии получил новый документ или изменил данные, а также детей, зарегистрированных без собственного паспорта. Отсутствие обновления до 31 августа 2026 г. означает потерю статуса UKR с 1 сентября 2026 г., а вместе с ним права на пребывание, работу и выплаты. Обновление бесплатное и не меняет номер PESEL. Подробности и свою индивидуальную ситуацию следует проверить в органе гмины по месту пребывания."
+        },
+        "fr": {
+          "title": "Statut UKR : les citoyens ukrainiens doivent confirmer leur identité avant le 31 août 2026 — sinon ils perdent la protection temporaire",
+          "summary": "Les citoyens ukrainiens ayant obtenu un numéro PESEL avec le statut UKR sans présenter de document d'identité avec photo (sur la seule base d'une déclaration) doivent confirmer leur identité avant le 31 août 2026 en présentant un document de voyage valide (passeport) dans une mairie (urząd gminy). L'obligation concerne notamment les personnes qui n'avaient pas de passeport lors de la première inscription, qui ont obtenu un nouveau document entre-temps ou qui ont modifié leurs données, ainsi que les enfants enregistrés sans passeport propre. L'absence de mise à jour avant le 31 août 2026 entraîne la perte du statut UKR à partir du 1er septembre 2026 et, avec lui, du droit de séjour, de travail et des prestations. La mise à jour est gratuite et ne change pas le numéro PESEL. Les détails et votre situation individuelle doivent être vérifiés auprès de la mairie compétente pour votre lieu de séjour."
+        }
+      }
+    },
     {
       "id": "2026-07-28-cosc-sn-i-pkn-558-99-nielegalne-zatrudnienie-cudzoziemca",
       "added": "2026-07-28",
