@@ -431,6 +431,7 @@ header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);po
   <div class="fbottom">© Dariusz Włodarczyk Kancelaria 2026 · Centrum Obsługi Spraw Cudzoziemców</div>
 </footer>
 
+<script src="ankieta-listy.js"></script>
 <script>
 /* ================== KONFIGURACJA ================== */
 // TODO(Dariusz): po wdrożeniu Google Apps Script wklej tutaj adres URL Web Appu (patrz instrukcja).
@@ -487,13 +488,21 @@ const PROVINCES = ["Dolnośląskie","Kujawsko-pomorskie","Lubelskie","Lubuskie",
 
 const KINSHIP = ["Babcia","Brat","Bratanek","Bratanica","Bratowa","Ciotka","Córka","Syn","Dziadek","Kuzyn","Kuzynka","Matka","Ojciec","Partner/Partnerka","Pasierb","Pasierbica","Prawnuczka","Prawnuk","Siostra","Siostrzenica","Siostrzeniec","Stryjek","Stryjenka","Teść","Teściowa","Wnuczka","Współmałżonek (mąż, żona)","Wujek","Zięć"];
 
+function curLang(){ try{ return (window.COSCi18n&&window.COSCi18n.current&&window.COSCi18n.current())||((document.documentElement.getAttribute('lang')||'pl').slice(0,2)); }catch(e){ return 'pl'; } }
+function T(){ return (window.FORM_L10N&&window.FORM_L10N[curLang()])||(window.FORM_L10N&&window.FORM_L10N.pl)||null; }
 function fillSelect(sel, list){
-  sel.innerHTML = '<option value="">— Proszę wybrać —</option>' + list.map(v=>`<option>${v}</option>`).join('');
+  const t = T();
+  sel.innerHTML = '<option value="">'+(t?t.select:'— Proszę wybrać —')+'</option>' + list.map(v=>`<option>${v}</option>`).join('');
 }
-document.querySelectorAll('.ls-country').forEach(s=>fillSelect(s,COUNTRIES));
-document.querySelectorAll('.ls-nationality').forEach(s=>fillSelect(s,NATIONALITIES));
-document.querySelectorAll('.ls-citizenship').forEach(s=>fillSelect(s,CITIZENSHIPS));
-document.querySelectorAll('.ls-province').forEach(s=>fillSelect(s,PROVINCES));
+function refillStaticSelects(){
+  const t = T(); const lang = curLang();
+  const countryL = (lang==='pl'||!t) ? COUNTRIES : t.countries;
+  document.querySelectorAll('.ls-country').forEach(s=>fillSelect(s, countryL));
+  document.querySelectorAll('.ls-nationality').forEach(s=>fillSelect(s, (lang==='pl'||!t)?NATIONALITIES:t.countries));
+  document.querySelectorAll('.ls-citizenship').forEach(s=>fillSelect(s, (lang==='pl'||!t)?CITIZENSHIPS:t.countries));
+  document.querySelectorAll('.ls-province').forEach(s=>fillSelect(s, PROVINCES));
+}
+refillStaticSelects();
 
 /* ================== KROKI / NAWIGACJA ================== */
 const form = document.getElementById('ankieta');
@@ -503,7 +512,8 @@ const stepLabels = ["Zgoda","Dane","Pobyt","Rodzina","Historia","Pytania","Wyśl
 let current = 0;
 
 function renderProgress(){
-  progressEl.innerHTML = stepLabels.map((lbl,i)=>`
+  const labels = (T() && T().steps) || stepLabels;
+  progressEl.innerHTML = labels.map((lbl,i)=>`
     <div class="dot ${i===current?'active':(i<current?'done':'')}">
       <div class="num">${i<current?'✓':i+1}</div>
       <div class="lbl">${lbl}</div>
@@ -562,25 +572,27 @@ function addFamilyMember(){
   if(famCount >= MAX_FAM) return;
   famCount++;
   const idx = famCount;
+  const t = T() || (window.FORM_L10N&&window.FORM_L10N.pl) || {};
+  const lang = curLang();
   const div = document.createElement('div');
   div.className = 'fam-item';
   div.dataset.idx = idx;
   div.innerHTML = `
-    <button type="button" class="fam-remove">Usuń ✕</button>
-    <div class="fam-title">Członek rodziny ${idx}</div>
+    <button type="button" class="fam-remove">${t.remove||'Usuń ✕'}</button>
+    <div class="fam-title">${(t.famMember||'Członek rodziny')} ${idx}</div>
     <div class="row3">
-      <div class="field"><label>Płeć</label><select name="fam_plec_${idx}"><option value="">—</option><option>kobieta</option><option>mężczyzna</option></select></div>
-      <div class="field"><label>Data urodzenia</label><input type="date" name="fam_data_ur_${idx}"></div>
-      <div class="field"><label>Stopień pokrewieństwa</label><select name="fam_pokrewienstwo_${idx}"></select></div>
+      <div class="field"><label>${t.lblSex||'Płeć'}</label><select name="fam_plec_${idx}"><option value="">${t.dash||'—'}</option><option>${t.woman||'kobieta'}</option><option>${t.man||'mężczyzna'}</option></select></div>
+      <div class="field"><label>${t.lblBirth||'Data urodzenia'}</label><input type="date" name="fam_data_ur_${idx}"></div>
+      <div class="field"><label>${t.lblKinship||'Stopień pokrewieństwa'}</label><select name="fam_pokrewienstwo_${idx}"></select></div>
     </div>
     <div class="row3">
-      <div class="field"><label>Obywatelstwo</label><select name="fam_obywatelstwo_${idx}" class="ls-citizenship"></select></div>
-      <div class="field"><label>Ubiega się o pobyt czasowy?</label><select name="fam_pobyt_${idx}"><option value="">—</option><option>Tak</option><option>Nie</option></select></div>
-      <div class="field"><label>Na utrzymaniu wnioskodawcy?</label><select name="fam_utrzymanie_${idx}"><option value="">—</option><option>Tak</option><option>Nie</option></select></div>
+      <div class="field"><label>${t.lblCit||'Obywatelstwo'}</label><select name="fam_obywatelstwo_${idx}" class="ls-citizenship"></select></div>
+      <div class="field"><label>${t.lblApply||'Ubiega się o pobyt czasowy?'}</label><select name="fam_pobyt_${idx}"><option value="">${t.dash||'—'}</option><option>${t.yes||'Tak'}</option><option>${t.no||'Nie'}</option></select></div>
+      <div class="field"><label>${t.lblDep||'Na utrzymaniu wnioskodawcy?'}</label><select name="fam_utrzymanie_${idx}"><option value="">${t.dash||'—'}</option><option>${t.yes||'Tak'}</option><option>${t.no||'Nie'}</option></select></div>
     </div>`;
   document.getElementById('famList').appendChild(div);
-  fillSelect(div.querySelector('.ls-citizenship'), CITIZENSHIPS);
-  fillSelect(div.querySelector(`[name=fam_pokrewienstwo_${idx}]`), KINSHIP);
+  fillSelect(div.querySelector('.ls-citizenship'), (lang==='pl'||!t.countries)?CITIZENSHIPS:t.countries);
+  fillSelect(div.querySelector(`[name=fam_pokrewienstwo_${idx}]`), t.kinship||KINSHIP);
   document.getElementById('famAdd').classList.toggle('hidden', famCount>=MAX_FAM);
 }
 
@@ -592,7 +604,8 @@ function recalcLastEntry(){
   const d = new Date(inp.value);
   if(!inp.value || isNaN(d)){ box.value=''; return; }
   const diff = Math.round((new Date() - d)/86400000);
-  box.value = diff >= 0 ? diff + ' dni' : 'data w przyszłości';
+  const t = T() || {};
+  box.value = diff >= 0 ? (diff + ' ' + (t.days||'dni')) : (t.future||'data w przyszłości');
 }
 
 /* ================== PODRÓŻE I POBYTY (wiersze z automatyczną liczbą dni) ================== */
@@ -607,21 +620,24 @@ function daysBetween(d1, d2){
 }
 
 function makeTravelRow(prefix, idx, kind){
+  const t = T() || (window.FORM_L10N&&window.FORM_L10N.pl) || {};
+  const lang = curLang();
+  const stayList = t.stayBasis || STAY_BASIS;
   const div = document.createElement('div');
   div.className = 'fam-item';
   div.dataset.idx = idx;
   const thirdField = kind === 'rp'
-    ? `<div class="field"><label>Podstawa pobytu</label><select name="${prefix}_podstawa_${idx}"><option value="">—</option>${STAY_BASIS.map(o=>`<option>${o}</option>`).join('')}</select></div>`
-    : `<div class="field"><label>Państwo</label><select name="${prefix}_panstwo_${idx}" class="ls-country-row"></select></div>`;
+    ? `<div class="field"><label>${t.lblBasis||'Podstawa pobytu'}</label><select name="${prefix}_podstawa_${idx}"><option value="">${t.dash||'—'}</option>${stayList.map(o=>`<option>${o}</option>`).join('')}</select></div>`
+    : `<div class="field"><label>${t.lblCountry||'Państwo'}</label><select name="${prefix}_panstwo_${idx}" class="ls-country-row"></select></div>`;
   div.innerHTML = `
-    <button type="button" class="fam-remove">Usuń ✕</button>
+    <button type="button" class="fam-remove">${t.remove||'Usuń ✕'}</button>
     <div class="row3">
-      <div class="field"><label>Data wjazdu</label><input type="date" name="${prefix}_wjazd_${idx}"></div>
-      <div class="field"><label>Data wyjazdu</label><input type="date" name="${prefix}_wyjazd_${idx}"></div>
-      <div class="field"><label>Liczba dni</label><input type="text" name="${prefix}_dni_${idx}" readonly tabindex="-1" placeholder="—"></div>
+      <div class="field"><label>${t.lblEntry||'Data wjazdu'}</label><input type="date" name="${prefix}_wjazd_${idx}"></div>
+      <div class="field"><label>${t.lblExit||'Data wyjazdu'}</label><input type="date" name="${prefix}_wyjazd_${idx}"></div>
+      <div class="field"><label>${t.lblDays||'Liczba dni'}</label><input type="text" name="${prefix}_dni_${idx}" readonly tabindex="-1" placeholder="${t.dash||'—'}"></div>
     </div>
     <div class="row3">${thirdField}</div>`;
-  if(kind === 'zagr'){ fillSelect(div.querySelector('.ls-country-row'), COUNTRIES); }
+  if(kind === 'zagr'){ fillSelect(div.querySelector('.ls-country-row'), (lang==='pl'||!t.countries)?COUNTRIES:t.countries); }
   return div;
 }
 function recalcTravelRow(input){
@@ -653,23 +669,24 @@ addZagrRow();
 /* ================== PODSUMOWANIE ================== */
 function buildSummary(){
   const fd = new FormData(form);
+  const S = (T() && T().summary) || ['Imię i nazwisko','Data urodzenia','Obywatelstwo','E-mail','Telefon własny','Telefon polski','Dni od ostatniego wjazdu','Rodzaj wniosku','Świadczenie','Pracodawca','NIP pracodawcy','Rodzaj umowy','Wynagrodzenie brutto','Praca od','Województwo pobytu','Rodzina w Polsce'];
   const rows = [
-    ['Imię i nazwisko', `${fd.get('imie')||''} ${fd.get('nazwisko')||''}`.trim()],
-    ['Data urodzenia', fd.get('data_urodzenia')||'—'],
-    ['Obywatelstwo', fd.get('obywatelstwo')||'—'],
-    ['E-mail', fd.get('email')||'—'],
-    ['Telefon własny', fd.get('telefon_wlasny')||'—'],
-    ['Telefon polski', fd.get('telefon_pl')||'—'],
-    ['Dni od ostatniego wjazdu', fd.get('dni_od_ostatniego_wjazdu')||'—'],
-    ['Rodzaj wniosku', fd.get('rodzaj_wniosku')||FORM_NAME],
-    ...(fd.get('rodzaj_swiadczenia') ? [['Świadczenie', fd.get('rodzaj_swiadczenia')]] : []),
-    ['Pracodawca', fd.get('pracodawca_nazwa')||'—'],
-    ['NIP pracodawcy', fd.get('pracodawca_nip')||'—'],
-    ['Rodzaj umowy', fd.get('rodzaj_umowy')||'—'],
-    ['Wynagrodzenie brutto', fd.get('wynagrodzenie_brutto')||'—'],
-    ['Praca od', fd.get('praca_od')||'—'],
-    ['Województwo pobytu', fd.get('wojewodztwo_pobytu')||'—'],
-    ['Rodzina w Polsce', fd.get('rodzina_w_pl')||'—'],
+    [S[0], `${fd.get('imie')||''} ${fd.get('nazwisko')||''}`.trim()],
+    [S[1], fd.get('data_urodzenia')||'—'],
+    [S[2], fd.get('obywatelstwo')||'—'],
+    [S[3], fd.get('email')||'—'],
+    [S[4], fd.get('telefon_wlasny')||'—'],
+    [S[5], fd.get('telefon_pl')||'—'],
+    [S[6], fd.get('dni_od_ostatniego_wjazdu')||'—'],
+    [S[7], fd.get('rodzaj_wniosku')||FORM_NAME],
+    ...(fd.get('rodzaj_swiadczenia') ? [[S[8], fd.get('rodzaj_swiadczenia')]] : []),
+    [S[9], fd.get('pracodawca_nazwa')||'—'],
+    [S[10], fd.get('pracodawca_nip')||'—'],
+    [S[11], fd.get('rodzaj_umowy')||'—'],
+    [S[12], fd.get('wynagrodzenie_brutto')||'—'],
+    [S[13], fd.get('praca_od')||'—'],
+    [S[14], fd.get('wojewodztwo_pobytu')||'—'],
+    [S[15], fd.get('rodzina_w_pl')||'—'],
   ];
   document.getElementById('summary').innerHTML = rows.map(([k,v])=>`<div class="srow"><b>${k}</b><span>${v}</span></div>`).join('');
 }
@@ -679,7 +696,8 @@ async function submitForm(){
   if(!validateStep(0)) { current=0; showStep(0); return; }
   const btn = document.getElementById('submitBtn');
   const statusBox = document.getElementById('statusBox');
-  btn.disabled = true; btn.textContent = 'Wysyłanie…';
+  const t = T() || {};
+  btn.disabled = true; btn.textContent = t.sending || 'Wysyłanie…';
 
   const fd = new FormData(form);
   const data = { _formularz: FORM_NAME, _data_wyslania: new Date().toISOString() };
@@ -729,11 +747,11 @@ async function submitForm(){
       body: JSON.stringify(data)
     });
     statusBox.className = 'status-box ok';
-    statusBox.textContent = 'Dziękujemy! Ankieta została wysłana. Kopia PDF Twojej ankiety wraz ze zgodą została pobrana na to urządzenie oraz wysłana na podany adres e-mail. Skontaktujemy się z Tobą, aby wspólnie dokończyć wniosek. Pamiętaj o przesłaniu skanu paszportu na WhatsApp lub e-mail.';
+    statusBox.textContent = t.msgOk || 'Dziękujemy! Ankieta została wysłana. Kopia PDF Twojej ankiety wraz ze zgodą została pobrana na to urządzenie oraz wysłana na podany adres e-mail. Skontaktujemy się z Tobą, aby wspólnie dokończyć wniosek. Pamiętaj o przesłaniu skanu paszportu na WhatsApp lub e-mail.';
     form.querySelectorAll('input,select,textarea,button').forEach(el=>el.disabled=true);
   }catch(err){
     statusBox.className = 'status-box err';
-    statusBox.innerHTML = 'Nie udało się wysłać ankiety automatycznie. Skontaktuj się z nami bezpośrednio: <a href="https://wa.me/48539999549">WhatsApp +48 539 999 549</a> lub <a href="mailto:office@cosc.org.pl">office@cosc.org.pl</a>, a Twoje odpowiedzi prześlemy ręcznie.';
+    statusBox.innerHTML = t.msgErr || 'Nie udało się wysłać ankiety automatycznie. Skontaktuj się z nami bezpośrednio: <a href="https://wa.me/48539999549">WhatsApp +48 539 999 549</a> lub <a href="mailto:office@cosc.org.pl">office@cosc.org.pl</a>, a Twoje odpowiedzi prześlemy ręcznie.';
     btn.disabled = false; btn.textContent = 'Spróbuj wysłać ponownie';
   }
 }
@@ -754,8 +772,38 @@ document.addEventListener('change', function(e){
   if(e.target && e.target.id === 'dataOstWjazdu'){ recalcLastEntry(); return; }
   if(/^(rp|zagr)_(wjazd|wyjazd)_/.test(n)){ recalcTravelRow(e.target); return; }
 });
-/* po zmianie języka i18n podmienia innerHTML — przywróć stan przycisków kroku */
-document.addEventListener('cosc:langchange', function(){ try{ showStep(current); }catch(e){} });
+/* ===== Lokalizacja treści generowanej przez JS (listy, wiersze, etykiety) ===== */
+function setFieldLabel(name, text){
+  if(!text) return;
+  const sel = document.querySelector('[name="'+name+'"]'); if(!sel) return;
+  const f = sel.closest('.field'); const lab = f && f.querySelector('label'); if(!lab) return;
+  const req = lab.querySelector('.req');
+  lab.textContent = text + (req ? ' ' : '');
+  if(req) lab.appendChild(req);
+}
+function localizeDynamic(){
+  const t = T(); if(!t) return;
+  refillStaticSelects();
+  const pv=document.getElementById('prevBtn'); if(pv&&t.btnPrev) pv.textContent=t.btnPrev;
+  const nx=document.getElementById('nextBtn'); if(nx&&t.btnNext) nx.textContent=t.btnNext;
+  const sb=document.getElementById('submitBtn'); if(sb&&t.btnSubmit) sb.textContent=t.btnSubmit;
+  setFieldLabel('obywatelstwo', t.lblCitMain);
+  setFieldLabel('wojewodztwo_pobytu', t.lblProvRes);
+  setFieldLabel('wojewodztwo_wniosku', t.lblProvApp);
+  // przebuduj wiersze dynamiczne w bieżącym języku (zachowując liczbę wierszy)
+  const famN  = document.querySelectorAll('#famList .fam-item').length;
+  const rpN   = document.querySelectorAll('#rpList .fam-item').length;
+  const zagrN = document.querySelectorAll('#zagrList .fam-item').length;
+  const famList=document.getElementById('famList'), rpList=document.getElementById('rpList'), zagrList=document.getElementById('zagrList');
+  if(famList){ famList.innerHTML=''; famCount=0; const b=document.getElementById('famAdd'); if(b)b.classList.remove('hidden'); }
+  if(rpList){ rpList.innerHTML=''; rpCount=0; const b=document.getElementById('rpAdd'); if(b)b.classList.remove('hidden'); }
+  if(zagrList){ zagrList.innerHTML=''; zagrCount=0; const b=document.getElementById('zagrAdd'); if(b)b.classList.remove('hidden'); }
+  for(let i=0;i<famN;i++)  addFamilyMember();
+  for(let i=0;i<rpN;i++)   addRpRow();
+  for(let i=0;i<zagrN;i++) addZagrRow();
+}
+/* po zmianie języka i18n podmienia innerHTML — przetłumacz treści JS i przywróć stan przycisków kroku */
+document.addEventListener('cosc:langchange', function(){ try{ localizeDynamic(); }catch(e){} try{ showStep(current); }catch(e){} });
 </script>
 <script src="ankieta-pdf.js"></script>
 
