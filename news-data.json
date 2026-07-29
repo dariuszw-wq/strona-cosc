@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-29T16:05:56+02:00",
+  "updated": "2026-07-29T22:06:12+02:00",
   "items": [
     {
       "id": "2026-07-29-cosc-kurierzy-zlecenie-stosunek-pracy-pip",
@@ -1362,6 +1362,138 @@
         "fr": {
           "title": "Medyka : le système EES détecte une tentative de contournement de l'interdiction d'entrée dans Schengen",
           "summary": "Au poste-frontière de Medyka, le 25 juillet, un ressortissant moldave de 48 ans a tenté d'entrer en Pologne en utilisant des données personnelles modifiées. Grâce à la vérification biométrique dans le système d'entrée/sortie (EES) et à un contrôle dans le Système d'information Schengen (SIS), les agents ont établi sa véritable identité et détecté une interdiction d'entrée dans l'espace Schengen émise par les autorités roumaines, encore valable près de cinq ans. L'homme s'est vu refuser l'entrée, a été inculpé de tentative de franchissement illégal de la frontière, et l'affaire sera portée devant le tribunal. Ce cas met en évidence le rôle du nouveau système EES dans le contrôle aux frontières."
+        }
+      }
+    },
+    {
+      "id": "2026-07-29-sg-gruzja-odmowa-katowice",
+      "added": "2026-07-29",
+      "category": "Bezpieczeństwo",
+      "scope": "PL",
+      "source_name": "Straż Graniczna (strazgraniczna.pl)",
+      "author": "Komenda Główna Straży Granicznej",
+      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16038,Na-lotnisku-w-Katowicach-Pyrzowicach-zatrzymano-osobe-poszukiwana-i-odmowiono-wj.html",
+      "title": "Katowice-Pyrzowice: odmowa wjazdu dwóm obywatelom Gruzji, zatrzymano też osobę poszukiwaną",
+      "summary": "Funkcjonariusze Placówki SG w Katowicach-Pyrzowicach wydali decyzje o odmowie wjazdu na terytorium Polski wobec dwóch obywateli Gruzji. Podczas tych samych czynności zatrzymano 52-letniego obywatela Polski poszukiwanego do odbycia kary pozbawienia wolności za przestępstwo narkotykowe. Przykład bieżącej kontroli granicznej na lotnisku i przesłanek odmowy wjazdu cudzoziemcom.",
+      "t": {
+        "en": {
+          "title": "Katowice-Pyrzowice: entry refused to two Georgian nationals, wanted person also detained",
+          "summary": "Border Guard officers at the Katowice-Pyrzowice post issued decisions refusing entry into Poland to two Georgian nationals. During the same checks, a 52-year-old Polish citizen wanted to serve a prison sentence for a drug offence was detained. An example of ongoing airport border control and the grounds for refusing entry to foreigners."
+        },
+        "es": {
+          "title": "Katowice-Pyrzowice: se deniega la entrada a dos ciudadanos georgianos y se detiene a una persona buscada",
+          "summary": "Agentes de la Guardia de Fronteras del puesto de Katowice-Pyrzowice dictaron decisiones de denegación de entrada en Polonia contra dos ciudadanos de Georgia. Durante los mismos controles se detuvo a un ciudadano polaco de 52 años buscado para cumplir una pena de prisión por un delito de drogas. Un ejemplo del control fronterizo en el aeropuerto y de los motivos para denegar la entrada a extranjeros."
+        },
+        "uk": {
+          "title": "Катовіце-Пижовіце: відмовлено у в'їзді двом громадянам Грузії, затримано також розшукувану особу",
+          "summary": "Прикордонники підрозділу в Катовіце-Пижовіце ухвалили рішення про відмову у в'їзді на територію Польщі двом громадянам Грузії. Під час тих самих перевірок затримано 52-річного громадянина Польщі, який розшукувався для відбування покарання за наркозлочин. Приклад поточного прикордонного контролю в аеропорту та підстав для відмови у в'їзді іноземцям."
+        },
+        "ru": {
+          "title": "Катовице-Пижовице: отказано во въезде двум гражданам Грузии, задержан также разыскиваемый",
+          "summary": "Пограничники подразделения в Катовице-Пижовице приняли решения об отказе во въезде на территорию Польши двум гражданам Грузии. Во время тех же проверок задержан 52-летний гражданин Польши, разыскиваемый для отбывания наказания за наркопреступление. Пример текущего пограничного контроля в аэропорту и оснований для отказа во въезде иностранцам."
+        },
+        "fr": {
+          "title": "Katowice-Pyrzowice : entrée refusée à deux ressortissants géorgiens, une personne recherchée également interpellée",
+          "summary": "Les agents des gardes-frontières du poste de Katowice-Pyrzowice ont pris des décisions de refus d'entrée en Pologne à l'encontre de deux ressortissants géorgiens. Lors des mêmes contrôles, un citoyen polonais de 52 ans recherché pour purger une peine de prison pour une infraction liée aux stupéfiants a été interpellé. Un exemple de contrôle frontalier à l'aéroport et des motifs de refus d'entrée aux étrangers."
+        }
+      }
+    },
+    {
+      "id": "2026-07-28-sg-podlaskie-podrobione-dokumenty",
+      "added": "2026-07-28",
+      "category": "Bezpieczeństwo",
+      "scope": "PL",
+      "source_name": "Straż Graniczna (strazgraniczna.pl)",
+      "author": "Komenda Główna Straży Granicznej",
+      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16037,Podrobione-dokumenty-u-czterech-cudzoziemcow.html",
+      "title": "Podlaskie: czterej cudzoziemcy z podrobionymi dokumentami",
+      "summary": "Funkcjonariusze Podlaskiego Oddziału Straży Granicznej 27 lipca 2026 r. ujawnili cztery osoby posługujące się podrobionymi dokumentami. Posłużenie się sfałszowanym dokumentem stanowi przestępstwo i może być podstawą odmowy wjazdu lub zobowiązania do powrotu — przypominamy o konsekwencjach prawnych dla cudzoziemców.",
+      "t": {
+        "en": {
+          "title": "Podlaskie region: four foreigners with forged documents",
+          "summary": "On 27 July 2026, officers of the Podlaskie Border Guard Unit identified four people using forged documents. Using a falsified document is a criminal offence and may be grounds for refusal of entry or a return decision — a reminder of the legal consequences for foreigners."
+        },
+        "es": {
+          "title": "Región de Podlasie: cuatro extranjeros con documentos falsificados",
+          "summary": "El 27 de julio de 2026, agentes de la Unidad de la Guardia de Fronteras de Podlasie detectaron a cuatro personas que utilizaban documentos falsificados. Usar un documento falsificado es un delito y puede motivar la denegación de entrada o una decisión de retorno: un recordatorio de las consecuencias legales para los extranjeros."
+        },
+        "uk": {
+          "title": "Підляшшя: четверо іноземців із підробленими документами",
+          "summary": "27 липня 2026 р. прикордонники Підляського відділу Прикордонної служби виявили чотирьох осіб, які користувалися підробленими документами. Використання підробленого документа є злочином і може стати підставою для відмови у в'їзді або рішення про повернення — нагадуємо про правові наслідки для іноземців."
+        },
+        "ru": {
+          "title": "Подляшье: четверо иностранцев с поддельными документами",
+          "summary": "27 июля 2026 г. пограничники Подляского отдела Пограничной службы выявили четырёх человек, использовавших поддельные документы. Использование поддельного документа является преступлением и может стать основанием для отказа во въезде или решения о возвращении — напоминаем о правовых последствиях для иностранцев."
+        },
+        "fr": {
+          "title": "Podlachie : quatre étrangers avec des documents falsifiés",
+          "summary": "Le 27 juillet 2026, les agents de l'unité des gardes-frontières de Podlachie ont repéré quatre personnes utilisant des documents falsifiés. L'usage d'un document falsifié est une infraction pénale et peut justifier un refus d'entrée ou une décision de retour — un rappel des conséquences juridiques pour les étrangers."
+        }
+      }
+    },
+    {
+      "id": "2026-07-28-sg-medyka-ukrainka-rumunski-dowod",
+      "added": "2026-07-28",
+      "category": "Bezpieczeństwo",
+      "scope": "PL",
+      "source_name": "Straż Graniczna (strazgraniczna.pl)",
+      "author": "Komenda Główna Straży Granicznej",
+      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16033,Ukrainka-podawala-sie-za-Rumunke.html",
+      "title": "Medyka: obywatelka Ukrainy posłużyła się podrobionym rumuńskim dowodem osobistym",
+      "summary": "Na przejściu granicznym w Medyce 27 lipca 2026 r. funkcjonariusze SG ujawnili obywatelkę Ukrainy, która posłużyła się podrobionym rumuńskim dowodem osobistym. Kobieta przyznała, że nigdy nie była w Rumunii. Posłużenie się cudzym lub podrobionym dokumentem tożsamości pociąga odpowiedzialność karną i konsekwencje pobytowe.",
+      "t": {
+        "en": {
+          "title": "Medyka: Ukrainian national used a forged Romanian ID card",
+          "summary": "At the Medyka border crossing on 27 July 2026, Border Guard officers identified a Ukrainian national who used a forged Romanian identity card. The woman admitted she had never been to Romania. Using another person's or a forged identity document carries criminal liability and residence consequences."
+        },
+        "es": {
+          "title": "Medyka: una ciudadana ucraniana usó un documento de identidad rumano falsificado",
+          "summary": "En el paso fronterizo de Medyka, el 27 de julio de 2026, agentes de la Guardia de Fronteras detectaron a una ciudadana ucraniana que utilizó un documento de identidad rumano falsificado. La mujer admitió que nunca había estado en Rumanía. Usar un documento de identidad ajeno o falsificado conlleva responsabilidad penal y consecuencias para la residencia."
+        },
+        "uk": {
+          "title": "Медика: громадянка України скористалася підробленим румунським посвідченням особи",
+          "summary": "На пункті пропуску в Медиці 27 липня 2026 р. прикордонники виявили громадянку України, яка скористалася підробленим румунським посвідченням особи. Жінка визнала, що ніколи не була в Румунії. Використання чужого або підробленого документа, що посвідчує особу, тягне за собою кримінальну відповідальність та наслідки для перебування."
+        },
+        "ru": {
+          "title": "Медыка: гражданка Украины воспользовалась поддельным румынским удостоверением личности",
+          "summary": "На пункте пропуска в Медыке 27 июля 2026 г. пограничники выявили гражданку Украины, воспользовавшуюся поддельным румынским удостоверением личности. Женщина призналась, что никогда не была в Румынии. Использование чужого или поддельного документа, удостоверяющего личность, влечёт уголовную ответственность и последствия для пребывания."
+        },
+        "fr": {
+          "title": "Medyka : une ressortissante ukrainienne a utilisé une carte d'identité roumaine falsifiée",
+          "summary": "Au poste-frontière de Medyka, le 27 juillet 2026, les gardes-frontières ont repéré une ressortissante ukrainienne qui a utilisé une carte d'identité roumaine falsifiée. La femme a reconnu n'avoir jamais été en Roumanie. L'usage d'un document d'identité d'autrui ou falsifié entraîne une responsabilité pénale et des conséquences sur le séjour."
+        }
+      }
+    },
+    {
+      "id": "2026-07-28-sg-krakow-ukraina-zobowiazanie",
+      "added": "2026-07-28",
+      "category": "Urzędy",
+      "scope": "PL",
+      "source_name": "Straż Graniczna (strazgraniczna.pl)",
+      "author": "Komenda Główna Straży Granicznej",
+      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16034,Obywatel-Ukrainy-zobowiazany-do-powrotu.html",
+      "title": "Kraków: obywatel Ukrainy zobowiązany do powrotu po kontroli legalności pobytu",
+      "summary": "Funkcjonariusze Placówki SG w Krakowie skontrolowali legalność pobytu 42-letniego obywatela Ukrainy, który nie miał przy sobie dokumentów tożsamości — jego dane ustalono na podstawie oświadczenia i zweryfikowano w bazach. W wyniku postępowania wydano decyzję zobowiązującą go do powrotu. Przypomnienie o obowiązku posiadania ważnych dokumentów i legalnej podstawy pobytu.",
+      "t": {
+        "en": {
+          "title": "Kraków: Ukrainian national ordered to return after a residence-legality check",
+          "summary": "Border Guard officers in Kraków checked the residence legality of a 42-year-old Ukrainian national who had no identity documents on him — his details were established from his statement and verified against databases. As a result, a return decision was issued. A reminder of the obligation to hold valid documents and a legal basis for stay."
+        },
+        "es": {
+          "title": "Cracovia: un ciudadano ucraniano obligado a regresar tras un control de legalidad de residencia",
+          "summary": "Agentes de la Guardia de Fronteras en Cracovia controlaron la legalidad de la residencia de un ciudadano ucraniano de 42 años que no llevaba documentos de identidad; sus datos se establecieron a partir de su declaración y se verificaron en bases de datos. Como resultado se dictó una decisión de retorno. Un recordatorio de la obligación de portar documentos válidos y una base legal de estancia."
+        },
+        "uk": {
+          "title": "Краків: громадянина України зобов'язали повернутися після перевірки законності перебування",
+          "summary": "Прикордонники підрозділу в Кракові перевірили законність перебування 42-річного громадянина України, який не мав при собі документів, що посвідчують особу — його дані встановили за усною заявою та перевірили в базах. За результатами провадження ухвалено рішення про зобов'язання до повернення. Нагадування про обов'язок мати чинні документи та законну підставу перебування."
+        },
+        "ru": {
+          "title": "Краков: гражданина Украины обязали вернуться после проверки законности пребывания",
+          "summary": "Пограничники подразделения в Кракове проверили законность пребывания 42-летнего гражданина Украины, у которого не было при себе документов, удостоверяющих личность — его данные установили по устному заявлению и проверили в базах. По итогам производства принято решение об обязании к возвращению. Напоминание об обязанности иметь действительные документы и законное основание пребывания."
+        },
+        "fr": {
+          "title": "Cracovie : un ressortissant ukrainien contraint au retour après un contrôle de légalité du séjour",
+          "summary": "Les gardes-frontières de Cracovie ont contrôlé la légalité du séjour d'un ressortissant ukrainien de 42 ans qui n'avait aucun document d'identité sur lui — ses données ont été établies à partir de sa déclaration et vérifiées dans les bases de données. À l'issue de la procédure, une décision de retour a été prise. Un rappel de l'obligation de détenir des documents valides et une base légale de séjour."
         }
       }
     }
