@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ankieta — wniosek o kartę pobytu dla członków rodziny (połączenie z rodziną) | COSC</title>
+<meta name="description" content="Wypełnij ankietę do wniosku o zezwolenie na pobyt czasowy w celu połączenia się z rodziną (art. 158–161 ustawy o cudzoziemcach). Dane trafiają bezpiecznie do kancelarii.">
+<link rel="canonical" href="https://cosc.org.pl/wniosek-karta-pobytu-dla-czlonkow-rodziny.html">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="i18n/i18n.css">
+<style>
+:root{
+  --violet:#4636c9; --violet-d:#37248F; --violet-l:#6d6ae0;
+  --red:#E01E37; --gold:#4636c9;
+  --lav:#F4F2FD; --lav-2:#EDE9FB;
+  --ink:#232634; --mut:#6B7080; --line:#E6E2F7;
+  --ok:#2E9E5B; --err:#B33A3A;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'IBM Plex Sans',sans-serif;color:var(--ink);background:var(--lav);line-height:1.6;font-size:16px}
+h1,h2,h3{font-family:'IBM Plex Sans',sans-serif;color:var(--violet);line-height:1.2;font-weight:800}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px}
+
+/* ===== HEADER (pas jak w ofercie) ===== */
+header{background:linear-gradient(120deg,var(--violet-l),var(--violet) 55%,var(--violet-d));padding:14px 0}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;max-width:1120px}
+header .wrap{justify-content:center;gap:18px}
+.emblem{flex:0 0 auto;display:flex;align-items:center}
+.brand{display:flex;flex-direction:column;align-items:center;text-align:center;gap:3px;text-decoration:none;color:#fff}
+.brand .pill{display:inline-block;background:#fff;color:var(--violet);font-weight:800;font-size:12px;letter-spacing:.06em;padding:4px 12px;border-radius:999px}
+.brand .btxt{display:flex;flex-direction:column;align-items:center;line-height:1.25}
+.brand .btxt b{font-size:15px;font-weight:800;color:#fff}
+.brand .btxt small{font-size:11.5px;color:#DCD6FA;font-weight:500}
+.flag-pl{flex:0 0 auto}
+.accent-line{height:3px;background:var(--red)}
+
+/* ===== HERO ===== */
+.hero{background:linear-gradient(180deg,#fff,var(--lav));padding:30px 0 34px;border-bottom:1px solid var(--line)}
+.hero .back{display:inline-block;color:var(--violet);text-decoration:none;font-size:13px;font-weight:700;margin-bottom:14px}
+.hero .back:hover{text-decoration:underline}
+.eyebrow{display:inline-block;font-size:11.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--violet);margin-bottom:10px}
+.hero h1{color:var(--violet);font-size:clamp(26px,4vw,38px);font-weight:800;max-width:760px}
+.hero p{margin-top:12px;color:var(--mut);max-width:640px;font-size:15px}
+
+main{padding:32px 0 60px}
+
+/* ===== PROGRESS ===== */
+.progress{display:flex;gap:4px;margin-bottom:28px;flex-wrap:wrap}
+.progress .dot{flex:1;min-width:60px;text-align:center}
+.progress .dot .num{width:30px;height:30px;border-radius:50%;background:#fff;border:2px solid var(--line);color:var(--mut);font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;transition:.25s}
+.progress .dot .lbl{font-size:10.5px;color:var(--mut);text-transform:uppercase;letter-spacing:.04em;font-weight:600}
+.progress .dot.active .num{background:var(--violet);border-color:var(--violet);color:#fff}
+.progress .dot.done .num{background:var(--ok);border-color:var(--ok);color:#fff}
+.progress .dot.active .lbl{color:var(--violet);font-weight:800}
+
+/* ===== CARD / STEPS ===== */
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:30px 28px;box-shadow:0 6px 26px rgba(75,50,195,.07)}
+.step-panel{display:none}
+.step-panel.active{display:block;animation:fadeIn .3s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.step-panel h2{font-size:23px;margin-bottom:4px;font-weight:800}
+.step-panel .hint{color:var(--mut);font-size:13.5px;margin-bottom:20px}
+
+.field{margin-bottom:18px}
+.field label{display:block;font-size:13.5px;font-weight:700;color:var(--violet);margin-bottom:6px}
+.field label .req{color:var(--red)}
+.field .fh{font-size:12px;color:var(--mut);margin-top:4px}
+.field input[type=text],.field input[type=email],.field input[type=tel],.field input[type=date],.field select,.field textarea{
+  width:100%;padding:11px 13px;border:1.5px solid var(--line);border-radius:9px;font-family:inherit;font-size:14.5px;color:var(--ink);background:#fff;transition:.15s
+}
+.field textarea{min-height:90px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--violet-l);box-shadow:0 0 0 3px rgba(109,84,224,.18)}
+.field input::placeholder,.field textarea::placeholder{color:#9096A8;opacity:1;font-style:italic}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+@media(max-width:600px){.row2,.row3{grid-template-columns:1fr}}
+
+.radiogroup{display:flex;gap:10px;flex-wrap:wrap}
+.radiopill{position:relative}
+.radiopill input{position:absolute;opacity:0;width:100%;height:100%;cursor:pointer;margin:0}
+.radiopill span{display:block;padding:10px 22px;border:1.5px solid var(--line);border-radius:9px;font-size:14px;font-weight:700;color:var(--ink);cursor:pointer;transition:.15s}
+.radiopill input:checked + span{background:var(--violet);border-color:var(--violet);color:#fff}
+.radiopill input:focus-visible + span{box-shadow:0 0 0 3px rgba(109,84,224,.35)}
+
+.consent-box{background:var(--lav);border:1.5px solid var(--line);border-left:4px solid var(--violet);border-radius:12px;padding:18px 20px;font-size:13.5px;color:var(--mut);margin-bottom:18px;line-height:1.6}
+
+.fam-item{border:1.5px dashed var(--line);border-radius:12px;padding:18px;margin-bottom:16px;position:relative;background:var(--lav)}
+.fam-item .fam-title{font-weight:800;color:var(--violet);font-size:14px;margin-bottom:12px}
+.fam-remove{position:absolute;top:14px;right:14px;background:none;border:none;color:var(--err);font-size:13px;font-weight:700;cursor:pointer}
+.btn-add{display:inline-flex;align-items:center;gap:6px;background:none;border:1.5px dashed var(--violet-l);color:var(--violet);font-weight:800;font-size:13.5px;padding:10px 16px;border-radius:9px;cursor:pointer}
+.btn-add:hover{background:rgba(109,84,224,.1)}
+
+.hidden{display:none !important}
+
+.nav-btns{display:flex;justify-content:space-between;margin-top:26px;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:800;font-size:14.5px;padding:13px 26px;border-radius:10px;transition:.2s;cursor:pointer;border:none;font-family:inherit}
+.btn-primary{background:var(--violet);color:#fff}
+.btn-primary:hover{background:var(--violet-d);transform:translateY(-1px)}
+.btn-submit{background:var(--red);color:#fff}
+.btn-submit:hover{background:#c4172e;transform:translateY(-1px)}
+.btn-ghost{background:none;color:var(--mut);border:1.5px solid var(--line)}
+.btn-ghost:hover{border-color:var(--violet);color:var(--violet)}
+.btn:disabled{opacity:.5;cursor:not-allowed;transform:none}
+
+.summary{border:1px solid var(--line);border-radius:12px;padding:4px 0;margin-bottom:20px;background:var(--lav)}
+.summary .srow{display:flex;justify-content:space-between;gap:16px;padding:10px 18px;border-bottom:1px solid var(--line);font-size:13.5px}
+.summary .srow:last-child{border-bottom:none}
+.summary .srow b{color:var(--violet);flex:0 0 46%}
+.summary .srow span{color:var(--mut);text-align:right}
+
+.status-box{border-radius:12px;padding:18px 20px;margin-top:18px;font-size:14px;display:none}
+.status-box.ok{background:rgba(46,158,91,.1);border:1.5px solid var(--ok);color:#1f6b40;display:block}
+.status-box.err{background:rgba(179,58,58,.1);border:1.5px solid var(--err);color:var(--err);display:block}
+
+/* ===== FOOTER (dane z oferty) ===== */
+footer{background:var(--violet-d);color:#CFC7F4;font-size:13px;padding:30px 16px;margin-top:10px}
+footer .wrap{max-width:1120px;display:flex;flex-wrap:wrap;gap:26px;justify-content:space-between}
+footer .fcol{min-width:240px}
+footer .fcol b{color:#fff;display:block;font-weight:800;margin-bottom:6px;font-size:13.5px}
+footer a{color:#DCD6FA;text-decoration:none}
+footer a:hover{text-decoration:underline}
+footer .fbottom{max-width:1120px;margin:22px auto 0;padding-top:16px;border-top:1px solid rgba(255,255,255,.15);text-align:center;color:#A99FE0;font-size:12px}
+
+/* COSC-CANON-HEADER — ujednolicony pasek (wzór: index.html) */
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);position:sticky;top:0;z-index:50;box-shadow:0 2px 12px rgba(19,32,58,.25)}
+.flagbar{height:8px;background:linear-gradient(to bottom,#f5f5f5 50%,#d4213d 50%);border-bottom:1px solid rgba(22,36,76,.18);position:sticky;top:66px;z-index:49}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none}
+.logo .name{color:#fff;font-size:14px;line-height:1.3;font-weight:600;max-width:220px;font-family:'IBM Plex Serif',serif}
+.flag{flex-shrink:0;width:44px;height:29px;border-radius:3px;box-shadow:0 0 0 1px rgba(255,255,255,.4);overflow:hidden;display:flex;align-items:center;justify-content:center}
+.flag-pl{flex-direction:column;width:34px;height:34px;border-radius:6px;margin-left:4px}
+.flag-pl .fw{flex:1;width:100%;background:#f5f5f5}
+.flag-pl .fr{flex:1;width:100%;background:#d4213d}
+.menu{display:flex;gap:24px;align-items:center}
+.menu a{color:#E9ECF3;text-decoration:none;font-size:14px;font-weight:500}
+.menu a:hover{color:#6d6ae0}
+.menu a.on{color:#6d6ae0}
+.lang{display:flex;gap:2px;border:1px solid rgba(255,255,255,.25);border-radius:8px;padding:2px}
+.lang a{padding:4px 8px;font-size:11.5px;font-weight:700;border-radius:6px;text-decoration:none;color:#cfd6e4}
+.lang a.on{background:#4636c9;color:#16244c}
+.burger{display:none;background:none;border:none;color:#fff;font-size:26px;cursor:pointer}
+@media(max-width:900px){
+  header .nav{position:relative;justify-content:center}
+  header .logo{justify-content:center;text-align:center}
+  .lang{position:absolute;right:54px;top:50%;transform:translateY(-50%)}
+  .burger{display:block;position:absolute;right:14px;top:50%;transform:translateY(-50%)}
+  .menu{display:none;position:absolute;top:66px;left:0;right:0;flex-direction:column;gap:0;background:#2f2699;padding:6px 0;box-shadow:0 12px 24px rgba(0,0,0,.25);z-index:48}
+  .menu.open{display:flex}
+  .menu a{padding:13px 22px;width:100%;font-size:15px;border-bottom:1px solid rgba(255,255,255,.08)}
+}
+
+</style>
+<style id="fix-mobilny-2026-07-25">
+/* Poprawka mobilna: flaga PL nie nachodzi na logo, tytul hero nie jest uciety */
+@media(max-width:900px){
+  header .nav{justify-content:flex-start;padding-right:104px;box-sizing:border-box}
+  header .logo{justify-content:flex-start;text-align:left}
+  header .logo .flag-pl{display:flex!important;width:34px;height:34px}
+  header .logo .name{max-width:none}
+  .hero h1{font-size:clamp(23px,6.4vw,44px);overflow-wrap:break-word}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="index.html">
+      <span class="flag flag-pl" aria-label="Polska"><span class="fw"></span><span class="fr"></span></span>
+      <div class="name">Centrum Obsługi<br>Spraw Cudzoziemców</div>
+      <span aria-label="Godło Unii Europejskiej" style="display:inline-flex;align-items:center"><svg width="34" height="34" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" role="img"><rect width="36" height="36" rx="7" fill="#0A2A8C"/><g fill="#F5C518"><path id="euStar" d="M18,4.6 l0.85,1.75 l1.95,0.2 l-1.45,1.32 l0.42,1.9 l-1.77,-1.0 l-1.77,1.0 l0.42,-1.9 l-1.45,-1.32 l1.95,-0.2 Z"/><use href="#euStar" transform="rotate(30 18 18)"/><use href="#euStar" transform="rotate(60 18 18)"/><use href="#euStar" transform="rotate(90 18 18)"/><use href="#euStar" transform="rotate(120 18 18)"/><use href="#euStar" transform="rotate(150 18 18)"/><use href="#euStar" transform="rotate(180 18 18)"/><use href="#euStar" transform="rotate(210 18 18)"/><use href="#euStar" transform="rotate(240 18 18)"/><use href="#euStar" transform="rotate(270 18 18)"/><use href="#euStar" transform="rotate(300 18 18)"/><use href="#euStar" transform="rotate(330 18 18)"/></g></svg></span>
+    </a>
+    <nav class="menu">
+      <a href="cudzoziemcy/">Jestem cudzoziemcem</a>
+      <a href="pracodawcy/">Jestem pracodawcą</a>
+      <a href="aktualnosci.html">Aktualności</a>
+      <a href="kalkulator-90-180.html">Kalkulator 90/180</a>
+      <a href="index.html#kontakt" style="background:#E01E37;color:#fff;padding:8px 16px;border-radius:8px;font-weight:700">Darmowa konsultacja</a>
+    </nav>
+    <div class="lang"><!-- przełącznik języków generuje i18n.js --></div>
+    <button class="burger" aria-label="Menu">☰</button>
+  </div>
+</header>
+<div class="flagbar" aria-hidden="true"></div><div class="accent-line"></div>
+
+<div class="hero"><div class="wrap">
+<a class="back" href="index.html">← Strona główna</a>
+<span class="eyebrow">Ankieta · Karta pobytu dla członków rodziny</span>
+<h1>Ankieta danych do wniosku o pobyt czasowy — połączenie z rodziną</h1>
+<p>Wypełnij formularz raz — przygotujemy Twój wniosek o połączenie z rodziną szybciej i bez błędów. Podstawa prawna: art. 158–161 ustawy z 12.12.2013 r. o cudzoziemcach.</p>
+</div></div>
+
+<main><div class="wrap">
+
+<div class="progress" id="progress"></div>
+
+<form class="card" id="ankieta" novalidate>
+  <input type="hidden" name="rodzaj_wniosku" id="rodzajWniosku">
+
+  <!-- KROK 0: RODO -->
+  <div class="step-panel active" data-step="0">
+    <h2>Zgoda na przetwarzanie danych</h2>
+    <p class="hint">Zanim zaczniemy — potrzebujemy Twojej zgody.</p>
+    <div class="consent-box">
+      Wyrażam zgodę na przetwarzanie moich danych osobowych przez Dariusz Włodarczyk Kancelaria (NIP 1250476187, ul. Kuropatwy 34S, 02-892 Warszawa) w zakresie niezbędnym do przygotowania i złożenia wniosku lub pisma, którego dotyczy niniejsza ankieta — w szczególności w sprawie legalizacji pobytu, pracy lub uzyskania świadczeń bądź zasiłków — oraz do kontaktu w tej sprawie. Zgodę można wycofać w każdej chwili, pisząc na office@cosc.org.pl.
+    </div>
+    <div class="field">
+      <label>Czy wyrażasz zgodę? <span class="req">*</span></label>
+      <div class="radiogroup">
+        <label class="radiopill"><input type="radio" name="rodo_zgoda" value="tak" required><span>Tak, wyrażam zgodę</span></label>
+        <label class="radiopill"><input type="radio" name="rodo_zgoda" value="nie" required><span>Nie</span></label>
+      </div>
+    </div>
+    <div id="rodoWarn" class="status-box err hidden">Niestety bez zgody na przetwarzanie danych osobowych nie możemy przyjąć zgłoszenia i pomóc w złożeniu wniosku. Skontaktuj się z nami bezpośrednio, jeśli masz pytania: <a href="mailto:office@cosc.org.pl">office@cosc.org.pl</a>.</div>
+  </div>
+
+  <!-- KROK 1: DANE OSOBOWE -->
+  <div class="step-panel" data-step="1">
+    <h2>A. Dane osobowe</h2>
+    <p class="hint">Wpisuj dane dokładnie tak, jak są zapisane w paszporcie. Szara podpowiedź w polu znika, gdy zaczniesz pisać.</p>
+    <div class="row2">
+      <div class="field"><label>Imię <span class="req">*</span></label><input type="text" name="imie" placeholder="Pełne imię lub oba imiona — jak w paszporcie" required><div class="fh">Wpisz wszystkie imiona, dokładnie jak w paszporcie.</div></div>
+      <div class="field"><label>Nazwisko <span class="req">*</span></label><input type="text" name="nazwisko" placeholder="Wszystkie człony nazwiska — pełne" required><div class="fh">Jeśli masz nazwisko dwuczłonowe, wpisz oba człony.</div></div>
+    </div>
+    <div class="row2">
+      <div class="field"><label>Data urodzenia <span class="req">*</span></label><input type="date" name="data_urodzenia" required><div class="fh">Format: dzień – miesiąc – rok.</div></div>
+      <div class="field"><label>Płeć <span class="req">*</span></label>
+        <select name="plec" required><option value="">— Proszę wybrać —</option><option>kobieta</option><option>mężczyzna</option></select>
+      </div>
+    </div>
+    <div class="row2">
+      <div class="field"><label>Kraj urodzenia <span class="req">*</span></label><select name="kraj_urodzenia" class="ls-country" required></select><div class="fh">Państwo, w którym się urodziłeś(-aś).</div></div>
+      <div class="field"><label>Narodowość <span class="req">*</span></label><select name="narodowosc" class="ls-nationality" required></select><div class="fh">Zwykle taka sama jak obywatelstwo.</div></div>
+    </div>
+    <div class="row2">
+      <div class="field"><label>Obywatelstwo <span class="req">*</span></label><select name="obywatelstwo" class="ls-citizenship" required></select></div>
+      <div class="field"><label>Stan cywilny <span class="req">*</span></label>
+        <select name="stan_cywilny" required><option value="">— Proszę wybrać —</option>
+          <option>kawaler</option><option>panna</option><option>żonaty</option><option>zamężna</option>
+          <option>wdowiec</option><option>wdowa</option><option>rozwiedziony</option><option>rozwiedziona</option>
+        </select>
+      </div>
+    </div>
+    <div class="row2">
+      <div class="field"><label>Wykształcenie <span class="req">*</span></label>
+        <select name="wyksztalcenie" required><option value="">— Proszę wybrać —</option>
+          <option>brak</option><option>podstawowe</option><option>zawodowe</option><option>średnie</option><option>wyższe</option>
+        </select>
+      </div>
+      <div class="field"><label>Kolor oczu <span class="req">*</span></label>
+        <select name="kolor_oczu" required><option value="">— Proszę wybrać —</option>
+          <option>brązowozielony</option><option>brązowy</option><option>czarny</option><option>czerwony</option><option>niebieski</option>
+          <option>nieokreślony</option><option>piwny</option><option>szaroniebieski</option><option>szarozielony</option><option>szary</option>
+          <option>wielokolorowy</option><option>zielononiebieski</option><option>zielony</option>
+        </select>
+      </div>
+    </div>
+    <div class="row2">
+      <div class="field"><label>Seria i numer paszportu <span class="req">*</span></label><input type="text" name="numer_paszportu" placeholder="np. AB1234567" required><div class="fh">Przepisz dokładnie ze strony ze zdjęciem.</div></div>
+      <div class="field"><label>Data ważności paszportu <span class="req">*</span></label><input type="date" name="waznosc_paszportu" required><div class="fh">Do kiedy paszport jest ważny (data z paszportu).</div></div>
+    </div>
+    <div class="row2">
+      <div class="field"><label>Adres e-mail <span class="req">*</span></label><input type="email" name="email" placeholder="np. jan.kowalski@gmail.com" required><div class="fh">Na ten adres będziemy się z Tobą kontaktować.</div></div>
+      <div class="field"><label>Telefon własny (z kraju pochodzenia, najlepiej z WhatsApp) <span class="req">*</span></label><input type="tel" name="telefon_wlasny" placeholder="Z kierunkowym kraju, np. +57 300 123 4567" required><div class="fh">Najlepiej numer z WhatsApp.</div></div>
+    </div>
+    <div class="field"><label>Telefon polski (numer kupiony w Polsce)</label><input type="tel" name="telefon_pl" placeholder="np. +48 600 100 200"><div class="fh">Zostaw puste, jeśli nie masz jeszcze polskiego numeru.</div></div>
+  </div>
+
+  <!-- KROK 2: DANE CZLONKA RODZINY W RP -->
+  <div class="step-panel" data-step="2">
+    <h2>B. Dane członka rodziny zamieszkującego w RP</h2>
+    <p class="hint">Połączenie z rodziną — art. 158–161 ustawy o cudzoziemcach. Podaj dane osoby, z którą się łączysz, oraz Wasze pokrewieństwo.</p>
+    <div class="field"><label>Województwo miejsca pobytu <span class="req">*</span></label><select name="wojewodztwo_pobytu" class="ls-province" required></select></div>
+    <div class="field"><label>Adres pobytu w Polsce (ulica, kod pocztowy, miasto) <span class="req">*</span></label><input type="text" name="adres_pobytu" placeholder="np. ul. Kwiatowa 5 m. 10, 00-001 Warszawa" required><div class="fh">Adres, pod którym teraz mieszkasz w Polsce.</div></div>
+    <div class="row2">
+      <div class="field"><label>Imię osoby, z którą się łączysz <span class="req">*</span></label><input type="text" name="sponsor_imie" placeholder="Imię członka rodziny w Polsce" required></div>
+      <div class="field"><label>Nazwisko osoby, z którą się łączysz <span class="req">*</span></label><input type="text" name="sponsor_nazwisko" placeholder="Nazwisko członka rodziny w Polsce" required></div>
+    </div>
+    <div class="row2">
+      <div class="field"><label>Obywatelstwo tej osoby <span class="req">*</span></label><select name="sponsor_obywatelstwo" class="ls-citizenship" required></select></div>
+      <div class="field"><label>Wasze pokrewieństwo <span class="req">*</span></label>
+        <select name="pokrewienstwo_ze_sponsorem" required><option value="">— Proszę wybrać —</option><option>Małżonek (związek uznawany przez prawo RP)</option><option>Małoletnie dziecko</option><option>Małoletnie dziecko małżonka</option></select>
+      </div>
+    </div>
+    <div class="field"><label>Tytuł pobytu tej osoby w Polsce <span class="req">*</span></label>
+      <select name="sponsor_tytul_pobytu" required><option value="">— Proszę wybrać —</option>
+        <option>Zezwolenie na pobyt stały</option>
+        <option>Zezwolenie na pobyt rezydenta długoterminowego UE</option>
+        <option>Status uchodźcy</option>
+        <option>Ochrona uzupełniająca</option>
+        <option>Zgoda na pobyt ze względów humanitarnych</option>
+        <option>Min. 2 lata na podstawie zezwoleń na pobyt czasowy (ostatnie min. 1 rok)</option>
+        <option>Niebieska Karta UE / badania naukowe</option>
+        <option>Nie wiem — proszę o poradę</option>
+      </select>
+      <div class="fh">Katalog tytułów osoby łączącej: art. 159 ustawy o cudzoziemcach.</div>
+    </div>
+    <div class="field"><label>Adres zamieszkania tej osoby w Polsce</label><input type="text" name="sponsor_adres" placeholder="Wypełnij, jeśli inny niż Twój"></div>
+  </div>
+
+  <!-- KROK 3: RODZINA -->
+  <div class="step-panel" data-step="3">
+    <h2>C. Członkowie rodziny na terytorium RP</h2>
+    <p class="hint">Czy członkowie Twojej rodziny znajdują się na terytorium Polski?</p>
+    <div class="field">
+      <div class="radiogroup">
+        <label class="radiopill"><input type="radio" name="rodzina_w_pl" value="tak" required><span>Tak</span></label>
+        <label class="radiopill"><input type="radio" name="rodzina_w_pl" value="nie" required><span>Nie</span></label>
+      </div>
+    </div>
+    <div id="famWrap" class="hidden">
+      <div id="famList"></div>
+      <button type="button" class="btn-add" id="famAdd">+ Dodaj członka rodziny</button>
+    </div>
+  </div>
+
+  <!-- KROK 4: HISTORIA POBYTU -->
+  <div class="step-panel" data-step="4">
+    <h2>D. Pobyt na terytorium RP</h2>
+    <div class="row3">
+      <div class="field"><label>Data ostatniego wjazdu do Polski <span class="req">*</span></label><input type="date" name="data_ostatniego_wjazdu" id="dataOstWjazdu" required><div class="fh">Kiedy ostatni raz wjechałeś(-aś) do Polski.</div></div>
+      <div class="field"><label>Liczba dni od ostatniego wjazdu</label><input type="text" name="dni_od_ostatniego_wjazdu" id="dniOdWjazdu" readonly tabindex="-1" placeholder="—"><div class="fh">Policzy się automatycznie.</div></div>
+      <div class="field"><label>Podstawa pobytu <span class="req">*</span></label>
+        <select name="podstawa_pobytu" required><option value="">— Proszę wybrać —</option>
+          <option>Wiza</option><option>Ruch bezwizowy</option><option>Karta pobytu</option><option>Inny dokument</option>
+        </select>
+      </div>
+    </div>
+    <div class="field">
+      <label>Czy złożyłeś(-aś) już wniosek o tymczasową kartę pobytu w Polsce? <span class="req">*</span></label>
+      <div class="radiogroup">
+        <label class="radiopill"><input type="radio" name="wniosek_zlozony" value="tak" required><span>Tak</span></label>
+        <label class="radiopill"><input type="radio" name="wniosek_zlozony" value="nie" required><span>Nie</span></label>
+      </div>
+    </div>
+    <div id="wniosekZlozonyBox" class="hidden row2">
+      <div class="field"><label>W jakim województwie złożono wniosek?</label><select name="wojewodztwo_wniosku" class="ls-province"></select></div>
+      <div class="field"><label>Data złożenia wniosku</label><input type="date" name="data_zlozenia_wniosku"></div>
+    </div>
+    <div class="field">
+      <label>Czy byłeś(-aś) w Polsce w przeszłości (wcześniejsze pobyty)?</label>
+      <div class="radiogroup">
+        <label class="radiopill"><input type="radio" name="wczesniejsze_pobyty" value="tak"><span>Tak</span></label>
+        <label class="radiopill"><input type="radio" name="wczesniejsze_pobyty" value="nie"><span>Nie</span></label>
+      </div>
+    </div>
+    <div class="field">
+      <label>Podróże i pobyty na terytorium RP</label>
+      <div id="rpList"></div>
+      <button type="button" class="btn-add" id="rpAdd">+ Dodaj pobyt</button>
+    </div>
+    <div class="field">
+      <label>Podróże i pobyty zagraniczne poza terytorium RP w okresie ostatnich 5 lat</label>
+      <div id="zagrList"></div>
+      <button type="button" class="btn-add" id="zagrAdd">+ Dodaj wyjazd</button>
+    </div>
+  </div>
+
+  <!-- KROK 5: PYTANIA DODATKOWE -->
+  <div class="step-panel" data-step="5">
+    <h2>E. Pytania dodatkowe</h2>
+    <p class="hint">Te pytania są wymagane we wniosku urzędowym — odpowiadaj zgodnie z prawdą.</p>
+    <div class="field">
+      <label>Czy jest Pan(i) zatrzymany(-a), umieszczony(-a) w strzeżonym ośrodku lub areszcie dla cudzoziemców, objęty(-a) zakazem opuszczania kraju, odbywa karę pozbawienia wolności lub zastosowano wobec Pana(i) tymczasowe aresztowanie? <span class="req">*</span></label>
+      <div class="radiogroup">
+        <label class="radiopill"><input type="radio" name="q_zatrzymanie" value="tak" required><span>Tak</span></label>
+        <label class="radiopill"><input type="radio" name="q_zatrzymanie" value="nie" required><span>Nie</span></label>
+      </div>
+    </div>
+    <div class="field"><label>Jeśli tak — kiedy, za jaki czyn, jaki zapadł wyrok i czy został wykonany?</label><textarea name="q_zatrzymanie_opis" placeholder="Wypełnij tylko, jeśli powyżej zaznaczono „Tak”. Napisz krótko: kiedy, za co, jaki wyrok."></textarea></div>
+    <div class="field">
+      <label>Czy był(a) Pan(i) karany(-a) sądownie na terytorium RP? <span class="req">*</span></label>
+      <div class="radiogroup">
+        <label class="radiopill"><input type="radio" name="q_karany" value="tak" required><span>Tak</span></label>
+        <label class="radiopill"><input type="radio" name="q_karany" value="nie" required><span>Nie</span></label>
+      </div>
+    </div>
+    <div class="field">
+      <label>Czy toczy się przeciwko Panu(i) postępowanie karne lub w sprawach o wykroczenia na terytorium RP? <span class="req">*</span></label>
+      <div class="radiogroup">
+        <label class="radiopill"><input type="radio" name="q_postepowanie" value="tak" required><span>Tak</span></label>
+        <label class="radiopill"><input type="radio" name="q_postepowanie" value="nie" required><span>Nie</span></label>
+      </div>
+    </div>
+    <div class="field">
+      <label>Czy ciążą na Panu(i) zobowiązania z orzeczeń sądowych, postanowień i decyzji administracyjnych (w tym alimentacyjne) na terytorium RP lub poza nim? <span class="req">*</span></label>
+      <div class="radiogroup">
+        <label class="radiopill"><input type="radio" name="q_zobowiazania" value="tak" required><span>Tak</span></label>
+        <label class="radiopill"><input type="radio" name="q_zobowiazania" value="nie" required><span>Nie</span></label>
+      </div>
+    </div>
+  </div>
+
+  <!-- KROK 6: PODSUMOWANIE -->
+  <div class="step-panel" data-step="6">
+    <h2>Podsumowanie i wysyłka</h2>
+    <p class="hint">Sprawdź podstawowe dane przed wysłaniem. W kolejnym kroku skontaktujemy się z Tobą, aby wspólnie wypełnić i złożyć wniosek w portalu MOS.</p>
+    <div class="summary" id="summary"></div>
+    <div class="field"><label>Uwagi dodatkowe (opcjonalnie)</label><textarea name="uwagi" placeholder="Jeśli chcesz coś dodać lub o coś zapytać, napisz tutaj."></textarea></div>
+    <div class="consent-box">Po wysłaniu ankiety prześlij nam też skan paszportu (wszystkie zapisane strony) na WhatsApp: <strong>+48 539 999 549</strong> lub e-mailem: <strong>office@cosc.org.pl</strong>.</div>
+    <div id="statusBox" class="status-box"></div>
+  </div>
+
+  <div class="nav-btns">
+    <button type="button" class="btn btn-ghost" id="prevBtn">← Wstecz</button>
+    <button type="button" class="btn btn-primary" id="nextBtn">Dalej →</button>
+    <button type="button" class="btn btn-submit hidden" id="submitBtn">Wyślij ankietę</button>
+  </div>
+
+</form>
+
+</div></main>
+
+<footer>
+  <div class="wrap">
+    <div class="fcol">
+      <b>Dariusz Włodarczyk Kancelaria</b>
+      Prawnik — specjalizacja: legalizacja pobytu i pracy cudzoziemców<br>
+      ul. Kuropatwy 34 S, 02-892 Warszawa<br>
+      ul. Fabryczna 18, 05-077 Warszawa<br>
+      tel. <a href="tel:+48539999549">+48 539 999 549</a>, <a href="tel:+48790299935">+48 790 299 935</a><br>
+      NIP 1250476187
+    </div>
+    <div class="fcol">
+      <b>Kontakt</b>
+      <a href="mailto:office@cosc.org.pl">office@cosc.org.pl</a><br>
+      <a href="mailto:dariusz.w@kancelaria-trc.pl">dariusz.w@kancelaria-trc.pl</a><br>
+      <a href="https://cosc.org.pl">cosc.org.pl</a><br>
+      e-Doręczenia: AE:PL-60844-48896-IAUEF-28
+    </div>
+  </div>
+  <div class="fbottom">© Dariusz Włodarczyk Kancelaria 2026 · Centrum Obsługi Spraw Cudzoziemców</div>
+</footer>
+
+<script src="ankieta-listy.js"></script>
+<script>
+/* ================== KONFIGURACJA ================== */
+// TODO(Dariusz): po wdrożeniu Google Apps Script wklej tutaj adres URL Web Appu (patrz instrukcja).
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwC7lGyiNjMGYV4ihMOXK4lfqRYeW7DSDA4673qWpANoIm26_30qNiRT0jODZpNbhWw/exec";
+/* ====== WARIANTY WNIOSKU (tytuł zależny od ?wniosek=) ====== */
+const WNIOSEK_WARIANTY = {
+  'pobyt-praca': {h1:'Ankieta danych do wniosku o zezwolenie na pobyt czasowy i pracę', e:'Pobyt czasowy i praca', title:'Ankieta — zezwolenie na pobyt czasowy i pracę | COSC Centrum Obsługi Spraw Cudzoziemców', name:'Pobyt czasowy i praca'},
+  'niebieska-karta': {h1:'Ankieta danych do wniosku o Niebieską Kartę UE', e:'Niebieska Karta UE', title:'Ankieta — Niebieska Karta UE | COSC Centrum Obsługi Spraw Cudzoziemców', name:'Niebieska Karta UE'},
+  'pobyt-staly': {h1:'Ankieta danych do wniosku o pobyt stały / pobyt rezydenta długoterminowego UE', e:'Pobyt stały / rezydent', title:'Ankieta — pobyt stały / rezydent długoterminowy UE | COSC', name:'Pobyt stały / rezydent długoterminowy UE'},
+  'praca': {h1:'Ankieta — legalna praca cudzoziemca (zezwolenie na pracę / oświadczenie)', e:'Legalna praca cudzoziemca', title:'Ankieta — legalna praca cudzoziemca, zezwolenie na pracę | COSC', name:'Zezwolenie na pracę / oświadczenie'},
+  'zasilek': {h1:'Ankieta — pomoc w uzyskaniu świadczenia lub zasiłku dla cudzoziemca', e:'Świadczenie / zasiłek dla cudzoziemca', title:'Ankieta — zasiłek i świadczenia dla cudzoziemca | COSC', name:'Świadczenie / zasiłek', zasilek:true}
+};
+const SWIADCZENIE_MAP = {
+  'zus':'Zasiłek chorobowy / macierzyński / opiekuńczy (ZUS)',
+  '800plus':'800+ / świadczenia rodzinne',
+  'bezrobocie':'Zasiłek dla bezrobotnych',
+  'pomoc-spoleczna':'Pomoc społeczna'
+};
+let FORM_NAME = "Karta pobytu — połączenie z rodziną (art. 158–161)";
+(function initWariant(){
+  const qs = new URLSearchParams(location.search);
+  const w = (qs.get('wniosek')||'').toLowerCase();
+  const v = WNIOSEK_WARIANTY[w];
+  const rw = document.getElementById('rodzajWniosku');
+  if(v){
+    FORM_NAME = v.name;
+    document.title = v.title;
+    const h1 = document.querySelector('.hero h1'); if(h1) h1.textContent = v.h1;
+    const eb = document.querySelector('.hero .eyebrow'); if(eb) eb.textContent = 'Ankieta · ' + v.e;
+    if(rw) rw.value = v.name;
+    if(v.zasilek){
+      const sf = document.getElementById('swiadczenieField');
+      if(sf){
+        sf.style.display='';
+        const sel = sf.querySelector('select');
+        if(sel){
+          sel.setAttribute('required','required');
+          const s = (qs.get('swiadczenie')||'').toLowerCase();
+          if(SWIADCZENIE_MAP[s]) sel.value = SWIADCZENIE_MAP[s];
+        }
+      }
+    }
+  } else if(rw){ rw.value = FORM_NAME; }
+})();
+
+/* ================== SŁOWNIKI ================== */
+const COUNTRIES = ["Afganistan","Albania","Algieria","Andora","Angola","Antigua i Barbuda","Argentyna","Armenia","Australia","Austria","Azerbejdżan","Bahamy","Bahrajn","Bangladesz","Barbados","Białoruś","Belgia","Belize","Benin","Bhutan","Boliwia","Bośnia i Hercegowina","Botswana","Brazylia","Brunei","Bułgaria","Burkina Faso","Burundi","Chile","Chiny","Chorwacja","Cypr","Czad","Czechy","Dania","Kongo","Dominikana","Dominica","Dżibuti","Egipt","Ekwador","Erytrea","Estonia","Eswatini","Etiopia","Fidżi","Filipiny","Finlandia","Francja","Gabon","Gambia","Ghana","Grecja","Grenada","Gruzja","Gujana","Haiti","Holandia","Honduras","Indie","Indonezja","Irak","Iran","Irlandia","Islandia","Izrael","Jamajka","Japonia","Jemen","Kambodża","Kamerun","Kanada","Katar","Kazachstan","Kenia","Kirgistan","Kiribati","Kolumbia","Komory","Demokratyczna Republika Konga","Korea Północna","Korea Południowa","Kostaryka","Kuba","Kuwejt","Laos","Lesotho","Liban","Liberia","Libia","Liechtenstein","Litwa","Luksemburg","Łotwa","Macedonia","Madagaskar","Malawi","Malediwy","Malezja","Mali","Malta","Maroko","Mauretania","Mauritius","Meksyk","Mikronezja","Mołdawia","Monako","Mongolia","Mozambik","Namibia","Nauru","Nepal","Niemcy","Nigeria","Nikaragua","Norwegia","Oman","Pakistan","Palau","Panama","Papua-Nowa Gwinea","Paragwaj","Peru","Polska","Portugalia","Republika Południowej Afryki","Rosja","Rumunia","Rwanda","Saint Kitts i Nevis","Saint Lucia","Saint Vincent i Grenadyny","Salwador","Samoa","San Marino","Senegal","Serbia","Seszele","Sierra Leone","Singapur","Słowacja","Słowenia","Somalia","Sri Lanka","Stany Zjednoczone","Suazi","Sudan","Sudan Południowy","Surinam","Syria","Szwajcaria","Szwecja","Tadżykistan","Tajlandia","Tanzania","Timor Wschodni","Togo","Tonga","Trynidad i Tobago","Tunezja","Turcja","Turkmenistan","Tuvalu","Ukraina","Urugwaj","Uzbekistan","Vanuatu","Watykan","Wenezuela","Wielka Brytania","Wietnam","Włochy","Wybrzeże Kości Słoniowej","Wyspy Marshalla","Wyspy Salomona","Zambia","Zimbabwe"];
+
+const NATIONALITIES = ["afgańska","albańska","algierska","andorska","angolska","antigua i barbudzka","argentyńska","ormiańska","australijska","austriacka","azerbejdżańska","bahamska","bahrajska","bangladeska","barbadońska","białoruska","belgijska","belizeńska","benijska","bhutańska","boliwijska","bośniacka","botswańska","brazylijska","brunejska","bułgarska","burkińska","burundijska","chilijska","chińska","chorwacka","cypryjska","czadzka","czeska","duńska","kongijska","dominikańska","dżibutyjska","egipska","ekwadorska","erytrejska","estońska","eswatyńska","etiopska","fidżyjska","filipińska","fińska","francuska","gabońska","gambijska","ghańska","grecka","grenadyjska","gruzińska","gujańska","haitańska","holenderska","honduraska","indyjska","indonezyjska","iracka","irańska","irlandzka","islandzka","izraelska","jamajska","japońska","jemeńska","kambodżańska","kameruńska","kanadyjska","katarska","kazachska","kenijska","kirgijska","kiribatyjska","kolumbijska","komoryjska","północnokoreańska","południowokoreańska","kostarykańska","kubańska","kuwejska","laotańska","lesothijska","libańska","liberyjska","libijska","liechtensteińska","litewska","luksemburska","łotewska","macedońska","madagaskarska","malawijska","malediwska","malezyjska","malijska","maltańska","marokańska","mauretańska","maurytyjska","meksykańska","mikronezyjska","mołdawska","monacka","mongolska","mozambijska","namibijska","nauruńska","nepalska","niemiecka","nigeryjska","nikaraguańska","norweska","omańska","pakistańska","palauańska","panamska","papuaska","paragwajska","peruwiańska","polska","portugalska","południowoafrykańska","rosyjska","rumuńska","rwandyjska","saint kitts i neviska","saint lucijska","saint vincent i grenadyńska","salwadorska","samoańska","sanmarińska","senegalska","serbska","seszelska","sierraleońska","singapurska","słowacka","słoweńska","somalijska","srilankijska","amerykańska","suazyjska","sudańska","południowosudańska","surinamska","syryjska","szwajcarska","szwedzka","tadżycka","tajska","tanzańska","timorska","togijska","tongijska","trynidadzka","tunezyjska","turecka","turkmeńska","tuvalijska","ukraińska","urugwajska","uzbecka","vanuatuańska","watykańska","wenezuelska","brytyjska","wietnamska","włoska","iworyjska","marshalska","salomońska","zambijska","zimbabweńska"];
+
+const CITIZENSHIPS = ["afgańskie","albańskie","algierskie","andorskie","angolskie","antigua i barbudzkie","argentyńskie","ormiańskie","australijskie","austriackie","azerbejdżańskie","bahamskie","bahrajskie","bangladeskie","barbadońskie","białoruskie","belgijskie","belizeńskie","benijskie","bhutańskie","boliwijskie","bośniackie","botswańskie","brazylijskie","brunejskie","bułgarskie","burkińskie","burundijskie","chilijskie","chińskie","chorwackie","cypryjskie","czadzkie","czeskie","duńskie","kongijskie","dominikańskie","dżibutyjskie","egipskie","ekwadorskie","erytrejskie","estońskie","eswatyńskie","etiopskie","fidżyjskie","filipińskie","fińskie","francuskie","gabońskie","gambijskie","ghańskie","greckie","grenadyjskie","gruzińskie","gujańskie","haitańskie","holenderskie","honduraskie","indyjskie","indonezyjskie","irackie","irańskie","irlandzkie","islandzkie","izraelskie","jamajskie","japońskie","jemeńskie","kambodżańskie","kameruńskie","kanadyjskie","katarskie","kazachskie","kenijskie","kirgijskie","kiribatyjskie","kolumbijskie","komoryjskie","północnokoreańskie","południowokoreańskie","kostarykańskie","kubańskie","kuwejckie","laotańskie","lesothijskie","libańskie","liberyjskie","libijskie","liechtensteińskie","litewskie","luksemburskie","łotewskie","macedońskie","madagaskarskie","malawijskie","malediwskie","malezyjskie","malijskie","maltańskie","marokańskie","mauretańskie","maurytyjskie","meksykańskie","mikronezyjskie","mołdawskie","monackie","mongolskie","mozambijskie","namibijskie","nauruńskie","nepalskie","niemieckie","nigeryjskie","nikaraguańskie","norweskie","omańskie","pakistańskie","palauańskie","panamskie","papuaskie","paragwajskie","peruwiańskie","polskie","portugalskie","południowoafrykańskie","rosyjskie","rumuńskie","rwandyjskie","saint kitts i neviskie","saint lucijskie","saint vincent i grenadyńskie","salwadorskie","samoańskie","sanmarińskie","senegalskie","serbskie","seszelskie","sierraleońskie","singapurskie","słowackie","słoweńskie","somalijskie","srilankijskie","amerykańskie","suazyjskie","sudańskie","południowosudańskie","surinamskie","syryjskie","szwajcarskie","szwedzkie","tadżyckie","tajskie","tanzańskie","timorskie","togijskie","tongijskie","trynidadzkie","tunezyjskie","tureckie","turkmeńskie","tuvalijskie","ukraińskie","urugwajskie","uzbeckie","vanuatuańskie","watykańskie","wenezuelskie","brytyjskie","wietnamskie","włoskie","iworyjskie","marshalskie","salomońskie","zambijskie","zimbabweńskie"];
+
+const PROVINCES = ["Dolnośląskie","Kujawsko-pomorskie","Lubelskie","Lubuskie","Łódzkie","Małopolskie","Mazowieckie","Opolskie","Podkarpackie","Podlaskie","Pomorskie","Śląskie","Świętokrzyskie","Warmińsko-mazurskie","Wielkopolskie","Zachodniopomorskie"];
+
+const KINSHIP = ["Babcia","Brat","Bratanek","Bratanica","Bratowa","Ciotka","Córka","Syn","Dziadek","Kuzyn","Kuzynka","Matka","Ojciec","Partner/Partnerka","Pasierb","Pasierbica","Prawnuczka","Prawnuk","Siostra","Siostrzenica","Siostrzeniec","Stryjek","Stryjenka","Teść","Teściowa","Wnuczka","Współmałżonek (mąż, żona)","Wujek","Zięć"];
+
+function curLang(){ try{ return (window.COSCi18n&&window.COSCi18n.current&&window.COSCi18n.current())||((document.documentElement.getAttribute('lang')||'pl').slice(0,2)); }catch(e){ return 'pl'; } }
+function T(){ return (window.FORM_L10N&&window.FORM_L10N[curLang()])||(window.FORM_L10N&&window.FORM_L10N.pl)||null; }
+function fillSelect(sel, list){
+  const t = T();
+  sel.innerHTML = '<option value="">'+(t?t.select:'— Proszę wybrać —')+'</option>' + list.map(v=>`<option>${v}</option>`).join('');
+}
+function refillStaticSelects(){
+  const t = T(); const lang = curLang();
+  const countryL = (lang==='pl'||!t) ? COUNTRIES : t.countries;
+  document.querySelectorAll('.ls-country').forEach(s=>fillSelect(s, countryL));
+  document.querySelectorAll('.ls-nationality').forEach(s=>fillSelect(s, (lang==='pl'||!t)?NATIONALITIES:t.countries));
+  document.querySelectorAll('.ls-citizenship').forEach(s=>fillSelect(s, (lang==='pl'||!t)?CITIZENSHIPS:t.countries));
+  document.querySelectorAll('.ls-province').forEach(s=>fillSelect(s, PROVINCES));
+}
+refillStaticSelects();
+
+/* ================== KROKI / NAWIGACJA ================== */
+const form = document.getElementById('ankieta');
+const panels = [...form.querySelectorAll('.step-panel')];
+const progressEl = document.getElementById('progress');
+const stepLabels = ["Zgoda","Dane","Rodzina w RP","Rodzina","Historia","Pytania","Wyślij"];
+let current = 0;
+
+function renderProgress(){
+  const labels = (T() && T().steps) || stepLabels;
+  progressEl.innerHTML = labels.map((lbl,i)=>`
+    <div class="dot ${i===current?'active':(i<current?'done':'')}">
+      <div class="num">${i<current?'✓':i+1}</div>
+      <div class="lbl">${lbl}</div>
+    </div>`).join('');
+}
+
+function showStep(i){
+  panels.forEach(p=>p.classList.toggle('active', +p.dataset.step === i));
+  document.getElementById('prevBtn').disabled = i===0;
+  document.getElementById('nextBtn').classList.toggle('hidden', i===panels.length-1);
+  document.getElementById('submitBtn').classList.toggle('hidden', i!==panels.length-1);
+  if(i===panels.length-1) buildSummary();
+  renderProgress();
+  window.scrollTo({top: form.offsetTop - 20, behavior:'smooth'});
+}
+
+function validateStep(i){
+  const panel = panels[i];
+  const invalid = panel.querySelector(':invalid');
+  if(invalid){ panel.querySelector('input,select,textarea').reportValidity ? invalid.reportValidity() : null; invalid.focus(); return false; }
+  if(i===0){
+    const val = panel.querySelector('input[name=rodo_zgoda]:checked');
+    const warn = document.getElementById('rodoWarn');
+    if(val && val.value==='nie'){ warn.classList.remove('hidden'); return false; }
+    warn.classList.add('hidden');
+  }
+  return true;
+}
+
+function goNext(){
+  if(!validateStep(current)) return;
+  current = Math.min(current+1, panels.length-1);
+  showStep(current);
+}
+function goPrev(){
+  current = Math.max(current-1, 0);
+  showStep(current);
+}
+showStep(0); renderProgress();
+
+/* pokaż/ukryj sekcje warunkowe */
+form.addEventListener('change', e=>{
+  if(e.target.name === 'rodzina_w_pl'){
+    document.getElementById('famWrap').classList.toggle('hidden', e.target.value !== 'tak');
+    if(e.target.value === 'tak' && document.getElementById('famList').children.length === 0) addFamilyMember();
+  }
+  if(e.target.name === 'wniosek_zlozony'){
+    document.getElementById('wniosekZlozonyBox').classList.toggle('hidden', e.target.value !== 'tak');
+  }
+});
+
+/* ================== RODZINA (dynamiczne pola) ================== */
+let famCount = 0;
+const MAX_FAM = 6;
+function addFamilyMember(){
+  if(famCount >= MAX_FAM) return;
+  famCount++;
+  const idx = famCount;
+  const t = T() || (window.FORM_L10N&&window.FORM_L10N.pl) || {};
+  const lang = curLang();
+  const div = document.createElement('div');
+  div.className = 'fam-item';
+  div.dataset.idx = idx;
+  div.innerHTML = `
+    <button type="button" class="fam-remove">${t.remove||'Usuń ✕'}</button>
+    <div class="fam-title">${(t.famMember||'Członek rodziny')} ${idx}</div>
+    <div class="row3">
+      <div class="field"><label>${t.lblSex||'Płeć'}</label><select name="fam_plec_${idx}"><option value="">${t.dash||'—'}</option><option>${t.woman||'kobieta'}</option><option>${t.man||'mężczyzna'}</option></select></div>
+      <div class="field"><label>${t.lblBirth||'Data urodzenia'}</label><input type="date" name="fam_data_ur_${idx}"></div>
+      <div class="field"><label>${t.lblKinship||'Stopień pokrewieństwa'}</label><select name="fam_pokrewienstwo_${idx}"></select></div>
+    </div>
+    <div class="row3">
+      <div class="field"><label>${t.lblCit||'Obywatelstwo'}</label><select name="fam_obywatelstwo_${idx}" class="ls-citizenship"></select></div>
+      <div class="field"><label>${t.lblApply||'Ubiega się o pobyt czasowy?'}</label><select name="fam_pobyt_${idx}"><option value="">${t.dash||'—'}</option><option>${t.yes||'Tak'}</option><option>${t.no||'Nie'}</option></select></div>
+      <div class="field"><label>${t.lblDep||'Na utrzymaniu wnioskodawcy?'}</label><select name="fam_utrzymanie_${idx}"><option value="">${t.dash||'—'}</option><option>${t.yes||'Tak'}</option><option>${t.no||'Nie'}</option></select></div>
+    </div>`;
+  document.getElementById('famList').appendChild(div);
+  fillSelect(div.querySelector('.ls-citizenship'), (lang==='pl'||!t.countries)?CITIZENSHIPS:t.countries);
+  fillSelect(div.querySelector(`[name=fam_pokrewienstwo_${idx}]`), t.kinship||KINSHIP);
+  document.getElementById('famAdd').classList.toggle('hidden', famCount>=MAX_FAM);
+}
+
+/* ================== LICZBA DNI OD OSTATNIEGO WJAZDU ================== */
+function recalcLastEntry(){
+  const inp = document.getElementById('dataOstWjazdu');
+  const box = document.getElementById('dniOdWjazdu');
+  if(!inp || !box) return;
+  const d = new Date(inp.value);
+  if(!inp.value || isNaN(d)){ box.value=''; return; }
+  const diff = Math.round((new Date() - d)/86400000);
+  const t = T() || {};
+  box.value = diff >= 0 ? (diff + ' ' + (t.days||'dni')) : (t.future||'data w przyszłości');
+}
+
+/* ================== PODRÓŻE I POBYTY (wiersze z automatyczną liczbą dni) ================== */
+const STAY_BASIS = ["Wiza","Ruch bezwizowy","Karta pobytu","Inny dokument"];
+
+function daysBetween(d1, d2){
+  if(!d1 || !d2) return '';
+  const a = new Date(d1), b = new Date(d2);
+  if(isNaN(a) || isNaN(b)) return '';
+  const diff = Math.round((b - a) / 86400000);
+  return diff >= 0 ? diff : '';
+}
+
+function makeTravelRow(prefix, idx, kind){
+  const t = T() || (window.FORM_L10N&&window.FORM_L10N.pl) || {};
+  const lang = curLang();
+  const stayList = t.stayBasis || STAY_BASIS;
+  const div = document.createElement('div');
+  div.className = 'fam-item';
+  div.dataset.idx = idx;
+  const thirdField = kind === 'rp'
+    ? `<div class="field"><label>${t.lblBasis||'Podstawa pobytu'}</label><select name="${prefix}_podstawa_${idx}"><option value="">${t.dash||'—'}</option>${stayList.map(o=>`<option>${o}</option>`).join('')}</select></div>`
+    : `<div class="field"><label>${t.lblCountry||'Państwo'}</label><select name="${prefix}_panstwo_${idx}" class="ls-country-row"></select></div>`;
+  div.innerHTML = `
+    <button type="button" class="fam-remove">${t.remove||'Usuń ✕'}</button>
+    <div class="row3">
+      <div class="field"><label>${t.lblEntry||'Data wjazdu'}</label><input type="date" name="${prefix}_wjazd_${idx}"></div>
+      <div class="field"><label>${t.lblExit||'Data wyjazdu'}</label><input type="date" name="${prefix}_wyjazd_${idx}"></div>
+      <div class="field"><label>${t.lblDays||'Liczba dni'}</label><input type="text" name="${prefix}_dni_${idx}" readonly tabindex="-1" placeholder="${t.dash||'—'}"></div>
+    </div>
+    <div class="row3">${thirdField}</div>`;
+  if(kind === 'zagr'){ fillSelect(div.querySelector('.ls-country-row'), (lang==='pl'||!t.countries)?COUNTRIES:t.countries); }
+  return div;
+}
+function recalcTravelRow(input){
+  const row = input.closest('.fam-item'); if(!row) return;
+  const wjazd = row.querySelector('[name*="_wjazd_"]');
+  const wyjazd = row.querySelector('[name*="_wyjazd_"]');
+  const dni = row.querySelector('[name*="_dni_"]');
+  if(dni) dni.value = daysBetween(wjazd && wjazd.value, wyjazd && wyjazd.value);
+}
+
+let rpCount = 0, zagrCount = 0;
+const MAX_TRAVEL = 8;
+function addRpRow(){
+  if(rpCount >= MAX_TRAVEL) return;
+  rpCount++;
+  document.getElementById('rpList').appendChild(makeTravelRow('rp', rpCount, 'rp'));
+  document.getElementById('rpAdd').classList.toggle('hidden', rpCount>=MAX_TRAVEL);
+}
+function addZagrRow(){
+  if(zagrCount >= MAX_TRAVEL) return;
+  zagrCount++;
+  document.getElementById('zagrList').appendChild(makeTravelRow('zagr', zagrCount, 'zagr'));
+  document.getElementById('zagrAdd').classList.toggle('hidden', zagrCount>=MAX_TRAVEL);
+}
+// pierwszy wiersz w obu tabelach od razu widoczny
+addRpRow();
+addZagrRow();
+
+/* ================== PODSUMOWANIE ================== */
+function buildSummary(){
+  const fd = new FormData(form);
+  const S = [];
+  const rows = [
+    ['Imię i nazwisko', `${fd.get('imie')||''} ${fd.get('nazwisko')||''}`.trim()],
+    ['Data urodzenia', fd.get('data_urodzenia')||'—'],
+    ['Obywatelstwo', fd.get('obywatelstwo')||'—'],
+    ['E-mail', fd.get('email')||'—'],
+    ['Telefon własny', fd.get('telefon_wlasny')||'—'],
+    ['Telefon polski', fd.get('telefon_pl')||'—'],
+    ['Dni od ostatniego wjazdu', fd.get('dni_od_ostatniego_wjazdu')||'—'],
+    ['Rodzaj wniosku', fd.get('rodzaj_wniosku')||FORM_NAME],
+    ['Łączysz się z', `${fd.get('sponsor_imie')||''} ${fd.get('sponsor_nazwisko')||''}`.trim()||'—'],
+    ['Pokrewieństwo', fd.get('pokrewienstwo_ze_sponsorem')||'—'],
+    ['Tytuł pobytu osoby w RP', fd.get('sponsor_tytul_pobytu')||'—'],
+    ['Województwo pobytu', fd.get('wojewodztwo_pobytu')||'—'],
+    ['Rodzina w Polsce', fd.get('rodzina_w_pl')||'—'],
+  ];
+  document.getElementById('summary').innerHTML = rows.map(([k,v])=>`<div class="srow"><b>${k}</b><span>${v}</span></div>`).join('');
+}
+
+/* ================== WYSYŁKA ================== */
+async function submitForm(){
+  if(!validateStep(0)) { current=0; showStep(0); return; }
+  const btn = document.getElementById('submitBtn');
+  const statusBox = document.getElementById('statusBox');
+  const t = T() || {};
+  btn.disabled = true; btn.textContent = t.sending || 'Wysyłanie…';
+
+  const fd = new FormData(form);
+  const data = { _formularz: FORM_NAME, _data_wyslania: new Date().toISOString() };
+  for(const [k,v] of fd.entries()) data[k] = v;
+
+  // zbierz rodzinę do jednego pola JSON (czytelne w arkuszu)
+  const famItems = [...document.querySelectorAll('#famList .fam-item')].map(div=>{
+    const i = div.dataset.idx;
+    return {
+      plec: data[`fam_plec_${i}`], data_urodzenia: data[`fam_data_ur_${i}`],
+      pokrewienstwo: data[`fam_pokrewienstwo_${i}`], obywatelstwo: data[`fam_obywatelstwo_${i}`],
+      ubiega_pobyt: data[`fam_pobyt_${i}`], na_utrzymaniu: data[`fam_utrzymanie_${i}`]
+    };
+  });
+  data['rodzina_czlonkowie'] = JSON.stringify(famItems);
+
+  // zbierz podróże w RP i wyjazdy zagraniczne do pól JSON (czytelne w arkuszu)
+  const rpItems = [...document.querySelectorAll('#rpList .fam-item')].map(div=>{
+    const i = div.dataset.idx;
+    return { wjazd: data[`rp_wjazd_${i}`], wyjazd: data[`rp_wyjazd_${i}`], dni: data[`rp_dni_${i}`], podstawa: data[`rp_podstawa_${i}`] };
+  });
+  data['pobyty_rp'] = JSON.stringify(rpItems);
+
+  const zagrItems = [...document.querySelectorAll('#zagrList .fam-item')].map(div=>{
+    const i = div.dataset.idx;
+    return { wjazd: data[`zagr_wjazd_${i}`], wyjazd: data[`zagr_wyjazd_${i}`], dni: data[`zagr_dni_${i}`], panstwo: data[`zagr_panstwo_${i}`] };
+  });
+  data['pobyty_zagraniczne'] = JSON.stringify(zagrItems);
+
+  // PDF ankiety wraz ze zgodą RODO: pobranie w przeglądarce + załącznik do arkusza/maili
+  try{
+    if(window.CoscPdf){
+      const pdf = await window.CoscPdf.generate(data);
+      data.pdfBase64 = pdf.base64;
+      data.pdfFilename = pdf.filename;
+    }
+  }catch(pdfErr){ console.warn('Nie udało się wygenerować PDF:', pdfErr); }
+
+  try{
+    if(!APPS_SCRIPT_URL || APPS_SCRIPT_URL.startsWith('WKLEJ_TU')){
+      throw new Error('BRAK_KONFIGURACJI');
+    }
+    await fetch(APPS_SCRIPT_URL, {
+      method:'POST',
+      mode:'no-cors', // Apps Script Web App nie zwraca CORS-friendly odpowiedzi
+      headers:{'Content-Type':'text/plain;charset=utf-8'},
+      body: JSON.stringify(data)
+    });
+    statusBox.className = 'status-box ok';
+    statusBox.textContent = t.msgOk || 'Dziękujemy! Ankieta została wysłana. Kopia PDF Twojej ankiety wraz ze zgodą została pobrana na to urządzenie oraz wysłana na podany adres e-mail. Skontaktujemy się z Tobą, aby wspólnie dokończyć wniosek. Pamiętaj o przesłaniu skanu paszportu na WhatsApp lub e-mail.';
+    form.querySelectorAll('input,select,textarea,button').forEach(el=>el.disabled=true);
+  }catch(err){
+    statusBox.className = 'status-box err';
+    statusBox.innerHTML = t.msgErr || 'Nie udało się wysłać ankiety automatycznie. Skontaktuj się z nami bezpośrednio: <a href="https://wa.me/48539999549">WhatsApp +48 539 999 549</a> lub <a href="mailto:office@cosc.org.pl">office@cosc.org.pl</a>, a Twoje odpowiedzi prześlemy ręcznie.';
+    btn.disabled = false; btn.textContent = 'Spróbuj wysłać ponownie';
+  }
+}
+
+/* ===== Delegacja zdarzeń (odporna na podmianę treści przez i18n) ===== */
+document.addEventListener('click', function(e){
+  const t = e.target.closest('button'); if(!t) return;
+  if(t.id === 'nextBtn'){ goNext(); return; }
+  if(t.id === 'prevBtn'){ goPrev(); return; }
+  if(t.id === 'submitBtn'){ submitForm(); return; }
+  if(t.id === 'famAdd'){ addFamilyMember(); return; }
+  if(t.id === 'rpAdd'){ addRpRow(); return; }
+  if(t.id === 'zagrAdd'){ addZagrRow(); return; }
+  if(t.classList.contains('fam-remove')){ const it = t.closest('.fam-item'); if(it) it.remove(); return; }
+});
+document.addEventListener('change', function(e){
+  const n = (e.target && e.target.name) || '';
+  if(e.target && e.target.id === 'dataOstWjazdu'){ recalcLastEntry(); return; }
+  if(/^(rp|zagr)_(wjazd|wyjazd)_/.test(n)){ recalcTravelRow(e.target); return; }
+});
+/* ===== Lokalizacja treści generowanej przez JS (listy, wiersze, etykiety) ===== */
+function setFieldLabel(name, text){
+  if(!text) return;
+  const sel = document.querySelector('[name="'+name+'"]'); if(!sel) return;
+  const f = sel.closest('.field'); const lab = f && f.querySelector('label'); if(!lab) return;
+  const req = lab.querySelector('.req');
+  lab.textContent = text + (req ? ' ' : '');
+  if(req) lab.appendChild(req);
+}
+function localizeDynamic(){
+  const t = T(); if(!t) return;
+  refillStaticSelects();
+  const pv=document.getElementById('prevBtn'); if(pv&&t.btnPrev) pv.textContent=t.btnPrev;
+  const nx=document.getElementById('nextBtn'); if(nx&&t.btnNext) nx.textContent=t.btnNext;
+  const sb=document.getElementById('submitBtn'); if(sb&&t.btnSubmit) sb.textContent=t.btnSubmit;
+  setFieldLabel('obywatelstwo', t.lblCitMain);
+  setFieldLabel('wojewodztwo_pobytu', t.lblProvRes);
+  setFieldLabel('wojewodztwo_wniosku', t.lblProvApp);
+  // przebuduj wiersze dynamiczne w bieżącym języku (zachowując liczbę wierszy)
+  const famN  = document.querySelectorAll('#famList .fam-item').length;
+  const rpN   = document.querySelectorAll('#rpList .fam-item').length;
+  const zagrN = document.querySelectorAll('#zagrList .fam-item').length;
+  const famList=document.getElementById('famList'), rpList=document.getElementById('rpList'), zagrList=document.getElementById('zagrList');
+  if(famList){ famList.innerHTML=''; famCount=0; const b=document.getElementById('famAdd'); if(b)b.classList.remove('hidden'); }
+  if(rpList){ rpList.innerHTML=''; rpCount=0; const b=document.getElementById('rpAdd'); if(b)b.classList.remove('hidden'); }
+  if(zagrList){ zagrList.innerHTML=''; zagrCount=0; const b=document.getElementById('zagrAdd'); if(b)b.classList.remove('hidden'); }
+  for(let i=0;i<famN;i++)  addFamilyMember();
+  for(let i=0;i<rpN;i++)   addRpRow();
+  for(let i=0;i<zagrN;i++) addZagrRow();
+}
+/* po zmianie języka i18n podmienia innerHTML — przetłumacz treści JS i przywróć stan przycisków kroku */
+document.addEventListener('cosc:langchange', function(){ try{ localizeDynamic(); }catch(e){} try{ showStep(current); }catch(e){} });
+</script>
+<script src="ankieta-pdf.js"></script>
+
+
+<script>
+(function(){var b=document.querySelector('.burger'),m=document.querySelector('.menu');if(b&&m){b.addEventListener('click',function(){m.classList.toggle('open')});m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open')})});}})();
+</script>
+<script src="i18n/i18n.js"></script>
+</body>
+</html>
