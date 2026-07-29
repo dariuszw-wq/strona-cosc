@@ -1,6 +1,39 @@
 {
-  "updated": "2026-07-29T08:45:10+02:00",
+  "updated": "2026-07-29T16:05:56+02:00",
   "items": [
+    {
+      "id": "2026-07-29-cosc-kurierzy-zlecenie-stosunek-pracy-pip",
+      "added": "2026-07-29",
+      "category": "Rynek pracy",
+      "scope": "PL",
+      "source_name": "Materiał własny COSC (inspiracja: GazetaPrawna.pl)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-kurierzy-zlecenie-stosunek-pracy-pip-zus.html",
+      "title": "Umowa zlecenie kuriera a stosunek pracy — czego uczy kontrola PIP i ZUS w Pyszne.pl [materiał własny COSC]",
+      "summary": "Kontrola PIP i ZUS w Pyszne.pl po zapowiedzi zwolnienia ok. 5 tys. kurierów. Kiedy umowa zlecenie jest w rzeczywistości stosunkiem pracy (art. 22 Kodeksu pracy), na czym polega przekwalifikowanie umów, zwolnienia grupowe i składki ZUS, oraz co to oznacza dla legalności pracy i pobytu cudzoziemców-kurierów. Stan prawny: lipiec 2026 (część przepisów do weryfikacji).",
+      "t": {
+        "en": {
+          "title": "A courier's service contract vs. an employment relationship — lessons from the PIP and ZUS inspection at Pyszne.pl [COSC own material]",
+          "summary": "Labour Inspectorate (PIP) and Social Insurance (ZUS) inspection at Pyszne.pl after ~5,000 couriers were told they would be dismissed. When a civil-law contract is in fact an employment relationship (Art. 22 of the Labour Code), what reclassification, collective redundancies and social-security contributions mean, and what it implies for the legality of work and residence of foreign couriers. Legal status: July 2026 (some provisions to be verified)."
+        },
+        "es": {
+          "title": "El contrato de servicios de un repartidor frente a la relación laboral — lecciones de la inspección de la PIP y el ZUS en Pyszne.pl [material propio de COSC]",
+          "summary": "Inspección de la Inspección de Trabajo (PIP) y de la Seguridad Social (ZUS) en Pyszne.pl tras anunciar el despido de unos 5.000 repartidores. Cuándo un contrato civil es en realidad una relación laboral (art. 22 del Código de Trabajo), qué implican la recalificación, los despidos colectivos y las cotizaciones, y qué significa para la legalidad del trabajo y la residencia de los repartidores extranjeros. Situación jurídica: julio de 2026 (algunas disposiciones por verificar)."
+        },
+        "uk": {
+          "title": "Договір доручення кур'єра проти трудових відносин — уроки перевірки PIP і ZUS у Pyszne.pl [власний матеріал COSC]",
+          "summary": "Перевірка Державної інспекції праці (PIP) та Управління соціального страхування (ZUS) у Pyszne.pl після оголошення про звільнення близько 5 тис. кур'єрів. Коли цивільно-правовий договір насправді є трудовими відносинами (ст. 22 Кодексу праці), що означають перекваліфікація договорів, групові звільнення та внески, і що це означає для легальності праці та перебування кур'єрів-іноземців. Правовий стан: липень 2026 (частину норм слід перевірити)."
+        },
+        "ru": {
+          "title": "Договор поручения курьера против трудовых отношений — уроки проверки PIP и ZUS в Pyszne.pl [собственный материал COSC]",
+          "summary": "Проверка Государственной инспекции труда (PIP) и органа социального страхования (ZUS) в Pyszne.pl после объявления об увольнении около 5 тыс. курьеров. Когда гражданско-правовой договор на деле является трудовыми отношениями (ст. 22 Трудового кодекса), что означают переквалификация договоров, групповые увольнения и взносы, и что это значит для легальности работы и пребывания курьеров-иностранцев. Правовое состояние: июль 2026 (часть норм подлежит проверке)."
+        },
+        "fr": {
+          "title": "Le contrat de prestation d'un coursier face à la relation de travail — les leçons du contrôle de la PIP et de la ZUS chez Pyszne.pl [document propre de COSC]",
+          "summary": "Contrôle de l'Inspection du travail (PIP) et de la Sécurité sociale (ZUS) chez Pyszne.pl après l'annonce du licenciement d'environ 5 000 coursiers. Quand un contrat civil est en réalité une relation de travail (art. 22 du Code du travail), ce qu'impliquent la requalification, les licenciements collectifs et les cotisations, et ce que cela signifie pour la légalité du travail et du séjour des coursiers étrangers. État du droit : juillet 2026 (certaines dispositions à vérifier)."
+        }
+      }
+    },
     {
       "id": "2026-07-29-cosc-rezydencja-podatkowa-cudzoziemca",
       "added": "2026-07-29",
