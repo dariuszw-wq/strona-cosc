@@ -412,6 +412,20 @@ section{padding:72px 0}
 .k-info{background:rgba(255,255,255,.05);border:1px solid rgba(70,54,201,.3);border-radius:16px;padding:28px;font-size:14.5px;color:#dce4f5}
 .k-info h3{color:var(--gold-l);font-size:22px;margin-bottom:12px}
 .k-info p{margin-bottom:8px}
+.k-form{margin-top:22px;display:flex;flex-direction:column;gap:14px}
+.k-form label{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:#cdd8ee}
+.k-form input,.k-form select,.k-form textarea{font-family:inherit;font-size:15px;font-weight:400;color:#fff;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);border-radius:10px;padding:12px 14px;transition:.2s}
+.k-form input::placeholder,.k-form textarea::placeholder{color:#8fa0bd}
+.k-form input:focus,.k-form select:focus,.k-form textarea:focus{outline:none;border-color:var(--gold-l);background:rgba(255,255,255,.09)}
+.k-form select option{color:#16244c}
+.k-form textarea{resize:vertical;min-height:96px}
+.k-consent{flex-direction:row!important;align-items:flex-start;gap:10px!important;font-weight:400!important;font-size:12.5px!important;color:#b9c3d6!important}
+.k-consent input{flex:none;width:18px;height:18px;margin-top:1px;padding:0}
+.k-consent a{color:var(--gold-l)}
+.k-send{border:none;cursor:pointer;width:100%;margin-top:2px}
+.k-alt{text-align:center;font-size:13px;color:#b9c3d6;text-decoration:underline;text-underline-offset:3px}
+.k-alt:hover{color:var(--gold-l)}
+.k-or{margin:22px 0 4px;font-size:12.5px;color:#8fa0bd;text-transform:uppercase;letter-spacing:.12em}
 
 footer{background:var(--navy-d);color:#93A0B8;font-size:12.5px;padding:34px 0}
 .f-grid{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
@@ -880,8 +894,9 @@ footer .upd{margin-top:14px;font-size:11.5px;color:#6B7890}
       <div class="price" style="font-size:30px;line-height:1.15">Bezpłatna weryfikacja</div>
       <div class="per">sprawdzimy Twoje dokumenty i szanse — bez zobowiązań</div>
       <p style="margin:16px 0 22px;font-size:14.5px;color:#dce4f5">Jeden błąd we wniosku może oznaczać pozostawienie sprawy bez rozpoznania — i utratę legalnego pobytu. Zanim zdecydujesz się na pełną obsługę, bezpłatnie sprawdzimy Twoje dokumenty i powiemy, czy wniosek przejdzie za pierwszym razem.</p>
-      <a class="btn btn-gold" style="width:100%" href="#kontakt">Umów darmową weryfikację</a>
-      <a class="btn btn-line" style="width:100%;margin-top:10px" href="formularz-pobyt-czasowy-praca-NOWA.html">Wypełnij ankietę (pierwszy krok)</a>
+      <a class="btn btn-gold" style="width:100%" href="formularz-pobyt-czasowy-praca-NOWA.html">Sprawdź swoją sprawę — 2 minuty →</a>
+      <div class="per" style="text-align:center;margin-top:8px">Krótka ankieta, bez zobowiązań. Na jej podstawie ocenimy Twoje szanse.</div>
+      <a class="btn btn-line" style="width:100%;margin-top:14px" href="#kontakt">Wolę od razu porozmawiać</a>
     </div>
   </div>
 </section>
@@ -1038,8 +1053,37 @@ footer .upd{margin-top:14px;font-size:11.5px;color:#6B7890}
 <section class="kontakt" id="kontakt">
   <div class="wrap k-grid">
     <div>
-      <span class="eyebrow">Porozmawiajmy</span>
-      <h2 style="font-size:clamp(26px,3.2vw,38px)">Zacznij sprawę dziś — bez ryzyka odmowy</h2>
+      <span class="eyebrow">Bezpłatnie · bez zobowiązań</span>
+      <h2 style="font-size:clamp(26px,3.2vw,38px)">Bezpłatna ocena Twojej sprawy</h2>
+      <p style="margin-top:10px;font-size:15px;color:#dce4f5">Napisz w kilku zdaniach, z czym masz problem. Odezwiemy się w ciągu 24 godzin — w Twoim języku.</p>
+      <form class="k-form" id="leadForm" novalidate>
+        <label>Imię
+          <input type="text" name="imie" required placeholder="Jak się do Ciebie zwracać?">
+        </label>
+        <label>Telefon / WhatsApp
+          <input type="tel" name="tel" placeholder="+48 …">
+        </label>
+        <label>Język kontaktu
+          <select name="jezyk">
+            <option>Polski</option>
+            <option>English</option>
+            <option>Español</option>
+            <option>Português</option>
+            <option>Українська</option>
+            <option>Français</option>
+          </select>
+        </label>
+        <label>Opisz swoją sprawę
+          <textarea name="opis" rows="4" required placeholder="Np. kończy mi się karta pobytu, zmieniam pracodawcę, dostałem decyzję odmowną…"></textarea>
+        </label>
+        <label class="k-consent">
+          <input type="checkbox" name="zgoda" required>
+          <span>Wyrażam zgodę na kontakt i przetwarzanie moich danych w celu odpowiedzi na zapytanie, zgodnie z <a href="polityka-prywatnosci.html">Polityką prywatności</a>.</span>
+        </label>
+        <button type="submit" class="btn btn-gold k-send">Wyślij przez WhatsApp →</button>
+        <a class="k-alt" id="leadMail" href="mailto:office@cosc.org.pl">Wolę wysłać e-mailem</a>
+      </form>
+      <div class="k-or">lub napisz do nas bezpośrednio</div>
       <div class="k-ways">
         <a class="k-way" href="https://wa.me/48539999549"><div class="ki">✆</div><div><b>WhatsApp — odpowiadamy najszybciej</b><span>+48 539 999 549 · PL / EN / ES / PT / UA / FR</span></div></a>
         <a class="k-way" href="tel:+48539999549"><div class="ki">☎</div><div><b>Telefon</b><span>+48 539 999 549</span></div></a>
@@ -1085,6 +1129,37 @@ document.querySelectorAll('.trust,.path-sec,.ct-demo,.mascot').forEach(el=>io.ob
 (function(){var b=document.querySelector('.burger'),m=document.querySelector('.menu');if(b&&m){b.addEventListener('click',function(){m.classList.toggle('open')});m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open')})});}})();
 (function(){var h=document.querySelector('header');if(!h)return;function set(){document.documentElement.style.setProperty('--hh',h.offsetHeight+'px');}set();window.addEventListener('resize',set);window.addEventListener('load',set);if(document.fonts&&document.fonts.ready){document.fonts.ready.then(set);}})();
 (function(){var more=document.querySelector('.more'),btn=more&&more.querySelector('.more-btn');if(!more||!btn)return;function close(){more.classList.remove('open');btn.setAttribute('aria-expanded','false');}btn.addEventListener('click',function(e){e.stopPropagation();var open=more.classList.toggle('open');btn.setAttribute('aria-expanded',open?'true':'false');});more.querySelectorAll('.more-menu a').forEach(function(a){a.addEventListener('click',close);});document.addEventListener('click',function(e){if(!more.contains(e.target))close();});document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});})();
+// formularz kontaktowy → WhatsApp (prefill) + fallback e-mail
+(function(){
+  var WA='48539999549', MAIL='office@cosc.org.pl';
+  function build(f){
+    var d=new FormData(f);
+    var imie=(d.get('imie')||'').trim();
+    var tel=(d.get('tel')||'').trim();
+    var jezyk=(d.get('jezyk')||'').trim();
+    var opis=(d.get('opis')||'').trim();
+    var t='Dzień dobry';
+    if(imie)t+=', nazywam się '+imie;
+    t+='.\n';
+    if(jezyk)t+='Język kontaktu: '+jezyk+'\n';
+    if(tel)t+='Telefon: '+tel+'\n';
+    if(opis)t+='Moja sprawa: '+opis;
+    return t;
+  }
+  // delegacja na document — odporne na przerenderowanie przez i18n
+  document.addEventListener('submit',function(e){
+    var f=e.target;if(!f||f.id!=='leadForm')return;
+    e.preventDefault();
+    if(!f.imie.value.trim()||!f.opis.value.trim()){f.reportValidity&&f.reportValidity();return;}
+    if(!f.zgoda.checked){f.zgoda.reportValidity&&f.zgoda.reportValidity();return;}
+    window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(build(f)),'_blank');
+  });
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('#leadMail');if(!a)return;
+    var f=document.getElementById('leadForm');if(!f)return;
+    a.href='mailto:'+MAIL+'?subject='+encodeURIComponent('Zapytanie ze strony COSC')+'&body='+encodeURIComponent(build(f));
+  });
+})();
 </script>
 <script src="i18n/i18n.js"></script>
 </body>
