@@ -1,6 +1,39 @@
 {
-  "updated": "2026-07-28T07:06:48+02:00",
+  "updated": "2026-07-29T08:45:10+02:00",
   "items": [
+    {
+      "id": "2026-07-29-cosc-rezydencja-podatkowa-cudzoziemca",
+      "added": "2026-07-29",
+      "category": "Rynek pracy",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-rezydencja-podatkowa-cudzoziemca.html",
+      "title": "Rezydencja podatkowa cudzoziemca w Polsce — reguła 183 dni i ośrodek interesów życiowych [materiał własny COSC]",
+      "summary": "Kiedy cudzoziemiec jest polskim rezydentem podatkowym? Reguła 183 dni, ośrodek interesów życiowych, nieograniczony i ograniczony obowiązek podatkowy, certyfikat rezydencji. Stan prawny 2026.",
+      "t": {
+        "en": {
+          "title": "Tax residency of a foreigner in Poland — the 183-day rule and the centre of vital interests [COSC own material]",
+          "summary": "When is a foreigner a Polish tax resident? The 183-day rule, the centre of vital interests, unlimited and limited tax liability, certificate of residency. Legal status 2026."
+        },
+        "es": {
+          "title": "Residencia fiscal de un extranjero en Polonia — la regla de los 183 días y el centro de intereses vitales [material propio de COSC]",
+          "summary": "¿Cuándo es un extranjero residente fiscal en Polonia? La regla de los 183 días, el centro de intereses vitales, la obligación tributaria ilimitada y limitada, el certificado de residencia. Situación jurídica 2026."
+        },
+        "uk": {
+          "title": "Податкове резидентство іноземця в Польщі — правило 183 днів і центр життєвих інтересів [власний матеріал COSC]",
+          "summary": "Коли іноземець є польським податковим резидентом? Правило 183 днів, центр життєвих інтересів, необмежений та обмежений податковий обов'язок, сертифікат резидентства. Правовий стан 2026."
+        },
+        "ru": {
+          "title": "Налоговое резидентство иностранца в Польше — правило 183 дней и центр жизненных интересов [собственный материал COSC]",
+          "summary": "Когда иностранец является польским налоговым резидентом? Правило 183 дней, центр жизненных интересов, неограниченная и ограниченная налоговая обязанность, сертификат резидентства. Правовое состояние 2026."
+        },
+        "fr": {
+          "title": "Résidence fiscale d'un étranger en Pologne — la règle des 183 jours et le centre des intérêts vitaux [document propre de COSC]",
+          "summary": "Quand un étranger est-il résident fiscal polonais ? La règle des 183 jours, le centre des intérêts vitaux, l'obligation fiscale illimitée et limitée, le certificat de résidence. État du droit 2026."
+        }
+      }
+    },
     {
       "id": "2026-07-27-udsc-pesel-ukr-dokument-podrozy",
       "added": "2026-07-27",
