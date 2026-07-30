@@ -89,27 +89,10 @@ header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);po
   .hero h1{font-size:clamp(23px,6.4vw,44px);overflow-wrap:break-word}
 }
 </style>
+<link rel="stylesheet" href="i18n/i18n.css">
 </head>
 <body>
-<header>
-  <div class="wrap nav">
-    <a class="logo" href="index.html">
-      <span class="flag flag-pl" aria-label="Polska"><span class="fw"></span><span class="fr"></span></span>
-      <div class="name">Centrum Obsługi<br>Spraw Cudzoziemców</div>
-      <span aria-label="Godło Unii Europejskiej" style="display:inline-flex;align-items:center"><svg width="34" height="34" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" role="img"><rect width="36" height="36" rx="7" fill="#0A2A8C"/><g fill="#F5C518"><path id="euStar" d="M18,4.6 l0.85,1.75 l1.95,0.2 l-1.45,1.32 l0.42,1.9 l-1.77,-1.0 l-1.77,1.0 l0.42,-1.9 l-1.45,-1.32 l1.95,-0.2 Z"/><use href="#euStar" transform="rotate(30 18 18)"/><use href="#euStar" transform="rotate(60 18 18)"/><use href="#euStar" transform="rotate(90 18 18)"/><use href="#euStar" transform="rotate(120 18 18)"/><use href="#euStar" transform="rotate(150 18 18)"/><use href="#euStar" transform="rotate(180 18 18)"/><use href="#euStar" transform="rotate(210 18 18)"/><use href="#euStar" transform="rotate(240 18 18)"/><use href="#euStar" transform="rotate(270 18 18)"/><use href="#euStar" transform="rotate(300 18 18)"/><use href="#euStar" transform="rotate(330 18 18)"/></g></svg></span>
-    </a>
-    <nav class="menu">
-      <a href="index.html#uslugi">Usługi</a>
-      <a href="swiadczenia-cudzoziemcy.html">Świadczenia i zasiłki</a>
-      <a href="aktualnosci.html">Aktualności</a>
-      <a href="baza-noclegowa.html">Baza noclegowa</a>
-      <a href="cennik.html">Pakiety</a>
-      <a href="kontakt.html">Kontakt</a>
-    </nav>
-    <div class="lang"><!-- przełącznik języków generuje i18n.js --></div>
-    <button class="burger" aria-label="Menu">☰</button>
-  </div>
-</header>
+<header id="site-header"></header>
 <div class="flagbar" aria-hidden="true"></div>
 
 <div class="hero"><div class="wrap">
@@ -227,5 +210,7 @@ header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);po
 <script>
 (function(){var b=document.querySelector('.burger'),m=document.querySelector('.menu');if(b&&m){b.addEventListener('click',function(){m.classList.toggle('open')});m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open')})});}})();
 </script>
+<script src="site-header.js"></script>
+<script src="i18n/i18n.js"></script>
 </body>
 </html>

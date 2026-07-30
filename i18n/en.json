@@ -2,7 +2,7 @@
   "_meta": {
     "lang": "en",
     "name": "English",
-    "count": 607,
+    "count": 629,
     "filled": 148
   },
   "strings": {
@@ -612,6 +612,28 @@
     "Ustawa z 21 czerwca 2001 r. o dodatkach mieszkaniowych.": "Act of 21 June 2001 on housing supplements.",
     "Ustawa z 12 grudnia 2013 r. o cudzoziemcach (podstawy pobytu, do których odsyła art. 5).": "Act of 12 December 2013 on foreigners (the residence bases referred to in art. 5).",
     "Pomoc społeczna dla cudzoziemca — kto ma prawo | COSC": "Social assistance for a foreigner — who is entitled | COSC",
-    "Którzy cudzoziemcy mają prawo do pomocy społecznej (art. 5 ustawy): zasiłek okresowy, celowy, stały, dodatek mieszkaniowy. Katalog uprawnionych, kryterium dochodowe, podstawa prawna.": "Which foreigners are entitled to social assistance (art. 5 of the Act): periodic, purpose-specific, permanent allowance, housing supplement. Catalogue of the eligible, income criterion, legal basis."
+    "Którzy cudzoziemcy mają prawo do pomocy społecznej (art. 5 ustawy): zasiłek okresowy, celowy, stały, dodatek mieszkaniowy. Katalog uprawnionych, kryterium dochodowe, podstawa prawna.": "Which foreigners are entitled to social assistance (art. 5 of the Act): periodic, purpose-specific, permanent allowance, housing supplement. Catalogue of the eligible, income criterion, legal basis.",
+    "Jestem cudzoziemcem": "I'm a foreigner",
+    "Jestem pracodawcą": "I'm an employer",
+    "Strona sekcji": "Section page",
+    "Wniosek karta pobytu tymczasowego": "Temporary residence card application",
+    "Wniosek karta pobytu stałego": "Permanent residence card application",
+    "Wniosek karta pobytu dla członków rodzin": "Residence card application for family members",
+    "Zasiłek dla cudzoziemca": "Benefits for foreigners",
+    "Cennik dla cudzoziemców": "Pricing for foreigners",
+    "Gry i quizy": "Games and quizzes",
+    "Baza noclegowa": "Accommodation",
+    "Przewodnik po Polsce": "Guide to Poland",
+    "Aktualności": "News",
+    "Legalne zatrudnienie": "Legal employment",
+    "ZUS i rozliczenia": "Social security (ZUS) and settlements",
+    "Obsługa firm": "Business services",
+    "Kontrola i sankcje": "Inspections and sanctions",
+    "Darmowa konsultacja": "Free consultation",
+    "Usługi": "Services",
+    "Świadczenia i zasiłki": "Benefits and allowances",
+    "Kontakt": "Contact",
+    "Jestem cudzoziemcem<span class=\"chev\">▾</span>": "I'm a foreigner<span class=\"chev\">▾</span>",
+    "Jestem pracodawcą<span class=\"chev\">▾</span>": "I'm an employer<span class=\"chev\">▾</span>"
   }
 }

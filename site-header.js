@@ -1,0 +1,199 @@
+/*!
+ * COSC — SILNIK WSPÓLNEGO NAGŁÓWKA (jedno źródło prawdy dla całej strony)
+ * ---------------------------------------------------------------------------
+ * Zamiast utrzymywać ten sam nagłówek/menu w ~80 plikach HTML, każdy plik
+ * zawiera tylko: <header id="site-header"></header>, a TEN plik renderuje menu.
+ * Zmiana menu lub jego tłumaczeń = edycja WYŁĄCZNIE tego pliku.
+ *
+ * Włączenie na stronie (robi skrypt migracyjny zastosuj-silnik-naglowka.py):
+ *   1) w <body> (na górze):  <header id="site-header"></header>
+ *   2) przed i18n.js:        <script src="{PREFIX}site-header.js"></script>
+ *
+ * TŁUMACZENIA: nagłówek ma atrybut data-i18n-skip, więc globalny silnik i18n go
+ * pomija (unika kolizji z dynamiczną, zależną od ścieżki treścią). Nagłówek sam
+ * tłumaczy swoje etykiety, nasłuchując zdarzenia 'cosc:langchange' emitowanego
+ * przez i18n.js. Języki: pl (źródło) + en, es, uk, ru, fr. Przełącznik języka
+ * (<div class="lang">) nadal buduje i18n.js + i18n.css.
+ *
+ * CSS jest samodzielny (namespace .csh-), kolory to literały — nie zależy od
+ * stylów danej strony i z nimi nie koliduje.
+ */
+(function () {
+  'use strict';
+
+  /* ---- prefiks ścieżek: root vs podkatalog (cudzoziemcy/, pracodawcy/) ---- */
+  var P = /\/(cudzoziemcy|pracodawcy)\//.test(location.pathname) ? '../' : '';
+  function url(href) {
+    if (!href) return P || './';
+    if (/^(https?:|mailto:|tel:|#)/.test(href)) return href;
+    return P + href;
+  }
+
+  /* ---- słownik etykiet (JEDNO miejsce edycji tłumaczeń menu) ---- */
+  var L = {
+    'Jestem cudzoziemcem': { en: "I'm a foreigner", es: 'Soy extranjero', uk: 'Я іноземець', ru: 'Я иностранец', fr: 'Je suis étranger' },
+    'Jestem pracodawcą': { en: "I'm an employer", es: 'Soy empleador', uk: 'Я роботодавець', ru: 'Я работодатель', fr: 'Je suis employeur' },
+    'Strona sekcji': { en: 'Section page', es: 'Página de la sección', uk: 'Сторінка розділу', ru: 'Страница раздела', fr: 'Page de la section' },
+    'Nasze usługi': { en: 'Our services', es: 'Nuestros servicios', uk: 'Наші послуги', ru: 'Наши услуги', fr: 'Nos services' },
+    'Wniosek karta pobytu tymczasowego': { en: 'Temporary residence card application', es: 'Solicitud de tarjeta de residencia temporal', uk: 'Заява на карту тимчасового перебування', ru: 'Заявление на карту временного пребывания', fr: 'Demande de carte de séjour temporaire' },
+    'Wniosek karta pobytu stałego': { en: 'Permanent residence card application', es: 'Solicitud de tarjeta de residencia permanente', uk: 'Заява на карту постійного перебування', ru: 'Заявление на карту постоянного пребывания', fr: 'Demande de carte de séjour permanent' },
+    'Wniosek karta pobytu dla członków rodzin': { en: 'Residence card application for family members', es: 'Solicitud de tarjeta de residencia para familiares', uk: 'Заява на карту перебування для членів родини', ru: 'Заявление на карту пребывания для членов семьи', fr: 'Demande de carte de séjour pour les membres de la famille' },
+    'Zasiłek dla cudzoziemca': { en: 'Benefits for foreigners', es: 'Subsidio para extranjeros', uk: 'Допомога для іноземця', ru: 'Пособие для иностранца', fr: 'Allocation pour étrangers' },
+    'Cennik dla cudzoziemców': { en: 'Pricing for foreigners', es: 'Precios para extranjeros', uk: 'Ціни для іноземців', ru: 'Цены для иностранцев', fr: 'Tarifs pour étrangers' },
+    'Gry i quizy': { en: 'Games and quizzes', es: 'Juegos y cuestionarios', uk: 'Ігри та вікторини', ru: 'Игры и викторины', fr: 'Jeux et quiz' },
+    'FAQ': { en: 'FAQ', es: 'FAQ', uk: 'FAQ', ru: 'FAQ', fr: 'FAQ' },
+    'Baza noclegowa': { en: 'Accommodation', es: 'Alojamiento', uk: 'База житла', ru: 'База жилья', fr: 'Hébergement' },
+    'Przewodnik po Polsce': { en: 'Guide to Poland', es: 'Guía de Polonia', uk: 'Путівник по Польщі', ru: 'Путеводитель по Польше', fr: 'Guide de la Pologne' },
+    'Aktualności': { en: 'News', es: 'Noticias', uk: 'Новини', ru: 'Новости', fr: 'Actualités' },
+    'Legalne zatrudnienie': { en: 'Legal employment', es: 'Empleo legal', uk: 'Легальне працевлаштування', ru: 'Легальное трудоустройство', fr: 'Emploi légal' },
+    'ZUS i rozliczenia': { en: 'Social security (ZUS) and settlements', es: 'Seguridad social (ZUS) y liquidaciones', uk: 'ZUS та розрахунки', ru: 'ZUS и расчёты', fr: 'Sécurité sociale (ZUS) et déclarations' },
+    'Obsługa firm': { en: 'Business services', es: 'Servicios para empresas', uk: 'Обслуговування компаній', ru: 'Обслуживание компаний', fr: 'Services aux entreprises' },
+    'Kontrola i sankcje': { en: 'Inspections and sanctions', es: 'Inspecciones y sanciones', uk: 'Контроль та санкції', ru: 'Контроль и санкции', fr: 'Contrôles et sanctions' },
+    'Kalkulator 90/180': { en: '90/180 calculator', es: 'Calculadora 90/180', uk: 'Калькулятор 90/180', ru: 'Калькулятор 90/180', fr: 'Calculateur 90/180' },
+    'Darmowa konsultacja': { en: 'Free consultation', es: 'Consulta gratuita', uk: 'Безкоштовна консультація', ru: 'Бесплатная консультация', fr: 'Consultation gratuite' }
+  };
+
+  /* ---- struktura menu ---- */
+  var MENU = {
+    hubs: [
+      { label: 'Jestem cudzoziemcem', items: [
+        { t: 'Strona sekcji', href: 'cudzoziemcy/' },
+        { t: 'Nasze usługi', href: 'uslugi.html' },
+        { t: 'Wniosek karta pobytu tymczasowego', href: 'formularz-pobyt-czasowy-praca-NOWA.html' },
+        { t: 'Wniosek karta pobytu stałego', href: 'wniosek-karta-pobytu-stalego.html' },
+        { t: 'Wniosek karta pobytu dla członków rodzin', href: 'wniosek-karta-pobytu-dla-czlonkow-rodziny.html' },
+        { t: 'Zasiłek dla cudzoziemca', href: 'zasilek-dla-cudzoziemca.html' },
+        { t: 'Cennik dla cudzoziemców', href: 'cennik.html' },
+        { t: 'Gry i quizy', href: 'narzedzia.html' },
+        { t: 'FAQ', href: 'faq.html' },
+        { t: 'Baza noclegowa', href: 'baza-noclegowa.html' },
+        { t: 'Przewodnik po Polsce', href: 'przewodnik-po-polsce.html' },
+        { t: 'Aktualności', href: 'aktualnosci.html' }
+      ] },
+      { label: 'Jestem pracodawcą', items: [
+        { t: 'Strona sekcji', href: 'pracodawcy/' },
+        { t: 'Legalne zatrudnienie', href: 'pracodawcy/#legalne-zatrudnienie' },
+        { t: 'ZUS i rozliczenia', href: 'pracodawcy/#zus-rozliczenia' },
+        { t: 'Obsługa firm', href: 'pracodawcy/#obsluga-firm' },
+        { t: 'Kontrola i sankcje', href: 'pracodawcy/#kontrola-sankcje' },
+        { t: 'Aktualności', href: 'aktualnosci.html' }
+      ] }
+    ],
+    links: [ { t: 'Kalkulator 90/180', href: 'kalkulator-90-180.html' } ],
+    cta: { t: 'Darmowa konsultacja', href: 'kontakt.html' }
+  };
+
+  /* ---- CSS (samodzielny, namespace .csh-) ---- */
+  var CSS = ''
+    + '.csh-header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);position:sticky;top:0;z-index:50;box-shadow:0 2px 12px rgba(19,32,58,.25);display:block}'
+    + '.csh-wrap{max-width:1120px;margin:0 auto;padding:0 20px;display:flex;align-items:center;gap:18px;min-height:66px;flex-wrap:wrap}'
+    + '.csh-logo{display:flex;align-items:center;gap:10px;text-decoration:none;flex:none}'
+    + '.csh-flag{flex-shrink:0;width:34px;height:34px;border-radius:6px;box-shadow:0 0 0 1px rgba(255,255,255,.4);overflow:hidden;display:flex;flex-direction:column}'
+    + '.csh-flag .csh-fw{flex:1;width:100%;background:#f5f5f5}.csh-flag .csh-fr{flex:1;width:100%;background:#d4213d}'
+    + '.csh-name{color:#fff;font-family:"IBM Plex Serif",Georgia,serif;font-weight:700;font-size:15px;line-height:1.15}'
+    + '.csh-menu{display:flex;flex-wrap:wrap;gap:7px 20px;align-items:center;justify-content:center;flex:1 1 auto;min-width:0}'
+    + '.csh-menu>a{color:#E9ECF3;text-decoration:none;font-size:14px;font-weight:500}.csh-menu>a:hover{color:#6d6ae0}'
+    + '.csh-cta{background:#d4213d !important;color:#fff !important;font-weight:700;padding:8px 16px;border-radius:8px;box-shadow:0 2px 8px rgba(212,33,61,.35)}.csh-cta:hover{background:#b81a32 !important}'
+    + '.csh-more{position:relative;display:flex;align-items:center}'
+    + '.csh-more-btn{display:inline-flex;align-items:center;gap:6px;font-family:inherit;font-size:14px;font-weight:700;color:#fff;text-shadow:0 1px 2px rgba(212,33,61,.55);background:rgba(201,169,97,.10);border:1px solid rgba(201,169,97,.45);border-radius:8px;padding:7px 13px;cursor:pointer;line-height:1;transition:background .2s,border-color .2s}'
+    + '.csh-more-btn:hover{background:rgba(201,169,97,.20);border-color:#c9a961}'
+    + '.csh-more-btn .chev{font-size:11px;transition:transform .2s}'
+    + '.csh-more.open .csh-more-btn{background:rgba(201,169,97,.22);border-color:#c9a961}.csh-more.open .csh-more-btn .chev{transform:rotate(180deg)}'
+    + '.csh-more-menu{position:absolute;top:calc(100% + 12px);left:0;min-width:264px;background:#241C86;border:1px solid rgba(201,169,97,.35);border-radius:14px;padding:8px;box-shadow:0 18px 40px rgba(10,16,40,.45);display:flex;flex-direction:column;gap:2px;opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .18s,transform .18s,visibility .18s;z-index:60}'
+    + '.csh-more.open .csh-more-menu{opacity:1;visibility:visible;transform:translateY(0)}'
+    + '.csh-more-menu a{color:#E9ECF3;text-decoration:none;font-size:14px;font-weight:500;padding:11px 14px;border-radius:9px;white-space:nowrap;transition:background .15s,color .15s}'
+    + '.csh-more-menu a:hover{background:rgba(201,169,97,.16);color:#6d6ae0}'
+    + '.csh-header .lang{flex:none}'
+    + '.csh-burger{display:none;background:none;border:none;color:#fff;font-size:26px;cursor:pointer;flex:none}'
+    + '@media(max-width:900px){'
+    + '.csh-burger{display:block;order:3}'
+    + '.csh-menu{order:4;display:none;flex-basis:100%;flex-direction:column;align-items:stretch;gap:0;padding:8px 0}'
+    + '.csh-header.csh-open .csh-menu{display:flex}'
+    + '.csh-more,.csh-menu>a{width:100%}'
+    + '.csh-more-menu{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;background:rgba(255,255,255,.04);border:none;margin:2px 0 6px}'
+    + '.csh-more-btn{width:100%;justify-content:space-between}.csh-cta{text-align:center;margin-top:6px}}';
+
+  /* ---- render ---- */
+  function span(pl) { return '<span data-csh-k="' + pl.replace(/"/g, '&quot;') + '">' + pl + '</span>'; }
+  function moreHtml(hub) {
+    var lis = hub.items.map(function (it) {
+      return '<a href="' + url(it.href) + '">' + span(it.t) + '</a>';
+    }).join('');
+    return '<div class="csh-more"><button class="csh-more-btn" type="button" aria-haspopup="true" aria-expanded="false">'
+      + span(hub.label) + '<span class="chev">▾</span></button>'
+      + '<div class="csh-more-menu">' + lis + '</div></div>';
+  }
+  var euSvg = '<span aria-label="Godło Unii Europejskiej" style="display:inline-flex;align-items:center">'
+    + '<svg width="30" height="30" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" role="img"><rect width="36" height="36" rx="7" fill="#0A2A8C"/>'
+    + '<g fill="#F5C518"><path id="cshEuStar" d="M18,4.6 l0.85,1.75 l1.95,0.2 l-1.45,1.32 l0.42,1.9 l-1.77,-1.0 l-1.77,1.0 l0.42,-1.9 l-1.45,-1.32 l1.95,-0.2 Z"/>'
+    + '<use href="#cshEuStar" transform="rotate(30 18 18)"/><use href="#cshEuStar" transform="rotate(60 18 18)"/><use href="#cshEuStar" transform="rotate(90 18 18)"/>'
+    + '<use href="#cshEuStar" transform="rotate(120 18 18)"/><use href="#cshEuStar" transform="rotate(150 18 18)"/><use href="#cshEuStar" transform="rotate(180 18 18)"/>'
+    + '<use href="#cshEuStar" transform="rotate(210 18 18)"/><use href="#cshEuStar" transform="rotate(240 18 18)"/><use href="#cshEuStar" transform="rotate(270 18 18)"/>'
+    + '<use href="#cshEuStar" transform="rotate(300 18 18)"/><use href="#cshEuStar" transform="rotate(330 18 18)"/></g></svg></span>';
+
+  function render() {
+    var hubs = MENU.hubs.map(moreHtml).join('');
+    var links = MENU.links.map(function (l) { return '<a href="' + url(l.href) + '">' + span(l.t) + '</a>'; }).join('');
+    var cta = '<a href="' + url(MENU.cta.href) + '" class="csh-cta">' + span(MENU.cta.t) + '</a>';
+    return '<div class="csh-wrap"><a class="csh-logo" href="' + url('') + '" aria-label="Strona główna">'
+      + '<span class="csh-flag" aria-label="Polska"><span class="csh-fw"></span><span class="csh-fr"></span></span>'
+      + '<span class="csh-name">Centrum Obsługi<br>Spraw Cudzoziemców</span>' + euSvg + '</a>'
+      + '<nav class="csh-menu">' + hubs + links + cta + '</nav>'
+      + '<div class="lang"><!-- przełącznik generuje i18n.js --></div>'
+      + '<button class="csh-burger" type="button" aria-label="Menu">☰</button></div>';
+  }
+
+  /* ---- tłumaczenie etykiet nagłówka ---- */
+  function applyLang(lang) {
+    var host = document.getElementById('site-header');
+    if (!host) return;
+    host.querySelectorAll('[data-csh-k]').forEach(function (el) {
+      var pl = el.getAttribute('data-csh-k');
+      el.textContent = (lang && lang !== 'pl' && L[pl] && L[pl][lang]) ? L[pl][lang] : pl;
+    });
+  }
+
+  /* ---- montaż + interakcje ---- */
+  function mount() {
+    var host = document.getElementById('site-header');
+    if (!host) return;
+    if (!document.getElementById('csh-style')) {
+      var st = document.createElement('style'); st.id = 'csh-style'; st.textContent = CSS; document.head.appendChild(st);
+    }
+    host.className = 'csh-header';
+    host.setAttribute('data-i18n-skip', ''); // globalny i18n pomija nagłówek — tłumaczymy sami
+    host.innerHTML = render();
+
+    host.addEventListener('click', function (e) {
+      var btn = e.target.closest ? e.target.closest('.csh-more-btn') : null;
+      if (btn) {
+        e.preventDefault();
+        var more = btn.parentNode, open = more.classList.contains('open');
+        host.querySelectorAll('.csh-more.open').forEach(function (m) {
+          m.classList.remove('open'); var b = m.querySelector('.csh-more-btn'); if (b) b.setAttribute('aria-expanded', 'false');
+        });
+        if (!open) { more.classList.add('open'); btn.setAttribute('aria-expanded', 'true'); }
+        return;
+      }
+      if (e.target.closest && e.target.closest('.csh-burger')) { host.classList.toggle('csh-open'); }
+    });
+    document.addEventListener('click', function (e) {
+      if (host.contains(e.target)) return;
+      host.querySelectorAll('.csh-more.open').forEach(function (m) {
+        m.classList.remove('open'); var b = m.querySelector('.csh-more-btn'); if (b) b.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // język: reaguj na przełącznik i18n; ustaw stan początkowy z localStorage/URL
+    document.addEventListener('cosc:langchange', function (e) { applyLang(e && e.detail && e.detail.lang); });
+    var init = 'pl';
+    try {
+      var q = new URLSearchParams(location.search).get('lang');
+      init = q || localStorage.getItem('cosc_lang') || 'pl';
+    } catch (e2) {}
+    applyLang(init);
+  }
+
+  if (document.getElementById('site-header')) mount();
+  else document.addEventListener('DOMContentLoaded', mount);
+})();

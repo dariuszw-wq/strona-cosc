@@ -480,49 +480,7 @@ footer .upd{margin-top:14px;font-size:11.5px;color:#6B7890}
 
 <div class="mos">⚠ Od 27.04.2026 wnioski o pobyt składa się <strong>wyłącznie elektronicznie przez system MOS</strong>. <a href="index.html#mos">Złożymy go za Ciebie, bez błędów →</a></div>
 
-<header>
-  <div class="wrap nav">
-    <a class="logo" href="/">
-      <span class="flag flag-pl" aria-label="Polska"><span class="fw"></span><span class="fr"></span></span>
-      <div class="name">Centrum Obsługi<br>Spraw Cudzoziemców</div>
-      <span aria-label="Godło Unii Europejskiej" style="display:inline-flex;align-items:center"><svg width="34" height="34" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" role="img"><rect width="36" height="36" rx="7" fill="#0A2A8C"/><g fill="#F5C518"><path id="euStar" d="M18,4.6 l0.85,1.75 l1.95,0.2 l-1.45,1.32 l0.42,1.9 l-1.77,-1.0 l-1.77,1.0 l0.42,-1.9 l-1.45,-1.32 l1.95,-0.2 Z"/><use href="#euStar" transform="rotate(30 18 18)"/><use href="#euStar" transform="rotate(60 18 18)"/><use href="#euStar" transform="rotate(90 18 18)"/><use href="#euStar" transform="rotate(120 18 18)"/><use href="#euStar" transform="rotate(150 18 18)"/><use href="#euStar" transform="rotate(180 18 18)"/><use href="#euStar" transform="rotate(210 18 18)"/><use href="#euStar" transform="rotate(240 18 18)"/><use href="#euStar" transform="rotate(270 18 18)"/><use href="#euStar" transform="rotate(300 18 18)"/><use href="#euStar" transform="rotate(330 18 18)"/></g></svg></span>
-    </a>
-        <nav class="menu">
-      <div class="more">
-        <button class="more-btn" aria-haspopup="true" aria-expanded="false">Jestem cudzoziemcem<span class="chev">▾</span></button>
-        <div class="more-menu">
-          <a href="cudzoziemcy/">Strona sekcji</a>
-          <a href="index.html#uslugi">Nasze usługi</a>
-          <a href="formularz-pobyt-czasowy-praca-NOWA.html">Wniosek karta pobytu tymczasowego</a>
-          <a href="wniosek-karta-pobytu-stalego.html">Wniosek karta pobytu stałego</a>
-          <a href="wniosek-karta-pobytu-dla-czlonkow-rodziny.html">Wniosek karta pobytu dla członków rodzin</a>
-          <a href="zasilek-dla-cudzoziemca.html">Zasiłek dla cudzoziemca</a>
-          <a href="cennik.html">Cennik dla cudzoziemców</a>
-          <a href="narzedzia.html">Gry i quizy</a>
-          <a href="faq.html">FAQ</a>
-          <a href="baza-noclegowa.html">Baza noclegowa</a>
-          <a href="przewodnik-po-polsce.html">Przewodnik po Polsce</a>
-          <a href="aktualnosci.html">Aktualności</a>
-        </div>
-      </div>
-      <div class="more">
-        <button class="more-btn" aria-haspopup="true" aria-expanded="false">Jestem pracodawcą<span class="chev">▾</span></button>
-        <div class="more-menu">
-          <a href="pracodawcy/">Strona sekcji</a>
-          <a href="pracodawcy/#legalne-zatrudnienie">Legalne zatrudnienie</a>
-          <a href="pracodawcy/#zus-rozliczenia">ZUS i rozliczenia</a>
-          <a href="pracodawcy/#obsluga-firm">Obsługa firm</a>
-          <a href="pracodawcy/#kontrola-sankcje">Kontrola i sankcje</a>
-          <a href="aktualnosci.html">Aktualności</a>
-        </div>
-      </div>
-      <a href="kalkulator-90-180.html">Kalkulator 90/180</a>
-      <a href="kontakt.html" class="cta-menu">Darmowa konsultacja</a>
-    </nav>
-    <div class="lang"><!-- przełącznik języków generuje i18n.js --></div>
-    <button class="burger" aria-label="Menu">☰</button>
-  </div>
-</header>
+<header id="site-header"></header>
 <div class="flagbar" aria-hidden="true"></div>
 
 <section style="background:linear-gradient(160deg,#4636c9,#2f2699);color:#fff;padding:52px 0 46px">
@@ -546,6 +504,52 @@ footer .upd{margin-top:14px;font-size:11.5px;color:#6B7890}
       <details><summary>Na czym polega gwarancja?</summary><div class="a">W pakietach z reprezentacją zobowiązujemy się do zwrotu naszego wynagrodzenia, jeśli nie uzyskasz karty pobytu. Szczegółowe warunki, w tym wyłączenia (np. podanie nieprawdziwych danych), określa Regulamin dostępny na stronie.</div></details>
       <details><summary>Ile trwa uzyskanie karty pobytu?</summary><div class="a">Terminy różnią się w zależności od urzędu wojewódzkiego i rodzaju sprawy — od kilku miesięcy wzwyż. Prawidłowo złożony wniosek bez braków formalnych to najskuteczniejszy sposób na skrócenie oczekiwania.</div></details>
     </div>
+  </div>
+</section>
+
+<!-- Formularz kontaktowy → WhatsApp + zapis do arkusza Google -->
+<section class="lead-cta">
+  <style>
+    .lead-cta{background:linear-gradient(135deg,#0b2545,#13315c);color:#fff;padding:48px 0;margin-top:40px}
+    .lead-cta .wrap{max-width:720px;margin:0 auto;padding:0 20px}
+    .lead-cta h2{font-size:clamp(24px,3vw,34px);margin:0 0 8px;color:#fff}
+    .lead-cta p.sub{margin:0 0 22px;color:#dce4f5;font-size:15px}
+    .lead-cta form{display:grid;gap:14px}
+    .lead-cta label{display:block;font-size:14px;color:#eaf0fb;font-weight:600}
+    .lead-cta input,.lead-cta select,.lead-cta textarea{width:100%;margin-top:6px;padding:11px 13px;border:1px solid #cdd7ea;border-radius:10px;font:inherit;font-size:15px;background:#fff;color:#12233f;box-sizing:border-box}
+    .lead-cta textarea{resize:vertical}
+    .lead-cta .lc-consent{display:flex;gap:10px;align-items:flex-start;font-weight:400;font-size:13px;color:#dce4f5}
+    .lead-cta .lc-consent input{width:auto;margin-top:3px}
+    .lead-cta .lc-consent a{color:#ffd479}
+    .lead-cta button{background:#e3b23c;color:#12233f;border:0;border-radius:10px;padding:13px 18px;font-weight:700;font-size:16px;cursor:pointer}
+    .lead-cta button:hover{background:#f0c14b}
+    .lead-cta .lc-alt{display:inline-block;margin-top:4px;color:#cfe0ff;font-size:14px}
+  </style>
+  <div class="wrap">
+    <h2>Bezpłatna ocena Twojej sprawy</h2>
+    <p class="sub">Napisz w kilku zdaniach, z czym masz problem. Odezwiemy się w ciągu 24 godzin — w Twoim języku.</p>
+    <form id="leadForm" novalidate>
+      <label>Imię
+        <input type="text" name="imie" required placeholder="Jak się do Ciebie zwracać?">
+      </label>
+      <label>Telefon / WhatsApp
+        <input type="tel" name="tel" placeholder="+48 …">
+      </label>
+      <label>Język kontaktu
+        <select name="jezyk">
+          <option>Polski</option><option>English</option><option>Español</option><option>Português</option><option>Українська</option><option>Français</option>
+        </select>
+      </label>
+      <label>Opisz swoją sprawę
+        <textarea name="opis" rows="4" required placeholder="Np. kończy mi się karta pobytu, zmieniam pracodawcę, dostałem decyzję odmowną…"></textarea>
+      </label>
+      <label class="lc-consent">
+        <input type="checkbox" name="zgoda" required>
+        <span>Wyrażam zgodę na kontakt i przetwarzanie moich danych w celu odpowiedzi na zapytanie, zgodnie z <a href="polityka-prywatnosci.html">Polityką prywatności</a>.</span>
+      </label>
+      <button type="submit">Wyślij przez WhatsApp →</button>
+      <a class="lc-alt" id="leadMail" href="mailto:office@cosc.org.pl">Wolę wysłać e-mailem</a>
+    </form>
   </div>
 </section>
 
@@ -582,6 +586,23 @@ document.querySelectorAll('.trust,.path-sec,.ct-demo,.mascot').forEach(el=>io.ob
 // formularz kontaktowy → WhatsApp (prefill) + fallback e-mail
 (function(){
   var WA='48539999549', MAIL='office@cosc.org.pl';
+  var APPS_SCRIPT_URL='https://script.google.com/macros/s/AKfycbwC7lGyiNjMGYV4ihMOXK4lfqRYeW7DSDA4673qWpANoIm26_30qNiRT0jODZpNbhWw/exec';
+  function zapiszLead(f){
+    try{
+      var d=new FormData(f);
+      var payload={
+        _formularz:'Kontakt (faq)',
+        _data_wyslania:new Date().toISOString(),
+        rodzaj_wniosku:'Zapytanie kontaktowe',
+        imie:(d.get('imie')||'').trim(),
+        telefon_wlasny:(d.get('tel')||'').trim(),
+        jezyk_kontaktu:(d.get('jezyk')||'').trim(),
+        uwagi:(d.get('opis')||'').trim(),
+        rodo_zgoda:(f.zgoda&&f.zgoda.checked)?'tak':'nie'
+      };
+      fetch(APPS_SCRIPT_URL,{method:'POST',mode:'cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload)}).catch(function(){});
+    }catch(_e){}
+  }
   function build(f){
     var d=new FormData(f);
     var imie=(d.get('imie')||'').trim();
@@ -602,7 +623,8 @@ document.querySelectorAll('.trust,.path-sec,.ct-demo,.mascot').forEach(el=>io.ob
     e.preventDefault();
     if(!f.imie.value.trim()||!f.opis.value.trim()){f.reportValidity&&f.reportValidity();return;}
     if(!f.zgoda.checked){f.zgoda.reportValidity&&f.zgoda.reportValidity();return;}
-    window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(build(f)),'_blank');
+    zapiszLead(f); // najpierw zapis do arkusza
+    window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(build(f)),'_blank'); // potem WhatsApp
   });
   document.addEventListener('click',function(e){
     var a=e.target.closest&&e.target.closest('#leadMail');if(!a)return;
@@ -611,6 +633,7 @@ document.querySelectorAll('.trust,.path-sec,.ct-demo,.mascot').forEach(el=>io.ob
   });
 })();
 </script>
+<script src="site-header.js"></script>
 <script src="i18n/i18n.js"></script>
 </body>
 </html>

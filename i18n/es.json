@@ -2,7 +2,7 @@
   "_meta": {
     "lang": "es",
     "name": "Español",
-    "count": 607,
+    "count": 629,
     "filled": 148
   },
   "strings": {
@@ -612,6 +612,28 @@
     "Ustawa z 21 czerwca 2001 r. o dodatkach mieszkaniowych.": "Ley de 21 de junio de 2001 sobre complementos de vivienda.",
     "Ustawa z 12 grudnia 2013 r. o cudzoziemcach (podstawy pobytu, do których odsyła art. 5).": "Ley de 12 de diciembre de 2013 sobre extranjeros (las bases de residencia a las que remite el art. 5).",
     "Pomoc społeczna dla cudzoziemca — kto ma prawo | COSC": "Asistencia social para un extranjero — quién tiene derecho | COSC",
-    "Którzy cudzoziemcy mają prawo do pomocy społecznej (art. 5 ustawy): zasiłek okresowy, celowy, stały, dodatek mieszkaniowy. Katalog uprawnionych, kryterium dochodowe, podstawa prawna.": "Qué extranjeros tienen derecho a la asistencia social (art. 5 de la Ley): subsidio periódico, de finalidad concreta, permanente, complemento de vivienda. Catálogo de los que tienen derecho, criterio de renta, base legal."
+    "Którzy cudzoziemcy mają prawo do pomocy społecznej (art. 5 ustawy): zasiłek okresowy, celowy, stały, dodatek mieszkaniowy. Katalog uprawnionych, kryterium dochodowe, podstawa prawna.": "Qué extranjeros tienen derecho a la asistencia social (art. 5 de la Ley): subsidio periódico, de finalidad concreta, permanente, complemento de vivienda. Catálogo de los que tienen derecho, criterio de renta, base legal.",
+    "Jestem cudzoziemcem": "Soy extranjero",
+    "Jestem pracodawcą": "Soy empleador",
+    "Strona sekcji": "Página de la sección",
+    "Wniosek karta pobytu tymczasowego": "Solicitud de tarjeta de residencia temporal",
+    "Wniosek karta pobytu stałego": "Solicitud de tarjeta de residencia permanente",
+    "Wniosek karta pobytu dla członków rodzin": "Solicitud de tarjeta de residencia para familiares",
+    "Zasiłek dla cudzoziemca": "Subsidio para extranjeros",
+    "Cennik dla cudzoziemców": "Precios para extranjeros",
+    "Gry i quizy": "Juegos y cuestionarios",
+    "Baza noclegowa": "Alojamiento",
+    "Przewodnik po Polsce": "Guía de Polonia",
+    "Aktualności": "Noticias",
+    "Legalne zatrudnienie": "Empleo legal",
+    "ZUS i rozliczenia": "Seguridad social (ZUS) y liquidaciones",
+    "Obsługa firm": "Servicios para empresas",
+    "Kontrola i sankcje": "Inspecciones y sanciones",
+    "Darmowa konsultacja": "Consulta gratuita",
+    "Usługi": "Servicios",
+    "Świadczenia i zasiłki": "Prestaciones y subsidios",
+    "Kontakt": "Contacto",
+    "Jestem cudzoziemcem<span class=\"chev\">▾</span>": "Soy extranjero<span class=\"chev\">▾</span>",
+    "Jestem pracodawcą<span class=\"chev\">▾</span>": "Soy empleador<span class=\"chev\">▾</span>"
   }
 }

@@ -2,7 +2,7 @@
   "_meta": {
     "lang": "ru",
     "name": "Русский",
-    "count": 607,
+    "count": 629,
     "filled": 148
   },
   "strings": {
@@ -612,6 +612,28 @@
     "Ustawa z 21 czerwca 2001 r. o dodatkach mieszkaniowych.": "Закон от 21 июня 2001 г. о жилищных доплатах.",
     "Ustawa z 12 grudnia 2013 r. o cudzoziemcach (podstawy pobytu, do których odsyła art. 5).": "Закон от 12 декабря 2013 г. об иностранцах (основания пребывания, на которые ссылается ст. 5).",
     "Pomoc społeczna dla cudzoziemca — kto ma prawo | COSC": "Социальная помощь для иностранца — кто имеет право | COSC",
-    "Którzy cudzoziemcy mają prawo do pomocy społecznej (art. 5 ustawy): zasiłek okresowy, celowy, stały, dodatek mieszkaniowy. Katalog uprawnionych, kryterium dochodowe, podstawa prawna.": "Какие иностранцы имеют право на социальную помощь (ст. 5 Закона): периодическое, целевое, постоянное пособие, жилищная доплата. Перечень имеющих право, критерий дохода, правовое основание."
+    "Którzy cudzoziemcy mają prawo do pomocy społecznej (art. 5 ustawy): zasiłek okresowy, celowy, stały, dodatek mieszkaniowy. Katalog uprawnionych, kryterium dochodowe, podstawa prawna.": "Какие иностранцы имеют право на социальную помощь (ст. 5 Закона): периодическое, целевое, постоянное пособие, жилищная доплата. Перечень имеющих право, критерий дохода, правовое основание.",
+    "Jestem cudzoziemcem": "Я иностранец",
+    "Jestem pracodawcą": "Я работодатель",
+    "Strona sekcji": "Страница раздела",
+    "Wniosek karta pobytu tymczasowego": "Заявление на карту временного пребывания",
+    "Wniosek karta pobytu stałego": "Заявление на карту постоянного пребывания",
+    "Wniosek karta pobytu dla członków rodzin": "Заявление на карту пребывания для членов семьи",
+    "Zasiłek dla cudzoziemca": "Пособие для иностранца",
+    "Cennik dla cudzoziemców": "Цены для иностранцев",
+    "Gry i quizy": "Игры и викторины",
+    "Baza noclegowa": "База жилья",
+    "Przewodnik po Polsce": "Путеводитель по Польше",
+    "Aktualności": "Новости",
+    "Legalne zatrudnienie": "Легальное трудоустройство",
+    "ZUS i rozliczenia": "ZUS и расчёты",
+    "Obsługa firm": "Обслуживание компаний",
+    "Kontrola i sankcje": "Контроль и санкции",
+    "Darmowa konsultacja": "Бесплатная консультация",
+    "Usługi": "Услуги",
+    "Świadczenia i zasiłki": "Пособия и выплаты",
+    "Kontakt": "Контакты",
+    "Jestem cudzoziemcem<span class=\"chev\">▾</span>": "Я иностранец<span class=\"chev\">▾</span>",
+    "Jestem pracodawcą<span class=\"chev\">▾</span>": "Я работодатель<span class=\"chev\">▾</span>"
   }
 }

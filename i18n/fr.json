@@ -2,7 +2,7 @@
   "_meta": {
     "lang": "fr",
     "name": "Français",
-    "count": 157,
+    "count": 180,
     "filled": 148
   },
   "strings": {
@@ -162,6 +162,29 @@
     "<a href=\"regulamin.html\">Regulamin</a> · <a href=\"polityka-prywatnosci.html\">Polityka prywatności</a>": "<a href=\"regulamin.html\">Règlement</a> · <a href=\"polityka-prywatnosci.html\">Politique de confidentialité</a>",
     "Treści mają charakter informacyjny i nie stanowią porady prawnej. Wpisy w News roomie są autorskimi omówieniami z podaniem źródła. Data ostatniej aktualizacji listy: <span id=\"lastupd\">—</span>.": "Le contenu a un caractère informatif et ne constitue pas un conseil juridique. Les entrées du News room sont nos propres résumés avec mention de la source. Dernière mise à jour de la liste : <span id=\"lastupd\">—</span>.",
     "Aktualności dla cudzoziemców w Polsce — Centrum Obsługi Spraw Cudzoziemców": "Actualités pour les étrangers en Pologne — Centre d'assistance aux affaires des étrangers",
-    "News room: najważniejsze wydarzenia dotyczące cudzoziemców w Polsce — zmiany w przepisach, orzecznictwo sądów administracyjnych, komunikaty urzędów. Aktualizowane automatycznie.": "News room : les évolutions les plus importantes concernant les étrangers en Pologne — changements législatifs, jurisprudence des tribunaux administratifs, communiqués des administrations. Mis à jour automatiquement."
+    "News room: najważniejsze wydarzenia dotyczące cudzoziemców w Polsce — zmiany w przepisach, orzecznictwo sądów administracyjnych, komunikaty urzędów. Aktualizowane automatycznie.": "News room : les évolutions les plus importantes concernant les étrangers en Pologne — changements législatifs, jurisprudence des tribunaux administratifs, communiqués des administrations. Mis à jour automatiquement.",
+    "Jestem cudzoziemcem": "Je suis étranger",
+    "Jestem pracodawcą": "Je suis employeur",
+    "Strona sekcji": "Page de la section",
+    "Wniosek karta pobytu tymczasowego": "Demande de carte de séjour temporaire",
+    "Wniosek karta pobytu stałego": "Demande de carte de séjour permanent",
+    "Wniosek karta pobytu dla członków rodzin": "Demande de carte de séjour pour les membres de la famille",
+    "Zasiłek dla cudzoziemca": "Allocation pour étrangers",
+    "Cennik dla cudzoziemców": "Tarifs pour étrangers",
+    "Gry i quizy": "Jeux et quiz",
+    "FAQ": "FAQ",
+    "Baza noclegowa": "Hébergement",
+    "Przewodnik po Polsce": "Guide de la Pologne",
+    "Aktualności": "Actualités",
+    "Legalne zatrudnienie": "Emploi légal",
+    "ZUS i rozliczenia": "Sécurité sociale (ZUS) et déclarations",
+    "Obsługa firm": "Services aux entreprises",
+    "Kontrola i sankcje": "Contrôles et sanctions",
+    "Darmowa konsultacja": "Consultation gratuite",
+    "Usługi": "Services",
+    "Świadczenia i zasiłki": "Prestations et allocations",
+    "Kontakt": "Contact",
+    "Jestem cudzoziemcem<span class=\"chev\">▾</span>": "Je suis étranger<span class=\"chev\">▾</span>",
+    "Jestem pracodawcą<span class=\"chev\">▾</span>": "Je suis employeur<span class=\"chev\">▾</span>"
   }
 }
