@@ -487,8 +487,8 @@ footer .upd{margin-top:14px;font-size:11.5px;color:#6B7890}
 <div class="hero">
   <div class="wrap hero-grid">
     <div>
-      <span class="eyebrow">Legalizacja pobytu i pracy w Polsce</span>
-      <h1>Tu jesteś bezpieczny.<br><em>Nie musisz znać się na urzędach — my się znamy.</em></h1>
+      <span class="eyebrow">Prawnik dla cudzoziemców w Polsce.</span>
+      <h1>Karta pobytu i legalizacja pracy w Polsce.<br><em>Skuteczna pomoc albo zwrot kosztów.</em></h1>
       <p class="lead">Twoja rodzina może przestać się martwić — kartą pobytu zajmujemy się my, albo zwrócimy ci pieniądze.</p>
       <div class="hero-ctas">
         <a class="btn btn-gold" href="kontakt.html">Zacznij sprawę dziś — bez ryzyka odmowy</a>
@@ -532,7 +532,7 @@ footer .upd{margin-top:14px;font-size:11.5px;color:#6B7890}
 
 <div class="trustbar">
   <div class="wrap trust">
-    <div><div class="n"><span class="cnt" data-to="1240">0</span>+</div><div class="l">złożonych wniosków</div></div>
+    <div><div class="n"><span class="cnt" data-to="1240" data-since="2026-07-31">0</span>+</div><div class="l">złożonych wniosków</div></div>
     <div><div class="n"><span class="cnt" data-to="6">0</span></div><div class="l">języki, w których się dogadamy</div></div>
     <div><div class="n">1</div><div class="l">opiekun Twojej sprawy — od początku do końca</div></div>
     <div><div class="n">0 zł</div><div class="l">ryzyka — gwarancja na piśmie*</div></div>
@@ -738,6 +738,11 @@ footer .upd{margin-top:14px;font-size:11.5px;color:#6B7890}
 <a class="wa-float" href="https://wa.me/48539999549" aria-label="Napisz na WhatsApp">✆</a>
 
 <script>
+// licznik rosnący +1 dziennie od daty bazowej (data-since)
+document.querySelectorAll('.cnt[data-since]').forEach(c=>{
+  const days=Math.max(0,Math.floor((Date.now()-new Date(c.dataset.since+'T00:00:00'))/86400000));
+  c.dataset.to=+c.dataset.to+days;
+});
 // liczniki nabijające się przy scrollu
 const io=new IntersectionObserver(es=>es.forEach(e=>{
   if(!e.isIntersecting)return;
