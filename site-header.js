@@ -114,15 +114,19 @@
     + '@media(max-width:900px){'
     /* JEDEN wiersz: małe logo + przyciski Cudzoziemiec/Pracodawca + języki; bez burgera */
     + '.csh-wrap{flex-wrap:nowrap;gap:8px;padding:0 10px;min-height:54px}'
-    + '.csh-logo{gap:5px}'
-    + '.csh-flag{width:20px;height:20px;border-radius:4px}'
-    + '.csh-name{font-size:9.5px;line-height:1.2}'
-    + '.csh-logo svg{width:16px;height:16px}'
+    + '.csh-logo{gap:4px}'
+    + '.csh-flag{width:17px;height:17px;border-radius:4px}'
+    + '.csh-name{font-size:8.5px;line-height:1.2}'
+    + '.csh-logo svg{width:14px;height:14px}'
     + '.csh-burger{display:none}'
-    + '.csh-menu{display:flex;flex:1 1 auto;flex-wrap:nowrap;gap:7px;white-space:nowrap;min-width:0;margin:0 2px}'
-    + '.csh-more{flex:1 1 50%;min-width:0;position:relative}'
+    + '.csh-menu{display:flex;flex:1 1 auto;flex-wrap:nowrap;gap:6px;white-space:nowrap;min-width:0;margin:0 2px}'
+    + '.csh-more{min-width:0;position:relative}'
+    /* Cudzoziemiec = główny (większy), Pracodawca = mniejszy */
+    + '.csh-more:first-child{flex:1.35 1 0}'
+    + '.csh-more:last-child{flex:1 1 0}'
     + '.csh-l-full{display:none}.csh-l-short{display:inline}'
-    + '.csh-more-btn{width:100%;justify-content:center;font-weight:700;font-size:12px;padding:9px 5px;border:1px solid rgba(255,255,255,.45);border-radius:10px;background:rgba(255,255,255,.08);overflow:hidden;text-overflow:ellipsis}'
+    + '.csh-more-btn{width:100%;justify-content:center;font-weight:700;font-size:12px;padding:9px 4px;border:1px solid rgba(255,255,255,.45);border-radius:10px;background:rgba(255,255,255,.08)}'
+    + '.csh-more:last-child .csh-more-btn{font-size:10.5px;font-weight:600;padding:8px 3px}'
     + '.csh-more.open .csh-more-btn{background:rgba(255,255,255,.18)}'
     + '.csh-more-menu{display:none;position:absolute;top:calc(100% + 8px);left:0;min-width:250px;max-width:92vw;opacity:1;visibility:visible;transform:none}'
     + '.csh-more.open .csh-more-menu{display:flex}'
@@ -141,8 +145,9 @@
     /* bardzo wąskie ekrany: chowamy godło UE, jeszcze ciaśniej */
     + '@media(max-width:390px){'
     + '.csh-logo svg{display:none}'
-    + '.csh-name{font-size:9px}'
+    + '.csh-name{font-size:8px}'
     + '.csh-more-btn{font-size:11px;padding:8px 3px}'
+    + '.csh-more:last-child .csh-more-btn{font-size:9.5px;padding:8px 2px}'
     + '.csh-header .lang .lang-btn .lang-cur{display:none}'
     + '}';
 
