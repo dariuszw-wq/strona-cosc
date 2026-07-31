@@ -564,13 +564,13 @@ footer .upd{margin-top:14px;font-size:11.5px;color:#6B7890}
   <path d="M560 240 L330 120" pathLength="100" stroke="#4636c9" stroke-width="3.5" fill="none" stroke-dasharray="100" stroke-dashoffset="100" stroke-linecap="round"><animate attributeName="stroke-dashoffset" values="100;100;0;0" keyTimes="0;.26;.44;1" dur="6s" repeatCount="indefinite"/></path>
   <path d="M330 120 L100 240" pathLength="100" stroke="#4636c9" stroke-width="3.5" fill="none" stroke-dasharray="100" stroke-dashoffset="100" stroke-linecap="round"><animate attributeName="stroke-dashoffset" values="100;100;0;0" keyTimes="0;.52;.7;1" dur="6s" repeatCount="indefinite"/></path>
   <g transform="translate(330,360)"><rect x="-13" y="-13" width="26" height="26" rx="4" transform="rotate(45)" fill="#4636c9" stroke="#4636c9" stroke-width="2.5"/></g>
-  <text x="330" y="398" text-anchor="middle" font-size="14" font-weight="600" fill="#1c2434">Prawnik</text>
+  <text x="330" y="398" text-anchor="middle" font-size="14" font-weight="600" fill="#1c2434" data-svgk="Prawnik">Prawnik</text>
   <g transform="translate(560,240)"><rect x="-13" y="-13" width="26" height="26" rx="4" transform="rotate(45)" stroke="#4636c9" stroke-width="2.5"><animate attributeName="fill" values="#ffffff;#ffffff;#4636c9;#4636c9" keyTimes="0;.17;.2;1" dur="6s" repeatCount="indefinite"/></rect></g>
-  <text x="560" y="282" text-anchor="middle" font-size="14" font-weight="600" fill="#1c2434">1. Wniosek</text>
+  <text x="560" y="282" text-anchor="middle" font-size="14" font-weight="600" fill="#1c2434" data-svgk="1. Wniosek">1. Wniosek</text>
   <g transform="translate(330,120)"><rect x="-13" y="-13" width="26" height="26" rx="4" transform="rotate(45)" stroke="#4636c9" stroke-width="2.5"><animate attributeName="fill" values="#ffffff;#ffffff;#4636c9;#4636c9" keyTimes="0;.43;.46;1" dur="6s" repeatCount="indefinite"/></rect></g>
-  <text x="330" y="94" text-anchor="middle" font-size="14" font-weight="600" fill="#1c2434">2. Urząd</text>
+  <text x="330" y="94" text-anchor="middle" font-size="14" font-weight="600" fill="#1c2434" data-svgk="2. Urząd">2. Urząd</text>
   <g transform="translate(100,240)"><rect x="-13" y="-13" width="26" height="26" rx="4" transform="rotate(45)" stroke="#4636c9" stroke-width="2.5"><animate attributeName="fill" values="#ffffff;#ffffff;#4636c9;#4636c9" keyTimes="0;.69;.72;1" dur="6s" repeatCount="indefinite"/></rect></g>
-  <text x="100" y="284" text-anchor="middle" font-size="14" font-weight="600" fill="#1c2434">3. Karta pobytu</text>
+  <text x="100" y="284" text-anchor="middle" font-size="14" font-weight="600" fill="#1c2434" data-svgk="3. Karta pobytu">3. Karta pobytu</text>
   <g>
     <animateMotion dur="6s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;.333;.333;.667;.667;1;1" keyTimes="0;.08;.22;.28;.46;.52;.7;1" path="M330 360 L560 240 L330 120 L100 240"/>
     <g>
@@ -825,6 +825,23 @@ document.querySelectorAll('.trust,.path-sec,.ct-demo,.mascot').forEach(el=>io.ob
 <script src="site-header.js"></script>
 <script src="i18n/i18n.js"></script>
 <script>
+// Tłumaczenie etykiet w SVG "Trzy kroki" (i18n.js pomija svg) — nasłuch cosc:langchange
+(function(){
+  var T={
+    'Prawnik':{en:'Lawyer',es:'Abogado',uk:'Юрист',ru:'Юрист',fr:'Avocat'},
+    '1. Wniosek':{en:'1. Application',es:'1. Solicitud',uk:'1. Заява',ru:'1. Заявление',fr:'1. Demande'},
+    '2. Urząd':{en:'2. The office',es:'2. La oficina',uk:'2. Уряд',ru:'2. Ужонд',fr:'2. L\'administration'},
+    '3. Karta pobytu':{en:'3. Residence card',es:'3. Tarjeta de residencia',uk:'3. Карта побиту',ru:'3. Карта побыта',fr:'3. Carte de séjour'}
+  };
+  function apply(lang){
+    document.querySelectorAll('[data-svgk]').forEach(function(el){
+      var k=el.getAttribute('data-svgk');
+      el.textContent=(lang&&lang!=='pl'&&T[k]&&T[k][lang])?T[k][lang]:k;
+    });
+  }
+  document.addEventListener('cosc:langchange',function(e){apply(e&&e.detail&&e.detail.lang);});
+  try{apply(new URLSearchParams(location.search).get('lang')||localStorage.getItem('cosc_lang')||'pl');}catch(err){}
+})();
 // hover = podgląd bez dźwięku, klik = odtwarzanie z dźwiękiem (delegacja — odporna na i18n)
 (function(){
   var touch=window.matchMedia('(hover: none)').matches;
