@@ -209,12 +209,12 @@ header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);po
     return ALLOWED.indexOf(l)>=0 ? l : 'pl';
   }
   var UI = {
-    pl:{added:'Dodano:',source:'Źródło:',read:'Czytaj u źródła ↗',empty:'Brak wpisów w tej kategorii.',all:'Wszystkie'},
-    en:{added:'Added:',source:'Source:',read:'Read at source ↗',empty:'No entries in this category.',all:'All'},
-    es:{added:'Añadido:',source:'Fuente:',read:'Leer en la fuente ↗',empty:'No hay entradas en esta categoría.',all:'Todas'},
-    uk:{added:'Додано:',source:'Джерело:',read:'Читати в джерелі ↗',empty:'Немає записів у цій категорії.',all:'Усі'},
-    ru:{added:'Добавлено:',source:'Источник:',read:'Читать в источнике ↗',empty:'Нет записей в этой категории.',all:'Все'},
-    fr:{added:'Ajouté :',source:'Source :',read:'Lire à la source ↗',empty:'Aucune entrée dans cette catégorie.',all:'Toutes'}
+    pl:{added:'Dodano:',source:'Źródło:',read:'Czytaj u źródła ↗',readArt:'Czytaj cały artykuł →',empty:'Brak wpisów w tej kategorii.',all:'Wszystkie'},
+    en:{added:'Added:',source:'Source:',read:'Read at source ↗',readArt:'Read the full article →',empty:'No entries in this category.',all:'All'},
+    es:{added:'Añadido:',source:'Fuente:',read:'Leer en la fuente ↗',readArt:'Leer el artículo completo →',empty:'No hay entradas en esta categoría.',all:'Todas'},
+    uk:{added:'Додано:',source:'Джерело:',read:'Читати в джерелі ↗',readArt:'Читати всю статтю →',empty:'Немає записів у цій категорії.',all:'Усі'},
+    ru:{added:'Добавлено:',source:'Источник:',read:'Читать в источнике ↗',readArt:'Читать всю статью →',empty:'Нет записей в этой категории.',all:'Все'},
+    fr:{added:'Ajouté :',source:'Source :',read:'Lire à la source ↗',readArt:'Lire l’article complet →',empty:'Aucune entrée dans cette catégorie.',all:'Toutes'}
   };
   var CAT = {
     'Wydarzenia':{pl:'Wydarzenia',en:'Events',es:'Eventos',uk:'Події',ru:'События',fr:'Événements'},
@@ -242,12 +242,20 @@ header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);po
     elNews.innerHTML = items.map(function(it){
       var catKey = normCat(it.category);
       var author = it.author ? (esc(it.author)+' · ') : '';
-      var link = it.url ? '<a href="'+esc(it.url)+'" target="_blank" rel="noopener nofollow">'+esc(U.read)+'</a>' : '';
+      var own = it.url && !/^https?:/i.test(it.url); // materiał własny COSC (link względny)
+      var link = '';
+      if(it.url && !own){
+        link = '<a href="'+esc(it.url)+'" target="_blank" rel="noopener nofollow">'+esc(U.read)+'</a>';
+      }
+      var title = own
+        ? '<a href="'+esc(it.url)+'" style="color:inherit;text-decoration:none">'+esc(pick(it,'title'))+'</a>'
+        : esc(pick(it,'title'));
       return '<article class="item">'
         + '<div class="meta"><span class="tag '+esc(catKey)+'">'+esc(catLabel(catKey))+'</span><span class="date">'+esc(U.added)+' '+esc(fmtDate(it.added))+'</span></div>'
-        + '<h3>'+esc(pick(it,'title'))+'</h3>'
+        + '<h3>'+title+'</h3>'
         + '<p class="sum">'+esc(pick(it,'summary'))+'</p>'
         + '<div class="src">'+esc(U.source)+' '+author+'<b>'+esc(it.source_name||host(it.url))+'</b> &nbsp;·&nbsp; '+link+'</div>'
+        + (own ? '<div style="margin-top:10px"><a class="read-art" href="'+esc(it.url)+'" style="display:inline-block;background:#d4213d;color:#fff;font-weight:700;font-size:13.5px;padding:9px 16px;border-radius:8px;text-decoration:none">'+esc(U.readArt)+'</a></div>' : '')
         + '</article>';
     }).join('');
   }
