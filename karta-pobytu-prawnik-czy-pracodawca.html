@@ -25,17 +25,22 @@ a{color:var(--gold)}
 .hero p.lead b{color:#ffd34d}
 .cmp{padding:52px 0 10px}
 .cmp-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:stretch}
-.cmp-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px}
-.cmp-card.win{border:2px solid var(--gold)}
+.cmp-card{border-radius:16px;padding:26px}
+.cmp-card.win{background:linear-gradient(180deg,#ffffff 0%,#f3f1ff 100%);border:2px solid var(--gold);box-shadow:0 16px 44px rgba(70,54,201,.16);position:relative}
+.cmp-card.win::before{content:"POLECANE";position:absolute;top:-12px;left:22px;background:var(--gold);color:#fff;font-size:10.5px;font-weight:800;letter-spacing:.1em;padding:4px 12px;border-radius:999px}
+.cmp-card.firm-card{background:#eceef2;border:1px dashed #b9c0cf}
 .tag{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.08em;padding:4px 12px;border-radius:999px;margin-bottom:10px}
-.tag.you{background:#EEEDFE;color:#3C3489}
-.tag.firm{background:#F1EFE8;color:#444441}
+.tag.you{background:#4636c9;color:#fff}
+.tag.firm{background:#d7dbe3;color:#5c6373}
 .cmp-card h3{font-size:22px;margin-bottom:12px}
+.cmp-card.firm-card h3{color:#5c6373}
 .cmp-card ul{list-style:none}
-.cmp-card li{padding:9px 0 9px 28px;position:relative;font-size:15px;color:#33405e;border-bottom:1px solid var(--line)}
+.cmp-card li{padding:9px 0 9px 30px;position:relative;font-size:15px;color:#2b3a5c;border-bottom:1px solid rgba(70,54,201,.12)}
 .cmp-card li:last-child{border-bottom:none}
-.cmp-card.win li::before{content:"✓";position:absolute;left:0;color:var(--gold);font-weight:800}
-.cmp-card.firm-card li::before{content:"•";position:absolute;left:6px;color:#9aa3b8;font-weight:800}
+.cmp-card.win li::before{content:"✓";position:absolute;left:0;top:9px;width:20px;height:20px;border-radius:50%;background:#e1f5ee;color:#0F6E56;font-weight:800;font-size:12px;display:flex;align-items:center;justify-content:center}
+.cmp-card.firm-card li{color:#6a7183;border-bottom:1px solid #dde0e7}
+.cmp-card.firm-card li::before{content:"✕";position:absolute;left:0;top:9px;width:20px;height:20px;border-radius:50%;background:#f3e3e3;color:#a35050;font-weight:800;font-size:11px;display:flex;align-items:center;justify-content:center}
+@media(max-width:760px){.cmp-card.win{order:-1}.cmp-card{padding:22px 18px}.cmp-card.win::before{left:16px}}
 .fair{margin-top:18px;background:#fff;border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:0 12px 12px 0;padding:16px 20px;font-size:15px;color:#33405e}
 .rights{padding:44px 0 10px}
 .rights h2,.steps h2{font-size:clamp(24px,3vw,32px);margin-bottom:8px}
