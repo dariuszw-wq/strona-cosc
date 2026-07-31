@@ -122,13 +122,13 @@
     + '.csh-menu{display:flex;flex:1 1 auto;flex-wrap:nowrap;gap:6px;white-space:nowrap;min-width:0;margin:0 2px}'
     + '.csh-more{min-width:0;position:relative}'
     /* Cudzoziemiec = główny (większy), Pracodawca = mniejszy */
-    + '.csh-more:first-child{flex:1.35 1 0}'
+    + '.csh-more:first-child{flex:1.5 1 0}'
     + '.csh-more:last-child{flex:1 1 0}'
     + '.csh-l-full{display:none}.csh-l-short{display:inline}'
     /* display:block + text-align:center — Safari nie obcina początku napisu (flex center + overflow ucina "CU") */
     + '.csh-more-btn{display:block;width:100%;text-align:center;font-weight:700;font-size:12px;padding:9px 4px;border:1px solid rgba(255,255,255,.45);border-radius:10px;background:rgba(255,255,255,.08);overflow:hidden;text-overflow:ellipsis}'
     + '.csh-more-btn .chev{display:none}'
-    + '.csh-more:last-child .csh-more-btn{font-size:10.5px;font-weight:600;padding:9px 3px}'
+    + '.csh-more:last-child .csh-more-btn{font-size:10px;font-weight:600;padding:8px 3px}'
     + '.csh-more.open .csh-more-btn{background:rgba(255,255,255,.18)}'
     + '.csh-more-menu{display:none;position:absolute;top:calc(100% + 8px);left:0;min-width:250px;max-width:92vw;opacity:1;visibility:visible;transform:none}'
     + '.csh-more.open .csh-more-menu{display:flex}'
@@ -149,7 +149,7 @@
     + '.csh-logo svg{display:none}'
     + '.csh-name{font-size:8px}'
     + '.csh-more-btn{font-size:11px;padding:8px 3px}'
-    + '.csh-more:last-child .csh-more-btn{font-size:9.5px;padding:8px 2px}'
+    + '.csh-more:last-child .csh-more-btn{font-size:9px;padding:7px 2px}'
     + '.csh-header .lang .lang-btn .lang-cur{display:none}'
     + '}';
 
