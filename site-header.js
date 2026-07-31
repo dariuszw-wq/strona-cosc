@@ -122,11 +122,14 @@
     + '.csh-menu{display:flex;flex:1 1 auto;flex-wrap:nowrap;gap:6px;white-space:nowrap;min-width:0;margin:0 2px}'
     + '.csh-more{min-width:0;position:relative}'
     /* Cudzoziemiec = główny (większy), Pracodawca = mniejszy */
-    + '.csh-more:first-child{flex:1.5 1 0}'
-    + '.csh-more:last-child{flex:1 1 0}'
+    /* PRIORYTET: Cudzoziemiec ZAWSZE w całości (nigdy nie ucinany); skracać wolno tylko Pracodawcę */
+    + '.csh-more:first-child{flex:0 0 auto}'
+    + '.csh-more:last-child{flex:1 1 0;min-width:0}'
     + '.csh-l-full{display:none}.csh-l-short{display:inline}'
     /* display:block + text-align:center — Safari nie obcina początku napisu (flex center + overflow ucina "CU") */
-    + '.csh-more-btn{display:block;width:100%;text-align:center;font-weight:700;font-size:12px;padding:9px 4px;border:1px solid rgba(255,255,255,.45);border-radius:10px;background:rgba(255,255,255,.08);overflow:hidden;text-overflow:ellipsis}'
+    + '.csh-more-btn{display:block;width:100%;text-align:center;font-weight:700;font-size:12px;padding:9px 8px;border:1px solid rgba(255,255,255,.45);border-radius:10px;background:rgba(255,255,255,.08)}'
+    /* tylko Pracodawca może być skracany wielokropkiem */
+    + '.csh-more:last-child .csh-more-btn{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}'
     + '.csh-more-btn .chev{display:none}'
     + '.csh-more:last-child .csh-more-btn{font-size:10px;font-weight:600;padding:8px 3px}'
     + '.csh-more.open .csh-more-btn{background:rgba(255,255,255,.18)}'
