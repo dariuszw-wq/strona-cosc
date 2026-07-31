@@ -250,7 +250,7 @@ header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);po
       var title = own
         ? '<a href="'+esc(it.url)+'" style="color:inherit;text-decoration:none">'+esc(pick(it,'title'))+'</a>'
         : esc(pick(it,'title'));
-      return '<article class="item">'
+      return '<article class="item'+(it.url?' clickable':'')+'"'+(it.url?' data-url="'+esc(it.url)+'" data-own="'+(own?'1':'0')+'" role="link" tabindex="0"':'')+'>'
         + '<div class="meta"><span class="tag '+esc(catKey)+'">'+esc(catLabel(catKey))+'</span><span class="date">'+esc(U.added)+' '+esc(fmtDate(it.added))+'</span></div>'
         + '<h3>'+title+'</h3>'
         + '<p class="sum">'+esc(pick(it,'summary'))+'</p>'
@@ -274,6 +274,15 @@ header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);po
   }
 
   document.addEventListener('cosc:langchange', function(){ buildFilters(); render(); });
+  // Cała karta klikalna (intuicyjnie): własne artykuły w tej karcie, źródła zewnętrzne w nowej
+  elNews.addEventListener('click', function(e){
+    if(e.target.closest && e.target.closest('a')) return; // zwykłe linki działają po staremu
+    var card = e.target.closest ? e.target.closest('.item[data-url]') : null;
+    if(!card || !card.getAttribute('data-url')) return;
+    var u = card.getAttribute('data-url');
+    if(card.getAttribute('data-own')==='1'){ location.href = u; }
+    else { window.open(u, '_blank', 'noopener'); }
+  });
 
   function sortItems(a,b){
     var da=(a.added||'')+ (a.id||''), db=(b.added||'')+(b.id||'');
