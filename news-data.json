@@ -1,6 +1,39 @@
 {
-  "updated": "2026-07-31T18:30:00+02:00",
+  "updated": "2026-07-31T17:04:44+02:00",
   "items": [
+    {
+      "id": "2026-07-31-statystyki-sg-i-polrocze-2026",
+      "added": "2026-07-31",
+      "category": "Bezpieczeństwo",
+      "title": "Straż Graniczna podsumowuje I półrocze 2026 r.: o 68 proc. więcej zatrzymań za nielegalny pobyt",
+      "summary": "Według danych za pierwsze półrocze 2026 r. Straż Graniczna zatrzymała blisko 11 tys. cudzoziemców przebywających w Polsce nielegalnie — o 68 proc. więcej niż rok wcześniej. Najliczniejsze grupy to obywatele Ukrainy (4036), Kolumbii (1098) i Gruzji (950). Służby odmówiły wjazdu 11 166 cudzoziemcom (wzrost o 3 proc.), a liczba wniosków o ochronę międzynarodową spadła do ok. 2,4 tys. wobec 5,9 tys. rok wcześniej. Dokładne wartości warto zweryfikować w oficjalnych statystykach SG.",
+      "source_name": "Portal Spożywczy",
+      "author": "",
+      "url": "https://www.portalspozywczy.pl/inne/wiadomosci/nielegalne-pobyty-w-polsce-mocno-w-gore-wzrost-o-68-proc,291460.html",
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Border Guard sums up H1 2026: 68% more detentions for illegal stay",
+          "summary": "According to data for the first half of 2026, the Polish Border Guard detained nearly 11,000 foreigners staying in Poland illegally — 68% more than a year earlier. The largest groups were citizens of Ukraine (4,036), Colombia (1,098) and Georgia (950). Entry was refused to 11,166 foreigners (up 3%), while the number of international protection applications fell to about 2,400 from 5,900 a year earlier. Exact figures should be verified in official Border Guard statistics."
+        },
+        "es": {
+          "title": "La Guardia Fronteriza resume el primer semestre de 2026: un 68% más de detenciones por estancia ilegal",
+          "summary": "Según los datos del primer semestre de 2026, la Guardia Fronteriza polaca detuvo a casi 11 000 extranjeros que permanecían ilegalmente en Polonia, un 68% más que el año anterior. Los grupos más numerosos fueron ciudadanos de Ucrania (4036), Colombia (1098) y Georgia (950). Se denegó la entrada a 11 166 extranjeros (un 3% más) y el número de solicitudes de protección internacional bajó a unas 2400 frente a 5900 el año anterior. Conviene verificar las cifras exactas en las estadísticas oficiales de la Guardia Fronteriza."
+        },
+        "uk": {
+          "title": "Прикордонна служба підсумовує I півріччя 2026 р.: на 68% більше затримань за нелегальне перебування",
+          "summary": "За даними за перше півріччя 2026 р., польська Прикордонна служба затримала майже 11 тис. іноземців, які нелегально перебували в Польщі, — на 68% більше, ніж роком раніше. Найчисленніші групи — громадяни України (4036), Колумбії (1098) та Грузії (950). У в’їзді відмовлено 11 166 іноземцям (зростання на 3%), а кількість заяв про міжнародний захист знизилася до близько 2,4 тис. проти 5,9 тис. роком раніше. Точні дані варто перевірити в офіційній статистиці Прикордонної служби."
+        },
+        "ru": {
+          "title": "Пограничная служба подводит итоги I полугодия 2026 г.: на 68% больше задержаний за нелегальное пребывание",
+          "summary": "По данным за первое полугодие 2026 г., польская Пограничная служба задержала почти 11 тыс. иностранцев, нелегально находившихся в Польше, — на 68% больше, чем годом ранее. Самые многочисленные группы — граждане Украины (4036), Колумбии (1098) и Грузии (950). Во въезде отказано 11 166 иностранцам (рост на 3%), а число заявлений о международной защите снизилось до около 2,4 тыс. против 5,9 тыс. годом ранее. Точные данные следует проверить в официальной статистике Пограничной службы."
+        },
+        "fr": {
+          "title": "Le corps des gardes-frontières dresse le bilan du 1er semestre 2026 : 68 % de détentions en plus pour séjour irrégulier",
+          "summary": "Selon les données du premier semestre 2026, les gardes-frontières polonais ont interpellé près de 11 000 étrangers en séjour irrégulier en Pologne, soit 68 % de plus qu’un an auparavant. Les groupes les plus nombreux étaient les citoyens d’Ukraine (4036), de Colombie (1098) et de Géorgie (950). L’entrée a été refusée à 11 166 étrangers (+3 %), tandis que le nombre de demandes de protection internationale est tombé à environ 2 400 contre 5 900 un an plus tôt. Les chiffres exacts sont à vérifier dans les statistiques officielles des gardes-frontières."
+        }
+      }
+    },
     {
       "id": "2026-07-31-sg-kradziez-rowerow-ena",
       "added": "2026-07-31",
