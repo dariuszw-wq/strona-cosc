@@ -838,7 +838,17 @@ document.querySelectorAll('.trust,.path-sec,.ct-demo,.mascot').forEach(el=>io.ob
   });
   if(!touch){
     document.addEventListener('mouseover',function(e){var v=vidOf(e.target);if(v&&v.paused){v.play().catch(function(){});}});
-    document.addEventListener('mouseout',function(e){var v=vidOf(e.target);if(v&&v.muted){var to=e.relatedTarget;if(!to||!to.closest||vidOf(to)!==v){v.pause();v.currentTime=0;}}});
+    document.addEventListener('mouseout',function(e){
+      var v=vidOf(e.target);if(!v)return;
+      var to=e.relatedTarget;
+      if(to&&to.closest&&vidOf(to)===v)return; /* wciąż w tym samym banerze */
+      v.pause();v.muted=true;v.currentTime=0;  /* koniec podświetlenia = koniec dźwięku */
+    });
+  }
+  /* baner poza ekranem (scroll/dotyk) → stop dźwięku */
+  if('IntersectionObserver' in window){
+    var vio=new IntersectionObserver(function(es){es.forEach(function(en){if(!en.isIntersecting){var v=en.target;v.pause();v.muted=true;v.currentTime=0;}})},{threshold:.2});
+    document.querySelectorAll('.mascot-video').forEach(function(v){vio.observe(v);});
   }
 })();
 </script>
