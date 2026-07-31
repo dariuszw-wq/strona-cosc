@@ -32,6 +32,8 @@
   /* ---- słownik etykiet (JEDNO miejsce edycji tłumaczeń menu) ---- */
   var L = {
     'Jestem cudzoziemcem': { en: "I'm a foreigner", es: 'Soy extranjero', uk: 'Я іноземець', ru: 'Я иностранец', fr: 'Je suis étranger' },
+    'Cudzoziemiec': { en: 'Foreigner', es: 'Extranjero', uk: 'Іноземець', ru: 'Иностранец', fr: 'Étranger' },
+    'Pracodawca': { en: 'Employer', es: 'Empleador', uk: 'Роботодавець', ru: 'Работодатель', fr: 'Employeur' },
     'Jestem pracodawcą': { en: "I'm an employer", es: 'Soy empleador', uk: 'Я роботодавець', ru: 'Я работодатель', fr: 'Je suis employeur' },
     'Strona sekcji': { en: 'Section page', es: 'Página de la sección', uk: 'Сторінка розділу', ru: 'Страница раздела', fr: 'Page de la section' },
     'Problemy z legalnym pobytem': { en: 'Problems with legal residence', es: 'Problemas con la residencia legal', uk: 'Проблеми з легальним перебуванням', ru: 'Проблемы с легальным пребыванием', fr: 'Problèmes de séjour légal' },
@@ -57,7 +59,7 @@
   /* ---- struktura menu ---- */
   var MENU = {
     hubs: [
-      { label: 'Jestem cudzoziemcem', items: [
+      { label: 'Jestem cudzoziemcem', short: 'Cudzoziemiec', items: [
         { t: 'Strona sekcji', href: 'cudzoziemcy/' },
         { t: 'Problemy z legalnym pobytem', href: 'uslugi.html' },
         { t: 'Kto powinien robić Twoją kartę?', href: 'karta-pobytu-prawnik-czy-pracodawca.html' },
@@ -72,7 +74,7 @@
         { t: 'Przewodnik po Polsce', href: 'przewodnik-po-polsce.html' },
         { t: 'Aktualności', href: 'aktualnosci.html' }
       ] },
-      { label: 'Jestem pracodawcą', items: [
+      { label: 'Jestem pracodawcą', short: 'Pracodawca', items: [
         { t: 'Strona sekcji', href: 'pracodawcy/' },
         { t: 'Legalne zatrudnienie', href: 'pracodawcy/#legalne-zatrudnienie' },
         { t: 'ZUS i rozliczenia', href: 'pracodawcy/#zus-rozliczenia' },
@@ -108,17 +110,29 @@
     + '.csh-more-menu a:hover{background:rgba(201,169,97,.16);color:#6d6ae0}'
     + '.csh-header .lang{flex:none;position:static !important;top:auto !important;right:auto !important;transform:none !important;margin-left:auto}'
     + '.csh-burger{display:none;background:none;border:none;color:#fff;font-size:26px;cursor:pointer;flex:none}'
+    + '.csh-l-short{display:none}.csh-mob-x{display:none}'
     + '@media(max-width:900px){'
-    + '.csh-wrap{flex-wrap:wrap;gap:8px;padding:0 12px}'
-    + '.csh-name{font-size:12px}'
-    + '.csh-header .lang{margin-left:auto;order:3}'
-    + '.csh-menu{white-space:normal}'
-    + '.csh-burger{display:block;order:2;margin-left:10px;margin-right:auto}'
-    + '.csh-menu{order:4;display:none;flex-basis:100%;flex-direction:column;align-items:stretch;gap:0;padding:8px 0}'
-    + '.csh-header.csh-open .csh-menu{display:flex}'
-    + '.csh-more,.csh-menu>a{width:100%}'
-    + '.csh-more-menu{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;background:rgba(255,255,255,.04);border:none;margin:2px 0 6px}'
-    + '.csh-more-btn{width:100%;justify-content:space-between}.csh-cta{text-align:center;margin-top:6px}}';
+    /* JEDEN wiersz: małe logo + przyciski Cudzoziemiec/Pracodawca + języki; bez burgera */
+    + '.csh-wrap{flex-wrap:nowrap;gap:6px;padding:0 8px;min-height:52px}'
+    + '.csh-logo{gap:4px}'
+    + '.csh-flag{width:18px;height:18px;border-radius:4px}'
+    + '.csh-name{font-size:9px;line-height:1.15}'
+    + '.csh-logo svg{width:18px;height:18px}'
+    + '.csh-burger{display:none}'
+    + '.csh-menu{display:flex;flex:1 1 auto;flex-wrap:nowrap;gap:5px;white-space:nowrap;min-width:0}'
+    + '.csh-more{flex:1 1 50%;min-width:0;position:relative}'
+    + '.csh-l-full{display:none}.csh-l-short{display:inline}'
+    + '.csh-more-btn{width:100%;justify-content:center;font-weight:700;font-size:11.5px;padding:8px 4px;border:1px solid rgba(255,255,255,.4);border-radius:9px;background:rgba(255,255,255,.08)}'
+    + '.csh-more.open .csh-more-btn{background:rgba(255,255,255,.18)}'
+    + '.csh-more-menu{display:none;position:absolute;top:calc(100% + 8px);left:0;min-width:250px;max-width:92vw;opacity:1;visibility:visible;transform:none}'
+    + '.csh-more.open .csh-more-menu{display:flex}'
+    + '.csh-more:last-of-type .csh-more-menu{left:auto;right:0}'
+    /* Kalkulator + CTA z paska chowamy; są na dole każdej rozwijanej listy */
+    + '.csh-menu>a{display:none}'
+    + '.csh-mob-x{display:block;border-top:1px solid rgba(255,255,255,.14);margin-top:4px;padding-top:11px}'
+    + '.csh-mob-x~.csh-mob-x{border-top:none;margin-top:0;padding-top:11px}'
+    + '.csh-mob-cta{background:#d4213d;color:#fff !important;text-align:center;font-weight:700;border-radius:9px;margin-top:6px}'
+    + '.csh-header .lang{margin-left:2px}}';
 
   /* ---- render ---- */
   function span(pl) { return '<span data-csh-k="' + pl.replace(/"/g, '&quot;') + '">' + pl + '</span>'; }
@@ -126,9 +140,13 @@
     var lis = hub.items.map(function (it) {
       return '<a href="' + url(it.href) + '">' + span(it.t) + '</a>';
     }).join('');
+    /* na telefonie: tylko CTA na dole listy (bez kalkulatora) */
+    var mob = '<a class="csh-mob-x csh-mob-cta" href="' + url(MENU.cta.href) + '">' + span(MENU.cta.t) + '</a>';
     return '<div class="csh-more"><button class="csh-more-btn" type="button" aria-haspopup="true" aria-expanded="false">'
-      + span(hub.label) + '<span class="chev">▾</span></button>'
-      + '<div class="csh-more-menu">' + lis + '</div></div>';
+      + '<span class="csh-l-full">' + span(hub.label) + '</span>'
+      + '<span class="csh-l-short">' + span(hub.short || hub.label) + '</span>'
+      + '<span class="chev">▾</span></button>'
+      + '<div class="csh-more-menu">' + lis + mob + '</div></div>';
   }
   var euSvg = '<span aria-label="Godło Unii Europejskiej" style="display:inline-flex;align-items:center">'
     + '<svg width="30" height="30" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" role="img"><rect width="36" height="36" rx="7" fill="#0A2A8C"/>'

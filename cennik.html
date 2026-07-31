@@ -492,55 +492,261 @@ footer .upd{margin-top:14px;font-size:11.5px;color:#6B7890}
 </section>
 
 <section id="cennik">
+  <style>
+  /* ===== Zakładki ofert ===== */
+  .of-tabs{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 26px}
+  .of-tab{font-family:inherit;font-size:15px;font-weight:700;padding:12px 22px;border-radius:99px;border:1.5px solid var(--gold);background:#fff;color:var(--gold);cursor:pointer;transition:.2s}
+  .of-tab.on{background:var(--gold);color:#fff;box-shadow:0 6px 18px rgba(70,54,201,.28)}
+  .of-tab:hover{transform:translateY(-1px)}
+  .oferta[hidden]{display:none}
+  .of-sub{font-size:14.5px;color:var(--gold);font-weight:600;margin:0 0 18px}
+  /* ===== Tabela porównawcza ===== */
+  .ckarta{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 8px 24px rgba(22,36,76,.08)}
+  .ctab{display:grid;grid-template-columns:2fr 1fr 1fr 1.15fr;font-size:14px}
+  .ctab .th{padding:16px 8px;text-align:center;font-weight:700;color:var(--navy);line-height:1.3}
+  .ctab .th.zakres{padding:16px 18px;color:#8a90a5;font-weight:600;letter-spacing:.06em;text-align:left;font-size:12px;text-transform:uppercase}
+  .ctab .th.hi{background:var(--gold);color:#fff}
+  .ctab .th .price{font-family:'IBM Plex Serif',serif;font-size:22px;display:block;margin-top:2px}
+  .ctab .th .pay{font-size:12px;font-weight:500;opacity:.75;display:block;margin-top:3px}
+  .ctab .th.hi .pay{opacity:.9;color:#e7e5ff}
+  .ctab .cell{border-top:1px solid var(--line);padding:11px 8px;text-align:center;display:flex;align-items:center;justify-content:center}
+  .ctab .cell.label{padding:11px 18px;text-align:left;line-height:1.4;justify-content:flex-start;display:block}
+  .ctab .cell.label .sub{display:block;font-size:12px;color:var(--mut);font-weight:400;margin-top:2px;line-height:1.4}
+  .ctab .cell.hi{background:#f1f0fb}
+  .ctab .ok{color:#1a9a52;font-weight:800}
+  .ctab .no{color:#c9cede}
+  .ctab .star{color:#daa520;font-size:26px;line-height:1}
+  .ctab .btnrow{padding:14px 10px}
+  .ctab .cbtn{display:block;width:100%;text-align:center;text-decoration:none;font-size:13.5px;font-weight:700;padding:10px 6px;border-radius:99px;transition:.2s}
+  .ctab .cbtn.st{border:1.5px solid var(--gold);color:var(--gold)}
+  .ctab .cbtn.stnd{background:var(--gold);color:#fff}
+  .ctab .cbtn.vip{background:#d4213d;color:#fff}
+  .ctab .cbtn:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(22,36,76,.18)}
+  .ctrust{background:#f1f0fb;border-top:1px solid var(--line);padding:13px 22px;font-size:13.5px;color:#2c3550}
+  .ctrust b{color:var(--gold)}
+  /* ===== „W każdym pakiecie" ===== */
+  .calso{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 22px;margin-top:16px;box-shadow:0 4px 12px rgba(22,36,76,.05)}
+  .calso-t{font-size:11px;font-weight:800;color:var(--gold);letter-spacing:.14em;text-transform:uppercase;margin:0 0 10px}
+  .calso-t:not(:first-child){margin-top:14px}
+  .calso-items{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:6px 18px;font-size:14px}
+  .calso-items span{position:relative;padding-left:18px;line-height:1.45}
+  .calso-items span::before{content:"●";position:absolute;left:0;top:0;color:var(--gold);font-size:11px}
+  /* ===== Warunki ===== */
+  .cterms{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px;margin-top:16px;font-size:13.5px;color:#2c3550}
+  .cterms h3{font-family:'IBM Plex Sans',sans-serif;font-size:13px;font-weight:700;color:var(--gold);margin:0 0 8px;text-transform:uppercase;letter-spacing:.05em}
+  .cterms h3:not(:first-child){margin-top:16px}
+  .cterms p{margin:0 0 6px;line-height:1.55}
+  .cterms ul{margin:6px 0 10px;padding:0;list-style:none}
+  .cterms ul li{padding:3px 0 3px 16px;position:relative;line-height:1.5}
+  .cterms ul li::before{content:"•";position:absolute;left:2px;color:var(--gold);font-weight:800}
+  .cterms .disc{font-size:12.5px;font-style:italic;color:#8a90a5;margin-top:10px}
+  /* ===== Mobile: przełącznik pakietu ===== */
+  .pkg-switch{display:none;gap:8px;margin:0 0 14px}
+  .pkg-switch button{flex:1;font-family:inherit;font-size:12.5px;font-weight:700;padding:9px 4px;border-radius:9px;border:1.5px solid var(--gold);background:#fff;color:var(--gold);cursor:pointer}
+  .pkg-switch button.on{background:var(--gold);color:#fff}
+  @media(max-width:760px){
+    .pkg-switch{display:flex}
+    .ctab{grid-template-columns:1.5fr 1fr}
+    .ctab .c1,.ctab .c2,.ctab .c3{display:none}
+    .oferta.pk1 .ctab .c1{display:flex}
+    .oferta.pk2 .ctab .c2{display:flex}
+    .oferta.pk3 .ctab .c3{display:flex}
+    .oferta.pk1 .ctab .th.c1,.oferta.pk2 .ctab .th.c2,.oferta.pk3 .ctab .th.c3{display:block}
+  }
+  </style>
   <div class="wrap">
     <div class="sec-head">
       <span class="eyebrow">Wybierz swój pakiet</span>
       <h2>Wybierz, ile spokoju i bezpieczeństwa potrzebujesz</h2>
       <p>*Warunki gwarancji określa Regulamin. Gwarancja dotyczy pakietów z reprezentacją.</p>
     </div>
-    <div class="plany">
-      <div class="plan">
-        <h3>START</h3>
-        <div class="cena">1200 <small>zł · jednorazowo</small></div>
-        <ul>
-          <li>Analiza dokumentów i lista braków</li>
-          <li>Stały adres korespondencyjny</li>
-          <li>Wypełnienie i złożenie wniosku online</li>
-          <li>Własny profil sprawy w Centrum</li>
-        </ul>
-        <a class="btn btn-gold" href="kontakt.html">Wybieram ten pakiet</a>
+
+    <!-- Przełącznik ofert -->
+    <div class="of-tabs" role="tablist">
+      <button type="button" class="of-tab on" data-oftab="of-nowa" role="tab" aria-selected="true">Nowa sprawa</button>
+      <button type="button" class="of-tab" data-oftab="of-kont" role="tab" aria-selected="false">Kontynuacja sprawy</button>
+    </div>
+
+    <!-- ============ OFERTA 1: NOWA SPRAWA ============ -->
+    <div class="oferta pk2" id="of-nowa">
+      <p class="of-sub">Twoja Karta Pobytu — spokojna droga do legalnego życia dla Ciebie i Twojej rodziny. Nowa sprawa albo przejęcie prowadzenia od dotychczasowego pełnomocnika.</p>
+      <div class="pkg-switch" aria-label="Wybierz pakiet do porównania">
+        <button type="button" data-pkg="1">START</button>
+        <button type="button" data-pkg="2" class="on">STANDARD</button>
+        <button type="button" data-pkg="3">ALL INCLUSIVE</button>
       </div>
-      <div class="plan best">
-        <div class="tag">Najczęściej wybierany</div>
-        <h3>STANDARD</h3>
-        <div class="cena">1950 <small>zł · w 2 ratach</small></div>
-        <ul>
-          <li>Wszystko z pakietu START</li>
-          <li>Komplet dokumentów od pracodawcy</li>
-          <li>Pełna weryfikacja i reprezentacja przy złożeniu</li>
-          <li>Odpowiedzi na wezwania i pisma z urzędu</li>
-          <li>Prowadzenie sprawy do decyzji + odwołanie</li>
-          <li>Twoja karta pobytu — albo zwrot wynagrodzenia*</li>
-        </ul>
-        <a class="btn btn-gold" href="kontakt.html">Wybieram ten pakiet</a>
-        <div class="gw">✦ Gwarancja na piśmie*</div>
+      <div class="ckarta">
+        <div class="ctab">
+          <div class="th zakres">Zakres usługi</div>
+          <div class="th c1">START<span class="price">1200 zł</span><span class="pay">jednorazowo</span></div>
+          <div class="th c2">STANDARD<span class="price">1950 zł</span><span class="pay">w 2 ratach</span></div>
+          <div class="th hi c3">ALL INCLUSIVE<span class="price">3500 zł</span><span class="pay">w 3 ratach</span></div>
+
+          <div class="cell label">Analiza dokumentów i lista braków</div>
+          <div class="cell ok c1">✓</div><div class="cell ok c2">✓</div><div class="cell hi ok c3">✓</div>
+          <div class="cell label">Stały adres korespondencyjny, przekazywanie korespondencji</div>
+          <div class="cell ok c1">✓</div><div class="cell ok c2">✓</div><div class="cell hi ok c3">✓</div>
+          <div class="cell label">Wypełnienie i złożenie wniosku online</div>
+          <div class="cell ok c1">✓</div><div class="cell ok c2">✓</div><div class="cell hi ok c3">✓</div>
+          <div class="cell label">Komplet dokumentów od pracodawcy</div>
+          <div class="cell no c1">—</div><div class="cell ok c2">✓</div><div class="cell hi ok c3">✓</div>
+          <div class="cell label">Pełna weryfikacja sprawy i reprezentacja przy złożeniu</div>
+          <div class="cell no c1">—</div><div class="cell ok c2">✓</div><div class="cell hi ok c3">✓</div>
+          <div class="cell label">Odpowiedzi na wezwania i pisma z urzędu</div>
+          <div class="cell no c1">—</div><div class="cell ok c2">✓</div><div class="cell hi ok c3">✓</div>
+          <div class="cell label">Prowadzenie sprawy do decyzji + odwołanie</div>
+          <div class="cell no c1">—</div><div class="cell ok c2">✓</div><div class="cell hi ok c3">✓</div>
+          <div class="cell label">Konsultacja dotycząca zmiany warunków pracy</div>
+          <div class="cell no c1">—</div><div class="cell no c2">—</div><div class="cell hi ok c3">✓</div>
+          <div class="cell label">Wniosek o zmianę decyzji związany ze zmianą pracodawcy</div>
+          <div class="cell no c1">—</div><div class="cell no c2">—</div><div class="cell hi ok c3">✓</div>
+          <div class="cell label">Konsultacja w zakresie pobytu stałego / obywatelstwa</div>
+          <div class="cell no c1">—</div><div class="cell no c2">—</div><div class="cell hi ok c3">✓</div>
+          <div class="cell label">Bezpłatna obsługa wybranych wniosków świadczeniowych<span class="sub">zasiłek chorobowy, macierzyński, rodzicielski, opiekuńczy; rodzinny; świadczenie 800+; pomoc społeczna</span></div>
+          <div class="cell no c1">—</div><div class="cell no c2">—</div><div class="cell hi ok c3">✓</div>
+          <div class="cell label">12 miesięcy wsparcia po decyzji</div>
+          <div class="cell no c1">—</div><div class="cell no c2">—</div><div class="cell hi ok c3">✓</div>
+          <div class="cell label">Zwrot wynagrodzenia przy odmowie*</div>
+          <div class="cell no c1">—</div><div class="cell star c2">★</div><div class="cell hi star c3">★</div>
+
+          <div class="cell label" style="border-top:1px solid var(--line)"></div>
+          <div class="cell btnrow c1"><a class="cbtn st" href="kontakt.html">Wybieram</a></div>
+          <div class="cell btnrow c2"><a class="cbtn stnd" href="kontakt.html">Wybieram</a></div>
+          <div class="cell hi btnrow c3"><a class="cbtn vip" href="kontakt.html">Wybieram</a></div>
+        </div>
+        <div class="ctrust"><b>Zaufały nam setki cudzoziemców</b> z Azji, Ameryki Południowej i Afryki.</div>
       </div>
-      <div class="plan">
-        <h3>ALL INCLUSIVE</h3>
-        <div class="cena">3500 <small>zł · w 3 ratach</small></div>
+
+      <div class="calso">
+        <p class="calso-t">W każdym pakiecie</p>
+        <div class="calso-items">
+          <span>Indywidualna lista dokumentów</span>
+          <span>Monitoring stanu sprawy w urzędzie</span>
+          <span>Reakcja na wezwania i uzupełnianie braków</span>
+          <span>Informacja o kolejnych etapach postępowania</span>
+          <span>Stały kontakt z prawnikiem</span>
+        </div>
+      </div>
+
+      <div class="cterms">
+        <h3>* Zwrot wynagrodzenia w razie decyzji odmownej — warunki</h3>
+        <p><b>Zakres.</b> W razie ostatecznej decyzji odmownej Kancelaria zwraca 100% zapłaconego wynagrodzenia, na zasadach określonych w Regulaminie usługi. Zwrot obejmuje wyłącznie sytuacje, w których odmowa nie wynika z okoliczności leżących po stronie Klienta.</p>
+        <h3>Zwrot nie obejmuje przypadków, gdy:</h3>
         <ul>
-          <li>Wszystko z pakietu STANDARD</li>
-          <li>Konsultacja przy zmianie warunków / pracodawcy</li>
-          <li>Konsultacja: pobyt stały / obywatelstwo</li>
-          <li>Bezpłatna obsługa wybranych wniosków świadczeniowych</li>
-          <li>12 miesięcy wsparcia po decyzji</li>
-          <li>Twoja karta pobytu — albo zwrot wynagrodzenia*</li>
+          <li>Klient nie spełnia ustawowych przesłanek udzielenia zezwolenia (np. brak podstawy pobytu lub wymaganego zatrudnienia, przesłanki bezpieczeństwa państwa);</li>
+          <li>Klient przekazał dokumenty lub informacje nieprawdziwe, niekompletne albo z opóźnieniem;</li>
+          <li>Klient nie wykonał wezwań urzędu lub zaleceń Kancelarii w wyznaczonym terminie;</li>
+          <li>w trakcie postępowania zmieniła się sytuacja faktyczna lub prawna Klienta (np. ustanie zatrudnienia, zmiana miejsca zamieszkania na inne państwo, cofnięcie wniosku).</li>
         </ul>
-        <a class="btn btn-gold" href="kontakt.html">Wybieram ten pakiet</a>
-        <div class="gw">✦ Gwarancja na piśmie*</div>
+        <h3>Podstawa prawna</h3>
+        <p>Umowa o świadczenie usług prawnych na podstawie <b>art. 750 Kodeksu cywilnego</b>. Ceny dotyczą wynagrodzenia za usługę prawną i nie obejmują opłat urzędowych (opłata skarbowa 440 zł, 100 zł, 17 zł) ani kosztów podmiotów trzecich (tłumaczenia przysięgłe, opłaty notarialne, opłaty konsularne). Zakres każdego pakietu ustalany jest indywidualnie w umowie o świadczenie usług.</p>
+        <p class="disc">Niniejsze zestawienie ma charakter informacyjny i <b>nie stanowi oferty</b> w rozumieniu art. 66 Kodeksu cywilnego.</p>
+      </div>
+    </div>
+
+    <!-- ============ OFERTA 2: KONTYNUACJA SPRAWY ============ -->
+    <div class="oferta pk2" id="of-kont" hidden>
+      <p class="of-sub">Kontynuacja Twojej sprawy o Kartę Pobytu — spokojne dokończenie już rozpoczętego postępowania. Sprawdzimy stan sprawy w urzędzie, wydamy pisemną opinię i doprowadzimy sprawę do decyzji.</p>
+      <div class="pkg-switch" aria-label="Wybierz pakiet do porównania">
+        <button type="button" data-pkg="1">PRZEGLĄD</button>
+        <button type="button" data-pkg="2" class="on">STANDARD</button>
+        <button type="button" data-pkg="3">ALL INCLUSIVE</button>
+      </div>
+      <div class="ckarta">
+        <div class="ctab">
+          <div class="th zakres">Zakres usługi</div>
+          <div class="th c1">PRZEGLĄD<span class="price">615 zł</span><span class="pay">jednorazowo</span></div>
+          <div class="th c2">STANDARD<span class="price">1650 zł</span><span class="pay">w 2 ratach</span></div>
+          <div class="th hi c3">ALL INCLUSIVE<span class="price">2200 zł</span><span class="pay">w 3 ratach</span></div>
+
+          <div class="cell label">Analiza stanu sprawy i dokumentów w urzędzie</div>
+          <div class="cell ok c1">✓</div><div class="cell ok c2">✓</div><div class="cell hi ok c3">✓</div>
+          <div class="cell label">Wskazanie braków formalnych i ocena szans na pozytywną decyzję</div>
+          <div class="cell ok c1">✓</div><div class="cell ok c2">✓</div><div class="cell hi ok c3">✓</div>
+          <div class="cell label">Pisemna opinia prawna z rekomendacjami</div>
+          <div class="cell ok c1">✓</div><div class="cell ok c2">✓</div><div class="cell hi ok c3">✓</div>
+          <div class="cell label">Konsultacja telefoniczna (do 30 min)</div>
+          <div class="cell ok c1">✓</div><div class="cell ok c2">✓</div><div class="cell hi ok c3">✓</div>
+          <div class="cell label">Zgłoszenie zmiany pełnomocnika w urzędzie</div>
+          <div class="cell no c1">—</div><div class="cell ok c2">✓</div><div class="cell hi ok c3">✓</div>
+          <div class="cell label">Uzupełnienie braków formalnych — dokumenty i pisma</div>
+          <div class="cell no c1">—</div><div class="cell ok c2">✓</div><div class="cell hi ok c3">✓</div>
+          <div class="cell label">Odpowiedzi na wezwania i pisma z urzędu</div>
+          <div class="cell no c1">—</div><div class="cell ok c2">✓</div><div class="cell hi ok c3">✓</div>
+          <div class="cell label">Reprezentacja pełnomocnika w postępowaniu</div>
+          <div class="cell no c1">—</div><div class="cell ok c2">✓</div><div class="cell hi ok c3">✓</div>
+          <div class="cell label">Prowadzenie sprawy do decyzji + odwołanie</div>
+          <div class="cell no c1">—</div><div class="cell ok c2">✓</div><div class="cell hi ok c3">✓</div>
+          <div class="cell label">Konsultacja dotycząca zmiany warunków pracy</div>
+          <div class="cell no c1">—</div><div class="cell no c2">—</div><div class="cell hi ok c3">✓</div>
+          <div class="cell label">Wniosek o zmianę decyzji związany ze zmianą pracodawcy</div>
+          <div class="cell no c1">—</div><div class="cell no c2">—</div><div class="cell hi ok c3">✓</div>
+          <div class="cell label">Konsultacja w zakresie pobytu stałego / obywatelstwa</div>
+          <div class="cell no c1">—</div><div class="cell no c2">—</div><div class="cell hi ok c3">✓</div>
+          <div class="cell label">Bezpłatna obsługa wybranych wniosków świadczeniowych<span class="sub">zasiłek chorobowy, macierzyński, rodzicielski, opiekuńczy; rodzinny; świadczenie 800+; pomoc społeczna</span></div>
+          <div class="cell no c1">—</div><div class="cell no c2">—</div><div class="cell hi ok c3">✓</div>
+          <div class="cell label">12 miesięcy wsparcia po decyzji</div>
+          <div class="cell no c1">—</div><div class="cell no c2">—</div><div class="cell hi ok c3">✓</div>
+          <div class="cell label">Zwrot wynagrodzenia przy odmowie*</div>
+          <div class="cell no c1">—</div><div class="cell star c2">★</div><div class="cell hi star c3">★</div>
+
+          <div class="cell label" style="border-top:1px solid var(--line)"></div>
+          <div class="cell btnrow c1"><a class="cbtn st" href="kontakt.html">Wybieram</a></div>
+          <div class="cell btnrow c2"><a class="cbtn stnd" href="kontakt.html">Wybieram</a></div>
+          <div class="cell hi btnrow c3"><a class="cbtn vip" href="kontakt.html">Wybieram</a></div>
+        </div>
+        <div class="ctrust"><b>Zaufały nam setki cudzoziemców</b> z Azji, Ameryki Południowej i Afryki.</div>
+      </div>
+
+      <div class="calso">
+        <p class="calso-t">W każdym pakiecie</p>
+        <div class="calso-items">
+          <span>Indywidualna lista dokumentów</span>
+          <span>Informacja o kolejnych etapach postępowania</span>
+        </div>
+        <p class="calso-t">Dodatkowo w Standard i All Inclusive</p>
+        <div class="calso-items">
+          <span>Monitoring stanu sprawy w urzędzie</span>
+          <span>Reakcja na wezwania i uzupełnianie braków</span>
+          <span>Stały kontakt z prawnikiem</span>
+        </div>
+      </div>
+
+      <div class="cterms">
+        <h3>* Zwrot wynagrodzenia w razie decyzji odmownej — warunki (pakiety „Standard" i „All Inclusive")</h3>
+        <p><b>Zakres.</b> W razie ostatecznej decyzji odmownej Kancelaria zwraca 100% zapłaconego wynagrodzenia, na zasadach określonych w Regulaminie usługi. Zwrot obejmuje wyłącznie sytuacje, w których odmowa nie wynika z okoliczności leżących po stronie Klienta.</p>
+        <h3>Zwrot nie obejmuje przypadków, gdy:</h3>
+        <ul>
+          <li>Klient nie spełnia ustawowych przesłanek udzielenia zezwolenia (np. brak podstawy pobytu lub wymaganego zatrudnienia, przesłanki bezpieczeństwa państwa);</li>
+          <li>Klient przekazał dokumenty lub informacje nieprawdziwe, niekompletne albo z opóźnieniem;</li>
+          <li>Klient nie wykonał wezwań urzędu lub zaleceń Kancelarii w wyznaczonym terminie;</li>
+          <li>w trakcie postępowania zmieniła się sytuacja faktyczna lub prawna Klienta (np. ustanie zatrudnienia, zmiana miejsca zamieszkania na inne państwo, cofnięcie wniosku);</li>
+          <li>na etapie kontynuacji sprawy — braki formalne pozostawione przez dotychczasowego pełnomocnika okazały się nieusuwalne w warunkach ustawowych.</li>
+        </ul>
+        <h3>Podstawa prawna</h3>
+        <p>Umowa o świadczenie usług prawnych na podstawie <b>art. 750 Kodeksu cywilnego</b>. Ceny dotyczą wynagrodzenia za usługę prawną i nie obejmują opłat urzędowych (opłata skarbowa 440 zł, 100 zł, 17 zł) ani kosztów podmiotów trzecich (tłumaczenia przysięgłe, opłaty notarialne, opłaty konsularne). Zakres każdego pakietu ustalany jest indywidualnie w umowie o świadczenie usług.</p>
+        <p class="disc">Niniejsze zestawienie ma charakter informacyjny i <b>nie stanowi oferty</b> w rozumieniu art. 66 Kodeksu cywilnego.</p>
       </div>
     </div>
   </div>
+  <script>
+  // Zakładki ofert + przełącznik pakietu (delegacja zdarzeń — odporne na i18n)
+  document.addEventListener('click',function(e){
+    var t=e.target.closest&&e.target.closest('[data-oftab]');
+    if(t){
+      document.querySelectorAll('.of-tab').forEach(function(b){b.classList.toggle('on',b===t);b.setAttribute('aria-selected',b===t?'true':'false');});
+      document.querySelectorAll('.oferta').forEach(function(o){o.hidden=(o.id!==t.getAttribute('data-oftab'));});
+      return;
+    }
+    var p=e.target.closest&&e.target.closest('[data-pkg]');
+    if(p){
+      var of=p.closest('.oferta');if(!of)return;
+      of.classList.remove('pk1','pk2','pk3');
+      of.classList.add('pk'+p.getAttribute('data-pkg'));
+      of.querySelectorAll('[data-pkg]').forEach(function(b){b.classList.toggle('on',b===p);});
+    }
+  });
+  </script>
 </section>
 
 <!-- Formularz kontaktowy → WhatsApp + zapis do arkusza Google -->
