@@ -1,0 +1,599 @@
+{
+ "opis": "Harmonogram automatycznej publikacji artykułów własnych COSC. Zadanie 'cosc-publikacja-artykulow' publikuje wpisy z datą <= dziś, które nie są jeszcze opublikowane.",
+ "wygenerowano": "2026-07-26",
+ "czestotliwosc": "pon/śr/pt",
+ "pozycje": [
+  {
+   "date": "2026-07-27",
+   "file": "artykul-nowa-ustawa-powierzanie-pracy-2025.html",
+   "publish_date_pl": "27 lipca 2026",
+   "news": {
+    "id": "2026-07-27-cosc-nowa-ustawa-powierzanie-pracy-2025",
+    "added": "2026-07-27",
+    "category": "Rynek pracy",
+    "scope": "PL",
+    "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+    "author": "Dariusz Włodarczyk Kancelaria TRC",
+    "url": "artykul-nowa-ustawa-powierzanie-pracy-2025.html",
+    "title": "Nowa ustawa o powierzaniu pracy cudzoziemcom — co zmieniło się od 1 czerwca 2025 r. [materiał własny COSC]",
+    "summary": "Ustawa z 20 marca 2025 r. o powierzaniu pracy cudzoziemcom (Dz.U. 2025 poz. 621) obowiązuje od 1 czerwca 2025. Zniesienie testu rynku pracy, elektronizacja, wyższe kary. Dla pracodawców i kadr."
+   }
+  },
+  {
+   "date": "2026-07-29",
+   "file": "artykul-rezydencja-podatkowa-cudzoziemca.html",
+   "publish_date_pl": "29 lipca 2026",
+   "news": {
+    "id": "2026-07-29-cosc-rezydencja-podatkowa-cudzoziemca",
+    "added": "2026-07-29",
+    "category": "Rynek pracy",
+    "scope": "PL",
+    "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+    "author": "Dariusz Włodarczyk Kancelaria TRC",
+    "url": "artykul-rezydencja-podatkowa-cudzoziemca.html",
+    "title": "Rezydencja podatkowa cudzoziemca w Polsce — reguła 183 dni i ośrodek interesów życiowych [materiał własny COSC]",
+    "summary": "Kiedy cudzoziemiec jest polskim rezydentem podatkowym? Reguła 183 dni, ośrodek interesów życiowych, nieograniczony i ograniczony obowiązek podatkowy, certyfikat rezydencji. Stan prawny 2026."
+   }
+  },
+  {
+   "date": "2026-07-31",
+   "file": "artykul-czy-cudzoziemiec-podlega-zus.html",
+   "publish_date_pl": "31 lipca 2026",
+   "news": {
+    "id": "2026-07-31-cosc-czy-cudzoziemiec-podlega-zus",
+    "added": "2026-07-31",
+    "category": "Rynek pracy",
+    "scope": "PL",
+    "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+    "author": "Dariusz Włodarczyk Kancelaria TRC",
+    "url": "artykul-czy-cudzoziemiec-podlega-zus.html",
+    "title": "Czy cudzoziemiec podlega ubezpieczeniom ZUS w Polsce [materiał własny COSC]",
+    "summary": "Czy trzeba płacić ZUS za cudzoziemca? Zasada terytorialności, zgłoszenie ZUS ZUA/ZZA, wyjątki (delegowanie A1, umowy międzynarodowe). Podstawa: art. 6 ustawy o systemie ubezpieczeń społecznych. 2026."
+   }
+  },
+  {
+   "date": "2026-08-03",
+   "file": "artykul-praca-bez-zezwolenia-cudzoziemiec.html",
+   "publish_date_pl": "3 sierpnia 2026",
+   "news": {
+    "id": "2026-08-03-cosc-praca-bez-zezwolenia-cudzoziemiec",
+    "added": "2026-08-03",
+    "category": "Rynek pracy",
+    "scope": "PL",
+    "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+    "author": "Dariusz Włodarczyk Kancelaria TRC",
+    "url": "artykul-praca-bez-zezwolenia-cudzoziemiec.html",
+    "title": "Kto może pracować w Polsce bez zezwolenia na pracę [materiał własny COSC]",
+    "summary": "Kto pracuje bez zezwolenia na pracę: swobodny dostęp do rynku, szczególne przypadki (rozp. z 20.11.2025), obywatele Ukrainy. Jak sprawdzić status pracownika. Dla pracodawców i cudzoziemców. 2026."
+   }
+  },
+  {
+   "date": "2026-08-04",
+   "file": "artykul-pracodawca-nie-oddaje-dokumentow.html",
+   "publish_date_pl": "4 sierpnia 2026",
+   "news": {
+    "id": "2026-08-04-cosc-pracodawca-nie-oddaje-dokumentow",
+    "added": "2026-08-04",
+    "category": "Urzędy",
+    "scope": "PL",
+    "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+    "author": "Dariusz Włodarczyk Kancelaria TRC",
+    "url": "artykul-pracodawca-nie-oddaje-dokumentow.html",
+    "title": "Pracodawca nie oddaje dokumentów do karty pobytu — co robić krok po kroku [materiał własny COSC]",
+    "summary": "Bez dokumentów od pracodawcy łatwo przegapić wezwanie z urzędu i stracić legalny pobyt. Krok po kroku: jak odzyskać dokumenty, jakie masz prawa (art. 97 KP, art. 64 § 2 KPA) i termin 15 dni po utracie pracy."
+   }
+  },
+  {
+   "date": "2026-08-05",
+   "file": "artykul-nielegalne-zatrudnienie-kary.html",
+   "publish_date_pl": "5 sierpnia 2026",
+   "news": {
+    "id": "2026-08-05-cosc-nielegalne-zatrudnienie-kary",
+    "added": "2026-08-05",
+    "category": "Rynek pracy",
+    "scope": "PL",
+    "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+    "author": "Dariusz Włodarczyk Kancelaria TRC",
+    "url": "artykul-nielegalne-zatrudnienie-kary.html",
+    "title": "Kary za nielegalne zatrudnienie cudzoziemca w 2026 r. [materiał własny COSC]",
+    "summary": "Nielegalne powierzenie pracy cudzoziemcowi: grzywna 3 000–50 000 zł, mandaty PIP do 10 000 zł, kara proporcjonalna do liczby osób. Kto odpowiada i jak uniknąć. Stan 2026."
+   }
+  },
+  {
+   "date": "2026-08-07",
+   "file": "artykul-zmiana-pracodawcy-karta-pobytu.html",
+   "publish_date_pl": "7 sierpnia 2026",
+   "news": {
+    "id": "2026-08-07-cosc-zmiana-pracodawcy-karta-pobytu",
+    "added": "2026-08-07",
+    "category": "Rynek pracy",
+    "scope": "PL",
+    "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+    "author": "Dariusz Włodarczyk Kancelaria TRC",
+    "url": "artykul-zmiana-pracodawcy-karta-pobytu.html",
+    "title": "Zmiana pracodawcy a karta pobytu i zezwolenie na pracę [materiał własny COSC]",
+    "summary": "Zmiana pracodawcy przez cudzoziemca: kiedy potrzebne jest nowe zezwolenie/oświadczenie, wpływ na kartę pobytu i zezwolenie jednolite, jak uniknąć luki w legalności pracy. Stan 2026."
+   }
+  },
+  {
+   "date": "2026-08-10",
+   "file": "artykul-delegowanie-a1-skladki.html",
+   "publish_date_pl": "10 sierpnia 2026",
+   "news": {
+    "id": "2026-08-10-cosc-delegowanie-a1-skladki",
+    "added": "2026-08-10",
+    "category": "Rynek pracy",
+    "scope": "PL",
+    "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+    "author": "Dariusz Włodarczyk Kancelaria TRC",
+    "url": "artykul-delegowanie-a1-skladki.html",
+    "title": "Delegowanie i formularz A1 — gdzie płaci się składki cudzoziemca [materiał własny COSC]",
+    "summary": "Formularz A1 i delegowanie: gdzie płaci się składki przy pracy w UE, zasada jednego ustawodawstwa (rozp. 883/2004), delegowanie do 24 miesięcy, ryzyko braku A1. Przewodnik dla kadr. Stan 2026."
+   }
+  },
+  {
+   "date": "2026-08-11",
+   "file": "artykul-jak-odzyskac-dokumenty-do-karty-pobytu.html",
+   "publish_date_pl": "11 sierpnia 2026",
+   "news": {
+    "id": "2026-08-11-cosc-jak-odzyskac-dokumenty-do-karty-pobytu",
+    "added": "2026-08-11",
+    "category": "Urzędy",
+    "scope": "PL",
+    "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+    "author": "Dariusz Włodarczyk Kancelaria TRC",
+    "url": "artykul-jak-odzyskac-dokumenty-do-karty-pobytu.html",
+    "title": "Jak odzyskać dokumenty do karty pobytu od pracodawcy lub agencji [materiał własny COSC]",
+    "summary": "Które dokumenty sprawy pobytowej są kluczowe, jak je skutecznie odzyskać (wezwanie, dowody, pełnomocnik) i jak zdobyć kopie z akt urzędu na podstawie art. 73 KPA."
+   }
+  },
+  {
+   "date": "2026-08-12",
+   "file": "artykul-nieograniczony-ograniczony-obowiazek-podatkowy.html",
+   "publish_date_pl": "12 sierpnia 2026",
+   "news": {
+    "id": "2026-08-12-cosc-nieograniczony-ograniczony-obowiazek-podatkowy",
+    "added": "2026-08-12",
+    "category": "Rynek pracy",
+    "scope": "PL",
+    "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+    "author": "Dariusz Włodarczyk Kancelaria TRC",
+    "url": "artykul-nieograniczony-ograniczony-obowiazek-podatkowy.html",
+    "title": "Jak opodatkowany jest cudzoziemiec w Polsce — nieograniczony a ograniczony obowiązek podatkowy [materiał własny COSC]",
+    "summary": "Nieograniczony a ograniczony obowiązek podatkowy cudzoziemca: od czego płacisz PIT w Polsce, co znaczy dochód osiągany w Polsce, podatek u źródła. Podstawa: art. 3 ustawy o PIT. Stan 2026."
+   }
+  },
+  {
+   "date": "2026-08-14",
+   "file": "artykul-elektronizacja-zezwolen-praca-gov-pl.html",
+   "publish_date_pl": "14 sierpnia 2026",
+   "news": {
+    "id": "2026-08-14-cosc-elektronizacja-zezwolen-praca-gov-pl",
+    "added": "2026-08-14",
+    "category": "Rynek pracy",
+    "scope": "PL",
+    "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+    "author": "Dariusz Włodarczyk Kancelaria TRC",
+    "url": "artykul-elektronizacja-zezwolen-praca-gov-pl.html",
+    "title": "Elektronizacja zezwoleń i oświadczeń — jak zatrudnić cudzoziemca przez praca.gov.pl [materiał własny COSC]",
+    "summary": "Od 2025 r. oświadczenia i wnioski o zezwolenie na pracę składa się wyłącznie elektronicznie przez praca.gov.pl. Konto organizacji, podpis, obowiązki online. Dla pracodawców i kadr."
+   }
+  },
+  {
+   "date": "2026-08-17",
+   "file": "artykul-ulga-na-powrot-cudzoziemiec.html",
+   "publish_date_pl": "17 sierpnia 2026",
+   "news": {
+    "id": "2026-08-17-cosc-ulga-na-powrot-cudzoziemiec",
+    "added": "2026-08-17",
+    "category": "Rynek pracy",
+    "scope": "PL",
+    "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+    "author": "Dariusz Włodarczyk Kancelaria TRC",
+    "url": "artykul-ulga-na-powrot-cudzoziemiec.html",
+    "title": "Ulga na powrót — zwolnienie z PIT do 85 528 zł także dla cudzoziemca [materiał własny COSC]",
+    "summary": "Ulga na powrót (art. 21 ust. 1 pkt 152 PIT): zwolnienie przychodów do 85 528 zł rocznie przez 4 lata po przeniesieniu rezydencji do Polski. Warunki, limit PIT-0, jak stosuje pracodawca. Stan 2026."
+   }
+  },
+  {
+   "date": "2026-08-18",
+   "file": "artykul-brak-wezwania-z-urzedu-karta-pobytu.html",
+   "publish_date_pl": "18 sierpnia 2026",
+   "news": {
+    "id": "2026-08-18-cosc-brak-wezwania-z-urzedu-karta-pobytu",
+    "added": "2026-08-18",
+    "category": "Urzędy",
+    "scope": "PL",
+    "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+    "author": "Dariusz Włodarczyk Kancelaria TRC",
+    "url": "artykul-brak-wezwania-z-urzedu-karta-pobytu.html",
+    "title": "Nie dostałeś wezwania z urzędu? Tak można stracić kartę pobytu [materiał własny COSC]",
+    "summary": "Gdy sprawę prowadzi pracodawca, wezwanie z urzędu trafia do niego — a termin biegnie (art. 40 § 2 KPA). Braki formalne bez uzupełnienia to pozostawienie wniosku bez rozpoznania (art. 64 § 2 KPA). Co robić."
+   }
+  },
+  {
+   "date": "2026-08-19",
+   "file": "artykul-swobodny-dostep-do-rynku-pracy.html",
+   "publish_date_pl": "19 sierpnia 2026",
+   "news": {
+    "id": "2026-08-19-cosc-swobodny-dostep-do-rynku-pracy",
+    "added": "2026-08-19",
+    "category": "Rynek pracy",
+    "scope": "PL",
+    "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+    "author": "Dariusz Włodarczyk Kancelaria TRC",
+    "url": "artykul-swobodny-dostep-do-rynku-pracy.html",
+    "title": "Swobodny dostęp do rynku pracy — kto może pracować bez zezwolenia [materiał własny COSC]",
+    "summary": "Swobodny dostęp do rynku pracy: pobyt stały, rezydent UE, status uchodźcy, ochrona uzupełniająca, rodzina obywatela PL/UE. Jak potwierdzić i o czym pamiętać. Stan 2026."
+   }
+  },
+  {
+   "date": "2026-08-21",
+   "file": "artykul-kontrola-pip-straz-graniczna.html",
+   "publish_date_pl": "21 sierpnia 2026",
+   "news": {
+    "id": "2026-08-21-cosc-kontrola-pip-straz-graniczna",
+    "added": "2026-08-21",
+    "category": "Rynek pracy",
+    "scope": "PL",
+    "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+    "author": "Dariusz Włodarczyk Kancelaria TRC",
+    "url": "artykul-kontrola-pip-straz-graniczna.html",
+    "title": "Kontrola PIP i Straży Granicznej — jak przebiega i jak się przygotować [materiał własny COSC]",
+    "summary": "Kontrola legalności zatrudnienia cudzoziemców: PIP i Straż Graniczna, niezapowiedziane i wspólne kontrole, uprawnienia inspektora (mandat do 10 000 zł), jak się przygotować. Stan 2026."
+   }
+  },
+  {
+   "date": "2026-08-24",
+   "file": "artykul-oswiadczenie-o-powierzeniu-pracy-2026.html",
+   "publish_date_pl": "24 sierpnia 2026",
+   "news": {
+    "id": "2026-08-24-cosc-oswiadczenie-o-powierzeniu-pracy-2026",
+    "added": "2026-08-24",
+    "category": "Rynek pracy",
+    "scope": "PL",
+    "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+    "author": "Dariusz Włodarczyk Kancelaria TRC",
+    "url": "artykul-oswiadczenie-o-powierzeniu-pracy-2026.html",
+    "title": "Oświadczenie o powierzeniu pracy cudzoziemcowi 2026 — kto, gdzie, ile i jak [materiał własny COSC]",
+    "summary": "Oświadczenie o powierzeniu pracy 2026: dla obywateli Armenii, Białorusi, Mołdawii i Ukrainy, opłata 400 zł, wpis w powiatowym urzędzie pracy przez praca.gov.pl. Aktualny stan prawny."
+   }
+  },
+  {
+   "date": "2026-08-25",
+   "file": "artykul-wniosek-bez-rozpoznania-jak-ratowac-sprawe.html",
+   "publish_date_pl": "25 sierpnia 2026",
+   "news": {
+    "id": "2026-08-25-cosc-wniosek-bez-rozpoznania-jak-ratowac-sprawe",
+    "added": "2026-08-25",
+    "category": "Urzędy",
+    "scope": "PL",
+    "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+    "author": "Dariusz Włodarczyk Kancelaria TRC",
+    "url": "artykul-wniosek-bez-rozpoznania-jak-ratowac-sprawe.html",
+    "title": "Wniosek o kartę pobytu bez rozpoznania — czy da się uratować sprawę? [materiał własny COSC]",
+    "summary": "Ponaglenie (art. 37 KPA), skarga na bezczynność czy nowy wniosek? Od czego zależy strategia, gdy urząd pozostawił wniosek bez rozpoznania, bo wezwanie utknęło u pracodawcy."
+   }
+  },
+  {
+   "date": "2026-08-26",
+   "file": "artykul-kiedy-nowe-zezwolenie-na-prace.html",
+   "publish_date_pl": "26 sierpnia 2026",
+   "news": {
+    "id": "2026-08-26-cosc-kiedy-nowe-zezwolenie-na-prace",
+    "added": "2026-08-26",
+    "category": "Rynek pracy",
+    "scope": "PL",
+    "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+    "author": "Dariusz Włodarczyk Kancelaria TRC",
+    "url": "artykul-kiedy-nowe-zezwolenie-na-prace.html",
+    "title": "Kiedy potrzebne jest nowe zezwolenie na pracę cudzoziemca [materiał własny COSC]",
+    "summary": "Które zmiany warunków pracy wymagają nowego zezwolenia lub oświadczenia, a które nie: pracodawca, stanowisko, wynagrodzenie, wymiar. Jak uniknąć nielegalnego zatrudnienia. Stan 2026."
+   }
+  },
+  {
+   "date": "2026-08-28",
+   "file": "artykul-umowy-miedzynarodowe-zabezpieczenie-spoleczne.html",
+   "publish_date_pl": "28 sierpnia 2026",
+   "news": {
+    "id": "2026-08-28-cosc-umowy-miedzynarodowe-zabezpieczenie-spoleczne",
+    "added": "2026-08-28",
+    "category": "Rynek pracy",
+    "scope": "PL",
+    "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+    "author": "Dariusz Włodarczyk Kancelaria TRC",
+    "url": "artykul-umowy-miedzynarodowe-zabezpieczenie-spoleczne.html",
+    "title": "Umowy o zabezpieczeniu społecznym z państwami spoza UE [materiał własny COSC]",
+    "summary": "Dwustronne umowy o zabezpieczeniu społecznym: gdzie płaci składki cudzoziemiec spoza UE, zaświadczenie zamiast A1, sumowanie okresów. Jak sprawdzić, czy jest umowa. Stan 2026."
+   }
+  },
+  {
+   "date": "2026-08-31",
+   "file": "artykul-mobilnosc-krotkoterminowa-niebieska-karta-ict.html",
+   "publish_date_pl": "31 sierpnia 2026",
+   "news": {
+    "id": "2026-08-31-cosc-mobilnosc-krotkoterminowa-niebieska-karta-ict",
+    "added": "2026-08-31",
+    "category": "Rynek pracy",
+    "scope": "PL",
+    "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+    "author": "Dariusz Włodarczyk Kancelaria TRC",
+    "url": "artykul-mobilnosc-krotkoterminowa-niebieska-karta-ict.html",
+    "title": "Mobilność krótkoterminowa — praca w Polsce na statusie z innego państwa UE [materiał własny COSC]",
+    "summary": "Mobilność krótkoterminowa cudzoziemca: Niebieska Karta UE, przeniesienie wewnątrz przedsiębiorstwa (ICT), naukowiec, student. Warunki, zawiadomienia i ryzyko. Podstawa: ustawa o cudzoziemcach. 2026."
+   }
+  },
+  {
+   "date": "2026-09-01",
+   "file": "artykul-zmiana-pracodawcy-a-karta-pobytu-terminy.html",
+   "publish_date_pl": "1 września 2026",
+   "news": {
+    "id": "2026-09-01-cosc-zmiana-pracodawcy-a-karta-pobytu-terminy",
+    "added": "2026-09-01",
+    "category": "Urzędy",
+    "scope": "PL",
+    "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+    "author": "Dariusz Włodarczyk Kancelaria TRC",
+    "url": "artykul-zmiana-pracodawcy-a-karta-pobytu-terminy.html",
+    "title": "Zmiana pracodawcy a karta pobytu — terminy 15 i 30 dni, które musisz znać [materiał własny COSC]",
+    "summary": "Kiedy zmiana pracy wymaga zmiany zezwolenia, jak działa termin 15 dni roboczych po utracie pracy i jakie błędy najczęściej kosztują legalny pobyt. Praktyczny przewodnik."
+   }
+  },
+  {
+   "date": "2026-09-02",
+   "file": "artykul-odpowiedzialnosc-karna-nielegalna-praca.html",
+   "publish_date_pl": "2 września 2026",
+   "news": {
+    "id": "2026-09-02-cosc-odpowiedzialnosc-karna-nielegalna-praca",
+    "added": "2026-09-02",
+    "category": "Rynek pracy",
+    "scope": "PL",
+    "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+    "author": "Dariusz Włodarczyk Kancelaria TRC",
+    "url": "artykul-odpowiedzialnosc-karna-nielegalna-praca.html",
+    "title": "Odpowiedzialność za nielegalną pracę cudzoziemca — wykroczenie czy przestępstwo [materiał własny COSC]",
+    "summary": "Odpowiedzialność za nielegalne powierzenie pracy: wykroczenie a przestępstwo, przepisy karne ustawy z 2025 r. (m.in. art. 84), grzywny do 50 000 zł, dodatkowe skutki. Stan 2026."
+   }
+  },
+  {
+   "date": "2026-09-04",
+   "file": "artykul-unikanie-podwojnego-opodatkowania-upo.html",
+   "publish_date_pl": "4 września 2026",
+   "news": {
+    "id": "2026-09-04-cosc-unikanie-podwojnego-opodatkowania-upo",
+    "added": "2026-09-04",
+    "category": "Rynek pracy",
+    "scope": "PL",
+    "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+    "author": "Dariusz Włodarczyk Kancelaria TRC",
+    "url": "artykul-unikanie-podwojnego-opodatkowania-upo.html",
+    "title": "Unikanie podwójnego opodatkowania — UPO, metody i certyfikat rezydencji [materiał własny COSC]",
+    "summary": "Jak uniknąć podwójnego opodatkowania dochodu z pracy: metody (wyłączenie z progresją, odliczenie proporcjonalne), ulga abolicyjna, certyfikat rezydencji, przykład Polska–Ukraina. Stan 2026."
+   }
+  },
+  {
+   "date": "2026-09-07",
+   "file": "artykul-przedluzenie-zezwolenia-na-prace.html",
+   "publish_date_pl": "7 września 2026",
+   "news": {
+    "id": "2026-09-07-cosc-przedluzenie-zezwolenia-na-prace",
+    "added": "2026-09-07",
+    "category": "Rynek pracy",
+    "scope": "PL",
+    "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+    "author": "Dariusz Włodarczyk Kancelaria TRC",
+    "url": "artykul-przedluzenie-zezwolenia-na-prace.html",
+    "title": "Przedłużenie zezwolenia na pracę cudzoziemca — terminy i ciągłość legalnej pracy [materiał własny COSC]",
+    "summary": "Jak przedłużyć zezwolenie na pracę cudzoziemca: terminy, ciągłość legalnej pracy, praca w okresie oczekiwania, legalność po upływie oświadczenia. Planowanie dla kadr. Stan 2026."
+   }
+  },
+  {
+   "date": "2026-09-09",
+   "file": "artykul-zus-obywatel-ukrainy-polska-ukraina.html",
+   "publish_date_pl": "9 września 2026",
+   "news": {
+    "id": "2026-09-09-cosc-zus-obywatel-ukrainy-polska-ukraina",
+    "added": "2026-09-09",
+    "category": "Rynek pracy",
+    "scope": "PL",
+    "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+    "author": "Dariusz Włodarczyk Kancelaria TRC",
+    "url": "artykul-zus-obywatel-ukrainy-polska-ukraina.html",
+    "title": "Składki ZUS obywatela Ukrainy i umowa Polska–Ukraina [materiał własny COSC]",
+    "summary": "ZUS za obywatela Ukrainy: umowa o zabezpieczeniu społecznym (Dz.U. 2013 poz. 1373), gdzie płaci się składki, sumowanie okresów, delegowanie. Praktyczny przewodnik. Stan 2026."
+   }
+  },
+  {
+   "date": "2026-09-11",
+   "file": "artykul-rodzaje-zezwolen-na-prace-2026.html",
+   "publish_date_pl": "11 września 2026",
+   "news": {
+    "id": "2026-09-11-cosc-rodzaje-zezwolen-na-prace-2026",
+    "added": "2026-09-11",
+    "category": "Rynek pracy",
+    "scope": "PL",
+    "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+    "author": "Dariusz Włodarczyk Kancelaria TRC",
+    "url": "artykul-rodzaje-zezwolen-na-prace-2026.html",
+    "title": "Rodzaje zezwoleń na pracę cudzoziemca w 2026 r. — nowe nazwy zamiast typów A–E [materiał własny COSC]",
+    "summary": "Od 1.01.2026 nie ma typów A–E. Nowe nazwy wniosków: ZC-WWZPP, ZC-WWZF, ZC-WWZD i praca sezonowa. Opłaty 100–800 zł. Przewodnik dla pracodawców i kadr. Stan 2026."
+   }
+  },
+  {
+   "date": "2026-09-14",
+   "file": "artykul-checklista-dokumentow-kontrola.html",
+   "publish_date_pl": "14 września 2026",
+   "news": {
+    "id": "2026-09-14-cosc-checklista-dokumentow-kontrola",
+    "added": "2026-09-14",
+    "category": "Rynek pracy",
+    "scope": "PL",
+    "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+    "author": "Dariusz Włodarczyk Kancelaria TRC",
+    "url": "artykul-checklista-dokumentow-kontrola.html",
+    "title": "Checklista dokumentów przed kontrolą zatrudnienia cudzoziemca [materiał własny COSC]",
+    "summary": "Checklista legalnego zatrudnienia cudzoziemca: dokument pobytowy, podstawa pracy, umowa, przekazanie umowy i powiadomienie, zgłoszenia ZUS, terminy. Przygotuj się do kontroli PIP/SG. 2026."
+   }
+  },
+  {
+   "date": "2026-09-16",
+   "file": "artykul-praca-na-wizie-ruch-bezwizowy.html",
+   "publish_date_pl": "16 września 2026",
+   "news": {
+    "id": "2026-09-16-cosc-praca-na-wizie-ruch-bezwizowy",
+    "added": "2026-09-16",
+    "category": "Rynek pracy",
+    "scope": "PL",
+    "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+    "author": "Dariusz Włodarczyk Kancelaria TRC",
+    "url": "artykul-praca-na-wizie-ruch-bezwizowy.html",
+    "title": "Praca na wizie i w ruchu bezwizowym — kiedy jest legalna [materiał własny COSC]",
+    "summary": "Czy można pracować na wizie lub w ruchu bezwizowym? Pobyt to nie to samo co prawo do pracy — potrzebna jest podstawa (zezwolenie/oświadczenie), chyba że zwolnienie. Stan 2026."
+   }
+  },
+  {
+   "date": "2026-09-18",
+   "file": "artykul-cofniecie-uchylenie-wygasniecie-zezwolenia.html",
+   "publish_date_pl": "18 września 2026",
+   "news": {
+    "id": "2026-09-18-cosc-cofniecie-uchylenie-wygasniecie-zezwolenia",
+    "added": "2026-09-18",
+    "category": "Rynek pracy",
+    "scope": "PL",
+    "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+    "author": "Dariusz Włodarczyk Kancelaria TRC",
+    "url": "artykul-cofniecie-uchylenie-wygasniecie-zezwolenia.html",
+    "title": "Cofnięcie, uchylenie i wygaśnięcie zezwolenia na pracę — co robić [materiał własny COSC]",
+    "summary": "Cofnięcie, uchylenie i wygaśnięcie zezwolenia na pracę cudzoziemca: czym się różnią, skutki dla pracownika i pracodawcy, jak zareagować i jak zapobiegać. Stan 2026."
+   }
+  },
+  {
+   "date": "2026-09-21",
+   "file": "artykul-skladka-zdrowotna-cudzoziemca-nfz.html",
+   "publish_date_pl": "21 września 2026",
+   "news": {
+    "id": "2026-09-21-cosc-skladka-zdrowotna-cudzoziemca-nfz",
+    "added": "2026-09-21",
+    "category": "Rynek pracy",
+    "scope": "PL",
+    "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+    "author": "Dariusz Włodarczyk Kancelaria TRC",
+    "url": "artykul-skladka-zdrowotna-cudzoziemca-nfz.html",
+    "title": "Składka zdrowotna cudzoziemca — 9%, NFZ i zgłoszenie do ZUS [materiał własny COSC]",
+    "summary": "Ubezpieczenie zdrowotne cudzoziemca: obowiązek niezależny od obywatelstwa (art. 66 ustawy zdrowotnej), składka 9%, zgłoszenie ZUS ZUA/ZZA, dostęp do NFZ, delegowani. Stan 2026."
+   }
+  },
+  {
+   "date": "2026-09-23",
+   "file": "artykul-rozliczenie-pit-cudzoziemca-kadry.html",
+   "publish_date_pl": "23 września 2026",
+   "news": {
+    "id": "2026-09-23-cosc-rozliczenie-pit-cudzoziemca-kadry",
+    "added": "2026-09-23",
+    "category": "Rynek pracy",
+    "scope": "PL",
+    "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+    "author": "Dariusz Włodarczyk Kancelaria TRC",
+    "url": "artykul-rozliczenie-pit-cudzoziemca-kadry.html",
+    "title": "Rozliczenie PIT cudzoziemca — obowiązki płatnika, PIT-11 i terminy [materiał własny COSC]",
+    "summary": "Jak rozliczyć PIT pracownika cudzoziemca: obowiązki płatnika, PIT-11, PIT-37/PIT-36, IFT-1, terminy i rola rezydencji podatkowej. Praktyczny przewodnik dla kadr i księgowych. Stan 2026."
+   }
+  },
+  {
+   "date": "2026-09-25",
+   "file": "artykul-zezwolenie-jednolite-pobyt-i-praca.html",
+   "publish_date_pl": "25 września 2026",
+   "news": {
+    "id": "2026-09-25-cosc-zezwolenie-jednolite-pobyt-i-praca",
+    "added": "2026-09-25",
+    "category": "Rynek pracy",
+    "scope": "PL",
+    "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+    "author": "Dariusz Włodarczyk Kancelaria TRC",
+    "url": "artykul-zezwolenie-jednolite-pobyt-i-praca.html",
+    "title": "Zezwolenie jednolite — pobyt czasowy i praca cudzoziemca w jednej decyzji [materiał własny COSC]",
+    "summary": "Zezwolenie jednolite łączy pobyt czasowy i pracę cudzoziemca w jednej decyzji wojewody. Kiedy się opłaca, jak złożyć wniosek przez MOS, czym różni się od zezwolenia na pracę. Stan 2026."
+   }
+  },
+  {
+   "date": "2026-09-28",
+   "file": "artykul-nielegalne-zatrudnienie-a-podatek.html",
+   "publish_date_pl": "28 września 2026",
+   "news": {
+    "id": "2026-09-28-cosc-nielegalne-zatrudnienie-a-podatek",
+    "added": "2026-09-28",
+    "category": "Rynek pracy",
+    "scope": "PL",
+    "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+    "author": "Dariusz Włodarczyk Kancelaria TRC",
+    "url": "artykul-nielegalne-zatrudnienie-a-podatek.html",
+    "title": "Nielegalne zatrudnienie a podatek — kto ponosi skutki [materiał własny COSC]",
+    "summary": "Kto płaci PIT przy nielegalnym zatrudnieniu cudzoziemca? Zwolnienie przychodu pracownika (art. 21 ust. 1 pkt 151 PIT) i przeniesienie skutków na pracodawcę. Ryzyka i rekomendacje. Stan 2026."
+   }
+  },
+  {
+   "date": "2026-09-30",
+   "file": "artykul-zatrudnienie-obywatela-ukrainy-2026.html",
+   "publish_date_pl": "30 września 2026",
+   "news": {
+    "id": "2026-09-30-cosc-zatrudnienie-obywatela-ukrainy-2026",
+    "added": "2026-09-30",
+    "category": "Rynek pracy",
+    "scope": "PL",
+    "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+    "author": "Dariusz Włodarczyk Kancelaria TRC",
+    "url": "artykul-zatrudnienie-obywatela-ukrainy-2026.html",
+    "title": "Zatrudnienie obywatela Ukrainy w 2026 r. — tryb i powiadomienie [materiał własny COSC]",
+    "summary": "Jak legalnie zatrudnić obywatela Ukrainy w 2026 r.: uproszczony tryb i powiadomienie o powierzeniu pracy, związek z pobytem (status UKR). Przepisy zmienne — sprawdź aktualny stan. 2026."
+   }
+  },
+  {
+   "date": "2026-10-02",
+   "file": "artykul-pracownik-delegowany-z-ue-skladki-polska.html",
+   "publish_date_pl": "2 października 2026",
+   "news": {
+    "id": "2026-10-02-cosc-pracownik-delegowany-z-ue-skladki-polska",
+    "added": "2026-10-02",
+    "category": "Rynek pracy",
+    "scope": "PL",
+    "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+    "author": "Dariusz Włodarczyk Kancelaria TRC",
+    "url": "artykul-pracownik-delegowany-z-ue-skladki-polska.html",
+    "title": "Pracownik delegowany z UE do Polski — gdzie płaci się składki [materiał własny COSC]",
+    "summary": "Delegowanie z UE do Polski: gdzie płaci się składki, rola A1, ubezpieczenie zdrowotne (EKUZ), obowiązki firm i ryzyko braku A1. Przewodnik dla kadr i księgowych. Stan 2026."
+   }
+  },
+  {
+   "date": "2026-10-05",
+   "file": "artykul-obowiazek-umowy-i-sankcje-2026.html",
+   "publish_date_pl": "5 października 2026",
+   "news": {
+    "id": "2026-10-05-cosc-obowiazek-umowy-i-sankcje-2026",
+    "added": "2026-10-05",
+    "category": "Rynek pracy",
+    "scope": "PL",
+    "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+    "author": "Dariusz Włodarczyk Kancelaria TRC",
+    "url": "artykul-obowiazek-umowy-i-sankcje-2026.html",
+    "title": "Obowiązek przekazania umowy i kary za nielegalne zatrudnienie cudzoziemca w 2026 r. [materiał własny COSC]",
+    "summary": "Nowe obowiązki: przekazanie umowy cudzoziemca do urzędu i powiadomienie o podjęciu pracy. Kary do 50 000 zł, mandaty PIP do 10 000 zł, wspólne kontrole PIP i Straży Granicznej. Stan 2026."
+   }
+  },
+  {
+   "date": "2026-10-07",
+   "file": "artykul-ulgi-pit-mlodzi-rodziny-seniorzy.html",
+   "publish_date_pl": "7 października 2026",
+   "news": {
+    "id": "2026-10-07-cosc-ulgi-pit-mlodzi-rodziny-seniorzy",
+    "added": "2026-10-07",
+    "category": "Rynek pracy",
+    "scope": "PL",
+    "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+    "author": "Dariusz Włodarczyk Kancelaria TRC",
+    "url": "artykul-ulgi-pit-mlodzi-rodziny-seniorzy.html",
+    "title": "Ulgi PIT dla cudzoziemca — młodzi, rodziny 4+, seniorzy i limit 85 528 zł [materiał własny COSC]",
+    "summary": "Ulgi PIT-0 dla cudzoziemca: ulga dla młodych (do 26 lat), 4+, dla seniorów i na powrót. Podstawy prawne (art. 21 ust. 1 pkt 148, 152–154 PIT) i wspólny limit 85 528 zł. Stan 2026."
+   }
+  }
+ ]
+}

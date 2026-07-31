@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--
+  ===================================================================
+  WZÓR ARTYKUŁU WŁASNEGO COSC  ·  schemat obowiązujący
+  Bazuje na: artykul-art55-odejscie-odszkodowanie.html
+  ZASADA: struktury nie zmieniamy — wyjątek tylko gdy wymaga tego SEO.
+  Każdy artykuł własny KOŃCZY SIĘ panelem CTA (blok .cta):
+     niebieskie tło · napisy białe · przycisk z CZERWONYM napisem.
+  JAK UŻYĆ: skopiuj ten plik, zmień nazwę na artykul-<temat>.html
+  i uzupełnij pola oznaczone [[ ]]. Nie usuwaj paska flag ani stopki.
+  ===================================================================
+-->
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- SEO: tytuł ≤ ~60 znaków + marka -->
+<title>Nie dostałeś wezwania z urzędu w sprawie karty pobytu? Działaj szybko | COSC</title>
+<!-- SEO: opis 140–160 znaków, ze słowem kluczowym -->
+<meta name="description" content="Wezwanie z urzędu trafiło do pracodawcy, a Ty o niczym nie wiesz? Braki formalne wniosku i minięty termin mogą oznaczać pozostawienie sprawy bez rozpoznania. Zobacz, co robić.">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#16244c;--navy-d:#111a3a;--gold:#4636c9;--gold-l:#6d6ae0;--cream:#f4f6fb;--ink:#16244c;--mut:#5B6478;--line:#e6e9f0;--ok:#2E7D4F;--red:#d4213d}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'IBM Plex Sans',sans-serif;color:var(--ink);background:var(--cream);line-height:1.65;font-size:16.5px}
+h1,h2,h3{font-family:'IBM Plex Serif',serif;color:var(--navy);line-height:1.15}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px}
+header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);padding:14px 0}
+header .wrap{display:flex;justify-content:space-between;align-items:center;max-width:1120px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;font-weight:600;font-size:14px}
+.logo .mark{width:38px;height:38px;border:1.5px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Serif',serif;font-weight:700;color:var(--gold);font-size:14px}
+header a.back{color:var(--gold-l);text-decoration:none;font-size:13.5px;font-weight:600}
+.hero{background:linear-gradient(160deg,#4636c9,#2f2699);color:#fff;padding:52px 0 44px}
+.eyebrow{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.hero h1{color:#fff;font-size:clamp(30px,4.4vw,44px);font-weight:600;max-width:760px}
+.meta{margin-top:16px;font-size:13.5px;color:#B9C2D4}
+article{padding:44px 0 20px}
+article h2{font-size:29px;margin:38px 0 14px}
+article h3{font-size:22px;margin:26px 0 10px}
+article p{margin:0 0 14px}
+article ol,article ul{margin:0 0 16px 22px}
+article li{margin-bottom:8px}
+.toc{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px 26px;margin-bottom:8px}
+.toc strong{color:var(--navy)}
+.toc ol{margin:10px 0 0 20px}
+.box{background:#fff;border-left:4px solid var(--gold);border-radius:0 12px 12px 0;padding:18px 22px;margin:22px 0;box-shadow:0 2px 10px rgba(19,32,58,.06)}
+.box.warn{border-left-color:#B33A3A}
+.box strong{color:var(--navy)}
+.step{display:flex;gap:16px;margin:18px 0}
+.step .n{flex:0 0 40px;height:40px;border-radius:50%;background:var(--navy);color:var(--gold);font-family:'IBM Plex Serif',serif;font-weight:700;font-size:20px;display:flex;align-items:center;justify-content:center}
+.cta{background:linear-gradient(160deg,#4636c9,#2f2699);color:#fff;border-radius:16px;padding:32px;margin:40px 0;text-align:center}
+.cta h2{color:#fff;margin:0 0 10px}
+.cta p{color:#dce4f5;max-width:520px;margin:0 auto 18px}
+/* Przycisk CTA: białe tło + CZERWONY napis (standard COSC) */
+.btn{display:inline-block;text-decoration:none;font-weight:700;font-size:15px;padding:14px 28px;border-radius:10px;background:#fff;color:var(--red)}
+.disclaimer{font-size:13px;color:var(--mut);border-top:1px solid var(--line);padding:22px 0 8px;margin-top:34px}
+.disclaimer a{color:var(--navy)}
+footer{background:var(--navy);color:#B9C2D4;text-align:center;font-size:13px;padding:22px 16px;margin-top:36px}
+
+.flagbar{height:8px;background:linear-gradient(to bottom,#f5f5f5 50%,#d4213d 50%);border-bottom:1px solid rgba(22,36,76,.18)}
+.flag{flex-shrink:0;width:40px;height:26px;border-radius:3px;box-shadow:0 0 0 1px rgba(255,255,255,.4);overflow:hidden;display:inline-flex;align-items:center;justify-content:center}
+.flag-ue{background:#1e3a8a}
+.flag-pl{flex-direction:column;display:inline-flex}
+.flag-pl .fw{flex:1;width:100%;background:#f5f5f5}
+.flag-pl .fr{flex:1;width:100%;background:#d4213d}
+.logo{display:inline-flex;align-items:center;gap:10px}
+
+/* COSC-CANON-HEADER — ujednolicony pasek (wzór: index.html) */
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);position:sticky;top:0;z-index:50;box-shadow:0 2px 12px rgba(19,32,58,.25)}
+.flagbar{height:8px;background:linear-gradient(to bottom,#f5f5f5 50%,#d4213d 50%);border-bottom:1px solid rgba(22,36,76,.18);position:sticky;top:66px;z-index:49}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none}
+.logo .name{color:#fff;font-size:14px;line-height:1.3;font-weight:600;max-width:220px;font-family:'IBM Plex Serif',serif}
+.flag{flex-shrink:0;width:44px;height:29px;border-radius:3px;box-shadow:0 0 0 1px rgba(255,255,255,.4);overflow:hidden;display:flex;align-items:center;justify-content:center}
+.flag-pl{flex-direction:column;width:34px;height:34px;border-radius:6px;margin-left:4px}
+.flag-pl .fw{flex:1;width:100%;background:#f5f5f5}
+.flag-pl .fr{flex:1;width:100%;background:#d4213d}
+.menu{display:flex;gap:24px;align-items:center}
+.menu a{color:#E9ECF3;text-decoration:none;font-size:14px;font-weight:500}
+.menu a:hover{color:#6d6ae0}
+.menu a.on{color:#6d6ae0}
+.lang{display:flex;gap:2px;border:1px solid rgba(255,255,255,.25);border-radius:8px;padding:2px}
+.lang a{padding:4px 8px;font-size:11.5px;font-weight:700;border-radius:6px;text-decoration:none;color:#cfd6e4}
+.lang a.on{background:#4636c9;color:#16244c}
+.burger{display:none;background:none;border:none;color:#fff;font-size:26px;cursor:pointer}
+@media(max-width:900px){
+  header .nav{position:relative;justify-content:center}
+  header .logo{justify-content:center;text-align:center}
+  .lang{position:absolute;right:54px;top:50%;transform:translateY(-50%)}
+  .burger{display:block;position:absolute;right:14px;top:50%;transform:translateY(-50%)}
+  .menu{display:none;position:absolute;top:66px;left:0;right:0;flex-direction:column;gap:0;background:#2f2699;padding:6px 0;box-shadow:0 12px 24px rgba(0,0,0,.25);z-index:48}
+  .menu.open{display:flex}
+  .menu a{padding:13px 22px;width:100%;font-size:15px;border-bottom:1px solid rgba(255,255,255,.08)}
+}
+</style>
+<style id="fix-mobilny-2026-07-25">
+@media(max-width:900px){
+  header .nav{justify-content:flex-start;padding-right:104px;box-sizing:border-box}
+  header .logo{justify-content:flex-start;text-align:left}
+  header .logo .flag-pl{display:flex!important;width:34px;height:34px}
+  header .logo .name{max-width:none}
+  .hero h1{font-size:clamp(23px,6.4vw,44px);overflow-wrap:break-word}
+}
+</style>
+<link rel="stylesheet" href="i18n/i18n.css">
+
+<meta name="robots" content="noindex,nofollow"><!-- USUNĄĆ PRZY PUBLIKACJI -->
+<meta name="keywords" content="nie dostałem wezwania z urzędu, wezwanie z urzędu, braki formalne wniosku, karta pobytu, wniosek pozostawiony bez rozpoznania, legalizacja pobytu cudzoziemca">
+<link rel="canonical" href="https://cosc.org.pl/artykul-brak-wezwania-z-urzedu-karta-pobytu.html">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Czy urząd musi zawiadamiać mnie osobiście, jeśli mam pełnomocnika?", "acceptedAnswer": {"@type": "Answer", "text": "Nie. Jeżeli ustanowiono pełnomocnika, pisma doręcza się pełnomocnikowi (art. 40 § 2 KPA) i takie doręczenie jest skuteczne wobec Ciebie."}}, {"@type": "Question", "name": "Skąd mam wiedzieć, że urząd coś wysłał?", "acceptedAnswer": {"@type": "Answer", "text": "Możesz przeglądać akta swojej sprawy (art. 73 KPA), a w sprawach składanych przez MOS — śledzić sprawę w systemie. Możesz też w każdej chwili cofnąć pełnomocnictwo, by korespondencja szła do Ciebie."}}, {"@type": "Question", "name": "Czy pozostawienie wniosku bez rozpoznania to decyzja odmowna?", "acceptedAnswer": {"@type": "Answer", "text": "Nie — to zakończenie sprawy bez oceny merytorycznej. Ścieżka reakcji jest inna niż przy odwołaniu od decyzji; zobacz kolejny artykuł cyklu o ratowaniu takiej sprawy."}}]}</script>
+</head>
+<body>
+<header id="site-header"></header>
+<div class="flagbar" aria-hidden="true"></div>
+
+<div class="hero"><div class="wrap">
+<span class="eyebrow">Cykl: Twoja karta, Twoje dokumenty · cz. 3</span>
+<h1>Nie dostałeś wezwania z urzędu? Tak możesz stracić kartę pobytu</h1>
+<div class="meta">Data publikacji: 18 sierpnia 2026 · Autor: Dariusz Włodarczyk Kancelaria TRC · Czas czytania: ok. 5 min</div>
+</div></div>
+
+<article><div class="wrap">
+
+<p>W sprawach o kartę pobytu jedno nieodebrane wezwanie z urzędu potrafi zmienić wszystko. Najgorsze jest to, że cudzoziemiec często dowiaduje się o problemie ostatni — gdy sprawa jest już zakończona. Jeśli Twoją korespondencję odbiera pracodawca lub agencja, ten artykuł może uchronić Cię przed utratą legalnego pobytu. Sprawdź, jak działa doręczanie pism i co robić, gdy termin już minął.</p>
+
+<div class="toc"><strong>Spis treści</strong>
+<ol>
+<li><a href="#sek1">Dlaczego wezwanie z urzędu mogło do Ciebie nie dotrzeć?</a></li><li><a href="#sek2">Co grozi, gdy minie termin na uzupełnienie braków formalnych?</a></li><li><a href="#sek3">Co robić, jeśli termin już minął?</a></li><li><a href="#sek4">Jak nie dopuścić do takiej sytuacji?</a></li><li><a href="#faq">Najczęstsze pytania (FAQ)</a></li><li><a href="#zrodla">Podstawa prawna i źródła</a></li>
+</ol></div>
+
+<h2 id="sek1">1. Dlaczego wezwanie z urzędu mogło do Ciebie nie dotrzeć?</h2>
+<p>Jeśli w sprawie działa pełnomocnik, urząd doręcza pisma jemu — nie Tobie (art. 40 § 2 KPA). Gdy pełnomocnikiem jest pracodawca lub agencja, wezwanie do uzupełnienia braków formalnych wniosku trafia do firmy, a termin biegnie niezależnie od tego, czy ktokolwiek Ci je przekazał.</p><div class="box"><strong>To nie jest wina urzędu.</strong> Z punktu widzenia procedury doręczenie pełnomocnikowi jest skuteczne. Dlatego tak ważne jest, KTO jest Twoim pełnomocnikiem i czy naprawdę pilnuje Twojej sprawy.</div>
+<h2 id="sek2">2. Co grozi, gdy minie termin na uzupełnienie braków formalnych?</h2>
+<p>Organ może pozostawić wniosek bez rozpoznania (art. 64 § 2 KPA). Sprawa nie zostaje wtedy rozstrzygnięta merytorycznie — tak, jakby wniosku nie było. W sprawach pobytowych może to oznaczać utratę podstawy legalnego pobytu i konieczność budowania sytuacji od nowa.</p>
+<h2 id="sek3">3. Co robić, jeśli termin już minął?</h2>
+<ul><li>ustal natychmiast stan sprawy: numer, organ prowadzący, co i kiedy wysłano,</li><li>zdobądź kopie wezwań i potwierdzeń doręczenia (masz prawo wglądu w akta — art. 73 KPA),</li><li>sprawdź, czy doręczenie było prawidłowe — błędy w doręczeniach się zdarzają,</li><li>zbierz dowody, że pełnomocnik nie przekazał Ci informacji,</li><li>nie wysyłaj pism „z wzoru" bez analizy — nieprzemyślane pismo może zamknąć furtki, które jeszcze istnieją.</li></ul><p>O tym, jakie środki przysługują (ponaglenie, skarga na bezczynność) i jak z nich korzystać, piszemy szczegółowo w kolejnej części cyklu: <a href="artykul-wniosek-bez-rozpoznania-jak-ratowac-sprawe.html">wniosek pozostawiony bez rozpoznania — jak ratować sprawę</a>.</p>
+<h2 id="sek4">4. Jak nie dopuścić do takiej sytuacji?</h2>
+<p>Zadbaj, by korespondencja w Twojej sprawie trafiała do Ciebie albo do pełnomocnika, który działa wyłącznie w Twoim interesie i raportuje Ci każdy ruch urzędu. Jeśli dziś Twoją sprawę prowadzi firma, przeczytaj <a href="karta-pobytu-prawnik-czy-pracodawca.html">porównanie: prawnik czy pracodawca</a> i <a href="artykul-pracodawca-nie-oddaje-dokumentow.html">co robić, gdy pracodawca nie oddaje dokumentów</a>.</p>
+
+<h2 id="faq">Najczęstsze pytania (FAQ)</h2>
+<h3>Czy urząd musi zawiadamiać mnie osobiście, jeśli mam pełnomocnika?</h3><p>Nie. Jeżeli ustanowiono pełnomocnika, pisma doręcza się pełnomocnikowi (art. 40 § 2 KPA) i takie doręczenie jest skuteczne wobec Ciebie.</p>
+<h3>Skąd mam wiedzieć, że urząd coś wysłał?</h3><p>Możesz przeglądać akta swojej sprawy (art. 73 KPA), a w sprawach składanych przez MOS — śledzić sprawę w systemie. Możesz też w każdej chwili cofnąć pełnomocnictwo, by korespondencja szła do Ciebie.</p>
+<h3>Czy pozostawienie wniosku bez rozpoznania to decyzja odmowna?</h3><p>Nie — to zakończenie sprawy bez oceny merytorycznej. Ścieżka reakcji jest inna niż przy odwołaniu od decyzji; zobacz kolejny artykuł cyklu o ratowaniu takiej sprawy.</p>
+
+<div class="cta">
+<h2>Podejrzewasz, że ominęło Cię wezwanie?</h2>
+<p>Bezpłatnie przeanalizujemy dokumenty, które posiadasz, i pomożemy ustalić stan sprawy — zanim upłyną kolejne terminy. Działaj, póki jest co ratować.</p>
+<a class="btn" href="kontakt.html">Umów bezpłatną konsultację</a>
+</div>
+
+<div class="disclaimer">
+<p><strong>Nota prawna:</strong> artykuł ma charakter informacyjny i nie stanowi porady prawnej. Opisane sytuacje mają charakter ogólny i nie odnoszą się do żadnego konkretnego pracodawcy ani agencji. Stan prawny: sierpień 2026 (art. 40 § 2, 64 § 2, 73 KPA). Każda sprawa jest inna — przed podjęciem decyzji skonsultuj się z prawnikiem. Administrator danych: Dariusz Włodarczyk Kancelaria TRC.</p>
+<p id="zrodla"><strong>Źródła:</strong> art. 40 § 2, art. 64 § 2 i art. 73 Kodeksu postępowania administracyjnego; portal <a href="https://mos.cudzoziemcy.gov.pl/" rel="nofollow">mos.cudzoziemcy.gov.pl</a> („Pozostawienie bez rozpoznania"). Powyższe omówienie ma charakter własny; przytoczone przepisy warto zweryfikować w aktualnym tekście ustawy przed podjęciem działań.</p>
+</div>
+</div></article>
+
+<footer>© 2026 Centrum Obsługi Spraw Cudzoziemców · Dariusz Włodarczyk Kancelaria TRC</footer>
+
+<script src="site-header.js"></script>
+<script src="i18n/i18n.js"></script>
+</body>
+</html>
