@@ -113,16 +113,16 @@
     + '.csh-l-short{display:none}.csh-mob-x{display:none}'
     + '@media(max-width:900px){'
     /* JEDEN wiersz: małe logo + przyciski Cudzoziemiec/Pracodawca + języki; bez burgera */
-    + '.csh-wrap{flex-wrap:nowrap;gap:6px;padding:0 8px;min-height:52px}'
-    + '.csh-logo{gap:4px}'
-    + '.csh-flag{width:18px;height:18px;border-radius:4px}'
-    + '.csh-name{font-size:9px;line-height:1.15}'
-    + '.csh-logo svg{width:18px;height:18px}'
+    + '.csh-wrap{flex-wrap:nowrap;gap:8px;padding:0 10px;min-height:54px}'
+    + '.csh-logo{gap:5px}'
+    + '.csh-flag{width:20px;height:20px;border-radius:4px}'
+    + '.csh-name{font-size:9.5px;line-height:1.2}'
+    + '.csh-logo svg{width:16px;height:16px}'
     + '.csh-burger{display:none}'
-    + '.csh-menu{display:flex;flex:1 1 auto;flex-wrap:nowrap;gap:5px;white-space:nowrap;min-width:0}'
+    + '.csh-menu{display:flex;flex:1 1 auto;flex-wrap:nowrap;gap:7px;white-space:nowrap;min-width:0;margin:0 2px}'
     + '.csh-more{flex:1 1 50%;min-width:0;position:relative}'
     + '.csh-l-full{display:none}.csh-l-short{display:inline}'
-    + '.csh-more-btn{width:100%;justify-content:center;font-weight:700;font-size:11.5px;padding:8px 4px;border:1px solid rgba(255,255,255,.4);border-radius:9px;background:rgba(255,255,255,.08)}'
+    + '.csh-more-btn{width:100%;justify-content:center;font-weight:700;font-size:12px;padding:9px 5px;border:1px solid rgba(255,255,255,.45);border-radius:10px;background:rgba(255,255,255,.08);overflow:hidden;text-overflow:ellipsis}'
     + '.csh-more.open .csh-more-btn{background:rgba(255,255,255,.18)}'
     + '.csh-more-menu{display:none;position:absolute;top:calc(100% + 8px);left:0;min-width:250px;max-width:92vw;opacity:1;visibility:visible;transform:none}'
     + '.csh-more.open .csh-more-menu{display:flex}'
@@ -132,7 +132,19 @@
     + '.csh-mob-x{display:block;border-top:1px solid rgba(255,255,255,.14);margin-top:4px;padding-top:11px}'
     + '.csh-mob-x~.csh-mob-x{border-top:none;margin-top:0;padding-top:11px}'
     + '.csh-mob-cta{background:#d4213d;color:#fff !important;text-align:center;font-weight:700;border-radius:9px;margin-top:6px}'
-    + '.csh-header .lang{margin-left:2px}}';
+    /* kompaktowy przełącznik języka */
+    + '.csh-header .lang{margin-left:2px}'
+    + '.csh-header .lang .lang-btn{padding:5px 7px;font-size:11px;gap:4px;border-radius:9px}'
+    + '.csh-header .lang .lang-btn .lang-fl svg{width:17px;height:12px}'
+    + '.csh-header .lang .lang-caret{font-size:9px}'
+    + '}'
+    /* bardzo wąskie ekrany: chowamy godło UE, jeszcze ciaśniej */
+    + '@media(max-width:390px){'
+    + '.csh-logo svg{display:none}'
+    + '.csh-name{font-size:9px}'
+    + '.csh-more-btn{font-size:11px;padding:8px 3px}'
+    + '.csh-header .lang .lang-btn .lang-cur{display:none}'
+    + '}';
 
   /* ---- render ---- */
   function span(pl) { return '<span data-csh-k="' + pl.replace(/"/g, '&quot;') + '">' + pl + '</span>'; }
