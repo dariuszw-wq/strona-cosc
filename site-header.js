@@ -34,7 +34,7 @@
     'Jestem cudzoziemcem': { en: "I'm a foreigner", es: 'Soy extranjero', uk: 'Я іноземець', ru: 'Я иностранец', fr: 'Je suis étranger' },
     'Jestem pracodawcą': { en: "I'm an employer", es: 'Soy empleador', uk: 'Я роботодавець', ru: 'Я работодатель', fr: 'Je suis employeur' },
     'Strona sekcji': { en: 'Section page', es: 'Página de la sección', uk: 'Сторінка розділу', ru: 'Страница раздела', fr: 'Page de la section' },
-    'Nasze usługi': { en: 'Our services', es: 'Nuestros servicios', uk: 'Наші послуги', ru: 'Наши услуги', fr: 'Nos services' },
+    'Problemy z legalnym pobytem': { en: 'Problems with legal residence', es: 'Problemas con la residencia legal', uk: 'Проблеми з легальним перебуванням', ru: 'Проблемы с легальным пребыванием', fr: 'Problèmes de séjour légal' },
     'Wniosek karta pobytu tymczasowego': { en: 'Temporary residence card application', es: 'Solicitud de tarjeta de residencia temporal', uk: 'Заява на карту тимчасового перебування', ru: 'Заявление на карту временного пребывания', fr: 'Demande de carte de séjour temporaire' },
     'Wniosek karta pobytu stałego': { en: 'Permanent residence card application', es: 'Solicitud de tarjeta de residencia permanente', uk: 'Заява на карту постійного перебування', ru: 'Заявление на карту постоянного пребывания', fr: 'Demande de carte de séjour permanent' },
     'Wniosek karta pobytu dla członków rodzin': { en: 'Residence card application for family members', es: 'Solicitud de tarjeta de residencia para familiares', uk: 'Заява на карту перебування для членів родини', ru: 'Заявление на карту пребывания для членов семьи', fr: 'Demande de carte de séjour pour les membres de la famille' },
@@ -59,7 +59,7 @@
     hubs: [
       { label: 'Jestem cudzoziemcem', items: [
         { t: 'Strona sekcji', href: 'cudzoziemcy/' },
-        { t: 'Nasze usługi', href: 'uslugi.html' },
+        { t: 'Problemy z legalnym pobytem', href: 'uslugi.html' },
         { t: 'Kto powinien robić Twoją kartę?', href: 'karta-pobytu-prawnik-czy-pracodawca.html' },
         { t: 'Wniosek karta pobytu tymczasowego', href: 'formularz-pobyt-czasowy-praca-NOWA.html' },
         { t: 'Wniosek karta pobytu stałego', href: 'wniosek-karta-pobytu-stalego.html' },
