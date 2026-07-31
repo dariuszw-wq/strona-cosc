@@ -1,6 +1,39 @@
 {
-  "updated": "2026-07-30T22:05:00+02:00",
+  "updated": "2026-07-31T08:08:53+02:00",
   "items": [
+    {
+      "id": "2026-07-31-cosc-czy-cudzoziemiec-podlega-zus",
+      "added": "2026-07-31",
+      "category": "Rynek pracy",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-czy-cudzoziemiec-podlega-zus.html",
+      "title": "Czy cudzoziemiec podlega ubezpieczeniom ZUS w Polsce [materiał własny COSC]",
+      "summary": "Czy trzeba płacić ZUS za cudzoziemca? Zasada terytorialności, zgłoszenie ZUS ZUA/ZZA, wyjątki (delegowanie A1, umowy międzynarodowe). Podstawa: art. 6 ustawy o systemie ubezpieczeń społecznych. 2026.",
+      "t": {
+        "en": {
+          "title": "Is a foreigner subject to ZUS social insurance in Poland [COSC original content]",
+          "summary": "Do you have to pay ZUS for a foreigner? The territoriality rule, ZUS ZUA/ZZA registration, exceptions (A1 posting, international agreements). Basis: Article 6 of the Act on the Social Insurance System. 2026."
+        },
+        "es": {
+          "title": "¿Está un extranjero sujeto al seguro social ZUS en Polonia [contenido propio de COSC]",
+          "summary": "¿Hay que pagar ZUS por un extranjero? La regla de territorialidad, el registro ZUS ZUA/ZZA, las excepciones (desplazamiento A1, acuerdos internacionales). Base: artículo 6 de la Ley del Sistema de Seguro Social. 2026."
+        },
+        "uk": {
+          "title": "Чи підлягає іноземець соціальному страхуванню ZUS у Польщі [власний матеріал COSC]",
+          "summary": "Чи потрібно платити ZUS за іноземця? Принцип територіальності, реєстрація ZUS ZUA/ZZA, винятки (відрядження A1, міжнародні угоди). Підстава: стаття 6 Закону про систему соціального страхування. 2026."
+        },
+        "ru": {
+          "title": "Подлежит ли иностранец социальному страхованию ZUS в Польше [собственный материал COSC]",
+          "summary": "Нужно ли платить ZUS за иностранца? Принцип территориальности, регистрация ZUS ZUA/ZZA, исключения (командирование A1, международные соглашения). Основание: статья 6 Закона о системе социального страхования. 2026."
+        },
+        "fr": {
+          "title": "Un étranger est-il soumis à l'assurance sociale ZUS en Pologne [contenu original COSC]",
+          "summary": "Faut-il payer le ZUS pour un étranger ? La règle de territorialité, l'enregistrement ZUS ZUA/ZZA, les exceptions (détachement A1, accords internationaux). Base : article 6 de la loi sur le système d'assurance sociale. 2026."
+        }
+      }
+    },
     {
       "id": "2026-07-29-cosc-kurierzy-zlecenie-stosunek-pracy-pip",
       "added": "2026-07-29",
