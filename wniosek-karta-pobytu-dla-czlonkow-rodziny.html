@@ -243,7 +243,7 @@ header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);po
     </div>
     <div class="row2">
       <div class="field"><label>Seria i numer paszportu <span class="req">*</span></label><input type="text" name="numer_paszportu" placeholder="np. AB1234567" required><div class="fh">Przepisz dokładnie ze strony ze zdjęciem.</div></div>
-      <div class="field"><label>Data ważności paszportu <span class="req">*</span></label><input type="date" name="waznosc_paszportu" required><div class="fh">Do kiedy paszport jest ważny (data z paszportu).</div></div>
+      <div class="field"><label>Data ważności paszportu <span class="req">*</span></label><input type="date" name="waznosc_paszportu" required><div class="fh">Do kiedy paszport jest ważny (data z paszportu). Uwaga: data nie może być wcześniejsza niż dzisiejsza.</div></div>
     </div>
     <div class="row2">
       <div class="field"><label>Adres e-mail <span class="req">*</span></label><input type="email" name="email" placeholder="np. jan.kowalski@gmail.com" required><div class="fh">Na ten adres będziemy się z Tobą kontaktować.</div></div>
@@ -296,7 +296,7 @@ header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);po
     </div>
     <div id="famWrap" class="hidden">
       <div id="famList"></div>
-      <button type="button" class="btn-add" id="famAdd">+ Dodaj członka rodziny</button>
+      <button type="button" class="btn-add" id="famAdd">+ Dodaj kolejnego członka rodziny</button>
     </div>
   </div>
 
@@ -321,7 +321,8 @@ header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);po
     </div>
     <div id="wniosekZlozonyBox" class="hidden row2">
       <div class="field"><label>W jakim województwie złożono wniosek?</label><select name="wojewodztwo_wniosku" class="ls-province"></select></div>
-      <div class="field"><label>Data złożenia wniosku</label><input type="date" name="data_zlozenia_wniosku"></div>
+      <div class="field"><label>Data złożenia wniosku</label><input type="date" name="data_zlozenia_wniosku" id="dataZlozeniaWniosku">
+        <label style="display:flex;align-items:center;gap:8px;margin-top:8px;font-size:14px;cursor:pointer"><input type="checkbox" name="data_wniosku_nie_pamietam" value="tak" onchange="var d=document.getElementById('dataZlozeniaWniosku'); d.disabled=this.checked; if(this.checked) d.value='';"> Nie pamiętam daty złożenia wniosku</label></div>
     </div>
     <div class="field">
       <label>Czy byłeś(-aś) w Polsce w przeszłości (wcześniejsze pobyty)?</label>
@@ -330,12 +331,19 @@ header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);po
         <label class="radiopill"><input type="radio" name="wczesniejsze_pobyty" value="nie"><span>Nie</span></label>
       </div>
     </div>
-    <div class="field">
+    <div class="field hidden" id="rpWrap">
       <label>Podróże i pobyty na terytorium RP</label>
       <div id="rpList"></div>
       <button type="button" class="btn-add" id="rpAdd">+ Dodaj pobyt</button>
     </div>
     <div class="field">
+      <label>Czy w okresie ostatnich 5 lat podróżowałeś(-aś) poza terytorium RP (pobyty zagraniczne)?</label>
+      <div class="radiogroup">
+        <label class="radiopill"><input type="radio" name="wyjazdy_zagraniczne" value="tak"><span>Tak</span></label>
+        <label class="radiopill"><input type="radio" name="wyjazdy_zagraniczne" value="nie"><span>Nie</span></label>
+      </div>
+    </div>
+    <div class="field hidden" id="zagrWrap">
       <label>Podróże i pobyty zagraniczne poza terytorium RP w okresie ostatnich 5 lat</label>
       <div id="zagrList"></div>
       <button type="button" class="btn-add" id="zagrAdd">+ Dodaj wyjazd</button>
@@ -550,6 +558,12 @@ form.addEventListener('change', e=>{
   if(e.target.name === 'wniosek_zlozony'){
     document.getElementById('wniosekZlozonyBox').classList.toggle('hidden', e.target.value !== 'tak');
   }
+  if(e.target.name === 'wczesniejsze_pobyty'){
+    document.getElementById('rpWrap').classList.toggle('hidden', e.target.value !== 'tak');
+  }
+  if(e.target.name === 'wyjazdy_zagraniczne'){
+    document.getElementById('zagrWrap').classList.toggle('hidden', e.target.value !== 'tak');
+  }
 });
 
 /* ================== RODZINA (dynamiczne pola) ================== */
@@ -711,7 +725,9 @@ async function submitForm(){
   });
   data['pobyty_zagraniczne'] = JSON.stringify(zagrItems);
 
-  // PDF ankiety wraz ze zgodą RODO: pobranie w przeglądarce + załącznik do arkusza/maili
+  // PDF: generowany i dołączany do wysyłki (e-mail do kancelarii i wypełniającego),
+  // ale NIE pobiera się automatycznie — po sukcesie jest przycisk pobrania.
+  window._coscAnkietaDane = Object.assign({}, data);
   try{
     if(window.CoscPdf){
       const pdf = await window.CoscPdf.generate(data);
@@ -737,6 +753,15 @@ async function submitForm(){
     statusBox.className = 'status-box ok';
     statusBox.textContent = t.msgOk || 'Dziękujemy! Ankieta została wysłana. Kopia PDF Twojej ankiety wraz ze zgodą została pobrana na to urządzenie oraz wysłana na podany adres e-mail. Skontaktujemy się z Tobą, aby wspólnie dokończyć wniosek. Pamiętaj o przesłaniu skanu paszportu na WhatsApp lub e-mail.';
     form.querySelectorAll('input,select,textarea,button').forEach(el=>el.disabled=true);
+    try{
+      if(window.CoscPdf && !document.getElementById('pdfDlBtn')){
+        const b=document.createElement('button'); b.type='button'; b.id='pdfDlBtn'; b.className='btn-add';
+        b.style.cssText='margin-top:12px;font-weight:700'; b.textContent='📄 Pobierz kopię ankiety (PDF)';
+        b.disabled=false;
+        b.addEventListener('click', function(){ window.CoscPdf.download(window._coscAnkietaDane||{}); });
+        statusBox.insertAdjacentElement('afterend', b);
+      }
+    }catch(_e){}
   }catch(err){
     statusBox.className = 'status-box err';
     statusBox.innerHTML = t.msgErr || 'Nie udało się wysłać ankiety automatycznie. Skontaktuj się z nami bezpośrednio: <a href="https://wa.me/48539999549">WhatsApp +48 539 999 549</a> lub <a href="mailto:office@cosc.org.pl">office@cosc.org.pl</a>, a Twoje odpowiedzi prześlemy ręcznie.';
@@ -801,5 +826,20 @@ document.addEventListener('cosc:langchange', function(){ try{ localizeDynamic();
 </script>
 <script src="site-header.js"></script>
 <script src="i18n/i18n.js"></script>
+<script>
+/* Walidacja: data ważności paszportu nie może być wcześniejsza niż dzisiejsza */
+(function(){
+  var i=document.querySelector('input[name=waznosc_paszportu]'); if(!i) return;
+  var d=new Date();
+  var min=d.getFullYear()+'-'+('0'+(d.getMonth()+1)).slice(-2)+'-'+('0'+d.getDate()).slice(-2);
+  i.setAttribute('min',min);
+  function chk(){
+    if(i.value && i.value<min){
+      i.setCustomValidity('Data ważności paszportu nie może być wcześniejsza niż dzisiejsza data — paszport musi być ważny. / Passport expiry date cannot be earlier than today.');
+    } else { i.setCustomValidity(''); }
+  }
+  i.addEventListener('input',chk); i.addEventListener('change',chk); chk();
+})();
+</script>
 </body>
 </html>
