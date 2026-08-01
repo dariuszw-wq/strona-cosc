@@ -724,9 +724,16 @@ async function submitForm(){
   });
   data['pobyty_zagraniczne'] = JSON.stringify(zagrItems);
 
-  // PDF NIE jest dołączany do wysyłki (blokował zapis przy nieautoryzowanym Gmailu)
-  // i NIE pobiera się automatycznie — po sukcesie pojawia się przycisk pobrania.
-  window._coscAnkietaDane = data;
+  // PDF: generowany i dołączany do wysyłki (e-mail do kancelarii i wypełniającego),
+  // ale NIE pobiera się automatycznie — po sukcesie jest przycisk pobrania.
+  window._coscAnkietaDane = Object.assign({}, data);
+  try{
+    if(window.CoscPdf){
+      const pdf = await window.CoscPdf.generate(data);
+      data.pdfBase64 = pdf.base64;
+      data.pdfFilename = pdf.filename;
+    }
+  }catch(pdfErr){ console.warn('Nie udało się wygenerować PDF:', pdfErr); }
 
   try{
     if(!APPS_SCRIPT_URL || APPS_SCRIPT_URL.startsWith('WKLEJ_TU')){
