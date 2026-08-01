@@ -1,6 +1,39 @@
 {
-  "updated": "2026-07-31T17:04:44+02:00",
+  "updated": "2026-08-01T05:00:00+02:00",
   "items": [
+    {
+      "id": "2026-08-01-udsc-termin-wymiany-dokumentow-ue-3-sierpnia",
+      "added": "2026-08-01",
+      "category": "Urzędy",
+      "title": "Już 3 sierpnia 2026 r. mija termin wymiany starych dokumentów obywateli UE i członków ich rodzin",
+      "summary": "Urząd do Spraw Cudzoziemców przypomina: 3 sierpnia 2026 r. upływa ważność ostatnich dokumentów wydanych obywatelom Unii Europejskiej i członkom ich rodzin według wzorów sprzed 2 sierpnia 2021 r., które zachowały ważność na podstawie przepisów przejściowych ustawy z 10 grudnia 2020 r. (Dz.U. z 2020 r. poz. 2369). Kto posługuje się jeszcze starym zaświadczeniem o zarejestrowaniu pobytu, dokumentem potwierdzającym prawo stałego pobytu lub kartą pobytu/kartą stałego pobytu członka rodziny obywatela UE, powinien niezwłocznie wystąpić o nowy dokument do właściwego wojewody.",
+      "source_name": "Urząd do Spraw Cudzoziemców",
+      "author": "",
+      "url": "https://www.gov.pl/web/udsc/wazne-zbliza-sie-termin-wymiany-dokumentow-wydanych-obywatelom-ue-i-czlonkom-ich-rodzin-wydanych-wedlug-wzorow-obowiazujacych-przed--2-sierpnia-2021-r",
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "3 August 2026 is the deadline to replace old documents of EU citizens and their family members",
+          "summary": "The Office for Foreigners reminds that on 3 August 2026 the validity of the last documents issued to European Union citizens and their family members under templates in force before 2 August 2021 expires. These documents remained valid under the transitional provisions of the Act of 10 December 2020 (Journal of Laws 2020, item 2369). Anyone still using an old certificate of registration of residence, a document confirming the right of permanent residence, or a residence card / permanent residence card of an EU citizen's family member should apply to the competent voivode for a new document without delay."
+        },
+        "es": {
+          "title": "El 3 de agosto de 2026 vence el plazo para canjear los documentos antiguos de ciudadanos de la UE y sus familiares",
+          "summary": "La Oficina para Extranjeros recuerda que el 3 de agosto de 2026 expira la validez de los últimos documentos expedidos a ciudadanos de la Unión Europea y a sus familiares según los modelos vigentes antes del 2 de agosto de 2021. Estos documentos mantuvieron su validez en virtud de las disposiciones transitorias de la ley del 10 de diciembre de 2020 (Dz.U. de 2020, pos. 2369). Quien todavía utilice un certificado antiguo de registro de residencia, un documento que confirme el derecho de residencia permanente o una tarjeta de residencia / tarjeta de residencia permanente de familiar de ciudadano de la UE debe solicitar sin demora un nuevo documento al voivoda competente."
+        },
+        "uk": {
+          "title": "3 серпня 2026 р. спливає строк заміни старих документів громадян ЄС та членів їхніх сімей",
+          "summary": "Управління у справах іноземців нагадує: 3 серпня 2026 р. закінчується строк дії останніх документів, виданих громадянам Європейського Союзу та членам їхніх сімей за зразками, що діяли до 2 серпня 2021 р. Ці документи зберігали чинність на підставі перехідних положень закону від 10 грудня 2020 р. (Dz.U. 2020, poz. 2369). Хто досі користується старою довідкою про реєстрацію перебування, документом, що підтверджує право постійного перебування, або карткою перебування / карткою постійного перебування члена сім'ї громадянина ЄС, повинен невідкладно звернутися до відповідного воєводи за новим документом."
+        },
+        "ru": {
+          "title": "3 августа 2026 г. истекает срок замены старых документов граждан ЕС и членов их семей",
+          "summary": "Управление по делам иностранцев напоминает: 3 августа 2026 г. истекает срок действия последних документов, выданных гражданам Европейского союза и членам их семей по образцам, действовавшим до 2 августа 2021 г. Эти документы сохраняли действительность на основании переходных положений закона от 10 декабря 2020 г. (Dz.U. 2020, poz. 2369). Тем, кто всё ещё пользуется старой справкой о регистрации пребывания, документом, подтверждающим право постоянного пребывания, или картой пребывания / картой постоянного пребывания члена семьи гражданина ЕС, следует незамедлительно обратиться к соответствующему воеводе за новым документом."
+        },
+        "fr": {
+          "title": "Le 3 août 2026 expire le délai d'échange des anciens documents des citoyens de l'UE et des membres de leur famille",
+          "summary": "L'Office des étrangers rappelle que le 3 août 2026 expire la validité des derniers documents délivrés aux citoyens de l'Union européenne et aux membres de leur famille selon les modèles en vigueur avant le 2 août 2021. Ces documents restaient valables en vertu des dispositions transitoires de la loi du 10 décembre 2020 (Dz.U. 2020, poz. 2369). Toute personne utilisant encore une ancienne attestation d'enregistrement de séjour, un document confirmant le droit de séjour permanent ou une carte de séjour / carte de séjour permanent de membre de la famille d'un citoyen de l'UE doit demander sans délai un nouveau document au voïvode compétent."
+        }
+      }
+    },
     {
       "id": "2026-07-31-statystyki-sg-i-polrocze-2026",
       "added": "2026-07-31",
