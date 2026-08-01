@@ -108,7 +108,7 @@
     + '.csh-more.open .csh-more-menu{opacity:1;visibility:visible;transform:translateY(0)}'
     + '.csh-more-menu a{color:#E9ECF3;text-decoration:none;font-size:14px;font-weight:500;padding:11px 14px;border-radius:9px;white-space:nowrap;transition:background .15s,color .15s}'
     + '.csh-more-menu a:hover{background:rgba(201,169,97,.16);color:#6d6ae0}'
-    + '.csh-header .lang{flex:none;position:static !important;top:auto !important;right:auto !important;transform:none !important;margin-left:auto}'
+    + '.csh-header .lang{flex:none;position:relative !important;top:auto !important;right:auto !important;transform:none !important;margin-left:auto}'
     + '.csh-burger{display:none;background:none;border:none;color:#fff;font-size:26px;cursor:pointer;flex:none}'
     + '.csh-l-short{display:none}.csh-mob-x{display:none}'
     + '@media(max-width:900px){'
