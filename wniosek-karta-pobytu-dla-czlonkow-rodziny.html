@@ -295,7 +295,7 @@ header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);po
     </div>
     <div id="famWrap" class="hidden">
       <div id="famList"></div>
-      <button type="button" class="btn-add" id="famAdd">+ Dodaj członka rodziny</button>
+      <button type="button" class="btn-add" id="famAdd">+ Dodaj kolejnego członka rodziny</button>
     </div>
   </div>
 
@@ -320,7 +320,8 @@ header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);po
     </div>
     <div id="wniosekZlozonyBox" class="hidden row2">
       <div class="field"><label>W jakim województwie złożono wniosek?</label><select name="wojewodztwo_wniosku" class="ls-province"></select></div>
-      <div class="field"><label>Data złożenia wniosku</label><input type="date" name="data_zlozenia_wniosku"></div>
+      <div class="field"><label>Data złożenia wniosku</label><input type="date" name="data_zlozenia_wniosku" id="dataZlozeniaWniosku">
+        <label style="display:flex;align-items:center;gap:8px;margin-top:8px;font-size:14px;cursor:pointer"><input type="checkbox" name="data_wniosku_nie_pamietam" value="tak" onchange="var d=document.getElementById('dataZlozeniaWniosku'); d.disabled=this.checked; if(this.checked) d.value='';"> Nie pamiętam daty złożenia wniosku</label></div>
     </div>
     <div class="field">
       <label>Czy byłeś(-aś) w Polsce w przeszłości (wcześniejsze pobyty)?</label>
@@ -329,12 +330,19 @@ header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);po
         <label class="radiopill"><input type="radio" name="wczesniejsze_pobyty" value="nie"><span>Nie</span></label>
       </div>
     </div>
-    <div class="field">
+    <div class="field hidden" id="rpWrap">
       <label>Podróże i pobyty na terytorium RP</label>
       <div id="rpList"></div>
       <button type="button" class="btn-add" id="rpAdd">+ Dodaj pobyt</button>
     </div>
     <div class="field">
+      <label>Czy w okresie ostatnich 5 lat podróżowałeś(-aś) poza terytorium RP (pobyty zagraniczne)?</label>
+      <div class="radiogroup">
+        <label class="radiopill"><input type="radio" name="wyjazdy_zagraniczne" value="tak"><span>Tak</span></label>
+        <label class="radiopill"><input type="radio" name="wyjazdy_zagraniczne" value="nie"><span>Nie</span></label>
+      </div>
+    </div>
+    <div class="field hidden" id="zagrWrap">
       <label>Podróże i pobyty zagraniczne poza terytorium RP w okresie ostatnich 5 lat</label>
       <div id="zagrList"></div>
       <button type="button" class="btn-add" id="zagrAdd">+ Dodaj wyjazd</button>
@@ -549,6 +557,12 @@ form.addEventListener('change', e=>{
   if(e.target.name === 'wniosek_zlozony'){
     document.getElementById('wniosekZlozonyBox').classList.toggle('hidden', e.target.value !== 'tak');
   }
+  if(e.target.name === 'wczesniejsze_pobyty'){
+    document.getElementById('rpWrap').classList.toggle('hidden', e.target.value !== 'tak');
+  }
+  if(e.target.name === 'wyjazdy_zagraniczne'){
+    document.getElementById('zagrWrap').classList.toggle('hidden', e.target.value !== 'tak');
+  }
 });
 
 /* ================== RODZINA (dynamiczne pola) ================== */
@@ -710,14 +724,9 @@ async function submitForm(){
   });
   data['pobyty_zagraniczne'] = JSON.stringify(zagrItems);
 
-  // PDF ankiety wraz ze zgodą RODO: pobranie w przeglądarce + załącznik do arkusza/maili
-  try{
-    if(window.CoscPdf){
-      const pdf = await window.CoscPdf.generate(data);
-      data.pdfBase64 = pdf.base64;
-      data.pdfFilename = pdf.filename;
-    }
-  }catch(pdfErr){ console.warn('Nie udało się wygenerować PDF:', pdfErr); }
+  // PDF NIE jest dołączany do wysyłki (blokował zapis przy nieautoryzowanym Gmailu)
+  // i NIE pobiera się automatycznie — po sukcesie pojawia się przycisk pobrania.
+  window._coscAnkietaDane = data;
 
   try{
     if(!APPS_SCRIPT_URL || APPS_SCRIPT_URL.startsWith('WKLEJ_TU')){
@@ -736,6 +745,15 @@ async function submitForm(){
     statusBox.className = 'status-box ok';
     statusBox.textContent = t.msgOk || 'Dziękujemy! Ankieta została wysłana. Kopia PDF Twojej ankiety wraz ze zgodą została pobrana na to urządzenie oraz wysłana na podany adres e-mail. Skontaktujemy się z Tobą, aby wspólnie dokończyć wniosek. Pamiętaj o przesłaniu skanu paszportu na WhatsApp lub e-mail.';
     form.querySelectorAll('input,select,textarea,button').forEach(el=>el.disabled=true);
+    try{
+      if(window.CoscPdf && !document.getElementById('pdfDlBtn')){
+        const b=document.createElement('button'); b.type='button'; b.id='pdfDlBtn'; b.className='btn-add';
+        b.style.cssText='margin-top:12px;font-weight:700'; b.textContent='📄 Pobierz kopię ankiety (PDF)';
+        b.disabled=false;
+        b.addEventListener('click', function(){ window.CoscPdf.download(window._coscAnkietaDane||{}); });
+        statusBox.insertAdjacentElement('afterend', b);
+      }
+    }catch(_e){}
   }catch(err){
     statusBox.className = 'status-box err';
     statusBox.innerHTML = t.msgErr || 'Nie udało się wysłać ankiety automatycznie. Skontaktuj się z nami bezpośrednio: <a href="https://wa.me/48539999549">WhatsApp +48 539 999 549</a> lub <a href="mailto:office@cosc.org.pl">office@cosc.org.pl</a>, a Twoje odpowiedzi prześlemy ręcznie.';

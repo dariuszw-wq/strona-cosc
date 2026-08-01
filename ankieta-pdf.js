@@ -169,12 +169,17 @@ window.CoscPdf = (function(){
           var dd = build(data);
           var fn = nazwaPliku(data);
           var pdf = pdfMake.createPdf(dd);
-          try{ pdf.download(fn); }catch(e){ /* pobranie może być zablokowane — nie przerywamy */ }
           pdf.getBase64(function(b64){ resolve({ base64:b64, filename:fn }); });
         }catch(err){ reject(err); }
       });
     });
   }
 
-  return { generate: generate };
+  function download(data){
+    return Promise.all([ensurePdfMake(), ensureAssets()]).then(function(){
+      var dd = build(data); var fn = nazwaPliku(data);
+      pdfMake.createPdf(dd).download(fn); return fn;
+    });
+  }
+  return { generate: generate, download: download };
 })();

@@ -261,10 +261,11 @@ header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);po
       <div class="fh">Zaznacz, o jakie świadczenie chcesz się ubiegać. Jeśli nie masz pewności — wybierz „Nie wiem".</div></div>
     <div class="row2">
       <div class="field"><label>Nazwa pracodawcy powierzającego pracę <span class="req">*</span></label><input type="text" name="pracodawca_nazwa" placeholder="Pełna nazwa firmy — jak w umowie" required></div>
-      <div class="field"><label>NIP pracodawcy <span class="req">*</span></label><input type="text" name="pracodawca_nip" inputmode="numeric" placeholder="10 cyfr, np. 1250476187" required><div class="fh">Znajdziesz go na umowie lub w danych firmy.</div></div>
+      <div class="field"><label>NIP pracodawcy <span class="req">*</span></label><input type="text" name="pracodawca_nip" inputmode="numeric" placeholder="10 cyfr, np. 1250476187" pattern="[0-9]{10}" maxlength="10" required><div class="fh">Sam numer: dokładnie 10 cyfr, bez kresek i spacji. Znajdziesz go na umowie lub w danych firmy.</div></div>
     </div>
     <div class="row2">
-      <div class="field"><label>Stanowisko / rodzaj wykonywanej pracy <span class="req">*</span></label><input type="text" name="stanowisko" placeholder="np. magazynier, kucharz, kierowca" required></div>
+      <div class="field"><label>Stanowisko / rodzaj wykonywanej pracy <span class="req">*</span></label><input type="text" name="stanowisko" list="kzisLista" placeholder="np. magazynier, kucharz, kierowca" required><div class="fh">Wpisz tak, jak w umowie lub kontrakcie — możesz też wybrać z listy zawodów.</div><datalist id="kzisLista"></datalist></div>
+      <div class="field"><label>Kod zawodu</label><input type="text" name="kod_zawodu" id="kodZawodu" readonly tabindex="-1" placeholder="uzupełni się automatycznie"><div class="fh">Kod z klasyfikacji zawodów (KZiS) — dobierze się sam po wybraniu stanowiska z listy.</div></div>
       <div class="field"><label>Adres miejsca pracy <span class="req">*</span></label><input type="text" name="pracodawca_adres" placeholder="Adres, gdzie faktycznie wykonujesz pracę" required></div>
     </div>
     <div class="row2">
@@ -275,7 +276,7 @@ header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);po
     <div class="row2">
       <div class="field"><label>Wymiar / warunki pracy <span class="req">*</span></label>
         <select name="wymiar_pracy" required><option value="">— Proszę wybrać —</option><option>Pełny etat</option><option>3/4 etatu</option><option>1/2 etatu</option><option>Część etatu (inny)</option><option>Umowa zlecenia — stawka godzinowa</option><option>Nie dotyczy</option></select></div>
-      <div class="field"><label>Wynagrodzenie miesięczne brutto <span class="req">*</span></label><input type="text" name="wynagrodzenie_brutto" inputmode="numeric" placeholder="np. 4666 zł (brutto)" required><div class="fh">Kwota brutto z umowy, miesięcznie.</div></div>
+      <div class="field"><label>Wynagrodzenie miesięczne brutto <span class="req">*</span></label><input type="text" name="wynagrodzenie_brutto" inputmode="numeric" placeholder="np. 4666 zł (brutto)" required><div class="fh">Wpisz dokładnie tę kwotę brutto, która jest zapisana w umowie (miesięcznie).</div></div>
     </div>
   </div>
 
@@ -291,7 +292,7 @@ header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);po
     </div>
     <div id="famWrap" class="hidden">
       <div id="famList"></div>
-      <button type="button" class="btn-add" id="famAdd">+ Dodaj członka rodziny</button>
+      <button type="button" class="btn-add" id="famAdd">+ Dodaj kolejnego członka rodziny</button>
     </div>
   </div>
 
@@ -316,7 +317,8 @@ header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);po
     </div>
     <div id="wniosekZlozonyBox" class="hidden row2">
       <div class="field"><label>W jakim województwie złożono wniosek?</label><select name="wojewodztwo_wniosku" class="ls-province"></select></div>
-      <div class="field"><label>Data złożenia wniosku</label><input type="date" name="data_zlozenia_wniosku"></div>
+      <div class="field"><label>Data złożenia wniosku</label><input type="date" name="data_zlozenia_wniosku" id="dataZlozeniaWniosku">
+        <label style="display:flex;align-items:center;gap:8px;margin-top:8px;font-size:14px;cursor:pointer"><input type="checkbox" name="data_wniosku_nie_pamietam" value="tak" onchange="var d=document.getElementById('dataZlozeniaWniosku'); d.disabled=this.checked; if(this.checked) d.value='';"> Nie pamiętam daty złożenia wniosku</label></div>
       <div style="grid-column:1/-1;background:#fffbea;border:1px solid #f0dfa0;border-radius:10px;padding:10px 14px;font-size:13.5px;color:#6b5618">💡 Wniosek składał za Ciebie pracodawca lub agencja? <a href="karta-pobytu-prawnik-czy-pracodawca.html" target="_blank" style="font-weight:700;color:#4636c9">Zobacz, co masz prawo wiedzieć o swojej sprawie →</a></div>
     </div>
     <div class="field">
@@ -326,12 +328,19 @@ header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);po
         <label class="radiopill"><input type="radio" name="wczesniejsze_pobyty" value="nie"><span>Nie</span></label>
       </div>
     </div>
-    <div class="field">
+    <div class="field hidden" id="rpWrap">
       <label>Podróże i pobyty na terytorium RP</label>
       <div id="rpList"></div>
       <button type="button" class="btn-add" id="rpAdd">+ Dodaj pobyt</button>
     </div>
     <div class="field">
+      <label>Czy w okresie ostatnich 5 lat podróżowałeś(-aś) poza terytorium RP (pobyty zagraniczne)?</label>
+      <div class="radiogroup">
+        <label class="radiopill"><input type="radio" name="wyjazdy_zagraniczne" value="tak"><span>Tak</span></label>
+        <label class="radiopill"><input type="radio" name="wyjazdy_zagraniczne" value="nie"><span>Nie</span></label>
+      </div>
+    </div>
+    <div class="field hidden" id="zagrWrap">
       <label>Podróże i pobyty zagraniczne poza terytorium RP w okresie ostatnich 5 lat</label>
       <div id="zagrList"></div>
       <button type="button" class="btn-add" id="zagrAdd">+ Dodaj wyjazd</button>
@@ -546,6 +555,12 @@ form.addEventListener('change', e=>{
   if(e.target.name === 'wniosek_zlozony'){
     document.getElementById('wniosekZlozonyBox').classList.toggle('hidden', e.target.value !== 'tak');
   }
+  if(e.target.name === 'wczesniejsze_pobyty'){
+    document.getElementById('rpWrap').classList.toggle('hidden', e.target.value !== 'tak');
+  }
+  if(e.target.name === 'wyjazdy_zagraniczne'){
+    document.getElementById('zagrWrap').classList.toggle('hidden', e.target.value !== 'tak');
+  }
 });
 
 /* ================== RODZINA (dynamiczne pola) ================== */
@@ -710,14 +725,9 @@ async function submitForm(){
   });
   data['pobyty_zagraniczne'] = JSON.stringify(zagrItems);
 
-  // PDF ankiety wraz ze zgodą RODO: pobranie w przeglądarce + załącznik do arkusza/maili
-  try{
-    if(window.CoscPdf){
-      const pdf = await window.CoscPdf.generate(data);
-      data.pdfBase64 = pdf.base64;
-      data.pdfFilename = pdf.filename;
-    }
-  }catch(pdfErr){ console.warn('Nie udało się wygenerować PDF:', pdfErr); }
+  // PDF NIE jest dołączany do wysyłki (blokował zapis przy nieautoryzowanym Gmailu)
+  // i NIE pobiera się automatycznie — po sukcesie pojawia się przycisk pobrania.
+  window._coscAnkietaDane = data;
 
   try{
     if(!APPS_SCRIPT_URL || APPS_SCRIPT_URL.startsWith('WKLEJ_TU')){
@@ -736,6 +746,15 @@ async function submitForm(){
     statusBox.className = 'status-box ok';
     statusBox.textContent = t.msgOk || 'Dziękujemy! Ankieta została wysłana. Kopia PDF Twojej ankiety wraz ze zgodą została pobrana na to urządzenie oraz wysłana na podany adres e-mail. Skontaktujemy się z Tobą, aby wspólnie dokończyć wniosek. Pamiętaj o przesłaniu skanu paszportu na WhatsApp lub e-mail.';
     form.querySelectorAll('input,select,textarea,button').forEach(el=>el.disabled=true);
+    try{
+      if(window.CoscPdf && !document.getElementById('pdfDlBtn')){
+        const b=document.createElement('button'); b.type='button'; b.id='pdfDlBtn'; b.className='btn-add';
+        b.style.cssText='margin-top:12px;font-weight:700'; b.textContent='📄 Pobierz kopię ankiety (PDF)';
+        b.disabled=false;
+        b.addEventListener('click', function(){ window.CoscPdf.download(window._coscAnkietaDane||{}); });
+        statusBox.insertAdjacentElement('afterend', b);
+      }
+    }catch(_e){}
   }catch(err){
     statusBox.className = 'status-box err';
     statusBox.innerHTML = t.msgErr || 'Nie udało się wysłać ankiety automatycznie. Skontaktuj się z nami bezpośrednio: <a href="https://wa.me/48539999549">WhatsApp +48 539 999 549</a> lub <a href="mailto:office@cosc.org.pl">office@cosc.org.pl</a>, a Twoje odpowiedzi prześlemy ręcznie.';
@@ -814,6 +833,36 @@ document.addEventListener('cosc:langchange', function(){ try{ localizeDynamic();
   }
   i.addEventListener('input',chk); i.addEventListener('change',chk); chk();
 })();
+</script>
+<script src="kzis-zawody.js" defer></script>
+<script>
+/* NIP: 10 cyfr bez kresek · praca_od >= data wjazdu · KZiS: lista zawodów + kod */
+document.addEventListener('DOMContentLoaded', function(){
+  var nip=document.querySelector('input[name=pracodawca_nip]');
+  if(nip){
+    function nchk(){ nip.value=nip.value.replace(/[^0-9]/g,'').slice(0,10);
+      nip.setCustomValidity(nip.value.length===10||nip.value.length===0?'':'NIP musi mieć dokładnie 10 cyfr — same cyfry, bez kresek i spacji.'); }
+    nip.addEventListener('input',nchk); nip.addEventListener('change',nchk);
+  }
+  var pod=document.querySelector('input[name=praca_od]'), wj=document.getElementById('dataOstWjazdu');
+  function pchk(){ if(!pod||!wj) return;
+    if(pod.value && wj.value && pod.value < wj.value){
+      pod.setCustomValidity('Data rozpoczęcia pracy nie może być wcześniejsza niż data ostatniego wjazdu do Polski ('+wj.value+').');
+    } else { pod.setCustomValidity(''); } }
+  if(pod){ pod.addEventListener('change',pchk); if(wj) wj.addEventListener('change',pchk); }
+  var st=document.querySelector('input[name=stanowisko]'), kz=document.getElementById('kodZawodu');
+  function initKzis(){
+    if(!window.KZIS_ZAWODY||!st) return;
+    var dl=document.getElementById('kzisLista'); if(!dl||dl.children.length) return;
+    var frag=document.createDocumentFragment();
+    window.KZIS_ZAWODY.forEach(function(z){ var o=document.createElement('option'); o.value=z[1]; o.label=z[0]; frag.appendChild(o); });
+    dl.appendChild(frag);
+    var mapa={}; window.KZIS_ZAWODY.forEach(function(z){ mapa[z[1].toLowerCase()]=z[0]; });
+    function skod(){ if(kz) kz.value = mapa[(st.value||'').trim().toLowerCase()] || ''; }
+    st.addEventListener('input',skod); st.addEventListener('change',skod); skod();
+  }
+  if(window.KZIS_ZAWODY) initKzis(); else window.addEventListener('load',initKzis);
+});
 </script>
 </body>
 </html>
