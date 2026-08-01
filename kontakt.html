@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
+<script src="formularz-silnik.js"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kontakt — bezpłatna ocena sprawy | COSC Centrum Obsługi Spraw Cudzoziemców</title>
@@ -574,7 +575,7 @@ document.querySelectorAll('.trust,.path-sec,.ct-demo,.mascot').forEach(el=>io.ob
 // formularz kontaktowy → WhatsApp (prefill) + fallback e-mail
 (function(){
   var WA='48539999549', MAIL='office@cosc.org.pl';
-  var APPS_SCRIPT_URL='https://script.google.com/macros/s/AKfycbwC7lGyiNjMGYV4ihMOXK4lfqRYeW7DSDA4673qWpANoIm26_30qNiRT0jODZpNbhWw/exec';
+  var APPS_SCRIPT_URL = window.COSC_ANKIETY.URL; // adres w formularz-silnik.js
   // zapis leada do arkusza Google (nie blokuje otwarcia WhatsApp)
   function zapiszLead(f){
     try{
