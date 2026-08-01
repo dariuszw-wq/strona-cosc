@@ -200,6 +200,41 @@
     });
   }
 
+  /* ---- dźwięk kliknięcia (Web Audio, bez pliku) ----
+   * Odtwarzany WYŁĄCZNIE dla: głównych przycisków menu (Jestem cudzoziemcem /
+   * Jestem pracodawcą, Kalkulator, Darmowa konsultacja) oraz pozycji wybieranych
+   * z rozwijanych list obu hubów. Nigdzie indziej (logo, języki — bez dźwięku). */
+  var audioCtx = null;
+  function playClick() {
+    try {
+      var AC = window.AudioContext || window.webkitAudioContext;
+      if (!AC) return;
+      if (!audioCtx) audioCtx = new AC();
+      if (audioCtx.state === 'suspended') audioCtx.resume();
+      var t = audioCtx.currentTime;
+      var osc = audioCtx.createOscillator();
+      var gain = audioCtx.createGain();
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(880, t);
+      osc.frequency.exponentialRampToValueAtTime(1320, t + 0.04);
+      gain.gain.setValueAtTime(0.0001, t);
+      gain.gain.exponentialRampToValueAtTime(0.12, t + 0.008);
+      gain.gain.exponentialRampToValueAtTime(0.0001, t + 0.09);
+      osc.connect(gain); gain.connect(audioCtx.destination);
+      osc.start(t); osc.stop(t + 0.1);
+    } catch (e) { /* dźwięk jest ozdobą — nigdy nie blokuje nawigacji */ }
+  }
+  /* linki nawigacyjne: krótka pauza, by dźwięk wybrzmiał przed przejściem */
+  function navigateWithSound(a, e) {
+    playClick();
+    var href = a.getAttribute('href');
+    if (!href || href.charAt(0) === '#') return;                       // kotwica na tej samej stronie
+    if (e.ctrlKey || e.metaKey || e.shiftKey || e.button === 1) return; // nowa karta — nie przechwytuj
+    if (a.target && a.target !== '_self') return;
+    e.preventDefault();
+    setTimeout(function () { location.href = a.href; }, 120);
+  }
+
   /* ---- montaż + interakcje ---- */
   function mount() {
     var host = document.getElementById('site-header');
@@ -215,6 +250,7 @@
       var btn = e.target.closest ? e.target.closest('.csh-more-btn') : null;
       if (btn) {
         e.preventDefault();
+        playClick(); // główny przycisk hubu (Jestem cudzoziemcem / Jestem pracodawcą)
         var more = btn.parentNode, open = more.classList.contains('open');
         host.querySelectorAll('.csh-more.open').forEach(function (m) {
           m.classList.remove('open'); var b = m.querySelector('.csh-more-btn'); if (b) b.setAttribute('aria-expanded', 'false');
@@ -222,7 +258,10 @@
         if (!open) { more.classList.add('open'); btn.setAttribute('aria-expanded', 'true'); }
         return;
       }
-      if (e.target.closest && e.target.closest('.csh-burger')) { host.classList.toggle('csh-open'); }
+      if (e.target.closest && e.target.closest('.csh-burger')) { host.classList.toggle('csh-open'); return; }
+      /* dźwięk: pozycje z rozwijanych list hubów + linki paska (Kalkulator, CTA) */
+      var a = e.target.closest ? e.target.closest('.csh-more-menu a, .csh-menu > a') : null;
+      if (a) navigateWithSound(a, e);
     });
     document.addEventListener('click', function (e) {
       if (host.contains(e.target)) return;
