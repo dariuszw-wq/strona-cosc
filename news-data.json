@@ -1,6 +1,105 @@
 {
-  "updated": "2026-08-02T07:30:00+02:00",
+  "updated": "2026-08-02T14:00:00+02:00",
   "items": [
+    {
+      "id": "2026-08-02-ruch-bezwizowy-gruzja-kolumbia-wenezuela-zakaz-pracy",
+      "added": "2026-08-02",
+      "category": "Rynek pracy",
+      "title": "Rząd planuje zakaz pracy w ruchu bezwizowym dla obywateli Gruzji, Kolumbii i Wenezueli",
+      "summary": "Polski rząd planuje ograniczyć możliwość korzystania z ruchu bezwizowego przez obywateli Gruzji, Kolumbii i Wenezueli w przypadkach, gdy ich wjazd do Polski lub pobyt na jej terytorium jest związany z wykonywaniem pracy. W praktyce oznaczałoby to, że obywatele tych trzech państw, którzy chcą pracować w Polsce, musieliby wcześniej uzyskać wizę krajową — a przy jej wydawaniu badana jest przesłanka ryzyka migracyjnego. Rozwiązanie ma formę rozporządzenia określającego wykaz państw; inicjatywa wyszła z resortu spraw zagranicznych i została poparta przez MSWiA, a jako uzasadnienie wskazuje się systemowe wykorzystywanie ruchu bezwizowego do podejmowania pracy z pominięciem wymogów prawnych. Uwaga: na dzień publikacji to plan/projekt — termin wejścia w życie i ostateczne brzmienie wykazu państw należy zweryfikować w źródle. Dla pracodawców oznacza to konieczność wcześniejszego zaplanowania rekrutacji z tych kierunków i uwzględnienia czasu oczekiwania na wizę.",
+      "source_name": "Raczkowski (PRO HR Immigration Update, lipiec 2026)",
+      "author": "dr Michał Kacprzyk, Jan Pietruczuk",
+      "url": "https://raczkowski.eu/pro-hr-immigration-update-lipiec-2026/#ruch-bezwizowy",
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "The government plans to ban work under visa-free travel for citizens of Georgia, Colombia and Venezuela",
+          "summary": "The Polish government plans to restrict the use of visa-free travel by citizens of Georgia, Colombia and Venezuela in cases where their entry into Poland or stay on its territory is connected with performing work. In practice this would mean that citizens of these three countries who want to work in Poland would first have to obtain a national visa — and when it is issued, the migration-risk criterion is examined. The solution takes the form of a regulation setting out a list of countries; the initiative came from the Ministry of Foreign Affairs and was supported by the Ministry of the Interior and Administration, and the justification cites the systemic use of visa-free travel to take up work while bypassing legal requirements. Please note: as at the date of publication this is a plan/draft — the date of entry into force and the final wording of the list of countries should be verified at the source. For employers this means the need to plan recruitment from these countries in advance and to allow for visa waiting times."
+        },
+        "es": {
+          "title": "El Gobierno planea prohibir el trabajo en régimen de exención de visado a los ciudadanos de Georgia, Colombia y Venezuela",
+          "summary": "El Gobierno polaco planea restringir el uso del régimen de exención de visado por parte de los ciudadanos de Georgia, Colombia y Venezuela en los casos en que su entrada en Polonia o su estancia en el territorio esté relacionada con la realización de un trabajo. En la práctica, esto significaría que los ciudadanos de estos tres países que deseen trabajar en Polonia tendrían que obtener previamente un visado nacional, y en su expedición se examina el criterio de riesgo migratorio. La solución adopta la forma de un reglamento que establece una lista de países; la iniciativa procede del Ministerio de Asuntos Exteriores y contó con el apoyo del Ministerio del Interior y Administración, y como justificación se señala el uso sistemático de la exención de visado para trabajar eludiendo los requisitos legales. Atención: a la fecha de publicación se trata de un plan/proyecto; la fecha de entrada en vigor y la redacción final de la lista de países deben verificarse en la fuente. Para los empleadores esto significa la necesidad de planificar con antelación la contratación procedente de estos países y de tener en cuenta los tiempos de espera del visado."
+        },
+        "uk": {
+          "title": "Уряд планує заборонити роботу в безвізовому режимі для громадян Грузії, Колумбії та Венесуели",
+          "summary": "Польський уряд планує обмежити можливість користування безвізовим режимом громадянами Грузії, Колумбії та Венесуели у випадках, коли їхній в'їзд до Польщі або перебування на її території пов'язані з виконанням роботи. На практиці це означало б, що громадяни цих трьох держав, які хочуть працювати в Польщі, мусили б спершу отримати національну візу, а при її видачі досліджується критерій міграційного ризику. Рішення має форму розпорядження, що визначає перелік держав; ініціатива вийшла від Міністерства закордонних справ і була підтримана МВС і адміністрації, а як обґрунтування вказується системне використання безвізового режиму для працевлаштування в обхід правових вимог. Увага: станом на день публікації це план/проєкт — термін набрання чинності та остаточну редакцію переліку держав слід перевірити у джерелі. Для роботодавців це означає необхідність заздалегідь планувати набір з цих напрямів і враховувати час очікування на візу."
+        },
+        "ru": {
+          "title": "Правительство планирует запретить работу в безвизовом режиме для граждан Грузии, Колумбии и Венесуэлы",
+          "summary": "Польское правительство планирует ограничить возможность пользования безвизовым режимом гражданами Грузии, Колумбии и Венесуэлы в случаях, когда их въезд в Польшу или пребывание на ее территории связаны с выполнением работы. На практике это означало бы, что граждане этих трех государств, желающие работать в Польше, должны были бы сначала получить национальную визу, а при ее выдаче исследуется критерий миграционного риска. Решение имеет форму распоряжения, определяющего перечень государств; инициатива исходила от Министерства иностранных дел и была поддержана МВД и администрации, а в обоснование указывается системное использование безвизового режима для трудоустройства в обход правовых требований. Внимание: на день публикации это план/проект — срок вступления в силу и окончательную редакцию перечня государств следует проверить в источнике. Для работодателей это означает необходимость заранее планировать набор с этих направлений и учитывать время ожидания визы."
+        },
+        "fr": {
+          "title": "Le gouvernement prévoit d'interdire le travail sous régime d'exemption de visa aux ressortissants de Géorgie, de Colombie et du Venezuela",
+          "summary": "Le gouvernement polonais prévoit de restreindre le recours à l'exemption de visa par les ressortissants de Géorgie, de Colombie et du Venezuela lorsque leur entrée en Pologne ou leur séjour sur son territoire est lié à l'exercice d'un travail. En pratique, cela signifierait que les ressortissants de ces trois pays souhaitant travailler en Pologne devraient d'abord obtenir un visa national — et lors de sa délivrance, le critère du risque migratoire est examiné. La solution prend la forme d'un règlement fixant une liste de pays ; l'initiative émane du ministère des Affaires étrangères et a été soutenue par le ministère de l'Intérieur et de l'Administration, la justification invoquant l'utilisation systémique de l'exemption de visa pour prendre un emploi en contournant les exigences légales. Attention : à la date de publication, il s'agit d'un plan/projet — la date d'entrée en vigueur et la rédaction finale de la liste des pays doivent être vérifiées à la source. Pour les employeurs, cela implique de planifier à l'avance le recrutement depuis ces pays et de tenir compte des délais d'obtention du visa."
+        }
+      }
+    },
+    {
+      "id": "2026-08-02-decyzja-60-dni-praca-bez-zezwolenia-wybrane-panstwa",
+      "added": "2026-08-02",
+      "category": "Legislacja",
+      "title": "Projekt MSWiA: decyzja pobytowa w 60 dni i praca bez zezwolenia — ale tylko dla obywateli wybranych państw",
+      "summary": "Ministerstwo Spraw Wewnętrznych i Administracji opublikowało projekt nowelizacji ustawy o cudzoziemcach, który ma przyspieszyć zakończenie postępowań pobytowych wszczynanych przez obywateli wybranych państw — decyzja miałaby zapadać w ciągu 60 dni. Projekt przewiduje również możliwość wykonywania pracy w Polsce bez zezwolenia na pracę dla obywateli wybranych państw. Lista państw nie została jeszcze oficjalnie wskazana; kancelaria Raczkowski przewiduje, że beneficjentami będą cudzoziemcy z Australii, Nowej Zelandii, Singapuru, Izraela, Wielkiej Brytanii, Stanów Zjednoczonych, Kanady, Tajwanu, Korei Południowej i Japonii — to przewidywanie ekspertów, a nie treść przepisu, i wymaga weryfikacji w ostatecznym brzmieniu ustawy. Uwaga: to wciąż PROJEKT — nie obowiązuje. Data wejścia w życie i ostateczny zakres państw nie są przesądzone i należy je zweryfikować w źródle (przebieg prac legislacyjnych na stronach RCL i Sejmu).",
+      "source_name": "Raczkowski (PRO HR Immigration Update, lipiec 2026)",
+      "author": "dr Michał Kacprzyk, Jan Pietruczuk",
+      "url": "https://raczkowski.eu/pro-hr-immigration-update-lipiec-2026/",
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Draft by the Ministry of the Interior and Administration: a residence decision within 60 days and work without a work permit — but only for citizens of selected countries",
+          "summary": "The Ministry of the Interior and Administration (MSWiA) has published a draft amendment to the Act on Foreigners intended to speed up the conclusion of residence proceedings initiated by citizens of selected countries — a decision would be issued within 60 days. The draft also provides for the possibility of working in Poland without a work permit for citizens of selected countries. The list of countries has not yet been officially indicated; the Raczkowski law firm anticipates that the beneficiaries will be foreigners from Australia, New Zealand, Singapore, Israel, the United Kingdom, the United States, Canada, Taiwan, South Korea and Japan — this is the experts' expectation, not the wording of the provision, and it requires verification against the final text of the act. Please note: this is still a DRAFT — it is not in force. The date of entry into force and the final list of countries have not been settled and should be verified at the source (the course of the legislative work on the RCL and Sejm websites)."
+        },
+        "es": {
+          "title": "Proyecto del Ministerio del Interior y Administración: decisión de residencia en 60 días y trabajo sin permiso de trabajo, pero solo para ciudadanos de determinados países",
+          "summary": "El Ministerio del Interior y Administración (MSWiA) ha publicado un proyecto de modificación de la Ley de Extranjería destinado a acelerar la conclusión de los procedimientos de residencia iniciados por ciudadanos de determinados países: la decisión se dictaría en un plazo de 60 días. El proyecto prevé también la posibilidad de trabajar en Polonia sin permiso de trabajo para los ciudadanos de determinados países. La lista de países aún no se ha indicado oficialmente; el despacho Raczkowski prevé que los beneficiarios serán extranjeros de Australia, Nueva Zelanda, Singapur, Israel, el Reino Unido, Estados Unidos, Canadá, Taiwán, Corea del Sur y Japón: se trata de una previsión de los expertos, no del contenido de la norma, y requiere verificación en el texto final de la ley. Atención: sigue siendo un PROYECTO, no está en vigor. La fecha de entrada en vigor y el listado final de países no están decididos y deben verificarse en la fuente (el curso de los trabajos legislativos en las páginas del RCL y del Sejm)."
+        },
+        "uk": {
+          "title": "Проєкт МВС і адміністрації: рішення щодо перебування за 60 днів і робота без дозволу на працю — але лише для громадян окремих держав",
+          "summary": "Міністерство внутрішніх справ і адміністрації (MSWiA) оприлюднило проєкт змін до закону про іноземців, який має пришвидшити завершення проваджень щодо перебування, розпочатих громадянами окремих держав, — рішення мало б ухвалюватися протягом 60 днів. Проєкт передбачає також можливість виконувати роботу в Польщі без дозволу на працю для громадян окремих держав. Перелік держав офіційно ще не вказано; юридична фірма Raczkowski передбачає, що бенефіціарами будуть іноземці з Австралії, Нової Зеландії, Сінгапуру, Ізраїлю, Великої Британії, Сполучених Штатів, Канади, Тайваню, Південної Кореї та Японії — це прогноз експертів, а не зміст норми, і він потребує перевірки в остаточній редакції закону. Увага: це все ще ПРОЄКТ — він не діє. Дата набрання чинності та остаточний перелік держав не вирішені й підлягають перевірці у джерелі (перебіг законодавчих робіт на сайтах RCL і Сейму)."
+        },
+        "ru": {
+          "title": "Проект МВД и администрации: решение о пребывании за 60 дней и работа без разрешения на работу — но только для граждан отдельных государств",
+          "summary": "Министерство внутренних дел и администрации (MSWiA) опубликовало проект изменений в закон об иностранцах, который должен ускорить завершение производств о пребывании, начатых гражданами отдельных государств, — решение принималось бы в течение 60 дней. Проект предусматривает также возможность выполнять работу в Польше без разрешения на работу для граждан отдельных государств. Перечень государств официально еще не указан; юридическая фирма Raczkowski предполагает, что бенефициарами будут иностранцы из Австралии, Новой Зеландии, Сингапура, Израиля, Великобритании, Соединенных Штатов, Канады, Тайваня, Южной Кореи и Японии — это прогноз экспертов, а не содержание нормы, и он требует проверки в окончательной редакции закона. Внимание: это по-прежнему ПРОЕКТ — он не действует. Дата вступления в силу и окончательный перечень государств не решены и подлежат проверке в источнике (ход законодательных работ на сайтах RCL и Сейма)."
+        },
+        "fr": {
+          "title": "Projet du ministère de l'Intérieur et de l'Administration : décision de séjour en 60 jours et travail sans permis de travail, mais uniquement pour les ressortissants de certains pays",
+          "summary": "Le ministère de l'Intérieur et de l'Administration (MSWiA) a publié un projet de modification de la loi sur les étrangers visant à accélérer la clôture des procédures de séjour engagées par les ressortissants de certains pays : la décision serait rendue dans un délai de 60 jours. Le projet prévoit également la possibilité de travailler en Pologne sans permis de travail pour les ressortissants de certains pays. La liste des pays n'a pas encore été officiellement indiquée ; le cabinet Raczkowski prévoit que les bénéficiaires seront des étrangers d'Australie, de Nouvelle-Zélande, de Singapour, d'Israël, du Royaume-Uni, des États-Unis, du Canada, de Taïwan, de Corée du Sud et du Japon — il s'agit d'une prévision des experts et non du contenu de la disposition, qui doit être vérifiée dans le texte final de la loi. Attention : il s'agit encore d'un PROJET, il n'est pas en vigueur. La date d'entrée en vigueur et la liste définitive des pays ne sont pas arrêtées et doivent être vérifiées à la source (le déroulement des travaux législatifs sur les sites du RCL et de la Diète)."
+        }
+      }
+    },
+    {
+      "id": "2026-08-02-ochrona-czasowa-ue-do-4-marca-2028",
+      "added": "2026-08-02",
+      "category": "Legislacja",
+      "title": "UE przedłużyła ochronę czasową dla uchodźców z Ukrainy do 4 marca 2028 r. — z nowym warunkiem dla mężczyzn w wieku poborowym",
+      "summary": "Państwa członkowskie UE zakończyły 30 lipca 2026 r. procedurę pisemną i formalnie zgodziły się na przedłużenie ochrony tymczasowej dla uchodźców z Ukrainy o kolejny rok — do 4 marca 2028 r. Jednocześnie wprowadzono nowy warunek: ochrona nie będzie udzielana osobom, które nie wywiązały się z obowiązków wojskowych przewidzianych w prawie ukraińskim i z tego powodu nie uzyskały zezwolenia władz ukraińskich na opuszczenie Ukrainy (na Ukrainie mobilizacja obejmuje mężczyzn w wieku 25–60 lat). Ograniczenie NIE dotyczy osób już objętych ochroną tymczasową w UE — tylko tych, które ubiegają się o nią po raz pierwszy. Dowodem wypełnienia obowiązków może być np. paszport ze stemplem wyjazdowym władz ukraińskich albo dokument o zwolnieniu z obowiązku wojskowego. Z ochrony tymczasowej korzysta w UE ok. 4,4 mln Ukraińców. Postanowienie wchodzi w życie dzień po publikacji w Dzienniku Urzędowym UE. Co to znaczy dla Polski: przedłużenie ochrony na poziomie UE jest podstawą do wydłużenia polskich przepisów o statusie UKR — konkretne polskie terminy i tryb należy zweryfikować w ogłoszonych aktach prawnych. Przypominamy też o odrębnym, polskim obowiązku: osoby, które uzyskały PESEL UKR bez okazania dokumentu podróży, muszą go okazać w urzędzie gminy do 31 sierpnia 2026 r.",
+      "source_name": "Bankier.pl (za PAP)",
+      "author": "Jowita Kiwnik Pargana (PAP)",
+      "url": "https://www.bankier.pl/wiadomosc/UE-zmienia-zasady-ochrony-uchodzcow-z-Ukrainy-Decyzja-oficjalnie-zatwierdzona-9175910.html",
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "The EU has extended temporary protection for refugees from Ukraine until 4 March 2028 — with a new condition for men of conscription age",
+          "summary": "On 30 July 2026 EU member states completed the written procedure and formally agreed to extend temporary protection for refugees from Ukraine by another year — until 4 March 2028. At the same time a new condition was introduced: protection will not be granted to persons who have not fulfilled their military obligations under Ukrainian law and for that reason have not obtained permission from the Ukrainian authorities to leave Ukraine (in Ukraine mobilisation covers men aged 25–60). The restriction does NOT apply to persons already covered by temporary protection in the EU — only to those applying for it for the first time. Proof of fulfilling the obligations may be, for example, a passport with an exit stamp from the Ukrainian authorities or a document confirming exemption from military service. About 4.4 million Ukrainians benefit from temporary protection in the EU. The decision enters into force the day after its publication in the Official Journal of the EU. What this means for Poland: extending protection at EU level is the basis for extending the Polish rules on UKR status — the specific Polish deadlines and procedure should be verified in the published legal acts. We also remind you of a separate Polish obligation: persons who obtained a PESEL UKR number without presenting a travel document must present it at the municipal office by 31 August 2026."
+        },
+        "es": {
+          "title": "La UE ha prorrogado la protección temporal para los refugiados de Ucrania hasta el 4 de marzo de 2028, con una nueva condición para los hombres en edad de reclutamiento",
+          "summary": "El 30 de julio de 2026 los Estados miembros de la UE concluyeron el procedimiento escrito y aceptaron formalmente prorrogar un año más la protección temporal para los refugiados de Ucrania, hasta el 4 de marzo de 2028. Al mismo tiempo se introdujo una nueva condición: no se concederá protección a las personas que no hayan cumplido sus obligaciones militares previstas en la legislación ucraniana y que, por ese motivo, no hayan obtenido la autorización de las autoridades ucranianas para salir de Ucrania (en Ucrania la movilización abarca a los hombres de 25 a 60 años). La restricción NO se aplica a las personas ya cubiertas por la protección temporal en la UE, sino únicamente a quienes la soliciten por primera vez. Como prueba del cumplimiento de las obligaciones puede servir, por ejemplo, un pasaporte con el sello de salida de las autoridades ucranianas o un documento que confirme la exención del servicio militar. Alrededor de 4,4 millones de ucranianos se benefician de la protección temporal en la UE. La decisión entra en vigor al día siguiente de su publicación en el Diario Oficial de la UE. Qué significa esto para Polonia: la prórroga de la protección a nivel de la UE es la base para prorrogar las normas polacas sobre el estatuto UKR; los plazos y el procedimiento concretos en Polonia deben verificarse en los actos jurídicos publicados. Recordamos también una obligación polaca aparte: las personas que obtuvieron el número PESEL UKR sin presentar un documento de viaje deben presentarlo en la oficina municipal antes del 31 de agosto de 2026."
+        },
+        "uk": {
+          "title": "ЄС продовжив тимчасовий захист для біженців з України до 4 березня 2028 року — з новою умовою для чоловіків призовного віку",
+          "summary": "30 липня 2026 року держави-члени ЄС завершили письмову процедуру та офіційно погодилися продовжити тимчасовий захист для біженців з України ще на рік — до 4 березня 2028 року. Водночас запроваджено нову умову: захист не надаватиметься особам, які не виконали своїх військових обов'язків, передбачених українським законодавством, і з цієї причини не отримали дозволу українських органів влади на виїзд з України (в Україні мобілізація охоплює чоловіків віком 25–60 років). Обмеження НЕ стосується осіб, які вже перебувають під тимчасовим захистом у ЄС, — лише тих, хто звертається за ним уперше. Підтвердженням виконання обов'язків може бути, наприклад, паспорт із виїзним штампом українських органів влади або документ про звільнення від військового обов'язку. Тимчасовим захистом у ЄС користуються близько 4,4 млн українців. Рішення набирає чинності наступного дня після публікації в Офіційному віснику ЄС. Що це означає для Польщі: продовження захисту на рівні ЄС є підставою для продовження польських норм щодо статусу UKR — конкретні польські терміни та порядок слід перевірити в опублікованих правових актах. Нагадуємо також про окремий польський обов'язок: особи, які отримали номер PESEL зі статусом UKR без пред'явлення проїзного документа, повинні пред'явити його в ґміні до 31 серпня 2026 року."
+        },
+        "ru": {
+          "title": "ЕС продлил временную защиту для беженцев из Украины до 4 марта 2028 года — с новым условием для мужчин призывного возраста",
+          "summary": "30 июля 2026 года государства — члены ЕС завершили письменную процедуру и официально согласились продлить временную защиту для беженцев из Украины еще на год — до 4 марта 2028 года. Одновременно введено новое условие: защита не будет предоставляться лицам, которые не выполнили свои воинские обязанности, предусмотренные украинским законодательством, и по этой причине не получили разрешения украинских властей на выезд из Украины (в Украине мобилизация охватывает мужчин в возрасте 25–60 лет). Ограничение НЕ распространяется на лиц, уже находящихся под временной защитой в ЕС, — только на тех, кто обращается за ней впервые. Подтверждением выполнения обязанностей может быть, например, паспорт с выездным штампом украинских властей или документ об освобождении от воинской обязанности. Временной защитой в ЕС пользуются около 4,4 млн украинцев. Решение вступает в силу на следующий день после публикации в Официальном журнале ЕС. Что это значит для Польши: продление защиты на уровне ЕС является основанием для продления польских норм о статусе UKR — конкретные польские сроки и порядок следует проверить в опубликованных правовых актах. Напоминаем также об отдельной польской обязанности: лица, получившие номер PESEL со статусом UKR без предъявления проездного документа, должны предъявить его в гмине до 31 августа 2026 года."
+        },
+        "fr": {
+          "title": "L'UE a prolongé la protection temporaire des réfugiés d'Ukraine jusqu'au 4 mars 2028, avec une nouvelle condition pour les hommes en âge d'être appelés sous les drapeaux",
+          "summary": "Le 30 juillet 2026, les États membres de l'UE ont achevé la procédure écrite et ont formellement accepté de prolonger d'un an la protection temporaire des réfugiés d'Ukraine, jusqu'au 4 mars 2028. Dans le même temps, une nouvelle condition a été introduite : la protection ne sera pas accordée aux personnes qui n'ont pas rempli leurs obligations militaires prévues par le droit ukrainien et qui, pour cette raison, n'ont pas obtenu l'autorisation des autorités ukrainiennes de quitter l'Ukraine (en Ukraine, la mobilisation concerne les hommes âgés de 25 à 60 ans). Cette restriction ne s'applique PAS aux personnes déjà couvertes par la protection temporaire dans l'UE, mais uniquement à celles qui la demandent pour la première fois. La preuve de l'accomplissement des obligations peut être, par exemple, un passeport portant un cachet de sortie des autorités ukrainiennes ou un document attestant d'une dispense du service militaire. Environ 4,4 millions d'Ukrainiens bénéficient de la protection temporaire dans l'UE. La décision entre en vigueur le lendemain de sa publication au Journal officiel de l'UE. Ce que cela signifie pour la Pologne : la prolongation de la protection au niveau de l'UE constitue la base d'une prolongation des règles polonaises relatives au statut UKR ; les délais et la procédure concrets en Pologne doivent être vérifiés dans les actes juridiques publiés. Nous rappelons également une obligation polonaise distincte : les personnes ayant obtenu un numéro PESEL UKR sans présenter de document de voyage doivent le présenter à la mairie avant le 31 août 2026."
+        }
+      }
+    },
     {
       "id": "2026-08-02-posg-migranci-afryka-wplaw",
       "added": "2026-08-02",
@@ -163,6 +262,72 @@
         "fr": {
           "title": "Un ressortissant ukrainien recherché en vertu d'un mandat d'arrêt européen arrêté pour le vol de 171 vélos électriques",
           "summary": "Les agents du poste des gardes-frontières de Lubaczów ont arrêté un ressortissant ukrainien recherché en vertu d'un mandat d'arrêt européen. Selon les gardes-frontières, l'homme avait volé 171 vélos électriques d'une valeur de plus d'un demi-million de zlotys. Cette affaire montre que les contrôles de séjour légal sont de plus en plus souvent associés à une vérification dans les bases de données européennes des personnes recherchées."
+        }
+      }
+    },
+    {
+      "id": "2026-08-04-cosc-pracodawca-nie-oddaje-dokumentow",
+      "added": "2026-07-31",
+      "category": "Urzędy",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-pracodawca-nie-oddaje-dokumentow.html",
+      "title": "Pracodawca nie oddaje dokumentów do karty pobytu — co robić krok po kroku [materiał własny COSC]",
+      "summary": "Bez dokumentów od pracodawcy łatwo przegapić wezwanie z urzędu i stracić legalny pobyt. Krok po kroku: jak odzyskać dokumenty, jakie masz prawa (art. 97 KP, art. 64 § 2 KPA) i termin 15 dni po utracie pracy.",
+      "t": {
+        "en": {
+          "title": "Employer won't hand over your residence card documents — what to do step by step [COSC original]",
+          "summary": "Without documents from your employer you can miss an office summons and lose legal stay. Step by step: how to recover documents, your rights (Art. 97 Labour Code, Art. 64 § 2 KPA) and the 15-day deadline after losing a job."
+        },
+        "es": {
+          "title": "El empleador no entrega los documentos de tu tarjeta de residencia — qué hacer paso a paso [material propio COSC]",
+          "summary": "Sin los documentos del empleador puedes perder un requerimiento de la oficina y la estancia legal. Paso a paso: cómo recuperar documentos, tus derechos (art. 97 del Código de Trabajo, art. 64 § 2 KPA) y el plazo de 15 días tras perder el trabajo."
+        },
+        "uk": {
+          "title": "Роботодавець не віддає документи до карти побиту — що робити крок за кроком [власний матеріал COSC]",
+          "summary": "Без документів від роботодавця легко пропустити виклик з уряду і втратити легальне перебування. Крок за кроком: як повернути документи, ваші права (ст. 97 Кодексу праці, ст. 64 § 2 КПА) і строк 15 днів після втрати роботи."
+        },
+        "ru": {
+          "title": "Работодатель не отдаёт документы для карты побыту — что делать шаг за шагом [собственный материал COSC]",
+          "summary": "Без документов от работодателя легко пропустить вызов из ужонда и потерять легальное пребывание. Шаг за шагом: как вернуть документы, ваши права (ст. 97 Трудового кодекса, ст. 64 § 2 КПА) и срок 15 дней после потери работы."
+        },
+        "fr": {
+          "title": "L'employeur ne rend pas vos documents de carte de séjour — que faire pas à pas [contenu original COSC]",
+          "summary": "Sans les documents de l'employeur, on peut manquer une convocation de l'office et perdre le séjour légal. Pas à pas : récupérer les documents, vos droits (art. 97 du Code du travail, art. 64 § 2 KPA) et le délai de 15 jours après la perte d'emploi."
+        }
+      }
+    },
+    {
+      "id": "2026-07-31-cosc-czy-cudzoziemiec-podlega-zus",
+      "added": "2026-07-31",
+      "category": "Rynek pracy",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-czy-cudzoziemiec-podlega-zus.html",
+      "title": "Czy cudzoziemiec podlega ubezpieczeniom ZUS w Polsce [materiał własny COSC]",
+      "summary": "Czy trzeba płacić ZUS za cudzoziemca? Zasada terytorialności, zgłoszenie ZUS ZUA/ZZA, wyjątki (delegowanie A1, umowy międzynarodowe). Podstawa: art. 6 ustawy o systemie ubezpieczeń społecznych. 2026.",
+      "t": {
+        "en": {
+          "title": "Is a foreigner subject to ZUS social insurance in Poland [COSC original content]",
+          "summary": "Do you have to pay ZUS for a foreigner? The territoriality rule, ZUS ZUA/ZZA registration, exceptions (A1 posting, international agreements). Basis: Article 6 of the Act on the Social Insurance System. 2026."
+        },
+        "es": {
+          "title": "¿Está un extranjero sujeto al seguro social ZUS en Polonia [contenido propio de COSC]",
+          "summary": "¿Hay que pagar ZUS por un extranjero? La regla de territorialidad, el registro ZUS ZUA/ZZA, las excepciones (desplazamiento A1, acuerdos internacionales). Base: artículo 6 de la Ley del Sistema de Seguro Social. 2026."
+        },
+        "uk": {
+          "title": "Чи підлягає іноземець соціальному страхуванню ZUS у Польщі [власний матеріал COSC]",
+          "summary": "Чи потрібно платити ZUS за іноземця? Принцип територіальності, реєстрація ZUS ZUA/ZZA, винятки (відрядження A1, міжнародні угоди). Підстава: стаття 6 Закону про систему соціального страхування. 2026."
+        },
+        "ru": {
+          "title": "Подлежит ли иностранец социальному страхованию ZUS в Польше [собственный материал COSC]",
+          "summary": "Нужно ли платить ZUS за иностранца? Принцип территориальности, регистрация ZUS ZUA/ZZA, исключения (командирование A1, международные соглашения). Основание: статья 6 Закона о системе социального страхования. 2026."
+        },
+        "fr": {
+          "title": "Un étranger est-il soumis à l'assurance sociale ZUS en Pologne [contenu original COSC]",
+          "summary": "Faut-il payer le ZUS pour un étranger ? La règle de territorialité, l'enregistrement ZUS ZUA/ZZA, les exceptions (détachement A1, accords internationaux). Base : article 6 de la loi sur le système d'assurance sociale. 2026."
         }
       }
     },
@@ -365,72 +530,6 @@
       }
     },
     {
-      "id": "2026-08-04-cosc-pracodawca-nie-oddaje-dokumentow",
-      "added": "2026-07-31",
-      "category": "Urzędy",
-      "scope": "PL",
-      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
-      "author": "Dariusz Włodarczyk Kancelaria TRC",
-      "url": "artykul-pracodawca-nie-oddaje-dokumentow.html",
-      "title": "Pracodawca nie oddaje dokumentów do karty pobytu — co robić krok po kroku [materiał własny COSC]",
-      "summary": "Bez dokumentów od pracodawcy łatwo przegapić wezwanie z urzędu i stracić legalny pobyt. Krok po kroku: jak odzyskać dokumenty, jakie masz prawa (art. 97 KP, art. 64 § 2 KPA) i termin 15 dni po utracie pracy.",
-      "t": {
-        "en": {
-          "title": "Employer won't hand over your residence card documents — what to do step by step [COSC original]",
-          "summary": "Without documents from your employer you can miss an office summons and lose legal stay. Step by step: how to recover documents, your rights (Art. 97 Labour Code, Art. 64 § 2 KPA) and the 15-day deadline after losing a job."
-        },
-        "es": {
-          "title": "El empleador no entrega los documentos de tu tarjeta de residencia — qué hacer paso a paso [material propio COSC]",
-          "summary": "Sin los documentos del empleador puedes perder un requerimiento de la oficina y la estancia legal. Paso a paso: cómo recuperar documentos, tus derechos (art. 97 del Código de Trabajo, art. 64 § 2 KPA) y el plazo de 15 días tras perder el trabajo."
-        },
-        "uk": {
-          "title": "Роботодавець не віддає документи до карти побиту — що робити крок за кроком [власний матеріал COSC]",
-          "summary": "Без документів від роботодавця легко пропустити виклик з уряду і втратити легальне перебування. Крок за кроком: як повернути документи, ваші права (ст. 97 Кодексу праці, ст. 64 § 2 КПА) і строк 15 днів після втрати роботи."
-        },
-        "ru": {
-          "title": "Работодатель не отдаёт документы для карты побыту — что делать шаг за шагом [собственный материал COSC]",
-          "summary": "Без документов от работодателя легко пропустить вызов из ужонда и потерять легальное пребывание. Шаг за шагом: как вернуть документы, ваши права (ст. 97 Трудового кодекса, ст. 64 § 2 КПА) и срок 15 дней после потери работы."
-        },
-        "fr": {
-          "title": "L'employeur ne rend pas vos documents de carte de séjour — que faire pas à pas [contenu original COSC]",
-          "summary": "Sans les documents de l'employeur, on peut manquer une convocation de l'office et perdre le séjour légal. Pas à pas : récupérer les documents, vos droits (art. 97 du Code du travail, art. 64 § 2 KPA) et le délai de 15 jours après la perte d'emploi."
-        }
-      }
-    },
-    {
-      "id": "2026-07-31-cosc-czy-cudzoziemiec-podlega-zus",
-      "added": "2026-07-31",
-      "category": "Rynek pracy",
-      "scope": "PL",
-      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
-      "author": "Dariusz Włodarczyk Kancelaria TRC",
-      "url": "artykul-czy-cudzoziemiec-podlega-zus.html",
-      "title": "Czy cudzoziemiec podlega ubezpieczeniom ZUS w Polsce [materiał własny COSC]",
-      "summary": "Czy trzeba płacić ZUS za cudzoziemca? Zasada terytorialności, zgłoszenie ZUS ZUA/ZZA, wyjątki (delegowanie A1, umowy międzynarodowe). Podstawa: art. 6 ustawy o systemie ubezpieczeń społecznych. 2026.",
-      "t": {
-        "en": {
-          "title": "Is a foreigner subject to ZUS social insurance in Poland [COSC original content]",
-          "summary": "Do you have to pay ZUS for a foreigner? The territoriality rule, ZUS ZUA/ZZA registration, exceptions (A1 posting, international agreements). Basis: Article 6 of the Act on the Social Insurance System. 2026."
-        },
-        "es": {
-          "title": "¿Está un extranjero sujeto al seguro social ZUS en Polonia [contenido propio de COSC]",
-          "summary": "¿Hay que pagar ZUS por un extranjero? La regla de territorialidad, el registro ZUS ZUA/ZZA, las excepciones (desplazamiento A1, acuerdos internacionales). Base: artículo 6 de la Ley del Sistema de Seguro Social. 2026."
-        },
-        "uk": {
-          "title": "Чи підлягає іноземець соціальному страхуванню ZUS у Польщі [власний матеріал COSC]",
-          "summary": "Чи потрібно платити ZUS за іноземця? Принцип територіальності, реєстрація ZUS ZUA/ZZA, винятки (відрядження A1, міжнародні угоди). Підстава: стаття 6 Закону про систему соціального страхування. 2026."
-        },
-        "ru": {
-          "title": "Подлежит ли иностранец социальному страхованию ZUS в Польше [собственный материал COSC]",
-          "summary": "Нужно ли платить ZUS за иностранца? Принцип территориальности, регистрация ZUS ZUA/ZZA, исключения (командирование A1, международные соглашения). Основание: статья 6 Закона о системе социального страхования. 2026."
-        },
-        "fr": {
-          "title": "Un étranger est-il soumis à l'assurance sociale ZUS en Pologne [contenu original COSC]",
-          "summary": "Faut-il payer le ZUS pour un étranger ? La règle de territorialité, l'enregistrement ZUS ZUA/ZZA, les exceptions (détachement A1, accords internationaux). Base : article 6 de la loi sur le système d'assurance sociale. 2026."
-        }
-      }
-    },
-    {
       "id": "2026-07-29-cosc-kurierzy-zlecenie-stosunek-pracy-pip",
       "added": "2026-07-29",
       "category": "Rynek pracy",
@@ -497,68 +596,35 @@
       }
     },
     {
-      "id": "2026-07-27-udsc-pesel-ukr-dokument-podrozy",
-      "added": "2026-07-27",
-      "category": "Urzędy",
+      "id": "2026-07-29-sg-gruzja-odmowa-katowice",
+      "added": "2026-07-29",
+      "category": "Bezpieczeństwo",
       "scope": "PL",
-      "source_name": "Urząd do Spraw Cudzoziemców",
-      "author": "",
-      "url": "https://www.gov.pl/web/udsc/wazna-informacja-dla-obywateli-ukrainy-posiadajacych-numer-pesel-ze-statusem-ukr",
-      "title": "UDSC: obywatele Ukrainy ze statusem UKR muszą do 31 sierpnia 2026 r. okazać ważny paszport w urzędzie gminy",
-      "summary": "Urząd do Spraw Cudzoziemców przypomina, że cudzoziemcy, którzy uzyskali numer PESEL ze statusem UKR wyłącznie na podstawie deklaracji (bez okazania ważnego dokumentu podróży), mają obowiązek do 31 sierpnia 2026 r. okazać w urzędzie gminy ważny paszport. Dotyczy to zwłaszcza dzieci poniżej 18. roku życia, których tożsamość potwierdzano wcześniej na podstawie zdjęć w paszportach rodziców lub opiekunów. Aktualizacja jest bezpłatna i nie zmienia numeru PESEL — poprawiane są tylko dane dokumentu. Brak aktualizacji w terminie oznacza utratę statusu UKR i ochrony czasowej, a bez ważnego numeru PESEL UKR nie można otrzymać karty pobytu CUKR.",
+      "source_name": "Straż Graniczna (strazgraniczna.pl)",
+      "author": "Komenda Główna Straży Granicznej",
+      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16038,Na-lotnisku-w-Katowicach-Pyrzowicach-zatrzymano-osobe-poszukiwana-i-odmowiono-wj.html",
+      "title": "Katowice-Pyrzowice: odmowa wjazdu dwóm obywatelom Gruzji, zatrzymano też osobę poszukiwaną",
+      "summary": "Funkcjonariusze Placówki SG w Katowicach-Pyrzowicach wydali decyzje o odmowie wjazdu na terytorium Polski wobec dwóch obywateli Gruzji. Podczas tych samych czynności zatrzymano 52-letniego obywatela Polski poszukiwanego do odbycia kary pozbawienia wolności za przestępstwo narkotykowe. Przykład bieżącej kontroli granicznej na lotnisku i przesłanek odmowy wjazdu cudzoziemcom.",
       "t": {
         "en": {
-          "title": "UDSC: Ukrainian nationals with UKR status must present a valid passport at the municipal office by 31 August 2026",
-          "summary": "The Office for Foreigners (UDSC) reminds that foreigners who received a PESEL number with UKR status solely on the basis of a declaration (without presenting a valid travel document) are required to present a valid passport at the municipal (gmina) office by 31 August 2026. This is especially important for children under 18, whose identity was previously confirmed on the basis of photos attached to their parents' or guardians' passports. The update is free of charge and does not change the PESEL number — only the document data is corrected. Failure to update on time means loss of UKR status and temporary protection, and without a valid PESEL UKR number it is not possible to obtain a CUKR residence card."
+          "title": "Katowice-Pyrzowice: entry refused to two Georgian nationals, wanted person also detained",
+          "summary": "Border Guard officers at the Katowice-Pyrzowice post issued decisions refusing entry into Poland to two Georgian nationals. During the same checks, a 52-year-old Polish citizen wanted to serve a prison sentence for a drug offence was detained. An example of ongoing airport border control and the grounds for refusing entry to foreigners."
         },
         "es": {
-          "title": "UDSC: los ciudadanos ucranianos con estatus UKR deben presentar un pasaporte válido en la oficina municipal antes del 31 de agosto de 2026",
-          "summary": "La Oficina de Extranjeros (UDSC) recuerda que los extranjeros que obtuvieron un número PESEL con estatus UKR únicamente sobre la base de una declaración (sin presentar un documento de viaje válido) están obligados a presentar un pasaporte válido en la oficina municipal (gmina) antes del 31 de agosto de 2026. Esto es especialmente importante para los menores de 18 años, cuya identidad se confirmaba anteriormente sobre la base de las fotos adjuntas a los pasaportes de sus padres o tutores. La actualización es gratuita y no cambia el número PESEL — solo se corrigen los datos del documento. No actualizarlo a tiempo supone la pérdida del estatus UKR y de la protección temporal, y sin un número PESEL UKR válido no es posible obtener la tarjeta de residencia CUKR."
+          "title": "Katowice-Pyrzowice: se deniega la entrada a dos ciudadanos georgianos y se detiene a una persona buscada",
+          "summary": "Agentes de la Guardia de Fronteras del puesto de Katowice-Pyrzowice dictaron decisiones de denegación de entrada en Polonia contra dos ciudadanos de Georgia. Durante los mismos controles se detuvo a un ciudadano polaco de 52 años buscado para cumplir una pena de prisión por un delito de drogas. Un ejemplo del control fronterizo en el aeropuerto y de los motivos para denegar la entrada a extranjeros."
         },
         "uk": {
-          "title": "УДСЦ: громадяни України зі статусом UKR мають до 31 серпня 2026 р. пред’явити дійсний паспорт у ґміні",
-          "summary": "Управління у справах іноземців (UDSC) нагадує, що іноземці, які отримали номер PESEL зі статусом UKR лише на підставі декларації (без пред’явлення дійсного проїзного документа), зобов’язані до 31 серпня 2026 р. пред’явити дійсний паспорт в органі ґміни. Це особливо важливо для дітей до 18 років, чию особу раніше підтверджували на підставі фотографій, доданих до паспортів батьків або опікунів. Оновлення є безкоштовним і не змінює номер PESEL — коригуються лише дані документа. Невиконання цього у визначений термін означає втрату статусу UKR і тимчасового захисту, а без дійсного номера PESEL UKR неможливо отримати карту перебування CUKR."
+          "title": "Катовіце-Пижовіце: відмовлено у в'їзді двом громадянам Грузії, затримано також розшукувану особу",
+          "summary": "Прикордонники підрозділу в Катовіце-Пижовіце ухвалили рішення про відмову у в'їзді на територію Польщі двом громадянам Грузії. Під час тих самих перевірок затримано 52-річного громадянина Польщі, який розшукувався для відбування покарання за наркозлочин. Приклад поточного прикордонного контролю в аеропорту та підстав для відмови у в'їзді іноземцям."
         },
         "ru": {
-          "title": "УДСЦ: граждане Украины со статусом UKR должны до 31 августа 2026 г. предъявить действующий паспорт в гмине",
-          "summary": "Управление по делам иностранцев (UDSC) напоминает, что иностранцы, получившие номер PESEL со статусом UKR только на основании декларации (без предъявления действительного проездного документа), обязаны до 31 августа 2026 г. предъявить действующий паспорт в органе гмины. Это особенно важно для детей младше 18 лет, личность которых ранее подтверждалась на основании фотографий, вклеенных в паспорта родителей или опекунов. Обновление бесплатно и не меняет номер PESEL — исправляются только данные документа. Непредставление в срок означает утрату статуса UKR и временной защиты, а без действительного номера PESEL UKR невозможно получить карту пребывания CUKR."
+          "title": "Катовице-Пижовице: отказано во въезде двум гражданам Грузии, задержан также разыскиваемый",
+          "summary": "Пограничники подразделения в Катовице-Пижовице приняли решения об отказе во въезде на территорию Польши двум гражданам Грузии. Во время тех же проверок задержан 52-летний гражданин Польши, разыскиваемый для отбывания наказания за наркопреступление. Пример текущего пограничного контроля в аэропорту и оснований для отказа во въезде иностранцам."
         },
         "fr": {
-          "title": "UDSC : les ressortissants ukrainiens ayant le statut UKR doivent présenter un passeport valide à la mairie avant le 31 août 2026",
-          "summary": "L'Office des étrangers (UDSC) rappelle que les étrangers ayant obtenu un numéro PESEL avec le statut UKR uniquement sur la base d'une déclaration (sans présenter de document de voyage valide) sont tenus de présenter un passeport valide au bureau de la commune (gmina) avant le 31 août 2026. Cela est particulièrement important pour les enfants de moins de 18 ans, dont l'identité était auparavant confirmée sur la base des photos jointes aux passeports de leurs parents ou tuteurs. La mise à jour est gratuite et ne modifie pas le numéro PESEL — seules les données du document sont corrigées. À défaut de mise à jour dans les délais, l'intéressé perd le statut UKR et la protection temporaire, et sans numéro PESEL UKR valide il est impossible d'obtenir la carte de séjour CUKR."
-        }
-      }
-    },
-    {
-      "id": "2026-07-27-cosc-nowa-ustawa-powierzanie-pracy-2025",
-      "added": "2026-07-27",
-      "category": "Rynek pracy",
-      "scope": "PL",
-      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
-      "author": "Dariusz Włodarczyk Kancelaria TRC",
-      "url": "artykul-nowa-ustawa-powierzanie-pracy-2025.html",
-      "title": "Nowa ustawa o powierzaniu pracy cudzoziemcom — co zmieniło się od 1 czerwca 2025 r. [materiał własny COSC]",
-      "summary": "Ustawa z 20 marca 2025 r. o powierzaniu pracy cudzoziemcom (Dz.U. 2025 poz. 621) obowiązuje od 1 czerwca 2025. Zniesienie testu rynku pracy, elektronizacja, wyższe kary. Dla pracodawców i kadr.",
-      "t": {
-        "en": {
-          "title": "New act on entrusting work to foreigners — what changed from 1 June 2025 [COSC own material]",
-          "summary": "The act of 20 March 2025 on entrusting work to foreigners (Journal of Laws 2025 item 621) applies from 1 June 2025. Abolition of the labour market test, electronisation, higher penalties. For employers and HR."
-        },
-        "es": {
-          "title": "Nueva ley sobre la contratación de trabajo a extranjeros — qué cambió desde el 1 de junio de 2025 [material propio de COSC]",
-          "summary": "La ley del 20 de marzo de 2025 sobre la contratación de trabajo a extranjeros (Boletín Oficial 2025 pos. 621) está en vigor desde el 1 de junio de 2025. Supresión de la prueba del mercado laboral, digitalización, sanciones más altas. Para empleadores y recursos humanos."
-        },
-        "uk": {
-          "title": "Новий закон про доручення роботи іноземцям — що змінилося з 1 червня 2025 р. [власний матеріал COSC]",
-          "summary": "Закон від 20 березня 2025 р. про доручення роботи іноземцям (Dz.U. 2025 поз. 621) діє з 1 червня 2025 р. Скасування тесту ринку праці, електронізація, вищі штрафи. Для роботодавців і кадрових служб."
-        },
-        "ru": {
-          "title": "Новый закон о поручении работы иностранцам — что изменилось с 1 июня 2025 г. [собственный материал COSC]",
-          "summary": "Закон от 20 марта 2025 г. о поручении работы иностранцам (Dz.U. 2025 поз. 621) действует с 1 июня 2025 г. Отмена теста рынка труда, электронизация, более высокие штрафы. Для работодателей и кадровых служб."
-        },
-        "fr": {
-          "title": "Nouvelle loi sur l'attribution de travail aux étrangers — ce qui a changé depuis le 1er juin 2025 [document propre COSC]",
-          "summary": "La loi du 20 mars 2025 sur l'attribution de travail aux étrangers (Journal des lois 2025 pos. 621) est en vigueur depuis le 1er juin 2025. Suppression du test du marché du travail, dématérialisation, sanctions plus élevées. Pour les employeurs et les RH."
+          "title": "Katowice-Pyrzowice : entrée refusée à deux ressortissants géorgiens, une personne recherchée également interpellée",
+          "summary": "Les agents des gardes-frontières du poste de Katowice-Pyrzowice ont pris des décisions de refus d'entrée en Pologne à l'encontre de deux ressortissants géorgiens. Lors des mêmes contrôles, un citoyen polonais de 52 ans recherché pour purger une peine de prison pour une infraction liée aux stupéfiants a été interpellé. Un exemple de contrôle frontalier à l'aéroport et des motifs de refus d'entrée aux étrangers."
         }
       }
     },
@@ -629,6 +695,171 @@
       }
     },
     {
+      "id": "2026-07-28-sg-podlaskie-podrobione-dokumenty",
+      "added": "2026-07-28",
+      "category": "Bezpieczeństwo",
+      "scope": "PL",
+      "source_name": "Straż Graniczna (strazgraniczna.pl)",
+      "author": "Komenda Główna Straży Granicznej",
+      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16037,Podrobione-dokumenty-u-czterech-cudzoziemcow.html",
+      "title": "Podlaskie: czterej cudzoziemcy z podrobionymi dokumentami",
+      "summary": "Funkcjonariusze Podlaskiego Oddziału Straży Granicznej 27 lipca 2026 r. ujawnili cztery osoby posługujące się podrobionymi dokumentami. Posłużenie się sfałszowanym dokumentem stanowi przestępstwo i może być podstawą odmowy wjazdu lub zobowiązania do powrotu — przypominamy o konsekwencjach prawnych dla cudzoziemców.",
+      "t": {
+        "en": {
+          "title": "Podlaskie region: four foreigners with forged documents",
+          "summary": "On 27 July 2026, officers of the Podlaskie Border Guard Unit identified four people using forged documents. Using a falsified document is a criminal offence and may be grounds for refusal of entry or a return decision — a reminder of the legal consequences for foreigners."
+        },
+        "es": {
+          "title": "Región de Podlasie: cuatro extranjeros con documentos falsificados",
+          "summary": "El 27 de julio de 2026, agentes de la Unidad de la Guardia de Fronteras de Podlasie detectaron a cuatro personas que utilizaban documentos falsificados. Usar un documento falsificado es un delito y puede motivar la denegación de entrada o una decisión de retorno: un recordatorio de las consecuencias legales para los extranjeros."
+        },
+        "uk": {
+          "title": "Підляшшя: четверо іноземців із підробленими документами",
+          "summary": "27 липня 2026 р. прикордонники Підляського відділу Прикордонної служби виявили чотирьох осіб, які користувалися підробленими документами. Використання підробленого документа є злочином і може стати підставою для відмови у в'їзді або рішення про повернення — нагадуємо про правові наслідки для іноземців."
+        },
+        "ru": {
+          "title": "Подляшье: четверо иностранцев с поддельными документами",
+          "summary": "27 июля 2026 г. пограничники Подляского отдела Пограничной службы выявили четырёх человек, использовавших поддельные документы. Использование поддельного документа является преступлением и может стать основанием для отказа во въезде или решения о возвращении — напоминаем о правовых последствиях для иностранцев."
+        },
+        "fr": {
+          "title": "Podlachie : quatre étrangers avec des documents falsifiés",
+          "summary": "Le 27 juillet 2026, les agents de l'unité des gardes-frontières de Podlachie ont repéré quatre personnes utilisant des documents falsifiés. L'usage d'un document falsifié est une infraction pénale et peut justifier un refus d'entrée ou une décision de retour — un rappel des conséquences juridiques pour les étrangers."
+        }
+      }
+    },
+    {
+      "id": "2026-07-28-sg-medyka-ukrainka-rumunski-dowod",
+      "added": "2026-07-28",
+      "category": "Bezpieczeństwo",
+      "scope": "PL",
+      "source_name": "Straż Graniczna (strazgraniczna.pl)",
+      "author": "Komenda Główna Straży Granicznej",
+      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16033,Ukrainka-podawala-sie-za-Rumunke.html",
+      "title": "Medyka: obywatelka Ukrainy posłużyła się podrobionym rumuńskim dowodem osobistym",
+      "summary": "Na przejściu granicznym w Medyce 27 lipca 2026 r. funkcjonariusze SG ujawnili obywatelkę Ukrainy, która posłużyła się podrobionym rumuńskim dowodem osobistym. Kobieta przyznała, że nigdy nie była w Rumunii. Posłużenie się cudzym lub podrobionym dokumentem tożsamości pociąga odpowiedzialność karną i konsekwencje pobytowe.",
+      "t": {
+        "en": {
+          "title": "Medyka: Ukrainian national used a forged Romanian ID card",
+          "summary": "At the Medyka border crossing on 27 July 2026, Border Guard officers identified a Ukrainian national who used a forged Romanian identity card. The woman admitted she had never been to Romania. Using another person's or a forged identity document carries criminal liability and residence consequences."
+        },
+        "es": {
+          "title": "Medyka: una ciudadana ucraniana usó un documento de identidad rumano falsificado",
+          "summary": "En el paso fronterizo de Medyka, el 27 de julio de 2026, agentes de la Guardia de Fronteras detectaron a una ciudadana ucraniana que utilizó un documento de identidad rumano falsificado. La mujer admitió que nunca había estado en Rumanía. Usar un documento de identidad ajeno o falsificado conlleva responsabilidad penal y consecuencias para la residencia."
+        },
+        "uk": {
+          "title": "Медика: громадянка України скористалася підробленим румунським посвідченням особи",
+          "summary": "На пункті пропуску в Медиці 27 липня 2026 р. прикордонники виявили громадянку України, яка скористалася підробленим румунським посвідченням особи. Жінка визнала, що ніколи не була в Румунії. Використання чужого або підробленого документа, що посвідчує особу, тягне за собою кримінальну відповідальність та наслідки для перебування."
+        },
+        "ru": {
+          "title": "Медыка: гражданка Украины воспользовалась поддельным румынским удостоверением личности",
+          "summary": "На пункте пропуска в Медыке 27 июля 2026 г. пограничники выявили гражданку Украины, воспользовавшуюся поддельным румынским удостоверением личности. Женщина призналась, что никогда не была в Румынии. Использование чужого или поддельного документа, удостоверяющего личность, влечёт уголовную ответственность и последствия для пребывания."
+        },
+        "fr": {
+          "title": "Medyka : une ressortissante ukrainienne a utilisé une carte d'identité roumaine falsifiée",
+          "summary": "Au poste-frontière de Medyka, le 27 juillet 2026, les gardes-frontières ont repéré une ressortissante ukrainienne qui a utilisé une carte d'identité roumaine falsifiée. La femme a reconnu n'avoir jamais été en Roumanie. L'usage d'un document d'identité d'autrui ou falsifié entraîne une responsabilité pénale et des conséquences sur le séjour."
+        }
+      }
+    },
+    {
+      "id": "2026-07-28-sg-krakow-ukraina-zobowiazanie",
+      "added": "2026-07-28",
+      "category": "Urzędy",
+      "scope": "PL",
+      "source_name": "Straż Graniczna (strazgraniczna.pl)",
+      "author": "Komenda Główna Straży Granicznej",
+      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16034,Obywatel-Ukrainy-zobowiazany-do-powrotu.html",
+      "title": "Kraków: obywatel Ukrainy zobowiązany do powrotu po kontroli legalności pobytu",
+      "summary": "Funkcjonariusze Placówki SG w Krakowie skontrolowali legalność pobytu 42-letniego obywatela Ukrainy, który nie miał przy sobie dokumentów tożsamości — jego dane ustalono na podstawie oświadczenia i zweryfikowano w bazach. W wyniku postępowania wydano decyzję zobowiązującą go do powrotu. Przypomnienie o obowiązku posiadania ważnych dokumentów i legalnej podstawy pobytu.",
+      "t": {
+        "en": {
+          "title": "Kraków: Ukrainian national ordered to return after a residence-legality check",
+          "summary": "Border Guard officers in Kraków checked the residence legality of a 42-year-old Ukrainian national who had no identity documents on him — his details were established from his statement and verified against databases. As a result, a return decision was issued. A reminder of the obligation to hold valid documents and a legal basis for stay."
+        },
+        "es": {
+          "title": "Cracovia: un ciudadano ucraniano obligado a regresar tras un control de legalidad de residencia",
+          "summary": "Agentes de la Guardia de Fronteras en Cracovia controlaron la legalidad de la residencia de un ciudadano ucraniano de 42 años que no llevaba documentos de identidad; sus datos se establecieron a partir de su declaración y se verificaron en bases de datos. Como resultado se dictó una decisión de retorno. Un recordatorio de la obligación de portar documentos válidos y una base legal de estancia."
+        },
+        "uk": {
+          "title": "Краків: громадянина України зобов'язали повернутися після перевірки законності перебування",
+          "summary": "Прикордонники підрозділу в Кракові перевірили законність перебування 42-річного громадянина України, який не мав при собі документів, що посвідчують особу — його дані встановили за усною заявою та перевірили в базах. За результатами провадження ухвалено рішення про зобов'язання до повернення. Нагадування про обов'язок мати чинні документи та законну підставу перебування."
+        },
+        "ru": {
+          "title": "Краков: гражданина Украины обязали вернуться после проверки законности пребывания",
+          "summary": "Пограничники подразделения в Кракове проверили законность пребывания 42-летнего гражданина Украины, у которого не было при себе документов, удостоверяющих личность — его данные установили по устному заявлению и проверили в базах. По итогам производства принято решение об обязании к возвращению. Напоминание об обязанности иметь действительные документы и законное основание пребывания."
+        },
+        "fr": {
+          "title": "Cracovie : un ressortissant ukrainien contraint au retour après un contrôle de légalité du séjour",
+          "summary": "Les gardes-frontières de Cracovie ont contrôlé la légalité du séjour d'un ressortissant ukrainien de 42 ans qui n'avait aucun document d'identité sur lui — ses données ont été établies à partir de sa déclaration et vérifiées dans les bases de données. À l'issue de la procédure, une décision de retour a été prise. Un rappel de l'obligation de détenir des documents valides et une base légale de séjour."
+        }
+      }
+    },
+    {
+      "id": "2026-07-27-udsc-pesel-ukr-dokument-podrozy",
+      "added": "2026-07-27",
+      "category": "Urzędy",
+      "scope": "PL",
+      "source_name": "Urząd do Spraw Cudzoziemców",
+      "author": "",
+      "url": "https://www.gov.pl/web/udsc/wazna-informacja-dla-obywateli-ukrainy-posiadajacych-numer-pesel-ze-statusem-ukr",
+      "title": "UDSC: obywatele Ukrainy ze statusem UKR muszą do 31 sierpnia 2026 r. okazać ważny paszport w urzędzie gminy",
+      "summary": "Urząd do Spraw Cudzoziemców przypomina, że cudzoziemcy, którzy uzyskali numer PESEL ze statusem UKR wyłącznie na podstawie deklaracji (bez okazania ważnego dokumentu podróży), mają obowiązek do 31 sierpnia 2026 r. okazać w urzędzie gminy ważny paszport. Dotyczy to zwłaszcza dzieci poniżej 18. roku życia, których tożsamość potwierdzano wcześniej na podstawie zdjęć w paszportach rodziców lub opiekunów. Aktualizacja jest bezpłatna i nie zmienia numeru PESEL — poprawiane są tylko dane dokumentu. Brak aktualizacji w terminie oznacza utratę statusu UKR i ochrony czasowej, a bez ważnego numeru PESEL UKR nie można otrzymać karty pobytu CUKR.",
+      "t": {
+        "en": {
+          "title": "UDSC: Ukrainian nationals with UKR status must present a valid passport at the municipal office by 31 August 2026",
+          "summary": "The Office for Foreigners (UDSC) reminds that foreigners who received a PESEL number with UKR status solely on the basis of a declaration (without presenting a valid travel document) are required to present a valid passport at the municipal (gmina) office by 31 August 2026. This is especially important for children under 18, whose identity was previously confirmed on the basis of photos attached to their parents' or guardians' passports. The update is free of charge and does not change the PESEL number — only the document data is corrected. Failure to update on time means loss of UKR status and temporary protection, and without a valid PESEL UKR number it is not possible to obtain a CUKR residence card."
+        },
+        "es": {
+          "title": "UDSC: los ciudadanos ucranianos con estatus UKR deben presentar un pasaporte válido en la oficina municipal antes del 31 de agosto de 2026",
+          "summary": "La Oficina de Extranjeros (UDSC) recuerda que los extranjeros que obtuvieron un número PESEL con estatus UKR únicamente sobre la base de una declaración (sin presentar un documento de viaje válido) están obligados a presentar un pasaporte válido en la oficina municipal (gmina) antes del 31 de agosto de 2026. Esto es especialmente importante para los menores de 18 años, cuya identidad se confirmaba anteriormente sobre la base de las fotos adjuntas a los pasaportes de sus padres o tutores. La actualización es gratuita y no cambia el número PESEL — solo se corrigen los datos del documento. No actualizarlo a tiempo supone la pérdida del estatus UKR y de la protección temporal, y sin un número PESEL UKR válido no es posible obtener la tarjeta de residencia CUKR."
+        },
+        "uk": {
+          "title": "УДСЦ: громадяни України зі статусом UKR мають до 31 серпня 2026 р. пред’явити дійсний паспорт у ґміні",
+          "summary": "Управління у справах іноземців (UDSC) нагадує, що іноземці, які отримали номер PESEL зі статусом UKR лише на підставі декларації (без пред’явлення дійсного проїзного документа), зобов’язані до 31 серпня 2026 р. пред’явити дійсний паспорт в органі ґміни. Це особливо важливо для дітей до 18 років, чию особу раніше підтверджували на підставі фотографій, доданих до паспортів батьків або опікунів. Оновлення є безкоштовним і не змінює номер PESEL — коригуються лише дані документа. Невиконання цього у визначений термін означає втрату статусу UKR і тимчасового захисту, а без дійсного номера PESEL UKR неможливо отримати карту перебування CUKR."
+        },
+        "ru": {
+          "title": "УДСЦ: граждане Украины со статусом UKR должны до 31 августа 2026 г. предъявить действующий паспорт в гмине",
+          "summary": "Управление по делам иностранцев (UDSC) напоминает, что иностранцы, получившие номер PESEL со статусом UKR только на основании декларации (без предъявления действительного проездного документа), обязаны до 31 августа 2026 г. предъявить действующий паспорт в органе гмины. Это особенно важно для детей младше 18 лет, личность которых ранее подтверждалась на основании фотографий, вклеенных в паспорта родителей или опекунов. Обновление бесплатно и не меняет номер PESEL — исправляются только данные документа. Непредставление в срок означает утрату статуса UKR и временной защиты, а без действительного номера PESEL UKR невозможно получить карту пребывания CUKR."
+        },
+        "fr": {
+          "title": "UDSC : les ressortissants ukrainiens ayant le statut UKR doivent présenter un passeport valide à la mairie avant le 31 août 2026",
+          "summary": "L'Office des étrangers (UDSC) rappelle que les étrangers ayant obtenu un numéro PESEL avec le statut UKR uniquement sur la base d'une déclaration (sans présenter de document de voyage valide) sont tenus de présenter un passeport valide au bureau de la commune (gmina) avant le 31 août 2026. Cela est particulièrement important pour les enfants de moins de 18 ans, dont l'identité était auparavant confirmée sur la base des photos jointes aux passeports de leurs parents ou tuteurs. La mise à jour est gratuite et ne modifie pas le numéro PESEL — seules les données du document sont corrigées. À défaut de mise à jour dans les délais, l'intéressé perd le statut UKR et la protection temporaire, et sans numéro PESEL UKR valide il est impossible d'obtenir la carte de séjour CUKR."
+        }
+      }
+    },
+    {
+      "id": "2026-07-27-cosc-nowa-ustawa-powierzanie-pracy-2025",
+      "added": "2026-07-27",
+      "category": "Rynek pracy",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-nowa-ustawa-powierzanie-pracy-2025.html",
+      "title": "Nowa ustawa o powierzaniu pracy cudzoziemcom — co zmieniło się od 1 czerwca 2025 r. [materiał własny COSC]",
+      "summary": "Ustawa z 20 marca 2025 r. o powierzaniu pracy cudzoziemcom (Dz.U. 2025 poz. 621) obowiązuje od 1 czerwca 2025. Zniesienie testu rynku pracy, elektronizacja, wyższe kary. Dla pracodawców i kadr.",
+      "t": {
+        "en": {
+          "title": "New act on entrusting work to foreigners — what changed from 1 June 2025 [COSC own material]",
+          "summary": "The act of 20 March 2025 on entrusting work to foreigners (Journal of Laws 2025 item 621) applies from 1 June 2025. Abolition of the labour market test, electronisation, higher penalties. For employers and HR."
+        },
+        "es": {
+          "title": "Nueva ley sobre la contratación de trabajo a extranjeros — qué cambió desde el 1 de junio de 2025 [material propio de COSC]",
+          "summary": "La ley del 20 de marzo de 2025 sobre la contratación de trabajo a extranjeros (Boletín Oficial 2025 pos. 621) está en vigor desde el 1 de junio de 2025. Supresión de la prueba del mercado laboral, digitalización, sanciones más altas. Para empleadores y recursos humanos."
+        },
+        "uk": {
+          "title": "Новий закон про доручення роботи іноземцям — що змінилося з 1 червня 2025 р. [власний матеріал COSC]",
+          "summary": "Закон від 20 березня 2025 р. про доручення роботи іноземцям (Dz.U. 2025 поз. 621) діє з 1 червня 2025 р. Скасування тесту ринку праці, електронізація, вищі штрафи. Для роботодавців і кадрових служб."
+        },
+        "ru": {
+          "title": "Новый закон о поручении работы иностранцам — что изменилось с 1 июня 2025 г. [собственный материал COSC]",
+          "summary": "Закон от 20 марта 2025 г. о поручении работы иностранцам (Dz.U. 2025 поз. 621) действует с 1 июня 2025 г. Отмена теста рынка труда, электронизация, более высокие штрафы. Для работодателей и кадровых служб."
+        },
+        "fr": {
+          "title": "Nouvelle loi sur l'attribution de travail aux étrangers — ce qui a changé depuis le 1er juin 2025 [document propre COSC]",
+          "summary": "La loi du 20 mars 2025 sur l'attribution de travail aux étrangers (Journal des lois 2025 pos. 621) est en vigueur depuis le 1er juin 2025. Suppression du test du marché du travail, dématérialisation, sanctions plus élevées. Pour les employeurs et les RH."
+        }
+      }
+    },
+    {
       "id": "2026-07-27-cosc-wsa-1092-06-termin-14-dni-pomoc-integracyjna",
       "added": "2026-07-27",
       "category": "Orzecznictwo",
@@ -658,6 +889,171 @@
         "fr": {
           "title": "Le délai de 14 jours pour l'aide à l'intégration du réfugié est un délai de forclusion — arrêt du WSA (I SA/Wa 1092/06) [document propre COSC]",
           "summary": "Document propre du Centre des affaires des étrangers (COSC). Le Tribunal administratif de voïvodie de Varsovie, dans un arrêt du 28 septembre 2006 (réf. I SA/Wa 1092/06), a confirmé que le délai de 14 jours pour la demande d'aide à l'intégration d'un réfugié (art. 91 al. 3 de la loi sur l'aide sociale) est un délai de forclusion de droit matériel qui, en règle générale, ne peut être relevé au titre des art. 58–59 du Code de procédure administrative. Le Tribunal a également annulé les deux décisions : l'organe d'appel a clôturé à tort la procédure comme sans objet au lieu de refuser sur la base matérielle correcte, et le dossier ne contenait pas la preuve de la notification de la décision (art. 77 § 1 CPA). Le commentaire présente les faits, les violations, la décision et le risque pratique de perdre le droit en cas de demande tardive."
+        }
+      }
+    },
+    {
+      "id": "2026-07-27-sg-odmowy-wjazdu-litwa",
+      "added": "2026-07-27",
+      "category": "Bezpieczeństwo",
+      "title": "Granica z Litwą: odmowa wjazdu 9 cudzoziemcom w miniony weekend",
+      "summary": "W ramach tymczasowej kontroli granicznej na granicy polsko-litewskiej funkcjonariusze Podlaskiego Oddziału Straży Granicznej w miniony weekend odmówili wjazdu do Polski 9 cudzoziemcom. Kontrole na tym odcinku to element przywróconej kontroli wewnątrz strefy Schengen. Szczegóły (obywatelstwa, podstawy odmów) należy zweryfikować w źródle.",
+      "source_name": "Straż Graniczna (strazgraniczna.pl)",
+      "author": "Komenda Główna Straży Granicznej",
+      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16032,Odmowy-wjazdu-na-granicy-polsko-litewskiej.html",
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Lithuania border: entry refused to 9 foreigners over the weekend",
+          "summary": "During temporary border checks on the Polish-Lithuanian border, officers of the Podlasie Border Guard Unit refused entry to Poland to 9 foreigners over the past weekend. Checks on this section are part of the reinstated controls within the Schengen area. Details (nationalities, grounds for refusal) should be verified in the source."
+        },
+        "es": {
+          "title": "Frontera con Lituania: entrada denegada a 9 extranjeros el fin de semana",
+          "summary": "Durante los controles fronterizos temporales en la frontera polaco-lituana, los agentes de la Unidad de la Guardia de Fronteras de Podlasie denegaron la entrada a Polonia a 9 extranjeros el pasado fin de semana. Los controles en este tramo forman parte de los controles reintroducidos dentro del espacio Schengen. Los detalles (nacionalidades, motivos de la denegación) deben verificarse en la fuente."
+        },
+        "uk": {
+          "title": "Кордон з Литвою: відмовлено у в'їзді 9 іноземцям за вихідні",
+          "summary": "Під час тимчасового прикордонного контролю на польсько-литовському кордоні співробітники Підляського відділу Прикордонної служби минулими вихідними відмовили у в'їзді до Польщі 9 іноземцям. Контроль на цій ділянці є частиною відновленого контролю всередині Шенгенської зони. Деталі (громадянство, підстави відмови) слід перевірити в джерелі."
+        },
+        "ru": {
+          "title": "Граница с Литвой: за выходные отказано во въезде 9 иностранцам",
+          "summary": "В ходе временного пограничного контроля на польско-литовской границе сотрудники Подляского отдела Пограничной службы в минувшие выходные отказали во въезде в Польшу 9 иностранцам. Контроль на этом участке — часть возобновлённого контроля внутри Шенгенской зоны. Детали (гражданство, основания отказа) следует проверить в источнике."
+        },
+        "fr": {
+          "title": "Frontière avec la Lituanie : entrée refusée à 9 étrangers ce week-end",
+          "summary": "Lors des contrôles frontaliers temporaires à la frontière polono-lituanienne, les agents de l'unité des gardes-frontières de Podlachie ont refusé l'entrée en Pologne à 9 étrangers le week-end dernier. Les contrôles sur ce tronçon font partie des contrôles rétablis au sein de l'espace Schengen. Les détails (nationalités, motifs du refus) doivent être vérifiés à la source."
+        }
+      }
+    },
+    {
+      "id": "2026-07-27-sg-ukraina-zobowiazanie-olsztyn",
+      "added": "2026-07-27",
+      "category": "Urzędy",
+      "title": "Olsztyn: dwaj obywatele Ukrainy z decyzjami zobowiązującymi do powrotu",
+      "summary": "Funkcjonariusze Placówki Straży Granicznej w Olsztynie wydali dwóm obywatelom Ukrainy decyzje zobowiązujące ich do powrotu do kraju pochodzenia. Wnioski o wszczęcie postępowań skierowali funkcjonariusze Policji. Sprawa przypomina, że objęcie ochroną czasową nie wyłącza automatycznie możliwości zobowiązania do powrotu w razie naruszeń przepisów. Podstawy prawne konkretnych decyzji należy zweryfikować w źródle.",
+      "source_name": "Straż Graniczna (strazgraniczna.pl)",
+      "author": "Komenda Główna Straży Granicznej",
+      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16031,Dwaj-obywatele-Ukrainy-zobowiazani-do-opuszczenia-Polski.html",
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Olsztyn: two Ukrainian nationals ordered to return",
+          "summary": "Officers of the Border Guard post in Olsztyn issued return decisions to two Ukrainian nationals, ordering them to return to their country of origin. The requests to open proceedings were filed by the Police. The case is a reminder that being covered by temporary protection does not automatically rule out a return obligation in the event of legal violations. The legal grounds for the specific decisions should be verified in the source."
+        },
+        "es": {
+          "title": "Olsztyn: dos ciudadanos ucranianos con decisiones de retorno",
+          "summary": "Los agentes del puesto de la Guardia de Fronteras en Olsztyn emitieron decisiones de retorno a dos ciudadanos ucranianos, ordenándoles regresar a su país de origen. Las solicitudes para iniciar los procedimientos fueron presentadas por la Policía. El caso recuerda que estar cubierto por la protección temporal no excluye automáticamente una obligación de retorno en caso de infracciones. Los fundamentos jurídicos de las decisiones concretas deben verificarse en la fuente."
+        },
+        "uk": {
+          "title": "Ольштин: двом громадянам України видано рішення про повернення",
+          "summary": "Співробітники підрозділу Прикордонної служби в Ольштині видали двом громадянам України рішення, що зобов'язують їх повернутися до країни походження. Клопотання про початок проваджень подали співробітники поліції. Справа нагадує, що перебування під тимчасовим захистом автоматично не виключає можливості зобов'язання до повернення у разі порушень. Правові підстави конкретних рішень слід перевірити в джерелі."
+        },
+        "ru": {
+          "title": "Ольштын: двум гражданам Украины вынесены решения о возвращении",
+          "summary": "Сотрудники подразделения Пограничной службы в Ольштыне вынесли двум гражданам Украины решения, обязывающие их вернуться в страну происхождения. Ходатайства о начале производств подали сотрудники полиции. Случай напоминает, что нахождение под временной защитой автоматически не исключает обязанности возвращения при нарушениях. Правовые основания конкретных решений следует проверить в источнике."
+        },
+        "fr": {
+          "title": "Olsztyn : deux ressortissants ukrainiens visés par des décisions de retour",
+          "summary": "Les agents du poste des gardes-frontières d'Olsztyn ont délivré à deux ressortissants ukrainiens des décisions les obligeant à retourner dans leur pays d'origine. Les demandes d'ouverture des procédures ont été déposées par la Police. L'affaire rappelle que le fait d'être couvert par la protection temporaire n'exclut pas automatiquement une obligation de retour en cas d'infractions. Les fondements juridiques des décisions concrètes doivent être vérifiés à la source."
+        }
+      }
+    },
+    {
+      "id": "2026-07-27-sg-kolumbia-wroclaw-nielegalna-praca",
+      "added": "2026-07-27",
+      "category": "Rynek pracy",
+      "title": "Wrocław: 13 obywateli Kolumbii pracowało bez zezwoleń — wspólna kontrola SG i PIP",
+      "summary": "Podczas wspólnej kontroli Straży Granicznej (Wrocław-Strachowice) i Państwowej Inspekcji Pracy w firmie logistycznej w powiecie wrocławskim, gdzie 24 lipca przebywało 1020 cudzoziemców, ujawniono 13 obywateli Kolumbii wykonujących pracę bez wymaganych zezwoleń. Wobec nich wszczęto postępowania o zobowiązanie do powrotu wraz z zakazami ponownego wjazdu do strefy Schengen. Wszczęto także trzy kontrole agencji pracy, a pracodawcy grozi wysoka kara grzywny.",
+      "source_name": "Straż Graniczna (strazgraniczna.pl)",
+      "author": "Komenda Główna Straży Granicznej",
+      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16030,Trzynastu-obywateli-Kolumbii-zatrzymanych-za-nielegalna-prace.html",
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Wrocław: 13 Colombian nationals worked without permits — joint Border Guard and Labour Inspectorate check",
+          "summary": "During a joint inspection by the Border Guard (Wrocław-Strachowice) and the State Labour Inspectorate at a logistics company in the Wrocław district, where 1020 foreigners were present on 24 July, 13 Colombian nationals were found working without the required permits. Return proceedings were initiated against them, together with bans on re-entry into the Schengen area. Three inspections of employment agencies were also launched, and the employer faces a high fine."
+        },
+        "es": {
+          "title": "Wrocław: 13 ciudadanos colombianos trabajaban sin permisos — control conjunto de la Guardia de Fronteras y la Inspección de Trabajo",
+          "summary": "Durante una inspección conjunta de la Guardia de Fronteras (Wrocław-Strachowice) y la Inspección Estatal de Trabajo en una empresa de logística del distrito de Wrocław, donde el 24 de julio había 1020 extranjeros, se detectó que 13 ciudadanos colombianos trabajaban sin los permisos requeridos. Se iniciaron procedimientos de retorno contra ellos, junto con prohibiciones de reingreso al espacio Schengen. También se abrieron tres inspecciones de agencias de empleo, y el empleador se enfrenta a una elevada multa."
+        },
+        "uk": {
+          "title": "Вроцлав: 13 громадян Колумбії працювали без дозволів — спільна перевірка Прикордонної служби та Інспекції праці",
+          "summary": "Під час спільної перевірки Прикордонної служби (Вроцлав-Страховіце) та Державної інспекції праці на логістичній фірмі у Вроцлавському повіті, де 24 липня перебувало 1020 іноземців, виявлено 13 громадян Колумбії, які працювали без необхідних дозволів. Щодо них розпочато провадження про зобов'язання до повернення разом із заборонами повторного в'їзду до Шенгенської зони. Також розпочато три перевірки агенцій праці, а роботодавцю загрожує високий штраф."
+        },
+        "ru": {
+          "title": "Вроцлав: 13 граждан Колумбии работали без разрешений — совместная проверка Пограничной службы и Инспекции труда",
+          "summary": "В ходе совместной проверки Пограничной службы (Вроцлав-Страховице) и Государственной инспекции труда на логистической фирме во Вроцлавском повяте, где 24 июля находилось 1020 иностранцев, выявлено 13 граждан Колумбии, работавших без необходимых разрешений. В отношении них начаты производства об обязании к возвращению вместе с запретами на повторный въезд в Шенгенскую зону. Также начаты три проверки агентств занятости, а работодателю грозит высокий штраф."
+        },
+        "fr": {
+          "title": "Wrocław : 13 ressortissants colombiens travaillaient sans permis — contrôle conjoint des gardes-frontières et de l'Inspection du travail",
+          "summary": "Lors d'un contrôle conjoint des gardes-frontières (Wrocław-Strachowice) et de l'Inspection nationale du travail dans une entreprise de logistique du district de Wrocław, où 1020 étrangers étaient présents le 24 juillet, 13 ressortissants colombiens ont été découverts travaillant sans les permis requis. Des procédures de retour ont été engagées à leur encontre, assorties d'interdictions de réentrée dans l'espace Schengen. Trois contrôles d'agences d'emploi ont également été lancés, et l'employeur encourt une lourde amende."
+        }
+      }
+    },
+    {
+      "id": "2026-07-27-sg-filipiny-przymusowy-powrot",
+      "added": "2026-07-27",
+      "category": "Bezpieczeństwo",
+      "title": "Tarnów: przymusowe wykonanie decyzji o powrocie wobec obywatela Filipin",
+      "summary": "Funkcjonariusze Placówki Straży Granicznej w Tarnowie przymusowo wykonali decyzję o zobowiązaniu do powrotu wobec 57-letniego obywatela Filipin. Cudzoziemiec nie zastosował się do wcześniej wydanej decyzji nakazującej opuszczenie Polski i przebywał bez wymaganych dokumentów pobytowych.",
+      "source_name": "Straż Graniczna (strazgraniczna.pl)",
+      "author": "Komenda Główna Straży Granicznej",
+      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16029,Przymusowe-wykonanie-decyzji-o-zobowiazaniu-do-powrotu-wobec-obywatela-Filipin.html",
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Tarnów: forced enforcement of return decision against a Filipino national",
+          "summary": "Officers of the Border Guard post in Tarnów forcibly enforced a return decision against a 57-year-old Filipino national. The foreigner had failed to comply with an earlier decision ordering him to leave Poland and was staying without the required residence documents."
+        },
+        "es": {
+          "title": "Tarnów: ejecución forzosa de una decisión de retorno contra un ciudadano filipino",
+          "summary": "Los agentes del puesto de la Guardia de Fronteras en Tarnów ejecutaron por la fuerza una decisión de retorno contra un ciudadano filipino de 57 años. El extranjero no había cumplido una decisión anterior que le ordenaba abandonar Polonia y permanecía sin los documentos de residencia requeridos."
+        },
+        "uk": {
+          "title": "Тарнув: примусове виконання рішення про повернення щодо громадянина Філіппін",
+          "summary": "Співробітники підрозділу Прикордонної служби в Тарнуві примусово виконали рішення про зобов'язання до повернення щодо 57-річного громадянина Філіппін. Іноземець не виконав раніше винесене рішення про виїзд з Польщі та перебував без необхідних документів на проживання."
+        },
+        "ru": {
+          "title": "Тарнув: принудительное исполнение решения о возвращении в отношении гражданина Филиппин",
+          "summary": "Сотрудники подразделения Пограничной службы в Тарнуве принудительно исполнили решение об обязании к возвращению в отношении 57-летнего гражданина Филиппин. Иностранец не выполнил ранее вынесенное решение о выезде из Польши и находился без необходимых документов на пребывание."
+        },
+        "fr": {
+          "title": "Tarnów : exécution forcée d'une décision de retour à l'encontre d'un ressortissant philippin",
+          "summary": "Les agents du poste des gardes-frontières de Tarnów ont exécuté par la force une décision de retour à l'encontre d'un ressortissant philippin de 57 ans. L'étranger ne s'était pas conformé à une décision antérieure lui ordonnant de quitter la Pologne et séjournait sans les documents de séjour requis."
+        }
+      }
+    },
+    {
+      "id": "2026-07-27-sg-moldawia-ees-medyka",
+      "added": "2026-07-27",
+      "category": "Bezpieczeństwo",
+      "title": "Medyka: system EES wykrył próbę obejścia zakazu wjazdu do strefy Schengen",
+      "summary": "Na przejściu granicznym w Medyce 25 lipca 48-letni obywatel Mołdawii próbował wjechać do Polski, posługując się zmienionymi danymi osobowymi. Dzięki weryfikacji biometrycznej w systemie Entry/Exit (EES) oraz sprawdzeniu w Systemie Informacyjnym Schengen (SIS) funkcjonariusze ustalili jego prawdziwą tożsamość i wykryli obowiązujący jeszcze przez blisko pięć lat zakaz wjazdu do strefy Schengen, wydany przez władze Rumunii. Mężczyźnie odmówiono wjazdu, usłyszał zarzut usiłowania nielegalnego przekroczenia granicy, a sprawa trafi do sądu. Przypadek pokazuje rolę nowego systemu EES w kontroli granicznej.",
+      "source_name": "Straż Graniczna (strazgraniczna.pl)",
+      "author": "Komenda Główna Straży Granicznej",
+      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16028,Ujawniono-probe-obejscia-zakazu-wjazdu-do-panswt-strefy-Schengen.html",
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Medyka: EES system detects attempt to circumvent Schengen entry ban",
+          "summary": "At the Medyka border crossing on 25 July, a 48-year-old Moldovan national tried to enter Poland using altered personal data. Thanks to biometric verification in the Entry/Exit System (EES) and a check in the Schengen Information System (SIS), officers established his real identity and detected a Schengen entry ban issued by the Romanian authorities, still valid for nearly five years. The man was refused entry, charged with attempted illegal border crossing, and the case will go to court. The case highlights the role of the new EES in border control."
+        },
+        "es": {
+          "title": "Medyka: el sistema EES detecta un intento de eludir la prohibición de entrada a Schengen",
+          "summary": "En el paso fronterizo de Medyka, el 25 de julio, un ciudadano moldavo de 48 años intentó entrar en Polonia utilizando datos personales alterados. Gracias a la verificación biométrica en el Sistema de Entradas y Salidas (EES) y a una comprobación en el Sistema de Información de Schengen (SIS), los agentes establecieron su identidad real y detectaron una prohibición de entrada a Schengen dictada por las autoridades rumanas, aún válida por casi cinco años. Se le denegó la entrada, se le imputó el intento de cruce ilegal de la frontera y el caso irá a juicio. El caso pone de relieve el papel del nuevo EES en el control fronterizo."
+        },
+        "uk": {
+          "title": "Медика: система EES виявила спробу обійти заборону в'їзду до Шенгену",
+          "summary": "На прикордонному переході в Медиці 25 липня 48-річний громадянин Молдови намагався в'їхати до Польщі, використовуючи змінені особисті дані. Завдяки біометричній перевірці в системі в'їзду/виїзду (EES) та перевірці в Шенгенській інформаційній системі (SIS) співробітники встановили його справжню особу та виявили заборону в'їзду до Шенгенської зони, видану владою Румунії, чинну ще майже п'ять років. Чоловіку відмовили у в'їзді, оголосили підозру у спробі незаконного перетину кордону, справа буде передана до суду. Випадок демонструє роль нової системи EES у прикордонному контролі."
+        },
+        "ru": {
+          "title": "Медыка: система EES выявила попытку обойти запрет на въезд в Шенген",
+          "summary": "На пограничном переходе в Медыке 25 июля 48-летний гражданин Молдовы пытался въехать в Польшу, используя изменённые личные данные. Благодаря биометрической проверке в системе въезда/выезда (EES) и проверке в Шенгенской информационной системе (SIS) сотрудники установили его подлинную личность и обнаружили запрет на въезд в Шенгенскую зону, выданный властями Румынии и действующий ещё почти пять лет. Мужчине отказали во въезде, предъявили обвинение в попытке незаконного пересечения границы, дело будет передано в суд. Случай показывает роль новой системы EES в пограничном контроле."
+        },
+        "fr": {
+          "title": "Medyka : le système EES détecte une tentative de contournement de l'interdiction d'entrée dans Schengen",
+          "summary": "Au poste-frontière de Medyka, le 25 juillet, un ressortissant moldave de 48 ans a tenté d'entrer en Pologne en utilisant des données personnelles modifiées. Grâce à la vérification biométrique dans le système d'entrée/sortie (EES) et à un contrôle dans le Système d'information Schengen (SIS), les agents ont établi sa véritable identité et détecté une interdiction d'entrée dans l'espace Schengen émise par les autorités roumaines, encore valable près de cinq ans. L'homme s'est vu refuser l'entrée, a été inculpé de tentative de franchissement illégal de la frontière, et l'affaire sera portée devant le tribunal. Ce cas met en évidence le rôle du nouveau système EES dans le contrôle aux frontières."
         }
       }
     },
@@ -1626,303 +2022,6 @@
         "fr": {
           "title": "UDSC : prolongation de la restriction temporaire du droit de déposer une demande de protection internationale à la frontière avec la Biélorussie",
           "summary": "L'Office des étrangers (UDSC) rappelle que, depuis le 27 mars 2025, une restriction temporaire du droit de déposer une demande de protection internationale s'applique à la frontière avec la République de Biélorussie. La base légale est l'article 33a, alinéa 5, de la loi du 13 juin 2003 relative à l'octroi d'une protection aux étrangers sur le territoire de la République de Pologne (Journal officiel 2025, points 223 et 389) ; la restriction a été introduite par le règlement du Conseil des ministres du 27 mars 2025. Par le règlement du Conseil des ministres du 18 mai 2026 (Journal officiel point 660), elle a été prolongée de 60 jours supplémentaires, à compter du 21 mai 2026. Une restriction ne peut excéder 60 jours ; chaque prolongation requiert l'accord de la Diète (Sejm) et peut être levée plus tôt si les causes cessent. Là où et tant qu'elle s'applique, la Garde-frontière ne reçoit ni demandes ni déclarations d'intention de les déposer (article 28 de la loi). La restriction ne couvre toutefois pas : les mineurs non accompagnés, les femmes enceintes, les personnes nécessitant un traitement particulier (notamment en raison de l'âge ou de l'état de santé), les personnes exposées à un risque réel de préjudice grave dans le pays d'où elles sont arrivées, et les ressortissants de l'État pratiquant l'instrumentalisation. La période en vigueur de la restriction doit être vérifiée à la source de l'UDSC — la date de publication du document et les règlements ultérieurs peuvent modifier la situation juridique."
-        }
-      }
-    },
-    {
-      "id": "2026-07-27-sg-odmowy-wjazdu-litwa",
-      "added": "2026-07-27",
-      "category": "Bezpieczeństwo",
-      "title": "Granica z Litwą: odmowa wjazdu 9 cudzoziemcom w miniony weekend",
-      "summary": "W ramach tymczasowej kontroli granicznej na granicy polsko-litewskiej funkcjonariusze Podlaskiego Oddziału Straży Granicznej w miniony weekend odmówili wjazdu do Polski 9 cudzoziemcom. Kontrole na tym odcinku to element przywróconej kontroli wewnątrz strefy Schengen. Szczegóły (obywatelstwa, podstawy odmów) należy zweryfikować w źródle.",
-      "source_name": "Straż Graniczna (strazgraniczna.pl)",
-      "author": "Komenda Główna Straży Granicznej",
-      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16032,Odmowy-wjazdu-na-granicy-polsko-litewskiej.html",
-      "scope": "PL",
-      "t": {
-        "en": {
-          "title": "Lithuania border: entry refused to 9 foreigners over the weekend",
-          "summary": "During temporary border checks on the Polish-Lithuanian border, officers of the Podlasie Border Guard Unit refused entry to Poland to 9 foreigners over the past weekend. Checks on this section are part of the reinstated controls within the Schengen area. Details (nationalities, grounds for refusal) should be verified in the source."
-        },
-        "es": {
-          "title": "Frontera con Lituania: entrada denegada a 9 extranjeros el fin de semana",
-          "summary": "Durante los controles fronterizos temporales en la frontera polaco-lituana, los agentes de la Unidad de la Guardia de Fronteras de Podlasie denegaron la entrada a Polonia a 9 extranjeros el pasado fin de semana. Los controles en este tramo forman parte de los controles reintroducidos dentro del espacio Schengen. Los detalles (nacionalidades, motivos de la denegación) deben verificarse en la fuente."
-        },
-        "uk": {
-          "title": "Кордон з Литвою: відмовлено у в'їзді 9 іноземцям за вихідні",
-          "summary": "Під час тимчасового прикордонного контролю на польсько-литовському кордоні співробітники Підляського відділу Прикордонної служби минулими вихідними відмовили у в'їзді до Польщі 9 іноземцям. Контроль на цій ділянці є частиною відновленого контролю всередині Шенгенської зони. Деталі (громадянство, підстави відмови) слід перевірити в джерелі."
-        },
-        "ru": {
-          "title": "Граница с Литвой: за выходные отказано во въезде 9 иностранцам",
-          "summary": "В ходе временного пограничного контроля на польско-литовской границе сотрудники Подляского отдела Пограничной службы в минувшие выходные отказали во въезде в Польшу 9 иностранцам. Контроль на этом участке — часть возобновлённого контроля внутри Шенгенской зоны. Детали (гражданство, основания отказа) следует проверить в источнике."
-        },
-        "fr": {
-          "title": "Frontière avec la Lituanie : entrée refusée à 9 étrangers ce week-end",
-          "summary": "Lors des contrôles frontaliers temporaires à la frontière polono-lituanienne, les agents de l'unité des gardes-frontières de Podlachie ont refusé l'entrée en Pologne à 9 étrangers le week-end dernier. Les contrôles sur ce tronçon font partie des contrôles rétablis au sein de l'espace Schengen. Les détails (nationalités, motifs du refus) doivent être vérifiés à la source."
-        }
-      }
-    },
-    {
-      "id": "2026-07-27-sg-ukraina-zobowiazanie-olsztyn",
-      "added": "2026-07-27",
-      "category": "Urzędy",
-      "title": "Olsztyn: dwaj obywatele Ukrainy z decyzjami zobowiązującymi do powrotu",
-      "summary": "Funkcjonariusze Placówki Straży Granicznej w Olsztynie wydali dwóm obywatelom Ukrainy decyzje zobowiązujące ich do powrotu do kraju pochodzenia. Wnioski o wszczęcie postępowań skierowali funkcjonariusze Policji. Sprawa przypomina, że objęcie ochroną czasową nie wyłącza automatycznie możliwości zobowiązania do powrotu w razie naruszeń przepisów. Podstawy prawne konkretnych decyzji należy zweryfikować w źródle.",
-      "source_name": "Straż Graniczna (strazgraniczna.pl)",
-      "author": "Komenda Główna Straży Granicznej",
-      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16031,Dwaj-obywatele-Ukrainy-zobowiazani-do-opuszczenia-Polski.html",
-      "scope": "PL",
-      "t": {
-        "en": {
-          "title": "Olsztyn: two Ukrainian nationals ordered to return",
-          "summary": "Officers of the Border Guard post in Olsztyn issued return decisions to two Ukrainian nationals, ordering them to return to their country of origin. The requests to open proceedings were filed by the Police. The case is a reminder that being covered by temporary protection does not automatically rule out a return obligation in the event of legal violations. The legal grounds for the specific decisions should be verified in the source."
-        },
-        "es": {
-          "title": "Olsztyn: dos ciudadanos ucranianos con decisiones de retorno",
-          "summary": "Los agentes del puesto de la Guardia de Fronteras en Olsztyn emitieron decisiones de retorno a dos ciudadanos ucranianos, ordenándoles regresar a su país de origen. Las solicitudes para iniciar los procedimientos fueron presentadas por la Policía. El caso recuerda que estar cubierto por la protección temporal no excluye automáticamente una obligación de retorno en caso de infracciones. Los fundamentos jurídicos de las decisiones concretas deben verificarse en la fuente."
-        },
-        "uk": {
-          "title": "Ольштин: двом громадянам України видано рішення про повернення",
-          "summary": "Співробітники підрозділу Прикордонної служби в Ольштині видали двом громадянам України рішення, що зобов'язують їх повернутися до країни походження. Клопотання про початок проваджень подали співробітники поліції. Справа нагадує, що перебування під тимчасовим захистом автоматично не виключає можливості зобов'язання до повернення у разі порушень. Правові підстави конкретних рішень слід перевірити в джерелі."
-        },
-        "ru": {
-          "title": "Ольштын: двум гражданам Украины вынесены решения о возвращении",
-          "summary": "Сотрудники подразделения Пограничной службы в Ольштыне вынесли двум гражданам Украины решения, обязывающие их вернуться в страну происхождения. Ходатайства о начале производств подали сотрудники полиции. Случай напоминает, что нахождение под временной защитой автоматически не исключает обязанности возвращения при нарушениях. Правовые основания конкретных решений следует проверить в источнике."
-        },
-        "fr": {
-          "title": "Olsztyn : deux ressortissants ukrainiens visés par des décisions de retour",
-          "summary": "Les agents du poste des gardes-frontières d'Olsztyn ont délivré à deux ressortissants ukrainiens des décisions les obligeant à retourner dans leur pays d'origine. Les demandes d'ouverture des procédures ont été déposées par la Police. L'affaire rappelle que le fait d'être couvert par la protection temporaire n'exclut pas automatiquement une obligation de retour en cas d'infractions. Les fondements juridiques des décisions concrètes doivent être vérifiés à la source."
-        }
-      }
-    },
-    {
-      "id": "2026-07-27-sg-kolumbia-wroclaw-nielegalna-praca",
-      "added": "2026-07-27",
-      "category": "Rynek pracy",
-      "title": "Wrocław: 13 obywateli Kolumbii pracowało bez zezwoleń — wspólna kontrola SG i PIP",
-      "summary": "Podczas wspólnej kontroli Straży Granicznej (Wrocław-Strachowice) i Państwowej Inspekcji Pracy w firmie logistycznej w powiecie wrocławskim, gdzie 24 lipca przebywało 1020 cudzoziemców, ujawniono 13 obywateli Kolumbii wykonujących pracę bez wymaganych zezwoleń. Wobec nich wszczęto postępowania o zobowiązanie do powrotu wraz z zakazami ponownego wjazdu do strefy Schengen. Wszczęto także trzy kontrole agencji pracy, a pracodawcy grozi wysoka kara grzywny.",
-      "source_name": "Straż Graniczna (strazgraniczna.pl)",
-      "author": "Komenda Główna Straży Granicznej",
-      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16030,Trzynastu-obywateli-Kolumbii-zatrzymanych-za-nielegalna-prace.html",
-      "scope": "PL",
-      "t": {
-        "en": {
-          "title": "Wrocław: 13 Colombian nationals worked without permits — joint Border Guard and Labour Inspectorate check",
-          "summary": "During a joint inspection by the Border Guard (Wrocław-Strachowice) and the State Labour Inspectorate at a logistics company in the Wrocław district, where 1020 foreigners were present on 24 July, 13 Colombian nationals were found working without the required permits. Return proceedings were initiated against them, together with bans on re-entry into the Schengen area. Three inspections of employment agencies were also launched, and the employer faces a high fine."
-        },
-        "es": {
-          "title": "Wrocław: 13 ciudadanos colombianos trabajaban sin permisos — control conjunto de la Guardia de Fronteras y la Inspección de Trabajo",
-          "summary": "Durante una inspección conjunta de la Guardia de Fronteras (Wrocław-Strachowice) y la Inspección Estatal de Trabajo en una empresa de logística del distrito de Wrocław, donde el 24 de julio había 1020 extranjeros, se detectó que 13 ciudadanos colombianos trabajaban sin los permisos requeridos. Se iniciaron procedimientos de retorno contra ellos, junto con prohibiciones de reingreso al espacio Schengen. También se abrieron tres inspecciones de agencias de empleo, y el empleador se enfrenta a una elevada multa."
-        },
-        "uk": {
-          "title": "Вроцлав: 13 громадян Колумбії працювали без дозволів — спільна перевірка Прикордонної служби та Інспекції праці",
-          "summary": "Під час спільної перевірки Прикордонної служби (Вроцлав-Страховіце) та Державної інспекції праці на логістичній фірмі у Вроцлавському повіті, де 24 липня перебувало 1020 іноземців, виявлено 13 громадян Колумбії, які працювали без необхідних дозволів. Щодо них розпочато провадження про зобов'язання до повернення разом із заборонами повторного в'їзду до Шенгенської зони. Також розпочато три перевірки агенцій праці, а роботодавцю загрожує високий штраф."
-        },
-        "ru": {
-          "title": "Вроцлав: 13 граждан Колумбии работали без разрешений — совместная проверка Пограничной службы и Инспекции труда",
-          "summary": "В ходе совместной проверки Пограничной службы (Вроцлав-Страховице) и Государственной инспекции труда на логистической фирме во Вроцлавском повяте, где 24 июля находилось 1020 иностранцев, выявлено 13 граждан Колумбии, работавших без необходимых разрешений. В отношении них начаты производства об обязании к возвращению вместе с запретами на повторный въезд в Шенгенскую зону. Также начаты три проверки агентств занятости, а работодателю грозит высокий штраф."
-        },
-        "fr": {
-          "title": "Wrocław : 13 ressortissants colombiens travaillaient sans permis — contrôle conjoint des gardes-frontières et de l'Inspection du travail",
-          "summary": "Lors d'un contrôle conjoint des gardes-frontières (Wrocław-Strachowice) et de l'Inspection nationale du travail dans une entreprise de logistique du district de Wrocław, où 1020 étrangers étaient présents le 24 juillet, 13 ressortissants colombiens ont été découverts travaillant sans les permis requis. Des procédures de retour ont été engagées à leur encontre, assorties d'interdictions de réentrée dans l'espace Schengen. Trois contrôles d'agences d'emploi ont également été lancés, et l'employeur encourt une lourde amende."
-        }
-      }
-    },
-    {
-      "id": "2026-07-27-sg-filipiny-przymusowy-powrot",
-      "added": "2026-07-27",
-      "category": "Bezpieczeństwo",
-      "title": "Tarnów: przymusowe wykonanie decyzji o powrocie wobec obywatela Filipin",
-      "summary": "Funkcjonariusze Placówki Straży Granicznej w Tarnowie przymusowo wykonali decyzję o zobowiązaniu do powrotu wobec 57-letniego obywatela Filipin. Cudzoziemiec nie zastosował się do wcześniej wydanej decyzji nakazującej opuszczenie Polski i przebywał bez wymaganych dokumentów pobytowych.",
-      "source_name": "Straż Graniczna (strazgraniczna.pl)",
-      "author": "Komenda Główna Straży Granicznej",
-      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16029,Przymusowe-wykonanie-decyzji-o-zobowiazaniu-do-powrotu-wobec-obywatela-Filipin.html",
-      "scope": "PL",
-      "t": {
-        "en": {
-          "title": "Tarnów: forced enforcement of return decision against a Filipino national",
-          "summary": "Officers of the Border Guard post in Tarnów forcibly enforced a return decision against a 57-year-old Filipino national. The foreigner had failed to comply with an earlier decision ordering him to leave Poland and was staying without the required residence documents."
-        },
-        "es": {
-          "title": "Tarnów: ejecución forzosa de una decisión de retorno contra un ciudadano filipino",
-          "summary": "Los agentes del puesto de la Guardia de Fronteras en Tarnów ejecutaron por la fuerza una decisión de retorno contra un ciudadano filipino de 57 años. El extranjero no había cumplido una decisión anterior que le ordenaba abandonar Polonia y permanecía sin los documentos de residencia requeridos."
-        },
-        "uk": {
-          "title": "Тарнув: примусове виконання рішення про повернення щодо громадянина Філіппін",
-          "summary": "Співробітники підрозділу Прикордонної служби в Тарнуві примусово виконали рішення про зобов'язання до повернення щодо 57-річного громадянина Філіппін. Іноземець не виконав раніше винесене рішення про виїзд з Польщі та перебував без необхідних документів на проживання."
-        },
-        "ru": {
-          "title": "Тарнув: принудительное исполнение решения о возвращении в отношении гражданина Филиппин",
-          "summary": "Сотрудники подразделения Пограничной службы в Тарнуве принудительно исполнили решение об обязании к возвращению в отношении 57-летнего гражданина Филиппин. Иностранец не выполнил ранее вынесенное решение о выезде из Польши и находился без необходимых документов на пребывание."
-        },
-        "fr": {
-          "title": "Tarnów : exécution forcée d'une décision de retour à l'encontre d'un ressortissant philippin",
-          "summary": "Les agents du poste des gardes-frontières de Tarnów ont exécuté par la force une décision de retour à l'encontre d'un ressortissant philippin de 57 ans. L'étranger ne s'était pas conformé à une décision antérieure lui ordonnant de quitter la Pologne et séjournait sans les documents de séjour requis."
-        }
-      }
-    },
-    {
-      "id": "2026-07-27-sg-moldawia-ees-medyka",
-      "added": "2026-07-27",
-      "category": "Bezpieczeństwo",
-      "title": "Medyka: system EES wykrył próbę obejścia zakazu wjazdu do strefy Schengen",
-      "summary": "Na przejściu granicznym w Medyce 25 lipca 48-letni obywatel Mołdawii próbował wjechać do Polski, posługując się zmienionymi danymi osobowymi. Dzięki weryfikacji biometrycznej w systemie Entry/Exit (EES) oraz sprawdzeniu w Systemie Informacyjnym Schengen (SIS) funkcjonariusze ustalili jego prawdziwą tożsamość i wykryli obowiązujący jeszcze przez blisko pięć lat zakaz wjazdu do strefy Schengen, wydany przez władze Rumunii. Mężczyźnie odmówiono wjazdu, usłyszał zarzut usiłowania nielegalnego przekroczenia granicy, a sprawa trafi do sądu. Przypadek pokazuje rolę nowego systemu EES w kontroli granicznej.",
-      "source_name": "Straż Graniczna (strazgraniczna.pl)",
-      "author": "Komenda Główna Straży Granicznej",
-      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16028,Ujawniono-probe-obejscia-zakazu-wjazdu-do-panswt-strefy-Schengen.html",
-      "scope": "PL",
-      "t": {
-        "en": {
-          "title": "Medyka: EES system detects attempt to circumvent Schengen entry ban",
-          "summary": "At the Medyka border crossing on 25 July, a 48-year-old Moldovan national tried to enter Poland using altered personal data. Thanks to biometric verification in the Entry/Exit System (EES) and a check in the Schengen Information System (SIS), officers established his real identity and detected a Schengen entry ban issued by the Romanian authorities, still valid for nearly five years. The man was refused entry, charged with attempted illegal border crossing, and the case will go to court. The case highlights the role of the new EES in border control."
-        },
-        "es": {
-          "title": "Medyka: el sistema EES detecta un intento de eludir la prohibición de entrada a Schengen",
-          "summary": "En el paso fronterizo de Medyka, el 25 de julio, un ciudadano moldavo de 48 años intentó entrar en Polonia utilizando datos personales alterados. Gracias a la verificación biométrica en el Sistema de Entradas y Salidas (EES) y a una comprobación en el Sistema de Información de Schengen (SIS), los agentes establecieron su identidad real y detectaron una prohibición de entrada a Schengen dictada por las autoridades rumanas, aún válida por casi cinco años. Se le denegó la entrada, se le imputó el intento de cruce ilegal de la frontera y el caso irá a juicio. El caso pone de relieve el papel del nuevo EES en el control fronterizo."
-        },
-        "uk": {
-          "title": "Медика: система EES виявила спробу обійти заборону в'їзду до Шенгену",
-          "summary": "На прикордонному переході в Медиці 25 липня 48-річний громадянин Молдови намагався в'їхати до Польщі, використовуючи змінені особисті дані. Завдяки біометричній перевірці в системі в'їзду/виїзду (EES) та перевірці в Шенгенській інформаційній системі (SIS) співробітники встановили його справжню особу та виявили заборону в'їзду до Шенгенської зони, видану владою Румунії, чинну ще майже п'ять років. Чоловіку відмовили у в'їзді, оголосили підозру у спробі незаконного перетину кордону, справа буде передана до суду. Випадок демонструє роль нової системи EES у прикордонному контролі."
-        },
-        "ru": {
-          "title": "Медыка: система EES выявила попытку обойти запрет на въезд в Шенген",
-          "summary": "На пограничном переходе в Медыке 25 июля 48-летний гражданин Молдовы пытался въехать в Польшу, используя изменённые личные данные. Благодаря биометрической проверке в системе въезда/выезда (EES) и проверке в Шенгенской информационной системе (SIS) сотрудники установили его подлинную личность и обнаружили запрет на въезд в Шенгенскую зону, выданный властями Румынии и действующий ещё почти пять лет. Мужчине отказали во въезде, предъявили обвинение в попытке незаконного пересечения границы, дело будет передано в суд. Случай показывает роль новой системы EES в пограничном контроле."
-        },
-        "fr": {
-          "title": "Medyka : le système EES détecte une tentative de contournement de l'interdiction d'entrée dans Schengen",
-          "summary": "Au poste-frontière de Medyka, le 25 juillet, un ressortissant moldave de 48 ans a tenté d'entrer en Pologne en utilisant des données personnelles modifiées. Grâce à la vérification biométrique dans le système d'entrée/sortie (EES) et à un contrôle dans le Système d'information Schengen (SIS), les agents ont établi sa véritable identité et détecté une interdiction d'entrée dans l'espace Schengen émise par les autorités roumaines, encore valable près de cinq ans. L'homme s'est vu refuser l'entrée, a été inculpé de tentative de franchissement illégal de la frontière, et l'affaire sera portée devant le tribunal. Ce cas met en évidence le rôle du nouveau système EES dans le contrôle aux frontières."
-        }
-      }
-    },
-    {
-      "id": "2026-07-29-sg-gruzja-odmowa-katowice",
-      "added": "2026-07-29",
-      "category": "Bezpieczeństwo",
-      "scope": "PL",
-      "source_name": "Straż Graniczna (strazgraniczna.pl)",
-      "author": "Komenda Główna Straży Granicznej",
-      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16038,Na-lotnisku-w-Katowicach-Pyrzowicach-zatrzymano-osobe-poszukiwana-i-odmowiono-wj.html",
-      "title": "Katowice-Pyrzowice: odmowa wjazdu dwóm obywatelom Gruzji, zatrzymano też osobę poszukiwaną",
-      "summary": "Funkcjonariusze Placówki SG w Katowicach-Pyrzowicach wydali decyzje o odmowie wjazdu na terytorium Polski wobec dwóch obywateli Gruzji. Podczas tych samych czynności zatrzymano 52-letniego obywatela Polski poszukiwanego do odbycia kary pozbawienia wolności za przestępstwo narkotykowe. Przykład bieżącej kontroli granicznej na lotnisku i przesłanek odmowy wjazdu cudzoziemcom.",
-      "t": {
-        "en": {
-          "title": "Katowice-Pyrzowice: entry refused to two Georgian nationals, wanted person also detained",
-          "summary": "Border Guard officers at the Katowice-Pyrzowice post issued decisions refusing entry into Poland to two Georgian nationals. During the same checks, a 52-year-old Polish citizen wanted to serve a prison sentence for a drug offence was detained. An example of ongoing airport border control and the grounds for refusing entry to foreigners."
-        },
-        "es": {
-          "title": "Katowice-Pyrzowice: se deniega la entrada a dos ciudadanos georgianos y se detiene a una persona buscada",
-          "summary": "Agentes de la Guardia de Fronteras del puesto de Katowice-Pyrzowice dictaron decisiones de denegación de entrada en Polonia contra dos ciudadanos de Georgia. Durante los mismos controles se detuvo a un ciudadano polaco de 52 años buscado para cumplir una pena de prisión por un delito de drogas. Un ejemplo del control fronterizo en el aeropuerto y de los motivos para denegar la entrada a extranjeros."
-        },
-        "uk": {
-          "title": "Катовіце-Пижовіце: відмовлено у в'їзді двом громадянам Грузії, затримано також розшукувану особу",
-          "summary": "Прикордонники підрозділу в Катовіце-Пижовіце ухвалили рішення про відмову у в'їзді на територію Польщі двом громадянам Грузії. Під час тих самих перевірок затримано 52-річного громадянина Польщі, який розшукувався для відбування покарання за наркозлочин. Приклад поточного прикордонного контролю в аеропорту та підстав для відмови у в'їзді іноземцям."
-        },
-        "ru": {
-          "title": "Катовице-Пижовице: отказано во въезде двум гражданам Грузии, задержан также разыскиваемый",
-          "summary": "Пограничники подразделения в Катовице-Пижовице приняли решения об отказе во въезде на территорию Польши двум гражданам Грузии. Во время тех же проверок задержан 52-летний гражданин Польши, разыскиваемый для отбывания наказания за наркопреступление. Пример текущего пограничного контроля в аэропорту и оснований для отказа во въезде иностранцам."
-        },
-        "fr": {
-          "title": "Katowice-Pyrzowice : entrée refusée à deux ressortissants géorgiens, une personne recherchée également interpellée",
-          "summary": "Les agents des gardes-frontières du poste de Katowice-Pyrzowice ont pris des décisions de refus d'entrée en Pologne à l'encontre de deux ressortissants géorgiens. Lors des mêmes contrôles, un citoyen polonais de 52 ans recherché pour purger une peine de prison pour une infraction liée aux stupéfiants a été interpellé. Un exemple de contrôle frontalier à l'aéroport et des motifs de refus d'entrée aux étrangers."
-        }
-      }
-    },
-    {
-      "id": "2026-07-28-sg-podlaskie-podrobione-dokumenty",
-      "added": "2026-07-28",
-      "category": "Bezpieczeństwo",
-      "scope": "PL",
-      "source_name": "Straż Graniczna (strazgraniczna.pl)",
-      "author": "Komenda Główna Straży Granicznej",
-      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16037,Podrobione-dokumenty-u-czterech-cudzoziemcow.html",
-      "title": "Podlaskie: czterej cudzoziemcy z podrobionymi dokumentami",
-      "summary": "Funkcjonariusze Podlaskiego Oddziału Straży Granicznej 27 lipca 2026 r. ujawnili cztery osoby posługujące się podrobionymi dokumentami. Posłużenie się sfałszowanym dokumentem stanowi przestępstwo i może być podstawą odmowy wjazdu lub zobowiązania do powrotu — przypominamy o konsekwencjach prawnych dla cudzoziemców.",
-      "t": {
-        "en": {
-          "title": "Podlaskie region: four foreigners with forged documents",
-          "summary": "On 27 July 2026, officers of the Podlaskie Border Guard Unit identified four people using forged documents. Using a falsified document is a criminal offence and may be grounds for refusal of entry or a return decision — a reminder of the legal consequences for foreigners."
-        },
-        "es": {
-          "title": "Región de Podlasie: cuatro extranjeros con documentos falsificados",
-          "summary": "El 27 de julio de 2026, agentes de la Unidad de la Guardia de Fronteras de Podlasie detectaron a cuatro personas que utilizaban documentos falsificados. Usar un documento falsificado es un delito y puede motivar la denegación de entrada o una decisión de retorno: un recordatorio de las consecuencias legales para los extranjeros."
-        },
-        "uk": {
-          "title": "Підляшшя: четверо іноземців із підробленими документами",
-          "summary": "27 липня 2026 р. прикордонники Підляського відділу Прикордонної служби виявили чотирьох осіб, які користувалися підробленими документами. Використання підробленого документа є злочином і може стати підставою для відмови у в'їзді або рішення про повернення — нагадуємо про правові наслідки для іноземців."
-        },
-        "ru": {
-          "title": "Подляшье: четверо иностранцев с поддельными документами",
-          "summary": "27 июля 2026 г. пограничники Подляского отдела Пограничной службы выявили четырёх человек, использовавших поддельные документы. Использование поддельного документа является преступлением и может стать основанием для отказа во въезде или решения о возвращении — напоминаем о правовых последствиях для иностранцев."
-        },
-        "fr": {
-          "title": "Podlachie : quatre étrangers avec des documents falsifiés",
-          "summary": "Le 27 juillet 2026, les agents de l'unité des gardes-frontières de Podlachie ont repéré quatre personnes utilisant des documents falsifiés. L'usage d'un document falsifié est une infraction pénale et peut justifier un refus d'entrée ou une décision de retour — un rappel des conséquences juridiques pour les étrangers."
-        }
-      }
-    },
-    {
-      "id": "2026-07-28-sg-medyka-ukrainka-rumunski-dowod",
-      "added": "2026-07-28",
-      "category": "Bezpieczeństwo",
-      "scope": "PL",
-      "source_name": "Straż Graniczna (strazgraniczna.pl)",
-      "author": "Komenda Główna Straży Granicznej",
-      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16033,Ukrainka-podawala-sie-za-Rumunke.html",
-      "title": "Medyka: obywatelka Ukrainy posłużyła się podrobionym rumuńskim dowodem osobistym",
-      "summary": "Na przejściu granicznym w Medyce 27 lipca 2026 r. funkcjonariusze SG ujawnili obywatelkę Ukrainy, która posłużyła się podrobionym rumuńskim dowodem osobistym. Kobieta przyznała, że nigdy nie była w Rumunii. Posłużenie się cudzym lub podrobionym dokumentem tożsamości pociąga odpowiedzialność karną i konsekwencje pobytowe.",
-      "t": {
-        "en": {
-          "title": "Medyka: Ukrainian national used a forged Romanian ID card",
-          "summary": "At the Medyka border crossing on 27 July 2026, Border Guard officers identified a Ukrainian national who used a forged Romanian identity card. The woman admitted she had never been to Romania. Using another person's or a forged identity document carries criminal liability and residence consequences."
-        },
-        "es": {
-          "title": "Medyka: una ciudadana ucraniana usó un documento de identidad rumano falsificado",
-          "summary": "En el paso fronterizo de Medyka, el 27 de julio de 2026, agentes de la Guardia de Fronteras detectaron a una ciudadana ucraniana que utilizó un documento de identidad rumano falsificado. La mujer admitió que nunca había estado en Rumanía. Usar un documento de identidad ajeno o falsificado conlleva responsabilidad penal y consecuencias para la residencia."
-        },
-        "uk": {
-          "title": "Медика: громадянка України скористалася підробленим румунським посвідченням особи",
-          "summary": "На пункті пропуску в Медиці 27 липня 2026 р. прикордонники виявили громадянку України, яка скористалася підробленим румунським посвідченням особи. Жінка визнала, що ніколи не була в Румунії. Використання чужого або підробленого документа, що посвідчує особу, тягне за собою кримінальну відповідальність та наслідки для перебування."
-        },
-        "ru": {
-          "title": "Медыка: гражданка Украины воспользовалась поддельным румынским удостоверением личности",
-          "summary": "На пункте пропуска в Медыке 27 июля 2026 г. пограничники выявили гражданку Украины, воспользовавшуюся поддельным румынским удостоверением личности. Женщина призналась, что никогда не была в Румынии. Использование чужого или поддельного документа, удостоверяющего личность, влечёт уголовную ответственность и последствия для пребывания."
-        },
-        "fr": {
-          "title": "Medyka : une ressortissante ukrainienne a utilisé une carte d'identité roumaine falsifiée",
-          "summary": "Au poste-frontière de Medyka, le 27 juillet 2026, les gardes-frontières ont repéré une ressortissante ukrainienne qui a utilisé une carte d'identité roumaine falsifiée. La femme a reconnu n'avoir jamais été en Roumanie. L'usage d'un document d'identité d'autrui ou falsifié entraîne une responsabilité pénale et des conséquences sur le séjour."
-        }
-      }
-    },
-    {
-      "id": "2026-07-28-sg-krakow-ukraina-zobowiazanie",
-      "added": "2026-07-28",
-      "category": "Urzędy",
-      "scope": "PL",
-      "source_name": "Straż Graniczna (strazgraniczna.pl)",
-      "author": "Komenda Główna Straży Granicznej",
-      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16034,Obywatel-Ukrainy-zobowiazany-do-powrotu.html",
-      "title": "Kraków: obywatel Ukrainy zobowiązany do powrotu po kontroli legalności pobytu",
-      "summary": "Funkcjonariusze Placówki SG w Krakowie skontrolowali legalność pobytu 42-letniego obywatela Ukrainy, który nie miał przy sobie dokumentów tożsamości — jego dane ustalono na podstawie oświadczenia i zweryfikowano w bazach. W wyniku postępowania wydano decyzję zobowiązującą go do powrotu. Przypomnienie o obowiązku posiadania ważnych dokumentów i legalnej podstawy pobytu.",
-      "t": {
-        "en": {
-          "title": "Kraków: Ukrainian national ordered to return after a residence-legality check",
-          "summary": "Border Guard officers in Kraków checked the residence legality of a 42-year-old Ukrainian national who had no identity documents on him — his details were established from his statement and verified against databases. As a result, a return decision was issued. A reminder of the obligation to hold valid documents and a legal basis for stay."
-        },
-        "es": {
-          "title": "Cracovia: un ciudadano ucraniano obligado a regresar tras un control de legalidad de residencia",
-          "summary": "Agentes de la Guardia de Fronteras en Cracovia controlaron la legalidad de la residencia de un ciudadano ucraniano de 42 años que no llevaba documentos de identidad; sus datos se establecieron a partir de su declaración y se verificaron en bases de datos. Como resultado se dictó una decisión de retorno. Un recordatorio de la obligación de portar documentos válidos y una base legal de estancia."
-        },
-        "uk": {
-          "title": "Краків: громадянина України зобов'язали повернутися після перевірки законності перебування",
-          "summary": "Прикордонники підрозділу в Кракові перевірили законність перебування 42-річного громадянина України, який не мав при собі документів, що посвідчують особу — його дані встановили за усною заявою та перевірили в базах. За результатами провадження ухвалено рішення про зобов'язання до повернення. Нагадування про обов'язок мати чинні документи та законну підставу перебування."
-        },
-        "ru": {
-          "title": "Краков: гражданина Украины обязали вернуться после проверки законности пребывания",
-          "summary": "Пограничники подразделения в Кракове проверили законность пребывания 42-летнего гражданина Украины, у которого не было при себе документов, удостоверяющих личность — его данные установили по устному заявлению и проверили в базах. По итогам производства принято решение об обязании к возвращению. Напоминание об обязанности иметь действительные документы и законное основание пребывания."
-        },
-        "fr": {
-          "title": "Cracovie : un ressortissant ukrainien contraint au retour après un contrôle de légalité du séjour",
-          "summary": "Les gardes-frontières de Cracovie ont contrôlé la légalité du séjour d'un ressortissant ukrainien de 42 ans qui n'avait aucun document d'identité sur lui — ses données ont été établies à partir de sa déclaration et vérifiées dans les bases de données. À l'issue de la procédure, une décision de retour a été prise. Un rappel de l'obligation de détenir des documents valides et une base légale de séjour."
         }
       }
     }
