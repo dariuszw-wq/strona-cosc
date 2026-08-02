@@ -217,7 +217,10 @@
     '/kontakt.html': 'es/contacto.html',
     '/wniosek-karta-pobytu-stalego.html': 'es/residencia-permanente-polonia.html',
     '/wniosek-karta-pobytu-dla-czlonkow-rodziny.html': 'es/reagrupacion-familiar-polonia.html',
-    '/cennik.html': 'es/precios-y-servicios.html'
+    '/cennik.html': 'es/precios-y-servicios.html',
+    '/pierwsze-kroki-po-przyjezdzie.html': 'es/primeros-pasos-en-polonia.html',
+    '/artykul-zmiana-pracodawcy-a-karta-pobytu-terminy.html': 'es/cambiar-de-empleador-polonia.html',
+    '/faq.html': 'es/preguntas-frecuentes.html'
   };
   function esAlt() {
     var path = location.pathname.replace(/\/+$/, '/') || '/';

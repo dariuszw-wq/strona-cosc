@@ -45,6 +45,10 @@ def badge_for(fn):
     if 'permanente' in f:                          return 'RESIDENCIA PERMANENTE'
     if 'reagrupacion' in f:                        return 'REAGRUPACIÓN FAMILIAR'
     if 'precios' in f:                             return 'PRECIOS Y SERVICIOS'
+    if 'visa-nacional' in f:                       return 'VISADO DESDE COLOMBIA'
+    if 'primeros-pasos' in f:                      return 'PRIMEROS PASOS'
+    if 'cambiar-de-empleador' in f:                return 'CAMBIO DE EMPLEADOR'
+    if 'preguntas' in f:                           return 'PREGUNTAS FRECUENTES'
     return 'RESIDENCIA EN POLONIA'
 
 
@@ -115,6 +119,10 @@ TYTULY = {
  'residencia-permanente-polonia.html':      ('Residencia permanente en Polonia', ''),
  'reagrupacion-familiar-polonia.html':      ('Reagrupación familiar en Polonia', ''),
  'precios-y-servicios.html':                ('Precios y servicios en español', 'en español'),
+ 'visa-nacional-polonia-desde-colombia.html':('Visado para Polonia desde Colombia', ''),
+ 'primeros-pasos-en-polonia.html':          ('Primeros pasos al llegar a Polonia', ''),
+ 'cambiar-de-empleador-polonia.html':       ('Cambiar de empleador: tiene 15 días', 'tiene 15 días'),
+ 'preguntas-frecuentes.html':               ('Preguntas frecuentes sobre Polonia', ''),
 }
 
 
