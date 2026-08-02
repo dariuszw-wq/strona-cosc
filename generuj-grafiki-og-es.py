@@ -41,6 +41,10 @@ def badge_for(fn):
     if 'trabajo' in f:                             return 'TRABAJO LEGAL'
     if 'tarjeta' in f:                             return 'TARJETA DE RESIDENCIA'
     if 'contacto' in f:                            return 'CONSULTA GRATUITA'
+    if 'negaron' in f:                             return 'DECISIÓN NEGATIVA'
+    if 'permanente' in f:                          return 'RESIDENCIA PERMANENTE'
+    if 'reagrupacion' in f:                        return 'REAGRUPACIÓN FAMILIAR'
+    if 'precios' in f:                             return 'PRECIOS Y SERVICIOS'
     return 'RESIDENCIA EN POLONIA'
 
 
@@ -107,6 +111,10 @@ TYTULY = {
  'mos-solicitud-en-linea.html':             ('Solicitud de residencia por internet: sistema MOS', 'sistema MOS'),
  'contacto.html':                           ('Hablemos de su caso, en español', 'en español'),
  'calculadora-90-180.html':                 ('Calculadora 90/180 días Schengen', ''),
+ 'me-negaron-la-tarjeta-de-residencia.html':('Me negaron la tarjeta de residencia: ¿qué hago?', '¿qué hago?'),
+ 'residencia-permanente-polonia.html':      ('Residencia permanente en Polonia', ''),
+ 'reagrupacion-familiar-polonia.html':      ('Reagrupación familiar en Polonia', ''),
+ 'precios-y-servicios.html':                ('Precios y servicios en español', 'en español'),
 }
 
 

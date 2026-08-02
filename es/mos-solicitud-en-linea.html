@@ -49,6 +49,17 @@ a{color:inherit}
 .csh-lang a{padding:4px 9px;font-size:11.5px;font-weight:800;border-radius:6px;text-decoration:none;color:#dfe4ee}
 .csh-lang a.on{background:#fff;color:#4636c9}
 .csh-burger{display:none;background:none;border:none;color:#fff;font-size:26px;cursor:pointer;flex:none}
+/* rozwijana lista „Más" */
+.csh-more{position:relative;display:flex;align-items:center}
+.csh-more-btn{display:inline-flex;align-items:center;gap:5px;font-family:inherit;font-size:13.5px;font-weight:600;color:#E9ECF3;background:none;border:none;border-radius:8px;padding:8px 10px;cursor:pointer;line-height:1;white-space:nowrap;transition:background .18s,color .18s}
+.csh-more-btn:hover,.csh-more-btn.on{background:rgba(255,255,255,.12);color:#ffd34d}
+.csh-more-btn .chev{font-size:10px;opacity:.75;transition:transform .2s}
+.csh-more.open .csh-more-btn{background:rgba(255,255,255,.16);color:#ffd34d}
+.csh-more.open .csh-more-btn .chev{transform:rotate(180deg)}
+.csh-more-menu{position:absolute;top:calc(100% + 12px);right:0;min-width:250px;background:#241C86;border:1px solid rgba(255,255,255,.22);border-radius:14px;padding:8px;box-shadow:0 18px 40px rgba(10,16,40,.45);display:flex;flex-direction:column;gap:2px;opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .18s,transform .18s,visibility .18s;z-index:60}
+.csh-more.open .csh-more-menu{opacity:1;visibility:visible;transform:translateY(0)}
+.csh-more-menu a{color:#E9ECF3;text-decoration:none;font-size:14px;font-weight:500;padding:11px 14px;border-radius:9px;white-space:nowrap}
+.csh-more-menu a:hover,.csh-more-menu a.on{background:rgba(255,255,255,.14);color:#ffd34d}
 .flagbar{height:8px;background:linear-gradient(to bottom,#f5f5f5 50%,#d4213d 50%);border-bottom:1px solid rgba(22,36,76,.18)}
 @media(max-width:900px){
  .csh-wrap{flex-wrap:wrap;gap:8px;padding:10px;min-height:0}
@@ -57,6 +68,11 @@ a{color:inherit}
  .csh-menu{display:none;order:5;flex-basis:100%;flex-wrap:wrap;justify-content:flex-start;gap:6px}
  .csh-menu.open{display:flex}
  .csh-menu>a{font-size:14px;padding:9px 10px}
+ /* na telefonie lista „Más" nie jest dropdownem — pozycje widać od razu */
+ .csh-more{flex-basis:100%;display:block}
+ .csh-more-btn{display:none}
+ .csh-more-menu{position:static;opacity:1;visibility:visible;transform:none;background:rgba(255,255,255,.08);border:none;box-shadow:none;min-width:0;padding:4px 0;flex-direction:row;flex-wrap:wrap;gap:4px}
+ .csh-more-menu a{font-size:14px;padding:9px 10px}
 }
 /* ===== TRESC ===== */
 .hero{background:linear-gradient(140deg,#4636c9,#37248F);color:#fff;padding:44px 0 40px}
@@ -125,8 +141,11 @@ footer .disc{margin-top:18px;padding-top:16px;border-top:1px solid rgba(255,255,
     <span class="csh-flag" aria-label="Polonia"><span class="csh-fw"></span><span class="csh-fr"></span></span>
     <span class="csh-name">Centro de Atenci&oacute;n<br>de Asuntos de Extranjeros</span><svg width="30" height="30" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Union Europea"><rect width="36" height="36" rx="7" fill="#0A2A8C"/><g fill="#F5C518"><path id="esEuStar" d="M18,4.6 l0.85,1.75 l1.95,0.2 l-1.45,1.32 l0.42,1.9 l-1.77,-1.0 l-1.77,1.0 l0.42,-1.9 l-1.45,-1.32 l1.95,-0.2 Z"/><use href="#esEuStar" transform="rotate(30 18 18)"/><use href="#esEuStar" transform="rotate(60 18 18)"/><use href="#esEuStar" transform="rotate(90 18 18)"/><use href="#esEuStar" transform="rotate(120 18 18)"/><use href="#esEuStar" transform="rotate(150 18 18)"/><use href="#esEuStar" transform="rotate(180 18 18)"/><use href="#esEuStar" transform="rotate(210 18 18)"/><use href="#esEuStar" transform="rotate(240 18 18)"/><use href="#esEuStar" transform="rotate(270 18 18)"/><use href="#esEuStar" transform="rotate(300 18 18)"/><use href="#esEuStar" transform="rotate(330 18 18)"/></g></svg>
   </a>
-  <button class="csh-burger" type="button" aria-label="Menu" aria-expanded="false">&#9776;</button>
-  <nav class="csh-menu"><a href="tarjeta-de-residencia-polonia.html">Tarjeta de residencia</a><a href="trabajo-legal-polonia-colombianos.html">Trabajo legal</a><a href="90-dias-schengen-polonia.html">90 d&iacute;as</a><a href="mos-solicitud-en-linea.html" class="on">Solicitud MOS</a><a href="calculadora-90-180.html">Calculadora</a><a class="csh-cta" href="contacto.html">Consulta gratuita</a></nav>
+  <button class="csh-burger" type="button" aria-label="Men&uacute;" aria-expanded="false">&#9776;</button>
+  <nav class="csh-menu"><a href="tarjeta-de-residencia-polonia.html">Tarjeta de residencia</a><a href="trabajo-legal-polonia-colombianos.html">Trabajo legal</a><a href="90-dias-schengen-polonia.html">90 d&iacute;as</a><a href="mos-solicitud-en-linea.html" class="on">Solicitud MOS</a>
+    <div class="csh-more"><button class="csh-more-btn" type="button" aria-haspopup="true" aria-expanded="false">M&aacute;s <span class="chev" aria-hidden="true">&#9662;</span></button>
+      <div class="csh-more-menu"><a href="residencia-permanente-polonia.html">Residencia permanente</a><a href="reagrupacion-familiar-polonia.html">Reagrupaci&oacute;n familiar</a><a href="me-negaron-la-tarjeta-de-residencia.html">Me negaron la tarjeta</a><a href="calculadora-90-180.html">Calculadora 90/180</a><a href="precios-y-servicios.html">Precios y servicios</a></div></div>
+    <a class="csh-cta" href="contacto.html">Consulta gratuita</a></nav>
   <div class="csh-lang"><a href="https://cosc.org.pl/artykul-mos-jak-zlozyc-wniosek.html" hreflang="pl" lang="pl">PL</a><a href="#" class="on" aria-current="true">ES</a></div>
 </div>
 </header>
@@ -293,8 +312,19 @@ Le recomendamos consultarlas directamente antes de tomar decisiones:</p>
 </div>
 </footer>
 <script>
-(function(){var b=document.querySelector('.csh-burger'),m=document.querySelector('.csh-menu');
-if(b&&m){b.addEventListener('click',function(){m.classList.toggle('open');b.setAttribute('aria-expanded',m.classList.contains('open'));});}})();
+(function(){
+  var b=document.querySelector('.csh-burger'),m=document.querySelector('.csh-menu');
+  if(b&&m){b.addEventListener('click',function(){m.classList.toggle('open');b.setAttribute('aria-expanded',m.classList.contains('open'));});}
+  var mb=document.querySelector('.csh-more-btn'),mo=document.querySelector('.csh-more');
+  if(mb&&mo){
+    mb.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();
+      var open=mo.classList.toggle('open');mb.setAttribute('aria-expanded',open);});
+    document.addEventListener('click',function(e){
+      if(!mo.contains(e.target)){mo.classList.remove('open');mb.setAttribute('aria-expanded','false');}});
+    document.addEventListener('keydown',function(e){
+      if(e.key==='Escape'){mo.classList.remove('open');mb.setAttribute('aria-expanded','false');}});
+  }
+})();
 </script>
 </body>
 </html>

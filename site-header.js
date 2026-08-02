@@ -214,7 +214,10 @@
     '/artykul-praca-na-wizie-ruch-bezwizowy.html': 'es/trabajo-legal-polonia-colombianos.html',
     '/artykul-mos-jak-zlozyc-wniosek.html': 'es/mos-solicitud-en-linea.html',
     '/kalkulator-90-180.html': 'es/calculadora-90-180.html',
-    '/kontakt.html': 'es/contacto.html'
+    '/kontakt.html': 'es/contacto.html',
+    '/wniosek-karta-pobytu-stalego.html': 'es/residencia-permanente-polonia.html',
+    '/wniosek-karta-pobytu-dla-czlonkow-rodziny.html': 'es/reagrupacion-familiar-polonia.html',
+    '/cennik.html': 'es/precios-y-servicios.html'
   };
   function esAlt() {
     var path = location.pathname.replace(/\/+$/, '/') || '/';
