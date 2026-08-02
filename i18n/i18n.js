@@ -325,7 +325,18 @@
   }
 
   /* ---------- start ---------- */
+  /* Strony sekcji PRACODAWCY są wyłącznie polskie (decyzja Dariusza, 08.2026):
+   * pracodawcy powierzający pracę w Polsce to podmioty polskie, a cudzoziemca
+   * nie interesują ich obowiązki. Na tych stronach nie budujemy przełącznika
+   * języków i nie tłumaczymy treści. Wyłączyć można też ręcznie, dodając atrybut
+   * data-i18n-off do znacznika <html>. */
+  function translationDisabled() {
+    if (document.documentElement.hasAttribute('data-i18n-off')) return true;
+    return /\/pracodawcy(\/|$)/.test(location.pathname);
+  }
+
   function init() {
+    if (translationDisabled()) return;
     buildSwitcher();
     addHreflang();
     setLang(pickLang());

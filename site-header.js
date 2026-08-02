@@ -59,7 +59,7 @@
   /* ---- struktura menu ---- */
   var MENU = {
     hubs: [
-      { label: 'Jestem cudzoziemcem', short: 'Cudzoziemiec', items: [
+      { id: 'cudzoziemiec', label: 'Jestem cudzoziemcem', short: 'Cudzoziemiec', items: [
         { t: 'Strona sekcji', href: 'cudzoziemcy/' },
         { t: 'Problemy z legalnym pobytem', href: 'uslugi.html' },
         { t: 'Kto powinien robić Twoją kartę?', href: 'karta-pobytu-prawnik-czy-pracodawca.html' },
@@ -74,7 +74,7 @@
         { t: 'Przewodnik po Polsce', href: 'przewodnik-po-polsce.html' },
         { t: 'Aktualności', href: 'aktualnosci.html' }
       ] },
-      { label: 'Jestem pracodawcą', short: 'Pracodawca', items: [
+      { id: 'pracodawca', label: 'Jestem pracodawcą', short: 'Pracodawca', items: [
         { t: 'Strona sekcji', href: 'pracodawcy/' },
         { t: 'Legalne zatrudnienie', href: 'pracodawcy/#legalne-zatrudnienie' },
         { t: 'ZUS i rozliczenia', href: 'pracodawcy/#zus-rozliczenia' },
@@ -164,7 +164,7 @@
     }).join('');
     /* na telefonie: tylko CTA na dole listy (bez kalkulatora) */
     var mob = '<a class="csh-mob-x csh-mob-cta" href="' + url(MENU.cta.href) + '">' + span(MENU.cta.t) + '</a>';
-    return '<div class="csh-more"><button class="csh-more-btn" type="button" aria-haspopup="true" aria-expanded="false">'
+    return '<div class="csh-more" data-csh-hub="' + (hub.id || '') + '"><button class="csh-more-btn" type="button" aria-haspopup="true" aria-expanded="false">'
       + '<span class="csh-l-full">' + span(hub.label) + '</span>'
       + '<span class="csh-l-short">' + span(hub.short || hub.label) + '</span>'
       + '<span class="chev">▾</span></button>'
@@ -190,6 +190,13 @@
       + '<button class="csh-burger" type="button" aria-label="Menu">☰</button></div>';
   }
 
+  /* ---- sekcja PRACODAWCY: wyłącznie wersja polska ----
+   * Powód (decyzja Dariusza, 08.2026): pracodawcy powierzający pracę w Polsce to
+   * podmioty polskie; cudzoziemca nie interesują obowiązki pracodawcy. Dlatego hub
+   * "Jestem pracodawcą" pokazujemy tylko przy języku polskim, a same strony
+   * pracodawców nie są tłumaczone (patrz i18n/i18n.js — blokada onlyPL). */
+  var IS_PRACODAWCA_PAGE = /\/pracodawcy(\/|$)/.test(location.pathname);
+
   /* ---- tłumaczenie etykiet nagłówka ---- */
   function applyLang(lang) {
     var host = document.getElementById('site-header');
@@ -198,6 +205,17 @@
       var pl = el.getAttribute('data-csh-k');
       el.textContent = (lang && lang !== 'pl' && L[pl] && L[pl][lang]) ? L[pl][lang] : pl;
     });
+    /* hub "Jestem pracodawcą" — tylko w wersji polskiej */
+    var emp = host.querySelector('.csh-more[data-csh-hub="pracodawca"]');
+    if (emp) {
+      var onlyPl = (!lang || lang === 'pl');
+      emp.style.display = onlyPl ? '' : 'none';
+      if (!onlyPl) {
+        emp.classList.remove('open');
+        var eb = emp.querySelector('.csh-more-btn');
+        if (eb) eb.setAttribute('aria-expanded', 'false');
+      }
+    }
   }
 
   /* ---- dźwięk kliknięcia (Web Audio, bez pliku) ----
@@ -273,10 +291,17 @@
     // język: reaguj na przełącznik i18n; ustaw stan początkowy z localStorage/URL
     document.addEventListener('cosc:langchange', function (e) { applyLang(e && e.detail && e.detail.lang); });
     var init = 'pl';
-    try {
-      var q = new URLSearchParams(location.search).get('lang');
-      init = q || localStorage.getItem('cosc_lang') || 'pl';
-    } catch (e2) {}
+    if (!IS_PRACODAWCA_PAGE) {
+      try {
+        var q = new URLSearchParams(location.search).get('lang');
+        init = q || localStorage.getItem('cosc_lang') || 'pl';
+      } catch (e2) {}
+    } else {
+      /* strona pracodawców = zawsze polski: chowamy przełącznik języków */
+      var ls = document.createElement('style');
+      ls.textContent = '.csh-header .lang{display:none !important}';
+      document.head.appendChild(ls);
+    }
     applyLang(init);
   }
 
