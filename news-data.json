@@ -1,6 +1,72 @@
 {
-  "updated": "2026-08-01T05:00:00+02:00",
+  "updated": "2026-08-02T07:30:00+02:00",
   "items": [
+    {
+      "id": "2026-08-02-posg-migranci-afryka-wplaw",
+      "added": "2026-08-02",
+      "category": "Bezpieczeństwo",
+      "title": "21 migrantów z Afryki próbowało wpław dostać się do Polski przez graniczne rzeki",
+      "summary": "Na odcinkach Placówek Straży Granicznej w Płaskiej i Michałowie 21 cudzoziemców pochodzących z Erytrei, Etiopii, Somalii i Sudanu próbowało 28 lipca 2026 r. nielegalnie przekroczyć granicę polsko-białoruską, forsując graniczne rzeki. W rejonie Płaskiej 18 migrantów przekroczyło rzekę Wołkuszankę — dwie osoby od razu zawróciły na stronę białoruską, 15 zatrzymano po polskiej stronie blisko granicy, a ostatnią odnaleziono 29 lipca. W rejonie Michałowa trzy osoby próbowały przekroczyć rzekę Świsłocz, ale na widok polskich służb zawróciły w głąb Białorusi.",
+      "source_name": "Kurier Poranny (poranny.pl)",
+      "author": "Adrian Kuźmiuk",
+      "url": "https://poranny.pl/migranci-z-afryki-probowali-nielegalnie-dostac-sie-do-polski-wplaw/ar/c1p2-29222873",
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "21 migrants from Africa tried to swim into Poland across border rivers",
+          "summary": "On 28 July 2026, in the sections of the Border Guard posts in Płaska and Michałowo, 21 foreigners from Eritrea, Ethiopia, Somalia and Sudan tried to illegally cross the Polish-Belarusian border by fording border rivers. Near Płaska, 18 migrants crossed the Wołkuszanka river — two immediately turned back to the Belarusian side, 15 were detained on the Polish side close to the border, and the last person was found on 29 July. Near Michałowo, three people tried to cross the Świsłocz river but turned back into Belarus upon seeing Polish services."
+        },
+        "es": {
+          "title": "21 migrantes de África intentaron entrar a nado en Polonia cruzando ríos fronterizos",
+          "summary": "El 28 de julio de 2026, en los tramos de los puestos de la Guardia Fronteriza en Płaska y Michałowo, 21 extranjeros procedentes de Eritrea, Etiopía, Somalia y Sudán intentaron cruzar ilegalmente la frontera polaco-bielorrusa vadeando ríos fronterizos. Cerca de Płaska, 18 migrantes cruzaron el río Wołkuszanka: dos regresaron de inmediato al lado bielorruso, 15 fueron detenidos en el lado polaco cerca de la frontera y la última persona fue hallada el 29 de julio. Cerca de Michałowo, tres personas intentaron cruzar el río Świsłocz, pero al ver a los servicios polacos regresaron a Bielorrusia."
+        },
+        "uk": {
+          "title": "21 мігрант з Африки намагався вплав дістатися до Польщі через прикордонні річки",
+          "summary": "28 липня 2026 р. на ділянках відділів Прикордонної служби у Пласці та Міхалові 21 іноземець родом з Еритреї, Ефіопії, Сомалі та Судану намагався нелегально перетнути польсько-білоруський кордон, долаючи прикордонні річки. У районі Пласки 18 мігрантів перетнули річку Волкушанку — двоє одразу повернулися на білоруський бік, 15 затримали на польському боці неподалік кордону, а останню особу знайшли 29 липня. У районі Міхалова троє осіб намагалися перетнути річку Свіслоч, але, побачивши польські служби, повернулися вглиб Білорусі."
+        },
+        "ru": {
+          "title": "21 мигрант из Африки пытался вплавь добраться до Польши через пограничные реки",
+          "summary": "28 июля 2026 г. на участках отделов Пограничной службы в Пласке и Михалове 21 иностранец родом из Эритреи, Эфиопии, Сомали и Судана пытался нелегально пересечь польско-белорусскую границу, преодолевая пограничные реки. В районе Пласки 18 мигрантов пересекли реку Волкушанку — двое сразу вернулись на белорусскую сторону, 15 задержали на польской стороне недалеко от границы, а последнего человека нашли 29 июля. В районе Михалова три человека пытались пересечь реку Свислочь, но, увидев польские службы, вернулись вглубь Беларуси."
+        },
+        "fr": {
+          "title": "21 migrants d'Afrique ont tenté d'entrer en Pologne à la nage par des rivières frontalières",
+          "summary": "Le 28 juillet 2026, dans les secteurs des postes des garde-frontières de Płaska et de Michałowo, 21 étrangers originaires d'Érythrée, d'Éthiopie, de Somalie et du Soudan ont tenté de franchir illégalement la frontière polono-biélorusse en traversant des rivières frontalières. Près de Płaska, 18 migrants ont traversé la rivière Wołkuszanka — deux personnes ont immédiatement rebroussé chemin vers le côté biélorusse, 15 ont été interpellées côté polonais près de la frontière, et la dernière personne a été retrouvée le 29 juillet. Près de Michałowo, trois personnes ont tenté de traverser la rivière Świsłocz, mais à la vue des services polonais, elles sont retournées en Biélorussie."
+        }
+      }
+    },
+    {
+      "id": "2026-08-02-posg-migranci-azja-wolkuszanka",
+      "added": "2026-08-02",
+      "category": "Bezpieczeństwo",
+      "title": "Migranci z Afganistanu, Bangladeszu, Pakistanu i Iranu przepłynęli graniczną rzekę. POSG: w lipcu blisko 90 prób nielegalnego przekroczenia granicy",
+      "summary": "31 lipca 2026 r. nad ranem dziewięciu migrantów pochodzących z Afganistanu, Bangladeszu, Pakistanu i Iranu nielegalnie przekroczyło polsko-białoruską granicę, przepływając graniczną rzekę Wołkuszankę na odcinku ochranianym przez Placówkę Straży Granicznej w Płaskiej. Wszyscy zostali zatrzymani w bliskiej odległości od granicy. Rzeczniczka Podlaskiego Oddziału SG Katarzyna Zdanowicz poinformowała, że w lipcu odnotowano w tym oddziale blisko 90 prób nielegalnego przekroczenia granicy z Białorusią.",
+      "source_name": "Kurier Poranny (poranny.pl)",
+      "author": "Adrian Kuźmiuk",
+      "url": "https://poranny.pl/migranci-z-afganistanu-bangladeszu-pakistanu-i-iranu-przeplyneli-rzeke-aby-dostac-sie-do-polski/ar/c1p2-29230143",
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Migrants from Afghanistan, Bangladesh, Pakistan and Iran swam across a border river. Border Guard: nearly 90 illegal crossing attempts in July",
+          "summary": "In the early morning of 31 July 2026, nine migrants from Afghanistan, Bangladesh, Pakistan and Iran illegally crossed the Polish-Belarusian border by swimming across the border river Wołkuszanka, in the section guarded by the Border Guard post in Płaska. All were detained close to the border. Katarzyna Zdanowicz, spokeswoman for the Podlasie Border Guard Unit, said that in July the unit recorded nearly 90 attempts to illegally cross the border with Belarus."
+        },
+        "es": {
+          "title": "Migrantes de Afganistán, Bangladés, Pakistán e Irán cruzaron a nado un río fronterizo. Guardia Fronteriza: casi 90 intentos de cruce ilegal en julio",
+          "summary": "En la madrugada del 31 de julio de 2026, nueve migrantes procedentes de Afganistán, Bangladés, Pakistán e Irán cruzaron ilegalmente la frontera polaco-bielorrusa nadando por el río fronterizo Wołkuszanka, en el tramo vigilado por el puesto de la Guardia Fronteriza en Płaska. Todos fueron detenidos cerca de la frontera. Katarzyna Zdanowicz, portavoz de la Unidad de la Guardia Fronteriza de Podlasie, informó que en julio la unidad registró casi 90 intentos de cruce ilegal de la frontera con Bielorrusia."
+        },
+        "uk": {
+          "title": "Мігранти з Афганістану, Бангладеш, Пакистану та Ірану перепливли прикордонну річку. Прикордонна служба: у липні майже 90 спроб нелегального перетину кордону",
+          "summary": "Рано вранці 31 липня 2026 р. дев'ятеро мігрантів з Афганістану, Бангладеш, Пакистану та Ірану нелегально перетнули польсько-білоруський кордон, перепливши прикордонну річку Волкушанку на ділянці, яку охороняє відділ Прикордонної служби у Пласці. Усіх затримали неподалік кордону. Речниця Підляського відділу Прикордонної служби Катажина Зданович повідомила, що в липні у цьому відділі зафіксовано майже 90 спроб нелегального перетину кордону з Білоруссю."
+        },
+        "ru": {
+          "title": "Мигранты из Афганистана, Бангладеш, Пакистана и Ирана переплыли пограничную реку. Пограничная служба: в июле почти 90 попыток нелегального пересечения границы",
+          "summary": "Ранним утром 31 июля 2026 г. девять мигрантов из Афганистана, Бангладеш, Пакистана и Ирана нелегально пересекли польско-белорусскую границу, переплыв пограничную реку Волкушанку на участке, охраняемом отделом Пограничной службы в Пласке. Все были задержаны недалеко от границы. Пресс-секретарь Подляского отдела Пограничной службы Катажина Зданович сообщила, что в июле в этом отделе зафиксировано почти 90 попыток нелегального пересечения границы с Беларусью."
+        },
+        "fr": {
+          "title": "Des migrants d'Afghanistan, du Bangladesh, du Pakistan et d'Iran ont traversé une rivière frontalière à la nage. Garde-frontières : près de 90 tentatives de franchissement illégal en juillet",
+          "summary": "Au petit matin du 31 juillet 2026, neuf migrants originaires d'Afghanistan, du Bangladesh, du Pakistan et d'Iran ont franchi illégalement la frontière polono-biélorusse en traversant à la nage la rivière frontalière Wołkuszanka, sur le tronçon surveillé par le poste des garde-frontières de Płaska. Tous ont été interpellés à proximité de la frontière. Katarzyna Zdanowicz, porte-parole de l'unité des garde-frontières de Podlasie, a indiqué qu'en juillet l'unité avait enregistré près de 90 tentatives de franchissement illégal de la frontière avec la Biélorussie."
+        }
+      }
+    },
     {
       "id": "2026-08-01-udsc-termin-wymiany-dokumentow-ue-3-sierpnia",
       "added": "2026-08-01",
