@@ -31,8 +31,13 @@
 
   /* ---- słownik etykiet (JEDNO miejsce edycji tłumaczeń menu) ---- */
   var L = {
-    'Jestem cudzoziemcem': { en: "I'm a foreigner", es: 'Soy extranjero', uk: 'Я іноземець', ru: 'Я иностранец', fr: 'Je suis étranger' },
-    'Cudzoziemiec': { en: 'Foreigner', es: 'Extranjero', uk: 'Іноземець', ru: 'Иностранец', fr: 'Étranger' },
+    /* UWAGA: w językach obcych NIE tłumaczymy dosłownie "Jestem cudzoziemcem".
+     * Powód: hub "Jestem pracodawcą" istnieje wyłącznie w wersji polskiej, więc poza
+     * polskim nie ma z czym się rozróżniać — każdy odbiorca obcojęzyczny JEST
+     * cudzoziemcem. Zamiast tego etykieta mówi, co jest w środku. */
+    'Jestem cudzoziemcem': { en: 'Legalisation step by step – residence and work', es: 'Legalización paso a paso: residencia y trabajo', uk: 'Легалізація крок за кроком — перебування та робота', ru: 'Легализация шаг за шагом — пребывание и работа', fr: 'Légalisation étape par étape – séjour et travail' },
+    /* wersja skrócona — używana na wąskich ekranach (poniżej 900 px) */
+    'Cudzoziemiec': { en: 'Step by step', es: 'Paso a paso', uk: 'Крок за кроком', ru: 'Шаг за шагом', fr: 'Étape par étape' },
     'Pracodawca': { en: 'Employer', es: 'Empleador', uk: 'Роботодавець', ru: 'Работодатель', fr: 'Employeur' },
     'Jestem pracodawcą': { en: "I'm an employer", es: 'Soy empleador', uk: 'Я роботодавець', ru: 'Я работодатель', fr: 'Je suis employeur' },
     'Strona sekcji': { en: 'Section page', es: 'Página de la sección', uk: 'Сторінка розділу', ru: 'Страница раздела', fr: 'Page de la section' },
