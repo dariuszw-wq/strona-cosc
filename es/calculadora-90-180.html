@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora 90/180 d&iacute;as Schengen &mdash; cu&aacute;ntos d&iacute;as le quedan en Polonia</title>
+<meta name="description" content="Calculadora gratuita de la regla 90/180 del espacio Schengen: introduzca sus entradas y salidas y vea cu&aacute;ntos d&iacute;as ha usado, cu&aacute;ntos le quedan y cu&aacute;ndo los recupera. En espa&ntilde;ol.">
+<link rel="canonical" href="https://cosc.org.pl/es/calculadora-90-180.html">
+<link rel="alternate" hreflang="es" href="https://cosc.org.pl/es/calculadora-90-180.html">
+<link rel="alternate" hreflang="pl" href="https://cosc.org.pl/kalkulator-90-180.html">
+<link rel="alternate" hreflang="x-default" href="https://cosc.org.pl/">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=IBM+Plex+Serif:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#16244c;--violet:#4636c9;--violet-d:#37248F;--violet-l:#6d6ae0;--cream:#f4f6fb;--mut:#5a6478;--red:#d4213d;--amber:#C07A1E;--green:#1a9a52;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'IBM Plex Sans',sans-serif;background:var(--cream);color:var(--navy);min-height:100vh}
+a{color:inherit}
+.wrap{max-width:960px;margin:0 auto;padding:0 18px}
+
+/* ===== PASEK MARKI (jak w formularzu — wyśrodkowany, flagi na obu końcach) ===== */
+header{background:linear-gradient(120deg,var(--violet-l),var(--violet) 55%,var(--violet-d));padding:14px 0}
+header .wrap{display:flex;justify-content:center;align-items:center;gap:18px}
+.emblem,.flag-pl{flex:0 0 auto;display:flex;align-items:center}
+.brand{display:flex;flex-direction:column;align-items:center;text-align:center;gap:3px;text-decoration:none;color:#fff}
+.brand b{font-size:16px;font-weight:800;color:#fff;line-height:1.2}
+.brand small{font-size:12px;color:#DCD6FA;font-weight:500}
+
+/* pasek z językami pod paskiem marki */
+.langbar{background:#fff;border-bottom:1px solid #e6e9f2}
+.langbar .wrap{display:flex;justify-content:flex-end;padding-top:8px;padding-bottom:8px}
+.langs{display:flex;gap:5px}
+.langs button{background:#fff;border:1px solid #d5d8e6;color:var(--violet);font-size:11px;font-weight:700;padding:5px 10px;border-radius:6px;cursor:pointer;font-family:inherit;min-height:32px}
+.langs button.on{background:var(--violet);border-color:var(--violet);color:#fff}
+
+/* ===== KARTA KALKULATORA ===== */
+main{padding:26px 18px 40px}
+.calc{max-width:640px;width:100%;margin:0 auto;background:#fff;border:1px solid #e6e9f2;border-radius:16px;overflow:hidden;box-shadow:0 10px 34px rgba(22,36,76,.10)}
+.chead{background:var(--cream);border-bottom:1px solid #e6e9f2;padding:22px 24px}
+.chead .eyebrow{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--violet);margin-bottom:8px}
+.chead h1{font-family:'IBM Plex Serif',serif;font-size:25px;line-height:1.2;color:var(--navy)}
+.chead p{font-size:13.5px;color:var(--mut);margin-top:7px}
+.cbody{padding:22px 24px}
+.row{display:flex;gap:10px;margin-bottom:10px;flex-wrap:wrap;align-items:end}
+.field{flex:1;min-width:150px}
+label{display:block;font-size:12px;font-weight:600;margin-bottom:5px;color:var(--mut)}
+input[type=date]{width:100%;padding:11px;border:1px solid #d8dce8;border-radius:9px;font-family:inherit;font-size:16px;min-height:46px;background:var(--cream);color:var(--navy)}
+.btn{background:var(--navy);color:#fff;border:none;padding:12px 16px;border-radius:9px;font-weight:600;font-size:14px;min-height:46px;cursor:pointer;font-family:inherit;transition:.15s}
+.btn:hover{filter:brightness(1.08)}
+.btn.gold{background:var(--violet)}
+.btn.ghost{background:transparent;color:var(--red);border:1px solid #eccfd4;padding:8px 10px;font-size:12px;min-height:auto}
+.btn:disabled{opacity:.55;cursor:default}
+.trips{margin:14px 0}
+.trip{display:flex;justify-content:space-between;align-items:center;background:var(--cream);border:1px solid #e6e9f2;border-radius:9px;padding:9px 12px;margin-bottom:6px;font-size:13px}
+
+/* wynik */
+.result{margin-top:16px;border-radius:12px;padding:18px;display:none}
+.result.green{display:block;background:#eef7f1;border:1px solid #bfe0cc}
+.result.amber{display:block;background:#fdf4e6;border:1px solid #ecd3a8}
+.result.red{display:block;background:#fbeeee;border:1px solid #e8c4c4}
+.res-top{display:flex;align-items:center;gap:14px}
+.badge{flex-shrink:0;width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;transform:scale(0);transition:transform .4s cubic-bezier(.34,1.56,.64,1)}
+.badge.show{transform:scale(1)}
+.badge svg{width:28px;height:28px}
+.badge.green{background:var(--green)}
+.badge.amber{background:var(--amber)}
+.badge.red{background:var(--red)}
+.big{font-family:'IBM Plex Serif',serif;font-size:32px;font-weight:700;line-height:1}
+.bar{height:10px;background:#e6e2d8;border-radius:6px;margin:14px 0 6px;overflow:hidden}
+.bar div{height:100%;border-radius:6px;transition:width .5s}
+.meta{font-size:13.5px;color:#41506e;margin-top:6px}
+.meta strong{color:var(--navy)}
+
+/* CTA + PDF */
+.actions{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap}
+.cta{margin-top:14px;background:var(--navy);border-radius:12px;padding:16px;color:#fff}
+.cta p{font-size:14px;margin-bottom:10px}
+.cta a{display:inline-block;background:var(--violet-l);color:#fff;text-decoration:none;font-weight:700;font-size:14px;padding:10px 18px;border-radius:8px}
+.disc{font-size:11px;color:#8a8fa0;margin-top:16px;line-height:1.55;border-top:1px solid #e6e9f2;padding-top:12px}
+
+/* ===== STOPKA ===== */
+footer{background:var(--navy);color:#cfd6e4;margin-top:6px}
+.foot{max-width:960px;margin:0 auto;padding:26px 18px;display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;align-items:center;font-size:13px}
+.foot a{color:#fff;font-weight:600;text-decoration:none}
+.foot a:hover{color:var(--violet-l)}
+.foot .brand{display:block;font-family:'IBM Plex Serif',serif;font-size:15px;color:#fff}
+.foot .muted{color:#9aa3ba;font-size:12px}
+
+@media(max-width:560px){
+ .brand b{font-size:14px}
+ .brand small{font-size:11px}
+ .chead h1{font-size:22px}
+ .row .field{flex:1 1 100%;min-width:100%}
+ .row .btn{width:100%}
+ .actions .btn{width:100%}
+ .cta a{display:block;text-align:center}
+}
+
+/* COSC-CANON-HEADER — ujednolicony pasek (wzór: index.html) */
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);position:sticky;top:0;z-index:50;box-shadow:0 2px 12px rgba(19,32,58,.25)}
+.flagbar{height:8px;background:linear-gradient(to bottom,#f5f5f5 50%,#d4213d 50%);border-bottom:1px solid rgba(22,36,76,.18);position:sticky;top:66px;z-index:49}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none}
+.logo .name{color:#fff;font-size:14px;line-height:1.3;font-weight:600;max-width:220px;font-family:'IBM Plex Serif',serif}
+.flag{flex-shrink:0;width:44px;height:29px;border-radius:3px;box-shadow:0 0 0 1px rgba(255,255,255,.4);overflow:hidden;display:flex;align-items:center;justify-content:center}
+.flag-pl{flex-direction:column;width:34px;height:34px;border-radius:6px;margin-left:4px}
+.flag-pl .fw{flex:1;width:100%;background:#f5f5f5}
+.flag-pl .fr{flex:1;width:100%;background:#d4213d}
+.menu{display:flex;gap:24px;align-items:center}
+.menu a{color:#E9ECF3;text-decoration:none;font-size:14px;font-weight:500}
+.menu a:hover{color:#6d6ae0}
+.menu a.on{color:#6d6ae0}
+.lang{display:flex;gap:2px;border:1px solid rgba(255,255,255,.25);border-radius:8px;padding:2px}
+.lang a{padding:4px 8px;font-size:11.5px;font-weight:700;border-radius:6px;text-decoration:none;color:#cfd6e4}
+.lang a.on{background:#4636c9;color:#16244c}
+.burger{display:none;background:none;border:none;color:#fff;font-size:26px;cursor:pointer}
+@media(max-width:900px){
+  header .nav{position:relative;justify-content:center}
+  header .logo{justify-content:center;text-align:center}
+  .lang{position:absolute;right:54px;top:50%;transform:translateY(-50%)}
+  .burger{display:block;position:absolute;right:14px;top:50%;transform:translateY(-50%)}
+  .menu{display:none;position:absolute;top:66px;left:0;right:0;flex-direction:column;gap:0;background:#2f2699;padding:6px 0;box-shadow:0 12px 24px rgba(0,0,0,.25);z-index:48}
+  .menu.open{display:flex}
+  .menu a{padding:13px 22px;width:100%;font-size:15px;border-bottom:1px solid rgba(255,255,255,.08)}
+}
+
+</style>
+<style id="fix-mobilny-2026-07-25">
+/* Poprawka mobilna: flaga PL nie nachodzi na logo, tytul hero nie jest uciety */
+@media(max-width:900px){
+  header .nav{justify-content:flex-start;padding-right:104px;box-sizing:border-box}
+  header .logo{justify-content:flex-start;text-align:left}
+  header .logo .flag-pl{display:flex!important;width:34px;height:34px}
+  header .logo .name{max-width:none}
+  .hero h1{font-size:clamp(23px,6.4vw,44px);overflow-wrap:break-word}
+}
+</style>
+<link rel="stylesheet" href="i18n/i18n.css">
+
+<meta property="og:site_name" content="Centrum Obsługi Spraw Cudzoziemców">
+<meta property="og:image" content="https://cosc.org.pl/og/strona-glowna.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://cosc.org.pl/og/strona-glowna.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CO">
+<meta property="og:title" content="Calculadora 90/180 d&iacute;as Schengen &mdash; cu&aacute;ntos d&iacute;as le quedan en Polonia">
+<meta property="og:description" content="Calculadora gratuita de la regla 90/180 del espacio Schengen: introduzca sus entradas y salidas y vea cu&aacute;ntos d&iacute;as ha usado, cu&aacute;ntos le quedan y cu&aacute;ndo los recupera. En espa&ntilde;ol.">
+<meta property="og:url" content="https://cosc.org.pl/es/calculadora-90-180.html">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora 90/180 Schengen","applicationCategory":"UtilitiesApplication","operatingSystem":"Web","inLanguage":"es","url":"https://cosc.org.pl/es/calculadora-90-180.html","offers":{"@type":"Offer","price":"0","priceCurrency":"PLN"},"publisher":{"@type":"Organization","name":"Dariusz Wlodarczyk - Kancelaria","url":"https://cosc.org.pl/es/"}}</script>
+<style>/* ===== NAGLOWEK (estilo comun del sitio) ===== */
+.csh-header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);position:sticky;top:0;z-index:50;box-shadow:0 2px 12px rgba(19,32,58,.25);display:block}
+.csh-wrap{max-width:1120px;margin:0 auto;padding:0 16px;display:flex;align-items:center;gap:12px;min-height:66px;flex-wrap:nowrap}
+.csh-logo{display:flex;align-items:center;gap:9px;text-decoration:none;flex:none}
+.csh-flag{flex-shrink:0;width:32px;height:32px;border-radius:6px;box-shadow:0 0 0 1px rgba(255,255,255,.4);overflow:hidden;display:flex;flex-direction:column}
+.csh-flag .csh-fw{flex:1;width:100%;background:#f5f5f5}.csh-flag .csh-fr{flex:1;width:100%;background:#d4213d}
+.csh-name{color:#fff;font-family:'IBM Plex Serif',Georgia,serif;font-weight:700;font-size:13.5px;line-height:1.15;white-space:nowrap}
+.csh-menu{display:flex;flex-wrap:nowrap;gap:4px;align-items:center;justify-content:flex-end;flex:1 1 auto;min-width:0;white-space:nowrap}
+.csh-menu>a{color:#E9ECF3;text-decoration:none;font-size:13.5px;font-weight:600;padding:8px 10px;border-radius:8px;transition:background .18s,color .18s}
+.csh-menu>a:hover,.csh-menu>a.on{background:rgba(255,255,255,.12);color:#ffd34d}
+.csh-cta{background:#d4213d !important;color:#fff !important;font-weight:700;padding:8px 14px;border-radius:8px;box-shadow:0 2px 8px rgba(212,33,61,.35);margin-left:4px}
+.csh-cta:hover{background:#b81a32 !important;color:#fff !important}
+.csh-lang{flex:none;display:flex;gap:2px;border:1px solid rgba(255,255,255,.3);border-radius:8px;padding:2px;margin-left:6px}
+.csh-lang a{padding:4px 9px;font-size:11.5px;font-weight:800;border-radius:6px;text-decoration:none;color:#dfe4ee}
+.csh-lang a.on{background:#fff;color:#4636c9}
+.csh-burger{display:none;background:none;border:none;color:#fff;font-size:26px;cursor:pointer;flex:none}
+.flagbar{height:8px;background:linear-gradient(to bottom,#f5f5f5 50%,#d4213d 50%);border-bottom:1px solid rgba(22,36,76,.18)}
+@media(max-width:900px){
+ .csh-wrap{flex-wrap:wrap;gap:8px;padding:10px;min-height:0}
+ .csh-name{font-size:11px}.csh-flag{width:24px;height:24px}.csh-logo svg{width:22px;height:22px}
+ .csh-burger{display:block;margin-left:auto}
+ .csh-menu{display:none;order:5;flex-basis:100%;flex-wrap:wrap;justify-content:flex-start;gap:6px}
+ .csh-menu.open{display:flex}
+ .csh-menu>a{font-size:14px;padding:9px 10px}
+}
+
+header.csh-header{padding:0}
+</style>
+</head>
+<body>
+
+<!-- ===== PASEK MARKI ===== -->
+<header class="csh-header">
+<div class="csh-wrap">
+  <a class="csh-logo" href="index.html" aria-label="Inicio">
+    <span class="csh-flag" aria-label="Polonia"><span class="csh-fw"></span><span class="csh-fr"></span></span>
+    <span class="csh-name">Centro de Atenci&oacute;n<br>de Asuntos de Extranjeros</span><svg width="30" height="30" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Union Europea"><rect width="36" height="36" rx="7" fill="#0A2A8C"/><g fill="#F5C518"><path id="esEuStar" d="M18,4.6 l0.85,1.75 l1.95,0.2 l-1.45,1.32 l0.42,1.9 l-1.77,-1.0 l-1.77,1.0 l0.42,-1.9 l-1.45,-1.32 l1.95,-0.2 Z"/><use href="#esEuStar" transform="rotate(30 18 18)"/><use href="#esEuStar" transform="rotate(60 18 18)"/><use href="#esEuStar" transform="rotate(90 18 18)"/><use href="#esEuStar" transform="rotate(120 18 18)"/><use href="#esEuStar" transform="rotate(150 18 18)"/><use href="#esEuStar" transform="rotate(180 18 18)"/><use href="#esEuStar" transform="rotate(210 18 18)"/><use href="#esEuStar" transform="rotate(240 18 18)"/><use href="#esEuStar" transform="rotate(270 18 18)"/><use href="#esEuStar" transform="rotate(300 18 18)"/><use href="#esEuStar" transform="rotate(330 18 18)"/></g></svg>
+  </a>
+  <button class="csh-burger" type="button" aria-label="Menu" aria-expanded="false">&#9776;</button>
+  <nav class="csh-menu"><a href="index.html">Inicio</a><a href="tarjeta-de-residencia-polonia.html">Tarjeta de residencia</a><a href="trabajo-legal-polonia-colombianos.html">Trabajo legal</a><a href="90-dias-schengen-polonia.html">90 dias</a><a href="mos-solicitud-en-linea.html">Solicitud MOS</a><a href="calculadora-90-180.html" class="on">Calculadora 90/180</a><a class="csh-cta" href="contacto.html">Consulta gratuita</a></nav>
+  <div class="csh-lang"><a href="https://cosc.org.pl/kalkulator-90-180.html" hreflang="pl" lang="pl">PL</a><a href="#" class="on" aria-current="true">ES</a></div>
+</div>
+</header>
+<div class="flagbar" aria-hidden="true"></div>
+
+<!-- ===== KALKULATOR ===== -->
+<main>
+<div class="calc">
+  <div class="chead">
+    <span class="eyebrow" id="t-eyebrow">Herramienta gratuita</span>
+    <h1 id="t-title">Calculadora de d&iacute;as de estancia 90/180</h1>
+    <p id="t-sub">Compruebe cu&aacute;ntos d&iacute;as sin visado le quedan en el espacio Schengen</p>
+  </div>
+  <div class="cbody">
+    <div class="row">
+      <div class="field"><label id="t-in">Fecha de entrada</label><input type="date" id="d-in"></div>
+      <div class="field"><label id="t-out">Fecha de salida (u hoy, si contin&uacute;a)</label><input type="date" id="d-out"></div>
+      <button class="btn" id="b-add">+ <span id="t-add">A&ntilde;adir estancia</span></button>
+    </div>
+    <div class="trips" id="trips"></div>
+    <div class="row">
+      <div class="field"><label id="t-ref">Comprobar al d&iacute;a</label><input type="date" id="d-ref"></div>
+      <button class="btn gold" id="b-calc"><span id="t-calc">Calcular</span></button>
+    </div>
+
+    <div class="result" id="res">
+      <div class="res-top">
+        <span class="badge" id="r-badge"></span>
+        <span class="big" id="r-days"></span>
+      </div>
+      <div class="bar"><div id="r-bar"></div></div>
+      <div class="meta" id="r-meta"></div>
+      <div class="meta" id="r-next"></div>
+      <div class="actions" id="acts" style="display:none">
+        <button class="btn gold" id="b-pdf">📄 <span id="t-pdf">Guardar / compartir PDF</span></button>
+      </div>
+    </div>
+
+    <div class="cta" id="cta" style="display:none">
+      <p id="t-cta">&iquest;Se le acaban los d&iacute;as sin visado? Solicite la tarjeta de residencia antes de que sea tarde.</p>
+      <a href="contacto.html" id="t-btn">Empiece su caso hoy</a><a href="https://wa.me/48539999549?text=Buenos%20dias%2C%20use%20la%20calculadora%2090%2F180%20y%20quiero%20consultar%20mi%20situacion%20de%20estancia%20en%20Polonia." rel="noopener" target="_blank" style="display:inline-block;margin-left:10px;background:#25D366;color:#0b3d20;font-weight:700;padding:12px 22px;border-radius:10px;text-decoration:none">Escribir por WhatsApp</a>
+    </div>
+
+    <p class="disc" id="t-disc">Esta calculadora es solo informativa y no constituye asesoramiento jur&iacute;dico. Se basa en el art. 6(1) del C&oacute;digo de Fronteras Schengen (Reglamento UE 2016/399): 90 d&iacute;as en cualquier periodo de 180 d&iacute;as. No tiene en cuenta acuerdos bilaterales, visados nacionales ni circunstancias individuales. Cont&aacute;ctenos: +48 539 999 549.</p>
+  </div>
+</div>
+</main>
+
+<!-- ===== STOPKA ===== -->
+<footer>
+  <div class="foot">
+    <div>
+      <a class="brand" href="index.html">Centro de Atenci&oacute;n de Asuntos de Extranjeros</a>
+      <span class="muted">Residencia y trabajo en Polonia &middot; cosc.org.pl</span>
+    </div>
+    <div>
+      <a href="index.html">Inicio (espa&ntilde;ol)</a> &nbsp;&middot;&nbsp;
+      <a href="90-dias-schengen-polonia.html">Regla 90/180</a> &nbsp;&middot;&nbsp;
+      <a href="contacto.html" id="f-contact">Contacto</a> &nbsp;&middot;&nbsp;
+      <a href="tel:+48539999549">+48 539 999 549</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script>
+const T={
+pl:{eyebrow:"Bezpłatne narzędzie",title:"Kalkulator dni pobytu 90/180",sub:"Sprawdź, ile dni pobytu bezwizowego w strefie Schengen Ci pozostało",in:"Data wjazdu",out:"Data wyjazdu (lub dziś, jeśli trwa)",add:"Dodaj pobyt",ref:"Sprawdź stan na dzień",calc:"Oblicz",pdf:"Zapisz / udostępnij PDF",used:"dni wykorzystanych z 90",left:d=>`Pozostało: <strong>${d} dni</strong> w bieżącym oknie 180 dni`,over:d=>`Przekroczenie limitu o <strong>${d} dni</strong> — pobyt może być nielegalny!`,next:s=>`Najbliższe „odzyskanie" dni: <strong>${s}</strong>`,cta:"Kończą Ci się dni pobytu bezwizowego? Złóż wniosek o kartę pobytu, zanim będzie za późno.",btn:"Zacznij sprawę dziś — bez ryzyka odmowy",del:"usuń",err:"Uzupełnij poprawnie daty (wyjazd ≥ wjazd).",disc:"Kalkulator ma charakter wyłącznie informacyjny i nie stanowi porady prawnej. Obliczenia oparte są na art. 6 ust. 1 Kodeksu Granicznego Schengen (rozporządzenie UE 2016/399) — 90 dni w każdym 180-dniowym okresie. Wynik nie uwzględnia umów bilateralnych, wiz krajowych ani indywidualnych okoliczności. Skontaktuj się z nami: tel. 539 999 549.",contact:"Kontakt",
+ pdfTitle:"Wynik kalkulatora dni pobytu 90/180",pdfStays:"Wpisane pobyty",pdfRef:"Stan na dzień",pdfGen:"Wygenerowano",pdfNone:"(brak wpisanych pobytów)",pdfName:"kalkulator-dni-pobytu-COSC.pdf",pdfShare:"Wynik kalkulatora dni pobytu 90/180 — Centrum Obsługi Spraw Cudzoziemców"},
+en:{eyebrow:"Free tool",title:"90/180 Days of Stay Calculator",sub:"Check how many visa-free days you have left in the Schengen area",in:"Entry date",out:"Exit date (or today if ongoing)",add:"Add stay",ref:"Check status as of",calc:"Calculate",pdf:"Save / share PDF",used:"days used out of 90",left:d=>`Remaining: <strong>${d} days</strong> in the current 180-day window`,over:d=>`Limit exceeded by <strong>${d} days</strong> — your stay may be illegal!`,next:s=>`Next days “recovered”: <strong>${s}</strong>`,cta:"Running out of visa-free days? Apply for a residence card before it's too late.",btn:"Start your case today",del:"remove",err:"Please fill in valid dates (exit ≥ entry).",disc:"This calculator is for information only and does not constitute legal advice. Based on Art. 6(1) of the Schengen Borders Code (Regulation EU 2016/399) — 90 days in any 180-day period. It does not account for bilateral agreements, national visas or individual circumstances. Contact us: +48 539 999 549.",contact:"Contact",
+ pdfTitle:"90/180 stay calculator result",pdfStays:"Entered stays",pdfRef:"Status as of",pdfGen:"Generated",pdfNone:"(no stays entered)",pdfName:"stay-days-calculator-COSC.pdf",pdfShare:"90/180 stay calculator result — Centre for Foreigners' Affairs"},
+es:{eyebrow:"Herramienta gratuita",title:"Calculadora de días de estancia 90/180",sub:"Comprueba cuántos días sin visado te quedan en el espacio Schengen",in:"Fecha de entrada",out:"Fecha de salida (u hoy, si continúa)",add:"Añadir estancia",ref:"Comprobar al día",calc:"Calcular",pdf:"Guardar / compartir PDF",used:"días usados de 90",left:d=>`Te quedan: <strong>${d} días</strong> en la ventana actual de 180 días`,over:d=>`Límite superado en <strong>${d} días</strong> — ¡tu estancia puede ser ilegal!`,next:s=>`Próxima “recuperación” de días: <strong>${s}</strong>`,cta:"¿Se te acaban los días sin visado? Solicita la tarjeta de residencia antes de que sea tarde.",btn:"Empieza tu caso hoy",del:"eliminar",err:"Introduce fechas válidas (salida ≥ entrada).",disc:"Esta calculadora es solo informativa y no constituye asesoramiento jurídico. Basada en el art. 6(1) del Código de Fronteras Schengen (Reglamento UE 2016/399): 90 días en cualquier período de 180 días. No considera acuerdos bilaterales, visados nacionales ni circunstancias individuales. Contáctanos: +48 539 999 549.",contact:"Contacto",
+ pdfTitle:"Resultado de la calculadora 90/180",pdfStays:"Estancias introducidas",pdfRef:"Estado al día",pdfGen:"Generado",pdfNone:"(sin estancias introducidas)",pdfName:"calculadora-estancia-COSC.pdf",pdfShare:"Resultado de la calculadora 90/180 — Centro de Atención a Extranjeros"},
+pt:{eyebrow:"Ferramenta gratuita",title:"Calculadora de dias de estadia 90/180",sub:"Veja quantos dias sem visto ainda tem no espaço Schengen",in:"Data de entrada",out:"Data de saída (ou hoje, se em curso)",add:"Adicionar estadia",ref:"Verificar na data",calc:"Calcular",pdf:"Guardar / partilhar PDF",used:"dias usados de 90",left:d=>`Restam: <strong>${d} dias</strong> na janela atual de 180 dias`,over:d=>`Limite excedido em <strong>${d} dias</strong> — a sua estadia pode ser ilegal!`,next:s=>`Próxima “recuperação” de dias: <strong>${s}</strong>`,cta:"Os seus dias sem visto estão a acabar? Peça o cartão de residência antes que seja tarde.",btn:"Comece o seu processo hoje",del:"remover",err:"Preencha datas válidas (saída ≥ entrada).",disc:"Esta calculadora é apenas informativa e não constitui aconselhamento jurídico. Baseada no art. 6(1) do Código de Fronteiras Schengen (Regulamento UE 2016/399) — 90 dias em qualquer período de 180 dias. Não considera acordos bilaterais, vistos nacionais nem circunstâncias individuais. Contacte-nos: +48 539 999 549.",contact:"Contacto",
+ pdfTitle:"Resultado da calculadora 90/180",pdfStays:"Estadias introduzidas",pdfRef:"Estado na data",pdfGen:"Gerado",pdfNone:"(sem estadias introduzidas)",pdfName:"calculadora-estadia-COSC.pdf",pdfShare:"Resultado da calculadora 90/180 — Centro de Apoio a Estrangeiros"}
+};
+let L='es',trips=[],lastResult=null;
+const $=id=>document.getElementById(id);
+const DAY=86400000;
+
+const ICONS={
+ green:'<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>',
+ amber:'<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.3 3.9 2.4 18a2 2 0 0 0 1.7 3h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg>',
+ red:'<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8v5"/><path d="M12 17h.01"/><circle cx="12" cy="12" r="9"/></svg>'
+};
+
+function setLang(l){L=l;const t=T[l];
+ ['eyebrow','title','sub','in','out','add','ref','calc','pdf','cta','btn','disc'].forEach(k=>{const el=$('t-'+k);if(el)el.textContent=t[k];});
+ const fc=$('f-contact');if(fc)fc.textContent=t.contact;
+ document.querySelectorAll('.langs button').forEach(b=>b.classList.toggle('on',b.dataset.l===l));
+ renderTrips();
+ if(lastResult) renderResult();
+}
+// most do wspólnego przełącznika języka (silnik nagłówka / i18n.js):
+document.addEventListener('cosc:langchange',function(e){var l=(e&&e.detail&&e.detail.lang)||'pl';setLang(T[l]?l:'en');});
+$('d-ref').valueAsDate=new Date();
+
+function renderTrips(){$('trips').innerHTML=trips.map((tr,i)=>
+ `<div class="trip"><span>${tr[0]} → ${tr[1]}</span><button class="btn ghost" onclick="delTrip(${i})">✕ ${T[L].del}</button></div>`).join('');}
+window.delTrip=i=>{trips.splice(i,1);renderTrips();};
+$('b-add').onclick=()=>{const a=$('d-in').value,b=$('d-out').value;
+ if(!a||!b||b<a){alert(T[L].err);return;}
+ trips.push([a,b]);trips.sort();$('d-in').value='';$('d-out').value='';renderTrips();};
+
+// liczymy w czystym UTC, żeby zmiana czasu (DST) nie gubiła/dublowała dnia
+const U=s=>{const[y,m,d]=s.split('-').map(Number);return Date.UTC(y,m-1,d);};
+const isoUTC=ts=>new Date(ts).toISOString().slice(0,10);
+function daysUsedTs(refTs){
+ const winStart=refTs-179*DAY;
+ let set=new Set();
+ trips.forEach(([a,b])=>{let d=U(a),e=U(b);
+  for(;d<=e;d+=DAY) if(d>=winStart&&d<=refTs) set.add(d);});
+ return set.size;}
+function daysUsed(refStr){return daysUsedTs(U(refStr));}
+function computeNext(ref,used){
+ const base=U(ref);
+ for(let i=1;i<=180;i++){if(daysUsedTs(base+i*DAY)<used) return isoUTC(base+i*DAY);}
+ return '—';
+}
+
+$('b-calc').onclick=()=>{
+ const ref=$('d-ref').value; if(!ref||!trips.length){alert(T[L].err);return;}
+ const used=daysUsed(ref),left=90-used;
+ lastResult={ref,used,left,next:computeNext(ref,used),trips:trips.slice()};
+ renderResult();
+ $('res').scrollIntoView({behavior:'smooth',block:'nearest'});
+};
+
+function renderResult(){
+ if(!lastResult)return;
+ const t=T[L],{used,left,next}=lastResult;
+ const tone=left<0?'red':left<=14?'amber':'green';
+ $('res').className='result '+tone;
+ $('r-days').textContent=used+' / 90';
+ const pct=Math.min(100,used/90*100);
+ $('r-bar').style.width=pct+'%';
+ $('r-bar').style.background=tone==='red'?'var(--red)':tone==='amber'?'var(--amber)':'var(--green)';
+ $('r-meta').innerHTML=left>=0?t.left(left):t.over(-left);
+ $('r-next').innerHTML=t.next(next);
+ const badge=$('r-badge');badge.className='badge '+tone;badge.innerHTML=ICONS[tone];
+ badge.classList.remove('show');void badge.offsetWidth;badge.classList.add('show');
+ $('cta').style.display=left<=30?'block':'none';
+ $('acts').style.display='flex';
+}
+
+/* ===== PDF: pasek marki + dane + wynik + stopka, z klikalnymi linkami ===== */
+function buildPdfNode(){
+ const t=T[L],r=lastResult;
+ const tone=r.left<0?'red':r.left<=14?'amber':'green';
+ const toneCol=tone==='red'?'#d4213d':tone==='amber'?'#C07A1E':'#1a9a52';
+ const toneBg=tone==='red'?'#fbeeee':tone==='amber'?'#fdf4e6':'#eef7f1';
+ const meta=r.left>=0?t.left(r.left):t.over(-r.left);
+ const stays=r.trips.length?r.trips.map(x=>`<div style="padding:6px 10px;background:#f4f6fb;border:1px solid #e6e9f2;border-radius:7px;margin-bottom:5px;font-size:13px">${x[0]} &nbsp;→&nbsp; ${x[1]}</div>`).join(''):`<div style="font-size:13px;color:#8a8fa0">${t.pdfNone}</div>`;
+ const now=new Date().toLocaleString('pl-PL');
+ const euStars='<rect width="34" height="34" rx="7" fill="#0A2A8C"/><g fill="#F5C518"><path id="es" d="M17,4.4 l0.8,1.65 l1.84,0.19 l-1.37,1.25 l0.4,1.8 l-1.67,-0.95 l-1.67,0.95 l0.4,-1.8 l-1.37,-1.25 l1.84,-0.19 Z"/><use href="#es" transform="rotate(30 17 17)"/><use href="#es" transform="rotate(60 17 17)"/><use href="#es" transform="rotate(90 17 17)"/><use href="#es" transform="rotate(120 17 17)"/><use href="#es" transform="rotate(150 17 17)"/><use href="#es" transform="rotate(180 17 17)"/><use href="#es" transform="rotate(210 17 17)"/><use href="#es" transform="rotate(240 17 17)"/><use href="#es" transform="rotate(270 17 17)"/><use href="#es" transform="rotate(300 17 17)"/><use href="#es" transform="rotate(330 17 17)"/></g>';
+ const el=document.createElement('div');
+ el.style.cssText='position:fixed;left:-99999px;top:0;width:794px;background:#fff;font-family:\'IBM Plex Sans\',Arial,sans-serif;color:#16244c';
+ el.innerHTML=`
+  <div data-pdf="header" style="background:linear-gradient(120deg,#6d6ae0,#4636c9 55%,#37248F);padding:20px 30px;display:flex;justify-content:center;align-items:center;gap:22px">
+    <svg width="40" height="40" viewBox="0 0 34 34">${euStars}</svg>
+    <div style="text-align:center;color:#fff">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:19px;font-weight:700">Centrum Obsługi Spraw Cudzoziemców</div>
+      <div style="font-size:12px;color:#DCD6FA;margin-top:2px">Legalizacja pobytu i pracy · cosc.org.pl</div>
+    </div>
+    <div style="width:48px;height:31px;border-radius:4px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 0 0 1px rgba(255,255,255,.5)">
+      <div style="flex:1;background:#fff"></div><div style="flex:1;background:#DC143C"></div>
+    </div>
+  </div>
+
+  <div style="padding:26px 30px">
+    <div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#4636c9;font-weight:700">${t.eyebrow}</div>
+    <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:24px;font-weight:700;margin:4px 0 2px">${t.pdfTitle}</div>
+    <div style="font-size:12px;color:#8a8fa0;margin-bottom:20px">${t.pdfGen}: ${now}</div>
+
+    <div style="font-size:12px;font-weight:700;color:#5a6478;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">${t.pdfStays}</div>
+    ${stays}
+    <div style="margin-top:10px;font-size:13px"><strong>${t.pdfRef}:</strong> ${r.ref}</div>
+
+    <div style="margin-top:22px;background:${toneBg};border:1px solid ${toneCol}33;border-radius:12px;padding:20px;display:flex;align-items:center;gap:16px">
+      <div style="flex-shrink:0;width:56px;height:56px;border-radius:50%;background:${toneCol};display:flex;align-items:center;justify-content:center;color:#fff;font-size:30px;font-weight:700">${tone==='green'?'✓':'!'}</div>
+      <div>
+        <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:30px;font-weight:700;line-height:1">${r.used} / 90</div>
+        <div style="font-size:13px;color:#5a6478;margin-top:2px">${t.used}</div>
+      </div>
+    </div>
+    <div style="margin-top:12px;font-size:14px;color:#41506e">${meta}</div>
+    <div style="margin-top:4px;font-size:14px;color:#41506e">${t.next(r.next)}</div>
+
+    <div style="margin-top:22px;font-size:10.5px;color:#8a8fa0;line-height:1.6;border-top:1px solid #e6e9f2;padding-top:12px">${t.disc}</div>
+  </div>
+
+  <div data-pdf="footer" style="background:#16244c;color:#cfd6e4;padding:18px 30px;display:flex;justify-content:space-between;align-items:center;font-size:12px">
+    <div>
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:14px;color:#fff">Centrum Obsługi Spraw Cudzoziemców</div>
+      <div style="color:#9aa3ba;font-size:11px">Legalizacja pobytu i pracy · cosc.org.pl</div>
+    </div>
+    <div style="text-align:right;color:#fff;font-weight:600">cosc.org.pl<br><span style="color:#9aa3ba;font-weight:400">+48 539 999 549</span></div>
+  </div>`;
+ return el;
+}
+
+$('b-pdf').onclick=async()=>{
+ if(!lastResult)return;
+ const btn=$('b-pdf');const old=$('t-pdf').textContent;btn.disabled=true;$('t-pdf').textContent='…';
+ try{
+  if(document.fonts&&document.fonts.ready) await document.fonts.ready;
+  const node=buildPdfNode();document.body.appendChild(node);
+  const canvas=await html2canvas(node,{scale:2,backgroundColor:'#ffffff',useCORS:true});
+  // wymiary paska/stopki w px (przed usunięciem węzła) → potem na mm
+  const nodeW=node.offsetWidth;
+  const headEl=node.querySelector('[data-pdf="header"]');
+  const footEl=node.querySelector('[data-pdf="footer"]');
+  const headPx=headEl.offsetHeight, footTopPx=footEl.offsetTop, footPx=footEl.offsetHeight;
+  document.body.removeChild(node);
+
+  const {jsPDF}=window.jspdf;
+  const pdf=new jsPDF('p','mm','a4');
+  const pageW=210,pageH=297;
+  const imgW=pageW,imgH=canvas.height*imgW/canvas.width;
+  const mm=imgW/nodeW; // px -> mm
+  let heightLeft=imgH,position=0;
+  const img=canvas.toDataURL('image/jpeg',0.95);
+  pdf.addImage(img,'JPEG',0,position,imgW,imgH);
+  heightLeft-=pageH;
+  while(heightLeft>0){position-=pageH;pdf.addPage();pdf.addImage(img,'JPEG',0,position,imgW,imgH);heightLeft-=pageH;}
+
+  const HOME='https://cosc.org.pl';
+  // link na pasku (pierwsza strona, góra)
+  pdf.setPage(1);
+  pdf.link(0,0,imgW,headPx*mm,{url:HOME});
+  // link na stopce (ostatnia strona, dół)
+  const pages=pdf.getNumberOfPages();
+  pdf.setPage(pages);
+  const yFoot=(footTopPx*mm)-(pages-1)*pageH;
+  pdf.link(0,yFoot,imgW,footPx*mm,{url:HOME});
+
+  const t=T[L];
+  const blob=pdf.output('blob');
+  const file=new File([blob],t.pdfName,{type:'application/pdf'});
+  if(navigator.canShare&&navigator.canShare({files:[file]})){
+   try{await navigator.share({files:[file],title:t.pdfShare,text:t.pdfShare});}
+   catch(e){if(e&&e.name!=='AbortError') pdf.save(t.pdfName);}
+  }else{
+   pdf.save(t.pdfName);
+  }
+ }catch(err){
+  alert('PDF: '+(err&&err.message?err.message:err));
+ }finally{
+  btn.disabled=false;$('t-pdf').textContent=old;
+ }
+};
+</script>
+
+<script>
+(function(){var b=document.querySelector('.burger'),m=document.querySelector('.menu');if(b&&m){b.addEventListener('click',function(){m.classList.toggle('open')});m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open')})});}})();
+</script>
+<script>try{setLang('es');}catch(e){}</script>
+</body>
+</html>
