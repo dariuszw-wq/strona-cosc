@@ -264,6 +264,15 @@
         it.addEventListener('click', function (e) {
           e.preventDefault();
           var code = this.getAttribute('data-lang');
+          /* Hiszpański: jeśli ta strona ma pełny odpowiednik w /es/ (mapa ES_PAIRS
+           * w site-header.js), przechodzimy na niego zamiast tłumaczyć w locie —
+           * użytkownik dostaje treść napisaną po hiszpańsku, a nie fallback do PL.
+           * To NIE jest przekierowanie automatyczne: dzieje się tylko po kliknięciu. */
+          if (code === 'es' && typeof window.COSC_ES_ALT === 'function') {
+            var alt = null;
+            try { alt = window.COSC_ES_ALT(); } catch (err) { alt = null; }
+            if (alt) { closeAll(); location.href = alt; return; }
+          }
           setLang(code);
           closeAll();
         });
@@ -338,7 +347,11 @@
   function init() {
     if (translationDisabled()) return;
     buildSwitcher();
-    addHreflang();
+    /* addHreflang() WYŁĄCZONE (03.08.2026, decyzja Dariusza): generowało znaczniki
+     * alternate na adresy ?lang=xx, czyli tę samą stronę z parametrem i treścią
+     * podmienianą JavaScriptem. Dla wyszukiwarki to nie są osobne wersje językowe,
+     * a mieszały sygnał z prawdziwymi parami PL <-> /es/ (hreflang wpisany na stałe
+     * w <head> tych stron). Funkcję zostawiamy na wypadek powrotu do pomysłu. */
     setLang(pickLang());
   }
   if (document.readyState === 'loading') {

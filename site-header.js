@@ -111,6 +111,13 @@
     + '.csh-header .lang{flex:none;position:relative !important;top:auto !important;right:auto !important;transform:none !important;margin-left:auto}'
     + '.csh-burger{display:none;background:none;border:none;color:#fff;font-size:26px;cursor:pointer;flex:none}'
     + '.csh-l-short{display:none}.csh-mob-x{display:none}'
+    /* pasek "Esta página en español" — dyskretny, pod paskiem flagowym */
+    + '.csh-es-bar{background:#fff;border-bottom:1px solid #e6e9f0;font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:13.5px}'
+    + '.csh-es-bar .csh-es-in{max-width:1120px;margin:0 auto;padding:8px 16px;display:flex;align-items:center;gap:8px;justify-content:flex-end}'
+    + '.csh-es-bar a{color:#4636c9;text-decoration:none;font-weight:600}'
+    + '.csh-es-bar a:hover{text-decoration:underline}'
+    + '.csh-es-fl{width:20px;height:14px;border-radius:3px;flex:none;box-shadow:0 0 0 1px rgba(22,36,76,.15)}'
+    + '@media(max-width:600px){.csh-es-bar .csh-es-in{justify-content:center;padding:7px 12px;font-size:13px}}'
     + '@media(max-width:900px){'
     /* JEDEN wiersz: małe logo + przyciski Cudzoziemiec/Pracodawca + języki; bez burgera */
     + '.csh-wrap{flex-wrap:nowrap;gap:8px;padding:0 10px;min-height:54px}'
@@ -190,6 +197,28 @@
       + '<button class="csh-burger" type="button" aria-label="Menu">☰</button></div>';
   }
 
+  /* ---- pary stron PL <-> hiszpańska wersja /es/ (JEDNO źródło prawdy) ----
+   * Klucz = ścieżka strony polskiej, wartość = plik w katalogu /es/.
+   * Używane w dwóch miejscach: (a) pasek "Esta página en español" pod nagłówkiem,
+   * (b) i18n.js — kliknięcie ES prowadzi na pełną stronę hiszpańską zamiast
+   * tłumaczyć polską w locie. Dodając nową stronę ES, dopisz ją TUTAJ. */
+  var ES_PAIRS = {
+    '/': 'es/',
+    '/index.html': 'es/',
+    '/artykul-karta-pobytu-czasowego.html': 'es/tarjeta-de-residencia-polonia.html',
+    '/artykul-praca-na-wizie-ruch-bezwizowy.html': 'es/trabajo-legal-polonia-colombianos.html',
+    '/artykul-mos-jak-zlozyc-wniosek.html': 'es/mos-solicitud-en-linea.html',
+    '/kalkulator-90-180.html': 'es/calculadora-90-180.html',
+    '/kontakt.html': 'es/contacto.html'
+  };
+  function esAlt() {
+    var path = location.pathname.replace(/\/+$/, '/') || '/';
+    var hit = ES_PAIRS[path];
+    if (!hit && /\/$/.test(path) === false && ES_PAIRS[path + '/']) hit = ES_PAIRS[path + '/'];
+    return hit ? (location.origin + '/' + hit) : null;
+  }
+  window.COSC_ES_ALT = esAlt;   // odczytywane przez i18n/i18n.js
+
   /* ---- sekcja PRACODAWCY: wyłącznie wersja polska ----
    * Powód (decyzja Dariusza, 08.2026): pracodawcy powierzający pracę w Polsce to
    * podmioty polskie; cudzoziemca nie interesują obowiązki pracodawcy. Dlatego hub
@@ -263,6 +292,21 @@
     host.className = 'csh-header';
     host.setAttribute('data-i18n-skip', ''); // globalny i18n pomija nagłówek — tłumaczymy sami
     host.innerHTML = render();
+
+    /* pasek zapraszający na pełną wersję hiszpańską (tylko strony mające parę w /es/) */
+    var esUrl = esAlt();
+    if (esUrl && !document.getElementById('csh-es-bar')) {
+      var bar = document.createElement('div');
+      bar.id = 'csh-es-bar';
+      bar.className = 'csh-es-bar';
+      bar.setAttribute('data-i18n-skip', '');   // to zdanie ma zostać po hiszpańsku
+      bar.innerHTML = '<div class="csh-es-in">'
+        + '<svg class="csh-es-fl" viewBox="0 0 24 16" aria-hidden="true"><rect width="24" height="16" fill="#c60b1e"/><rect y="4" width="24" height="8" fill="#ffc400"/></svg>'
+        + '<a href="' + esUrl + '" hreflang="es" lang="es">Esta p&aacute;gina en espa&ntilde;ol &rarr;</a></div>';
+      var after = host.nextElementSibling;
+      if (after && after.classList && after.classList.contains('flagbar')) after.insertAdjacentElement('afterend', bar);
+      else host.insertAdjacentElement('afterend', bar);
+    }
 
     host.addEventListener('click', function (e) {
       var btn = e.target.closest ? e.target.closest('.csh-more-btn') : null;

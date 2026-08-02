@@ -3,3 +3,4 @@ Allow: /
 Disallow: /og/
 
 Sitemap: https://cosc.org.pl/sitemap.xml
+Sitemap: https://cosc.org.pl/sitemap-es.xml
