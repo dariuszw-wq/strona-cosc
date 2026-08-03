@@ -1,6 +1,39 @@
 {
-  "updated": "2026-08-02T22:10:00+02:00",
+  "updated": "2026-08-03T08:09:20+02:00",
   "items": [
+    {
+      "id": "2026-08-03-cosc-praca-bez-zezwolenia-cudzoziemiec",
+      "added": "2026-08-03",
+      "category": "Rynek pracy",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-praca-bez-zezwolenia-cudzoziemiec.html",
+      "title": "Kto może pracować w Polsce bez zezwolenia na pracę [materiał własny COSC]",
+      "summary": "Kto pracuje bez zezwolenia na pracę: swobodny dostęp do rynku, szczególne przypadki (rozp. z 20.11.2025), obywatele Ukrainy. Jak sprawdzić status pracownika. Dla pracodawców i cudzoziemców. 2026.",
+      "t": {
+        "en": {
+          "title": "Who can work in Poland without a work permit [COSC original material]",
+          "summary": "Who can work without a work permit: free access to the labour market, special cases (regulation of 20.11.2025), Ukrainian citizens. How to check an employee's status. For employers and foreigners. 2026."
+        },
+        "es": {
+          "title": "Quién puede trabajar en Polonia sin permiso de trabajo [material propio de COSC]",
+          "summary": "Quién trabaja sin permiso de trabajo: acceso libre al mercado laboral, casos especiales (reglamento de 20.11.2025), ciudadanos de Ucrania. Cómo verificar el estatus del trabajador. Para empleadores y extranjeros. 2026."
+        },
+        "uk": {
+          "title": "Хто може працювати в Польщі без дозволу на роботу [власний матеріал COSC]",
+          "summary": "Хто працює без дозволу на роботу: вільний доступ до ринку праці, особливі випадки (розпорядження від 20.11.2025), громадяни України. Як перевірити статус працівника. Для роботодавців та іноземців. 2026."
+        },
+        "ru": {
+          "title": "Кто может работать в Польше без разрешения на работу [собственный материал COSC]",
+          "summary": "Кто работает без разрешения на работу: свободный доступ к рынку труда, особые случаи (распоряжение от 20.11.2025), граждане Украины. Как проверить статус работника. Для работодателей и иностранцев. 2026."
+        },
+        "fr": {
+          "title": "Qui peut travailler en Pologne sans permis de travail [contenu original COSC]",
+          "summary": "Qui travaille sans permis de travail : accès libre au marché du travail, cas particuliers (règlement du 20.11.2025), ressortissants ukrainiens. Comment vérifier le statut d'un salarié. Pour les employeurs et les étrangers. 2026."
+        }
+      }
+    },
     {
       "id": "2026-08-02-pip-decyzja-stosunek-pracy-dzu-473",
       "added": "2026-08-02",
