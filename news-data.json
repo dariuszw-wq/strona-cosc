@@ -1,6 +1,39 @@
 {
-  "updated": "2026-08-04T09:00:00+02:00",
+  "updated": "2026-08-04T18:00:00+02:00",
   "items": [
+    {
+      "id": "2026-08-04-cosc-zwrot-oplaty-skarbowej-pobyt-czasowy",
+      "added": "2026-08-04",
+      "category": "Legislacja",
+      "title": "Zwrot opłaty skarbowej za wniosek o pobyt czasowy — komu i kiedy przysługuje. Nowy poradnik COSC",
+      "summary": "Od 5 marca 2026 r. opłata skarbowa za wniosek pobytowy nie wraca już do cudzoziemca, gdy zapadnie decyzja odmowna albo decyzja umarzająca postępowanie. Wyjątki wprowadziła ustawa wygaszająca z 23 stycznia 2026 r. (Dz. U. poz. 203), a stanowią je nowe art. 77d, 87a, 113c, 120c, 207b i 223a ustawy o cudzoziemcach — wyłączające regułę z art. 9 ust. 1 pkt 2 ustawy o opłacie skarbowej. Decyduje data złożenia wniosku, nie data decyzji: wnioski złożone przed 5 marca 2026 r. rozlicza się po staremu. W poradniku tłumaczymy, jak nowy wyjątek ma się do ogólnej zasady zwrotu, dlaczego wycofanie wniosku przestało być drogą do odzyskania pieniędzy, czym różni się zwrot od nadpłaty, gdzie i w jakim terminie składa się wniosek (organ podatkowy, na którego rachunek wpłynęła opłata; pięć lat od końca roku zapłaty) oraz jak w tym kontekście wygląda pozostawienie wniosku bez rozpoznania.",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-zwrot-oplaty-skarbowej-pobyt-czasowy.html",
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Refund of the stamp duty on a temporary residence application — who is entitled and when. A new COSC guide",
+          "summary": "As of 5 March 2026 the stamp duty (opłata skarbowa) paid on a residence application is no longer refunded to the foreigner where a refusal decision or a decision discontinuing the proceedings is issued. The exceptions were introduced by the phasing-out act of 23 January 2026 (Dz. U. poz. 203) and take the form of new Articles 77d, 87a, 113c, 120c, 207b and 223a of the Act on Foreigners (ustawa o cudzoziemcach), which switch off the rule in Article 9(1)(2) of the Act on Stamp Duty. What matters is the date the application was filed, not the date of the decision: applications filed before 5 March 2026 are settled under the previous rules. The guide explains how the new exception relates to the general refund rule, why withdrawing an application is no longer a way to get the money back, how a refund differs from an overpayment, where and within what time limit to file (the tax authority whose account received the payment; five years from the end of the year of payment), and how leaving an application without examination fits into this picture."
+        },
+        "es": {
+          "title": "Devolución de la tasa administrativa por la solicitud de residencia temporal: a quién le corresponde y cuándo. Nueva guía de COSC",
+          "summary": "Desde el 5 de marzo de 2026, la tasa administrativa (opłata skarbowa) abonada con la solicitud de residencia ya no se devuelve al extranjero cuando se dicta una resolución denegatoria o una resolución que archiva el procedimiento. Las excepciones fueron introducidas por la ley de extinción de 23 de enero de 2026 (Dz. U. poz. 203) y consisten en los nuevos artículos 77d, 87a, 113c, 120c, 207b y 223a de la Ley de Extranjería (ustawa o cudzoziemcach), que desplazan la regla del art. 9 ap. 1 pto 2 de la Ley sobre la tasa administrativa. Lo decisivo es la fecha de presentación de la solicitud, no la de la resolución: las solicitudes presentadas antes del 5 de marzo de 2026 se rigen por las reglas anteriores. La guía explica cómo se relaciona la nueva excepción con la regla general de devolución, por qué retirar la solicitud ha dejado de ser una vía para recuperar el dinero, en qué se diferencia la devolución del ingreso indebido, dónde y en qué plazo se presenta la solicitud (la autoridad tributaria en cuya cuenta se ingresó el pago; cinco años desde el fin del año del pago) y qué ocurre cuando la solicitud se deja sin examinar."
+        },
+        "uk": {
+          "title": "Повернення гербового збору за заяву про тимчасове перебування — кому і коли належить. Новий порадник COSC",
+          "summary": "Від 5 березня 2026 р. гербовий збір (opłata skarbowa), сплачений разом із заявою про перебування, більше не повертається іноземцеві, якщо ухвалено рішення про відмову або рішення про закриття провадження. Винятки запровадив закон про згортання рішень від 23 січня 2026 р. (Dz. U. poz. 203), а їх становлять нові ст. 77d, 87a, 113c, 120c, 207b і 223a закону про іноземців (ustawa o cudzoziemcach), які виключають правило зі ст. 9 ч. 1 п. 2 закону про гербовий збір. Вирішальною є дата подання заяви, а не дата рішення: заяви, подані до 5 березня 2026 р., розглядаються за попередніми правилами. У пораднику пояснюємо, як новий виняток співвідноситься із загальним правилом повернення, чому відкликання заяви перестало бути способом повернути гроші, чим повернення відрізняється від переплати, куди і в який строк подавати заяву (податковий орган, на рахунок якого надійшов платіж; п'ять років від кінця року сплати) та як у цьому контексті виглядає залишення заяви без розгляду."
+        },
+        "ru": {
+          "title": "Возврат гербового сбора за заявление о временном пребывании — кому и когда положен. Новое руководство COSC",
+          "summary": "С 5 марта 2026 г. гербовый сбор (opłata skarbowa), уплаченный вместе с заявлением о пребывании, больше не возвращается иностранцу, если вынесено решение об отказе либо решение о прекращении производства. Исключения ввёл закон о сворачивании решений от 23 января 2026 г. (Dz. U. poz. 203); их составляют новые ст. 77d, 87a, 113c, 120c, 207b и 223a закона об иностранцах (ustawa o cudzoziemcach), исключающие правило ст. 9 ч. 1 п. 2 закона о гербовом сборе. Решающей является дата подачи заявления, а не дата решения: заявления, поданные до 5 марта 2026 г., рассматриваются по прежним правилам. В руководстве объясняем, как новое исключение соотносится с общим правилом возврата, почему отзыв заявления перестал быть способом вернуть деньги, чем возврат отличается от переплаты, куда и в какой срок подавать заявление (налоговый орган, на счёт которого поступил платёж; пять лет с конца года уплаты) и как в этом контексте выглядит оставление заявления без рассмотрения."
+        },
+        "fr": {
+          "title": "Remboursement du droit de timbre pour la demande de séjour temporaire — à qui et quand. Nouveau guide COSC",
+          "summary": "Depuis le 5 mars 2026, le droit de timbre (opłata skarbowa) acquitté avec une demande de séjour n'est plus remboursé à l'étranger lorsqu'une décision de refus ou une décision de non-lieu à statuer est rendue. Ces exceptions ont été introduites par la loi d'extinction du 23 janvier 2026 (Dz. U. poz. 203) et résultent des nouveaux articles 77d, 87a, 113c, 120c, 207b et 223a de la loi sur les étrangers (ustawa o cudzoziemcach), qui écartent la règle de l'art. 9 al. 1 pt 2 de la loi sur le droit de timbre. C'est la date de dépôt de la demande qui compte, et non celle de la décision : les demandes déposées avant le 5 mars 2026 restent soumises aux règles antérieures. Le guide explique comment la nouvelle exception s'articule avec la règle générale de remboursement, pourquoi le retrait de la demande n'est plus un moyen de récupérer son argent, ce qui distingue le remboursement du trop-perçu, où et dans quel délai déposer la demande (l'autorité fiscale sur le compte de laquelle le paiement a été versé ; cinq ans à compter de la fin de l'année du paiement) et ce qu'il en est du classement sans examen."
+        }
+      }
+    },
     {
       "id": "2026-08-04-wsa-gliwice-ii-sab-gl-93-26-bezczynnosc-wojewody",
       "added": "2026-08-04",
