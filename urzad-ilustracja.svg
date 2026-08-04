@@ -1,0 +1,79 @@
+<svg viewBox="0 0 640 470" xmlns="http://www.w3.org/2000/svg" font-family="'IBM Plex Sans',sans-serif">
+<defs>
+<linearGradient id="ubg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7f9fd"/><stop offset="1" stop-color="#e7ecf7"/></linearGradient>
+<linearGradient id="ufacade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fbfcfe"/><stop offset="1" stop-color="#ccd6ea"/></linearGradient>
+<linearGradient id="ucol" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff"/><stop offset="0.5" stop-color="#e6ecf8"/><stop offset="1" stop-color="#b6c3de"/></linearGradient>
+<linearGradient id="uslip" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f2f5fc"/></linearGradient>
+<filter id="usoft" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="9" stdDeviation="12" flood-color="#0b1226" flood-opacity="0.35"/></filter>
+</defs>
+
+<rect width="640" height="470" rx="18" fill="url(#ubg)"/>
+
+<!-- gmach urzedowy: bez nazw, bez godel, bez logotypow -->
+<g filter="url(#usoft)">
+  <!-- podstawa / schody -->
+  <rect x="70" y="384" width="500" height="12" rx="3" fill="#c3cde3"/>
+  <rect x="86" y="370" width="468" height="14" rx="3" fill="#d3dbee"/>
+  <rect x="102" y="356" width="436" height="14" rx="3" fill="#e0e6f5"/>
+
+  <!-- korpus -->
+  <rect x="118" y="176" width="404" height="180" fill="url(#ufacade)"/>
+
+  <!-- kolumnada -->
+  <g fill="url(#ucol)">
+    <rect x="146" y="196" width="26" height="160" rx="4"/>
+    <rect x="203" y="196" width="26" height="160" rx="4"/>
+    <rect x="260" y="196" width="26" height="160" rx="4"/>
+    <rect x="317" y="196" width="26" height="160" rx="4"/>
+    <rect x="374" y="196" width="26" height="160" rx="4"/>
+    <rect x="431" y="196" width="26" height="160" rx="4"/>
+  </g>
+  <g fill="#cbd5ea">
+    <rect x="140" y="190" width="38" height="9" rx="3"/><rect x="197" y="190" width="38" height="9" rx="3"/>
+    <rect x="254" y="190" width="38" height="9" rx="3"/><rect x="311" y="190" width="38" height="9" rx="3"/>
+    <rect x="368" y="190" width="38" height="9" rx="3"/><rect x="425" y="190" width="38" height="9" rx="3"/>
+    <rect x="140" y="349" width="38" height="9" rx="3"/><rect x="197" y="349" width="38" height="9" rx="3"/>
+    <rect x="254" y="349" width="38" height="9" rx="3"/><rect x="311" y="349" width="38" height="9" rx="3"/>
+    <rect x="368" y="349" width="38" height="9" rx="3"/><rect x="425" y="349" width="38" height="9" rx="3"/>
+  </g>
+
+  <!-- wejscie -->
+  <rect x="286" y="262" width="68" height="94" rx="6" fill="#16244c" opacity="0.82"/>
+  <rect x="318" y="262" width="4" height="94" fill="#3b2fbf" opacity="0.5"/>
+
+  <!-- belkowanie + tympanon (pusty, bez napisow i godel) -->
+  <rect x="110" y="160" width="420" height="20" rx="4" fill="#eef2fa"/>
+  <path d="M320 96 L546 162 L94 162 Z" fill="#f4f7fd"/>
+  <path d="M320 96 L546 162 L94 162 Z" fill="none" stroke="#c3cde3" stroke-width="3"/>
+  <path d="M320 118 L500 158 L140 158 Z" fill="#dde5f4"/>
+
+  <!-- maszt z flaga biala-czerwona (bez godla) -->
+  <rect x="556" y="146" width="5" height="226" rx="2.5" fill="#9fadc9"/>
+  <rect x="561" y="152" width="46" height="16" fill="#f5f5f5"/>
+  <rect x="561" y="168" width="46" height="16" fill="#d4213d"/>
+</g>
+
+<!-- dwa dowody wplaty: ta sama sprawa, dwie oplaty -->
+<g filter="url(#usoft)" transform="translate(52 292) rotate(-7) scale(0.86)">
+  <rect width="192" height="126" rx="12" fill="url(#uslip)"/>
+  <rect x="0" y="0" width="192" height="9" rx="4" fill="#4636c9"/>
+  <g fill="#c9d2e6"><rect x="18" y="30" width="120" height="8" rx="4"/><rect x="18" y="48" width="156" height="7" rx="3.5"/><rect x="18" y="64" width="96" height="7" rx="3.5"/></g>
+  <rect x="18" y="86" width="78" height="20" rx="6" fill="#dfe6f3"/>
+  <circle cx="156" cy="96" r="19" fill="#1a9a52"/>
+  <path d="M147 96 l6 7 l13 -15" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+
+<g filter="url(#usoft)" transform="translate(414 300) rotate(6) scale(0.86)">
+  <rect width="192" height="126" rx="12" fill="url(#uslip)"/>
+  <rect x="0" y="0" width="192" height="9" rx="4" fill="#d4213d"/>
+  <g fill="#c9d2e6"><rect x="18" y="30" width="120" height="8" rx="4"/><rect x="18" y="48" width="156" height="7" rx="3.5"/><rect x="18" y="64" width="96" height="7" rx="3.5"/></g>
+  <rect x="18" y="86" width="78" height="20" rx="6" fill="#f6dfe4"/>
+  <circle cx="156" cy="96" r="19" fill="#d4213d"/>
+  <rect x="153.5" y="86" width="5" height="13" rx="2.5" fill="#fff"/>
+  <circle cx="156" cy="104.5" r="2.8" fill="#fff"/>
+</g>
+
+<!-- strzalka miedzy dowodami: przeniesienie sprawy -->
+<path d="M246 356 C300 336 348 336 400 356" fill="none" stroke="#4636c9" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="9 9" opacity="0.85"/>
+<path d="M392 347 l11 9 l-11 9" fill="none" stroke="#4636c9" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+</svg>
