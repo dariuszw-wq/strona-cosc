@@ -23,3 +23,8 @@ Stan filled/count po partii:
 - ru: 2877 / 3133
 - fr: 2877 / 3133
 Pozostało do przetłumaczenia: 256 kluczy/język (głównie artykuły podatkowo-kadrowe: rynek pracy, składki, PIT, orzecznictwo SN, równowaga płci).
+
+## 2026-08-05 — partia FINALNA (255 kluczy × 5 języków)
+Przetłumaczono ostatnie 255 niewypełnionych kluczy (klucz „©" pozostawiony po polsku zgodnie z zasadą marki). Treści: artykuły podatkowo-kadrowe (delegowanie UE, składka zdrowotna 9%, ulgi PIT-0, umowy o zabezpieczeniu społecznym, ZUS Ukraina), orzecznictwo SN III PK 11/16 (dwa artykuły) oraz hub „Jestem pracodawcą". Weryfikacja: 0 rozbieżności tagów HTML, wszystkie JSON-y poprawne.
+Stan filled/count: en 3132/3133 · es 3132/3133 · uk 3132/3133 · ru 3132/3133 · fr 3132/3133 (pozostały klucz = marka „©", celowo po polsku).
+STATUS: TŁUMACZENIA KOMPLETNE.
