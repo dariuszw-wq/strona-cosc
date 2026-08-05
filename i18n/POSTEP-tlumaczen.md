@@ -13,3 +13,13 @@
 - 2026-08-04 (automat, partia 6): 194 klucze — priorytet (d) dokumenty prawne: regulamin.html (76) i polityka-prywatnosci.html (72), oraz artykul-checklista-dokumentow-kontrola i artykul-przedluzenie-zezwolenia-na-prace — przetlumaczone na en/es/uk/ru/fr. FR byl wyrownany z EN (brak zaleglosci). Walidacja struktury HTML 1:1 OK, JSON OK. Stan: en 2284/3133, es 2284/3133, uk 2284/3133, ru 2284/3133, fr 2284/3133 (brak 849 na jezyk). Pozostaly glownie artykuly podatkowo-kadrowe i pracodawcy/ (priorytet e).
 - 2026-08-04 (automat, partia 7): 201 kluczy — domkniecie priorytetu (a)-(d) (wspolne noty prawne artykulow, banery wideo na stronie glownej, stopka kalkulatora 90/180, formularz kontaktowy, nota projektowa polityki prywatnosci) oraz 4 artykuly o legalnej pracy cudzoziemca: rodzaje-zezwolen-na-prace-2026, oswiadczenie-o-powierzeniu-pracy-2026, kiedy-nowe-zezwolenie-na-prace, zatrudnienie-obywatela-ukrainy-2026, nowa-ustawa-powierzanie-pracy-2025, elektronizacja-zezwolen-praca-gov-pl. Przetlumaczone na en/es/uk/ru/fr. FR byl wyrownany z EN (brak zaleglosci). 1 klucz pominiety zgodnie z regula (zaczyna sie od "©" - marka zostaje po polsku). Walidacja struktury HTML 1:1 OK, JSON OK. Stan: en 2485/3133, es 2485/3133, uk 2485/3133, ru 2485/3133, fr 2485/3133 (brak 648 na jezyk). Pozostaly glownie artykuly podatkowo-kadrowe i pracodawcy/ (priorytet e).
 - 2026-08-04 (automat, partia 8): 192 klucze — priorytet (e), blok podatkowo-skladkowy dla cudzoziemcow: artykul-czy-cudzoziemiec-podlega-zus, artykul-delegowanie-a1-skladki, artykul-nieograniczony-ograniczony-obowiazek-podatkowy, artykul-rezydencja-podatkowa-cudzoziemca, artykul-rozliczenie-pit-cudzoziemca-kadry, artykul-ulga-na-powrot-cudzoziemiec, artykul-unikanie-podwojnego-opodatkowania-upo. Przetlumaczone na en/es/uk/ru/fr. FR byl wyrownany z EN (brak zaleglosci). Walidacja struktury HTML 1:1 OK, JSON OK. Stan: en 2677/3133, es 2677/3133, uk 2677/3133, ru 2677/3133, fr 2677/3133 (brak 456 na jezyk). Pozostaly glownie pracodawcy/ oraz artykuly o nielegalnym zatrudnieniu, kontrolach PIP/SG i orzecznictwie SN.
+
+## 2026-08-05 — partia +200 (auto)
+Przetłumaczono 200 kluczy × 5 języków (en, es, uk, ru, fr). Priorytet: artykuły o kontroli PIP/SG, kurierach Pyszne.pl (art. 22 KP), nielegalnym zatrudnieniu (wyrok SN I PKN 558/99, kary do 50 000 zł, odpowiedzialność karna, obowiązek przekazania umowy) oraz delegowaniu z UE (A1). FR pozostaje wyrównany z EN.
+Stan filled/count po partii:
+- en: 2877 / 3133
+- es: 2877 / 3133
+- uk: 2877 / 3133
+- ru: 2877 / 3133
+- fr: 2877 / 3133
+Pozostało do przetłumaczenia: 256 kluczy/język (głównie artykuły podatkowo-kadrowe: rynek pracy, składki, PIT, orzecznictwo SN, równowaga płci).
