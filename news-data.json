@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-05T09:05:11+02:00",
+  "updated": "2026-08-05T23:55:00+02:00",
   "items": [
     {
       "id": "2026-08-05-cosc-nielegalne-zatrudnienie-kary",
@@ -233,6 +233,17 @@
       }
     },
     {
+      "id": "2026-08-04-cosc-wyrok-sn-dyskryminacja-obywatelstwo",
+      "added": "2026-08-04",
+      "category": "Orzecznictwo",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-wyrok-sn-dyskryminacja-obywatelstwo.html",
+      "title": "Gorsza umowa, bo cudzoziemiec? To dyskryminacja – wyrok SN",
+      "summary": "Obywatelstwo nie może uzasadniać gorszej umowy o pracę. Sąd Najwyższy (III PK 11/16) uznał to za dyskryminację. Przepisy k.p. o równym traktowaniu chronią też…"
+    },
+    {
       "id": "2026-08-03-odmowy-wjazdu-i-polrocze-2026",
       "added": "2026-08-03",
       "category": "Bezpieczeństwo",
@@ -462,6 +473,28 @@
           "summary": "Qui travaille sans permis de travail : accès libre au marché du travail, cas particuliers (règlement du 20.11.2025), ressortissants ukrainiens. Comment vérifier le statut d'un salarié. Pour les employeurs et les étrangers. 2026."
         }
       }
+    },
+    {
+      "id": "2026-08-03-cosc-elektronizacja-zezwolen-praca-gov-pl",
+      "added": "2026-08-03",
+      "category": "Rynek pracy",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-elektronizacja-zezwolen-praca-gov-pl.html",
+      "title": "Elektronizacja zezwoleń i oświadczeń na praca.gov.pl (2026)",
+      "summary": "Od 2025 r. oświadczenia i wnioski o zezwolenie na pracę składa się wyłącznie elektronicznie przez praca.gov.pl. Konto organizacji, podpis, obowiązki online.…"
+    },
+    {
+      "id": "2026-08-03-cosc-mobilnosc-krotkoterminowa-niebieska-karta-ict",
+      "added": "2026-08-03",
+      "category": "Rynek pracy",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-mobilnosc-krotkoterminowa-niebieska-karta-ict.html",
+      "title": "Mobilność krótkoterminowa — Niebieska Karta UE, ICT, naukowiec (2026)",
+      "summary": "Mobilność krótkoterminowa cudzoziemca: Niebieska Karta UE, przeniesienie wewnątrz przedsiębiorstwa (ICT), naukowiec, student. Warunki, zawiadomienia i ryzyko.…"
     },
     {
       "id": "2026-08-02-pip-decyzja-stosunek-pracy-dzu-473",
@@ -695,6 +728,17 @@
       }
     },
     {
+      "id": "2026-08-02-cosc-nielegalne-zatrudnienie-a-podatek",
+      "added": "2026-08-02",
+      "category": "Podatki",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-nielegalne-zatrudnienie-a-podatek.html",
+      "title": "Nielegalne zatrudnienie a podatek — skutki dla pracownika i pracodawcy",
+      "summary": "Kto płaci PIT przy nielegalnym zatrudnieniu cudzoziemca? Zwolnienie przychodu pracownika (art. 21 ust. 1 pkt 151 PIT) i przeniesienie skutków na pracodawcę.…"
+    },
+    {
       "id": "2026-08-01-udsc-termin-wymiany-dokumentow-ue-3-sierpnia",
       "added": "2026-08-01",
       "category": "Urzędy",
@@ -726,6 +770,28 @@
           "summary": "L'Office des étrangers rappelle que le 3 août 2026 expire la validité des derniers documents délivrés aux citoyens de l'Union européenne et aux membres de leur famille selon les modèles en vigueur avant le 2 août 2021. Ces documents restaient valables en vertu des dispositions transitoires de la loi du 10 décembre 2020 (Dz.U. 2020, poz. 2369). Toute personne utilisant encore une ancienne attestation d'enregistrement de séjour, un document confirmant le droit de séjour permanent ou une carte de séjour / carte de séjour permanent de membre de la famille d'un citoyen de l'UE doit demander sans délai un nouveau document au voïvode compétent."
         }
       }
+    },
+    {
+      "id": "2026-08-01-cosc-nieograniczony-ograniczony-obowiazek-podatkowy",
+      "added": "2026-08-01",
+      "category": "Podatki",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-nieograniczony-ograniczony-obowiazek-podatkowy.html",
+      "title": "Jak opodatkowany jest cudzoziemiec w Polsce — obowiązek podatkowy",
+      "summary": "Nieograniczony a ograniczony obowiązek podatkowy cudzoziemca: od czego płacisz PIT w Polsce, co znaczy dochód osiągany w Polsce, podatek u źródła. Podstawa…"
+    },
+    {
+      "id": "2026-08-01-cosc-unikanie-podwojnego-opodatkowania-upo",
+      "added": "2026-08-01",
+      "category": "Podatki",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-unikanie-podwojnego-opodatkowania-upo.html",
+      "title": "Unikanie podwójnego opodatkowania — UPO, certyfikat rezydencji (2026)",
+      "summary": "Jak uniknąć podwójnego opodatkowania dochodu z pracy: metody (wyłączenie z progresją, odliczenie proporcjonalne), ulga abolicyjna, certyfikat rezydencji…"
     },
     {
       "id": "2026-07-31-statystyki-sg-i-polrocze-2026",
@@ -858,6 +924,28 @@
           "summary": "Faut-il payer le ZUS pour un étranger ? La règle de territorialité, l'enregistrement ZUS ZUA/ZZA, les exceptions (détachement A1, accords internationaux). Base : article 6 de la loi sur le système d'assurance sociale. 2026."
         }
       }
+    },
+    {
+      "id": "2026-07-31-cosc-umowy-miedzynarodowe-zabezpieczenie-spoleczne",
+      "added": "2026-07-31",
+      "category": "ZUS i składki",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-umowy-miedzynarodowe-zabezpieczenie-spoleczne.html",
+      "title": "Umowy o zabezpieczeniu społecznym z krajami spoza UE (2026)",
+      "summary": "Dwustronne umowy o zabezpieczeniu społecznym: gdzie płaci składki cudzoziemiec spoza UE, zaświadczenie zamiast A1, sumowanie okresów. Jak sprawdzić, czy jest…"
+    },
+    {
+      "id": "2026-07-31-cosc-rozliczenie-pit-cudzoziemca-kadry",
+      "added": "2026-07-31",
+      "category": "Podatki",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-rozliczenie-pit-cudzoziemca-kadry.html",
+      "title": "Rozliczenie PIT cudzoziemca — PIT-11, PIT-37, terminy (dla kadr)",
+      "summary": "Jak rozliczyć PIT pracownika cudzoziemca: obowiązki płatnika, PIT-11, PIT-37/PIT-36, IFT-1, terminy i rola rezydencji podatkowej. Praktyczny przewodnik…"
     },
     {
       "id": "2026-07-30-sg-bezpieczne-podlasie-zmiana",
@@ -1058,6 +1146,28 @@
       }
     },
     {
+      "id": "2026-07-30-cosc-delegowanie-a1-skladki",
+      "added": "2026-07-30",
+      "category": "ZUS i składki",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-delegowanie-a1-skladki.html",
+      "title": "Delegowanie i formularz A1 — składki cudzoziemca w UE (2026)",
+      "summary": "Formularz A1 i delegowanie: gdzie płaci się składki przy pracy w UE, zasada jednego ustawodawstwa (rozp. 883/2004), delegowanie do 24 miesięcy, ryzyko braku…"
+    },
+    {
+      "id": "2026-07-30-cosc-pracownik-delegowany-z-ue-skladki-polska",
+      "added": "2026-07-30",
+      "category": "ZUS i składki",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-pracownik-delegowany-z-ue-skladki-polska.html",
+      "title": "Pracownik delegowany z UE do Polski — składki i A1 (2026)",
+      "summary": "Delegowanie z UE do Polski: gdzie płaci się składki, rola A1, ubezpieczenie zdrowotne (EKUZ), obowiązki firm i ryzyko braku A1. Przewodnik dla kadr…"
+    },
+    {
       "id": "2026-07-29-cosc-kurierzy-zlecenie-stosunek-pracy-pip",
       "added": "2026-07-29",
       "category": "Rynek pracy",
@@ -1155,6 +1265,28 @@
           "summary": "Les agents des gardes-frontières du poste de Katowice-Pyrzowice ont pris des décisions de refus d'entrée en Pologne à l'encontre de deux ressortissants géorgiens. Lors des mêmes contrôles, un citoyen polonais de 52 ans recherché pour purger une peine de prison pour une infraction liée aux stupéfiants a été interpellé. Un exemple de contrôle frontalier à l'aéroport et des motifs de refus d'entrée aux étrangers."
         }
       }
+    },
+    {
+      "id": "2026-07-29-cosc-zus-obywatel-ukrainy-polska-ukraina",
+      "added": "2026-07-29",
+      "category": "ZUS i składki",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-zus-obywatel-ukrainy-polska-ukraina.html",
+      "title": "Składki ZUS obywatela Ukrainy — umowa Polska–Ukraina (2026)",
+      "summary": "ZUS za obywatela Ukrainy: umowa o zabezpieczeniu społecznym (Dz.U. 2013 poz. 1373), gdzie płaci się składki, sumowanie okresów, delegowanie. Praktyczny…"
+    },
+    {
+      "id": "2026-07-29-cosc-skladka-zdrowotna-cudzoziemca-nfz",
+      "added": "2026-07-29",
+      "category": "ZUS i składki",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-skladka-zdrowotna-cudzoziemca-nfz.html",
+      "title": "Składka zdrowotna cudzoziemca — 9%, NFZ, ZUS ZUA/ZZA (2026)",
+      "summary": "Ubezpieczenie zdrowotne cudzoziemca: obowiązek niezależny od obywatelstwa (art. 66 ustawy zdrowotnej), składka 9%, zgłoszenie ZUS ZUA/ZZA, dostęp do NFZ…"
     },
     {
       "id": "2026-07-28-cosc-sn-i-pkn-558-99-nielegalne-zatrudnienie-cudzoziemca",
@@ -1320,6 +1452,17 @@
           "summary": "Les gardes-frontières de Cracovie ont contrôlé la légalité du séjour d'un ressortissant ukrainien de 42 ans qui n'avait aucun document d'identité sur lui — ses données ont été établies à partir de sa déclaration et vérifiées dans les bases de données. À l'issue de la procédure, une décision de retour a été prise. Un rappel de l'obligation de détenir des documents valides et une base légale de séjour."
         }
       }
+    },
+    {
+      "id": "2026-07-28-cosc-zatrudnienie-obywatela-ukrainy-2026",
+      "added": "2026-07-28",
+      "category": "Rynek pracy",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-zatrudnienie-obywatela-ukrainy-2026.html",
+      "title": "Zatrudnienie obywatela Ukrainy 2026 — tryb i powiadomienie",
+      "summary": "Jak legalnie zatrudnić obywatela Ukrainy w 2026 r.: uproszczony tryb i powiadomienie o powierzeniu pracy, związek z pobytem (status UKR). Przepisy zmienne…"
     },
     {
       "id": "2026-07-27-udsc-pesel-ukr-dokument-podrozy",
