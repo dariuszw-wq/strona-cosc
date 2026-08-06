@@ -1,6 +1,105 @@
 {
-  "updated": "2026-08-05T23:55:00+02:00",
+  "updated": "2026-08-06T09:00:00+02:00",
   "items": [
+    {
+      "id": "2026-08-05-sg-hermanowice-uzbek-falszywe-dokumenty-studenckie",
+      "added": "2026-08-05",
+      "category": "Bezpieczeństwo",
+      "title": "Hermanowice: obywatel Uzbekistanu z fałszywymi dokumentami studenckimi opuści Polskę",
+      "summary": "Funkcjonariusze Placówki Straży Granicznej w Hermanowicach zatrzymali 21-letniego obywatela Uzbekistanu, który — chcąc zalegalizować pobyt w Polsce — posłużył się nieprawdziwym zaświadczeniem o przyjęciu na uczelnię oraz sfałszowaną legitymacją studencką. Dokumenty okazały się nieautentyczne. Posłużenie się fałszywymi dokumentami w celu legalizacji pobytu prowadzi do zobowiązania do powrotu, a często także do zakazu ponownego wjazdu. Szczegóły i podstawy prawne należy zweryfikować w komunikacie źródłowym.",
+      "source_name": "Straż Graniczna",
+      "author": "",
+      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16057,Obywatel-Uzbekistanu-opusci-Polske.html",
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Hermanowice: Uzbek citizen with forged student documents to leave Poland",
+          "summary": "Officers of the Border Guard post in Hermanowice detained a 21-year-old Uzbek citizen who, seeking to legalise his stay in Poland, used a false certificate of admission to a university and a forged student ID card. The documents proved to be inauthentic. Using forged documents to legalise a stay leads to a return obligation and often also to a ban on re-entry. The details and legal basis should be verified in the source announcement."
+        },
+        "es": {
+          "title": "Hermanowice: ciudadano uzbeko con documentos de estudiante falsificados abandonará Polonia",
+          "summary": "Agentes del puesto de la Guardia de Fronteras en Hermanowice detuvieron a un ciudadano uzbeko de 21 años que, para legalizar su estancia en Polonia, utilizó un certificado falso de admisión a una universidad y un carné de estudiante falsificado. Los documentos resultaron no ser auténticos. El uso de documentos falsificados para legalizar la estancia conlleva la obligación de retorno y, a menudo, también la prohibición de reingreso. Los detalles y la base jurídica deben verificarse en el comunicado original."
+        },
+        "uk": {
+          "title": "Германовіце: громадянин Узбекистану з підробленими студентськими документами залишить Польщу",
+          "summary": "Прикордонники відділу Прикордонної служби в Германовіце затримали 21-річного громадянина Узбекистану, який, прагнучи легалізувати перебування в Польщі, скористався неправдивою довідкою про зарахування до вишу та підробленим студентським квитком. Документи виявилися несправжніми. Використання підроблених документів для легалізації перебування призводить до зобов'язання повернення, а часто й до заборони повторного в'їзду. Деталі та правові підстави слід перевірити у першоджерелі."
+        },
+        "ru": {
+          "title": "Германовице: гражданин Узбекистана с поддельными студенческими документами покинет Польшу",
+          "summary": "Сотрудники отдела Пограничной службы в Германовице задержали 21-летнего гражданина Узбекистана, который, стремясь легализовать пребывание в Польше, воспользовался ложной справкой о зачислении в вуз и поддельным студенческим билетом. Документы оказались неподлинными. Использование поддельных документов для легализации пребывания влечёт обязанность возвращения, а нередко и запрет на повторный въезд. Детали и правовые основания следует проверить в первоисточнике."
+        },
+        "fr": {
+          "title": "Hermanowice : un citoyen ouzbek muni de faux documents d'étudiant va quitter la Pologne",
+          "summary": "Les agents du poste de la Garde-frontière à Hermanowice ont interpellé un citoyen ouzbek de 21 ans qui, cherchant à régulariser son séjour en Pologne, a utilisé une fausse attestation d'admission dans une université et une carte d'étudiant falsifiée. Les documents se sont révélés non authentiques. L'usage de faux documents pour régulariser un séjour entraîne une obligation de retour et souvent aussi une interdiction de nouvelle entrée. Les détails et la base juridique doivent être vérifiés dans le communiqué source."
+        }
+      }
+    },
+    {
+      "id": "2026-08-05-sg-karpacki-dwoch-ukraincow-przymusowe-doprowadzenie",
+      "added": "2026-08-05",
+      "category": "Bezpieczeństwo",
+      "title": "Karpacki Oddział SG: przymusowe doprowadzenie do granicy dwóch obywateli Ukrainy",
+      "summary": "Funkcjonariusze Karpackiego Oddziału Straży Granicznej przeprowadzili przymusowe doprowadzenia do granicy państwowej wobec dwóch obywateli Ukrainy, którzy — jak podaje SG — swoim zachowaniem stanowili zagrożenie dla bezpieczeństwa i porządku publicznego. Przymusowe doprowadzenie do granicy jest formą wykonania decyzji o zobowiązaniu cudzoziemca do powrotu. Podstawy prawne konkretnych decyzji oraz ewentualne zakazy wjazdu należy zweryfikować w komunikacie źródłowym.",
+      "source_name": "Straż Graniczna",
+      "author": "",
+      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16059,Cudzoziemcy-przymusowo-doprowadzeni-do-granicy-panstwa.html",
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Carpathian Border Guard Unit: forced escort to the border of two Ukrainian citizens",
+          "summary": "Officers of the Carpathian Border Guard Unit carried out forced escorts to the state border of two Ukrainian citizens who, according to the Border Guard, posed a threat to security and public order through their behaviour. A forced escort to the border is a form of enforcing a decision obliging a foreigner to return. The legal basis of the specific decisions and any entry bans should be verified in the source announcement."
+        },
+        "es": {
+          "title": "Unidad Cárpata de la Guardia de Fronteras: conducción forzosa a la frontera de dos ciudadanos ucranianos",
+          "summary": "Agentes de la Unidad Cárpata de la Guardia de Fronteras llevaron a cabo conducciones forzosas a la frontera estatal de dos ciudadanos ucranianos que, según la Guardia de Fronteras, suponían por su comportamiento una amenaza para la seguridad y el orden público. La conducción forzosa a la frontera es una forma de ejecutar la decisión que obliga al extranjero a retornar. La base jurídica de las decisiones concretas y las posibles prohibiciones de entrada deben verificarse en el comunicado original."
+        },
+        "uk": {
+          "title": "Карпатський загін Прикордонної служби: примусове доставлення до кордону двох громадян України",
+          "summary": "Прикордонники Карпатського загону Прикордонної служби здійснили примусові доставлення до державного кордону двох громадян України, які, за даними служби, своєю поведінкою становили загрозу для безпеки та громадського порядку. Примусове доставлення до кордону є формою виконання рішення про зобов'язання іноземця до повернення. Правові підстави конкретних рішень та можливі заборони в'їзду слід перевірити у першоджерелі."
+        },
+        "ru": {
+          "title": "Карпатский отряд Пограничной службы: принудительное доставление к границе двух граждан Украины",
+          "summary": "Сотрудники Карпатского отряда Пограничной службы осуществили принудительное доставление к государственной границе двух граждан Украины, которые, по данным службы, своим поведением создавали угрозу безопасности и общественному порядку. Принудительное доставление к границе является формой исполнения решения об обязании иностранца к возвращению. Правовые основания конкретных решений и возможные запреты на въезд следует проверить в первоисточнике."
+        },
+        "fr": {
+          "title": "Unité des Carpates de la Garde-frontière : reconduite forcée à la frontière de deux citoyens ukrainiens",
+          "summary": "Les agents de l'Unité des Carpates de la Garde-frontière ont procédé à la reconduite forcée à la frontière de l'État de deux citoyens ukrainiens qui, selon la Garde-frontière, représentaient par leur comportement une menace pour la sécurité et l'ordre public. La reconduite forcée à la frontière est une forme d'exécution de la décision obligeant l'étranger à retourner. La base juridique des décisions concrètes et d'éventuelles interdictions d'entrée doivent être vérifiées dans le communiqué source."
+        }
+      }
+    },
+    {
+      "id": "2026-08-05-sg-opole-ukrainiec-deportacja-jazda-po-alkoholu",
+      "added": "2026-08-05",
+      "category": "Bezpieczeństwo",
+      "title": "Opole: obywatel Ukrainy deportowany po jeździe pod wpływem alkoholu",
+      "summary": "Funkcjonariusze Placówki Straży Granicznej w Opolu zatrzymali 48-letniego obywatela Ukrainy, który kierował samochodem osobowym pod wpływem alkoholu. Mężczyzna został deportowany z Polski. Sprawa pokazuje, że popełnienie przestępstwa lub wykroczenia drogowego może skutkować dla cudzoziemca zobowiązaniem do powrotu i utratą prawa pobytu. Szczegóły podstawy prawnej i ewentualnego zakazu wjazdu należy zweryfikować w komunikacie źródłowym.",
+      "source_name": "Straż Graniczna",
+      "author": "",
+      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16060,Obywatel-Ukrainy-zostal-deportowany.html",
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Opole: Ukrainian citizen deported after driving under the influence of alcohol",
+          "summary": "Officers of the Border Guard post in Opole detained a 48-year-old Ukrainian citizen who was driving a car under the influence of alcohol. The man was deported from Poland. The case shows that committing a crime or a traffic offence may result in a return obligation and loss of the right of residence for a foreigner. The legal basis and any entry ban should be verified in the source announcement."
+        },
+        "es": {
+          "title": "Opole: ciudadano ucraniano deportado tras conducir bajo los efectos del alcohol",
+          "summary": "Agentes del puesto de la Guardia de Fronteras en Opole detuvieron a un ciudadano ucraniano de 48 años que conducía un turismo bajo los efectos del alcohol. El hombre fue deportado de Polonia. El caso muestra que cometer un delito o una infracción de tráfico puede acarrear para un extranjero la obligación de retorno y la pérdida del derecho de residencia. La base jurídica y una posible prohibición de entrada deben verificarse en el comunicado original."
+        },
+        "uk": {
+          "title": "Ополе: громадянина України депортовано після керування у стані сп'яніння",
+          "summary": "Прикордонники відділу Прикордонної служби в Ополе затримали 48-річного громадянина України, який керував легковим автомобілем у стані алкогольного сп'яніння. Чоловіка депортовано з Польщі. Випадок показує, що вчинення злочину або дорожнього правопорушення може призвести для іноземця до зобов'язання повернення та втрати права перебування. Правову підставу та можливу заборону в'їзду слід перевірити у першоджерелі."
+        },
+        "ru": {
+          "title": "Ополе: гражданин Украины депортирован после вождения в состоянии опьянения",
+          "summary": "Сотрудники отдела Пограничной службы в Ополе задержали 48-летнего гражданина Украины, управлявшего автомобилем в состоянии алкогольного опьянения. Мужчина депортирован из Польши. Случай показывает, что совершение преступления или дорожного правонарушения может повлечь для иностранца обязанность возвращения и утрату права пребывания. Правовое основание и возможный запрет на въезд следует проверить в первоисточнике."
+        },
+        "fr": {
+          "title": "Opole : un citoyen ukrainien expulsé après avoir conduit sous l'emprise de l'alcool",
+          "summary": "Les agents du poste de la Garde-frontière à Opole ont interpellé un citoyen ukrainien de 48 ans qui conduisait une voiture sous l'emprise de l'alcool. L'homme a été expulsé de Pologne. L'affaire montre que la commission d'une infraction pénale ou routière peut entraîner pour un étranger une obligation de retour et la perte du droit de séjour. La base juridique et une éventuelle interdiction d'entrée doivent être vérifiées dans le communiqué source."
+        }
+      }
+    },
     {
       "id": "2026-08-05-cosc-nielegalne-zatrudnienie-kary",
       "added": "2026-08-05",
