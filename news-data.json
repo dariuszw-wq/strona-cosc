@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-07T09:00:00+02:00",
+  "updated": "2026-08-08T09:05:48+02:00",
   "items": [
     {
       "id": "2026-08-07-cosc-zmiana-pracodawcy-karta-pobytu",
@@ -2858,6 +2858,72 @@
         "fr": {
           "title": "Basse-Silésie : décisions de retour et interdictions d’entrée pour des ressortissants de Colombie et d’Ukraine",
           "summary": "Les agents de l’unité de garde-frontières de Nadodrze ont interpellé en Basse-Silésie deux étrangers — un ressortissant colombien et un ressortissant ukrainien — dont le comportement menaçait la sécurité et l’ordre publics. Des décisions de retour assorties d’interdictions de retour ont été prises à l’encontre des deux. L’affaire rappelle que le trouble à l’ordre public peut, à lui seul, fonder une décision de retour, indépendamment de la légalité formelle du séjour."
+        }
+      }
+    },
+    {
+      "id": "2026-08-05-sg-opole-obywatel-ukrainy-deportacja-alkohol",
+      "added": "2026-08-05",
+      "category": "Bezpieczeństwo",
+      "title": "Straż Graniczna: obywatel Ukrainy deportowany po jeździe pod wpływem alkoholu (Opole)",
+      "summary": "Funkcjonariusze Placówki Straży Granicznej w Opolu zatrzymali 48-letniego obywatela Ukrainy, który kierował samochodem osobowym, znajdując się pod wpływem alkoholu. Wobec cudzoziemca zastosowano przymusowy powrót (deportację). Sprawa przypomina, że popełnienie przestępstwa lub wykroczenia przez cudzoziemca może prowadzić do wydania decyzji o zobowiązaniu do powrotu oraz orzeczenia zakazu ponownego wjazdu. Szczegóły w komunikacie Straży Granicznej.",
+      "source_name": "Straż Graniczna",
+      "author": "",
+      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16060,Obywatel-Ukrainy-zostal-deportowany.html",
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Border Guard: Ukrainian citizen deported after drink-driving (Opole)",
+          "summary": "Officers of the Border Guard post in Opole detained a 48-year-old Ukrainian citizen who was driving a car under the influence of alcohol. The foreigner was subject to a forced return (deportation). The case is a reminder that committing a crime or offence by a foreigner may lead to a return decision and a re-entry ban. Details in the Border Guard statement."
+        },
+        "es": {
+          "title": "Guardia de Fronteras: ciudadano ucraniano deportado por conducir ebrio (Opole)",
+          "summary": "Agentes del puesto de la Guardia de Fronteras en Opole detuvieron a un ciudadano ucraniano de 48 años que conducía un automóvil bajo los efectos del alcohol. Al extranjero se le aplicó un retorno forzoso (deportación). El caso recuerda que la comisión de un delito o una infracción por parte de un extranjero puede conllevar una decisión de retorno y una prohibición de reentrada. Detalles en el comunicado de la Guardia de Fronteras."
+        },
+        "uk": {
+          "title": "Прикордонна служба: громадянина України депортовано за керування у стані сп'яніння (Ополе)",
+          "summary": "Співробітники відділу Прикордонної служби в Ополе затримали 48-річного громадянина України, який керував автомобілем у стані алкогольного сп'яніння. До іноземця застосовано примусове повернення (депортацію). Справа нагадує, що вчинення злочину чи правопорушення іноземцем може призвести до рішення про зобов'язання повернутися та заборони повторного в'їзду. Деталі — у повідомленні Прикордонної служби."
+        },
+        "ru": {
+          "title": "Пограничная служба: гражданин Украины депортирован за вождение в нетрезвом виде (Ополе)",
+          "summary": "Сотрудники отделения Пограничной службы в Ополе задержали 48-летнего гражданина Украины, который управлял автомобилем в состоянии алкогольного опьянения. К иностранцу применено принудительное возвращение (депортация). Случай напоминает, что совершение иностранцем преступления или правонарушения может привести к решению об обязании покинуть страну и запрету на повторный въезд. Подробности — в сообщении Пограничной службы."
+        },
+        "fr": {
+          "title": "Garde-frontières : un citoyen ukrainien expulsé après une conduite en état d'ivresse (Opole)",
+          "summary": "Les agents du poste des garde-frontières à Opole ont interpellé un citoyen ukrainien de 48 ans qui conduisait une voiture en état d'ivresse. L'étranger a fait l'objet d'un retour forcé (expulsion). L'affaire rappelle que la commission d'un délit ou d'une infraction par un étranger peut entraîner une décision de retour et une interdiction de retour sur le territoire. Détails dans le communiqué des garde-frontières."
+        }
+      }
+    },
+    {
+      "id": "2026-08-05-sg-karpacki-dwoch-ukraincow-doprowadzenie-do-granicy",
+      "added": "2026-08-05",
+      "category": "Bezpieczeństwo",
+      "title": "Straż Graniczna: dwóch obywateli Ukrainy przymusowo doprowadzonych do granicy (Karpacki OSG)",
+      "summary": "Karpacki Oddział Straży Granicznej przeprowadził kolejne przymusowe doprowadzenia do granicy państwowej wobec dwóch obywateli Ukrainy, którzy — jak podano — swoim zachowaniem stanowili zagrożenie dla bezpieczeństwa i porządku publicznego. To kolejny przykład egzekwowania decyzji zobowiązujących cudzoziemców do powrotu. Podstawy i przebieg procedury opisano w komunikacie Straży Granicznej.",
+      "source_name": "Straż Graniczna",
+      "author": "",
+      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16059,Cudzoziemcy-przymusowo-doprowadzeni-do-granicy-panstwa.html",
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Border Guard: two Ukrainian citizens forcibly escorted to the border (Carpathian Unit)",
+          "summary": "The Carpathian Unit of the Border Guard carried out further forced escorts to the state border for two Ukrainian citizens who, as reported, posed a threat to security and public order by their conduct. This is another example of enforcing decisions obliging foreigners to return. The grounds and course of the procedure are described in the Border Guard statement."
+        },
+        "es": {
+          "title": "Guardia de Fronteras: dos ciudadanos ucranianos conducidos por la fuerza a la frontera (Unidad de los Cárpatos)",
+          "summary": "La Unidad de los Cárpatos de la Guardia de Fronteras llevó a cabo nuevos traslados forzosos a la frontera estatal de dos ciudadanos ucranianos que, según se informó, suponían una amenaza para la seguridad y el orden público por su conducta. Es otro ejemplo de ejecución de decisiones que obligan a los extranjeros a regresar. Los fundamentos y el curso del procedimiento se describen en el comunicado de la Guardia de Fronteras."
+        },
+        "uk": {
+          "title": "Прикордонна служба: двох громадян України примусово доставлено до кордону (Карпатський відділ)",
+          "summary": "Карпатський відділ Прикордонної служби здійснив чергові примусові доставлення до державного кордону щодо двох громадян України, які, як повідомляється, своєю поведінкою становили загрозу для безпеки та громадського порядку. Це черговий приклад виконання рішень, що зобов'язують іноземців повернутися. Підстави та перебіг процедури описано в повідомленні Прикордонної служби."
+        },
+        "ru": {
+          "title": "Пограничная служба: двух граждан Украины принудительно доставили к границе (Карпатский отдел)",
+          "summary": "Карпатский отдел Пограничной службы осуществил очередные принудительные доставления к государственной границе в отношении двух граждан Украины, которые, как сообщается, своим поведением представляли угрозу для безопасности и общественного порядка. Это очередной пример исполнения решений, обязывающих иностранцев вернуться. Основания и ход процедуры описаны в сообщении Пограничной службы."
+        },
+        "fr": {
+          "title": "Garde-frontières : deux citoyens ukrainiens reconduits de force à la frontière (Unité des Carpates)",
+          "summary": "L'Unité des Carpates des garde-frontières a procédé à de nouvelles reconduites forcées à la frontière de l'État pour deux citoyens ukrainiens qui, selon les informations communiquées, constituaient par leur comportement une menace pour la sécurité et l'ordre public. Il s'agit d'un nouvel exemple d'exécution de décisions obligeant les étrangers à retourner. Les motifs et le déroulement de la procédure sont décrits dans le communiqué des garde-frontières."
         }
       }
     }
