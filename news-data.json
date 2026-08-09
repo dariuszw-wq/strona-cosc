@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-08T09:05:48+02:00",
+  "updated": "2026-08-09T09:05:00+02:00",
   "items": [
     {
       "id": "2026-08-07-cosc-zmiana-pracodawcy-karta-pobytu",
@@ -35,6 +35,204 @@
       }
     },
     {
+      "id": "2026-08-07-sg-okecie-rumuni-poszukiwani-mienie",
+      "added": "2026-08-07",
+      "category": "Bezpieczeństwo",
+      "title": "Lotnisko Chopina: dwoje poszukiwanych obywateli Rumunii zatrzymanych przed odlotem do Paryża",
+      "summary": "Dzięki wymianie informacji między Policją a Strażą Graniczną 6 sierpnia 2026 r. na Lotnisku Chopina, w strefie zastrzeżonej tuż przed rejsem do Paryża, funkcjonariusze Placówki SG Warszawa-Okęcie ustalili troje obywateli Rumunii podejrzewanych o kradzież portfela i nieautoryzowane transakcje kartami. Wobec dwóch z nich (42 i 43 lata) potwierdzono poszukiwania w związku z kradzieżą szczególnie zuchwałą oraz kradzieżą z włamaniem — zostali przekazani Policji. Trzecia osoba, wobec której nie stwierdzono podstaw do zatrzymania, mogła kontynuować podróż.",
+      "source_name": "Straż Graniczna",
+      "author": "Komenda Główna Straży Granicznej",
+      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16071,Poszukiwani-zatrzymani-przed-odlotem-do-Paryza.html",
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Chopin Airport: two wanted Romanian nationals detained before their flight to Paris",
+          "summary": "Thanks to information sharing between the Police and the Border Guard, on 6 August 2026 at Chopin Airport — in the restricted zone just before a flight to Paris — officers of the Warsaw-Okęcie Border Guard Post located three Romanian nationals suspected of stealing a wallet and making unauthorised card transactions. Two of them (aged 42 and 43) were confirmed as wanted in connection with aggravated theft and burglary and were handed over to the Police. The third person, for whom no grounds for detention were found, was allowed to continue the journey."
+        },
+        "es": {
+          "title": "Aeropuerto Chopin: dos ciudadanos rumanos buscados detenidos antes de su vuelo a París",
+          "summary": "Gracias al intercambio de información entre la Policía y la Guardia de Fronteras, el 6 de agosto de 2026 en el Aeropuerto Chopin —en la zona restringida, justo antes de un vuelo a París— agentes del Puesto de la Guardia de Fronteras de Varsovia-Okęcie localizaron a tres ciudadanos rumanos sospechosos de robar una cartera y realizar transacciones no autorizadas con tarjetas. Respecto a dos de ellos (de 42 y 43 años) se confirmó una orden de búsqueda por robo con especial audacia y robo con allanamiento, y fueron entregados a la Policía. La tercera persona, para la que no se hallaron motivos de detención, pudo continuar su viaje."
+        },
+        "uk": {
+          "title": "Аеропорт Шопена: двох розшукуваних громадян Румунії затримали перед вильотом до Парижа",
+          "summary": "Завдяки обміну інформацією між Поліцією та Прикордонною службою 6 серпня 2026 р. в аеропорту Шопена — у зоні обмеженого доступу, безпосередньо перед рейсом до Парижа — співробітники підрозділу Прикордонної служби Варшава-Окенце виявили трьох громадян Румунії, підозрюваних у крадіжці гаманця та несанкціонованих операціях за картками. Щодо двох із них (42 і 43 роки) підтверджено розшук у зв'язку з крадіжкою з особливою зухвалістю та крадіжкою зі зломом — їх передали Поліції. Третя особа, щодо якої підстав для затримання не встановлено, змогла продовжити подорож."
+        },
+        "ru": {
+          "title": "Аэропорт Шопена: двое разыскиваемых граждан Румынии задержаны перед вылетом в Париж",
+          "summary": "Благодаря обмену информацией между Полицией и Пограничной службой 6 августа 2026 г. в аэропорту Шопена — в зоне ограниченного доступа, непосредственно перед рейсом в Париж — сотрудники подразделения Пограничной службы Варшава-Окенце установили троих граждан Румынии, подозреваемых в краже кошелька и несанкционированных операциях по картам. В отношении двоих из них (42 и 43 года) подтвержден розыск в связи с кражей с особой дерзостью и кражей со взломом — они переданы Полиции. Третье лицо, оснований для задержания которого не установлено, смогло продолжить поездку."
+        },
+        "fr": {
+          "title": "Aéroport Chopin : deux ressortissants roumains recherchés interpellés avant leur vol pour Paris",
+          "summary": "Grâce à l'échange d'informations entre la Police et les garde-frontières, le 6 août 2026 à l'aéroport Chopin — en zone réservée, juste avant un vol pour Paris — les agents du poste de garde-frontières de Varsovie-Okęcie ont localisé trois ressortissants roumains soupçonnés d'avoir volé un portefeuille et effectué des transactions non autorisées par carte. Pour deux d'entre eux (42 et 43 ans), un avis de recherche a été confirmé pour vol avec une audace particulière et cambriolage ; ils ont été remis à la Police. La troisième personne, pour laquelle aucun motif de détention n'a été retenu, a pu poursuivre son voyage."
+        }
+      }
+    },
+    {
+      "id": "2026-08-07-sg-medyka-gruzin-zmiana-nazwiska",
+      "added": "2026-08-07",
+      "category": "Bezpieczeństwo",
+      "title": "Medyka: obywatel Gruzji zmienił nazwisko, by uniknąć odpowiedzialności — nie uniknął kary",
+      "summary": "4 sierpnia 2026 r. na przejściu granicznym w Medyce, na kierunku wyjazdowym, do odprawy pieszej zgłosił się 43-letni obywatel Gruzji. Funkcjonariusze ustalili, że zmienił nazwisko, a wcześniej posłużył się fałszywym dokumentem i nielegalnie przekroczył granicę. Usłyszał zarzut nielegalnego przekroczenia granicy z użyciem podstępu i przyznał się do winy. Ponadto był poszukiwany przez sąd za wykorzystanie fałszywego prawa jazdy — aby uniknąć kary pozbawienia wolności, zapłacił grzywnę. Po zakończeniu czynności został skierowany na Ukrainę.",
+      "source_name": "Straż Graniczna",
+      "author": "Komenda Główna Straży Granicznej",
+      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16069,Zmiana-nazwiska-nie-pomogla-uniknac-odpowiedzialnosci.html",
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Medyka: a Georgian national changed his surname to avoid responsibility — but did not escape punishment",
+          "summary": "On 4 August 2026, at the Medyka border crossing on the exit side, a 43-year-old Georgian national reported for pedestrian clearance. Officers established that he had changed his surname and had previously used a forged document and crossed the border illegally. He was charged with illegally crossing the border by deception and pleaded guilty. He was also wanted by a court for using a forged driving licence — to avoid a custodial sentence, he paid a fine. After the procedures were completed, he was directed to Ukraine."
+        },
+        "es": {
+          "title": "Medyka: un ciudadano georgiano cambió de apellido para eludir su responsabilidad, pero no evitó el castigo",
+          "summary": "El 4 de agosto de 2026, en el paso fronterizo de Medyka, en el sentido de salida, un ciudadano georgiano de 43 años se presentó al control peatonal. Los agentes determinaron que había cambiado de apellido y que anteriormente había usado un documento falso y cruzado la frontera ilegalmente. Se le imputó el cruce ilegal de la frontera mediante engaño y se declaró culpable. Además, estaba siendo buscado por un tribunal por usar un permiso de conducir falso; para evitar una pena de prisión, pagó una multa. Finalizadas las actuaciones, fue dirigido a Ucrania."
+        },
+        "uk": {
+          "title": "Медика: громадянин Грузії змінив прізвище, щоб уникнути відповідальності, але покарання не уникнув",
+          "summary": "4 серпня 2026 р. на пункті пропуску Медика, на виїзді, на пішохідний контроль з'явився 43-річний громадянин Грузії. Прикордонники встановили, що він змінив прізвище, а раніше скористався підробленим документом і незаконно перетнув кордон. Йому висунули обвинувачення в незаконному перетині кордону шляхом обману, і він визнав провину. Крім того, його розшукував суд за використання підробленого посвідчення водія — щоб уникнути ув'язнення, він сплатив штраф. Після завершення процедур його спрямували в Україну."
+        },
+        "ru": {
+          "title": "Медыка: гражданин Грузии сменил фамилию, чтобы избежать ответственности, но наказания не избежал",
+          "summary": "4 августа 2026 г. на пункте пропуска Медыка, на выезде, на пешеходный контроль явился 43-летний гражданин Грузии. Пограничники установили, что он сменил фамилию, а ранее воспользовался поддельным документом и незаконно пересек границу. Ему предъявили обвинение в незаконном пересечении границы путем обмана, и он признал вину. Кроме того, он разыскивался судом за использование поддельного водительского удостоверения — чтобы избежать лишения свободы, он уплатил штраф. После завершения процедур его направили в Украину."
+        },
+        "fr": {
+          "title": "Medyka : un ressortissant géorgien a changé de nom pour échapper à ses responsabilités, sans échapper à la sanction",
+          "summary": "Le 4 août 2026, au poste frontière de Medyka, dans le sens de la sortie, un ressortissant géorgien de 43 ans s'est présenté au contrôle piéton. Les agents ont établi qu'il avait changé de nom et avait auparavant utilisé un faux document et franchi la frontière illégalement. Il a été accusé de franchissement illégal de la frontière par ruse et a plaidé coupable. Il était en outre recherché par un tribunal pour usage d'un faux permis de conduire ; pour éviter une peine d'emprisonnement, il a payé une amende. Les formalités achevées, il a été dirigé vers l'Ukraine."
+        }
+      }
+    },
+    {
+      "id": "2026-08-06-udsc-przedluzenie-ochrony-czasowej-2028",
+      "added": "2026-08-06",
+      "category": "Legislacja",
+      "title": "Ochrona czasowa dla uchodźców z Ukrainy przedłużona do 4 sierpnia 2028 r.",
+      "summary": "5 sierpnia 2026 r. weszła w życie decyzja wykonawcza Rady (UE) 2026/1912 z 30 lipca 2026 r., która przedłuża tymczasową ochronę dla wysiedleńców z Ukrainy (wprowadzoną decyzją 2022/382) o rok — do 4 sierpnia 2028 r. Nowość dotyczy warunku wojskowego: ochronę przyznaje się osobom, które wypełniły obowiązki wojskowe w Ukrainie, po przedstawieniu odpowiedniego dowodu (przepis stosowany od 31 lipca 2026 r.). Ograniczenia tego nie stosuje się do osób, które korzystały z ochrony w danym państwie członkowskim przed 30 lipca 2026 r. i w tym dniu oraz nieprzerwanie zachowują status ochronny. W praktyce dla większości obywateli Ukrainy przebywających już legalnie w Polsce oznacza to kontynuację ochrony, a warunek wojskowy dotyczy przede wszystkim nowych beneficjentów — szczegóły warto zweryfikować w swojej sytuacji.",
+      "source_name": "Urząd do Spraw Cudzoziemców",
+      "author": "",
+      "url": "https://www.gov.pl/web/udsc/przedluzenie-ochrony-czasowej-do-4-sierpnia-2028-r",
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Temporary protection for refugees from Ukraine extended until 4 August 2028",
+          "summary": "On 5 August 2026 Council Implementing Decision (EU) 2026/1912 of 30 July 2026 entered into force, extending temporary protection for displaced persons from Ukraine (introduced by Decision 2022/382) by one year — until 4 August 2028. A new condition concerns military obligations: protection is granted to persons who have fulfilled their military obligations in Ukraine, upon presentation of appropriate proof (applied from 31 July 2026). This restriction does not apply to persons who benefited from protection in a given Member State before and on 30 July 2026 and continuously retain protected status. In practice, for most Ukrainian nationals already legally residing in Poland this means continuation of protection, while the military condition mainly concerns new beneficiaries — verify the details for your own situation."
+        },
+        "es": {
+          "title": "La protección temporal para refugiados de Ucrania se prorroga hasta el 4 de agosto de 2028",
+          "summary": "El 5 de agosto de 2026 entró en vigor la Decisión de Ejecución (UE) 2026/1912 del Consejo, de 30 de julio de 2026, que prorroga la protección temporal para los desplazados de Ucrania (introducida por la Decisión 2022/382) un año — hasta el 4 de agosto de 2028. Una novedad es la condición militar: la protección se concede a quienes hayan cumplido sus obligaciones militares en Ucrania, previa presentación de la prueba correspondiente (aplicable desde el 31 de julio de 2026). Esta restricción no se aplica a quienes disfrutaban de protección en un Estado miembro antes del 30 de julio de 2026 y en esa fecha, y conservan ininterrumpidamente su estatus. En la práctica, para la mayoría de los ucranianos que ya residen legalmente en Polonia significa la continuación de la protección; la condición militar afecta sobre todo a nuevos beneficiarios — conviene verificar los detalles en cada caso."
+        },
+        "uk": {
+          "title": "Тимчасовий захист для біженців з України продовжено до 4 серпня 2028 року",
+          "summary": "5 серпня 2026 року набуло чинності Імплементаційне рішення Ради (ЄС) 2026/1912 від 30 липня 2026 року, яке продовжує тимчасовий захист для переміщених осіб з України (запроваджений рішенням 2022/382) на один рік — до 4 серпня 2028 року. Новацією є військова умова: захист надається особам, які виконали військові обов’язки в Україні, після пред’явлення відповідного доказу (застосовується з 31 липня 2026 року). Це обмеження не стосується осіб, які користувалися захистом у державі-члені до 30 липня 2026 року та в цей день і безперервно зберігають захисний статус. На практиці для більшості громадян України, які вже легально перебувають у Польщі, це означає продовження захисту, а військова умова стосується насамперед нових бенефіціарів — деталі варто перевірити у своїй ситуації."
+        },
+        "ru": {
+          "title": "Временная защита для беженцев из Украины продлена до 4 августа 2028 года",
+          "summary": "5 августа 2026 года вступило в силу Имплементационное решение Совета (ЕС) 2026/1912 от 30 июля 2026 года, продлевающее временную защиту для перемещённых лиц из Украины (введённую решением 2022/382) на год — до 4 августа 2028 года. Новшество касается воинской обязанности: защита предоставляется лицам, выполнившим воинские обязанности в Украине, при предъявлении соответствующего доказательства (применяется с 31 июля 2026 года). Это ограничение не распространяется на лиц, пользовавшихся защитой в государстве-члене до 30 июля 2026 года и в этот день и непрерывно сохраняющих защитный статус. На практике для большинства граждан Украины, уже законно проживающих в Польше, это означает продолжение защиты, а воинское условие касается прежде всего новых бенефициаров — детали стоит проверить в своей ситуации."
+        },
+        "fr": {
+          "title": "La protection temporaire des réfugiés d’Ukraine prolongée jusqu’au 4 août 2028",
+          "summary": "Le 5 août 2026 est entrée en vigueur la décision d’exécution (UE) 2026/1912 du Conseil du 30 juillet 2026, qui prolonge la protection temporaire des personnes déplacées d’Ukraine (instaurée par la décision 2022/382) d’un an — jusqu’au 4 août 2028. Une nouveauté concerne l’obligation militaire : la protection est accordée aux personnes ayant rempli leurs obligations militaires en Ukraine, sur présentation d’une preuve appropriée (applicable à partir du 31 juillet 2026). Cette restriction ne s’applique pas aux personnes bénéficiant d’une protection dans un État membre avant le 30 juillet 2026 et à cette date, et conservant sans interruption leur statut. En pratique, pour la plupart des ressortissants ukrainiens résidant déjà légalement en Pologne, cela signifie la continuation de la protection ; la condition militaire concerne surtout les nouveaux bénéficiaires — il convient de vérifier les détails au cas par cas."
+        }
+      }
+    },
+    {
+      "id": "2026-08-06-sg-olsztyn-przymusowy-powrot-dwoch-ukraincow",
+      "added": "2026-08-06",
+      "category": "Bezpieczeństwo",
+      "title": "Olsztyn: przymusowy powrót dwóch obywateli Ukrainy, którzy nie wykonali decyzji o powrocie",
+      "summary": "Funkcjonariusze Placówki Straży Granicznej w Olsztynie zatrzymali dwóch obywateli Ukrainy, którzy mimo wydanych decyzji zobowiązujących do powrotu nie opuścili terytorium Polski i wielokrotnie naruszali obowiązujące przepisy. Wobec cudzoziemców zrealizowano przymusowy powrót. Sprawa przypomina, że niewykonanie decyzji o zobowiązaniu do powrotu w wyznaczonym terminie prowadzi do przymusowego wykonania i zwykle wiąże się z zakazem ponownego wjazdu.",
+      "source_name": "Straż Graniczna",
+      "author": "",
+      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16067,Przymusowy-powrot-cudzoziemcow.html",
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Olsztyn: forced return of two Ukrainian nationals who did not comply with return decisions",
+          "summary": "Officers of the Border Guard post in Olsztyn detained two Ukrainian nationals who, despite issued return decisions, had not left Poland and repeatedly violated the applicable rules. A forced return was carried out. The case is a reminder that failure to comply with a return decision within the set deadline leads to enforced removal and is usually accompanied by a re-entry ban."
+        },
+        "es": {
+          "title": "Olsztyn: retorno forzoso de dos ucranianos que no cumplieron las decisiones de retorno",
+          "summary": "Agentes del puesto de la Guardia de Fronteras en Olsztyn detuvieron a dos ciudadanos ucranianos que, pese a las decisiones de retorno emitidas, no habían abandonado Polonia y vulneraron repetidamente la normativa vigente. Se ejecutó un retorno forzoso. El caso recuerda que incumplir una decisión de retorno en el plazo fijado conduce a la ejecución forzosa y suele conllevar una prohibición de reingreso."
+        },
+        "uk": {
+          "title": "Ольштин: примусове повернення двох громадян України, які не виконали рішення про повернення",
+          "summary": "Співробітники відділу Прикордонної служби в Ольштині затримали двох громадян України, які попри винесені рішення про зобов’язання до повернення не залишили територію Польщі та неодноразово порушували чинні норми. Щодо них здійснено примусове повернення. Випадок нагадує, що невиконання рішення про повернення у встановлений строк призводить до примусового виконання і зазвичай супроводжується забороною повторного в’їзду."
+        },
+        "ru": {
+          "title": "Ольштын: принудительное возвращение двух граждан Украины, не исполнивших решения о возвращении",
+          "summary": "Сотрудники отделения Пограничной службы в Ольштыне задержали двух граждан Украины, которые, несмотря на вынесенные решения об обязании к возвращению, не покинули территорию Польши и неоднократно нарушали действующие нормы. В отношении них осуществлено принудительное возвращение. Случай напоминает, что неисполнение решения о возвращении в установленный срок ведёт к принудительному исполнению и обычно сопровождается запретом на повторный въезд."
+        },
+        "fr": {
+          "title": "Olsztyn : retour forcé de deux ressortissants ukrainiens n’ayant pas exécuté les décisions de retour",
+          "summary": "Les agents du poste de garde-frontières d’Olsztyn ont interpellé deux ressortissants ukrainiens qui, malgré des décisions de retour émises, n’avaient pas quitté la Pologne et avaient enfreint à plusieurs reprises les règles en vigueur. Un retour forcé a été exécuté. L’affaire rappelle que le non-respect d’une décision de retour dans le délai fixé entraîne l’exécution forcée et s’accompagne généralement d’une interdiction de retour."
+        }
+      }
+    },
+    {
+      "id": "2026-08-06-sg-bydgoszcz-kontrola-legalnosci-pobytu-czterech",
+      "added": "2026-08-06",
+      "category": "Bezpieczeństwo",
+      "title": "Bydgoszcz: czterech cudzoziemców zatrzymanych po kontroli legalności pobytu",
+      "summary": "Funkcjonariusze Placówki Straży Granicznej w Bydgoszczy zatrzymali czterech cudzoziemców, którzy naruszyli przepisy dotyczące legalności pobytu w Polsce. Wobec wszystkich wszczęto postępowania administracyjne zakończone wydaniem decyzji zobowiązujących do powrotu. Przypadek pokazuje, że kontrole legalności pobytu są prowadzone rutynowo, a nieuregulowany status skutkuje decyzją powrotową — dlatego warto na bieżąco pilnować ważności tytułu pobytowego.",
+      "source_name": "Straż Graniczna",
+      "author": "",
+      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16065,Zatrzymano-czterech-cudzoziemcow-po-kontroli-legalnosci-pobytu.html",
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Bydgoszcz: four foreigners detained after a residence-legality check",
+          "summary": "Officers of the Border Guard post in Bydgoszcz detained four foreigners who had breached rules on the legality of residence in Poland. Administrative proceedings were launched against all of them, ending with return decisions. The case shows that residence-legality checks are routine and that an unregulated status results in a return decision — so it is worth keeping track of the validity of one's residence title."
+        },
+        "es": {
+          "title": "Bydgoszcz: cuatro extranjeros detenidos tras un control de legalidad de la estancia",
+          "summary": "Agentes del puesto de la Guardia de Fronteras en Bydgoszcz detuvieron a cuatro extranjeros que habían infringido las normas sobre la legalidad de la estancia en Polonia. Se incoaron procedimientos administrativos contra todos ellos, que concluyeron con decisiones de retorno. El caso demuestra que los controles de legalidad de la estancia son rutinarios y que una situación irregular conlleva una decisión de retorno, por lo que conviene vigilar la validez del título de residencia."
+        },
+        "uk": {
+          "title": "Бидгощ: чотирьох іноземців затримано після перевірки законності перебування",
+          "summary": "Співробітники відділу Прикордонної служби в Бидгощі затримали чотирьох іноземців, які порушили норми щодо законності перебування в Польщі. Щодо всіх розпочато адміністративні провадження, які завершилися рішеннями про повернення. Випадок показує, що перевірки законності перебування проводяться регулярно, а неврегульований статус призводить до рішення про повернення, тож варто стежити за дійсністю підстави перебування."
+        },
+        "ru": {
+          "title": "Быдгощ: четверо иностранцев задержаны после проверки законности пребывания",
+          "summary": "Сотрудники отделения Пограничной службы в Быдгоще задержали четверых иностранцев, нарушивших нормы о законности пребывания в Польше. В отношении всех начаты административные производства, завершившиеся решениями о возвращении. Случай показывает, что проверки законности пребывания проводятся регулярно, а неурегулированный статус ведёт к решению о возвращении, поэтому стоит следить за действительностью основания пребывания."
+        },
+        "fr": {
+          "title": "Bydgoszcz : quatre étrangers interpellés après un contrôle de la légalité du séjour",
+          "summary": "Les agents du poste de garde-frontières de Bydgoszcz ont interpellé quatre étrangers ayant enfreint les règles relatives à la légalité du séjour en Pologne. Des procédures administratives ont été engagées contre chacun d’eux, aboutissant à des décisions de retour. L’affaire montre que les contrôles de légalité du séjour sont routiniers et qu’un statut irrégulier entraîne une décision de retour — il convient donc de surveiller la validité de son titre de séjour."
+        }
+      }
+    },
+    {
+      "id": "2026-08-06-sg-nadodrze-dwoch-cudzoziemcow-kolumbia-ukraina-powrot",
+      "added": "2026-08-06",
+      "category": "Bezpieczeństwo",
+      "title": "Dolny Śląsk: decyzje o powrocie i zakazy wjazdu dla obywateli Kolumbii i Ukrainy",
+      "summary": "Funkcjonariusze Nadodrzańskiego Oddziału Straży Granicznej zatrzymali na Dolnym Śląsku dwóch cudzoziemców — obywatela Kolumbii i obywatela Ukrainy — którzy swoim zachowaniem stanowili zagrożenie dla bezpieczeństwa i porządku publicznego. Wobec obu wydano decyzje zobowiązujące do powrotu wraz z zakazami ponownego wjazdu. Sprawa przypomina, że naruszanie porządku publicznego może samodzielnie stanowić podstawę decyzji powrotowej, niezależnie od formalnej legalności pobytu.",
+      "source_name": "Straż Graniczna",
+      "author": "",
+      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16064,Dwoch-cudzoziemcow-z-decyzjami-o-powrocie-i-zakazami-wjazdu.html",
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Lower Silesia: return decisions and entry bans for nationals of Colombia and Ukraine",
+          "summary": "Officers of the Nadodrze Border Guard unit detained in Lower Silesia two foreigners — a Colombian and a Ukrainian national — whose conduct posed a threat to public safety and order. Return decisions together with re-entry bans were issued against both. The case is a reminder that breaching public order can, on its own, be grounds for a return decision, regardless of the formal legality of residence."
+        },
+        "es": {
+          "title": "Baja Silesia: decisiones de retorno y prohibiciones de entrada para ciudadanos de Colombia y Ucrania",
+          "summary": "Agentes de la unidad de la Guardia de Fronteras de Nadodrze detuvieron en Baja Silesia a dos extranjeros —un colombiano y un ucraniano— cuya conducta suponía una amenaza para la seguridad y el orden públicos. Se dictaron contra ambos decisiones de retorno junto con prohibiciones de reingreso. El caso recuerda que la alteración del orden público puede, por sí sola, fundamentar una decisión de retorno, con independencia de la legalidad formal de la estancia."
+        },
+        "uk": {
+          "title": "Нижня Сілезія: рішення про повернення та заборони в’їзду для громадян Колумбії та України",
+          "summary": "Співробітники Надоджанського відділу Прикордонної служби затримали у Нижній Сілезії двох іноземців — громадянина Колумбії та громадянина України — чия поведінка становила загрозу для безпеки та громадського порядку. Щодо обох винесено рішення про повернення разом із заборонами повторного в’їзду. Випадок нагадує, що порушення громадського порядку саме по собі може бути підставою для рішення про повернення, незалежно від формальної законності перебування."
+        },
+        "ru": {
+          "title": "Нижняя Силезия: решения о возвращении и запреты на въезд для граждан Колумбии и Украины",
+          "summary": "Сотрудники Надоджанского отдела Пограничной службы задержали в Нижней Силезии двух иностранцев — гражданина Колумбии и гражданина Украины — чьё поведение представляло угрозу для безопасности и общественного порядка. В отношении обоих вынесены решения о возвращении вместе с запретами на повторный въезд. Случай напоминает, что нарушение общественного порядка само по себе может служить основанием для решения о возвращении, независимо от формальной законности пребывания."
+        },
+        "fr": {
+          "title": "Basse-Silésie : décisions de retour et interdictions d’entrée pour des ressortissants de Colombie et d’Ukraine",
+          "summary": "Les agents de l’unité de garde-frontières de Nadodrze ont interpellé en Basse-Silésie deux étrangers — un ressortissant colombien et un ressortissant ukrainien — dont le comportement menaçait la sécurité et l’ordre publics. Des décisions de retour assorties d’interdictions de retour ont été prises à l’encontre des deux. L’affaire rappelle que le trouble à l’ordre public peut, à lui seul, fonder une décision de retour, indépendamment de la légalité formelle du séjour."
+        }
+      }
+    },
+    {
       "id": "2026-08-05-cosc-nielegalne-zatrudnienie-kary",
       "added": "2026-08-05",
       "category": "Rynek pracy",
@@ -64,6 +262,72 @@
         "fr": {
           "title": "Sanctions pour l'emploi illégal d'un étranger en 2026 [document propre COSC]",
           "summary": "Confier illégalement un travail à un étranger : amende de 3 000 à 50 000 PLN, amendes de la PIP jusqu'à 10 000 PLN, sanction proportionnelle au nombre de personnes. Qui est responsable et comment l'éviter. État 2026."
+        }
+      }
+    },
+    {
+      "id": "2026-08-05-sg-opole-obywatel-ukrainy-deportacja-alkohol",
+      "added": "2026-08-05",
+      "category": "Bezpieczeństwo",
+      "title": "Straż Graniczna: obywatel Ukrainy deportowany po jeździe pod wpływem alkoholu (Opole)",
+      "summary": "Funkcjonariusze Placówki Straży Granicznej w Opolu zatrzymali 48-letniego obywatela Ukrainy, który kierował samochodem osobowym, znajdując się pod wpływem alkoholu. Wobec cudzoziemca zastosowano przymusowy powrót (deportację). Sprawa przypomina, że popełnienie przestępstwa lub wykroczenia przez cudzoziemca może prowadzić do wydania decyzji o zobowiązaniu do powrotu oraz orzeczenia zakazu ponownego wjazdu. Szczegóły w komunikacie Straży Granicznej.",
+      "source_name": "Straż Graniczna",
+      "author": "",
+      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16060,Obywatel-Ukrainy-zostal-deportowany.html",
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Border Guard: Ukrainian citizen deported after drink-driving (Opole)",
+          "summary": "Officers of the Border Guard post in Opole detained a 48-year-old Ukrainian citizen who was driving a car under the influence of alcohol. The foreigner was subject to a forced return (deportation). The case is a reminder that committing a crime or offence by a foreigner may lead to a return decision and a re-entry ban. Details in the Border Guard statement."
+        },
+        "es": {
+          "title": "Guardia de Fronteras: ciudadano ucraniano deportado por conducir ebrio (Opole)",
+          "summary": "Agentes del puesto de la Guardia de Fronteras en Opole detuvieron a un ciudadano ucraniano de 48 años que conducía un automóvil bajo los efectos del alcohol. Al extranjero se le aplicó un retorno forzoso (deportación). El caso recuerda que la comisión de un delito o una infracción por parte de un extranjero puede conllevar una decisión de retorno y una prohibición de reentrada. Detalles en el comunicado de la Guardia de Fronteras."
+        },
+        "uk": {
+          "title": "Прикордонна служба: громадянина України депортовано за керування у стані сп'яніння (Ополе)",
+          "summary": "Співробітники відділу Прикордонної служби в Ополе затримали 48-річного громадянина України, який керував автомобілем у стані алкогольного сп'яніння. До іноземця застосовано примусове повернення (депортацію). Справа нагадує, що вчинення злочину чи правопорушення іноземцем може призвести до рішення про зобов'язання повернутися та заборони повторного в'їзду. Деталі — у повідомленні Прикордонної служби."
+        },
+        "ru": {
+          "title": "Пограничная служба: гражданин Украины депортирован за вождение в нетрезвом виде (Ополе)",
+          "summary": "Сотрудники отделения Пограничной службы в Ополе задержали 48-летнего гражданина Украины, который управлял автомобилем в состоянии алкогольного опьянения. К иностранцу применено принудительное возвращение (депортация). Случай напоминает, что совершение иностранцем преступления или правонарушения может привести к решению об обязании покинуть страну и запрету на повторный въезд. Подробности — в сообщении Пограничной службы."
+        },
+        "fr": {
+          "title": "Garde-frontières : un citoyen ukrainien expulsé après une conduite en état d'ivresse (Opole)",
+          "summary": "Les agents du poste des garde-frontières à Opole ont interpellé un citoyen ukrainien de 48 ans qui conduisait une voiture en état d'ivresse. L'étranger a fait l'objet d'un retour forcé (expulsion). L'affaire rappelle que la commission d'un délit ou d'une infraction par un étranger peut entraîner une décision de retour et une interdiction de retour sur le territoire. Détails dans le communiqué des garde-frontières."
+        }
+      }
+    },
+    {
+      "id": "2026-08-05-sg-karpacki-dwoch-ukraincow-doprowadzenie-do-granicy",
+      "added": "2026-08-05",
+      "category": "Bezpieczeństwo",
+      "title": "Straż Graniczna: dwóch obywateli Ukrainy przymusowo doprowadzonych do granicy (Karpacki OSG)",
+      "summary": "Karpacki Oddział Straży Granicznej przeprowadził kolejne przymusowe doprowadzenia do granicy państwowej wobec dwóch obywateli Ukrainy, którzy — jak podano — swoim zachowaniem stanowili zagrożenie dla bezpieczeństwa i porządku publicznego. To kolejny przykład egzekwowania decyzji zobowiązujących cudzoziemców do powrotu. Podstawy i przebieg procedury opisano w komunikacie Straży Granicznej.",
+      "source_name": "Straż Graniczna",
+      "author": "",
+      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16059,Cudzoziemcy-przymusowo-doprowadzeni-do-granicy-panstwa.html",
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Border Guard: two Ukrainian citizens forcibly escorted to the border (Carpathian Unit)",
+          "summary": "The Carpathian Unit of the Border Guard carried out further forced escorts to the state border for two Ukrainian citizens who, as reported, posed a threat to security and public order by their conduct. This is another example of enforcing decisions obliging foreigners to return. The grounds and course of the procedure are described in the Border Guard statement."
+        },
+        "es": {
+          "title": "Guardia de Fronteras: dos ciudadanos ucranianos conducidos por la fuerza a la frontera (Unidad de los Cárpatos)",
+          "summary": "La Unidad de los Cárpatos de la Guardia de Fronteras llevó a cabo nuevos traslados forzosos a la frontera estatal de dos ciudadanos ucranianos que, según se informó, suponían una amenaza para la seguridad y el orden público por su conducta. Es otro ejemplo de ejecución de decisiones que obligan a los extranjeros a regresar. Los fundamentos y el curso del procedimiento se describen en el comunicado de la Guardia de Fronteras."
+        },
+        "uk": {
+          "title": "Прикордонна служба: двох громадян України примусово доставлено до кордону (Карпатський відділ)",
+          "summary": "Карпатський відділ Прикордонної служби здійснив чергові примусові доставлення до державного кордону щодо двох громадян України, які, як повідомляється, своєю поведінкою становили загрозу для безпеки та громадського порядку. Це черговий приклад виконання рішень, що зобов'язують іноземців повернутися. Підстави та перебіг процедури описано в повідомленні Прикордонної служби."
+        },
+        "ru": {
+          "title": "Пограничная служба: двух граждан Украины принудительно доставили к границе (Карпатский отдел)",
+          "summary": "Карпатский отдел Пограничной службы осуществил очередные принудительные доставления к государственной границе в отношении двух граждан Украины, которые, как сообщается, своим поведением представляли угрозу для безопасности и общественного порядка. Это очередной пример исполнения решений, обязывающих иностранцев вернуться. Основания и ход процедуры описаны в сообщении Пограничной службы."
+        },
+        "fr": {
+          "title": "Garde-frontières : deux citoyens ukrainiens reconduits de force à la frontière (Unité des Carpates)",
+          "summary": "L'Unité des Carpates des garde-frontières a procédé à de nouvelles reconduites forcées à la frontière de l'État pour deux citoyens ukrainiens qui, selon les informations communiquées, constituaient par leur comportement une menace pour la sécurité et l'ordre public. Il s'agit d'un nouvel exemple d'exécution de décisions obligeant les étrangers à retourner. Les motifs et le déroulement de la procédure sont décrits dans le communiqué des garde-frontières."
         }
       }
     },
@@ -2726,204 +2990,6 @@
         "fr": {
           "title": "UDSC : prolongation de la restriction temporaire du droit de déposer une demande de protection internationale à la frontière avec la Biélorussie",
           "summary": "L'Office des étrangers (UDSC) rappelle que, depuis le 27 mars 2025, une restriction temporaire du droit de déposer une demande de protection internationale s'applique à la frontière avec la République de Biélorussie. La base légale est l'article 33a, alinéa 5, de la loi du 13 juin 2003 relative à l'octroi d'une protection aux étrangers sur le territoire de la République de Pologne (Journal officiel 2025, points 223 et 389) ; la restriction a été introduite par le règlement du Conseil des ministres du 27 mars 2025. Par le règlement du Conseil des ministres du 18 mai 2026 (Journal officiel point 660), elle a été prolongée de 60 jours supplémentaires, à compter du 21 mai 2026. Une restriction ne peut excéder 60 jours ; chaque prolongation requiert l'accord de la Diète (Sejm) et peut être levée plus tôt si les causes cessent. Là où et tant qu'elle s'applique, la Garde-frontière ne reçoit ni demandes ni déclarations d'intention de les déposer (article 28 de la loi). La restriction ne couvre toutefois pas : les mineurs non accompagnés, les femmes enceintes, les personnes nécessitant un traitement particulier (notamment en raison de l'âge ou de l'état de santé), les personnes exposées à un risque réel de préjudice grave dans le pays d'où elles sont arrivées, et les ressortissants de l'État pratiquant l'instrumentalisation. La période en vigueur de la restriction doit être vérifiée à la source de l'UDSC — la date de publication du document et les règlements ultérieurs peuvent modifier la situation juridique."
-        }
-      }
-    },
-    {
-      "id": "2026-08-06-udsc-przedluzenie-ochrony-czasowej-2028",
-      "added": "2026-08-06",
-      "category": "Legislacja",
-      "title": "Ochrona czasowa dla uchodźców z Ukrainy przedłużona do 4 sierpnia 2028 r.",
-      "summary": "5 sierpnia 2026 r. weszła w życie decyzja wykonawcza Rady (UE) 2026/1912 z 30 lipca 2026 r., która przedłuża tymczasową ochronę dla wysiedleńców z Ukrainy (wprowadzoną decyzją 2022/382) o rok — do 4 sierpnia 2028 r. Nowość dotyczy warunku wojskowego: ochronę przyznaje się osobom, które wypełniły obowiązki wojskowe w Ukrainie, po przedstawieniu odpowiedniego dowodu (przepis stosowany od 31 lipca 2026 r.). Ograniczenia tego nie stosuje się do osób, które korzystały z ochrony w danym państwie członkowskim przed 30 lipca 2026 r. i w tym dniu oraz nieprzerwanie zachowują status ochronny. W praktyce dla większości obywateli Ukrainy przebywających już legalnie w Polsce oznacza to kontynuację ochrony, a warunek wojskowy dotyczy przede wszystkim nowych beneficjentów — szczegóły warto zweryfikować w swojej sytuacji.",
-      "source_name": "Urząd do Spraw Cudzoziemców",
-      "author": "",
-      "url": "https://www.gov.pl/web/udsc/przedluzenie-ochrony-czasowej-do-4-sierpnia-2028-r",
-      "scope": "PL",
-      "t": {
-        "en": {
-          "title": "Temporary protection for refugees from Ukraine extended until 4 August 2028",
-          "summary": "On 5 August 2026 Council Implementing Decision (EU) 2026/1912 of 30 July 2026 entered into force, extending temporary protection for displaced persons from Ukraine (introduced by Decision 2022/382) by one year — until 4 August 2028. A new condition concerns military obligations: protection is granted to persons who have fulfilled their military obligations in Ukraine, upon presentation of appropriate proof (applied from 31 July 2026). This restriction does not apply to persons who benefited from protection in a given Member State before and on 30 July 2026 and continuously retain protected status. In practice, for most Ukrainian nationals already legally residing in Poland this means continuation of protection, while the military condition mainly concerns new beneficiaries — verify the details for your own situation."
-        },
-        "es": {
-          "title": "La protección temporal para refugiados de Ucrania se prorroga hasta el 4 de agosto de 2028",
-          "summary": "El 5 de agosto de 2026 entró en vigor la Decisión de Ejecución (UE) 2026/1912 del Consejo, de 30 de julio de 2026, que prorroga la protección temporal para los desplazados de Ucrania (introducida por la Decisión 2022/382) un año — hasta el 4 de agosto de 2028. Una novedad es la condición militar: la protección se concede a quienes hayan cumplido sus obligaciones militares en Ucrania, previa presentación de la prueba correspondiente (aplicable desde el 31 de julio de 2026). Esta restricción no se aplica a quienes disfrutaban de protección en un Estado miembro antes del 30 de julio de 2026 y en esa fecha, y conservan ininterrumpidamente su estatus. En la práctica, para la mayoría de los ucranianos que ya residen legalmente en Polonia significa la continuación de la protección; la condición militar afecta sobre todo a nuevos beneficiarios — conviene verificar los detalles en cada caso."
-        },
-        "uk": {
-          "title": "Тимчасовий захист для біженців з України продовжено до 4 серпня 2028 року",
-          "summary": "5 серпня 2026 року набуло чинності Імплементаційне рішення Ради (ЄС) 2026/1912 від 30 липня 2026 року, яке продовжує тимчасовий захист для переміщених осіб з України (запроваджений рішенням 2022/382) на один рік — до 4 серпня 2028 року. Новацією є військова умова: захист надається особам, які виконали військові обов’язки в Україні, після пред’явлення відповідного доказу (застосовується з 31 липня 2026 року). Це обмеження не стосується осіб, які користувалися захистом у державі-члені до 30 липня 2026 року та в цей день і безперервно зберігають захисний статус. На практиці для більшості громадян України, які вже легально перебувають у Польщі, це означає продовження захисту, а військова умова стосується насамперед нових бенефіціарів — деталі варто перевірити у своїй ситуації."
-        },
-        "ru": {
-          "title": "Временная защита для беженцев из Украины продлена до 4 августа 2028 года",
-          "summary": "5 августа 2026 года вступило в силу Имплементационное решение Совета (ЕС) 2026/1912 от 30 июля 2026 года, продлевающее временную защиту для перемещённых лиц из Украины (введённую решением 2022/382) на год — до 4 августа 2028 года. Новшество касается воинской обязанности: защита предоставляется лицам, выполнившим воинские обязанности в Украине, при предъявлении соответствующего доказательства (применяется с 31 июля 2026 года). Это ограничение не распространяется на лиц, пользовавшихся защитой в государстве-члене до 30 июля 2026 года и в этот день и непрерывно сохраняющих защитный статус. На практике для большинства граждан Украины, уже законно проживающих в Польше, это означает продолжение защиты, а воинское условие касается прежде всего новых бенефициаров — детали стоит проверить в своей ситуации."
-        },
-        "fr": {
-          "title": "La protection temporaire des réfugiés d’Ukraine prolongée jusqu’au 4 août 2028",
-          "summary": "Le 5 août 2026 est entrée en vigueur la décision d’exécution (UE) 2026/1912 du Conseil du 30 juillet 2026, qui prolonge la protection temporaire des personnes déplacées d’Ukraine (instaurée par la décision 2022/382) d’un an — jusqu’au 4 août 2028. Une nouveauté concerne l’obligation militaire : la protection est accordée aux personnes ayant rempli leurs obligations militaires en Ukraine, sur présentation d’une preuve appropriée (applicable à partir du 31 juillet 2026). Cette restriction ne s’applique pas aux personnes bénéficiant d’une protection dans un État membre avant le 30 juillet 2026 et à cette date, et conservant sans interruption leur statut. En pratique, pour la plupart des ressortissants ukrainiens résidant déjà légalement en Pologne, cela signifie la continuation de la protection ; la condition militaire concerne surtout les nouveaux bénéficiaires — il convient de vérifier les détails au cas par cas."
-        }
-      }
-    },
-    {
-      "id": "2026-08-06-sg-olsztyn-przymusowy-powrot-dwoch-ukraincow",
-      "added": "2026-08-06",
-      "category": "Bezpieczeństwo",
-      "title": "Olsztyn: przymusowy powrót dwóch obywateli Ukrainy, którzy nie wykonali decyzji o powrocie",
-      "summary": "Funkcjonariusze Placówki Straży Granicznej w Olsztynie zatrzymali dwóch obywateli Ukrainy, którzy mimo wydanych decyzji zobowiązujących do powrotu nie opuścili terytorium Polski i wielokrotnie naruszali obowiązujące przepisy. Wobec cudzoziemców zrealizowano przymusowy powrót. Sprawa przypomina, że niewykonanie decyzji o zobowiązaniu do powrotu w wyznaczonym terminie prowadzi do przymusowego wykonania i zwykle wiąże się z zakazem ponownego wjazdu.",
-      "source_name": "Straż Graniczna",
-      "author": "",
-      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16067,Przymusowy-powrot-cudzoziemcow.html",
-      "scope": "PL",
-      "t": {
-        "en": {
-          "title": "Olsztyn: forced return of two Ukrainian nationals who did not comply with return decisions",
-          "summary": "Officers of the Border Guard post in Olsztyn detained two Ukrainian nationals who, despite issued return decisions, had not left Poland and repeatedly violated the applicable rules. A forced return was carried out. The case is a reminder that failure to comply with a return decision within the set deadline leads to enforced removal and is usually accompanied by a re-entry ban."
-        },
-        "es": {
-          "title": "Olsztyn: retorno forzoso de dos ucranianos que no cumplieron las decisiones de retorno",
-          "summary": "Agentes del puesto de la Guardia de Fronteras en Olsztyn detuvieron a dos ciudadanos ucranianos que, pese a las decisiones de retorno emitidas, no habían abandonado Polonia y vulneraron repetidamente la normativa vigente. Se ejecutó un retorno forzoso. El caso recuerda que incumplir una decisión de retorno en el plazo fijado conduce a la ejecución forzosa y suele conllevar una prohibición de reingreso."
-        },
-        "uk": {
-          "title": "Ольштин: примусове повернення двох громадян України, які не виконали рішення про повернення",
-          "summary": "Співробітники відділу Прикордонної служби в Ольштині затримали двох громадян України, які попри винесені рішення про зобов’язання до повернення не залишили територію Польщі та неодноразово порушували чинні норми. Щодо них здійснено примусове повернення. Випадок нагадує, що невиконання рішення про повернення у встановлений строк призводить до примусового виконання і зазвичай супроводжується забороною повторного в’їзду."
-        },
-        "ru": {
-          "title": "Ольштын: принудительное возвращение двух граждан Украины, не исполнивших решения о возвращении",
-          "summary": "Сотрудники отделения Пограничной службы в Ольштыне задержали двух граждан Украины, которые, несмотря на вынесенные решения об обязании к возвращению, не покинули территорию Польши и неоднократно нарушали действующие нормы. В отношении них осуществлено принудительное возвращение. Случай напоминает, что неисполнение решения о возвращении в установленный срок ведёт к принудительному исполнению и обычно сопровождается запретом на повторный въезд."
-        },
-        "fr": {
-          "title": "Olsztyn : retour forcé de deux ressortissants ukrainiens n’ayant pas exécuté les décisions de retour",
-          "summary": "Les agents du poste de garde-frontières d’Olsztyn ont interpellé deux ressortissants ukrainiens qui, malgré des décisions de retour émises, n’avaient pas quitté la Pologne et avaient enfreint à plusieurs reprises les règles en vigueur. Un retour forcé a été exécuté. L’affaire rappelle que le non-respect d’une décision de retour dans le délai fixé entraîne l’exécution forcée et s’accompagne généralement d’une interdiction de retour."
-        }
-      }
-    },
-    {
-      "id": "2026-08-06-sg-bydgoszcz-kontrola-legalnosci-pobytu-czterech",
-      "added": "2026-08-06",
-      "category": "Bezpieczeństwo",
-      "title": "Bydgoszcz: czterech cudzoziemców zatrzymanych po kontroli legalności pobytu",
-      "summary": "Funkcjonariusze Placówki Straży Granicznej w Bydgoszczy zatrzymali czterech cudzoziemców, którzy naruszyli przepisy dotyczące legalności pobytu w Polsce. Wobec wszystkich wszczęto postępowania administracyjne zakończone wydaniem decyzji zobowiązujących do powrotu. Przypadek pokazuje, że kontrole legalności pobytu są prowadzone rutynowo, a nieuregulowany status skutkuje decyzją powrotową — dlatego warto na bieżąco pilnować ważności tytułu pobytowego.",
-      "source_name": "Straż Graniczna",
-      "author": "",
-      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16065,Zatrzymano-czterech-cudzoziemcow-po-kontroli-legalnosci-pobytu.html",
-      "scope": "PL",
-      "t": {
-        "en": {
-          "title": "Bydgoszcz: four foreigners detained after a residence-legality check",
-          "summary": "Officers of the Border Guard post in Bydgoszcz detained four foreigners who had breached rules on the legality of residence in Poland. Administrative proceedings were launched against all of them, ending with return decisions. The case shows that residence-legality checks are routine and that an unregulated status results in a return decision — so it is worth keeping track of the validity of one's residence title."
-        },
-        "es": {
-          "title": "Bydgoszcz: cuatro extranjeros detenidos tras un control de legalidad de la estancia",
-          "summary": "Agentes del puesto de la Guardia de Fronteras en Bydgoszcz detuvieron a cuatro extranjeros que habían infringido las normas sobre la legalidad de la estancia en Polonia. Se incoaron procedimientos administrativos contra todos ellos, que concluyeron con decisiones de retorno. El caso demuestra que los controles de legalidad de la estancia son rutinarios y que una situación irregular conlleva una decisión de retorno, por lo que conviene vigilar la validez del título de residencia."
-        },
-        "uk": {
-          "title": "Бидгощ: чотирьох іноземців затримано після перевірки законності перебування",
-          "summary": "Співробітники відділу Прикордонної служби в Бидгощі затримали чотирьох іноземців, які порушили норми щодо законності перебування в Польщі. Щодо всіх розпочато адміністративні провадження, які завершилися рішеннями про повернення. Випадок показує, що перевірки законності перебування проводяться регулярно, а неврегульований статус призводить до рішення про повернення, тож варто стежити за дійсністю підстави перебування."
-        },
-        "ru": {
-          "title": "Быдгощ: четверо иностранцев задержаны после проверки законности пребывания",
-          "summary": "Сотрудники отделения Пограничной службы в Быдгоще задержали четверых иностранцев, нарушивших нормы о законности пребывания в Польше. В отношении всех начаты административные производства, завершившиеся решениями о возвращении. Случай показывает, что проверки законности пребывания проводятся регулярно, а неурегулированный статус ведёт к решению о возвращении, поэтому стоит следить за действительностью основания пребывания."
-        },
-        "fr": {
-          "title": "Bydgoszcz : quatre étrangers interpellés après un contrôle de la légalité du séjour",
-          "summary": "Les agents du poste de garde-frontières de Bydgoszcz ont interpellé quatre étrangers ayant enfreint les règles relatives à la légalité du séjour en Pologne. Des procédures administratives ont été engagées contre chacun d’eux, aboutissant à des décisions de retour. L’affaire montre que les contrôles de légalité du séjour sont routiniers et qu’un statut irrégulier entraîne une décision de retour — il convient donc de surveiller la validité de son titre de séjour."
-        }
-      }
-    },
-    {
-      "id": "2026-08-06-sg-nadodrze-dwoch-cudzoziemcow-kolumbia-ukraina-powrot",
-      "added": "2026-08-06",
-      "category": "Bezpieczeństwo",
-      "title": "Dolny Śląsk: decyzje o powrocie i zakazy wjazdu dla obywateli Kolumbii i Ukrainy",
-      "summary": "Funkcjonariusze Nadodrzańskiego Oddziału Straży Granicznej zatrzymali na Dolnym Śląsku dwóch cudzoziemców — obywatela Kolumbii i obywatela Ukrainy — którzy swoim zachowaniem stanowili zagrożenie dla bezpieczeństwa i porządku publicznego. Wobec obu wydano decyzje zobowiązujące do powrotu wraz z zakazami ponownego wjazdu. Sprawa przypomina, że naruszanie porządku publicznego może samodzielnie stanowić podstawę decyzji powrotowej, niezależnie od formalnej legalności pobytu.",
-      "source_name": "Straż Graniczna",
-      "author": "",
-      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16064,Dwoch-cudzoziemcow-z-decyzjami-o-powrocie-i-zakazami-wjazdu.html",
-      "scope": "PL",
-      "t": {
-        "en": {
-          "title": "Lower Silesia: return decisions and entry bans for nationals of Colombia and Ukraine",
-          "summary": "Officers of the Nadodrze Border Guard unit detained in Lower Silesia two foreigners — a Colombian and a Ukrainian national — whose conduct posed a threat to public safety and order. Return decisions together with re-entry bans were issued against both. The case is a reminder that breaching public order can, on its own, be grounds for a return decision, regardless of the formal legality of residence."
-        },
-        "es": {
-          "title": "Baja Silesia: decisiones de retorno y prohibiciones de entrada para ciudadanos de Colombia y Ucrania",
-          "summary": "Agentes de la unidad de la Guardia de Fronteras de Nadodrze detuvieron en Baja Silesia a dos extranjeros —un colombiano y un ucraniano— cuya conducta suponía una amenaza para la seguridad y el orden públicos. Se dictaron contra ambos decisiones de retorno junto con prohibiciones de reingreso. El caso recuerda que la alteración del orden público puede, por sí sola, fundamentar una decisión de retorno, con independencia de la legalidad formal de la estancia."
-        },
-        "uk": {
-          "title": "Нижня Сілезія: рішення про повернення та заборони в’їзду для громадян Колумбії та України",
-          "summary": "Співробітники Надоджанського відділу Прикордонної служби затримали у Нижній Сілезії двох іноземців — громадянина Колумбії та громадянина України — чия поведінка становила загрозу для безпеки та громадського порядку. Щодо обох винесено рішення про повернення разом із заборонами повторного в’їзду. Випадок нагадує, що порушення громадського порядку саме по собі може бути підставою для рішення про повернення, незалежно від формальної законності перебування."
-        },
-        "ru": {
-          "title": "Нижняя Силезия: решения о возвращении и запреты на въезд для граждан Колумбии и Украины",
-          "summary": "Сотрудники Надоджанского отдела Пограничной службы задержали в Нижней Силезии двух иностранцев — гражданина Колумбии и гражданина Украины — чьё поведение представляло угрозу для безопасности и общественного порядка. В отношении обоих вынесены решения о возвращении вместе с запретами на повторный въезд. Случай напоминает, что нарушение общественного порядка само по себе может служить основанием для решения о возвращении, независимо от формальной законности пребывания."
-        },
-        "fr": {
-          "title": "Basse-Silésie : décisions de retour et interdictions d’entrée pour des ressortissants de Colombie et d’Ukraine",
-          "summary": "Les agents de l’unité de garde-frontières de Nadodrze ont interpellé en Basse-Silésie deux étrangers — un ressortissant colombien et un ressortissant ukrainien — dont le comportement menaçait la sécurité et l’ordre publics. Des décisions de retour assorties d’interdictions de retour ont été prises à l’encontre des deux. L’affaire rappelle que le trouble à l’ordre public peut, à lui seul, fonder une décision de retour, indépendamment de la légalité formelle du séjour."
-        }
-      }
-    },
-    {
-      "id": "2026-08-05-sg-opole-obywatel-ukrainy-deportacja-alkohol",
-      "added": "2026-08-05",
-      "category": "Bezpieczeństwo",
-      "title": "Straż Graniczna: obywatel Ukrainy deportowany po jeździe pod wpływem alkoholu (Opole)",
-      "summary": "Funkcjonariusze Placówki Straży Granicznej w Opolu zatrzymali 48-letniego obywatela Ukrainy, który kierował samochodem osobowym, znajdując się pod wpływem alkoholu. Wobec cudzoziemca zastosowano przymusowy powrót (deportację). Sprawa przypomina, że popełnienie przestępstwa lub wykroczenia przez cudzoziemca może prowadzić do wydania decyzji o zobowiązaniu do powrotu oraz orzeczenia zakazu ponownego wjazdu. Szczegóły w komunikacie Straży Granicznej.",
-      "source_name": "Straż Graniczna",
-      "author": "",
-      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16060,Obywatel-Ukrainy-zostal-deportowany.html",
-      "scope": "PL",
-      "t": {
-        "en": {
-          "title": "Border Guard: Ukrainian citizen deported after drink-driving (Opole)",
-          "summary": "Officers of the Border Guard post in Opole detained a 48-year-old Ukrainian citizen who was driving a car under the influence of alcohol. The foreigner was subject to a forced return (deportation). The case is a reminder that committing a crime or offence by a foreigner may lead to a return decision and a re-entry ban. Details in the Border Guard statement."
-        },
-        "es": {
-          "title": "Guardia de Fronteras: ciudadano ucraniano deportado por conducir ebrio (Opole)",
-          "summary": "Agentes del puesto de la Guardia de Fronteras en Opole detuvieron a un ciudadano ucraniano de 48 años que conducía un automóvil bajo los efectos del alcohol. Al extranjero se le aplicó un retorno forzoso (deportación). El caso recuerda que la comisión de un delito o una infracción por parte de un extranjero puede conllevar una decisión de retorno y una prohibición de reentrada. Detalles en el comunicado de la Guardia de Fronteras."
-        },
-        "uk": {
-          "title": "Прикордонна служба: громадянина України депортовано за керування у стані сп'яніння (Ополе)",
-          "summary": "Співробітники відділу Прикордонної служби в Ополе затримали 48-річного громадянина України, який керував автомобілем у стані алкогольного сп'яніння. До іноземця застосовано примусове повернення (депортацію). Справа нагадує, що вчинення злочину чи правопорушення іноземцем може призвести до рішення про зобов'язання повернутися та заборони повторного в'їзду. Деталі — у повідомленні Прикордонної служби."
-        },
-        "ru": {
-          "title": "Пограничная служба: гражданин Украины депортирован за вождение в нетрезвом виде (Ополе)",
-          "summary": "Сотрудники отделения Пограничной службы в Ополе задержали 48-летнего гражданина Украины, который управлял автомобилем в состоянии алкогольного опьянения. К иностранцу применено принудительное возвращение (депортация). Случай напоминает, что совершение иностранцем преступления или правонарушения может привести к решению об обязании покинуть страну и запрету на повторный въезд. Подробности — в сообщении Пограничной службы."
-        },
-        "fr": {
-          "title": "Garde-frontières : un citoyen ukrainien expulsé après une conduite en état d'ivresse (Opole)",
-          "summary": "Les agents du poste des garde-frontières à Opole ont interpellé un citoyen ukrainien de 48 ans qui conduisait une voiture en état d'ivresse. L'étranger a fait l'objet d'un retour forcé (expulsion). L'affaire rappelle que la commission d'un délit ou d'une infraction par un étranger peut entraîner une décision de retour et une interdiction de retour sur le territoire. Détails dans le communiqué des garde-frontières."
-        }
-      }
-    },
-    {
-      "id": "2026-08-05-sg-karpacki-dwoch-ukraincow-doprowadzenie-do-granicy",
-      "added": "2026-08-05",
-      "category": "Bezpieczeństwo",
-      "title": "Straż Graniczna: dwóch obywateli Ukrainy przymusowo doprowadzonych do granicy (Karpacki OSG)",
-      "summary": "Karpacki Oddział Straży Granicznej przeprowadził kolejne przymusowe doprowadzenia do granicy państwowej wobec dwóch obywateli Ukrainy, którzy — jak podano — swoim zachowaniem stanowili zagrożenie dla bezpieczeństwa i porządku publicznego. To kolejny przykład egzekwowania decyzji zobowiązujących cudzoziemców do powrotu. Podstawy i przebieg procedury opisano w komunikacie Straży Granicznej.",
-      "source_name": "Straż Graniczna",
-      "author": "",
-      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16059,Cudzoziemcy-przymusowo-doprowadzeni-do-granicy-panstwa.html",
-      "scope": "PL",
-      "t": {
-        "en": {
-          "title": "Border Guard: two Ukrainian citizens forcibly escorted to the border (Carpathian Unit)",
-          "summary": "The Carpathian Unit of the Border Guard carried out further forced escorts to the state border for two Ukrainian citizens who, as reported, posed a threat to security and public order by their conduct. This is another example of enforcing decisions obliging foreigners to return. The grounds and course of the procedure are described in the Border Guard statement."
-        },
-        "es": {
-          "title": "Guardia de Fronteras: dos ciudadanos ucranianos conducidos por la fuerza a la frontera (Unidad de los Cárpatos)",
-          "summary": "La Unidad de los Cárpatos de la Guardia de Fronteras llevó a cabo nuevos traslados forzosos a la frontera estatal de dos ciudadanos ucranianos que, según se informó, suponían una amenaza para la seguridad y el orden público por su conducta. Es otro ejemplo de ejecución de decisiones que obligan a los extranjeros a regresar. Los fundamentos y el curso del procedimiento se describen en el comunicado de la Guardia de Fronteras."
-        },
-        "uk": {
-          "title": "Прикордонна служба: двох громадян України примусово доставлено до кордону (Карпатський відділ)",
-          "summary": "Карпатський відділ Прикордонної служби здійснив чергові примусові доставлення до державного кордону щодо двох громадян України, які, як повідомляється, своєю поведінкою становили загрозу для безпеки та громадського порядку. Це черговий приклад виконання рішень, що зобов'язують іноземців повернутися. Підстави та перебіг процедури описано в повідомленні Прикордонної служби."
-        },
-        "ru": {
-          "title": "Пограничная служба: двух граждан Украины принудительно доставили к границе (Карпатский отдел)",
-          "summary": "Карпатский отдел Пограничной службы осуществил очередные принудительные доставления к государственной границе в отношении двух граждан Украины, которые, как сообщается, своим поведением представляли угрозу для безопасности и общественного порядка. Это очередной пример исполнения решений, обязывающих иностранцев вернуться. Основания и ход процедуры описаны в сообщении Пограничной службы."
-        },
-        "fr": {
-          "title": "Garde-frontières : deux citoyens ukrainiens reconduits de force à la frontière (Unité des Carpates)",
-          "summary": "L'Unité des Carpates des garde-frontières a procédé à de nouvelles reconduites forcées à la frontière de l'État pour deux citoyens ukrainiens qui, selon les informations communiquées, constituaient par leur comportement une menace pour la sécurité et l'ordre public. Il s'agit d'un nouvel exemple d'exécution de décisions obligeant les étrangers à retourner. Les motifs et le déroulement de la procédure sont décrits dans le communiqué des garde-frontières."
         }
       }
     }
