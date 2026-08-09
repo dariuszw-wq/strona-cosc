@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><channel>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel>
     <title>COSC — Зміни законодавства про іноземців (UK)</title>
     <link>https://cosc.org.pl/aktualnosci.html</link>
     <description>Зміни у польському законодавстві про іноземців та офіційні повідомлення — від Центру обслуговування справ іноземців.</description>
     <language>uk</language>
-    <lastBuildDate>Sun, 09 Aug 2026 11:02:43 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Aug 2026 11:07:35 +0000</lastBuildDate>
     <item>
       <title>Підписано зміни до Закону про іноземців — заяви на проживання лише онлайн через MOS</title>
       <link>https://cosc.org.pl/aktualnosci.html?utm_source=facebook&amp;utm_medium=social&amp;utm_campaign=aktualnosci-uk</link>
@@ -16,6 +16,8 @@
 Більше та контакт: https://cosc.org.pl/aktualnosci.html?utm_source=facebook&amp;utm_medium=social&amp;utm_campaign=aktualnosci-uk • WhatsApp +48 539 999 549
 
 #Польща #картапобиту #MOS #дозвілнароботу #іноземцівПольщі #legalizacja</description>
+      <enclosure url="https://cosc.org.pl/fb/legislacja.png" type="image/png" length="0"/>
+      <media:content url="https://cosc.org.pl/fb/legislacja.png" medium="image" type="image/png"/>
     </item>
     <item>
       <title>MOS на практиці: збори, 60 днів на отримання картки та обов&#x27;язки власників картки CUKR</title>
@@ -28,6 +30,8 @@
 Більше та контакт: https://cosc.org.pl/aktualnosci.html?utm_source=facebook&amp;utm_medium=social&amp;utm_campaign=aktualnosci-uk • WhatsApp +48 539 999 549
 
 #Польща #картапобиту #MOS #дозвілнароботу #іноземцівПольщі #legalizacja</description>
+      <enclosure url="https://cosc.org.pl/fb/urzedy.png" type="image/png" length="0"/>
+      <media:content url="https://cosc.org.pl/fb/urzedy.png" medium="image" type="image/png"/>
     </item>
     <item>
       <title>Ринок праці: скасування тесту ринку праці та електронні дозволи на роботу</title>
@@ -40,5 +44,7 @@
 Більше та контакт: https://cosc.org.pl/aktualnosci.html?utm_source=facebook&amp;utm_medium=social&amp;utm_campaign=aktualnosci-uk • WhatsApp +48 539 999 549
 
 #Польща #картапобиту #MOS #дозвілнароботу #іноземцівПольщі #legalizacja</description>
+      <enclosure url="https://cosc.org.pl/fb/rynek-pracy.png" type="image/png" length="0"/>
+      <media:content url="https://cosc.org.pl/fb/rynek-pracy.png" medium="image" type="image/png"/>
     </item>
 </channel></rss>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><channel>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel>
     <title>COSC — Foreigners&#x27; law updates (EN)</title>
     <link>https://cosc.org.pl/aktualnosci.html</link>
     <description>Changes in Polish law on foreigners and official communiqués — from the Foreigners&#x27; Affairs Service Centre.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 09 Aug 2026 11:02:43 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Aug 2026 11:07:35 +0000</lastBuildDate>
     <item>
       <title>Amendment to the Foreigners Act signed — residence applications only online via MOS</title>
       <link>https://cosc.org.pl/aktualnosci.html?utm_source=facebook&amp;utm_medium=social&amp;utm_campaign=aktualnosci-en</link>
@@ -16,6 +16,8 @@ Source: Rzeczpospolita (rp.pl)
 More &amp; contact: https://cosc.org.pl/aktualnosci.html?utm_source=facebook&amp;utm_medium=social&amp;utm_campaign=aktualnosci-en • WhatsApp +48 539 999 549
 
 #PolandImmigration #residencecardPoland #kartapobytu #MOS #workpermitPoland</description>
+      <enclosure url="https://cosc.org.pl/fb/legislacja.png" type="image/png" length="0"/>
+      <media:content url="https://cosc.org.pl/fb/legislacja.png" medium="image" type="image/png"/>
     </item>
     <item>
       <title>MOS in practice: fees, 60 days to collect the card and duties of CUKR card holders</title>
@@ -28,6 +30,8 @@ Source: Zielona Linia (zielonalinia.gov.pl)
 More &amp; contact: https://cosc.org.pl/aktualnosci.html?utm_source=facebook&amp;utm_medium=social&amp;utm_campaign=aktualnosci-en • WhatsApp +48 539 999 549
 
 #PolandImmigration #residencecardPoland #kartapobytu #MOS #workpermitPoland</description>
+      <enclosure url="https://cosc.org.pl/fb/urzedy.png" type="image/png" length="0"/>
+      <media:content url="https://cosc.org.pl/fb/urzedy.png" medium="image" type="image/png"/>
     </item>
     <item>
       <title>Labour market: abolition of the labour market test and electronic work permits</title>
@@ -40,5 +44,7 @@ Source: Grant Thornton
 More &amp; contact: https://cosc.org.pl/aktualnosci.html?utm_source=facebook&amp;utm_medium=social&amp;utm_campaign=aktualnosci-en • WhatsApp +48 539 999 549
 
 #PolandImmigration #residencecardPoland #kartapobytu #MOS #workpermitPoland</description>
+      <enclosure url="https://cosc.org.pl/fb/rynek-pracy.png" type="image/png" length="0"/>
+      <media:content url="https://cosc.org.pl/fb/rynek-pracy.png" medium="image" type="image/png"/>
     </item>
 </channel></rss>
