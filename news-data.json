@@ -1,6 +1,39 @@
 {
- "updated": "2026-08-10T12:00:00+02:00",
+ "updated": "2026-08-11T08:11:14+02:00",
  "items": [
+  {
+   "id": "2026-08-11-cosc-jak-odzyskac-dokumenty-do-karty-pobytu",
+   "added": "2026-08-11",
+   "category": "Urzędy",
+   "scope": "PL",
+   "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+   "author": "Dariusz Włodarczyk Kancelaria TRC",
+   "url": "artykul-jak-odzyskac-dokumenty-do-karty-pobytu.html",
+   "title": "Jak odzyskać dokumenty do karty pobytu od pracodawcy lub agencji [materiał własny COSC]",
+   "summary": "Które dokumenty sprawy pobytowej są kluczowe, jak je skutecznie odzyskać (wezwanie, dowody, pełnomocnik) i jak zdobyć kopie z akt urzędu na podstawie art. 73 KPA.",
+   "t": {
+    "en": {
+     "title": "How to recover residence-card documents from an employer or agency [COSC own material]",
+     "summary": "Which documents in a residence case are crucial, how to recover them effectively (demand letter, evidence, attorney) and how to obtain copies from the case files at the office under Article 73 of the Code of Administrative Procedure (KPA)."
+    },
+    "es": {
+     "title": "Cómo recuperar los documentos de la tarjeta de residencia del empleador o de la agencia [material propio de COSC]",
+     "summary": "Qué documentos del expediente de residencia son clave, cómo recuperarlos eficazmente (requerimiento, pruebas, apoderado) y cómo obtener copias del expediente en la oficina conforme al art. 73 del Código de Procedimiento Administrativo (KPA)."
+    },
+    "uk": {
+     "title": "Як повернути документи до карти побиту від роботодавця або агенції [власний матеріал COSC]",
+     "summary": "Які документи у справі про перебування є ключовими, як ефективно їх повернути (вимога, докази, представник) та як отримати копії з матеріалів справи в установі на підставі ст. 73 КПА."
+    },
+    "ru": {
+     "title": "Как вернуть документы для карты побыта у работодателя или агентства [собственный материал COSC]",
+     "summary": "Какие документы по делу о пребывании являются ключевыми, как эффективно их вернуть (требование, доказательства, представитель) и как получить копии из материалов дела в учреждении на основании ст. 73 КПА."
+    },
+    "fr": {
+     "title": "Comment récupérer les documents de la carte de séjour auprès de l'employeur ou de l'agence [document propre COSC]",
+     "summary": "Quels documents du dossier de séjour sont essentiels, comment les récupérer efficacement (mise en demeure, preuves, mandataire) et comment obtenir des copies du dossier auprès de l'administration en vertu de l'art. 73 du Code de procédure administrative (KPA)."
+    }
+   }
+  },
   {
    "id": "2026-08-10-cosc-zakaz-pracy-ruch-bezwizowy-wenezuela-gruzja-kolumbia",
    "added": "2026-08-10",
