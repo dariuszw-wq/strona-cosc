@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-15T08:06:27.758450+02:00",
+  "updated": "2026-08-16T13:46:11.626492+02:00",
   "items": [
     {
       "id": "2026-08-14-cosc-elektronizacja-zezwolen-praca-gov-pl",
@@ -76,7 +76,29 @@
       "author": "Dariusz Włodarczyk Kancelaria TRC",
       "url": "artykul-kontrola-pip-bez-zapowiedzi.html",
       "title": "Kontrola PIP bez zapowiedzi — prawa i obowiązki pracodawcy w 2026 r. [materiał własny COSC]",
-      "summary": "Kontrola PIP bez uprzedzenia: podstawa prawna (art. 24 ustawy o PIP), zmiany od 8 lipca 2026 r. (Dz.U. 2026 poz. 473), przebieg, protokół i zastrzeżenia (7 dni), środki prawne i odwołania (art. 34 ust. 5), kary (art. 283 § 2 k.p., art. 225 § 2 k.k.) oraz legalność zatrudnienia cudzoziemców i karta pobytu. Stan prawny: sierpień 2026."
+      "summary": "Kontrola PIP bez uprzedzenia: podstawa prawna (art. 24 ustawy o PIP), zmiany od 8 lipca 2026 r. (Dz.U. 2026 poz. 473), przebieg, protokół i zastrzeżenia (7 dni), środki prawne i odwołania (art. 34 ust. 5), kary (art. 283 § 2 k.p., art. 225 § 2 k.k.) oraz legalność zatrudnienia cudzoziemców i karta pobytu. Stan prawny: sierpień 2026.",
+      "t": {
+        "en": {
+          "title": "Unannounced PIP inspection — employer's rights and obligations in 2026 [COSC own material]",
+          "summary": "Unannounced National Labour Inspectorate (PIP) inspection: legal basis (art. 24 of the PIP Act), changes from 8 July 2026 (Dz.U. 2026 poz. 473), course of the inspection, the report and objections (7 days), legal remedies and appeals (art. 34 sec. 5), penalties (art. 283 § 2 of the Labour Code, art. 225 § 2 of the Criminal Code) as well as legality of employment of foreigners and the residence card. Legal status: August 2026."
+        },
+        "es": {
+          "title": "Inspección de la PIP sin previo aviso — derechos y obligaciones del empleador en 2026 [material propio de COSC]",
+          "summary": "Inspección de la Inspección Nacional de Trabajo (PIP) sin previo aviso: base legal (art. 24 de la Ley sobre la PIP), cambios desde el 8 de julio de 2026 (Dz.U. 2026 poz. 473), desarrollo de la inspección, acta y objeciones (7 días), recursos legales y apelaciones (art. 34 apdo. 5), sanciones (art. 283 § 2 del Código del Trabajo, art. 225 § 2 del Código Penal), así como la legalidad del empleo de extranjeros y la tarjeta de residencia. Estado legal: agosto de 2026."
+        },
+        "uk": {
+          "title": "Перевірка PIP без попередження — права та обов'язки роботодавця у 2026 р. [власний матеріал COSC]",
+          "summary": "Перевірка Державної інспекції праці (PIP) без попередження: правова підстава (ст. 24 закону про PIP), зміни від 8 липня 2026 р. (Dz.U. 2026 poz. 473), перебіг перевірки, протокол і заперечення (7 днів), правові засоби та оскарження (ст. 34 ч. 5), штрафи (ст. 283 § 2 Кодексу праці, ст. 225 § 2 Кримінального кодексу), а також легальність працевлаштування іноземців і карта побиту. Правовий стан: серпень 2026 р."
+        },
+        "ru": {
+          "title": "Проверка PIP без предупреждения — права и обязанности работодателя в 2026 г. [собственный материал COSC]",
+          "summary": "Проверка Государственной инспекции труда (PIP) без предупреждения: правовое основание (ст. 24 закона о PIP), изменения с 8 июля 2026 г. (Dz.U. 2026 poz. 473), ход проверки, протокол и возражения (7 дней), средства правовой защиты и обжалование (ст. 34 ч. 5), штрафы (ст. 283 § 2 Трудового кодекса, ст. 225 § 2 Уголовного кодекса), а также законность трудоустройства иностранцев и карта побыту. Правовое состояние: август 2026 г."
+        },
+        "fr": {
+          "title": "Contrôle de la PIP sans préavis — droits et obligations de l'employeur en 2026 [document propre de COSC]",
+          "summary": "Contrôle de l'Inspection nationale du travail (PIP) sans préavis : base juridique (art. 24 de la loi sur la PIP), modifications à compter du 8 juillet 2026 (Dz.U. 2026 poz. 473), déroulement du contrôle, procès-verbal et objections (7 jours), voies de recours et appels (art. 34 al. 5), sanctions (art. 283 § 2 du Code du travail, art. 225 § 2 du Code pénal) ainsi que la légalité de l'emploi des étrangers et la carte de séjour. État du droit : août 2026."
+        }
+      }
     },
     {
       "id": "2026-08-13-sg-bulgar-zmuszanie-do-nierzadu-tarnow",
@@ -880,7 +902,29 @@
       "author": "Dariusz Włodarczyk Kancelaria TRC",
       "url": "artykul-wyrok-sn-dyskryminacja-obywatelstwo.html",
       "title": "Gorsza umowa, bo cudzoziemiec? To dyskryminacja – wyrok SN",
-      "summary": "Obywatelstwo nie może uzasadniać gorszej umowy o pracę. Sąd Najwyższy (III PK 11/16) uznał to za dyskryminację. Przepisy k.p. o równym traktowaniu chronią też…"
+      "summary": "Obywatelstwo nie może uzasadniać gorszej umowy o pracę. Sąd Najwyższy (III PK 11/16) uznał to za dyskryminację. Przepisy k.p. o równym traktowaniu chronią też…",
+      "t": {
+        "en": {
+          "title": "A worse contract because you are a foreigner? That is discrimination — Supreme Court judgment",
+          "summary": "Citizenship cannot justify a worse employment contract. The Supreme Court (III PK 11/16) held this to be discrimination. Labour Code provisions on equal treatment also protect…"
+        },
+        "es": {
+          "title": "¿Peor contrato por ser extranjero? Es discriminación — sentencia del Tribunal Supremo",
+          "summary": "La nacionalidad no puede justificar un peor contrato de trabajo. El Tribunal Supremo (III PK 11/16) lo consideró discriminación. Las disposiciones del Código del Trabajo sobre igualdad de trato también protegen…"
+        },
+        "uk": {
+          "title": "Гірший договір, бо іноземець? Це дискримінація — рішення Верховного Суду",
+          "summary": "Громадянство не може обґрунтовувати гірший трудовий договір. Верховний Суд (III PK 11/16) визнав це дискримінацією. Норми Кодексу праці про рівне ставлення захищають також…"
+        },
+        "ru": {
+          "title": "Худший договор, потому что иностранец? Это дискриминация — решение Верховного Суда",
+          "summary": "Гражданство не может обосновывать худший трудовой договор. Верховный Суд (III PK 11/16) признал это дискриминацией. Нормы Трудового кодекса о равном обращении защищают также…"
+        },
+        "fr": {
+          "title": "Un contrat moins favorable parce qu'étranger ? C'est de la discrimination — arrêt de la Cour suprême",
+          "summary": "La nationalité ne peut justifier un contrat de travail moins favorable. La Cour suprême (III PK 11/16) y a vu une discrimination. Les dispositions du Code du travail sur l'égalité de traitement protègent également…"
+        }
+      }
     },
     {
       "id": "2026-08-03-odmowy-wjazdu-i-polrocze-2026",
@@ -1122,7 +1166,29 @@
       "author": "Dariusz Włodarczyk Kancelaria TRC",
       "url": "artykul-elektronizacja-zezwolen-praca-gov-pl.html",
       "title": "Elektronizacja zezwoleń i oświadczeń na praca.gov.pl (2026)",
-      "summary": "Od 2025 r. oświadczenia i wnioski o zezwolenie na pracę składa się wyłącznie elektronicznie przez praca.gov.pl. Konto organizacji, podpis, obowiązki online.…"
+      "summary": "Od 2025 r. oświadczenia i wnioski o zezwolenie na pracę składa się wyłącznie elektronicznie przez praca.gov.pl. Konto organizacji, podpis, obowiązki online.…",
+      "t": {
+        "en": {
+          "title": "Digitalisation of work permits and declarations on praca.gov.pl (2026)",
+          "summary": "Since 2025, declarations and applications for a work permit are submitted exclusively electronically via praca.gov.pl. Organisation account, signature, online obligations.…"
+        },
+        "es": {
+          "title": "Digitalización de los permisos y declaraciones de trabajo en praca.gov.pl (2026)",
+          "summary": "Desde 2025, las declaraciones y las solicitudes de permiso de trabajo se presentan exclusivamente por vía electrónica a través de praca.gov.pl. Cuenta de la organización, firma, obligaciones en línea.…"
+        },
+        "uk": {
+          "title": "Електронізація дозволів і заяв на praca.gov.pl (2026)",
+          "summary": "З 2025 р. заяви та клопотання про дозвіл на роботу подаються виключно електронно через praca.gov.pl. Обліковий запис організації, підпис, онлайн-обов'язки.…"
+        },
+        "ru": {
+          "title": "Электронизация разрешений и заявлений на praca.gov.pl (2026)",
+          "summary": "С 2025 г. заявления и ходатайства о разрешении на работу подаются исключительно электронно через praca.gov.pl. Учётная запись организации, подпись, онлайн-обязанности.…"
+        },
+        "fr": {
+          "title": "Dématérialisation des autorisations et déclarations de travail sur praca.gov.pl (2026)",
+          "summary": "Depuis 2025, les déclarations et les demandes d'autorisation de travail se déposent exclusivement par voie électronique via praca.gov.pl. Compte de l'organisation, signature, obligations en ligne.…"
+        }
+      }
     },
     {
       "id": "2026-08-03-cosc-mobilnosc-krotkoterminowa-niebieska-karta-ict",
@@ -1133,7 +1199,29 @@
       "author": "Dariusz Włodarczyk Kancelaria TRC",
       "url": "artykul-mobilnosc-krotkoterminowa-niebieska-karta-ict.html",
       "title": "Mobilność krótkoterminowa — Niebieska Karta UE, ICT, naukowiec (2026)",
-      "summary": "Mobilność krótkoterminowa cudzoziemca: Niebieska Karta UE, przeniesienie wewnątrz przedsiębiorstwa (ICT), naukowiec, student. Warunki, zawiadomienia i ryzyko.…"
+      "summary": "Mobilność krótkoterminowa cudzoziemca: Niebieska Karta UE, przeniesienie wewnątrz przedsiębiorstwa (ICT), naukowiec, student. Warunki, zawiadomienia i ryzyko.…",
+      "t": {
+        "en": {
+          "title": "Short-term mobility — EU Blue Card, ICT, researcher (2026)",
+          "summary": "Short-term mobility of a foreigner: EU Blue Card, intra-corporate transfer (ICT), researcher, student. Conditions, notifications and risks.…"
+        },
+        "es": {
+          "title": "Movilidad de corta duración — Tarjeta Azul UE, ICT, investigador (2026)",
+          "summary": "Movilidad de corta duración del extranjero: Tarjeta Azul UE, traslado intraempresarial (ICT), investigador, estudiante. Condiciones, notificaciones y riesgos.…"
+        },
+        "uk": {
+          "title": "Короткострокова мобільність — Блакитна карта ЄС, ICT, науковець (2026)",
+          "summary": "Короткострокова мобільність іноземця: Блакитна карта ЄС, внутрішньокорпоративне переведення (ICT), науковець, студент. Умови, повідомлення та ризики.…"
+        },
+        "ru": {
+          "title": "Краткосрочная мобильность — Голубая карта ЕС, ICT, научный работник (2026)",
+          "summary": "Краткосрочная мобильность иностранца: Голубая карта ЕС, внутрикорпоративный перевод (ICT), научный работник, студент. Условия, уведомления и риски.…"
+        },
+        "fr": {
+          "title": "Mobilité de courte durée — Carte bleue européenne, ICT, chercheur (2026)",
+          "summary": "Mobilité de courte durée de l'étranger : Carte bleue européenne, transfert intragroupe (ICT), chercheur, étudiant. Conditions, notifications et risques.…"
+        }
+      }
     },
     {
       "id": "2026-08-02-pip-decyzja-stosunek-pracy-dzu-473",
@@ -1375,7 +1463,29 @@
       "author": "Dariusz Włodarczyk Kancelaria TRC",
       "url": "artykul-nielegalne-zatrudnienie-a-podatek.html",
       "title": "Nielegalne zatrudnienie a podatek — skutki dla pracownika i pracodawcy",
-      "summary": "Kto płaci PIT przy nielegalnym zatrudnieniu cudzoziemca? Zwolnienie przychodu pracownika (art. 21 ust. 1 pkt 151 PIT) i przeniesienie skutków na pracodawcę.…"
+      "summary": "Kto płaci PIT przy nielegalnym zatrudnieniu cudzoziemca? Zwolnienie przychodu pracownika (art. 21 ust. 1 pkt 151 PIT) i przeniesienie skutków na pracodawcę.…",
+      "t": {
+        "en": {
+          "title": "Illegal employment and tax — consequences for the employee and the employer",
+          "summary": "Who pays PIT in the case of illegal employment of a foreigner? Exemption of the employee's income (art. 21 sec. 1 point 151 of the PIT Act) and the shifting of consequences onto the employer.…"
+        },
+        "es": {
+          "title": "Empleo ilegal e impuestos — consecuencias para el trabajador y el empleador",
+          "summary": "¿Quién paga el PIT en caso de empleo ilegal de un extranjero? Exención de los ingresos del trabajador (art. 21 apdo. 1 punto 151 de la Ley del PIT) y traslado de las consecuencias al empleador.…"
+        },
+        "uk": {
+          "title": "Нелегальне працевлаштування і податок — наслідки для працівника та роботодавця",
+          "summary": "Хто платить PIT при нелегальному працевлаштуванні іноземця? Звільнення доходу працівника (ст. 21 ч. 1 п. 151 закону про PIT) і перенесення наслідків на роботодавця.…"
+        },
+        "ru": {
+          "title": "Нелегальное трудоустройство и налог — последствия для работника и работодателя",
+          "summary": "Кто платит PIT при нелегальном трудоустройстве иностранца? Освобождение дохода работника (ст. 21 ч. 1 п. 151 закона о PIT) и перенос последствий на работодателя.…"
+        },
+        "fr": {
+          "title": "Emploi illégal et impôt — conséquences pour le salarié et l'employeur",
+          "summary": "Qui paie le PIT en cas d'emploi illégal d'un étranger ? Exonération du revenu du salarié (art. 21 al. 1 pt 151 de la loi PIT) et transfert des conséquences sur l'employeur.…"
+        }
+      }
     },
     {
       "id": "2026-08-01-udsc-termin-wymiany-dokumentow-ue-3-sierpnia",
@@ -1419,7 +1529,29 @@
       "author": "Dariusz Włodarczyk Kancelaria TRC",
       "url": "artykul-nieograniczony-ograniczony-obowiazek-podatkowy.html",
       "title": "Jak opodatkowany jest cudzoziemiec w Polsce — obowiązek podatkowy",
-      "summary": "Nieograniczony a ograniczony obowiązek podatkowy cudzoziemca: od czego płacisz PIT w Polsce, co znaczy dochód osiągany w Polsce, podatek u źródła. Podstawa…"
+      "summary": "Nieograniczony a ograniczony obowiązek podatkowy cudzoziemca: od czego płacisz PIT w Polsce, co znaczy dochód osiągany w Polsce, podatek u źródła. Podstawa…",
+      "t": {
+        "en": {
+          "title": "How a foreigner is taxed in Poland — tax liability",
+          "summary": "Unlimited versus limited tax liability of a foreigner: what you pay PIT on in Poland, what income earned in Poland means, withholding tax. Legal basis…"
+        },
+        "es": {
+          "title": "Cómo tributa un extranjero en Polonia — obligación tributaria",
+          "summary": "Obligación tributaria ilimitada frente a limitada del extranjero: por qué se paga el PIT en Polonia, qué significa renta obtenida en Polonia, retención en la fuente. Base legal…"
+        },
+        "uk": {
+          "title": "Як оподатковується іноземець у Польщі — податковий обов'язок",
+          "summary": "Необмежений і обмежений податковий обов'язок іноземця: з чого сплачується PIT у Польщі, що означає дохід, отриманий у Польщі, податок у джерела. Правова підстава…"
+        },
+        "ru": {
+          "title": "Как облагается налогом иностранец в Польше — налоговая обязанность",
+          "summary": "Неограниченная и ограниченная налоговая обязанность иностранца: с чего платится PIT в Польше, что означает доход, полученный в Польше, налог у источника. Правовое основание…"
+        },
+        "fr": {
+          "title": "Comment un étranger est imposé en Pologne — obligation fiscale",
+          "summary": "Obligation fiscale illimitée ou limitée de l'étranger : sur quoi paie-t-on le PIT en Pologne, ce que signifie un revenu réalisé en Pologne, retenue à la source. Base juridique…"
+        }
+      }
     },
     {
       "id": "2026-08-01-cosc-unikanie-podwojnego-opodatkowania-upo",
@@ -1430,7 +1562,29 @@
       "author": "Dariusz Włodarczyk Kancelaria TRC",
       "url": "artykul-unikanie-podwojnego-opodatkowania-upo.html",
       "title": "Unikanie podwójnego opodatkowania — UPO, certyfikat rezydencji (2026)",
-      "summary": "Jak uniknąć podwójnego opodatkowania dochodu z pracy: metody (wyłączenie z progresją, odliczenie proporcjonalne), ulga abolicyjna, certyfikat rezydencji…"
+      "summary": "Jak uniknąć podwójnego opodatkowania dochodu z pracy: metody (wyłączenie z progresją, odliczenie proporcjonalne), ulga abolicyjna, certyfikat rezydencji…",
+      "t": {
+        "en": {
+          "title": "Avoidance of double taxation — UPO, certificate of residence (2026)",
+          "summary": "How to avoid double taxation of employment income: methods (exemption with progression, proportional credit), the abolition relief, certificate of residence…"
+        },
+        "es": {
+          "title": "Evitación de la doble imposición — UPO, certificado de residencia (2026)",
+          "summary": "Cómo evitar la doble imposición de las rentas del trabajo: métodos (exención con progresividad, deducción proporcional), la bonificación de abolición, certificado de residencia…"
+        },
+        "uk": {
+          "title": "Уникнення подвійного оподаткування — UPO, сертифікат резидентності (2026)",
+          "summary": "Як уникнути подвійного оподаткування доходу від праці: методи (звільнення з прогресією, пропорційне зарахування), пільга абаліційна, сертифікат резидентності…"
+        },
+        "ru": {
+          "title": "Избежание двойного налогообложения — UPO, сертификат резидентства (2026)",
+          "summary": "Как избежать двойного налогообложения дохода от работы: методы (освобождение с прогрессией, пропорциональный зачёт), абалиционная льгота, сертификат резидентства…"
+        },
+        "fr": {
+          "title": "Éviter la double imposition — UPO, certificat de résidence (2026)",
+          "summary": "Comment éviter la double imposition des revenus du travail : méthodes (exonération avec progressivité, imputation proportionnelle), l'abattement d'abolition, certificat de résidence…"
+        }
+      }
     },
     {
       "id": "2026-07-31-statystyki-sg-i-polrocze-2026",
@@ -1573,7 +1727,29 @@
       "author": "Dariusz Włodarczyk Kancelaria TRC",
       "url": "artykul-umowy-miedzynarodowe-zabezpieczenie-spoleczne.html",
       "title": "Umowy o zabezpieczeniu społecznym z krajami spoza UE (2026)",
-      "summary": "Dwustronne umowy o zabezpieczeniu społecznym: gdzie płaci składki cudzoziemiec spoza UE, zaświadczenie zamiast A1, sumowanie okresów. Jak sprawdzić, czy jest…"
+      "summary": "Dwustronne umowy o zabezpieczeniu społecznym: gdzie płaci składki cudzoziemiec spoza UE, zaświadczenie zamiast A1, sumowanie okresów. Jak sprawdzić, czy jest…",
+      "t": {
+        "en": {
+          "title": "Social security agreements with non-EU countries (2026)",
+          "summary": "Bilateral social security agreements: where a non-EU foreigner pays contributions, a certificate instead of the A1, aggregation of periods. How to check whether there is…"
+        },
+        "es": {
+          "title": "Convenios de seguridad social con países fuera de la UE (2026)",
+          "summary": "Convenios bilaterales de seguridad social: dónde paga las cotizaciones un extranjero de fuera de la UE, certificado en lugar del A1, totalización de períodos. Cómo comprobar si existe…"
+        },
+        "uk": {
+          "title": "Угоди про соціальне забезпечення з країнами поза ЄС (2026)",
+          "summary": "Двосторонні угоди про соціальне забезпечення: де сплачує внески іноземець з-поза ЄС, довідка замість A1, сумування періодів. Як перевірити, чи є…"
+        },
+        "ru": {
+          "title": "Соглашения о социальном обеспечении со странами вне ЕС (2026)",
+          "summary": "Двусторонние соглашения о социальном обеспечении: где платит взносы иностранец из-за пределов ЕС, справка вместо A1, суммирование периодов. Как проверить, есть ли…"
+        },
+        "fr": {
+          "title": "Conventions de sécurité sociale avec les pays hors UE (2026)",
+          "summary": "Conventions bilatérales de sécurité sociale : où l'étranger hors UE paie ses cotisations, attestation au lieu du A1, totalisation des périodes. Comment vérifier s'il existe…"
+        }
+      }
     },
     {
       "id": "2026-07-31-cosc-rozliczenie-pit-cudzoziemca-kadry",
@@ -1584,7 +1760,29 @@
       "author": "Dariusz Włodarczyk Kancelaria TRC",
       "url": "artykul-rozliczenie-pit-cudzoziemca-kadry.html",
       "title": "Rozliczenie PIT cudzoziemca — PIT-11, PIT-37, terminy (dla kadr)",
-      "summary": "Jak rozliczyć PIT pracownika cudzoziemca: obowiązki płatnika, PIT-11, PIT-37/PIT-36, IFT-1, terminy i rola rezydencji podatkowej. Praktyczny przewodnik…"
+      "summary": "Jak rozliczyć PIT pracownika cudzoziemca: obowiązki płatnika, PIT-11, PIT-37/PIT-36, IFT-1, terminy i rola rezydencji podatkowej. Praktyczny przewodnik…",
+      "t": {
+        "en": {
+          "title": "Filing a foreigner's PIT — PIT-11, PIT-37, deadlines (for HR)",
+          "summary": "How to settle the PIT of a foreign employee: obligations of the remitter, PIT-11, PIT-37/PIT-36, IFT-1, deadlines and the role of tax residence. A practical guide…"
+        },
+        "es": {
+          "title": "Declaración del PIT de un extranjero — PIT-11, PIT-37, plazos (para RR. HH.)",
+          "summary": "Cómo liquidar el PIT de un trabajador extranjero: obligaciones del retenedor, PIT-11, PIT-37/PIT-36, IFT-1, plazos y papel de la residencia fiscal. Guía práctica…"
+        },
+        "uk": {
+          "title": "Розрахунок PIT іноземця — PIT-11, PIT-37, терміни (для кадрів)",
+          "summary": "Як розрахувати PIT працівника-іноземця: обов'язки податкового агента, PIT-11, PIT-37/PIT-36, IFT-1, терміни та роль податкового резидентства. Практичний посібник…"
+        },
+        "ru": {
+          "title": "Расчёт PIT иностранца — PIT-11, PIT-37, сроки (для кадров)",
+          "summary": "Как рассчитать PIT работника-иностранца: обязанности налогового агента, PIT-11, PIT-37/PIT-36, IFT-1, сроки и роль налогового резидентства. Практическое руководство…"
+        },
+        "fr": {
+          "title": "Déclaration du PIT d'un étranger — PIT-11, PIT-37, délais (pour les RH)",
+          "summary": "Comment établir le PIT d'un salarié étranger : obligations du redevable, PIT-11, PIT-37/PIT-36, IFT-1, délais et rôle de la résidence fiscale. Guide pratique…"
+        }
+      }
     },
     {
       "id": "2026-07-30-sg-bezpieczne-podlasie-zmiana",
@@ -1793,7 +1991,29 @@
       "author": "Dariusz Włodarczyk Kancelaria TRC",
       "url": "artykul-delegowanie-a1-skladki.html",
       "title": "Delegowanie i formularz A1 — składki cudzoziemca w UE (2026)",
-      "summary": "Formularz A1 i delegowanie: gdzie płaci się składki przy pracy w UE, zasada jednego ustawodawstwa (rozp. 883/2004), delegowanie do 24 miesięcy, ryzyko braku…"
+      "summary": "Formularz A1 i delegowanie: gdzie płaci się składki przy pracy w UE, zasada jednego ustawodawstwa (rozp. 883/2004), delegowanie do 24 miesięcy, ryzyko braku…",
+      "t": {
+        "en": {
+          "title": "Posting and the A1 form — a foreigner's contributions in the EU (2026)",
+          "summary": "The A1 form and posting: where contributions are paid when working in the EU, the single applicable legislation principle (Reg. 883/2004), posting for up to 24 months, the risk of not having…"
+        },
+        "es": {
+          "title": "Desplazamiento y formulario A1 — cotizaciones del extranjero en la UE (2026)",
+          "summary": "Formulario A1 y desplazamiento: dónde se pagan las cotizaciones al trabajar en la UE, principio de la legislación única (Regl. 883/2004), desplazamiento de hasta 24 meses, riesgo de no disponer de…"
+        },
+        "uk": {
+          "title": "Відрядження та формуляр A1 — внески іноземця в ЄС (2026)",
+          "summary": "Формуляр A1 і відрядження: де сплачуються внески при роботі в ЄС, принцип єдиного законодавства (регл. 883/2004), відрядження до 24 місяців, ризик відсутності…"
+        },
+        "ru": {
+          "title": "Командирование и формуляр A1 — взносы иностранца в ЕС (2026)",
+          "summary": "Формуляр A1 и командирование: где платятся взносы при работе в ЕС, принцип единого законодательства (регл. 883/2004), командирование до 24 месяцев, риск отсутствия…"
+        },
+        "fr": {
+          "title": "Détachement et formulaire A1 — cotisations de l'étranger dans l'UE (2026)",
+          "summary": "Formulaire A1 et détachement : où sont payées les cotisations lors d'un travail dans l'UE, principe de l'unicité de la législation (règl. 883/2004), détachement jusqu'à 24 mois, risque en l'absence de…"
+        }
+      }
     },
     {
       "id": "2026-07-30-cosc-pracownik-delegowany-z-ue-skladki-polska",
@@ -1804,7 +2024,29 @@
       "author": "Dariusz Włodarczyk Kancelaria TRC",
       "url": "artykul-pracownik-delegowany-z-ue-skladki-polska.html",
       "title": "Pracownik delegowany z UE do Polski — składki i A1 (2026)",
-      "summary": "Delegowanie z UE do Polski: gdzie płaci się składki, rola A1, ubezpieczenie zdrowotne (EKUZ), obowiązki firm i ryzyko braku A1. Przewodnik dla kadr…"
+      "summary": "Delegowanie z UE do Polski: gdzie płaci się składki, rola A1, ubezpieczenie zdrowotne (EKUZ), obowiązki firm i ryzyko braku A1. Przewodnik dla kadr…",
+      "t": {
+        "en": {
+          "title": "Worker posted from the EU to Poland — contributions and the A1 (2026)",
+          "summary": "Posting from the EU to Poland: where contributions are paid, the role of the A1, health insurance (EHIC), company obligations and the risk of not having an A1. A guide for HR…"
+        },
+        "es": {
+          "title": "Trabajador desplazado de la UE a Polonia — cotizaciones y A1 (2026)",
+          "summary": "Desplazamiento de la UE a Polonia: dónde se pagan las cotizaciones, papel del A1, seguro de salud (TSE), obligaciones de las empresas y riesgo de no tener el A1. Guía para RR. HH.…"
+        },
+        "uk": {
+          "title": "Працівник, відряджений з ЄС до Польщі — внески та A1 (2026)",
+          "summary": "Відрядження з ЄС до Польщі: де сплачуються внески, роль A1, медичне страхування (EKUZ), обов'язки компаній і ризик відсутності A1. Посібник для кадрів…"
+        },
+        "ru": {
+          "title": "Работник, командированный из ЕС в Польшу — взносы и A1 (2026)",
+          "summary": "Командирование из ЕС в Польшу: где платятся взносы, роль A1, медицинское страхование (EKUZ), обязанности компаний и риск отсутствия A1. Руководство для кадров…"
+        },
+        "fr": {
+          "title": "Travailleur détaché de l'UE vers la Pologne — cotisations et A1 (2026)",
+          "summary": "Détachement de l'UE vers la Pologne : où sont payées les cotisations, rôle du A1, assurance maladie (CEAM), obligations des entreprises et risque en l'absence de A1. Guide pour les RH…"
+        }
+      }
     },
     {
       "id": "2026-07-29-cosc-kurierzy-zlecenie-stosunek-pracy-pip",
@@ -1914,7 +2156,29 @@
       "author": "Dariusz Włodarczyk Kancelaria TRC",
       "url": "artykul-zus-obywatel-ukrainy-polska-ukraina.html",
       "title": "Składki ZUS obywatela Ukrainy — umowa Polska–Ukraina (2026)",
-      "summary": "ZUS za obywatela Ukrainy: umowa o zabezpieczeniu społecznym (Dz.U. 2013 poz. 1373), gdzie płaci się składki, sumowanie okresów, delegowanie. Praktyczny…"
+      "summary": "ZUS za obywatela Ukrainy: umowa o zabezpieczeniu społecznym (Dz.U. 2013 poz. 1373), gdzie płaci się składki, sumowanie okresów, delegowanie. Praktyczny…",
+      "t": {
+        "en": {
+          "title": "ZUS contributions for a Ukrainian citizen — the Poland–Ukraine agreement (2026)",
+          "summary": "ZUS for a Ukrainian citizen: the social security agreement (Dz.U. 2013 poz. 1373), where contributions are paid, aggregation of periods, posting. A practical…"
+        },
+        "es": {
+          "title": "Cotizaciones a la ZUS de un ciudadano de Ucrania — convenio Polonia–Ucrania (2026)",
+          "summary": "ZUS para un ciudadano de Ucrania: el convenio de seguridad social (Dz.U. 2013 poz. 1373), dónde se pagan las cotizaciones, totalización de períodos, desplazamiento. Guía práctica…"
+        },
+        "uk": {
+          "title": "Внески ZUS громадянина України — угода Польща–Україна (2026)",
+          "summary": "ZUS за громадянина України: угода про соціальне забезпечення (Dz.U. 2013 poz. 1373), де сплачуються внески, сумування періодів, відрядження. Практичний…"
+        },
+        "ru": {
+          "title": "Взносы ZUS гражданина Украины — соглашение Польша–Украина (2026)",
+          "summary": "ZUS за гражданина Украины: соглашение о социальном обеспечении (Dz.U. 2013 poz. 1373), где платятся взносы, суммирование периодов, командирование. Практическое…"
+        },
+        "fr": {
+          "title": "Cotisations ZUS d'un citoyen ukrainien — convention Pologne–Ukraine (2026)",
+          "summary": "ZUS pour un citoyen ukrainien : la convention de sécurité sociale (Dz.U. 2013 poz. 1373), où sont payées les cotisations, totalisation des périodes, détachement. Guide pratique…"
+        }
+      }
     },
     {
       "id": "2026-07-29-cosc-skladka-zdrowotna-cudzoziemca-nfz",
@@ -1925,7 +2189,29 @@
       "author": "Dariusz Włodarczyk Kancelaria TRC",
       "url": "artykul-skladka-zdrowotna-cudzoziemca-nfz.html",
       "title": "Składka zdrowotna cudzoziemca — 9%, NFZ, ZUS ZUA/ZZA (2026)",
-      "summary": "Ubezpieczenie zdrowotne cudzoziemca: obowiązek niezależny od obywatelstwa (art. 66 ustawy zdrowotnej), składka 9%, zgłoszenie ZUS ZUA/ZZA, dostęp do NFZ…"
+      "summary": "Ubezpieczenie zdrowotne cudzoziemca: obowiązek niezależny od obywatelstwa (art. 66 ustawy zdrowotnej), składka 9%, zgłoszenie ZUS ZUA/ZZA, dostęp do NFZ…",
+      "t": {
+        "en": {
+          "title": "A foreigner's health contribution — 9%, NFZ, ZUS ZUA/ZZA (2026)",
+          "summary": "Health insurance of a foreigner: the obligation applies regardless of citizenship (art. 66 of the Health Care Act), a 9% contribution, registration on ZUS ZUA/ZZA, access to the NFZ…"
+        },
+        "es": {
+          "title": "Cotización sanitaria del extranjero — 9%, NFZ, ZUS ZUA/ZZA (2026)",
+          "summary": "Seguro de salud del extranjero: la obligación es independiente de la nacionalidad (art. 66 de la Ley sanitaria), cotización del 9%, alta en ZUS ZUA/ZZA, acceso al NFZ…"
+        },
+        "uk": {
+          "title": "Медичний внесок іноземця — 9%, NFZ, ZUS ZUA/ZZA (2026)",
+          "summary": "Медичне страхування іноземця: обов'язок незалежний від громадянства (ст. 66 закону про охорону здоров'я), внесок 9%, реєстрація ZUS ZUA/ZZA, доступ до NFZ…"
+        },
+        "ru": {
+          "title": "Медицинский взнос иностранца — 9%, NFZ, ZUS ZUA/ZZA (2026)",
+          "summary": "Медицинское страхование иностранца: обязанность не зависит от гражданства (ст. 66 закона о здравоохранении), взнос 9%, регистрация ZUS ZUA/ZZA, доступ к NFZ…"
+        },
+        "fr": {
+          "title": "Cotisation santé de l'étranger — 9%, NFZ, ZUS ZUA/ZZA (2026)",
+          "summary": "Assurance maladie de l'étranger : l'obligation est indépendante de la nationalité (art. 66 de la loi sur la santé), cotisation de 9%, déclaration ZUS ZUA/ZZA, accès au NFZ…"
+        }
+      }
     },
     {
       "id": "2026-07-28-cosc-sn-i-pkn-558-99-nielegalne-zatrudnienie-cudzoziemca",
@@ -2101,7 +2387,29 @@
       "author": "Dariusz Włodarczyk Kancelaria TRC",
       "url": "artykul-zatrudnienie-obywatela-ukrainy-2026.html",
       "title": "Zatrudnienie obywatela Ukrainy 2026 — tryb i powiadomienie",
-      "summary": "Jak legalnie zatrudnić obywatela Ukrainy w 2026 r.: uproszczony tryb i powiadomienie o powierzeniu pracy, związek z pobytem (status UKR). Przepisy zmienne…"
+      "summary": "Jak legalnie zatrudnić obywatela Ukrainy w 2026 r.: uproszczony tryb i powiadomienie o powierzeniu pracy, związek z pobytem (status UKR). Przepisy zmienne…",
+      "t": {
+        "en": {
+          "title": "Employing a Ukrainian citizen in 2026 — procedure and notification",
+          "summary": "How to legally employ a Ukrainian citizen in 2026: the simplified procedure and the notification of entrusting work, and its link to residence (UKR status). The rules are changing…"
+        },
+        "es": {
+          "title": "Contratación de un ciudadano de Ucrania en 2026 — procedimiento y notificación",
+          "summary": "Cómo contratar legalmente a un ciudadano de Ucrania en 2026: procedimiento simplificado y notificación de encomienda de trabajo, y su relación con la residencia (estatus UKR). Las normas cambian…"
+        },
+        "uk": {
+          "title": "Працевлаштування громадянина України у 2026 р. — порядок і повідомлення",
+          "summary": "Як легально працевлаштувати громадянина України у 2026 р.: спрощений порядок і повідомлення про доручення роботи, зв'язок з перебуванням (статус UKR). Норми змінюються…"
+        },
+        "ru": {
+          "title": "Трудоустройство гражданина Украины в 2026 г. — порядок и уведомление",
+          "summary": "Как легально трудоустроить гражданина Украины в 2026 г.: упрощённый порядок и уведомление о поручении работы, связь с пребыванием (статус UKR). Нормы меняются…"
+        },
+        "fr": {
+          "title": "Embauche d'un citoyen ukrainien en 2026 — procédure et notification",
+          "summary": "Comment employer légalement un citoyen ukrainien en 2026 : procédure simplifiée et notification de confiement de travail, lien avec le séjour (statut UKR). Les règles évoluent…"
+        }
+      }
     },
     {
       "id": "2026-07-27-udsc-pesel-ukr-dokument-podrozy",
@@ -2640,7 +2948,29 @@
       "source_name": "HRLaw.pl (Wardyński i Wspólnicy)",
       "author": "",
       "url": "https://hrlaw.pl/flesze/praca-studentow-cudzoziemcow-od-1-lipca-2026-r-tylko-po-weryfikacji-uczelni",
-      "scope": "PL"
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "End of the transitional period: from 1 July 2026 foreign students may work only after verification of the university",
+          "summary": "From 1 July 2026 the mere status of a student no longer exempts a foreigner from the obligation to hold a document legalising work. The exemption covers only students of public universities and of institutions approved by the MSWiA for the purpose of admitting foreigners. The employer must now check whether the given university appears on the relevant list; if not, a standard basis for legalising work is required (notification/declaration/permit). Failure to comply carries the risk of illegally entrusting work. Details should be verified against the source and the applicable provisions."
+        },
+        "es": {
+          "title": "Fin del período transitorio: desde el 1 de julio de 2026 los estudiantes extranjeros solo pueden trabajar tras la verificación de la universidad",
+          "summary": "Desde el 1 de julio de 2026 la mera condición de estudiante ya no exime al extranjero de la obligación de obtener un documento que legalice el trabajo. La exención abarca únicamente a los estudiantes de universidades públicas y de entidades aprobadas por el MSWiA a efectos de admisión de extranjeros. El empleador debe comprobar ahora si la universidad figura en la lista correspondiente; de no ser así, se requiere una base estándar de legalización del trabajo (notificación/declaración/permiso). El incumplimiento conlleva el riesgo de encomienda ilegal de trabajo. Los detalles deben verificarse en la fuente y en las disposiciones vigentes."
+        },
+        "uk": {
+          "title": "Кінець перехідного періоду: з 1 липня 2026 р. робота студентів-іноземців лише після перевірки закладу освіти",
+          "summary": "З 1 липня 2026 р. сам статус студента вже не звільняє іноземця від обов'язку мати документ, що легалізує роботу. Звільнення охоплює виключно студентів державних закладів вищої освіти та установ, затверджених MSWiA для потреб прийому іноземців. Роботодавець тепер повинен перевірити, чи даний заклад є у відповідному переліку; якщо ні — необхідна стандартна підстава легалізації роботи (повідомлення/заява/дозвіл). Невиконання обов'язку загрожує ризиком нелегального доручення роботи. Деталі слід перевірити у джерелі та в чинних приписах."
+        },
+        "ru": {
+          "title": "Конец переходного периода: с 1 июля 2026 г. работа студентов-иностранцев только после проверки вуза",
+          "summary": "С 1 июля 2026 г. сам статус студента больше не освобождает иностранца от обязанности иметь документ, легализующий работу. Освобождение охватывает исключительно студентов государственных вузов и учреждений, утверждённых MSWiA для целей приёма иностранцев. Работодатель теперь должен проверить, есть ли данный вуз в соответствующем перечне; если нет — необходимо стандартное основание легализации работы (уведомление/заявление/разрешение). Неисполнение обязанности несёт риск нелегального поручения работы. Детали следует проверить в источнике и в действующих нормах."
+        },
+        "fr": {
+          "title": "Fin de la période transitoire : à partir du 1er juillet 2026, le travail des étudiants étrangers uniquement après vérification de l'établissement",
+          "summary": "À compter du 1er juillet 2026, le seul statut d'étudiant ne suffit plus pour exonérer un étranger de l'obligation d'obtenir un document légalisant le travail. L'exonération ne couvre que les étudiants des universités publiques et des établissements agréés par le MSWiA aux fins d'accueil des étrangers. L'employeur doit désormais vérifier si l'établissement figure sur la liste correspondante ; dans le cas contraire, une base standard de légalisation du travail est nécessaire (notification/déclaration/autorisation). Le manquement à cette obligation expose au risque de confiement illégal de travail. Les détails doivent être vérifiés à la source et dans les dispositions en vigueur."
+        }
+      }
     },
     {
       "id": "2026-07-25-milczaca-zgoda-legalizacja",
