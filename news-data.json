@@ -1,6 +1,39 @@
 {
-  "updated": "2026-08-16T13:46:11.626492+02:00",
+  "updated": "2026-08-17T07:10:00Z",
   "items": [
+    {
+      "id": "2026-08-17-cosc-ulga-na-powrot-cudzoziemiec",
+      "added": "2026-08-17",
+      "category": "Rynek pracy",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-ulga-na-powrot-cudzoziemiec.html",
+      "title": "Ulga na powrót — zwolnienie z PIT do 85 528 zł także dla cudzoziemca [materiał własny COSC]",
+      "summary": "Ulga na powrót (art. 21 ust. 1 pkt 152 PIT): zwolnienie przychodów do 85 528 zł rocznie przez 4 lata po przeniesieniu rezydencji do Polski. Warunki, limit PIT-0, jak stosuje pracodawca. Stan 2026.",
+      "t": {
+        "en": {
+          "title": "Return relief — PIT exemption up to PLN 85,528 also for a foreigner [COSC own material]",
+          "summary": "Return relief (Art. 21(1)(152) of the PIT Act): exemption of income up to PLN 85,528 per year for 4 years after transferring tax residence to Poland. Conditions, the PIT-0 limit, how the employer applies it. Status 2026."
+        },
+        "es": {
+          "title": "Alivio por regreso: exención del PIT de hasta 85 528 PLN también para un extranjero [material propio de COSC]",
+          "summary": "Alivio por regreso (art. 21 apdo. 1 punto 152 de la ley del PIT): exención de ingresos de hasta 85 528 PLN al año durante 4 años tras trasladar la residencia fiscal a Polonia. Condiciones, límite PIT-0, cómo lo aplica el empleador. Estado 2026."
+        },
+        "uk": {
+          "title": "Пільга на повернення — звільнення від PIT до 85 528 злотих також для іноземця [власний матеріал COSC]",
+          "summary": "Пільга на повернення (ст. 21 ч. 1 п. 152 закону про PIT): звільнення доходів до 85 528 злотих на рік протягом 4 років після перенесення податкового резидентства до Польщі. Умови, ліміт PIT-0, як застосовує роботодавець. Стан на 2026 рік."
+        },
+        "ru": {
+          "title": "Льгота на возвращение — освобождение от PIT до 85 528 злотых также для иностранца [собственный материал COSC]",
+          "summary": "Льгота на возвращение (ст. 21 ч. 1 п. 152 закона о PIT): освобождение доходов до 85 528 злотых в год в течение 4 лет после переноса налогового резидентства в Польшу. Условия, лимит PIT-0, как применяет работодатель. Состояние на 2026 год."
+        },
+        "fr": {
+          "title": "Allègement au retour — exonération de PIT jusqu'à 85 528 PLN aussi pour un étranger [matériel propre COSC]",
+          "summary": "Allègement au retour (art. 21 al. 1 pt 152 de la loi PIT) : exonération des revenus jusqu'à 85 528 PLN par an pendant 4 ans après le transfert de la résidence fiscale en Pologne. Conditions, plafond PIT-0, application par l'employeur. État 2026."
+        }
+      }
+    },
     {
       "id": "2026-08-14-cosc-elektronizacja-zezwolen-praca-gov-pl",
       "added": "2026-08-14",
