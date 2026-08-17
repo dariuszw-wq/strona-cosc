@@ -82,7 +82,7 @@ def build_svg(title, badge):
 
 def process(fn, write_meta=True):
     h=open(fn,encoding='utf-8').read()
-    m=re.search(r'<h1>(.*?)</h1>',h,re.S)
+    m=re.search(r'<h1[^>]*>(.*?)</h1>',h,re.S)
     if not m: print('POMIŃ (brak h1):',fn); return False
     title=H.unescape(re.sub(r'<[^>]+>','',m.group(1))).strip()
     eb=re.search(r'class="eyebrow">([^<]*)<',h)
