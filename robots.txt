@@ -1,6 +1,9 @@
 User-agent: *
 Allow: /
 Allow: /og/
+Disallow: /fb-automat/
+Disallow: /zrodla-zablokowane.txt
+
 
 Sitemap: https://cosc.org.pl/sitemap.xml
 Sitemap: https://cosc.org.pl/sitemap-es.xml
