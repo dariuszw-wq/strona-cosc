@@ -1,0 +1,33 @@
+# LISTA ZAKAZANYCH ŹRÓDEŁ — News room COSC
+# ------------------------------------------------------------
+# Automat "cosc-news-room" czyta ten plik przed każdym wyszukiwaniem
+# i POMIJA wszystkie wpisy pochodzące z podanych tu źródeł.
+#
+# JAK EDYTOWAĆ:
+# - Jedno źródło w jednym wierszu.
+# - Możesz podać domenę (np. przyklad.pl) albo nazwę tytułu (np. "Przykładowy Portal").
+#   Domeny działają najpewniej (automat użyje ich do blokady w wyszukiwarce).
+# - Wiersze zaczynające się od # to komentarze — automat je ignoruje.
+# - Puste wiersze są ignorowane.
+# - Zapisz plik po edycji. Zmiany działają od następnego uruchomienia automatu.
+#
+# PRZYKŁADY (usuń # aby aktywować lub dopisz własne poniżej):
+# tabloid-przyklad.pl
+# pudelek.pl
+# "Fakt"
+# "Super Express"
+#
+# ====== TWOJA LISTA (dopisuj poniżej) ======
+
+wpolityce.pl
+niezalezna.pl
+dorzeczy.pl
+telewizjarepublika.pl
+fronda.pl
+pch24.pl
+gosc.pl
+niedziela.pl
+radiomaryja.pl
+salon24.pl
+nczas.com
+
