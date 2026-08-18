@@ -34,9 +34,22 @@ TAGS = {
 }
 
 def load_items(html_path):
-    txt = open(html_path, encoding="utf-8").read()
-    objs = re.findall(r'\{"added":.*?\}', txt)
-    items = [json.loads(o) for o in objs]
+    """Zrodlo prawdy = news-data.json (obok aktualnosci.html). Zywa strona pobiera
+    dane fetchem z tego pliku; w HTML zostal tylko maly blok kopii zapasowej dla
+    podgladu file://, wiec parsowanie HTML gubilo wiekszosc wpisow."""
+    import os
+    data_path = os.path.join(os.path.dirname(os.path.abspath(html_path)), "news-data.json")
+    items = []
+    if os.path.exists(data_path):
+        try:
+            d = json.load(open(data_path, encoding="utf-8"))
+            items = d.get("items", d) if isinstance(d, dict) else d
+        except Exception:
+            items = []
+    if not items:  # awaryjnie: stary tryb parsowania HTML
+        txt = open(html_path, encoding="utf-8").read()
+        objs = re.findall(r'\{"added":.*?\}', txt)
+        items = [json.loads(o) for o in objs]
     return [it for it in items if it.get("category") in CATS]
 
 def guid(it):

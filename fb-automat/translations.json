@@ -1,44 +1,394 @@
 {
- "https://www.rp.pl/cudzoziemcy/art43496891-prezydent-podpisal-nowelizacje-ustawy-o-cudzoziemcach": {
+ "artykul-brak-wezwania-z-urzedu-karta-pobytu.html": {
   "en": {
-   "title": "Amendment to the Foreigners Act signed — residence applications only online via MOS",
-   "summary": "The President signed an amendment to the Foreigners Act moving applications for temporary residence, permanent residence and EU long-term resident permits from paper to the MOS system (Moduł Obsługi Spraw). Access is to be free of charge and the application can be filed by the applicant. Scope and dates should be verified at the source."
+   "summary": "When the employer runs the case, the summons goes to the employer — and the deadline runs (art. 40 § 2 KPA). Formal defects left unremedied mean the application is left without examination (art. 64 § 2 KPA). What to do.",
+   "title": "Did not receive the summons from the authority? This is how you can lose your residence card [COSC own material]"
   },
   "es": {
-   "title": "Firmada la reforma de la Ley de Extranjería — solicitudes de residencia solo en línea por MOS",
-   "summary": "El Presidente firmó una reforma de la Ley de Extranjería que traslada las solicitudes de residencia temporal, residencia permanente y residente de larga duración-UE del papel al sistema MOS (Moduł Obsługi Spraw). El acceso será gratuito y la solicitud puede presentarse por uno mismo. El alcance y los plazos deben verificarse en la fuente."
+   "summary": "Cuando el expediente lo lleva el empleador, el requerimiento se le notifica a el, y el plazo corre igualmente (art. 40 § 2 KPA). Los defectos formales no subsanados suponen dejar la solicitud sin examinar (art. 64 § 2 KPA). Que hacer.",
+   "title": "No recibio el requerimiento de la administracion? Asi se puede perder la tarjeta de residencia [material propio de COSC]"
   },
   "uk": {
-   "title": "Підписано зміни до Закону про іноземців — заяви на проживання лише онлайн через MOS",
-   "summary": "Президент підписав зміни до Закону про іноземців, які переносять подання заяв на тимчасове проживання, постійне проживання та довгострокового резидента ЄС з паперової форми до системи MOS (Moduł Obsługi Spraw). Доступ має бути безкоштовним, а заяву можна подати самостійно. Обсяг і терміни слід перевірити в джерелі."
+   "summary": "Коли справу веде роботодавець, виклик з органу надходить до нього — а строк спливає (art. 40 § 2 KPA). Неусунені формальні недоліки означають залишення заяви без розгляду (art. 64 § 2 KPA). Що робити.",
+   "title": "Не отримали виклик з органу? Так можна втратити карту побиту [власний матеріал COSC]"
   }
  },
- "https://zielonalinia.gov.pl/zmiany-w-ustawie-o-cudzoziemcach/": {
+ "artykul-delegowanie-a1-skladki.html": {
   "en": {
-   "title": "MOS in practice: fees, 60 days to collect the card and duties of CUKR card holders",
-   "summary": "Zielona Linia explains the 2026 changes: a stamp duty plus PLN 100 for the card, 60 days to collect the card, and for the CUKR card an obligation to report a change of residence within 15 working days and the risk of losing the permit after an absence of more than 6 months."
+   "summary": "The A1 form and posting: where contributions are paid for work in the EU, the single-legislation rule (Reg. 883/2004), posting for up to 24 months and the risk of working without an A1. A guide for HR. Status: 2026.",
+   "title": "Posting and the A1 form — where a foreign worker's contributions are paid [COSC own material]"
   },
   "es": {
-   "title": "MOS en la práctica: tasas, 60 días para recoger la tarjeta y obligaciones de los titulares de la tarjeta CUKR",
-   "summary": "Zielona Linia explica los cambios de 2026: una tasa administrativa y 100 PLN por la tarjeta, 60 días para recogerla y, para la tarjeta CUKR, la obligación de comunicar el cambio de domicilio en 15 días hábiles y el riesgo de perder el permiso tras una ausencia superior a 6 meses."
+   "summary": "Formulario A1 y desplazamiento: donde se cotiza al trabajar en la UE, la regla de una sola legislacion aplicable (Regl. 883/2004), desplazamiento de hasta 24 meses y el riesgo de trabajar sin A1. Guia para recursos humanos. Situacion: 2026.",
+   "title": "Desplazamiento y formulario A1: donde se pagan las cotizaciones del trabajador extranjero [material propio de COSC]"
   },
   "uk": {
-   "title": "MOS на практиці: збори, 60 днів на отримання картки та обов'язки власників картки CUKR",
-   "summary": "Zielona Linia пояснює зміни 2026 року: адміністративний збір і 100 злотих за картку, 60 днів на отримання картки, а для картки CUKR — обов'язок повідомити про зміну місця проживання протягом 15 робочих днів і ризик втрати дозволу в разі відсутності понад 6 місяців."
+   "summary": "Формуляр A1 та відкомандирування: де сплачуються внески під час роботи в ЄС, принцип одного застосовного законодавства (Регламент 883/2004), відкомандирування до 24 місяців і ризик роботи без A1. Порадник для кадрових служб. Стан: 2026 р.",
+   "title": "Відкомандирування і формуляр A1 — де сплачуються внески за іноземця [власний матеріал COSC]"
+  }
+ },
+ "artykul-dowod-doreczenia-wezwania-urzad.html": {
+  "en": {
+   "summary": "The authority logged that a summons was sent, you received nothing, and the file holds neither a return receipt nor the returned envelope with delivery notes. The guide explains why that envelope can matter more than the letter itself. Deadlines in a residence case run from effective delivery, not from printing a letter or an SMS from the system. The burden of proving delivery rests on the authority, since it derives the legal effect from it. We cover substitute delivery and the delivery fiction under art. 44 k.p.a., the three different deadlines that meet here (art. 64 § 2 k.p.a., art. 106 ust. 2a and art. 112a ust. 2 ustawy o cudzoziemcach), the right to inspect the file under art. 73 k.p.a. and six steps worth taking before the case is closed. We add systemic context: findings of the NIK audit, statements by the Ombudsman (RPO), and art. 100c and 100d of the assistance act, which excluded complaints about excessive length in residence cases.",
+   "title": "The authority says it sent the summons. Who must prove delivery — new COSC guide"
+  },
+  "es": {
+   "summary": "La administracion anoto en el sistema que envio el requerimiento, usted no recibio nada y en el expediente no hay ni acuse de recibo ni el sobre devuelto con las anotaciones de aviso. La guia explica por que ese sobre puede pesar mas que el propio escrito. Los plazos en un expediente de residencia corren desde la notificacion efectiva, no desde la impresion del escrito ni desde un SMS del sistema. La carga de probar la notificacion recae en el organo, porque de ella deriva el efecto juridico. Tratamos la notificacion sustitutoria y la ficcion de notificacion del art. 44 k.p.a., los tres plazos distintos que confluyen (art. 64 § 2 k.p.a., art. 106 ust. 2a y art. 112a ust. 2 ustawy o cudzoziemcach), el derecho de acceso al expediente del art. 73 k.p.a. y seis pasos utiles antes de que se cierre el asunto. Anadimos el contexto sistemico: conclusiones de la auditoria del NIK, actuaciones del Defensor del Pueblo (RPO) y los art. 100c y 100d de la ley de asistencia, que excluyeron la queja por dilacion en los expedientes de residencia.",
+   "title": "La administracion afirma que envio el requerimiento. Quien debe probar la notificacion: nueva guia de COSC"
+  },
+  "uk": {
+   "summary": "Орган записав у системі, що виклик надіслано, ви нічого не отримали, а в матеріалах справи немає ні зворотного підтвердження отримання, ні повернутого конверта з відмітками про повідомлення. У пораднику пояснюємо, чому цей конверт іноді важливіший за сам лист. Строки у справі про перебування спливають від дійсного вручення, а не від друку листа чи SMS із системи. Обов'язок довести вручення лежить на органі, бо саме він виводить із цього правовий наслідок. Розглядаємо замінне вручення та фікцію вручення за art. 44 k.p.a., три різні строки, що тут перетинаються (art. 64 § 2 k.p.a., art. 106 ust. 2a i art. 112a ust. 2 ustawy o cudzoziemcach), право ознайомлення з матеріалами справи за art. 73 k.p.a. і шість кроків, які варто зробити, перш ніж справу закриють. Додаємо системний контекст: висновки контролю NIK, звернення Уповноваженого з прав людини (RPO) та art. 100c i 100d ustawy pomocowej, які виключили скаргу на надмірну тривалість у справах про перебування.",
+   "title": "Орган твердить, що надіслав виклик. Хто повинен довести вручення — новий порадник COSC"
+  }
+ },
+ "artykul-elektronizacja-zezwolen-praca-gov-pl.html": {
+  "en": {
+   "summary": "Since 2025 declarations and work permit applications are filed exclusively online via praca.gov.pl. Organisation account, signature and online duties. For employers and HR.",
+   "title": "Digital work permits and declarations — how to hire a foreign national via praca.gov.pl [COSC own material]"
+  },
+  "es": {
+   "summary": "Desde 2025, las declaraciones y las solicitudes de permiso de trabajo se presentan unicamente en linea a traves de praca.gov.pl. Cuenta de organizacion, firma y obligaciones en linea. Para empleadores y recursos humanos.",
+   "title": "Digitalizacion de permisos y declaraciones: como contratar a un extranjero por praca.gov.pl [material propio de COSC]"
+  },
+  "uk": {
+   "summary": "З 2025 року заяви та клопотання про дозвіл на роботу подаються виключно електронно через praca.gov.pl. Обліковий запис організації, підпис, обов'язки онлайн. Для роботодавців і кадрових служб.",
+   "title": "Електронізація дозволів і заяв — як найняти іноземця через praca.gov.pl [власний матеріал COSC]"
+  }
+ },
+ "artykul-jak-odzyskac-dokumenty-do-karty-pobytu.html": {
+  "en": {
+   "summary": "Which documents in a residence case matter most, how to recover them effectively (formal demand, evidence, a representative) and how to obtain copies from the case file under art. 73 KPA.",
+   "title": "How to recover residence card documents from an employer or agency [COSC own material]"
+  },
+  "es": {
+   "summary": "Que documentos del expediente de residencia son decisivos, como recuperarlos de forma eficaz (requerimiento formal, pruebas, representante) y como obtener copias del expediente administrativo conforme al art. 73 KPA.",
+   "title": "Como recuperar del empleador o de la agencia los documentos para la tarjeta de residencia [material propio de COSC]"
+  },
+  "uk": {
+   "summary": "Які документи у справі про перебування є ключовими, як їх результативно повернути (вимога, доказ, представник) і як отримати копії з матеріалів справи на підставі art. 73 KPA.",
+   "title": "Як забрати документи для карти побиту в роботодавця або агентства [власний матеріал COSC]"
+  }
+ },
+ "artykul-kontrola-pip-bez-zapowiedzi.html": {
+  "en": {
+   "summary": "Inspection by the National Labour Inspectorate (Panstwowa Inspekcja Pracy, PIP) without prior notice: legal basis (art. 24 ustawy o PIP), changes from 8 July 2026 (Dz.U. 2026 poz. 473), procedure, the report and objections (7 days), appeals (art. 34 ust. 5), penalties (art. 283 § 2 k.p., art. 225 § 2 k.k.), plus lawful employment of foreign nationals and the residence card (karta pobytu). Legal status: August 2026.",
+   "title": "Unannounced labour inspection (PIP) — employer rights and duties in 2026 [COSC own material]"
+  },
+  "es": {
+   "summary": "Inspeccion de la Inspeccion Nacional de Trabajo (Panstwowa Inspekcja Pracy, PIP) sin aviso previo: base legal (art. 24 ustawy o PIP), cambios desde el 8 de julio de 2026 (Dz.U. 2026 poz. 473), desarrollo, acta y alegaciones (7 dias), recursos (art. 34 ust. 5), sanciones (art. 283 § 2 k.p., art. 225 § 2 k.k.) y legalidad del empleo de extranjeros y de la tarjeta de residencia (karta pobytu). Situacion legal: agosto de 2026.",
+   "title": "Inspeccion de trabajo (PIP) sin aviso previo: derechos y obligaciones del empleador en 2026 [material propio de COSC]"
+  },
+  "uk": {
+   "summary": "Перевірка Державної інспекції праці (Panstwowa Inspekcja Pracy, PIP) без попередження: правова підстава (art. 24 ustawy o PIP), зміни з 8 липня 2026 р. (Dz.U. 2026 poz. 473), перебіг, протокол і заперечення (7 днів), засоби оскарження (art. 34 ust. 5), штрафи (art. 283 § 2 k.p., art. 225 § 2 k.k.), а також легальність праці іноземців і карта побиту (karta pobytu). Правовий стан: серпень 2026 р.",
+   "title": "Перевірка PIP без попередження — права та обов'язки роботодавця у 2026 році [власний матеріал COSC]"
+  }
+ },
+ "artykul-mobilnosc-krotkoterminowa-niebieska-karta-ict.html": {
+  "en": {
+   "summary": "Short-term mobility of a foreign national: EU Blue Card, intra-corporate transfer (ICT), researcher, student. Conditions, notifications and risks.",
+   "title": "Short-term mobility — EU Blue Card, ICT, researcher (2026)"
+  },
+  "es": {
+   "summary": "Movilidad de corta duracion del extranjero: tarjeta azul UE, traslado intraempresarial (ICT), investigador, estudiante. Requisitos, notificaciones y riesgos.",
+   "title": "Movilidad de corta duracion: tarjeta azul UE, ICT, investigador (2026)"
+  },
+  "uk": {
+   "summary": "Короткострокова мобільність іноземця: Блакитна карта ЄС, внутрішньокорпоративне переведення (ICT), науковець, студент. Умови, повідомлення та ризики.",
+   "title": "Короткострокова мобільність — Блакитна карта ЄС, ICT, науковець (2026)"
+  }
+ },
+ "artykul-nielegalne-zatrudnienie-kary.html": {
+  "en": {
+   "summary": "Unlawfully entrusting work to a foreign national: a fine of PLN 3,000–50,000, labour inspection (PIP) fines up to PLN 10,000, and a penalty proportionate to the number of people involved. Who is liable and how to avoid it. Status: 2026.",
+   "title": "Penalties for unlawful employment of a foreign national in 2026 [COSC own material]"
+  },
+  "es": {
+   "summary": "Encomendar trabajo de forma ilegal a un extranjero: multa de 3 000 a 50 000 PLN, sanciones de la inspeccion de trabajo (PIP) de hasta 10 000 PLN y sancion proporcional al numero de personas afectadas. Quien responde y como evitarlo. Situacion: 2026.",
+   "title": "Sanciones por empleo ilegal de un extranjero en 2026 [material propio de COSC]"
+  },
+  "uk": {
+   "summary": "Незаконне доручення роботи іноземцю: штраф 3 000–50 000 zl, штрафи інспекції праці (PIP) до 10 000 zl, покарання пропорційне кількості осіб. Хто відповідає і як цього уникнути. Стан: 2026 р.",
+   "title": "Штрафи за нелегальне працевлаштування іноземця у 2026 році [власний матеріал COSC]"
+  }
+ },
+ "artykul-nieograniczony-ograniczony-obowiazek-podatkowy.html": {
+  "en": {
+   "summary": "Unlimited versus limited tax liability: what you pay Polish income tax (PIT) on, what income earned in Poland means, and withholding tax. Basis: art. 3 ustawy o PIT. Status: 2026.",
+   "title": "How a foreign national is taxed in Poland — unlimited vs limited tax liability [COSC own material]"
+  },
+  "es": {
+   "summary": "Obligacion tributaria ilimitada frente a limitada: por que rentas se paga el IRPF polaco (PIT), que significa renta obtenida en Polonia y la retencion en la fuente. Base: art. 3 ustawy o PIT. Situacion: 2026.",
+   "title": "Como tributa un extranjero en Polonia: obligacion tributaria ilimitada frente a limitada [material propio de COSC]"
+  },
+  "uk": {
+   "summary": "Необмежений і обмежений податковий обов'язок: з чого сплачується польський PIT, що означає дохід, отриманий у Польщі, і податок у джерела виплати. Підстава: art. 3 ustawy o PIT. Стан: 2026 р.",
+   "title": "Як оподатковується іноземець у Польщі — необмежений і обмежений податковий обов'язок [власний матеріал COSC]"
+  }
+ },
+ "artykul-praca-bez-zezwolenia-cudzoziemiec.html": {
+  "en": {
+   "summary": "Who works without a work permit: free access to the labour market, special cases (regulation of 20 November 2025) and citizens of Ukraine. How to check an employee's status. For employers and foreign nationals. 2026.",
+   "title": "Who may work in Poland without a work permit [COSC own material]"
+  },
+  "es": {
+   "summary": "Quien trabaja sin permiso de trabajo: acceso libre al mercado laboral, supuestos especiales (reglamento de 20 de noviembre de 2025) y ciudadanos de Ucrania. Como comprobar la situacion del trabajador. Para empleadores y extranjeros. 2026.",
+   "title": "Quien puede trabajar en Polonia sin permiso de trabajo [material propio de COSC]"
+  },
+  "uk": {
+   "summary": "Хто працює без дозволу на роботу: вільний доступ до ринку праці, особливі випадки (розпорядження від 20.11.2025), громадяни України. Як перевірити статус працівника. Для роботодавців та іноземців. 2026 р.",
+   "title": "Хто може працювати в Польщі без дозволу на роботу [власний матеріал COSC]"
+  }
+ },
+ "artykul-ulga-na-powrot-cudzoziemiec.html": {
+  "en": {
+   "summary": "Return relief (ulga na powrot, art. 21 ust. 1 pkt 152 PIT): income up to PLN 85,528 per year is exempt for 4 years after moving tax residence to Poland. Conditions, the PIT-0 cap and how an employer applies it. Status: 2026.",
+   "title": "Return relief — PIT exemption up to PLN 85,528 also for foreign nationals [COSC own material]"
+  },
+  "es": {
+   "summary": "Desgravacion por retorno (ulga na powrot, art. 21 ust. 1 pkt 152 PIT): los ingresos de hasta 85 528 PLN al ano quedan exentos durante 4 anos tras trasladar la residencia fiscal a Polonia. Requisitos, limite PIT-0 y como lo aplica el empleador. Situacion: 2026.",
+   "title": "Desgravacion por retorno: exencion del IRPF polaco (PIT) hasta 85 528 PLN, tambien para extranjeros [material propio de COSC]"
+  },
+  "uk": {
+   "summary": "Пільга на повернення (ulga na powrot, art. 21 ust. 1 pkt 152 PIT): дохід до 85 528 zl на рік звільняється від податку протягом 4 років після перенесення податкового резидентства до Польщі. Умови, ліміт PIT-0 і як її застосовує роботодавець. Стан: 2026 р.",
+   "title": "Пільга на повернення — звільнення від PIT до 85 528 zl також для іноземця [власний матеріал COSC]"
+  }
+ },
+ "artykul-zakaz-pracy-ruch-bezwizowy-wenezuela-gruzja-kolumbia.html": {
+  "en": {
+   "summary": "The regulation of 31 July 2026 (Dz.U. 2026 poz. 1072) bars citizens of Venezuela, Georgia and Colombia from working on a permit while staying under visa-free travel. What it means, how the labour market looks and which lawful employment routes remain. Status: August 2026.",
+   "title": "End of work under visa-free travel for citizens of Venezuela, Georgia and Colombia [COSC own material]"
+  },
+  "es": {
+   "summary": "El reglamento de 31 de julio de 2026 (Dz.U. 2026 poz. 1072) prohibe a los ciudadanos de Venezuela, Georgia y Colombia trabajar con permiso durante una estancia en regimen de exencion de visado. Que implica, como esta el mercado laboral y que vias legales de empleo quedan. Situacion: agosto de 2026.",
+   "title": "Fin del trabajo en regimen de exencion de visado para ciudadanos de Venezuela, Georgia y Colombia [material propio de COSC]"
+  },
+  "uk": {
+   "summary": "Розпорядження від 31 липня 2026 р. (Dz.U. 2026 poz. 1072) забороняє громадянам Венесуели, Грузії та Колумбії працювати на підставі дозволу під час перебування в безвізовому режимі. Що це означає, як виглядає ринок праці та які легальні шляхи працевлаштування залишаються. Стан: серпень 2026 р.",
+   "title": "Кінець роботи в безвізовому режимі для громадян Венесуели, Грузії та Колумбії [власний матеріал COSC]"
+  }
+ },
+ "artykul-zmiana-pracodawcy-karta-pobytu.html": {
+  "en": {
+   "summary": "Changing employer as a foreign national: when a new permit or declaration is needed, the effect on the residence card (karta pobytu) and the single permit, and how to avoid a gap in lawful employment. Status: 2026.",
+   "title": "Changing employer, the residence card and the work permit [COSC own material]"
+  },
+  "es": {
+   "summary": "Cambio de empleador siendo extranjero: cuando se necesita un nuevo permiso o declaracion, efecto en la tarjeta de residencia (karta pobytu) y en el permiso unico, y como evitar un vacio en la legalidad del trabajo. Situacion: 2026.",
+   "title": "Cambio de empleador, tarjeta de residencia y permiso de trabajo [material propio de COSC]"
+  },
+  "uk": {
+   "summary": "Зміна роботодавця іноземцем: коли потрібен новий дозвіл або заява, вплив на карту побиту (karta pobytu) та єдиний дозвіл, як уникнути прогалини в легальності праці. Стан: 2026 р.",
+   "title": "Зміна роботодавця, карта побиту та дозвіл на роботу [власний матеріал COSC]"
+  }
+ },
+ "artykul-zwrot-oplaty-skarbowej-pobyt-czasowy.html": {
+  "en": {
+   "summary": "Since 5 March 2026 the stamp duty on a residence application is no longer refunded when the decision is negative or the proceedings are discontinued. The exceptions were introduced by the phase-out act of 23 January 2026 (Dz. U. poz. 203) and consist of the new art. 77d, 87a, 113c, 120c, 207b and 223a ustawy o cudzoziemcach, which exclude the rule in art. 9 ust. 1 pkt 2 ustawy o oplacie skarbowej. What counts is the filing date, not the decision date: applications filed before 5 March 2026 are settled under the old rules. The guide explains how the new exception relates to the general refund rule, why withdrawing an application is no longer a way to get the money back, how a refund differs from an overpayment, where and by when to apply (the tax authority whose account received the payment; five years from the end of the year of payment) and how leaving an application without examination fits in.",
+   "title": "Refund of the stamp duty on a temporary residence application — who is entitled and when. New COSC guide"
+  },
+  "es": {
+   "summary": "Desde el 5 de marzo de 2026, la tasa administrativa por la solicitud de residencia ya no se devuelve cuando la resolucion es denegatoria o se archiva el procedimiento. Las excepciones las introdujo la ley de extincion de 23 de enero de 2026 (Dz. U. poz. 203) y son los nuevos art. 77d, 87a, 113c, 120c, 207b y 223a ustawy o cudzoziemcach, que excluyen la regla del art. 9 ust. 1 pkt 2 ustawy o oplacie skarbowej. Lo decisivo es la fecha de presentacion, no la de la resolucion: las solicitudes presentadas antes del 5 de marzo de 2026 se liquidan con las reglas anteriores. La guia explica como se relaciona la nueva excepcion con la regla general de devolucion, por que retirar la solicitud ya no sirve para recuperar el dinero, en que se diferencia la devolucion del pago en exceso, donde y en que plazo se solicita (el organo tributario en cuya cuenta se ingreso la tasa; cinco anos desde el fin del ano de pago) y como encaja aqui el dejar la solicitud sin examinar.",
+   "title": "Devolucion de la tasa administrativa por la solicitud de residencia temporal: a quien corresponde y cuando. Nueva guia de COSC"
+  },
+  "uk": {
+   "summary": "З 5 березня 2026 р. гербовий збір за заяву про перебування вже не повертається іноземцю, коли ухвалено рішення про відмову або рішення про закриття провадження. Винятки запровадив закон від 23 січня 2026 р. (Dz. U. poz. 203), і ними є нові art. 77d, 87a, 113c, 120c, 207b i 223a ustawy o cudzoziemcach, які виключають правило з art. 9 ust. 1 pkt 2 ustawy o oplacie skarbowej. Вирішальною є дата подання заяви, а не дата рішення: заяви, подані до 5 березня 2026 р., розглядаються за попередніми правилами. У пораднику пояснюємо, як новий виняток співвідноситься із загальним правилом повернення, чому відкликання заяви перестало бути шляхом повернення коштів, чим повернення відрізняється від переплати, де і в який строк подається заява (податковий орган, на рахунок якого надійшов збір; п'ять років від кінця року сплати) і як у цьому контексті виглядає залишення заяви без розгляду.",
+   "title": "Повернення гербового збору за заяву про тимчасове перебування — кому і коли належить. Новий порадник COSC"
   }
  },
  "https://grantthornton.pl/publikacja/zatrudnienie-cudzoziemcow-2026-najwazniejsze-zmiany-i-wazne-terminy-w-przepisach-imigracyjnych/": {
   "en": {
-   "title": "Labour market: abolition of the labour market test and electronic work permits",
-   "summary": "The 2026 changes abolish the labour market test (test rynku pracy) and introduce electronic work-permit applications via praca.gov.pl. From 1 July 2026, some students outside the ministerial list lose the right to work without an additional document. Details at the source."
+   "summary": "The 2026 changes abolish the labour market test (test rynku pracy) and introduce electronic work-permit applications via praca.gov.pl. From 1 July 2026, some students outside the ministerial list lose the right to work without an additional document. Details at the source.",
+   "title": "Labour market: abolition of the labour market test and electronic work permits"
   },
   "es": {
-   "title": "Mercado laboral: se elimina la prueba del mercado de trabajo y los permisos de trabajo pasan a ser electrónicos",
-   "summary": "Los cambios de 2026 eliminan la prueba del mercado de trabajo (test rynku pracy) e introducen las solicitudes electrónicas de permiso de trabajo a través de praca.gov.pl. Desde el 1 de julio de 2026, algunos estudiantes fuera de la lista ministerial pierden el derecho a trabajar sin un documento adicional. Detalles en la fuente."
+   "summary": "Los cambios de 2026 eliminan la prueba del mercado de trabajo (test rynku pracy) e introducen las solicitudes electrónicas de permiso de trabajo a través de praca.gov.pl. Desde el 1 de julio de 2026, algunos estudiantes fuera de la lista ministerial pierden el derecho a trabajar sin un documento adicional. Detalles en la fuente.",
+   "title": "Mercado laboral: se elimina la prueba del mercado de trabajo y los permisos de trabajo pasan a ser electrónicos"
   },
   "uk": {
-   "title": "Ринок праці: скасування тесту ринку праці та електронні дозволи на роботу",
-   "summary": "Зміни 2026 року скасовують тест ринку праці (test rynku pracy) і запроваджують електронні заяви на дозвіл на роботу через praca.gov.pl. З 1 липня 2026 року частина студентів поза міністерським списком втрачає право на роботу без додаткового документа. Деталі — у джерелі."
+   "summary": "Зміни 2026 року скасовують тест ринку праці (test rynku pracy) і запроваджують електронні заяви на дозвіл на роботу через praca.gov.pl. З 1 липня 2026 року частина студентів поза міністерським списком втрачає право на роботу без додаткового документа. Деталі — у джерелі.",
+   "title": "Ринок праці: скасування тесту ринку праці та електронні дозволи на роботу"
+  }
+ },
+ "https://raczkowski.eu/pro-hr-immigration-update-lipiec-2026/": {
+  "en": {
+   "summary": "The Ministry of the Interior and Administration (Ministerstwo Spraw Wewnetrznych i Administracji, MSWiA) has published a draft amendment to the Act on Foreigners intended to speed up residence proceedings initiated by citizens of selected countries, with a decision within 60 days. The draft also provides for work in Poland without a work permit for citizens of selected countries. The list of countries has not yet been officially indicated; the Raczkowski firm expects the beneficiaries to be nationals of Australia, New Zealand, Singapore, Israel, the United Kingdom, the United States, Canada, Taiwan, South Korea and Japan — this is an expert forecast, not the wording of the provision, and requires verification against the final text. Note: this is still a DRAFT and is not in force. The entry-into-force date and the final scope of countries are not settled and should be verified at source (legislative progress on the RCL and Sejm websites).",
+   "title": "MSWiA draft: a residence decision in 60 days and work without a permit — but only for citizens of selected countries"
+  },
+  "es": {
+   "summary": "El Ministerio del Interior y Administracion (Ministerstwo Spraw Wewnetrznych i Administracji, MSWiA) ha publicado un proyecto de reforma de la Ley de Extranjeria destinado a acelerar los procedimientos de residencia iniciados por ciudadanos de determinados paises, con resolucion en 60 dias. El proyecto preve tambien la posibilidad de trabajar en Polonia sin permiso de trabajo para ciudadanos de determinados paises. La lista de paises aun no se ha indicado oficialmente; el despacho Raczkowski preve que los beneficiarios seran nacionales de Australia, Nueva Zelanda, Singapur, Israel, el Reino Unido, Estados Unidos, Canada, Taiwan, Corea del Sur y Japon: se trata de una prevision de expertos, no del texto de la norma, y debe verificarse en la redaccion final. Nota: sigue siendo un PROYECTO y no esta en vigor. Ni la fecha de entrada en vigor ni la lista definitiva de paises estan decididas y deben verificarse en la fuente (tramitacion en las webs de RCL y del Sejm).",
+   "title": "Proyecto de MSWiA: resolucion de residencia en 60 dias y trabajo sin permiso, pero solo para ciudadanos de determinados paises"
+  },
+  "uk": {
+   "summary": "Міністерство внутрішніх справ і адміністрації (Ministerstwo Spraw Wewnetrznych i Administracji, MSWiA) оприлюднило проєкт змін до закону про іноземців, який має прискорити завершення справ про перебування, розпочатих громадянами окремих держав, — рішення мало б ухвалюватися протягом 60 днів. Проєкт передбачає також можливість роботи в Польщі без дозволу на роботу для громадян окремих держав. Перелік держав офіційно ще не вказано; фірма Raczkowski припускає, що вигоду отримають іноземці з Австралії, Нової Зеландії, Сінгапуру, Ізраїлю, Великої Британії, США, Канади, Тайваню, Південної Кореї та Японії — це прогноз експертів, а не текст норми, і його треба перевірити в остаточній редакції. Увага: це все ще ПРОЄКТ — він не діє. Дата набрання чинності й остаточний перелік держав не вирішені, їх слід перевірити в джерелі (перебіг законодавчих робіт на сайтах RCL і Сейму).",
+   "title": "Проєкт MSWiA: рішення про перебування за 60 днів і робота без дозволу — але лише для громадян окремих держав"
+  }
+ },
+ "https://raczkowski.eu/pro-hr-immigration-update-lipiec-2026/#ruch-bezwizowy": {
+  "en": {
+   "summary": "The Polish government plans to restrict the use of visa-free travel by citizens of Georgia, Colombia and Venezuela where entry to Poland or stay on its territory is connected with performing work. In practice, citizens of those three countries wishing to work in Poland would first have to obtain a national visa, and migration risk is assessed when one is issued. The measure takes the form of a regulation setting out a list of countries; the initiative came from the foreign ministry and was supported by MSWiA, justified by systemic use of visa-free travel to take up work outside the legal requirements. Note: as at publication this is a plan or draft — the entry-into-force date and the final list of countries should be verified at source. For employers it means planning recruitment from these countries earlier and allowing for visa waiting times.",
+   "title": "Government plans to ban work under visa-free travel for citizens of Georgia, Colombia and Venezuela"
+  },
+  "es": {
+   "summary": "El Gobierno polaco planea limitar el uso del regimen de exencion de visado por ciudadanos de Georgia, Colombia y Venezuela cuando su entrada en Polonia o su estancia esten vinculadas a la realizacion de un trabajo. En la practica, los ciudadanos de esos tres paises que quieran trabajar en Polonia deberian obtener antes un visado nacional, en cuya expedicion se valora el riesgo migratorio. La medida adopta la forma de un reglamento con una lista de paises; la iniciativa partio del ministerio de Asuntos Exteriores y conto con el apoyo de MSWiA, y se justifica por el uso sistemico de la exencion de visado para trabajar eludiendo los requisitos legales. Nota: a fecha de publicacion se trata de un plan o proyecto; la fecha de entrada en vigor y la lista definitiva de paises deben verificarse en la fuente. Para los empleadores implica planificar antes la contratacion desde esos paises y contar con el tiempo de espera del visado.",
+   "title": "El Gobierno planea prohibir el trabajo en regimen de exencion de visado a ciudadanos de Georgia, Colombia y Venezuela"
+  },
+  "uk": {
+   "summary": "Польський уряд планує обмежити користування безвізовим режимом громадянами Грузії, Колумбії та Венесуели у випадках, коли їхній в'їзд до Польщі або перебування на її території пов'язані з виконанням роботи. На практиці громадяни цих трьох держав, які хочуть працювати в Польщі, мали б заздалегідь отримати національну візу, а під час її видачі перевіряється міграційний ризик. Рішення має форму розпорядження з переліком держав; ініціатива вийшла від міністерства закордонних справ і була підтримана MSWiA, а обґрунтуванням названо системне використання безвізового режиму для працевлаштування в обхід правових вимог. Увага: станом на день публікації це план або проєкт — строк набрання чинності та остаточний перелік держав слід перевірити в джерелі. Для роботодавців це означає потребу раніше планувати набір із цих напрямків і враховувати час очікування візи.",
+   "title": "Уряд планує заборонити роботу в безвізовому режимі громадянам Грузії, Колумбії та Венесуели"
+  }
+ },
+ "https://strefabiznesu.pl/nowe-przepisy-przyniosly-gwaltowna-zmiane-chodzi-o-prace-cudzoziemcow/ar/c3p2-29253775": {
+  "en": {
+   "summary": "According to the Ministry of the Interior and Administration (Ministerstwo Spraw Wewnetrznych i Administracji, MSWiA), 69,000 work permits were issued to foreign nationals in the first half of 2026, against 144,000 in the same period of 2025 (a fall of about 52 percent) and 173,000 in the first half of 2024. The ministry links the change to new rules, digitalisation of the procedure and fewer sham applications. MSWiA notes the data are not final and are still being verified. For employers this means stricter scrutiny of applications and less tolerance for proceedings without a genuine staffing need; for foreign nationals, careful documentation. The number of permits is not the same as the number of foreign nationals working in Poland, as some work on other grounds. Secondary data — to be verified in the MSWiA announcement.",
+   "title": "MSWiA: 69,000 work permits in the first half of 2026 — down by 75,000 year on year"
+  },
+  "es": {
+   "summary": "Segun el Ministerio del Interior y Administracion (Ministerstwo Spraw Wewnetrznych i Administracji, MSWiA), en el primer semestre de 2026 se expidieron 69 000 permisos de trabajo a extranjeros, frente a 144 000 en el mismo periodo de 2025 (una caida de cerca del 52 por ciento) y 173 000 en el primer semestre de 2024. El ministerio lo atribuye a la nueva normativa, la digitalizacion del procedimiento y la reduccion de solicitudes ficticias. MSWiA senala que los datos no son definitivos y siguen en verificacion. Para los empleadores implica un control mas estricto de las solicitudes y menos tolerancia con procedimientos sin necesidad real de personal; para los extranjeros, una documentacion cuidadosa. El numero de permisos no equivale al numero de extranjeros que trabajan en Polonia, ya que algunos lo hacen por otras vias. Datos secundarios: conviene verificarlos en el comunicado de MSWiA.",
+   "title": "MSWiA: 69 000 permisos de trabajo en el primer semestre de 2026, 75 000 menos que un ano antes"
+  },
+  "uk": {
+   "summary": "За даними Міністерства внутрішніх справ і адміністрації (Ministerstwo Spraw Wewnetrznych i Administracji, MSWiA), у першому півріччі 2026 р. іноземцям видано 69 тис. дозволів на роботу проти 144 тис. за той самий період 2025 р. (падіння приблизно на 52 відсотки) і 173 тис. у першому півріччі 2024 р. Міністерство пов'язує зміну з новими нормами, цифровізацією процедури та обмеженням фіктивних заяв. MSWiA зазначає, що дані не є остаточними й перевіряються. Для роботодавців це означає суворішу перевірку заяв і меншу толерантність до справ без реальної потреби у працівнику; для іноземців — потребу ретельно готувати документи. Кількість дозволів не тотожна кількості іноземців, які працюють у Польщі, бо частина працює на інших підставах. Дані вторинні — варто перевірити в повідомленні MSWiA.",
+   "title": "MSWiA: 69 тис. дозволів на роботу за перше півріччя 2026 року — на 75 тис. менше, ніж рік тому"
+  }
+ },
+ "https://strefabiznesu.pl/rekordowa-liczba-cudzoziemcow-na-polskim-rynku-pracy-firmy-coraz-czesciej-patrza-poza-ukraine/ar/c3p2-29162777": {
+  "en": {
+   "summary": "According to the Personnel Service Polish Labour Market Barometer, 18 percent of firms plan to hire new staff in 2026, and 25 percent of those are considering candidates from abroad. Readiness grows with company size: 44 percent of large firms, 27 percent of medium and 5 percent of small. Sectors short of staff reach abroad most often: transport and logistics (45 percent), manufacturing (28 percent), and construction and trade (23 percent each). Krzysztof Inglot, president of the Polish Outsourcing Association, citing social insurance (ZUS) data for May 2026, notes that over 1.3 million foreign nationals were insured and that one in three foreign workers now comes from outside Ukraine, with Asia, the Caucasus and South America emerging as recruitment directions. The main barriers are language difficulties (27 percent) and cultural differences (21 percent). The survey used the CAWI method on the Ariadna panel, N=329 firms, on 20–28 January 2026. The figures should be verified at source.",
+   "title": "Record number of foreign nationals in the Polish labour market. Firms now recruit beyond Ukraine"
+  },
+  "es": {
+   "summary": "Segun el Barometro del Mercado Laboral Polaco de Personnel Service, el 18 por ciento de las empresas prevee contratar personal en 2026 y, de ellas, el 25 por ciento se plantea candidatos del extranjero. La disposicion crece con el tamano de la empresa: 44 por ciento de las grandes, 27 por ciento de las medianas y 5 por ciento de las pequenas. Recurren mas al exterior los sectores con escasez de mano de obra: transporte y logistica (45 por ciento), produccion (28 por ciento) y construccion y comercio (23 por ciento cada uno). Krzysztof Inglot, presidente de la Asociacion Polaca de Outsourcing, citando datos de la seguridad social (ZUS) de mayo de 2026, senala que habia mas de 1,3 millones de extranjeros asegurados y que uno de cada tres trabajadores extranjeros procede ya de fuera de Ucrania, con Asia, el Caucaso y America del Sur como nuevas direcciones de captacion. Las mayores barreras son las dificultades linguisticas (27 por ciento) y las diferencias culturales (21 por ciento). El estudio se realizo por metodo CAWI en el panel Ariadna, N=329 empresas, del 20 al 28 de enero de 2026. Conviene verificar las cifras en la fuente.",
+   "title": "Cifra record de extranjeros en el mercado laboral polaco. Las empresas ya reclutan mas alla de Ucrania"
+  },
+  "uk": {
+   "summary": "Згідно з «Барометром польського ринку праці» Personnel Service, наймати нових працівників у 2026 р. планують 18 відсотків компаній, а серед них 25 відсотків розглядають кандидатів з-за кордону. Готовність зростає разом із розміром підприємства: 44 відсотки великих компаній, 27 відсотків середніх і 5 відсотків малих. Найчастіше по працівників з-за кордону звертаються галузі з дефіцитом кадрів: транспорт і логістика (45 відсотків), виробництво (28 відсотків), а також будівництво й торгівля (по 23 відсотки). Кшиштоф Інглот, президент Польської асоціації аутсорсингу, посилаючись на дані ZUS за травень 2026 р., зазначає, що застрахованих було понад 1,3 млн іноземців, а кожен третій іноземний працівник походить уже не з України — напрямками набору стають Азія, Кавказ і Південна Америка. Найбільші бар'єри — мовні труднощі (27 відсотків) і культурні відмінності (21 відсоток). Дослідження проведено методом CAWI на панелі Ariadna, N=329 компаній, 20–28 січня 2026 р. Числові дані варто перевірити в джерелі.",
+   "title": "Рекордна кількість іноземців на польському ринку праці. Компанії рекрутують уже не лише в Україні"
+  }
+ },
+ "https://warszawa.wyborcza.pl/warszawa/7,54420,32945766,arzu-chce-miec-polskie-dzieci-wojewoda-mazowiecki-nie-chce.html": {
+  "en": {
+   "summary": "Gazeta Wyborcza reported the case of Arzu, a nurse from Turkey working in a Warsaw clinic. She arrived on 18 December 2023 and on 15 February 2024, two days before her visa expired, filed a temporary residence application with the Mazowieckie Voivode. On 2 August 2024 she received an SMS that a summons to remedy formal defects had been issued and would be posted. According to the report the letter never reached her, and the file holds no envelope confirming dispatch. The Voivode has twice refused her residence. Why the envelope matters: a summons to remedy formal defects is issued under art. 64 § 2 k.p.a. (at least 7 days), a summons to produce documents under art. 106 ust. 2a ustawy o cudzoziemcach (at least 14 days), and in both cases the effect arises only on effective delivery, which the authority must document. An SMS from the system only reports that a letter was issued. Under art. 112a ust. 2 ustawy o cudzoziemcach the 60-day deadline starts only from the last of the required events. Context: the Ombudsman's general statements (ref. XI.541.31.2021) and a NIK audit which found 60 percent of examined cases handled in breach of the rules, with the longest processing time at 2,700 days. Note: the individual case is reported solely after Gazeta Wyborcza; we have not seen the case file and have not verified the parties' claims.",
+   "title": "A summons that never arrived. A nurse from Turkey has waited two and a half years for a residence card in Warsaw"
+  },
+  "es": {
+   "summary": "Gazeta Wyborcza informo del caso de Arzu, enfermera turca que trabaja en una clinica de Varsovia. Llego el 18 de diciembre de 2023 y el 15 de febrero de 2024, dos dias antes de vencer su visado, presento ante el Voivoda de Mazovia una solicitud de residencia temporal. El 2 de agosto de 2024 recibio un SMS: se habia emitido un requerimiento para subsanar defectos formales y se enviaria por correo. Segun el relato, la carta nunca le llego y en el expediente no consta el sobre que acredite el envio. El Voivoda le ha denegado la residencia dos veces. Por que importa ese sobre: el requerimiento de subsanacion se dicta al amparo del art. 64 § 2 k.p.a. (plazo minimo de 7 dias) y el de aportacion de documentos al amparo del art. 106 ust. 2a ustawy o cudzoziemcach (minimo 14 dias); en ambos casos el efecto solo se produce con la notificacion efectiva, que el organo debe acreditar. Un SMS del sistema solo informa de que se emitio el escrito. Conforme al art. 112a ust. 2 ustawy o cudzoziemcach, el plazo de 60 dias empieza a contar desde el ultimo de los hechos exigidos. Contexto: las actuaciones generales del Defensor del Pueblo (ref. XI.541.31.2021) y una auditoria del NIK que constato que el 60 por ciento de los expedientes examinados se tramitaron infringiendo la normativa, con un plazo maximo detectado de 2 700 dias. Nota: el caso individual se recoge unicamente segun Gazeta Wyborcza; no conocemos el expediente ni hemos verificado las afirmaciones de las partes.",
+   "title": "Un requerimiento que nunca llego. Una enfermera de Turquia espera dos anos y medio la tarjeta de residencia en Varsovia"
+  },
+  "uk": {
+   "summary": "«Gazeta Wyborcza» описала справу Арзу, медсестри з Туреччини, яка працює у варшавській клініці. Вона прилетіла 18 грудня 2023 р., а 15 лютого 2024 р., за два дні до закінчення строку дії візи, подала воєводі мазовецькому заяву про дозвіл на тимчасове перебування. 2 серпня 2024 р. отримала SMS: виданий виклик для усунення формальних недоліків, лист надійде поштою. За наведеною розповіддю лист до неї не дійшов, а конверта, що підтверджував би надсилання, немає й у матеріалах справи. Воєвода двічі відмовив їй у перебуванні. Чому цей конверт важливий: виклик для усунення формальних недоліків надсилається на підставі art. 64 § 2 k.p.a. (строк не менше 7 днів), а виклик подати документи — на підставі art. 106 ust. 2a ustawy o cudzoziemcach (не менше 14 днів); в обох випадках наслідок настає лише після дійсного вручення, яке орган зобов'язаний задокументувати. Саме SMS із системи лише інформує, що лист виданий. Згідно з art. 112a ust. 2 ustawy o cudzoziemcach 60-денний строк починає спливати лише від останньої з необхідних подій. Контекст: загальні звернення Уповноваженого з прав людини (справа XI.541.31.2021) та контроль NIK, який встановив, що 60 відсотків перевірених справ велися з порушенням норм, а найдовший виявлений час розгляду становив 2,7 тис. днів. Застереження: перебіг цієї індивідуальної справи подаємо виключно за матеріалом «Gazeta Wyborcza» — ми не знаємо матеріалів провадження і не перевіряли твердження сторін.",
+   "title": "Виклик, який не дійшов. Медсестра з Туреччини два з половиною роки чекає на карту побиту у Варшаві"
+  }
+ },
+ "https://www.bankier.pl/wiadomosc/UE-zmienia-zasady-ochrony-uchodzcow-z-Ukrainy-Decyzja-oficjalnie-zatwierdzona-9175910.html": {
+  "en": {
+   "summary": "On 30 July 2026 EU Member States completed the written procedure and formally agreed to extend temporary protection for refugees from Ukraine by another year, to 4 March 2028. A new condition was introduced at the same time: protection will not be granted to persons who have not fulfilled the military obligations provided for in Ukrainian law and for that reason have not obtained permission from the Ukrainian authorities to leave Ukraine (mobilisation in Ukraine covers men aged 25–60). The restriction does NOT apply to those already covered by temporary protection in the EU — only to first-time applicants. Proof of compliance may be, for example, a passport with an exit stamp from the Ukrainian authorities or a document on exemption from military service. About 4.4 million Ukrainians benefit from temporary protection in the EU. The measure enters into force the day after publication in the Official Journal of the EU. What this means for Poland: extension at EU level is the basis for extending Polish rules on UKR status — the specific Polish deadlines and procedure should be verified in the published legal acts. We also recall a separate Polish obligation: persons who obtained a PESEL UKR number without presenting a travel document must present it at the municipal office by 31 August 2026.",
+   "title": "EU extends temporary protection for refugees from Ukraine to 4 March 2028 — with a new condition for men of conscription age"
+  },
+  "es": {
+   "summary": "El 30 de julio de 2026 los Estados miembros de la UE concluyeron el procedimiento escrito y acordaron formalmente prorrogar un ano mas la proteccion temporal de los refugiados de Ucrania, hasta el 4 de marzo de 2028. Al mismo tiempo se introdujo un nuevo requisito: no se concedera proteccion a quienes no hayan cumplido las obligaciones militares previstas en la legislacion ucraniana y, por ese motivo, no hayan obtenido de las autoridades ucranianas autorizacion para salir de Ucrania (la movilizacion en Ucrania alcanza a los hombres de 25 a 60 anos). La limitacion NO afecta a quienes ya estan acogidos a la proteccion temporal en la UE, solo a quienes la soliciten por primera vez. Como prueba puede valer, por ejemplo, un pasaporte con sello de salida de las autoridades ucranianas o un documento de exencion del servicio militar. Unos 4,4 millones de ucranianos se acogen a la proteccion temporal en la UE. La decision entra en vigor al dia siguiente de su publicacion en el Diario Oficial de la UE. Que significa para Polonia: la prorroga a nivel de la UE es la base para prolongar las normas polacas sobre el estatuto UKR; los plazos y el procedimiento polacos concretos deben verificarse en los actos publicados. Recordamos ademas una obligacion polaca aparte: quienes obtuvieron el PESEL UKR sin presentar documento de viaje deben presentarlo en la oficina municipal antes del 31 de agosto de 2026.",
+   "title": "La UE prorroga la proteccion temporal de los refugiados de Ucrania hasta el 4 de marzo de 2028, con un nuevo requisito para los hombres en edad militar"
+  },
+  "uk": {
+   "summary": "30 липня 2026 р. держави-члени ЄС завершили письмову процедуру і формально погодилися продовжити тимчасовий захист для біженців з України ще на рік — до 4 березня 2028 р. Водночас запроваджено нову умову: захист не надаватиметься особам, які не виконали військових обов'язків, передбачених українським законодавством, і через це не отримали дозволу української влади на виїзд з України (мобілізація в Україні охоплює чоловіків віком 25–60 років). Обмеження НЕ стосується осіб, уже охоплених тимчасовим захистом у ЄС, — лише тих, хто звертається за ним уперше. Доказом виконання обов'язків може бути, наприклад, паспорт зі штампом про виїзд від української влади або документ про звільнення від військового обов'язку. Тимчасовим захистом у ЄС користується близько 4,4 млн українців. Рішення набирає чинності наступного дня після публікації в Офіційному віснику ЄС. Що це означає для Польщі: продовження на рівні ЄС є підставою для продовження польських норм про статус UKR — конкретні польські строки та порядок слід перевірити в оприлюднених правових актах. Нагадуємо також про окремий польський обов'язок: особи, які отримали PESEL UKR без пред'явлення проїзного документа, мусять пред'явити його в органі гміни до 31 серпня 2026 р.",
+   "title": "ЄС продовжив тимчасовий захист для біженців з України до 4 березня 2028 року — з новою умовою для чоловіків призовного віку"
+  }
+ },
+ "https://www.gov.pl/web/udsc/informacja-o-czasie-rozpatrywania-wnioskow-o-wydanie-lub-wymiane-karty-pobytu-oraz-genewskiego-dokumentu-podrozy": {
+  "en": {
+   "summary": "On 10 August 2026 the Office for Foreigners (Urzad do Spraw Cudzoziemcow, UDSC) announced that, due to a sharp rise in applications, processing of further applications to issue or replace the residence card (karta pobytu) and the Geneva travel document now exceeds 2 months. The Office asks that applications not be filed earlier than 2 months before the current document expires — those filed too early are to be left without examination. UDSC will announce any changes separately. Note: the notice concerns issuing or replacing the document itself, not the deadline for deciding the residence case; the actual waiting time is worth confirming with the authority handling the case.",
+   "title": "UDSC: issuing or replacing a residence card now takes over 2 months — do not apply earlier than 2 months before your document expires"
+  },
+  "es": {
+   "summary": "El 10 de agosto de 2026 la Oficina de Extranjeros (Urzad do Spraw Cudzoziemcow, UDSC) informo de que, por el fuerte aumento de solicitudes, la tramitacion de nuevas solicitudes de expedicion o renovacion de la tarjeta de residencia (karta pobytu) y del documento de viaje de Ginebra supera ahora los 2 meses. La Oficina pide no presentar la solicitud antes de 2 meses del vencimiento del documento actual: las presentadas con excesiva antelacion se dejaran sin examinar. UDSC comunicara por separado cualquier cambio. Nota: el aviso se refiere a la expedicion o renovacion del documento, no al plazo para resolver el expediente de residencia; conviene confirmar el tiempo real de espera ante el organo que tramita el asunto.",
+   "title": "UDSC: la expedicion o renovacion de la tarjeta de residencia supera ya los 2 meses; no presente la solicitud antes de 2 meses del vencimiento"
+  },
+  "uk": {
+   "summary": "10 серпня 2026 р. Управління у справах іноземців (Urzad do Spraw Cudzoziemcow, UDSC) повідомило, що через значне зростання кількості заяв строк розгляду наступних заяв про видачу або обмін карти побиту (karta pobytu) та Женевського документа подорожі перевищує 2 місяці. Управління просить не подавати заяви раніше ніж за 2 місяці до закінчення строку дії наявного документа — подані завчасно залишатимуть без розгляду. Про можливі зміни UDSC повідомить окремо. Увага: повідомлення стосується самої видачі або обміну документа, а не строку розгляду справи про перебування; реальний час очікування варто підтвердити в органі, який веде справу.",
+   "title": "UDSC: видача або обмін карти побиту перевищила 2 місяці — не подавайте заяву раніше ніж за 2 місяці до закінчення строку документа"
+  }
+ },
+ "https://www.gov.pl/web/udsc/przedluzenie-ochrony-czasowej-do-4-marca-2028-r": {
+  "en": {
+   "summary": "The Office for Foreigners (Urzad do Spraw Cudzoziemcow, UDSC) confirmed that on 5 August 2026 Council Implementing Decision (EU) 2026/1912 of 30 July 2026 entered into force, extending the temporary protection introduced by Implementing Decision (EU) 2022/382. Protection for displaced persons from Ukraine has been extended by one year, to 4 March 2028. At the same time, temporary protection is now granted only to persons who have fulfilled their military obligations in Ukraine (on presentation, where applicable, of appropriate proof); this applies from 31 July 2026. The military-obligation restriction does not apply to persons who benefited from temporary protection in a given Member State before and on 30 July 2026 and who continuously retain protected status there. Details and the application of the new condition should be confirmed in the UDSC announcement and in the text of the Council decision.",
+   "title": "UDSC confirms: temporary protection for displaced persons from Ukraine extended to 4 March 2028"
+  },
+  "es": {
+   "summary": "La Oficina de Extranjeros (Urzad do Spraw Cudzoziemcow, UDSC) confirmo que el 5 de agosto de 2026 entro en vigor la Decision de Ejecucion (UE) 2026/1912 del Consejo, de 30 de julio de 2026, que prorroga la proteccion temporal establecida por la Decision de Ejecucion (UE) 2022/382. La proteccion para los desplazados de Ucrania se amplia un ano, hasta el 4 de marzo de 2028. Al mismo tiempo, la proteccion temporal se concede ahora solo a quienes hayan cumplido sus obligaciones militares en Ucrania (presentando, en su caso, la prueba correspondiente); esta regla se aplica desde el 31 de julio de 2026. La restriccion no se aplica a quienes se beneficiaban de proteccion temporal en un Estado miembro antes del 30 de julio de 2026 y en esa fecha, y conservan alli su estatuto de forma ininterrumpida. Los detalles y la aplicacion del nuevo requisito deben confirmarse en el comunicado de UDSC y en el texto de la decision del Consejo.",
+   "title": "UDSC confirma: la proteccion temporal para desplazados de Ucrania se prorroga hasta el 4 de marzo de 2028"
+  },
+  "uk": {
+   "summary": "Управління у справах іноземців (Urzad do Spraw Cudzoziemcow, UDSC) підтвердило, що 5 серпня 2026 р. набрало чинності виконавче рішення Ради (ЄС) 2026/1912 від 30 липня 2026 р., яке продовжує тимчасовий захист, запроваджений виконавчим рішенням (ЄС) 2022/382. Строк тимчасового захисту для переселенців з України продовжено на рік — до 4 березня 2028 р. Водночас тимчасовий захист тепер надається лише особам, які виконали військові обов'язки в Україні (за поданням, у відповідних випадках, належного доказу); ця норма застосовується вже з 31 липня 2026 р. Обмеження щодо військових обов'язків не застосовується до осіб, які користувалися тимчасовим захистом у відповідній державі-члені до 30 липня 2026 р. і на цю дату та безперервно зберігають там захисний статус. Деталі та порядок застосування нової умови слід підтвердити в повідомленні UDSC і в тексті рішення Ради.",
+   "title": "UDSC підтверджує: тимчасовий захист для переселенців з України продовжено до 4 березня 2028 року"
+  }
+ },
+ "https://www.gov.pl/web/udsc/wazna-informacja-dla-cudzoziemcow-korzystajacych-z-ochrony-czasowej-na-podstawie-zaswiadczen-wydanych-przez-szefa-urzedu-do-spraw-cudzoziemcow": {
+  "en": {
+   "summary": "The Office for Foreigners (Urzad do Spraw Cudzoziemcow, UDSC) recalls that since 5 March 2026 the Head of the Office no longer issues certificates confirming temporary protection — confirmation is now a PESEL number with UKR status and an electronic document in the mObywatel app. Certificates issued before 5 March 2026 expire at the end of 4 March 2027. While they remain valid, holders may apply for a PESEL number with UKR status without leaving Poland; once granted, the previous certificate is annulled. Holders retain, among other things, free access to the labour market, while the entity entrusting the work must notify the district labour office within 7 days (via praca.gov.pl) — except for work started before 5 March 2026. Basis: the Act of 23 January 2026 (Dz.U. poz. 203) and the Act on granting protection to foreigners (Dz.U. 2026 poz. 862). Details should be confirmed in the UDSC announcement.",
+   "title": "UDSC: temporary protection certificates expire at the end of 4 March 2027"
+  },
+  "es": {
+   "summary": "La Oficina de Extranjeros (Urzad do Spraw Cudzoziemcow, UDSC) recuerda que desde el 5 de marzo de 2026 el Jefe de la Oficina ya no expide certificados que acrediten la proteccion temporal: la acreditacion es ahora el numero PESEL con estatuto UKR y un documento electronico en la aplicacion mObywatel. Los certificados expedidos antes del 5 de marzo de 2026 perderan validez al final del 4 de marzo de 2027. Mientras sigan validos, sus titulares pueden solicitar el numero PESEL con estatuto UKR sin salir de Polonia; una vez concedido, el certificado anterior queda anulado. Los titulares conservan, entre otros, el acceso libre al mercado laboral, si bien la entidad que encomienda el trabajo debe notificarlo a la oficina de empleo del distrito en 7 dias (por praca.gov.pl), salvo el trabajo iniciado antes del 5 de marzo de 2026. Base: la Ley de 23 de enero de 2026 (Dz.U. poz. 203) y la Ley sobre la concesion de proteccion a extranjeros (Dz.U. 2026 poz. 862). Conviene confirmar los detalles en el comunicado de UDSC.",
+   "title": "UDSC: los certificados de proteccion temporal perderan validez al final del 4 de marzo de 2027"
+  },
+  "uk": {
+   "summary": "Управління у справах іноземців (Urzad do Spraw Cudzoziemcow, UDSC) нагадує, що з 5 березня 2026 р. Керівник Управління більше не видає довідок, що підтверджують користування тимчасовим захистом — підтвердженням тепер є номер PESEL зі статусом UKR та електронний документ у застосунку mObywatel. Довідки, видані до 5 березня 2026 р., втратять чинність з кінцем 4 березня 2027 р. Протягом строку їх дії власники можуть звернутися за наданням номера PESEL зі статусом UKR без виїзду з Польщі; після його отримання попередня довідка анулюється. Такі особи зберігають, зокрема, вільний доступ до ринку праці, при цьому суб'єкт, що доручає роботу, зобов'язаний упродовж 7 днів повідомити повітове управління праці (через praca.gov.pl) — за винятком роботи, розпочатої до 5 березня 2026 р. Підстава: закон від 23 січня 2026 р. (Dz.U. poz. 203) та закон про надання іноземцям захисту (Dz.U. 2026 poz. 862). Деталі слід підтвердити в повідомленні UDSC.",
+   "title": "UDSC: довідки про тимчасовий захист втратять чинність з кінцем 4 березня 2027 року"
+  }
+ },
+ "https://www.infor.pl/akt-prawny/DZU.2026.097.0000473,ustawa-o-zmianie-ustawy-o-panstwowej-inspekcji-pracy-oraz-niektorych-innych-ustaw.html": {
+  "en": {
+   "summary": "The Act of 11 March 2026 amending the Act on the National Labour Inspectorate and certain other acts (Dz.U. 2026 poz. 473) empowers the regional labour inspector to establish, by decision, the existence of an employment relationship where a civil-law contract was concluded or work is in fact performed under the conditions of art. 22 § 1 Kodeksu pracy. A decision requires prior failure to comply with an order to remedy breaches. An appeal lies to the district court — the labour court — within one month of delivery. The act also introduces individual interpretations issued by the Chief Labour Inspector on whether a given legal relationship is an employment relationship; these bind PIP bodies. For foreign nationals working on a mandate contract or B2B this matters, because reclassification affects the basis for performing work, social insurance (ZUS) contributions and employee entitlements. The entry-into-force dates of individual provisions should be verified in the text of the act.",
+   "title": "The labour inspectorate may establish an employment relationship by decision — what it means for foreign nationals on civil-law contracts"
+  },
+  "es": {
+   "summary": "La Ley de 11 de marzo de 2026 que modifica la Ley de la Inspeccion Nacional de Trabajo y otras leyes (Dz.U. 2026 poz. 473) faculta al inspector regional de trabajo para declarar, por resolucion, la existencia de una relacion laboral cuando se ha celebrado un contrato civil o el trabajo se presta de hecho en las condiciones del art. 22 § 1 Kodeksu pracy. La resolucion exige el incumplimiento previo de una orden de subsanacion. Cabe recurso ante el juzgado de distrito, en su sala de lo laboral, en el plazo de un mes desde la notificacion. La ley introduce ademas interpretaciones individuales del Inspector General de Trabajo sobre si una relacion juridica concreta es laboral; vinculan a los organos de PIP. Para los extranjeros con contrato de mandato o en regimen B2B el cambio es relevante, porque la recalificacion afecta al titulo para trabajar, a las cotizaciones a la seguridad social (ZUS) y a los derechos laborales. Las fechas de entrada en vigor de cada disposicion deben verificarse en el texto de la ley.",
+   "title": "La inspeccion de trabajo podra declarar por resolucion la existencia de una relacion laboral: que implica para extranjeros con contratos civiles"
+  },
+  "uk": {
+   "summary": "Закон від 11 березня 2026 р. про зміну закону про Державну інспекцію праці та деяких інших законів (Dz.U. 2026 poz. 473) надає окружному інспектору праці право рішенням встановити наявність трудових відносин, якщо укладено цивільно-правовий договір або праця фактично виконується в умовах art. 22 § 1 Kodeksu pracy. Умовою видання рішення є попереднє невиконання розпорядження про усунення порушень. Рішення оскаржується до районного суду — суду праці — упродовж місяця від вручення. Закон також запроваджує індивідуальні тлумачення Головного інспектора праці щодо того, чи є конкретні правові відносини трудовими; вони обов'язкові для органів PIP. Для іноземців, які працюють за договором доручення або B2B, зміна суттєва, бо перекваліфікація впливає на підставу виконання праці, нарахування внесків до ZUS і трудові права. Дати набрання чинності окремими нормами слід перевірити в тексті закону.",
+   "title": "PIP зможе рішенням встановити наявність трудових відносин — що це означає для іноземців на цивільно-правових договорах"
+  }
+ },
+ "https://www.rp.pl/cudzoziemcy/art43496891-prezydent-podpisal-nowelizacje-ustawy-o-cudzoziemcach": {
+  "en": {
+   "summary": "The President signed an amendment to the Foreigners Act moving applications for temporary residence, permanent residence and EU long-term resident permits from paper to the MOS system (Moduł Obsługi Spraw). Access is to be free of charge and the application can be filed by the applicant. Scope and dates should be verified at the source.",
+   "title": "Amendment to the Foreigners Act signed — residence applications only online via MOS"
+  },
+  "es": {
+   "summary": "El Presidente firmó una reforma de la Ley de Extranjería que traslada las solicitudes de residencia temporal, residencia permanente y residente de larga duración-UE del papel al sistema MOS (Moduł Obsługi Spraw). El acceso será gratuito y la solicitud puede presentarse por uno mismo. El alcance y los plazos deben verificarse en la fuente.",
+   "title": "Firmada la reforma de la Ley de Extranjería — solicitudes de residencia solo en línea por MOS"
+  },
+  "uk": {
+   "summary": "Президент підписав зміни до Закону про іноземців, які переносять подання заяв на тимчасове проживання, постійне проживання та довгострокового резидента ЄС з паперової форми до системи MOS (Moduł Obsługi Spraw). Доступ має бути безкоштовним, а заяву можна подати самостійно. Обсяг і терміни слід перевірити в джерелі.",
+   "title": "Підписано зміни до Закону про іноземців — заяви на проживання лише онлайн через MOS"
+  }
+ },
+ "https://www.strazgraniczna.pl/pl/aktualnosci/16083,Wspolne-dzialania-Strazy-Granicznej-i-Policji-w-Kujawsko-Pomorskiem-20-cudzoziem.html": {
+  "en": {
+   "summary": "The Border Guard (Straz Graniczna) and the Police checked selected addresses in Gniewkowo and Ciechocinek. 28 people were identified and 20 foreign nationals detained — 18 citizens of Colombia plus citizens of Georgia and Tajikistan. Grounds: no valid visa or residence document, exceeding the permitted short-stay period, or no documented means of support. All received return decisions with bans on re-entering Poland and the Schengen area for 6 months to 2 years. The action followed a 30 July check at a production plant in the Inowroclaw district. Practical point: inspections increasingly move from the workplace to home addresses, and undocumented means of support is on its own a ground for a return decision. An appeal is available within the statutory deadline stated in the delivered decision.",
+   "title": "20 foreign nationals detained in the Kuyavian-Pomeranian region: return decisions and entry bans from 6 months to 2 years"
+  },
+  "es": {
+   "summary": "La Guardia de Fronteras (Straz Graniczna) y la Policia controlaron domicilios seleccionados en Gniewkowo y Ciechocinek. Se identifico a 28 personas y se detuvo a 20 extranjeros: 18 ciudadanos de Colombia y ciudadanos de Georgia y Tayikistan. Motivos: falta de visado o documento de residencia valido, superacion del periodo de estancia corta permitido o falta de medios economicos acreditados. Todos recibieron decisiones de retorno con prohibicion de reentrada a Polonia y al espacio Schengen de 6 meses a 2 anos. La actuacion siguio a un control del 30 de julio en una planta de produccion del distrito de Inowroclaw. Nota practica: los controles pasan cada vez mas del centro de trabajo a los domicilios, y la falta de medios acreditados basta por si sola para una decision de retorno. Cabe recurso en el plazo legal indicado en la decision notificada.",
+   "title": "20 extranjeros detenidos en la region de Cuyavia y Pomerania: decisiones de retorno y prohibiciones de entrada de 6 meses a 2 anos"
+  },
+  "uk": {
+   "summary": "Прикордонна служба (Straz Graniczna) разом з поліцією перевірила визначені адреси у Гнєвкові та Цєхоцінку. Встановлено особи 28 людей, затримано 20 іноземців — 18 громадян Колумбії, а також громадян Грузії й Таджикистану. Підстави: відсутність дійсної візи чи документа про перебування, перевищення допустимого строку короткочасного перебування або відсутність підтверджених коштів на утримання. Щодо всіх видано рішення про зобов'язання до повернення із забороною повторного в'їзду до Польщі та Шенгенської зони на строк від 6 місяців до 2 років. Дії стали наслідком перевірки 30 липня на виробництві в Іновроцлавському повіті. Практичний висновок: перевірки все частіше йдуть від місця роботи до адрес проживання, а відсутність підтверджених коштів сама собою є підставою для рішення про повернення. Оскарження — у строк, зазначений у врученому рішенні.",
+   "title": "20 іноземців затримано у Куявсько-Поморському воєводстві: рішення про повернення та заборона в'їзду від 6 місяців до 2 років"
+  }
+ },
+ "https://zielonalinia.gov.pl/zmiany-w-ustawie-o-cudzoziemcach/": {
+  "en": {
+   "summary": "Zielona Linia explains the 2026 changes: a stamp duty plus PLN 100 for the card, 60 days to collect the card, and for the CUKR card an obligation to report a change of residence within 15 working days and the risk of losing the permit after an absence of more than 6 months.",
+   "title": "MOS in practice: fees, 60 days to collect the card and duties of CUKR card holders"
+  },
+  "es": {
+   "summary": "Zielona Linia explica los cambios de 2026: una tasa administrativa y 100 PLN por la tarjeta, 60 días para recogerla y, para la tarjeta CUKR, la obligación de comunicar el cambio de domicilio en 15 días hábiles y el riesgo de perder el permiso tras una ausencia superior a 6 meses.",
+   "title": "MOS en la práctica: tasas, 60 días para recoger la tarjeta y obligaciones de los titulares de la tarjeta CUKR"
+  },
+  "uk": {
+   "summary": "Zielona Linia пояснює зміни 2026 року: адміністративний збір і 100 злотих за картку, 60 днів на отримання картки, а для картки CUKR — обов'язок повідомити про зміну місця проживання протягом 15 робочих днів і ризик втрати дозволу в разі відсутності понад 6 місяців.",
+   "title": "MOS на практиці: збори, 60 днів на отримання картки та обов'язки власників картки CUKR"
   }
  }
 }
