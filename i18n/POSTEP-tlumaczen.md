@@ -58,3 +58,6 @@ Ponowna ekstrakcja ze świeżego klonu repo (95 plików HTML): 3611 stringów, 8
 
 ## 2026-08-18 — partia 82 kluczy (auto)
 Ponowna ekstrakcja ze świeżego klonu repo (93 pliki HTML): 3538 stringów, 112 kluczy poza słownikami. Przetłumaczono 82 z nich na EN/ES/UK/RU/FR — to niemal wyłącznie `<title>` i meta description stron (m.in. faq.html, przewodnik-po-polsce.html, lotniska/dworce, baza-noclegowa, kalkulator 90/180, gry edukacyjne, formularze wniosków, regulamin, polityka prywatności oraz opisy ~50 artykułów). Świadomie POMINIĘTO 30 kluczy z `WZOR-artykul-wlasny.html` (szablon z placeholderami [[...]]). Struktura HTML zweryfikowana automatycznie: 0 rozbieżności. Stan: en/es/uk/ru/fr = 3890/3891 wypełnione (jedyny pusty = linia marki „©", celowo po polsku).
+
+## 2026-08-19 — brak nowych braków (auto)
+Ponowna ekstrakcja ze świeżego klonu repo (93 pliki HTML): 3538 stringów. Wszystkie występują już w słownikach; jedyne 30 kluczy spoza słowników pochodzi z `WZOR-artykul-wlasny.html` (szablon z placeholderami [[...]], świadomie pomijany). Nic nie wymagało tłumaczenia. Stan bez zmian: en/es/uk/ru/fr = 3890/3891 wypełnione (jedyny pusty = linia marki „©", celowo po polsku). Uwaga: nie uruchamiano `extract.js` — w repo ma zawężoną listę FILES (index.html, aktualnosci.html) i nadpisałby słowniki; audyt wykonano skryptem pomocniczym o identycznej logice.
