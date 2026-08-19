@@ -52,6 +52,66 @@ def load_items(html_path):
         items = [json.loads(o) for o in objs]
     return [it for it in items if it.get("category") in CATS]
 
+ES_MAP_CACHE = {}
+
+def es_map(root):
+    """Mapa: polski plik artykulu -> odpowiednik w /es/ (czytana z hreflang w /es/*.html)."""
+    import os, glob
+    root = os.path.abspath(root)
+    if root in ES_MAP_CACHE:
+        return ES_MAP_CACHE[root]
+    m = {}
+    for fp in glob.glob(os.path.join(root, "es", "*.html")):
+        try:
+            txt = open(fp, encoding="utf-8").read(20000)
+        except Exception:
+            continue
+        mm = re.search(r'<link rel="alternate" hreflang="pl" href="[^"]*?/([^/"]+\.html)"', txt)
+        if mm:
+            m[mm.group(1)] = "es/" + os.path.basename(fp)
+    ES_MAP_CACHE[root] = m
+    return m
+
+LANG_TARGETS_CACHE = {}
+
+def lang_targets(root):
+    import os
+    root = os.path.abspath(root)
+    if root in LANG_TARGETS_CACHE:
+        return LANG_TARGETS_CACHE[root]
+    d = {}
+    fp = os.path.join(root, "fb-automat", "lang-targets.json")
+    if os.path.exists(fp):
+        try:
+            d = {k: v for k, v in json.load(open(fp, encoding="utf-8")).items() if not k.startswith("_")}
+        except Exception:
+            d = {}
+    LANG_TARGETS_CACHE[root] = d
+    return d
+
+def item_link(it, lang, root):
+    """Link dla posta: wlasny artykul (docelowo w jezyku odbiorcy), a gdy go nie ma
+    - lista aktualnosci z wymuszonym jezykiem. Zawsze z UTM."""
+    import os
+    utm = "utm_source=facebook&utm_medium=social&utm_campaign=aktualnosci-" + lang
+    url = (it.get("url") or "").strip()
+    ov = lang_targets(root).get(guid(it), {})
+    if isinstance(ov, dict):
+        tgt = ov.get(lang)
+        if tgt:
+            q = "?" + utm if tgt.startswith("es/") and lang == "es" else "?lang=" + lang + "&" + utm
+            return SITE + "/" + tgt + q
+        tgt = ov.get("pl")
+        if tgt:
+            return SITE + "/" + tgt + "?lang=" + lang + "&" + utm
+    if not url or url.startswith("http"):
+        return NEWS_URL + "?lang=" + lang + "&" + utm
+    if lang == "es":
+        tgt = es_map(root).get(url)
+        if tgt:
+            return SITE + "/" + tgt + "?" + utm
+    return SITE + "/" + url + "?lang=" + lang + "&" + utm
+
 def guid(it):
     return it.get("url") or ("h:" + hashlib.md5(it["title"].encode("utf-8")).hexdigest())
 
@@ -93,7 +153,7 @@ def cmd_build(args):
             g = guid(it); t = tr.get(g, {}).get(lang)
             if not t or not t.get("title"):
                 continue
-            link = NEWS_URL + UTM.format(lang=lang)
+            link = item_link(it, lang, os.path.dirname(os.path.abspath(args.html)))
             desc = t["summary"].strip()
             src = it.get("source_name","")
             body = desc + "\n\n" + (f"{SRC[lang]}: {src}\n" if src else "") + \

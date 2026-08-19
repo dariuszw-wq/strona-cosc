@@ -14,7 +14,7 @@ for it in items[:25]:
     for lang in f.LANGS:
         t = tr.get(g, {}).get(lang)
         if not t or not t.get("title"): continue
-        link = f.NEWS_URL + f.UTM.format(lang=lang)
+        link = f.item_link(it, lang, os.path.dirname(os.path.abspath(html)))
         body = t["summary"].strip() + "\n\n" + (f"{f.SRC[lang]}: {src}\n" if src else "") + \
                f.CTA[lang].format(url=link) + "\n\n" + f.TAGS[lang]
         img = f.IMG.get(it.get("category"))

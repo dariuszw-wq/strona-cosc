@@ -1,0 +1,7 @@
+{
+ "_opis": "Recznie wskazane strony docelowe dla wpisow bez wlasnego artykulu PL (zrodla zewnetrzne). Klucz = guid wpisu, wartosc = sciezka wzgledem korzenia serwisu.",
+ "https://cieszyn.praca.gov.pl/aktualnosci/-/asset_publisher/YutH3k4OK4A2/content/id/68088869": {
+  "es": "es/trabajo-legal-polonia-colombianos.html",
+  "pl": "artykul-praca-na-wizie-ruch-bezwizowy.html"
+ }
+}
