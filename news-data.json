@@ -1,6 +1,72 @@
 {
-  "updated": "2026-08-19T07:41:33Z",
+  "updated": "2026-08-19T15:23:16Z",
   "items": [
+    {
+      "id": "2026-08-19-cosc-jaki-wniosek-o-pobyt-zlozyc",
+      "added": "2026-08-19",
+      "category": "Urzędy",
+      "title": "Jaki wniosek o pobyt złożyć? Rozdzielacz z opłatami i informacją, co idzie przez MOS, a co papierowo [materiał własny COSC]",
+      "summary": "Nowa strona-rozdzielacz na cosc.org.pl pomaga cudzoziemcowi wybrać właściwy rodzaj wniosku o zezwolenie na pobyt. Przy każdej kategorii podajemy wysokość opłaty skarbowej (od 85 zł do 640 zł, do tego 100 zł za wydanie karty pobytu) oraz sposób złożenia: przez portal MOS albo — w czterech przypadkach, m.in. przeniesienia wewnątrz przedsiębiorstwa i połączenia z rodziną, gdy cudzoziemiec przebywa poza Polską — wyłącznie w postaci papierowej. Wyjaśniamy też, dlaczego złożenie wniosku w niewłaściwym trybie należy do najczęstszych przyczyn odmowy.",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "jaki-wniosek-o-pobyt-zlozyc.html",
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Which residence application should you file? A guide with fees and with what goes through MOS and what stays on paper [COSC own material]",
+          "summary": "A new guide page on cosc.org.pl helps a foreigner choose the right type of residence permit application. For each category we give the stamp duty (from 85 zł to 640 zł, plus 100 zł for issuing the residence card) and the way of filing: through the MOS portal or — in four cases, including intra-corporate transfer and family reunification when the foreigner is outside Poland — only on paper. We also explain why filing under the wrong procedure is one of the most frequent reasons for refusal."
+        },
+        "es": {
+          "title": "¿Qué solicitud de residencia presentar? Guía con las tasas y con lo que va por MOS y lo que sigue en papel [material propio de COSC]",
+          "summary": "Una nueva página guía en cosc.org.pl ayuda al extranjero a elegir el tipo correcto de solicitud de residencia. En cada categoría indicamos la tasa administrativa (de 85 zł a 640 zł, más 100 zł por la expedición de la tarjeta de residencia) y la forma de presentación: por el portal MOS o —en cuatro casos, entre ellos el traslado dentro de la empresa y la reagrupación familiar cuando el extranjero está fuera de Polonia— únicamente en papel. Explicamos además por qué presentar la solicitud por la vía equivocada es una de las causas más frecuentes de denegación."
+        },
+        "uk": {
+          "title": "Яку заяву на проживання подавати? Довідник із розміром оплат і поділом на MOS та паперову форму [власний матеріал COSC]",
+          "summary": "Нова сторінка-довідник на cosc.org.pl допомагає іноземцю обрати правильний вид заяви про дозвіл на проживання. Для кожної категорії ми подаємо розмір гербового збору (від 85 zł до 640 zł, плюс 100 zł за видачу карти побиту) та спосіб подання: через портал MOS або — у чотирьох випадках, зокрема переведення в межах підприємства та возз'єднання з родиною, коли іноземець перебуває поза Польщею — виключно в паперовій формі. Пояснюємо також, чому подання заяви в неправильному порядку є однією з найчастіших причин відмови."
+        },
+        "ru": {
+          "title": "Какое заявление на пребывание подавать? Справочник с размерами пошлин и делением на MOS и бумажную форму [собственный материал COSC]",
+          "summary": "Новая страница-справочник на cosc.org.pl помогает иностранцу выбрать правильный вид заявления о разрешении на пребывание. Для каждой категории указан размер гербового сбора (от 85 zł до 640 zł, плюс 100 zł за выдачу карты побыта) и способ подачи: через портал MOS либо — в четырёх случаях, в том числе перевод внутри предприятия и воссоединение с семьёй, когда иностранец находится за пределами Польши, — исключительно в бумажной форме. Объясняем также, почему подача заявления в ненадлежащем порядке относится к самым частым причинам отказа."
+        },
+        "fr": {
+          "title": "Quelle demande de séjour déposer ? Un guide avec les taxes et le partage entre MOS et le format papier [matériel propre COSC]",
+          "summary": "Une nouvelle page-guide sur cosc.org.pl aide l'étranger à choisir le bon type de demande de titre de séjour. Pour chaque catégorie, nous indiquons le montant du droit de timbre (de 85 zł à 640 zł, plus 100 zł pour la délivrance de la carte de séjour) ainsi que le mode de dépôt : via le portail MOS ou — dans quatre cas, dont le transfert intragroupe et le regroupement familial lorsque l'étranger se trouve hors de Pologne — uniquement au format papier. Nous expliquons aussi pourquoi déposer une demande dans la mauvaise procédure figure parmi les causes les plus fréquentes de refus."
+        }
+      }
+    },
+    {
+      "id": "2026-08-19-cosc-pobyt-czasowy-i-praca-wniosek-mos",
+      "added": "2026-08-19",
+      "category": "Urzędy",
+      "title": "Pobyt czasowy i praca: wniosek w MOS krok po kroku, z terminami i opłatami [materiał własny COSC]",
+      "summary": "Instrukcja dla cudzoziemca, który chce samodzielnie złożyć wniosek o zezwolenie na pobyt czasowy i pracę w portalu MOS. Opisujemy sześć kroków: przygotowanie dokumentów, założenie konta, załącznik podpisywany elektronicznie przez pracodawcę (link ważny 30 dni), wypełnienie wniosku, załączniki (zdjęcie do 2,5 MB, pojedynczy plik do 10 MB, łącznie do 50 MB) oraz wezwanie do osobistego stawiennictwa. Podajemy opłaty: 440 zł opłaty skarbowej i 100 zł za wydanie karty pobytu, 50 zł dla dziecka do 16 lat, ucznia i studenta. Przypominamy, że wersja robocza wniosku czeka 45 dni, że na uzupełnienie braków formalnych organ wyznacza termin nie krótszy niż 7 dni, a przy niedostępności systemu wniosek składa się w ciągu 3 dni roboczych po jej usunięciu.",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "pobyt-czasowy-i-praca-wniosek-mos.html",
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Temporary residence and work: the MOS application step by step, with deadlines and fees [COSC own material]",
+          "summary": "A guide for a foreigner who wants to file the application for a temporary residence and work permit in the MOS portal on their own. We describe six steps: preparing documents, setting up an account, the annex signed electronically by the employer (the link is valid for 30 days), completing the application, attachments (photo up to 2.5 MB, single file up to 10 MB, up to 50 MB in total) and the summons to appear in person. We give the fees: 440 zł stamp duty and 100 zł for issuing the residence card, 50 zł for a child under 16, a pupil and a student. We also recall that a draft application is kept for 45 days, that the authority sets a deadline of no less than 7 days to remedy formal defects, and that if the system is unavailable the application is filed within 3 working days after it is restored."
+        },
+        "es": {
+          "title": "Residencia temporal y trabajo: la solicitud en MOS paso a paso, con plazos y tasas [material propio de COSC]",
+          "summary": "Guía para el extranjero que quiere presentar por su cuenta la solicitud de permiso de residencia temporal y trabajo en el portal MOS. Describimos seis pasos: preparar los documentos, crear la cuenta, el anexo firmado electrónicamente por el empleador (el enlace es válido 30 días), rellenar la solicitud, los anexos (foto hasta 2,5 MB, archivo individual hasta 10 MB, hasta 50 MB en total) y la citación para comparecer personalmente. Indicamos las tasas: 440 zł de tasa administrativa y 100 zł por la expedición de la tarjeta de residencia, 50 zł para menores de 16 años, alumnos y estudiantes. Recordamos que el borrador se conserva 45 días, que para subsanar defectos formales la autoridad fija un plazo no inferior a 7 días y que, si el sistema no está disponible, la solicitud se presenta en los 3 días hábiles siguientes a su restablecimiento."
+        },
+        "uk": {
+          "title": "Тимчасове проживання і робота: заява в MOS крок за кроком, зі строками та оплатами [власний матеріал COSC]",
+          "summary": "Інструкція для іноземця, який хоче самостійно подати заяву про дозвіл на тимчасове проживання і роботу в порталі MOS. Описуємо шість кроків: підготовка документів, створення облікового запису, додаток, який роботодавець підписує електронно (посилання дійсне 30 днів), заповнення заяви, додатки (фото до 2,5 MB, окремий файл до 10 MB, разом до 50 MB) та виклик для особистої явки. Подаємо оплати: 440 zł гербового збору і 100 zł за видачу карти побиту, 50 zł для дитини до 16 років, учня та студента. Нагадуємо, що чернетка заяви зберігається 45 днів, що на усунення формальних недоліків орган встановлює строк не коротший ніж 7 днів, а при недоступності системи заяву подають протягом 3 робочих днів після її усунення."
+        },
+        "ru": {
+          "title": "Временное пребывание и работа: заявление в MOS шаг за шагом, со сроками и пошлинами [собственный материал COSC]",
+          "summary": "Инструкция для иностранца, который хочет самостоятельно подать заявление о разрешении на временное пребывание и работу в портале MOS. Описываем шесть шагов: подготовка документов, создание учётной записи, приложение, подписываемое работодателем электронно (ссылка действует 30 дней), заполнение заявления, приложения (фото до 2,5 MB, отдельный файл до 10 MB, всего до 50 MB) и вызов для личной явки. Указываем оплаты: 440 zł гербового сбора и 100 zł за выдачу карты побыта, 50 zł для ребёнка до 16 лет, учащегося и студента. Напоминаем, что черновик заявления хранится 45 дней, что на устранение формальных недостатков орган назначает срок не короче 7 дней, а при недоступности системы заявление подаётся в течение 3 рабочих дней после её устранения."
+        },
+        "fr": {
+          "title": "Séjour temporaire et travail : la demande dans MOS étape par étape, avec les délais et les taxes [matériel propre COSC]",
+          "summary": "Guide pour l'étranger qui souhaite déposer lui-même la demande de titre de séjour temporaire et de travail sur le portail MOS. Nous décrivons six étapes : préparer les documents, créer le compte, l'annexe signée électroniquement par l'employeur (le lien est valable 30 jours), remplir la demande, les pièces jointes (photo jusqu'à 2,5 MB, fichier individuel jusqu'à 10 MB, 50 MB au total) et la convocation à comparaître en personne. Nous indiquons les taxes : 440 zł de droit de timbre et 100 zł pour la délivrance de la carte de séjour, 50 zł pour un enfant de moins de 16 ans, un élève et un étudiant. Nous rappelons que le brouillon est conservé 45 jours, que l'autorité fixe un délai d'au moins 7 jours pour remédier aux défauts formels et que, en cas d'indisponibilité du système, la demande est déposée dans les 3 jours ouvrables suivant son rétablissement."
+        }
+      }
+    },
     {
       "id": "2026-08-19-cosc-zlecenie-student-uczen-26-lat-zus-zezwolenie",
       "added": "2026-08-19",
