@@ -1,4 +1,18 @@
 {
+ "artykul-art55-odejscie-odszkodowanie.html": {
+  "en": {
+   "summary": "Own material of the Centre for Foreigners' Affairs Service. Where the employer fails to pay wages, grossly breaches health and safety rules or otherwise seriously breaches basic duties towards the employee, the Labour Code allows the contract to be terminated without notice (art. 55 § 1(1) of the Labour Code) and compensation to be claimed in the amount of remuneration for the notice period. The article explains the conditions for using this procedure, how to prepare a written statement with reasons, what evidence to gather, the one-month deadline for filing the statement, and the risk of a compensation claim by the employer where the provision is invoked without grounds. The right also applies to foreigners employed under an employment contract.",
+   "title": "Leaving your job overnight - when does an employee (including a foreigner) receive compensation? [COSC own material]"
+  },
+  "es": {
+   "summary": "Material propio del Centro de Atencion de Asuntos de Extranjeros. Cuando el empleador no paga el salario, incumple gravemente las normas de seguridad e higiene o vulnera de otro modo serio sus obligaciones basicas hacia el trabajador, el Codigo de Trabajo permite resolver el contrato sin preaviso (art. 55 § 1(1) del Codigo de Trabajo) y reclamar una indemnizacion equivalente al salario del periodo de preaviso. El articulo explica los requisitos de esta via, como preparar la declaracion escrita motivada, que pruebas reunir, el plazo de 1 mes para presentarla y el riesgo de que el empleador reclame una indemnizacion si se invoca la norma sin fundamento. El derecho corresponde tambien a los extranjeros con contrato de trabajo.",
+   "title": "Dejar el trabajo de un dia para otro: cuando recibe una indemnizacion el trabajador (tambien extranjero)? [material propio de COSC]"
+  },
+  "uk": {
+   "summary": "Власний матеріал Центру обслуговування справ іноземців. Якщо роботодавець не виплачує заробітну плату, грубо порушує правила охорони праці або в інший серйозний спосіб порушує основні обов'язки щодо працівника, Кодекс праці дозволяє розірвати трудовий договір без попередження (ст. 55 § 1(1) КП) і вимагати компенсацію в розмірі заробітної плати за період попередження. У статті пояснюємо умови застосування цього порядку, як підготувати письмову заяву з обґрунтуванням, які докази зібрати, місячний строк подання заяви та ризик зустрічної вимоги роботодавця про відшкодування у разі безпідставного посилання на цю норму. Право мають також іноземці, працевлаштовані за трудовим договором.",
+   "title": "Звільнення з дня на день — коли працівник (зокрема іноземець) отримає компенсацію? [власний матеріал COSC]"
+  }
+ },
  "artykul-brak-wezwania-z-urzedu-karta-pobytu.html": {
   "en": {
    "summary": "When the employer runs the case, the summons goes to the employer — and the deadline runs (art. 40 § 2 KPA). Formal defects left unremedied mean the application is left without examination (art. 64 § 2 KPA). What to do.",
@@ -11,6 +25,20 @@
   "uk": {
    "summary": "Коли справу веде роботодавець, виклик з органу надходить до нього — а строк спливає (art. 40 § 2 KPA). Неусунені формальні недоліки означають залишення заяви без розгляду (art. 64 § 2 KPA). Що робити.",
    "title": "Не отримали виклик з органу? Так можна втратити карту побиту [власний матеріал COSC]"
+  }
+ },
+ "artykul-czy-cudzoziemiec-podlega-zus.html": {
+  "en": {
+   "summary": "Do you have to pay ZUS contributions for a foreigner? The territoriality rule, ZUS ZUA/ZZA registration, exceptions (A1 posting, international agreements). Legal basis: art. 6 of the Act on the social insurance system. 2026.",
+   "title": "Is a foreigner covered by ZUS social insurance in Poland [COSC own material]"
+  },
+  "es": {
+   "summary": "Hay que pagar cotizaciones ZUS por un extranjero? La regla de territorialidad, el alta ZUS ZUA/ZZA y las excepciones (desplazamiento con formulario A1, convenios internacionales). Base legal: art. 6 de la ley del sistema de seguridad social. 2026.",
+   "title": "Esta el extranjero sujeto a la seguridad social ZUS en Polonia [material propio de COSC]"
+  },
+  "uk": {
+   "summary": "Чи треба платити внески ZUS за іноземця? Принцип територіальності, реєстрація ZUS ZUA/ZZA, винятки (відрядження за формою A1, міжнародні договори). Підстава: ст. 6 закону про систему соціального страхування. 2026.",
+   "title": "Чи підлягає іноземець страхуванню ZUS у Польщі [власний матеріал COSC]"
   }
  },
  "artykul-delegowanie-a1-skladki.html": {
@@ -83,6 +111,20 @@
    "title": "Перевірка PIP без попередження — права та обов'язки роботодавця у 2026 році [власний матеріал COSC]"
   }
  },
+ "artykul-kurierzy-zlecenie-stosunek-pracy-pip-zus.html": {
+  "en": {
+   "summary": "An inspection by the National Labour Inspectorate (PIP) and ZUS at Pyszne.pl after the announced dismissal of about 5,000 couriers. When a mandate contract is in fact an employment relationship (art. 22 of the Labour Code), what reclassification of contracts means, collective redundancies and ZUS contributions, and what this means for the legality of work and residence of foreign couriers. Legal status: July 2026 (some provisions to be verified).",
+   "title": "A courier's mandate contract versus an employment relationship - lessons from the PIP and ZUS inspection at Pyszne.pl [COSC own material]"
+  },
+  "es": {
+   "summary": "Inspeccion de la Inspeccion Nacional de Trabajo (PIP) y de ZUS en Pyszne.pl tras el anuncio del despido de unos 5.000 repartidores. Cuando un contrato de mandato es en realidad una relacion laboral (art. 22 del Codigo de Trabajo), en que consiste la recalificacion de los contratos, los despidos colectivos y las cotizaciones ZUS, y que significa todo ello para la legalidad del trabajo y de la residencia de los repartidores extranjeros. Estado legal: julio de 2026 (parte de las normas pendiente de verificacion).",
+   "title": "Contrato de mandato de un repartidor frente a la relacion laboral: lo que ensena la inspeccion de PIP y ZUS en Pyszne.pl [material propio de COSC]"
+  },
+  "uk": {
+   "summary": "Перевірка Державної інспекції праці (PIP) і ZUS у Pyszne.pl після оголошення про звільнення близько 5 тис. кур'єрів. Коли договір доручення насправді є трудовими відносинами (ст. 22 Кодексу праці), що таке перекваліфікація договорів, групові звільнення та внески ZUS, і що це означає для легальності праці та перебування кур'єрів-іноземців. Стан права: липень 2026 (частина норм потребує перевірки).",
+   "title": "Договір доручення кур'єра і трудові відносини — чого вчить перевірка PIP і ZUS у Pyszne.pl [власний матеріал COSC]"
+  }
+ },
  "artykul-mobilnosc-krotkoterminowa-niebieska-karta-ict.html": {
   "en": {
    "summary": "Short-term mobility of a foreign national: EU Blue Card, intra-corporate transfer (ICT), researcher, student. Conditions, notifications and risks.",
@@ -125,6 +167,20 @@
    "title": "Як оподатковується іноземець у Польщі — необмежений і обмежений податковий обов'язок [власний матеріал COSC]"
   }
  },
+ "artykul-nowa-ustawa-powierzanie-pracy-2025.html": {
+  "en": {
+   "summary": "The Act of 20 March 2025 on entrusting work to foreigners (Dz.U. 2025 poz. 621) has applied since 1 June 2025. Abolition of the labour market test (test rynku pracy), electronic procedures, higher penalties. For employers and HR.",
+   "title": "The new act on entrusting work to foreigners - what changed from 1 June 2025 [COSC own material]"
+  },
+  "es": {
+   "summary": "La ley de 20 de marzo de 2025 sobre la encomienda de trabajo a extranjeros (Dz.U. 2025 poz. 621) se aplica desde el 1 de junio de 2025. Supresion de la prueba del mercado de trabajo (test rynku pracy), tramitacion electronica y sanciones mas altas. Para empleadores y departamentos de personal.",
+   "title": "La nueva ley sobre la encomienda de trabajo a extranjeros: que cambio desde el 1 de junio de 2025 [material propio de COSC]"
+  },
+  "uk": {
+   "summary": "Закон від 20 березня 2025 року про доручення роботи іноземцям (Dz.U. 2025 poz. 621) діє з 1 червня 2025 року. Скасування тесту ринку праці (test rynku pracy), електронізація, вищі штрафи. Для роботодавців і кадрових служб.",
+   "title": "Новий закон про доручення роботи іноземцям — що змінилося з 1 червня 2025 року [власний матеріал COSC]"
+  }
+ },
  "artykul-praca-bez-zezwolenia-cudzoziemiec.html": {
   "en": {
    "summary": "Who works without a work permit: free access to the labour market, special cases (regulation of 20 November 2025) and citizens of Ukraine. How to check an employee's status. For employers and foreign nationals. 2026.",
@@ -137,6 +193,48 @@
   "uk": {
    "summary": "Хто працює без дозволу на роботу: вільний доступ до ринку праці, особливі випадки (розпорядження від 20.11.2025), громадяни України. Як перевірити статус працівника. Для роботодавців та іноземців. 2026 р.",
    "title": "Хто може працювати в Польщі без дозволу на роботу [власний матеріал COSC]"
+  }
+ },
+ "artykul-pracodawca-nie-oddaje-dokumentow.html": {
+  "en": {
+   "summary": "Without the documents from your employer it is easy to miss a summons from the authority and lose legal residence. Step by step: how to recover the documents, what rights you have (art. 97 of the Labour Code, art. 64 § 2 KPA) and the 15-day deadline after losing your job.",
+   "title": "The employer will not return the documents for your residence card - what to do step by step [COSC own material]"
+  },
+  "es": {
+   "summary": "Sin los documentos del empleador es facil no recibir un requerimiento de la administracion y perder la residencia legal. Paso a paso: como recuperar los documentos, que derechos tiene usted (art. 97 del Codigo de Trabajo, art. 64 § 2 KPA) y el plazo de 15 dias tras la perdida del empleo.",
+   "title": "El empleador no devuelve los documentos para la tarjeta de residencia: que hacer paso a paso [material propio de COSC]"
+  },
+  "uk": {
+   "summary": "Без документів від роботодавця легко пропустити виклик з установи і втратити легальне перебування. Крок за кроком: як повернути документи, які у вас права (ст. 97 Кодексу праці, ст. 64 § 2 KPA) і 15-денний строк після втрати роботи.",
+   "title": "Роботодавець не віддає документи для карти перебування — що робити крок за кроком [власний матеріал COSC]"
+  }
+ },
+ "artykul-rezydencja-podatkowa-cudzoziemca.html": {
+  "en": {
+   "summary": "When is a foreigner a Polish tax resident? The 183-day rule, the centre of vital interests, unlimited and limited tax liability, the certificate of residence. Legal status 2026.",
+   "title": "Tax residence of a foreigner in Poland - the 183-day rule and the centre of vital interests [COSC own material]"
+  },
+  "es": {
+   "summary": "Cuando es un extranjero residente fiscal en Polonia? La regla de los 183 dias, el centro de intereses vitales, la obligacion tributaria ilimitada y limitada, y el certificado de residencia. Estado legal 2026.",
+   "title": "Residencia fiscal del extranjero en Polonia: la regla de los 183 dias y el centro de intereses vitales [material propio de COSC]"
+  },
+  "uk": {
+   "summary": "Коли іноземець є польським податковим резидентом? Правило 183 днів, центр життєвих інтересів, необмежений і обмежений податковий обов'язок, сертифікат резидентства. Стан права 2026.",
+   "title": "Податкове резидентство іноземця в Польщі — правило 183 днів і центр життєвих інтересів [власний матеріал COSC]"
+  }
+ },
+ "artykul-rownowaga-plci-spolki-publiczne.html": {
+  "en": {
+   "summary": "Own material of the Centre for Foreigners' Affairs Service. On 9 June 2026 the Council of Ministers adopted a bill improving gender balance in the governing bodies of listed companies based in Poland, implementing Directive (EU) 2022/2381 (\"Women on Boards\"). The bill provides for at least 33% representation of the under-represented sex on the management and supervisory boards of large listed companies (at least 250 employees and turnover above EUR 50 million or a balance sheet above EUR 43 million), transparent selection procedures, a gender balance policy adopted by the general meeting, annual reporting, compensation claims for passed-over candidates and fines of up to PLN 500,000. The rules refer to sex, not citizenship - they will also cover foreigners in company bodies. The article explains the scope and obligations and assesses the risk. Note: this is a bill, before adoption by parliament.",
+   "title": "Gender balance on the boards of listed companies - a government bill (EU Directive 2022/2381) [COSC own material]"
+  },
+  "es": {
+   "summary": "Material propio del Centro de Atencion de Asuntos de Extranjeros. El 9 de junio de 2026 el Consejo de Ministros aprobo un proyecto de ley para mejorar el equilibrio de genero en los organos de las sociedades cotizadas con sede en Polonia, que traspone la Directiva (UE) 2022/2381 (\"Women on Boards\"). El proyecto preve al menos un 33% de participacion del sexo menos representado en los consejos de administracion y de vigilancia de las grandes sociedades cotizadas (al menos 250 empleados y facturacion superior a 50 millones de euros o balance superior a 43 millones de euros), procedimientos de seleccion transparentes, una politica de equilibrio de genero aprobada por la junta general, informes anuales, reclamaciones de indemnizacion de los candidatos descartados y multas de hasta 500.000 PLN. Las normas se refieren al sexo, no a la nacionalidad: alcanzaran tambien a los extranjeros en los organos de las sociedades. El articulo explica el alcance y las obligaciones y evalua el riesgo. Atencion: es un proyecto, aun no aprobado por el parlamento.",
+   "title": "Equilibrio de genero en los organos de las sociedades cotizadas: proyecto de ley del Gobierno (Directiva UE 2022/2381) [material propio de COSC]"
+  },
+  "uk": {
+   "summary": "Власний матеріал Центру обслуговування справ іноземців. 9 червня 2026 року Рада Міністрів ухвалила законопроєкт про поліпшення гендерного балансу в органах публічних компаній із місцезнаходженням у Польщі, що впроваджує директиву (ЄС) 2022/2381 (\"Women on Boards\"). Проєкт передбачає щонайменше 33% представництва недостатньо представленої статі у правліннях і наглядових радах великих біржових компаній (щонайменше 250 працівників та оборот понад 50 млн євро або баланс понад 43 млн євро), прозорі процедури добору, політику гендерного балансу, яку ухвалюють загальні збори, щорічну звітність, компенсаційні вимоги пропущених кандидатів і штрафи до 500 000 злотих. Норми стосуються статі, а не громадянства — охоплять і іноземців в органах компаній. У статті пояснюємо обсяг, обов'язки та оцінюємо ризик. Увага: це проєкт до ухвалення парламентом.",
+   "title": "Гендерний баланс в органах публічних компаній — урядовий законопроєкт (директива ЄС 2022/2381) [власний матеріал COSC]"
   }
  },
  "artykul-ulga-na-powrot-cudzoziemiec.html": {
@@ -153,6 +251,20 @@
    "title": "Пільга на повернення — звільнення від PIT до 85 528 zl також для іноземця [власний матеріал COSC]"
   }
  },
+ "artykul-wymiana-dokumentow-obywatele-ue-2026.html": {
+  "en": {
+   "summary": "Own material of the Centre for Foreigners' Affairs Service. The Office for Foreigners (Urzad do Spraw Cudzoziemcow) reminds that on 3 August 2026 the last documents issued to EU citizens and their family members under the templates in force before 2 August 2021 lose validity (under the transitional provisions of the Act of 10 December 2020, Dz.U. 2020 poz. 2369). This concerns the certificate of registration of residence of an EU citizen, the document confirming the right of permanent residence, and the residence and permanent residence cards of a family member of an EU citizen issued up to 1 August 2021. The application for a new document is filed with the voivode (wojewoda) competent for the place of residence. Expiry of the document does not mean loss of the right of residence or of permanent residence - these documents are declaratory. The article explains who is affected by the deadline, the available options, and assesses the risk.",
+   "title": "Office for Foreigners: by 3 August 2026 replace documents of EU citizens and their family members issued before 2 August 2021 [COSC own material]"
+  },
+  "es": {
+   "summary": "Material propio del Centro de Atencion de Asuntos de Extranjeros. La Oficina de Extranjeros (Urzad do Spraw Cudzoziemcow) recuerda que el 3 de agosto de 2026 caducan los ultimos documentos expedidos a ciudadanos de la UE y a sus familiares segun los modelos vigentes antes del 2 de agosto de 2021 (en virtud de las disposiciones transitorias de la ley de 10 de diciembre de 2020, Dz.U. 2020 poz. 2369). Afecta al certificado de registro de residencia de ciudadano de la UE, al documento que confirma el derecho de residencia permanente y a las tarjetas de residencia y de residencia permanente de familiar de ciudadano de la UE expedidas hasta el 1 de agosto de 2021. La solicitud del nuevo documento se presenta ante el voivoda (wojewoda) competente por el lugar de residencia. La caducidad del documento no supone la perdida del derecho de residencia ni de residencia permanente: estos documentos son declarativos. El articulo explica a quien afecta el plazo, que opciones existen y evalua el riesgo.",
+   "title": "Oficina de Extranjeros: hasta el 3 de agosto de 2026 para cambiar los documentos de ciudadanos de la UE y sus familiares expedidos antes del 2 de agosto de 2021 [material propio de COSC]"
+  },
+  "uk": {
+   "summary": "Власний матеріал Центру обслуговування справ іноземців. Управління у справах іноземців (Urzad do Spraw Cudzoziemcow) нагадує, що 3 серпня 2026 року втрачають чинність останні документи, видані громадянам ЄС та членам їхніх сімей за зразками, що діяли до 2 серпня 2021 року (на підставі перехідних положень закону від 10 грудня 2020 року, Dz.U. 2020 poz. 2369). Це стосується свідоцтва про реєстрацію перебування громадянина ЄС, документа, що підтверджує право постійного перебування, а також карт перебування і постійного перебування члена сім'ї громадянина ЄС, виданих до 1 серпня 2021 року. Заяву про новий документ подають воєводі за місцем перебування. Втрата чинності документа не означає втрати права перебування чи постійного перебування — ці документи мають декларативний характер. У статті пояснюємо, кого стосується строк, які є варіанти дій, та оцінюємо ризик.",
+   "title": "Управління у справах іноземців: до 3 серпня 2026 року обмін документів громадян ЄС та членів їхніх сімей, виданих до 2 серпня 2021 року [власний матеріал COSC]"
+  }
+ },
  "artykul-zakaz-pracy-ruch-bezwizowy-wenezuela-gruzja-kolumbia.html": {
   "en": {
    "summary": "The regulation of 31 July 2026 (Dz.U. 2026 poz. 1072) bars citizens of Venezuela, Georgia and Colombia from working on a permit while staying under visa-free travel. What it means, how the labour market looks and which lawful employment routes remain. Status: August 2026.",
@@ -165,6 +277,34 @@
   "uk": {
    "summary": "Розпорядження від 31 липня 2026 р. (Dz.U. 2026 poz. 1072) забороняє громадянам Венесуели, Грузії та Колумбії працювати на підставі дозволу під час перебування в безвізовому режимі. Що це означає, як виглядає ринок праці та які легальні шляхи працевлаштування залишаються. Стан: серпень 2026 р.",
    "title": "Кінець роботи в безвізовому режимі для громадян Венесуели, Грузії та Колумбії [власний матеріал COSC]"
+  }
+ },
+ "artykul-zasilek-pielegnacyjny-cukrzyca-cudzoziemcy.html": {
+  "en": {
+   "summary": "Own material of the Centre for Foreigners' Affairs Service (Centrum Obslugi Spraw Cudzoziemcow). The care allowance is PLN 215.84 per month with no income criterion (art. 16 of the Act of 28 November 2003 on family benefits, Dz.U. 2025 poz. 1208). With diabetes, the basis is not the diagnosis itself but a decision on the degree of disability. Crucial for a foreigner: entitlement depends on the residence title listed in art. 1(2)-(3) of the Act - not every legal stay gives entitlement. The article explains who is entitled, who is excluded (including short work and residence permits, work on the basis of a visa, and the conflict with the ZUS care supplement), how to document the illness before the adjudicating panel and how to file the application.",
+   "title": "Care allowance of PLN 215.84 for diabetes - will a foreigner receive it? [COSC own material]"
+  },
+  "es": {
+   "summary": "Material propio del Centro de Atencion de Asuntos de Extranjeros (Centrum Obslugi Spraw Cudzoziemcow). El subsidio de asistencia es de 215,84 PLN al mes, sin criterio de renta (art. 16 de la ley de 28 de noviembre de 2003 de prestaciones familiares, Dz.U. 2025 poz. 1208). En la diabetes, la base no es el diagnostico en si, sino la resolucion sobre el grado de discapacidad. Clave para el extranjero: el derecho a la prestacion depende del titulo de residencia indicado en el art. 1, apdos. 2-3 de la ley; no toda estancia legal da derecho. El articulo explica quien tiene derecho, quien queda excluido (entre otros, permisos cortos de residencia y trabajo, trabajo con visado, y el conflicto con el complemento de asistencia de ZUS), como documentar la enfermedad ante el equipo evaluador y como presentar la solicitud.",
+   "title": "Subsidio de asistencia de 215,84 PLN por diabetes: lo recibira un extranjero? [material propio de COSC]"
+  },
+  "uk": {
+   "summary": "Власний матеріал Центру обслуговування справ іноземців (Centrum Obslugi Spraw Cudzoziemcow). Допомога по догляду становить 215,84 злотих на місяць без критерію доходу (ст. 16 закону від 28 листопада 2003 року про сімейні виплати, Dz.U. 2025 poz. 1208). При діабеті підставою є не сам діагноз, а рішення про ступінь інвалідності. Ключове для іноземця: право на виплату залежить від підстави перебування, зазначеної у ст. 1 ч. 2-3 закону — не кожне легальне перебування дає таке право. У статті пояснюємо, хто має право, хто виключений (зокрема короткі дозволи на перебування і працю, робота на підставі візи, колізія з доплатою по догляду від ZUS), як задокументувати хворобу перед комісією та як подати заяву.",
+   "title": "Допомога по догляду 215,84 злотих при діабеті — чи отримає її іноземець? [власний матеріал COSC]"
+  }
+ },
+ "artykul-zatrudnienie-obywatela-ukrainy-2026.html": {
+  "en": {
+   "summary": "How to legally employ a Ukrainian citizen in 2026: the simplified procedure and the notification of entrusting work, and the link with residence (UKR status). The rules keep changing...",
+   "title": "Employing a Ukrainian citizen in 2026 - procedure and notification"
+  },
+  "es": {
+   "summary": "Como contratar legalmente a un ciudadano ucraniano en 2026: el procedimiento simplificado y la notificacion de encomienda de trabajo, y su relacion con la residencia (estatus UKR). Las normas cambian...",
+   "title": "Contratar a un ciudadano ucraniano en 2026: procedimiento y notificacion"
+  },
+  "uk": {
+   "summary": "Як легально працевлаштувати громадянина України у 2026 році: спрощений порядок і повідомлення про доручення роботи, зв'язок із перебуванням (статус UKR). Норми змінюються...",
+   "title": "Працевлаштування громадянина України у 2026 році — порядок і повідомлення"
   }
  },
  "artykul-zmiana-pracodawcy-karta-pobytu.html": {
@@ -195,6 +335,34 @@
    "title": "Повернення гербового збору за заяву про тимчасове перебування — кому і коли належить. Новий порадник COSC"
   }
  },
+ "https://edgp.gazetaprawna.pl/magazyn/artykuly/11279603,za-pozno-na-pytanie-czy-ai-zabierze-nam-prace.html": {
+  "en": {
+   "summary": "In the magazine of Dziennik Gazeta Prawna (23 July 2026) Izabela Lipinska and Iwo Zmyslony argue that the question \"will AI take our jobs\" is wrongly framed. In their view much of work - including intellectual work - was \"taken\" from people long before language models: from the mid-19th century work was broken into ever smaller, measurable and repetitive fragments (from Adam Smith's division of labour, through Taylorism and Fordism, to the standardised Thonet chair). They recall that this was a design decision, not a necessity - the counter-example being Daniel McCallum's \"organic\" railway chart (1855). Referring to Marx's alienation, they claim AI is not a revolution but a further stage of dehumanisation: it is easiest to automate what has already been separated from context and described by a procedure, which ignores the social and moral dimension of work and deprives people of agency (the effect can be passive resistance or a retreat into craft). They point to the limits of automation: AI providers do not take responsibility for outcomes (the \"human in the loop\" principle); in a 2025 randomised METR study experienced programmers using AI were 19% slower although they felt 20% faster; an analysis of 50 positions at the Rzeszow University of Technology (Aviation Valley cluster) found not a single fully automatable role. They also warn against \"cost automation\" and \"AI washing\" and - citing Brynjolfsson's research (Stanford) - against falling employment of the youngest workers (aged 22-25) in AI-exposed occupations. The most serious, though least visible, effect may be the disappearance of entry rungs into professions and of the path towards responsibility, so that in a few years there will be a shortage of senior decision-making staff. An opinion piece; the above is our own summary of its theses - details and the full text at the source.",
+   "title": "DGP: \"Too late to ask whether AI will take our jobs\" - automation, the meaning of work and entry into a profession"
+  },
+  "es": {
+   "summary": "En el magazine de Dziennik Gazeta Prawna (23 de julio de 2026) Izabela Lipinska e Iwo Zmyslony sostienen que la pregunta \"la IA nos quitara el trabajo?\" esta mal planteada. A su juicio, gran parte del trabajo, tambien intelectual, se \"arrebato\" a las personas mucho antes de los modelos de lenguaje: desde mediados del siglo XIX el trabajo se fragmento en partes cada vez menores, medibles y repetitivas (de la division del trabajo de Adam Smith al taylorismo y el fordismo, hasta la silla estandarizada de Thonet). Recuerdan que fue una decision de diseno, no una necesidad; el contraejemplo es el esquema \"organico\" del ferrocarril de Daniel McCallum (1855). Aludiendo a la alienacion marxista, afirman que la IA no es una revolucion, sino otra etapa de deshumanizacion: es mas facil automatizar lo que antes se separo del contexto y se describio con un procedimiento, lo que omite la dimension social y moral del trabajo y resta capacidad de accion (el efecto puede ser resistencia pasiva o refugio en el oficio artesanal). Senalan los limites de la automatizacion: los proveedores de IA no asumen responsabilidad por los resultados (principio de \"humano en el bucle\"); en un estudio aleatorizado METR de 2025 los programadores experimentados con IA fueron un 19% mas lentos, aunque se sentian un 20% mas rapidos; un analisis de 50 puestos en la Universidad Tecnologica de Rzeszow (cluster del Valle de la Aviacion) no hallo ni un solo rol plenamente automatizable. Advierten ademas contra la \"automatizacion de costes\" y el \"AI washing\" y, citando investigaciones de Brynjolfsson (Stanford), contra la caida del empleo de los trabajadores mas jovenes (22-25 anos) en ocupaciones expuestas a la IA. El efecto mas grave, aunque poco visible, puede ser la desaparicion de los peldanos de entrada a la profesion y del camino hacia la responsabilidad, de modo que en unos anos faltaran cuadros senior con capacidad de decision. Texto de opinion; lo anterior es un resumen propio de sus tesis: detalles y texto completo en la fuente.",
+   "title": "DGP: \"Es tarde para preguntar si la IA nos quitara el trabajo\": automatizacion, sentido del trabajo y entrada a la profesion"
+  },
+  "uk": {
+   "summary": "У журналі Dziennik Gazeta Prawna (23 липня 2026 року) Ізабела Ліпінська та Іво Змислони доводять, що питання \"чи ШІ забере в нас роботу\" поставлене неправильно. На їхню думку, значну частину праці — зокрема розумової — \"відібрали\" в людей задовго до мовних моделей: із середини XIX ст. працю дробили на дедалі менші, вимірювані й повторювані частини (від поділу праці Адама Сміта через тейлоризм і фордизм до стандартизованого стільця Тонета). Автори нагадують, що це було проєктне рішення, а не необхідність — контрприкладом є \"органічна\" схема залізниці Деніела Мак-Каллума (1855). Посилаючись на марксову відчуженість, вони стверджують, що ШІ — не революція, а черговий етап розлюднення: найлегше автоматизувати те, що раніше відокремили від контексту й описали процедурою, через що ігнорують соціальний і моральний вимір праці та позбавляють людину суб'єктності (наслідком буває пасивний спротив або втеча в ремесло). Вони вказують межі автоматизації: постачальники ШІ не беруть відповідальності за результати (принцип \"людина в петлі\"); у рандомізованому дослідженні METR 2025 року досвідчені програмісти з ШІ були на 19% повільнішими, хоч почувалися на 20% швидшими; аналіз 50 посад у Жешувській політехніці (кластер Авіаційної долини) не виявив жодної повністю автоматизовуваної ролі. Автори застерігають також від \"витратної автоматизації\" та \"AI washing\" і — покликаючись на дослідження Бріньйолфссона (Стенфорд) — від падіння зайнятості наймолодших працівників (22-25 років) у професіях, вразливих до ШІ. Найсерйознішим, хоч і малопомітним, наслідком може стати зникнення початкових щаблів входу в професію та шляху до відповідальності, через що за кілька років бракуватиме керівних кадрів. Публіцистичний матеріал (думка); вище — власний виклад тез статті, деталі й повний текст у джерелі.",
+   "title": "DGP: \"Запізно питати, чи ШІ забере в нас роботу\" — автоматизація, сенс праці та вхід у професію"
+  }
+ },
+ "https://edgp.gazetaprawna.pl/magazyn/artykuly/11279704,kedzierski-niemcy-widza-w-polsce-utracony-raj-opinia.html": {
+  "en": {
+   "summary": "A column by the economist Marcin Kedzierski in Dziennik Gazeta Prawna (Magazine, 23 July 2026). He starts from the Polish \"fetish\" of cleanliness and order and moves to conclusions relevant for the labour market and migration. He argues that attachment to clean public space can be one of the reasons for reluctance towards immigrants, especially from cultures with a different attitude to order. At the same time he points to three risks: (1) cleaning costs money, and in a weakening economy the burden falls on workers - the cleaning sector has for years \"optimised\" costs, among other things by pushing staff into bogus self-employment; (2) given the demographic crisis and the rising aspirations of Poles, the only way to secure an \"army\" of cleaners will be immigration, which clashes with the belief that immigrants \"import\" disorder; (3) infrastructure wears out over time. His conclusion: Poland has become the \"new Germany\", and Germans see in it a lost paradise. NOTE: this is an opinion piece, not a legal analysis; the phenomena cited (e.g. bogus self-employment in services) should be verified against data and the law.",
+   "title": "\"Germans see a lost paradise in Poland\" - Kedzierski on order, demography and immigrants [DGP]"
+  },
+  "es": {
+   "summary": "Columna del economista Marcin Kedzierski en Dziennik Gazeta Prawna (Magazine, 23 de julio de 2026). Parte del \"fetiche\" polaco de la limpieza y el orden para llegar a conclusiones relevantes para el mercado de trabajo y la migracion. Sostiene que el apego al espacio publico limpio puede ser una de las causas del rechazo a los inmigrantes, sobre todo de culturas con otra relacion con el orden. A la vez senala tres riesgos: (1) limpiar cuesta dinero y, con una coyuntura debil, la carga recae en los trabajadores; el sector de la limpieza lleva anos \"optimizando\" costes, entre otras via el falso autoempleo; (2) ante la crisis demografica y las mayores aspiraciones de los polacos, la unica forma de contar con un \"ejercito\" de personal de limpieza sera la inmigracion, lo que choca con la idea de que los inmigrantes \"importan\" desorden; (3) la infraestructura se desgasta con el tiempo. Conclusion: Polonia se ha convertido en la \"nueva Alemania\" y los alemanes ven en ella un paraiso perdido. ATENCION: es un texto de opinion, no un analisis juridico; los fenomenos citados (p. ej. el falso autoempleo en servicios) conviene verificarlos con datos y normas.",
+   "title": "\"Los alemanes ven en Polonia un paraiso perdido\": Kedzierski sobre el orden, la demografia y los inmigrantes [DGP]"
+  },
+  "uk": {
+   "summary": "Колонка економіста Марціна Кендзерського у Dziennik Gazeta Prawna (Magazyn, 23.07.2026). Автор починає з польського \"фетишу\" чистоти й порядку і переходить до висновків, важливих для ринку праці та міграції. Він вказує, що прив'язаність до чистого публічного простору буває однією з причин неприязні до іммігрантів, особливо з культур з іншим ставленням до порядку. Водночас називає три загрози: (1) прибирання коштує, а при слабкій кон'юнктурі тягар лягає на працівників — клінінгова галузь роками \"оптимізує\" витрати, зокрема виштовхуючи персонал у фіктивне самозайняття; (2) з огляду на демографічну кризу і зростання аспірацій поляків єдиним способом мати \"армію\" прибиральників буде імміграція, що суперечить переконанню, ніби іммігранти \"імпортують\" безлад; (3) інфраструктура з часом зношується. Висновок: Польща стала \"новою Німеччиною\", а німці бачать у ній втрачений рай. УВАГА: це публіцистика (думка), а не правовий аналіз; наведені явища (напр. фіктивне самозайняття в послугах) варто перевіряти за даними і нормами.",
+   "title": "\"Німці бачать у Польщі втрачений рай\" — Кендзерський про порядок, демографію та іммігрантів [DGP]"
+  }
+ },
  "https://grantthornton.pl/publikacja/zatrudnienie-cudzoziemcow-2026-najwazniejsze-zmiany-i-wazne-terminy-w-przepisach-imigracyjnych/": {
   "en": {
    "summary": "The 2026 changes abolish the labour market test (test rynku pracy) and introduce electronic work-permit applications via praca.gov.pl. From 1 July 2026, some students outside the ministerial list lose the right to work without an additional document. Details at the source.",
@@ -207,6 +375,20 @@
   "uk": {
    "summary": "Зміни 2026 року скасовують тест ринку праці (test rynku pracy) і запроваджують електронні заяви на дозвіл на роботу через praca.gov.pl. З 1 липня 2026 року частина студентів поза міністерським списком втрачає право на роботу без додаткового документа. Деталі — у джерелі.",
    "title": "Ринок праці: скасування тесту ринку праці та електронні дозволи на роботу"
+  }
+ },
+ "https://hrlaw.pl/flesze/praca-studentow-cudzoziemcow-od-1-lipca-2026-r-tylko-po-weryfikacji-uczelni": {
+  "en": {
+   "summary": "From 1 July 2026 student status alone is no longer enough for a foreigner to be exempt from the obligation to hold a document legalising work. The exemption covers only students of public universities and of institutions approved by the Ministry of the Interior and Administration (MSWiA) for the purpose of admitting foreigners. The employer must now check whether the given university appears on the relevant list; if not, a standard basis for legalising work is required (notification / declaration / permit). Neglecting this duty carries the risk of illegally entrusting work. Details should be verified at the source and in the applicable provisions.",
+   "title": "End of the transitional period: from 1 July 2026 foreign students may work only after verification of the university"
+  },
+  "es": {
+   "summary": "Desde el 1 de julio de 2026 la condicion de estudiante ya no basta para que un extranjero quede exento de la obligacion de tener un documento que legalice el trabajo. La exencion alcanza solo a los estudiantes de universidades publicas y de centros aprobados por el Ministerio del Interior y Administracion (MSWiA) a efectos de admision de extranjeros. El empleador debe comprobar ahora si la universidad figura en el registro correspondiente; si no, es necesaria una base estandar de legalizacion del trabajo (notificacion, declaracion o permiso). Descuidar esta obligacion supone riesgo de encomienda ilegal de trabajo. Los detalles deben verificarse en la fuente y en las normas vigentes.",
+   "title": "Fin del periodo transitorio: desde el 1 de julio de 2026 los estudiantes extranjeros solo pueden trabajar tras la verificacion de la universidad"
+  },
+  "uk": {
+   "summary": "З 1 липня 2026 року самого статусу студента вже недостатньо, щоб іноземець був звільнений від обов'язку мати документ, який легалізує працю. Звільнення охоплює лише студентів державних закладів вищої освіти та установ, затверджених МВС і адміністрації (MSWiA) для цілей прийому іноземців. Роботодавець тепер має перевірити, чи заклад є у відповідному переліку; якщо ні — потрібна стандартна підстава легалізації праці (повідомлення / заява / дозвіл). Нехтування обов'язком загрожує ризиком нелегального доручення роботи. Деталі слід перевірити у джерелі та в чинних нормах.",
+   "title": "Кінець перехідного періоду: з 1 липня 2026 року праця студентів-іноземців лише після перевірки закладу освіти"
   }
  },
  "https://raczkowski.eu/pro-hr-immigration-update-lipiec-2026/": {
@@ -293,6 +475,20 @@
    "title": "ЄС продовжив тимчасовий захист для біженців з України до 4 березня 2028 року — з новою умовою для чоловіків призовного віку"
   }
  },
+ "https://www.gazetaprawna.pl/praca/prawo-pracy/artykuly/11280361,odejscie-z-pracy-art-55-odszkodowanie.html": {
+  "en": {
+   "summary": "An employee under an employment contract (including a foreigner) may terminate it with immediate effect in two cases: (1) where an occupational medicine doctor's opinion finds a harmful effect of the work on health and the employer does not move them to a suitable post within the set deadline (art. 55 § 1 of the Labour Code); (2) where the employer seriously breaches basic duties, e.g. non-payment or persistent late payment of wages, breaches of health and safety rules or mobbing (art. 55 § 1(1) of the Labour Code, in conjunction with the catalogue of duties in art. 94). The employee is then entitled to compensation in the amount of remuneration for the notice period (from 2 weeks to 3 months, depending on length of service with that employer). The statement must be in writing with specific reasons and be filed within 1 month of the day the employee learned of the circumstance justifying termination (art. 55 § 2 in conjunction with art. 52 § 2). Risk: where termination has no justified basis, the employer may claim compensation from the employee (art. 61(1) of the Labour Code), so securing evidence is crucial. The legal status and details should be verified at the source and in the applicable provisions.",
+   "title": "Art. 55 of the Labour Code: an employee may terminate the contract without notice through the employer's fault and obtain compensation"
+  },
+  "es": {
+   "summary": "El trabajador con contrato de trabajo (tambien extranjero) puede resolverlo con efecto inmediato en dos casos: (1) cuando el dictamen del medico del trabajo constata un efecto danino del trabajo sobre la salud y el empleador no le traslada en el plazo fijado a un puesto adecuado (art. 55 § 1 del Codigo de Trabajo); (2) cuando el empleador incumple gravemente sus obligaciones basicas, p. ej. impago o retrasos reiterados del salario, vulneracion de las normas de seguridad e higiene o acoso laboral (art. 55 § 1(1), en relacion con el catalogo de obligaciones del art. 94). El trabajador tiene entonces derecho a una indemnizacion equivalente al salario del periodo de preaviso (de 2 semanas a 3 meses, segun la antiguedad con ese empleador). La declaracion debe ser escrita, con motivacion concreta, y presentarse en el plazo de 1 mes desde que el trabajador conocio la circunstancia que justifica la resolucion (art. 55 § 2 en relacion con el art. 52 § 2). Riesgo: si la resolucion carece de fundamento, el empleador puede reclamar una indemnizacion al trabajador (art. 61(1)), por lo que es clave asegurar las pruebas. El estado legal y los detalles deben verificarse en la fuente y en las normas vigentes.",
+   "title": "Art. 55 del Codigo de Trabajo: el trabajador puede resolver el contrato sin preaviso por culpa del empleador y obtener una indemnizacion"
+  },
+  "uk": {
+   "summary": "Працівник за трудовим договором (зокрема іноземець) може розірвати його негайно у двох випадках: (1) коли висновок лікаря медицини праці констатує шкідливий вплив роботи на здоров'я, а роботодавець у визначений строк не переводить його на відповідну посаду (ст. 55 § 1 Кодексу праці); (2) коли роботодавець тяжко порушує основні обов'язки, напр. не виплачує або систематично затримує заробітну плату, порушує правила охорони праці чи допускає мобінг (ст. 55 § 1(1) у зв'язку з переліком обов'язків зі ст. 94). Тоді працівникові належить компенсація в розмірі заробітної плати за період попередження (від 2 тижнів до 3 місяців — залежно від стажу в цього роботодавця). Заява має бути письмовою з конкретним обґрунтуванням і поданою протягом 1 місяця від дня, коли працівник дізнався про обставину, що обґрунтовує розірвання (ст. 55 § 2 у зв'язку зі ст. 52 § 2). Ризик: при розірванні без обґрунтованої підстави роботодавець може вимагати відшкодування від працівника (ст. 61(1)), тому ключовим є забезпечення доказів. Стан права і деталі слід перевірити у джерелі та в чинних нормах.",
+   "title": "Ст. 55 Кодексу праці: працівник може розірвати договір без попередження з вини роботодавця й отримати компенсацію"
+  }
+ },
  "https://www.gov.pl/web/udsc/informacja-o-czasie-rozpatrywania-wnioskow-o-wydanie-lub-wymiane-karty-pobytu-oraz-genewskiego-dokumentu-podrozy": {
   "en": {
    "summary": "On 10 August 2026 the Office for Foreigners (Urzad do Spraw Cudzoziemcow, UDSC) announced that, due to a sharp rise in applications, processing of further applications to issue or replace the residence card (karta pobytu) and the Geneva travel document now exceeds 2 months. The Office asks that applications not be filed earlier than 2 months before the current document expires — those filed too early are to be left without examination. UDSC will announce any changes separately. Note: the notice concerns issuing or replacing the document itself, not the deadline for deciding the residence case; the actual waiting time is worth confirming with the authority handling the case.",
@@ -305,6 +501,20 @@
   "uk": {
    "summary": "10 серпня 2026 р. Управління у справах іноземців (Urzad do Spraw Cudzoziemcow, UDSC) повідомило, що через значне зростання кількості заяв строк розгляду наступних заяв про видачу або обмін карти побиту (karta pobytu) та Женевського документа подорожі перевищує 2 місяці. Управління просить не подавати заяви раніше ніж за 2 місяці до закінчення строку дії наявного документа — подані завчасно залишатимуть без розгляду. Про можливі зміни UDSC повідомить окремо. Увага: повідомлення стосується самої видачі або обміну документа, а не строку розгляду справи про перебування; реальний час очікування варто підтвердити в органі, який веде справу.",
    "title": "UDSC: видача або обмін карти побиту перевищила 2 місяці — не подавайте заяву раніше ніж за 2 місяці до закінчення строку документа"
+  }
+ },
+ "https://www.gov.pl/web/udsc/ograniczenie-prawa-do-zlozenia-wniosku-o-ochrone-miedzynarodowa": {
+  "en": {
+   "summary": "The Office for Foreigners (Urzad do Spraw Cudzoziemcow) recalls that since 27 March 2025 a temporary restriction of the right to lodge an application for international protection has applied at the border with the Republic of Belarus. The basis is art. 33a(5) of the Act of 13 June 2003 on granting protection to foreigners on the territory of the Republic of Poland (Dz.U. 2025 poz. 223 and 389), and the restriction was introduced by a regulation of the Council of Ministers of 27 March 2025. By a regulation of the Council of Ministers of 18 May 2026 (Dz.U. poz. 660) it was extended by a further 60 days counting from 21 May 2026. A single restriction may not exceed 60 days; each extension requires the consent of the Sejm, and it may be lifted earlier once the reasons cease. While and where it applies, the Border Guard does not accept applications or declarations of intent to lodge them (art. 28 of the Act). The restriction does not, however, cover: unaccompanied minors, pregnant women, persons requiring special treatment (including because of age or state of health), persons genuinely at risk of serious harm in the country they came from, and citizens of a state engaging in instrumentalisation. The current period of the restriction should be verified at the source (Office for Foreigners) - the publication date and subsequent regulations may change the legal status.",
+   "title": "Office for Foreigners: extended temporary restriction of the right to apply for international protection at the border with Belarus"
+  },
+  "es": {
+   "summary": "La Oficina de Extranjeros (Urzad do Spraw Cudzoziemcow) recuerda que desde el 27 de marzo de 2025 rige en la frontera con la Republica de Bielorrusia una restriccion temporal del derecho a presentar la solicitud de proteccion internacional. La base es el art. 33a, apdo. 5 de la ley de 13 de junio de 2003 sobre la concesion de proteccion a extranjeros en el territorio de la Republica de Polonia (Dz.U. 2025 poz. 223 y 389), y la restriccion se introdujo por reglamento del Consejo de Ministros de 27 de marzo de 2025. Por reglamento del Consejo de Ministros de 18 de mayo de 2026 (Dz.U. poz. 660) se prorrogo otros 60 dias a contar desde el 21 de mayo de 2026. Cada restriccion no puede superar los 60 dias; toda prorroga requiere la aprobacion del Sejm y puede levantarse antes si cesan las causas. Mientras y donde rige, la Guardia de Fronteras no admite solicitudes ni declaraciones de intencion de presentarlas (art. 28 de la ley). La restriccion no alcanza, sin embargo, a: menores no acompanados, mujeres embarazadas, personas que requieren trato especial (entre otros por edad o estado de salud), personas realmente expuestas a un dano grave en el pais del que llegaron y nacionales de un Estado que practica la instrumentalizacion. El periodo vigente de la restriccion debe verificarse en la fuente de la Oficina de Extranjeros: la fecha de publicacion y los reglamentos posteriores pueden cambiar el estado legal.",
+   "title": "Oficina de Extranjeros: prorrogada la restriccion temporal del derecho a solicitar proteccion internacional en la frontera con Bielorrusia"
+  },
+  "uk": {
+   "summary": "Управління у справах іноземців (Urzad do Spraw Cudzoziemcow) нагадує, що з 27 березня 2025 року на кордоні з Республікою Білорусь діє тимчасове обмеження права подати заяву про надання міжнародного захисту. Підстава — ст. 33a ч. 5 закону від 13 червня 2003 року про надання іноземцям захисту на території Республіки Польща (Dz.U. 2025 poz. 223 і 389), а саме обмеження запроваджено постановою Ради Міністрів від 27 березня 2025 року. Постановою Ради Міністрів від 18 травня 2026 року (Dz.U. poz. 660) його продовжено ще на 60 днів, рахуючи з 21 травня 2026 року. Одне обмеження не може перевищувати 60 днів; кожне продовження потребує згоди Сейму, а при припиненні причин може бути скасоване раніше. У час і в місці його дії Прикордонна служба не приймає заяв і декларацій про намір їх подати (ст. 28 закону). Обмеження не поширюється, однак, на: неповнолітніх без супроводу, вагітних жінок, осіб, які потребують особливого поводження (зокрема через вік або стан здоров'я), осіб, реально загрожених серйозною шкодою в державі, з якої вони прибули, та громадян держави, що застосовує інструменталізацію. Чинний строк дії обмеження слід перевірити у джерелі — дата публікації матеріалу та наступні постанови можуть змінювати стан права.",
+   "title": "Управління у справах іноземців: продовжено тимчасове обмеження права подати заяву про міжнародний захист на кордоні з Білоруссю"
   }
  },
  "https://www.gov.pl/web/udsc/przedluzenie-ochrony-czasowej-do-4-marca-2028-r": {
@@ -335,6 +545,34 @@
    "title": "UDSC: довідки про тимчасовий захист втратять чинність з кінцем 4 березня 2027 року"
   }
  },
+ "https://www.gov.pl/web/udsc/wazna-informacja-dla-obywateli-ukrainy-posiadajacych-numer-pesel-ze-statusem-ukr": {
+  "en": {
+   "summary": "The Office for Foreigners (Urzad do Spraw Cudzoziemcow) reminds that foreigners who obtained a PESEL number with UKR status solely on the basis of a declaration (without presenting a valid travel document) must present a valid passport at the municipal office by 31 August 2026. This concerns in particular children under 18 whose identity was previously confirmed using photographs in the passports of parents or guardians. The update is free of charge and does not change the PESEL number - only the document data are corrected. Failure to update on time means the loss of UKR status and of temporary protection, and without a valid PESEL UKR number it is not possible to receive a CUKR residence card.",
+   "title": "Office for Foreigners: Ukrainian citizens with UKR status must present a valid passport at the municipal office by 31 August 2026"
+  },
+  "es": {
+   "summary": "La Oficina de Extranjeros (Urzad do Spraw Cudzoziemcow) recuerda que los extranjeros que obtuvieron el numero PESEL con estatus UKR unicamente sobre la base de una declaracion (sin presentar un documento de viaje valido) deben presentar un pasaporte valido en el ayuntamiento antes del 31 de agosto de 2026. Afecta sobre todo a los menores de 18 anos cuya identidad se confirmo antes con fotografias en los pasaportes de los padres o tutores. La actualizacion es gratuita y no cambia el numero PESEL: solo se corrigen los datos del documento. La falta de actualizacion en plazo supone la perdida del estatus UKR y de la proteccion temporal, y sin un numero PESEL UKR valido no se puede obtener la tarjeta de residencia CUKR.",
+   "title": "Oficina de Extranjeros: los ciudadanos ucranianos con estatus UKR deben presentar un pasaporte valido en el ayuntamiento antes del 31 de agosto de 2026"
+  },
+  "uk": {
+   "summary": "Управління у справах іноземців (Urzad do Spraw Cudzoziemcow) нагадує, що іноземці, які отримали номер PESEL зі статусом UKR лише на підставі заяви (без пред'явлення чинного проїзного документа), зобов'язані до 31 серпня 2026 року пред'явити чинний паспорт в управлінні ґміни. Це стосується насамперед дітей до 18 років, чию особу раніше підтверджували за фотографіями в паспортах батьків або опікунів. Оновлення безкоштовне і не змінює номера PESEL — виправляють лише дані документа. Відсутність оновлення у строк означає втрату статусу UKR і тимчасового захисту, а без чинного номера PESEL UKR не можна отримати карту перебування CUKR.",
+   "title": "Управління у справах іноземців: громадяни України зі статусом UKR мають до 31 серпня 2026 року пред'явити чинний паспорт у ґміні"
+  }
+ },
+ "https://www.gov.pl/web/udsc/wazne-zbliza-sie-termin-wymiany-dokumentow-wydanych-obywatelom-ue-i-czlonkom-ich-rodzin-wydanych-wedlug-wzorow-obowiazujacych-przed--2-sierpnia-2021-r": {
+  "en": {
+   "summary": "The Office for Foreigners (Urzad do Spraw Cudzoziemcow) reminds that on 3 August 2026 the last documents issued to European Union citizens and their family members under the templates used before 2 August 2021 lose validity. They remained valid under the transitional provisions of the Act of 10 December 2020 (Dz.U. 2020 poz. 2369). Anyone still using an old residence registration certificate, a document confirming the right of permanent residence, or a residence card / permanent residence card of a family member of an EU citizen should promptly apply for a new document to the competent voivode (wojewoda).",
+   "title": "3 August 2026 is the deadline to replace old documents of EU citizens and their family members"
+  },
+  "es": {
+   "summary": "La Oficina de Extranjeros (Urzad do Spraw Cudzoziemcow) recuerda que el 3 de agosto de 2026 caduca la validez de los ultimos documentos expedidos a ciudadanos de la Union Europea y a sus familiares segun los modelos vigentes antes del 2 de agosto de 2021. Mantenian su validez en virtud de las disposiciones transitorias de la ley de 10 de diciembre de 2020 (Dz.U. 2020 poz. 2369). Si usted todavia utiliza un certificado antiguo de registro de residencia, un documento que confirma el derecho de residencia permanente o una tarjeta de residencia o de residencia permanente de familiar de ciudadano de la UE, debe solicitar sin demora un documento nuevo ante el voivoda (wojewoda) competente.",
+   "title": "El 3 de agosto de 2026 vence el plazo para cambiar los documentos antiguos de ciudadanos de la UE y sus familiares"
+  },
+  "uk": {
+   "summary": "Управління у справах іноземців (Urzad do Spraw Cudzoziemcow) нагадує: 3 серпня 2026 року втрачають чинність останні документи, видані громадянам Європейського Союзу та членам їхніх сімей за зразками, що діяли до 2 серпня 2021 року. Вони залишалися чинними на підставі перехідних положень закону від 10 грудня 2020 року (Dz.U. 2020 poz. 2369). Якщо ви ще користуєтеся старим свідоцтвом про реєстрацію перебування, документом, що підтверджує право постійного перебування, або картою перебування чи картою постійного перебування члена сім'ї громадянина ЄС, слід невідкладно звернутися по новий документ до відповідного воєводи (wojewoda).",
+   "title": "3 серпня 2026 року спливає термін обміну старих документів громадян ЄС та членів їхніх сімей"
+  }
+ },
  "https://www.infor.pl/akt-prawny/DZU.2026.097.0000473,ustawa-o-zmianie-ustawy-o-panstwowej-inspekcji-pracy-oraz-niektorych-innych-ustaw.html": {
   "en": {
    "summary": "The Act of 11 March 2026 amending the Act on the National Labour Inspectorate and certain other acts (Dz.U. 2026 poz. 473) empowers the regional labour inspector to establish, by decision, the existence of an employment relationship where a civil-law contract was concluded or work is in fact performed under the conditions of art. 22 § 1 Kodeksu pracy. A decision requires prior failure to comply with an order to remedy breaches. An appeal lies to the district court — the labour court — within one month of delivery. The act also introduces individual interpretations issued by the Chief Labour Inspector on whether a given legal relationship is an employment relationship; these bind PIP bodies. For foreign nationals working on a mandate contract or B2B this matters, because reclassification affects the basis for performing work, social insurance (ZUS) contributions and employee entitlements. The entry-into-force dates of individual provisions should be verified in the text of the act.",
@@ -361,6 +599,90 @@
   "uk": {
    "summary": "Президент підписав зміни до Закону про іноземців, які переносять подання заяв на тимчасове проживання, постійне проживання та довгострокового резидента ЄС з паперової форми до системи MOS (Moduł Obsługi Spraw). Доступ має бути безкоштовним, а заяву можна подати самостійно. Обсяг і терміни слід перевірити в джерелі.",
    "title": "Підписано зміни до Закону про іноземців — заяви на проживання лише онлайн через MOS"
+  }
+ },
+ "https://www.rynekzdrowia.pl/Polska-i-swiat/Szybsza-legalizacja-pobytu-dla-wybranych-cudzoziemcow-Rzad-szykuje-nowe-przepisy,286448,15.html": {
+  "en": {
+   "summary": "According to reports by \"Rzeczpospolita\" (via rynekzdrowia.pl, 9 July 2026), the Ministry of the Interior and Administration (MSWiA) is preparing a bill introducing so-called tacit consent: if the voivode does not conclude the proceedings within 60 days, the residence application would be deemed to have been decided favourably. The facilitation is to cover citizens of, among others, the USA, Japan, South Korea, the United Kingdom and Australia, and to make Poland more attractive to investors and skilled workers. Experts note that the solution concerns a small group of foreigners and will not solve the problem of queues lasting many months. The legislative status of the bill and the details should be verified at the source.",
+   "title": "MSWiA plans \"tacit consent\" - faster legalisation of residence for citizens of selected countries"
+  },
+  "es": {
+   "summary": "Segun informaciones de \"Rzeczpospolita\" (via rynekzdrowia.pl, 9 de julio de 2026), el Ministerio del Interior y Administracion (MSWiA) prepara un proyecto que introduce el llamado silencio positivo: si el voivoda no concluye el procedimiento en 60 dias, la solicitud de residencia se considerara resuelta favorablemente. La facilidad alcanzaria a nacionales de, entre otros, EE. UU., Japon, Corea del Sur, Reino Unido y Australia, y busca hacer Polonia mas atractiva para inversores y trabajadores cualificados. Los expertos senalan que la solucion afecta a un grupo reducido de extranjeros y no resolvera las colas de muchos meses. El estado legislativo del proyecto y los detalles deben verificarse en la fuente.",
+   "title": "El MSWiA planea el \"silencio positivo\": legalizacion mas rapida de la residencia para nacionales de paises seleccionados"
+  },
+  "uk": {
+   "summary": "За повідомленнями \"Rzeczpospolita\" (через rynekzdrowia.pl, 9 липня 2026 року), Міністерство внутрішніх справ і адміністрації (MSWiA) готує проєкт, що запроваджує так звану мовчазну згоду: якщо воєвода не завершить провадження протягом 60 днів, заяву про перебування вважатимуть розглянутою позитивно. Полегшення має охопити громадян, зокрема, США, Японії, Південної Кореї, Великої Британії та Австралії й підвищити привабливість Польщі для інвесторів і кваліфікованих працівників. Експерти зазначають, що рішення стосується невеликої групи іноземців і не розв'яже проблеми багатомісячних черг. Законодавчий статус проєкту і деталі слід перевірити у джерелі.",
+   "title": "MSWiA планує \"мовчазну згоду\" — швидшу легалізацію перебування для громадян окремих держав"
+  }
+ },
+ "https://www.strazgraniczna.pl/pl/aktualnosci/15931,Obywatele-Kolumbii-pracowali-nielegalnie.html": {
+  "en": {
+   "summary": "Officers of the Border Guard post in Tarnow found that seven Colombian citizens had been working without the required permits. Procedures obliging them to leave Polish territory were opened. The case shows how important checks on the legality of employment are - the lack of a proper work permit has consequences both for the foreigner and for the employer. Details should be verified in the source announcement.",
+   "title": "Seven Colombian citizens worked without permits - ordered to leave Poland"
+  },
+  "es": {
+   "summary": "Agentes del puesto de la Guardia de Fronteras en Tarnow detectaron que siete ciudadanos colombianos trabajaban sin los permisos exigidos. Se iniciaron procedimientos que les obligan a abandonar el territorio de Polonia. El caso muestra la importancia del control de la legalidad del empleo: la falta del permiso de trabajo adecuado tiene consecuencias tanto para el extranjero como para el empleador. Los detalles deben verificarse en el comunicado original.",
+   "title": "Siete ciudadanos colombianos trabajaban sin permisos y deben abandonar Polonia"
+  },
+  "uk": {
+   "summary": "Працівники підрозділу Прикордонної служби в Тарнуві виявили, що семеро громадян Колумбії виконували роботу без необхідних дозволів. Щодо іноземців розпочато процедури зобов'язання залишити територію Польщі. Справа показує, наскільки важливим є контроль легальності працевлаштування — відсутність належного дозволу на працю має наслідки як для іноземця, так і для роботодавця. Деталі слід перевірити в оригінальному повідомленні.",
+   "title": "Семеро громадян Колумбії працювали без дозволів — припис залишити Польщу"
+  }
+ },
+ "https://www.strazgraniczna.pl/pl/aktualnosci/16024,Pracowali-bez-zezwolen-Dwaj-obywatele-Wietnamu-z-nakazem-opuszczenia-Polski.html": {
+  "en": {
+   "summary": "The Carpathian Border Guard Unit reported that during an inspection of the legality of employment at a catering company in Skarzysko-Kamienna (24 July 2026) two Vietnamese citizens were found working without the required permits - one held a residence card that had been invalid for two years, the other a Hungarian card listed as a document to be seized. The head of the post issued decisions obliging them to return with a 12-month ban on entry to the Schengen area. The employer was fined a total of PLN 6,000.",
+   "title": "Border Guard: two Vietnamese citizens worked without permits - ordered to leave Poland"
+  },
+  "es": {
+   "summary": "La Unidad Carpatica de la Guardia de Fronteras informo de que, durante un control de la legalidad del empleo en una empresa de hosteleria en Skarzysko-Kamienna (24 de julio de 2026), se detecto a dos ciudadanos vietnamitas que trabajaban sin los permisos exigidos: uno tenia una tarjeta de residencia caducada desde hacia dos anos y el otro una tarjeta hungara registrada como documento a retirar. El jefe del puesto dicto resoluciones que les obligan a retornar con una prohibicion de entrada al espacio Schengen de 12 meses. Al empleador se le impuso una multa por un total de 6.000 PLN.",
+   "title": "Guardia de Fronteras: dos ciudadanos vietnamitas trabajaban sin permisos y deben abandonar Polonia"
+  },
+  "uk": {
+   "summary": "Карпатський відділ Прикордонної служби повідомив, що під час перевірки легальності працевлаштування у закладі громадського харчування у Скаржиську-Кам'янній (24 липня 2026 року) виявлено двох громадян В'єтнаму, які працювали без необхідних дозволів — один мав карту перебування, недійсну вже два роки, другий — угорську карту, що значилася як документ до вилучення. Комендант підрозділу видав рішення про зобов'язання до повернення із 12-місячною забороною в'їзду до Шенгенської зони. Роботодавця оштрафовано на загальну суму 6 тис. злотих.",
+   "title": "Прикордонна служба: двоє громадян В'єтнаму працювали без дозволів — припис залишити Польщу"
+  }
+ },
+ "https://www.strazgraniczna.pl/pl/aktualnosci/16030,Trzynastu-obywateli-Kolumbii-zatrzymanych-za-nielegalna-prace.html": {
+  "en": {
+   "summary": "During a joint inspection by the Border Guard (Wroclaw-Strachowice) and the National Labour Inspectorate (PIP) at a logistics company in the Wroclaw district, where 1,020 foreigners were present on 24 July, 13 Colombian citizens were found working without the required permits. Proceedings on a return obligation, together with bans on re-entry to the Schengen area, were opened against them. Three inspections of employment agencies were also launched and the employer faces a high fine.",
+   "title": "Wroclaw: 13 Colombian citizens worked without permits - a joint Border Guard and PIP inspection"
+  },
+  "es": {
+   "summary": "Durante una inspeccion conjunta de la Guardia de Fronteras (Wroclaw-Strachowice) y la Inspeccion Nacional de Trabajo (PIP) en una empresa de logistica del distrito de Wroclaw, donde el 24 de julio se encontraban 1.020 extranjeros, se detecto a 13 ciudadanos colombianos que trabajaban sin los permisos exigidos. Se iniciaron procedimientos de obligacion de retorno junto con prohibiciones de reentrada al espacio Schengen. Tambien se abrieron tres inspecciones de agencias de trabajo y el empleador se expone a una multa elevada.",
+   "title": "Wroclaw: 13 ciudadanos colombianos trabajaban sin permisos, en una inspeccion conjunta de la Guardia de Fronteras y PIP"
+  },
+  "uk": {
+   "summary": "Під час спільної перевірки Прикордонної служби (Вроцлав-Страховіце) та Державної інспекції праці (PIP) у логістичній компанії у Вроцлавському повіті, де 24 липня перебувало 1020 іноземців, виявлено 13 громадян Колумбії, які працювали без необхідних дозволів. Щодо них розпочато провадження про зобов'язання до повернення разом із заборонами повторного в'їзду до Шенгенської зони. Розпочато також три перевірки агентств праці, а роботодавцю загрожує високий штраф.",
+   "title": "Вроцлав: 13 громадян Колумбії працювали без дозволів — спільна перевірка Прикордонної служби і PIP"
+  }
+ },
+ "https://www.strazgraniczna.pl/pl/aktualnosci/16031,Dwaj-obywatele-Ukrainy-zobowiazani-do-opuszczenia-Polski.html": {
+  "en": {
+   "summary": "Officers of the Border Guard post in Olsztyn issued two Ukrainian citizens decisions obliging them to return to their country of origin. The motions to open the proceedings were filed by Police officers. The case is a reminder that being covered by temporary protection does not automatically exclude the possibility of a return obligation in the event of breaches of the rules. The legal basis of the specific decisions should be verified at the source.",
+   "title": "Olsztyn: two Ukrainian citizens issued decisions obliging them to return"
+  },
+  "es": {
+   "summary": "Agentes del puesto de la Guardia de Fronteras en Olsztyn dictaron a dos ciudadanos ucranianos resoluciones que les obligan a retornar a su pais de origen. Las solicitudes de inicio de los procedimientos fueron presentadas por agentes de la Policia. El caso recuerda que estar bajo proteccion temporal no excluye automaticamente la posibilidad de una obligacion de retorno en caso de infracciones. La base legal de cada resolucion debe verificarse en la fuente.",
+   "title": "Olsztyn: dos ciudadanos ucranianos con resoluciones que les obligan a retornar"
+  },
+  "uk": {
+   "summary": "Працівники підрозділу Прикордонної служби в Ольштині видали двом громадянам України рішення про зобов'язання повернутися до країни походження. Клопотання про початок проваджень подали працівники поліції. Справа нагадує, що тимчасовий захист автоматично не виключає можливості зобов'язання до повернення у разі порушень. Правові підстави конкретних рішень слід перевірити у джерелі.",
+   "title": "Ольштин: двом громадянам України видано рішення про зобов'язання до повернення"
+  }
+ },
+ "https://www.strazgraniczna.pl/pl/aktualnosci/16034,Obywatel-Ukrainy-zobowiazany-do-powrotu.html": {
+  "en": {
+   "summary": "Officers of the Border Guard post in Krakow checked the legality of residence of a 42-year-old Ukrainian citizen who carried no identity documents; his data were established on the basis of his statement and verified in the databases. As a result of the proceedings, a decision obliging him to return was issued. A reminder of the duty to hold valid documents and a legal basis for residence.",
+   "title": "Krakow: a Ukrainian citizen ordered to return after a residence legality check"
+  },
+  "es": {
+   "summary": "Agentes del puesto de la Guardia de Fronteras en Cracovia controlaron la legalidad de residencia de un ciudadano ucraniano de 42 anos que no llevaba documentos de identidad; sus datos se establecieron a partir de su declaracion y se verificaron en las bases de datos. Como resultado del procedimiento se dicto una resolucion que le obliga a retornar. Se recuerda la obligacion de tener documentos validos y una base legal de residencia.",
+   "title": "Cracovia: un ciudadano ucraniano obligado a retornar tras un control de legalidad de residencia"
+  },
+  "uk": {
+   "summary": "Працівники підрозділу Прикордонної служби в Кракові перевірили легальність перебування 42-річного громадянина України, який не мав при собі документів, що посвідчують особу; його дані встановили на підставі заяви та перевірили в базах. За результатами провадження видано рішення про зобов'язання до повернення. Нагадування про обов'язок мати чинні документи і законну підставу перебування.",
+   "title": "Краків: громадянина України зобов'язано до повернення після перевірки легальності перебування"
   }
  },
  "https://www.strazgraniczna.pl/pl/aktualnosci/16083,Wspolne-dzialania-Strazy-Granicznej-i-Policji-w-Kujawsko-Pomorskiem-20-cudzoziem.html": {
