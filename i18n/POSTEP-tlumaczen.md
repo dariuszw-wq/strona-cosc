@@ -64,3 +64,8 @@ Ponowna ekstrakcja ze świeżego klonu repo (93 pliki HTML): 3538 stringów. Wsz
 
 ## 2026-08-19 — partia 122 klucze (auto, wieczór)
 Audyt świeżego klonu repo (111 plików HTML, 4509 stringów) wykazał 122 klucze spoza słowników — niemal wszystkie z nowego artykułu `artykul-zlecenie-student-uczen-26-lat-zus-zezwolenie-na-prace.html` (121) plus 1 z `artykul-swobodny-dostep-do-rynku-pracy.html`. Przetłumaczono wszystkie na EN/ES/UK/RU/FR. Świadomie pominięto katalog `es/` (statyczne strony hiszpańskie — klucze nie są polskim tekstem źródłowym) oraz `WZOR-artykul-wlasny.html` (szablon z placeholderami). Struktura HTML zweryfikowana automatycznie: 0 rozbieżności. Stan: en/es/uk/ru/fr = 4012/4013 wypełnione (jedyny pusty = linia marki „©", celowo po polsku); pl.json = 522 klucze referencyjne.
+
+## 2026-08-19
+Przetłumaczono: 195 kluczy ES (strony: jaki-wniosek-o-pobyt-zlozyc + pobyt-czasowy-i-praca-wniosek-mos — priorytet MOS/karta pobytu). Pominięto 1 klucz „©" (marka po PL).
+Stan filled/count: pl 522/522(ref), en 4208/4209, es 4207/4209, uk 4208/4209, ru 4208/4209, fr 4208/4209.
+Wszystkie języki uzupełnione — pozostają tylko klucze „©" (celowo po polsku).
