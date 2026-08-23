@@ -1,6 +1,39 @@
 {
-  "updated": "2026-08-19T15:23:16Z",
+  "updated": "2026-08-23T08:27:53Z",
   "items": [
+    {
+      "id": "2026-08-23-cosc-muzeum-valivade-uchodzcy-indie",
+      "added": "2026-08-23",
+      "category": "Świat",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-muzeum-polskich-uchodzcow-valivade-indie.html",
+      "title": "Mała Polska w Indiach. W Valivade powstaje muzeum polskich uchodźców [materiał własny COSC]",
+      "summary": "W czasie II wojny światowej Valivade koło Kolhapuru przyjęło blisko 5 tys. polskich uchodźców. Dziś na miejscu dawnego osiedla powstaje muzeum ich historii, które ma być bliskie ukończenia jeszcze w tym roku.",
+      "t": {
+        "en": {
+          "title": "Little Poland in India. A museum for Polish refugees is being built in Valivade [COSC original material]",
+          "summary": "During World War II, Valivade near Kolhapur sheltered nearly 5,000 Polish refugees. A museum commemorating their history is now being built on the site of the former settlement and is expected to near completion this year."
+        },
+        "es": {
+          "title": "La Pequeña Polonia en la India. Se construye un museo de los refugiados polacos en Valivade [material propio de COSC]",
+          "summary": "Durante la Segunda Guerra Mundial, Valivade, cerca de Kolhapur, acogió a casi 5.000 refugiados polacos. En el lugar del antiguo asentamiento se está construyendo un museo dedicado a su historia, que se espera esté casi terminado este año."
+        },
+        "uk": {
+          "title": "«Мала Польща» в Індії. У Валіваде будують музей польських біженців [власний матеріал COSC]",
+          "summary": "Під час Другої світової війни Валіваде поблизу Колхапуру прийняло майже 5 тис. польських біженців. На місці колишнього поселення будують музей їхньої історії, який має бути майже готовий цього року."
+        },
+        "ru": {
+          "title": "«Малая Польша» в Индии. В Валиваде строят музей польских беженцев [собственный материал COSC]",
+          "summary": "Во время Второй мировой войны Валиваде близ Кольхапура приютило почти 5 тыс. польских беженцев. На месте бывшего поселения строится музей их истории, который должен быть почти готов в этом году."
+        },
+        "fr": {
+          "title": "La Petite Pologne en Inde. Un musée des réfugiés polonais se construit à Valivade [matériel propre COSC]",
+          "summary": "Pendant la Seconde Guerre mondiale, Valivade, près de Kolhapur, a accueilli près de 5 000 réfugiés polonais. Un musée consacré à leur histoire est en construction sur le site de l'ancienne colonie et devrait être presque achevé cette année."
+        }
+      }
+    },
     {
       "id": "2026-08-19-cosc-jaki-wniosek-o-pobyt-zlozyc",
       "added": "2026-08-19",
