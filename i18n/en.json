@@ -2,8 +2,8 @@
  "_meta": {
   "lang": "en",
   "name": "English",
-  "count": 4279,
-  "filled": 4278
+  "count": 4281,
+  "filled": 4280
  },
  "strings": {
   "⚠ Od 27.04.2026 wnioski o pobyt składa się <strong>wyłącznie elektronicznie przez system MOS</strong>. <a href=\"#mos\">Złożymy go za Ciebie, bez błędów →</a>": "⚠ From 27.04.2026, residence applications are filed <strong>exclusively online via the MOS system</strong>. <a href=\"#mos\">We'll file it for you, error-free →</a>",
@@ -4284,6 +4284,8 @@
   "<a href=\"pierwsze-kroki-po-przyjezdzie.html\">Pierwsze kroki po przyjeździe do Polski — PESEL, meldunek, konto, SIM</a>": "<a href=\"pierwsze-kroki-po-przyjezdzie.html\">First steps after arriving in Poland — PESEL, registration, bank account, SIM card</a>",
   "<a href=\"baza-noclegowa.html\">Baza noclegowa — kwatery i hostele pracownicze w Polsce</a>": "<a href=\"baza-noclegowa.html\">Accommodation database — workers' lodgings and hostels in Poland</a>",
   "Przejęcie i kontynuacja sprawy (przejęcie od innego pełnomocnika)": "Taking over and continuing a case (transfer from another representative)",
-  "Połączenie z rodziną — sprowadzenie dzieci i małżonka": "Family reunification — bringing children and a spouse"
+  "Połączenie z rodziną — sprowadzenie dzieci i małżonka": "Family reunification — bringing children and a spouse",
+  "Data publikacji: 21 sierpnia 2026 · Autor: Dariusz Włodarczyk Kancelaria TRC · Czas czytania: ok. 6 min": "Published: 21 August 2026 · Author: Dariusz Włodarczyk Kancelaria TRC · Reading time: approx. 6 min",
+  "Data publikacji: 24 sierpnia 2026 · Autor: Dariusz Włodarczyk Kancelaria TRC · Czas czytania: ok. 7 min": "Published: 24 August 2026 · Author: Dariusz Włodarczyk Kancelaria TRC · Reading time: approx. 7 min"
  }
 }
