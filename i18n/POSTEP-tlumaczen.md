@@ -69,3 +69,8 @@ Audyt świeżego klonu repo (111 plików HTML, 4509 stringów) wykazał 122 kluc
 Przetłumaczono: 195 kluczy ES (strony: jaki-wniosek-o-pobyt-zlozyc + pobyt-czasowy-i-praca-wniosek-mos — priorytet MOS/karta pobytu). Pominięto 1 klucz „©" (marka po PL).
 Stan filled/count: pl 522/522(ref), en 4208/4209, es 4207/4209, uk 4208/4209, ru 4208/4209, fr 4208/4209.
 Wszystkie języki uzupełnione — pozostają tylko klucze „©" (celowo po polsku).
+
+## 2026-08-24 — partia 40 kluczy (auto)
+Audyt świeżego klonu repo logiką identyczną z `extract.js` (96 plików HTML, 3896 kluczy; pominięto `WZOR-artykul-wlasny.html`). Ustalono 38 kluczy obecnych w en/es/uk, ale brakujących w ru.json i fr.json — cały nowy blok FAQ dla cudzoziemców: „Przejęcie i kontynuacja sprawy" (19 kluczy: pakiety PRZEGLĄD/STANDARD/ALL INCLUSIVE, zmiana pełnomocnika, odwołanie, ponaglenie, opłata skarbowa 440/100/17 zł) oraz „Połączenie z rodziną — sprowadzenie dzieci i małżonka" (19 kluczy: art. 159 ustawy o cudzoziemcach, warunki dochodu/ubezpieczenia/mieszkania, opłata 340 zł + karta pobytu 50/100 zł, prawo do nauki). Przetłumaczono je na RU i FR. Dodatkowo 2 nagłówki sekcji FAQ, których nie było w żadnym słowniku, przetłumaczono na wszystkie 5 języków (EN/ES/UK/RU/FR). Klucze ru/fr przeporządkowano zgodnie z kolejnością en.json. Struktura HTML: 0 rozbieżności tagów; wszystkie JSON-y zwalidowane.
+Stan filled/count: pl 522/522 (referencja), en 4278/4279, es 4277/4279, uk 4278/4279, ru 4278/4279, fr 4278/4279. Puste klucze to wyłącznie linie marki „©" (celowo po polsku; w es dwie).
+Po audycie: 0 kluczy z HTML poza słownikami — tłumaczenia kompletne.
