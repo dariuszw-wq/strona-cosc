@@ -78,3 +78,7 @@ Po audycie: 0 kluczy z HTML poza słownikami — tłumaczenia kompletne.
 ## 2026-08-24 (2. przebieg) — partia 2 kluczy (auto)
 Ponowny audyt świeżego klonu tą samą logiką co i18n.js (96 plików HTML, 3898 kluczy). Wykryto 2 nowe klucze — linie metryczki artykułów z 21 i 24 sierpnia 2026 („Data publikacji … Czas czytania"). Przetłumaczono na EN/ES/UK/RU/FR. Po dodaniu: 0 kluczy z HTML poza słownikami.
 Stan filled/count: pl 522/522 (referencja), en 4280/4281, es 4279/4281, uk 4280/4281, ru 4280/4281, fr 4280/4281. Puste klucze to wyłącznie linie marki „©" (celowo po polsku; w es dwie).
+
+## 2026-08-24 (3. przebieg) — 0 nowych kluczy (auto)
+Audyt świeżego klonu logiką identyczną z i18n.js/extract.js (jsdom, 97 plików HTML, 3928 kluczy). Braków w słownikach: 30, wszystkie wyłącznie z pliku szablonu `WZOR-artykul-wlasny.html` (placeholdery `[[...]]`) — celowo nietłumaczone. Nie dodano żadnych kluczy.
+Stan filled/count: pl 522/522 (referencja), en 4280/4281, es 4279/4281, uk 4280/4281, ru 4280/4281, fr 4280/4281. Puste klucze to wyłącznie linie marki „©" (celowo po polsku; w es dwie).
