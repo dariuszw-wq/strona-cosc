@@ -82,3 +82,7 @@ Stan filled/count: pl 522/522 (referencja), en 4280/4281, es 4279/4281, uk 4280/
 ## 2026-08-24 (3. przebieg) — 0 nowych kluczy (auto)
 Audyt świeżego klonu logiką identyczną z i18n.js/extract.js (jsdom, 97 plików HTML, 3928 kluczy). Braków w słownikach: 30, wszystkie wyłącznie z pliku szablonu `WZOR-artykul-wlasny.html` (placeholdery `[[...]]`) — celowo nietłumaczone. Nie dodano żadnych kluczy.
 Stan filled/count: pl 522/522 (referencja), en 4280/4281, es 4279/4281, uk 4280/4281, ru 4280/4281, fr 4280/4281. Puste klucze to wyłącznie linie marki „©" (celowo po polsku; w es dwie).
+
+## 2026-08-25 (4. przebieg) — 13 nowych kluczy × 5 języków (auto)
+Audyt świeżego klonu logiką i18n.js/extract.js (jsdom, 115 plików HTML, 4971 kluczy). Braków w słownikach: 1026, z czego 972 to statyczne strony `/es/` (własny nagłówek, poza silnikiem i18n), 30 to placeholdery `[[...]]` z `WZOR-artykul-wlasny.html`, a 11 to czysta grafika/markup bez tekstu (SVG postaci w grach, tagi `<video>`, puste `<span>` kalkulatora). Realnie do tłumaczenia było 13 kluczy z nowych artykułów (kontrola PIP bez zapowiedzi, kara SN za nielegalne zatrudnienie, podwójna opłata skarbowa, termin 14 dni pomoc integracyjna, wstrzymanie pomocy art. 95, dyskryminacja ze względu na obywatelstwo, zasiłek pielęgnacyjny) — przetłumaczone na en, es, uk, ru, fr.
+Stan filled/count: pl 522/522 (referencja), en 4293/4294, es 4292/4294, uk 4293/4294, ru 4293/4294, fr 4293/4294. Puste klucze to wyłącznie linie marki „©" (celowo po polsku; w es dwie).
