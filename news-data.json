@@ -1,6 +1,39 @@
 {
- "updated": "2026-08-24T08:06:27Z",
+ "updated": "2026-08-25T09:09:25",
  "items": [
+  {
+   "id": "2026-08-25-cosc-wniosek-bez-rozpoznania-jak-ratowac-sprawe",
+   "added": "2026-08-25",
+   "category": "Urzędy",
+   "scope": "PL",
+   "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+   "author": "Dariusz Włodarczyk Kancelaria TRC",
+   "url": "artykul-wniosek-bez-rozpoznania-jak-ratowac-sprawe.html",
+   "title": "Wniosek o kartę pobytu bez rozpoznania — czy da się uratować sprawę?",
+   "summary": "Ponaglenie (art. 37 KPA), skarga na bezczynność czy nowy wniosek? Od czego zależy strategia, gdy urząd pozostawił wniosek bez rozpoznania, bo wezwanie utknęło u pracodawcy.",
+   "t": {
+    "en": {
+     "title": "Residence card application left without examination — can the case be saved?",
+     "summary": "A reminder (art. 37 of the Code of Administrative Procedure), a complaint about inaction, or a new application? What the strategy depends on when the authority left the application without examination because the summons got stuck with the employer."
+    },
+    "es": {
+     "title": "Solicitud de tarjeta de residencia dejada sin examinar: ¿se puede salvar el caso?",
+     "summary": "¿Requerimiento (art. 37 del Código de Procedimiento Administrativo), queja por inactividad o nueva solicitud? De qué depende la estrategia cuando la autoridad dejó la solicitud sin examinar porque la citación se quedó en manos del empleador."
+    },
+    "uk": {
+     "title": "Заяву на карту побиту залишено без розгляду — чи можна врятувати справу?",
+     "summary": "Понаглення (ст. 37 КПА), скарга на бездіяльність чи нова заява? Від чого залежить стратегія, коли орган залишив заяву без розгляду, бо виклик застряг у роботодавця."
+    },
+    "ru": {
+     "title": "Заявление на карту побыту оставлено без рассмотрения — можно ли спасти дело?",
+     "summary": "Понагление (ст. 37 КПА), жалоба на бездействие или новое заявление? От чего зависит стратегия, когда орган оставил заявление без рассмотрения, потому что вызов застрял у работодателя."
+    },
+    "fr": {
+     "title": "Demande de carte de séjour laissée sans examen — peut-on sauver le dossier ?",
+     "summary": "Rappel (art. 37 du Code de procédure administrative), recours pour inaction ou nouvelle demande ? Ce dont dépend la stratégie lorsque l'administration a laissé la demande sans examen parce que la convocation est restée chez l'employeur."
+    }
+   }
+  },
   {
    "id": "2026-08-21-cosc-kontrola-pip-straz-graniczna",
    "added": "2026-08-21",
