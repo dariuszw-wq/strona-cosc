@@ -91,3 +91,7 @@ Stan filled/count: pl 522/522 (referencja), en 4293/4294, es 4292/4294, uk 4293/
 Audyt świeżego klonu logiką i18n.js/extract.js (jsdom, 115 plików HTML, 4971 kluczy). Braków w słownikach: 1013 — wszystkie poza zakresem silnika i18n: 972 to statyczne strony `/es/` (własny nagłówek), 30 to placeholdery `[[...]]` z `WZOR-artykul-wlasny.html`, 11 to czysta grafika/markup bez tekstu (SVG postaci w grach, tagi `<video>` na index.html, puste `<span>` kalkulatora, ikona w demie animacji). Realnych kluczy do tłumaczenia: 0 — od poprzedniego przebiegu nie doszły nowe treści objęte i18n.
 Stan filled/count: pl 522/522 (referencja), en 4293/4294, es 4292/4294, uk 4293/4294, ru 4293/4294, fr 4293/4294. Puste klucze to wyłącznie linie marki „©" (celowo po polsku; w es dwie).
 **TŁUMACZENIA KOMPLETNE** — można przechodzić do budowy statycznych wersji językowych /en/ /es/ /uk/ /ru/ /fr/ + hreflang.
+
+## 2026-08-26 (6. przebieg) — 0 nowych kluczy, słowniki nadal KOMPLETNE (auto)
+Świeży klon `main` (HEAD = commit z 25.08.2026, od tamtej pory brak nowych commitów, więc brak nowych treści objętych i18n). Autoryzacja tokenem potwierdzona `git push --dry-run`. Stan filled/count bez zmian: pl 522/522 (referencja), en 4293/4294, es 4292/4294, uk 4293/4294, ru 4293/4294, fr 4293/4294. Jedyne puste klucze to linie marki „©" (celowo po polsku; w es dwie). FR wyrównany z EN — nie było czego uzupełniać.
+**TŁUMACZENIA KOMPLETNE** — rekomendacja: wyłączyć zadanie cykliczne, przejść do budowy statycznych wersji /en/ /uk/ /ru/ /fr/ + hreflang (katalog /es/ już istnieje).
