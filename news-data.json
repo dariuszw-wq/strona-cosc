@@ -1,6 +1,39 @@
 {
- "updated": "2026-08-25T09:09:25",
+ "updated": "2026-08-26T09:11:55+02:00",
  "items": [
+  {
+   "id": "2026-08-26-cosc-kiedy-nowe-zezwolenie-na-prace",
+   "added": "2026-08-26",
+   "category": "Rynek pracy",
+   "scope": "PL",
+   "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+   "author": "Dariusz Włodarczyk Kancelaria TRC",
+   "url": "artykul-kiedy-nowe-zezwolenie-na-prace.html",
+   "title": "Kiedy potrzebne jest nowe zezwolenie na pracę cudzoziemca",
+   "summary": "Które zmiany warunków pracy wymagają nowego zezwolenia lub oświadczenia, a które nie: pracodawca, stanowisko, wynagrodzenie, wymiar. Jak uniknąć nielegalnego zatrudnienia. Stan 2026.",
+   "t": {
+    "en": {
+     "title": "When a new work permit for a foreigner is required",
+     "summary": "Which changes to working conditions require a new permit or declaration and which do not: employer, position, salary, working time. How to avoid illegal employment. Status 2026."
+    },
+    "es": {
+     "title": "Cuándo se necesita un nuevo permiso de trabajo para un extranjero",
+     "summary": "Qué cambios en las condiciones laborales exigen un nuevo permiso o declaración y cuáles no: empleador, puesto, remuneración, jornada. Cómo evitar el empleo ilegal. Estado 2026."
+    },
+    "uk": {
+     "title": "Коли потрібен новий дозвіл на роботу для іноземця",
+     "summary": "Які зміни умов праці вимагають нового дозволу або заяви, а які ні: роботодавець, посада, оплата праці, робочий час. Як уникнути нелегального працевлаштування. Стан на 2026 рік."
+    },
+    "ru": {
+     "title": "Когда нужно новое разрешение на работу для иностранца",
+     "summary": "Какие изменения условий труда требуют нового разрешения или заявления, а какие нет: работодатель, должность, оплата труда, рабочее время. Как избежать нелегальной занятости. Состояние на 2026 год."
+    },
+    "fr": {
+     "title": "Quand un nouveau permis de travail est nécessaire pour un étranger",
+     "summary": "Quels changements des conditions de travail exigent un nouveau permis ou une nouvelle déclaration et lesquels non : employeur, poste, rémunération, temps de travail. Comment éviter le travail illégal. État 2026."
+    }
+   }
+  },
   {
    "id": "2026-08-25-cosc-wniosek-bez-rozpoznania-jak-ratowac-sprawe",
    "added": "2026-08-25",
