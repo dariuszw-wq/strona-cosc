@@ -1,6 +1,39 @@
 {
- "updated": "2026-08-27T15:10:55",
+ "updated": "2026-08-27T21:07:14",
  "items": [
+  {
+   "id": "2026-08-27-cosc-mniej-wiz-pracowniczych-dane-mswia",
+   "added": "2026-08-27",
+   "category": "Rynek pracy",
+   "scope": "PL",
+   "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+   "author": "Dariusz Włodarczyk Kancelaria TRC",
+   "url": "artykul-mniej-wiz-pracowniczych-dane-mswia-2026.html",
+   "title": "Osiem razy mniej wiz pracowniczych — co dane MSWiA znaczą dla cudzoziemca i pracodawcy [materiał własny COSC]",
+   "summary": "MSWiA podało, że w I kw. 2026 r. wydano 16 tys. wiz pracowniczych wobec 123 tys. w I kw. 2022 r., 38 tys. zezwoleń na pracę wobec 122 tys. oraz 2,7 tys. wykonanych decyzji o zobowiązaniu do powrotu wobec ok. 900. Omawiamy, jakie przepisy stoją za tym spadkiem — ustawa z 20 marca 2025 r. (Dz.U. 2025 poz. 621), wyłącznie elektroniczne wnioski przez MOS od 27 kwietnia 2026 r. (art. 225a ust. 1 ustawy o cudzoziemcach) i rozporządzenie Dz.U. 2026 poz. 1072 — oraz co z nich wynika w praktyce dla cudzoziemca i dla pracodawcy.",
+   "t": {
+    "en": {
+     "title": "Eight times fewer work visas — what the MSWiA figures mean for foreigners and employers [COSC own analysis]",
+     "summary": "MSWiA reported 16 thousand work visas in Q1 2026 against 123 thousand in Q1 2022, 38 thousand work permits against 122 thousand, and 2.7 thousand enforced return decisions against about 900. We explain the rules behind the drop — the Act of 20 March 2025 (Dz.U. 2025 poz. 621), electronic-only residence applications through MOS since 27 April 2026 (art. 225a ust. 1 of the Act on Foreigners) and regulation Dz.U. 2026 poz. 1072 — and what follows in practice for foreigners and employers."
+    },
+    "es": {
+     "title": "Ocho veces menos visados de trabajo: qué significan los datos del MSWiA para extranjeros y empleadores [análisis propio de COSC]",
+     "summary": "El MSWiA informó de 16 mil visados de trabajo en el primer trimestre de 2026 frente a 123 mil en el primer trimestre de 2022, 38 mil permisos de trabajo frente a 122 mil y 2,7 mil decisiones de retorno ejecutadas frente a unas 900. Explicamos las normas que hay detrás de la caída — la Ley de 20 de marzo de 2025 (Dz.U. 2025 poz. 621), las solicitudes de residencia exclusivamente electrónicas a través de MOS desde el 27 de abril de 2026 (art. 225a ust. 1 de la Ley de Extranjería) y el reglamento Dz.U. 2026 poz. 1072 — y qué implican en la práctica para extranjeros y empleadores."
+    },
+    "uk": {
+     "title": "Увосьмеро менше робочих віз — що дані MSWiA означають для іноземця та роботодавця [власний матеріал COSC]",
+     "summary": "MSWiA повідомило про 16 тис. робочих віз у I кварталі 2026 р. проти 123 тис. у I кварталі 2022 р., 38 тис. дозволів на роботу проти 122 тис. та 2,7 тис. виконаних рішень про зобов'язання до повернення проти близько 900. Пояснюємо норми, що стоять за цим спадом — закон від 20 березня 2025 р. (Dz.U. 2025 poz. 621), виключно електронні заяви через MOS від 27 квітня 2026 р. (art. 225a ust. 1 закону про іноземців) і розпорядження Dz.U. 2026 poz. 1072 — та що з них випливає на практиці."
+    },
+    "ru": {
+     "title": "В восемь раз меньше рабочих виз — что данные MSWiA значат для иностранца и работодателя [собственный материал COSC]",
+     "summary": "MSWiA сообщило о 16 тыс. рабочих виз в I квартале 2026 г. против 123 тыс. в I квартале 2022 г., 38 тыс. разрешений на работу против 122 тыс. и 2,7 тыс. исполненных решений об обязании к возвращению против примерно 900. Разбираем нормы, стоящие за этим спадом — закон от 20 марта 2025 г. (Dz.U. 2025 poz. 621), исключительно электронную подачу заявлений через MOS с 27 апреля 2026 г. (art. 225a ust. 1 закона об иностранцах) и постановление Dz.U. 2026 poz. 1072 — и что из них следует на практике."
+    },
+    "fr": {
+     "title": "Huit fois moins de visas de travail : ce que les chiffres du MSWiA signifient pour les étrangers et les employeurs [analyse propre de COSC]",
+     "summary": "Le MSWiA a annoncé 16 mille visas de travail au premier trimestre 2026 contre 123 mille au premier trimestre 2022, 38 mille permis de travail contre 122 mille et 2,7 mille décisions de retour exécutées contre environ 900. Nous expliquons les règles à l'origine de cette baisse — la loi du 20 mars 2025 (Dz.U. 2025 poz. 621), les demandes de séjour exclusivement électroniques via MOS depuis le 27 avril 2026 (art. 225a ust. 1 de la loi sur les étrangers) et le règlement Dz.U. 2026 poz. 1072 — et leurs conséquences pratiques."
+    }
+   }
+  },
   {
    "id": "2026-07-27-cosc-nowa-ustawa-powierzanie-pracy-2025",
    "added": "2026-07-27",
