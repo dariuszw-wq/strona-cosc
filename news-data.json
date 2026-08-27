@@ -1,6 +1,39 @@
 {
- "updated": "2026-08-27T14:45:56",
+ "updated": "2026-08-27T15:10:55",
  "items": [
+  {
+   "id": "2026-07-27-cosc-nowa-ustawa-powierzanie-pracy-2025",
+   "added": "2026-07-27",
+   "category": "Rynek pracy",
+   "scope": "PL",
+   "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+   "author": "Dariusz Włodarczyk Kancelaria TRC",
+   "url": "artykul-nowa-ustawa-powierzanie-pracy-2025.html",
+   "title": "Nowa ustawa o powierzaniu pracy cudzoziemcom — co zmieniło się od 1 czerwca 2025 r.",
+   "summary": "Ustawa z 20 marca 2025 r. o powierzaniu pracy cudzoziemcom (Dz.U. 2025 poz. 621) obowiązuje od 1 czerwca 2025. Zniesienie testu rynku pracy, elektronizacja, wyższe kary. Dla pracodawców i kadr.",
+   "t": {
+    "en": {
+     "title": "New act on entrusting work to foreigners — what changed from 1 June 2025",
+     "summary": "The Act of 20 March 2025 on entrusting work to foreigners (Dz.U. 2025 poz. 621) has been in force since 1 June 2025. Abolition of the labour market test, full electronic processing, higher penalties. For employers and HR departments."
+    },
+    "es": {
+     "title": "Nueva ley sobre la contratación de trabajo a extranjeros: qué cambió desde el 1 de junio de 2025",
+     "summary": "La Ley de 20 de marzo de 2025 sobre la contratación de trabajo a extranjeros (Dz.U. 2025 poz. 621) está en vigor desde el 1 de junio de 2025. Supresión del test del mercado laboral, tramitación electrónica y sanciones más altas. Para empleadores y departamentos de RR.HH."
+    },
+    "uk": {
+     "title": "Новий закон про доручення роботи іноземцям — що змінилося з 1 червня 2025 р.",
+     "summary": "Закон від 20 березня 2025 р. про доручення роботи іноземцям (Dz.U. 2025 poz. 621) діє з 1 червня 2025 р. Скасування тесту ринку праці, електронізація, вищі штрафи. Для роботодавців і кадрових служб."
+    },
+    "ru": {
+     "title": "Новый закон о поручении работы иностранцам — что изменилось с 1 июня 2025 г.",
+     "summary": "Закон от 20 марта 2025 г. о поручении работы иностранцам (Dz.U. 2025 poz. 621) действует с 1 июня 2025 г. Отмена теста рынка труда, электронизация, более высокие штрафы. Для работодателей и кадровых служб."
+    },
+    "fr": {
+     "title": "Nouvelle loi sur l'emploi confié aux étrangers — ce qui a changé depuis le 1er juin 2025",
+     "summary": "La loi du 20 mars 2025 sur l'emploi confié aux étrangers (Dz.U. 2025 poz. 621) est en vigueur depuis le 1er juin 2025. Suppression du test du marché du travail, dématérialisation, sanctions plus lourdes. Pour les employeurs et les services RH."
+    }
+   }
+  },
   {
    "id": "2026-08-26-sg-organizowanie-nielegalnej-migracji-zakaz-10-lat",
    "added": "2026-08-27",
