@@ -109,3 +109,4 @@ Stan filled/count: pl 522/522 (referencja), en 4293/4294, es 4292/4294, uk 4293/
 **TŁUMACZENIA KOMPLETNE** — rekomendacja: wyłączyć zadanie cykliczne, przejść do budowy statycznych wersji /en/ /uk/ /ru/ /fr/ + hreflang (katalog /es/ już istnieje).
 - 2026-08-27: brak nowych kluczy do tłumaczenia — wszystkie języki kompletne. en 4293/4294, es 4292/4294, uk 4293/4294, ru 4293/4294, fr 4293/4294 (puste wyłącznie klucze „©”, marka zostaje po polsku).
 - 2026-08-27 (10. przebieg): brak nowych kluczy — słowniki nadal KOMPLETNE. en 4293/4294, es 4292/4294, uk 4293/4294, ru 4293/4294, fr 4293/4294 (puste wyłącznie klucze „©”, marka celowo po polsku). Rekomendacja bez zmian: wyłączyć zadanie cykliczne.
+- 2026-08-28: brak nowych braków — wszystkie języki kompletne (puste pozostają wyłącznie klucze '©', pomijane celowo). Odświeżono _meta.filled. Stan: en 4362/4363, es 4361/4363, uk 4362/4363, ru 4362/4363, fr 4362/4363
