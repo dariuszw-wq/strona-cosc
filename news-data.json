@@ -1,6 +1,39 @@
 {
- "updated": "2026-08-29T07:41:09+02:00",
+ "updated": "2026-08-29T08:06:38+02:00",
  "items": [
+  {
+   "id": "2026-08-29-cosc-transmisja-online-kontrola-pip",
+   "added": "2026-08-29",
+   "category": "Legislacja",
+   "scope": "PL",
+   "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+   "author": "Dariusz Włodarczyk Kancelaria TRC",
+   "url": "artykul-transmisja-online-kontrola-pip.html",
+   "title": "Transmisja online podczas kontroli PIP — kiedy inspektor może jej zażądać [materiał własny COSC]",
+   "summary": "Ustawa z 11 marca 2026 r. (Dz.U. 2026 poz. 473) dodała art. 23 ust. 1 pkt 2a ustawy o PIP. Inspektor pracy może żądać przeprowadzenia transmisji online umożliwiającej kontrolę dokumentów, wysłuchanie strony i przesłuchanie podmiotu kontrolowanego — w uzasadnionych przypadkach i jeżeli nie stoi to w sprzeczności z celem kontroli. Wyjaśniamy granice tego żądania, zasadę minimalizacji przy udostępnianiu ekranu oraz to, jak przygotować dokumentację cudzoziemców do okazania w transmisji.",
+   "t": {
+    "en": {
+     "title": "Online transmission during a PIP inspection — when the inspector may demand it [COSC own material]",
+     "summary": "The Act of 11 March 2026 (Dz.U. 2026 poz. 473) added art. 23 ust. 1 pkt 2a to the Act on the National Labour Inspectorate (PIP). A labour inspector may demand an online transmission enabling the inspection of documents, the hearing of a party and the questioning of the inspected entity — in justified cases and provided this does not conflict with the purpose of the inspection. We explain the limits of that demand, the data minimisation rule when sharing a screen, and how to prepare foreigners' documentation for presentation during the transmission."
+    },
+    "es": {
+     "title": "Transmisión en línea durante una inspección de la PIP — cuándo puede exigirla el inspector [material propio de COSC]",
+     "summary": "La ley de 11 de marzo de 2026 (Dz.U. 2026 poz. 473) añadió el art. 23 ust. 1 pkt 2a a la ley sobre la Inspección Nacional de Trabajo (PIP). El inspector de trabajo puede exigir una transmisión en línea que permita el control de documentos, la audiencia de la parte y el interrogatorio del sujeto inspeccionado — en casos justificados y siempre que no sea contrario al objetivo de la inspección. Explicamos los límites de esa exigencia, el principio de minimización de datos al compartir pantalla y cómo preparar la documentación de los extranjeros para mostrarla durante la transmisión."
+    },
+    "uk": {
+     "title": "Онлайн-трансляція під час перевірки PIP — коли інспектор може її вимагати [власний матеріал COSC]",
+     "summary": "Закон від 11 березня 2026 р. (Dz.U. 2026 poz. 473) додав art. 23 ust. 1 pkt 2a до закону про Державну інспекцію праці (PIP). Інспектор праці може вимагати проведення онлайн-трансляції, яка уможливлює перевірку документів, вислуховування сторони та допит суб'єкта перевірки — в обґрунтованих випадках і якщо це не суперечить меті перевірки. Пояснюємо межі такої вимоги, принцип мінімізації даних при демонстрації екрана та як підготувати документацію іноземців до показу під час трансляції."
+    },
+    "ru": {
+     "title": "Онлайн-трансляция во время проверки PIP — когда инспектор может её потребовать [собственный материал COSC]",
+     "summary": "Закон от 11 марта 2026 г. (Dz.U. 2026 poz. 473) добавил art. 23 ust. 1 pkt 2a в закон о Государственной инспекции труда (PIP). Инспектор труда может потребовать проведения онлайн-трансляции, позволяющей проверить документы, выслушать сторону и допросить проверяемый субъект — в обоснованных случаях и если это не противоречит цели проверки. Объясняем границы такого требования, принцип минимизации данных при демонстрации экрана и то, как подготовить документацию иностранцев к показу во время трансляции."
+    },
+    "fr": {
+     "title": "Transmission en ligne lors d'un contrôle de la PIP — quand l'inspecteur peut l'exiger [matériel propre de COSC]",
+     "summary": "La loi du 11 mars 2026 (Dz.U. 2026 poz. 473) a ajouté l'art. 23 ust. 1 pkt 2a à la loi sur l'Inspection nationale du travail (PIP). L'inspecteur du travail peut exiger une transmission en ligne permettant le contrôle des documents, l'audition de la partie et l'interrogatoire de l'entité contrôlée — dans des cas justifiés et à condition que cela ne soit pas contraire à l'objectif du contrôle. Nous expliquons les limites de cette exigence, le principe de minimisation des données lors du partage d'écran et la manière de préparer la documentation des étrangers en vue de sa présentation pendant la transmission."
+    }
+   }
+  },
   {
    "id": "2026-08-29-cosc-pip-nowe-uprawnienia-8-lipca-2026",
    "added": "2026-08-29",
