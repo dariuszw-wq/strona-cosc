@@ -363,3 +363,52 @@
   if (document.getElementById('site-header')) mount();
   else document.addEventListener('DOMContentLoaded', mount);
 })();
+
+/* =============================================================
+   CZAT — wstępne rozpoznanie sprawy (widget w Shadow DOM)
+   Ładowany stąd, bo ten plik jest już na każdej stronie serwisu —
+   dzięki temu nowa podstrona dostaje czat automatycznie.
+   Kod widgetu: czat-widget.js, teksty: czat-jezyki.js (nie edytować tutaj).
+   ============================================================= */
+(function () {
+  'use strict';
+  if (window.__coscCzatWczytany) return;
+  window.__coscCzatWczytany = true;
+
+  var KONF = {
+    endpoint: 'https://script.google.com/macros/s/AKfycbwC7lGyiNjMGYV4ihMOXK4lfqRYeW7DSDA4673qWpANoIm26_30qNiRT0jODZpNbhWw/exec',
+    whatsapp: '48539999549',
+    akcent: '#D4213D',
+    tlo: '#16244C',
+    kroj: "'IBM Plex Sans', sans-serif"
+  };
+
+  function wczytaj(sciezka, dataset, potem) {
+    var s = document.createElement('script');
+    s.src = sciezka;
+    if (dataset) Object.keys(dataset).forEach(function (k) { s.dataset[k] = dataset[k]; });
+    if (potem) s.onload = potem;
+    document.body.appendChild(s);
+  }
+
+  function start() {
+    /* Kolejność jest istotna: teksty muszą być przed logiką widgetu. */
+    wczytaj('/czat-jezyki.js', null, function () {
+      wczytaj('/czat-widget.js', KONF, function () {
+        /* Katalog /es/ to statyczna wersja hiszpańska bez silnika i18n —
+           atrybut lang jest tam poprawny, ale wymuszamy jawnie na wypadek
+           nadpisania go przez inny skrypt. */
+        if (/^\/es\//.test(location.pathname) && window.PRC_CZAT_jezyk) window.PRC_CZAT_jezyk('es');
+      });
+    });
+    /* Przełącznik języka i18n zmienia atrybut lang na <html> — widget to
+       wyłapuje sam. Zdarzenie obsługujemy dodatkowo, dla pewności. */
+    document.addEventListener('cosc:langchange', function (e) {
+      var kod = e && e.detail && e.detail.lang;
+      if (kod && window.PRC_CZAT_jezyk) window.PRC_CZAT_jezyk(kod);
+    });
+  }
+
+  if (document.body) start();
+  else document.addEventListener('DOMContentLoaded', start);
+})();
