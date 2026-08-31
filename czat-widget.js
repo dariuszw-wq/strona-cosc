@@ -158,6 +158,7 @@ button { font: inherit; color: inherit; cursor: pointer; border: 0; background: 
   position: fixed; right: 24px; bottom: 24px; z-index: 2147483000;
   display: inline-flex; align-items: center; gap: 11px;
   min-height: 58px; padding: 0 24px;
+  white-space: nowrap; max-width: calc(100vw - 40px);
   background: var(--tlo); color: #fff; border-radius: 999px;
   font-size: 15.5px; font-weight: 600;
   box-shadow: 0 8px 20px rgba(22,36,76,.28), 0 28px 56px -20px rgba(22,36,76,.55);
