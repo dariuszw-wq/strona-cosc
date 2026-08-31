@@ -3,7 +3,8 @@
   "lang": "pl",
   "name": "Polski",
   "count": 522,
-  "note": "Klucz = tekst źródłowy PL (może zawierać HTML). Pusta wartość = pokazuje polski oryginał."
+  "note": "Klucz = tekst źródłowy PL (może zawierać HTML). Pusta wartość = pokazuje polski oryginał.",
+  "filled": 522
  },
  "strings": {
   "⚠ Od 27.04.2026 wnioski o pobyt składa się <strong>wyłącznie elektronicznie przez system MOS</strong>. <a href=\"#mos\">Złożymy go za Ciebie, bez błędów →</a>": "⚠ Od 27.04.2026 wnioski o pobyt składa się <strong>wyłącznie elektronicznie przez system MOS</strong>. <a href=\"#mos\">Złożymy go za Ciebie, bez błędów →</a>",
