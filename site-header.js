@@ -383,6 +383,20 @@
     kroj: "'IBM Plex Sans', sans-serif"
   };
 
+  /* Pływający przycisk WhatsApp (.wa-float) stoi dokładnie tam, gdzie zaczepka
+     czatu, i przykrywa ją zielonym kółkiem. Czat jest kanałem pierwszego wyboru,
+     więc WhatsApp przesuwamy nad niego i wyciszamy — zostaje dostępny, ale
+     przestaje konkurować o to samo miejsce i tę samą uwagę. */
+  (function () {
+    var st = document.createElement('style');
+    st.textContent =
+      '.wa-float{bottom:96px !important;right:26px !important;width:46px !important;height:46px !important;' +
+      'font-size:21px !important;opacity:.72;box-shadow:0 4px 12px rgba(0,0,0,.2) !important;transition:opacity .2s}' +
+      '.wa-float:hover{opacity:1}' +
+      '@media(max-width:599px){.wa-float{bottom:84px !important;right:18px !important}}';
+    (document.head || document.documentElement).appendChild(st);
+  })();
+
   function wczytaj(sciezka, dataset, potem) {
     var s = document.createElement('script');
     s.src = sciezka;
