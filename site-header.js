@@ -22,10 +22,18 @@
   'use strict';
 
   /* ---- prefiks ścieżek: root vs podkatalog (cudzoziemcy/, pracodawcy/) ---- */
-  var P = /\/(cudzoziemcy|pracodawcy)\//.test(location.pathname) ? '../' : '';
+  /* Katalog jezykowy: '' = polski (root), 'en' = /en/, 'es' = /es/.
+   * W katalogu jezykowym menu jest budowane z wlasnej mapy (MENU_EN), a odnosniki
+   * do stron polskich musza dostac '../'. Jedno zrodlo prawdy dla calego serwisu. */
+  var LOCDIR = (function () {
+    var m = /^\/(en|es)(\/|$)/.exec(location.pathname);
+    return m ? m[1] : '';
+  })();
+  var P = LOCDIR ? '../' : (/\/(cudzoziemcy|pracodawcy)\//.test(location.pathname) ? '../' : '');
   function url(href) {
     if (!href) return P || './';
     if (/^(https?:|mailto:|tel:|#)/.test(href)) return href;
+    if (/^~/.test(href)) return href.slice(1);   // '~plik.html' = plik w TYM katalogu jezykowym
     return P + href;
   }
 
@@ -90,6 +98,26 @@
     ],
     links: [ { t: 'Kalkulator 90/180', href: 'kalkulator-90-180.html' } ],
     cta: { t: 'Darmowa konsultacja', href: 'kontakt.html' }
+  };
+
+  /* ---- MENU wersji angielskiej (/en/) ----
+   * Osobna mapa, bo w /en/ prowadzimy wylacznie do stron napisanych po angielsku;
+   * nie wysylamy odbiorcy anglojezycznego na strone polska. Etykiety sa juz po
+   * angielsku, wiec nie przechodza przez slownik L (span() dostaje gotowy tekst). */
+  var MENU_EN = {
+    hubs: [
+      { id: 'en', label: 'Residence and work in Poland', short: 'Residence and work', items: [
+        { t: 'Overview', href: '~./' },
+        { t: 'Temporary residence permit', href: '~temporary-residence-permit-poland.html' },
+        { t: 'Permanent residence and EU long-term resident', href: '~permanent-residence-permit-poland.html' },
+        { t: 'Family reunification', href: '~family-reunification-poland.html' },
+        { t: 'Work permits', href: '~work-permit-poland.html' },
+        { t: 'Filing in MOS', href: '~mos-online-application.html' },
+        { t: 'Prices and services', href: '~prices-and-services.html' }
+      ] }
+    ],
+    links: [],
+    cta: { t: 'Book a free consultation', href: '~contact.html' }
   };
 
   /* ---- CSS (samodzielny, namespace .csh-) ---- */
@@ -175,7 +203,8 @@
       return '<a href="' + url(it.href) + '">' + span(it.t) + '</a>';
     }).join('');
     /* na telefonie: tylko CTA na dole listy (bez kalkulatora) */
-    var mob = '<a class="csh-mob-x csh-mob-cta" href="' + url(MENU.cta.href) + '">' + span(MENU.cta.t) + '</a>';
+    var AM = (LOCDIR === 'en') ? MENU_EN : MENU;   /* CTA z menu wlasciwego dla katalogu */
+    var mob = '<a class="csh-mob-x csh-mob-cta" href="' + url(AM.cta.href) + '">' + span(AM.cta.t) + '</a>';
     return '<div class="csh-more" data-csh-hub="' + (hub.id || '') + '"><button class="csh-more-btn" type="button" aria-haspopup="true" aria-expanded="false">'
       + '<span class="csh-l-full">' + span(hub.label) + '</span>'
       + '<span class="csh-l-short">' + span(hub.short || hub.label) + '</span>'
@@ -190,15 +219,36 @@
     + '<use href="#cshEuStar" transform="rotate(210 18 18)"/><use href="#cshEuStar" transform="rotate(240 18 18)"/><use href="#cshEuStar" transform="rotate(270 18 18)"/>'
     + '<use href="#cshEuStar" transform="rotate(300 18 18)"/><use href="#cshEuStar" transform="rotate(330 18 18)"/></g></svg></span>';
 
+  /* Przelacznik jezyka w katalogu jezykowym (/en/, /es/) — statyczny, bo te strony
+   * NIE laduja i18n.js: uzytkownik ma byc przeniesiony na odpowiednik strony w innym
+   * katalogu, a nie dostac tlumaczenie w locie. Pokazujemy wylacznie te wersje, ktore
+   * dla TEJ strony faktycznie istnieja. */
+  function localeChip() {
+    if (!LOCDIR) return '<div class="lang"><!-- przelacznik generuje i18n.js --></div>';
+    var pl = plPathOfCurrent();
+    var out = [];
+    out.push(pl ? '<a href="' + pl + '" hreflang="pl" lang="pl">PL</a>'
+                : '<a href="/" hreflang="pl" lang="pl">PL</a>');
+    ['en', 'es'].forEach(function (code) {
+      var map = (code === 'en') ? EN_PAIRS : ES_PAIRS;
+      if (code === LOCDIR) { out.push('<a href="#" class="on" aria-current="true">' + code.toUpperCase() + '</a>'); return; }
+      var target = pl ? map[pl] : null;
+      if (target) out.push('<a href="/' + target + '" hreflang="' + code + '" lang="' + code + '">' + code.toUpperCase() + '</a>');
+    });
+    return '<div class="csh-lang">' + out.join('') + '</div>';
+  }
+
   function render() {
-    var hubs = MENU.hubs.map(moreHtml).join('');
-    var links = MENU.links.map(function (l) { return '<a href="' + url(l.href) + '">' + span(l.t) + '</a>'; }).join('');
-    var cta = '<a href="' + url(MENU.cta.href) + '" class="csh-cta">' + span(MENU.cta.t) + '</a>';
-    return '<div class="csh-wrap"><a class="csh-logo" href="' + url('') + '" aria-label="Strona główna">'
+    var M = (LOCDIR === 'en') ? MENU_EN : MENU;
+    var hubs = M.hubs.map(moreHtml).join('');
+    var links = M.links.map(function (l) { return '<a href="' + url(l.href) + '">' + span(l.t) + '</a>'; }).join('');
+    var cta = '<a href="' + url(M.cta.href) + '" class="csh-cta">' + span(M.cta.t) + '</a>';
+    var home = LOCDIR ? './' : url('');
+    return '<div class="csh-wrap"><a class="csh-logo" href="' + home + '" aria-label="Strona główna">'
       + '<span class="csh-flag" aria-label="Polska"><span class="csh-fw"></span><span class="csh-fr"></span></span>'
       + '<span class="csh-name">Centrum Obsługi<br>Spraw Cudzoziemców</span>' + euSvg + '</a>'
       + '<nav class="csh-menu">' + hubs + links + cta + '</nav>'
-      + '<div class="lang"><!-- przełącznik generuje i18n.js --></div>'
+      + localeChip()
       + '<button class="csh-burger" type="button" aria-label="Menu">☰</button></div>';
   }
 
@@ -222,13 +272,56 @@
     '/artykul-zmiana-pracodawcy-a-karta-pobytu-terminy.html': 'es/cambiar-de-empleador-polonia.html',
     '/faq.html': 'es/preguntas-frecuentes.html'
   };
+
+  /* ---- pary stron PL <-> wersja angielska /en/ (JEDNO zrodlo prawdy) ----
+   * Klucz = sciezka strony polskiej, wartosc = plik w katalogu /en/.
+   * Uzywane w trzech miejscach: (a) pasek "This page in English" pod naglowkiem,
+   * (b) i18n.js — klikniecie EN prowadzi na pelna strone angielska zamiast
+   * tlumaczyc polska w locie, (c) przelacznik jezyka wewnatrz /en/ i /es/.
+   * Dodajac nowa strone EN, dopisz ja TUTAJ. */
+  var EN_PAIRS = {
+    '/': 'en/',
+    '/index.html': 'en/',
+    '/artykul-karta-pobytu-czasowego.html': 'en/temporary-residence-permit-poland.html',
+    '/wniosek-karta-pobytu-stalego.html': 'en/permanent-residence-permit-poland.html',
+    '/wniosek-karta-pobytu-dla-czlonkow-rodziny.html': 'en/family-reunification-poland.html',
+    '/artykul-mos-jak-zlozyc-wniosek.html': 'en/mos-online-application.html',
+    '/artykul-rodzaje-zezwolen-na-prace-2026.html': 'en/work-permit-poland.html',
+    '/cennik.html': 'en/prices-and-services.html',
+    '/kontakt.html': 'en/contact.html'
+  };
+  /* odwrotnosc: z pliku w katalogu jezykowym na sciezke polska */
+  function invert(map, dir) {
+    var out = {};
+    Object.keys(map).forEach(function (pl) {
+      if (pl === '/index.html') return;
+      out['/' + map[pl]] = pl;
+    });
+    return out;
+  }
+  var EN_TO_PL = invert(EN_PAIRS, 'en');
+  var ES_TO_PL = invert(ES_PAIRS, 'es');
+  /* sciezka polska dla biezacej strony w katalogu jezykowym */
+  function plPathOfCurrent() {
+    var path = location.pathname;
+    if (/^\/en\/?$/.test(path)) return '/';
+    if (/^\/es\/?$/.test(path)) return '/';
+    return (LOCDIR === 'en' ? EN_TO_PL : ES_TO_PL)[path] || null;
+  }
   function esAlt() {
     var path = location.pathname.replace(/\/+$/, '/') || '/';
     var hit = ES_PAIRS[path];
     if (!hit && /\/$/.test(path) === false && ES_PAIRS[path + '/']) hit = ES_PAIRS[path + '/'];
     return hit ? (location.origin + '/' + hit) : null;
   }
+  function enAlt() {
+    var path = location.pathname.replace(/\/+$/, '/') || '/';
+    var hit = EN_PAIRS[path];
+    if (!hit && /\/$/.test(path) === false && EN_PAIRS[path + '/']) hit = EN_PAIRS[path + '/'];
+    return hit ? (location.origin + '/' + hit) : null;
+  }
   window.COSC_ES_ALT = esAlt;   // odczytywane przez i18n/i18n.js
+  window.COSC_EN_ALT = enAlt;   // odczytywane przez i18n/i18n.js
 
   /* ---- sekcja PRACODAWCY: wyłącznie wersja polska ----
    * Powód (decyzja Dariusza, 08.2026): pracodawcy powierzający pracę w Polsce to
@@ -304,8 +397,23 @@
     host.setAttribute('data-i18n-skip', ''); // globalny i18n pomija nagłówek — tłumaczymy sami
     host.innerHTML = render();
 
-    /* pasek zapraszający na pełną wersję hiszpańską (tylko strony mające parę w /es/) */
-    var esUrl = esAlt();
+    /* pasek zapraszający na pełne wersje obcojęzyczne — tylko na stronach POLSKICH,
+     * i tylko dla tych wersji, które dla tej strony istnieją. */
+    var enUrl = LOCDIR ? null : enAlt();
+    if (enUrl && !document.getElementById('csh-en-bar')) {
+      var ebar = document.createElement('div');
+      ebar.id = 'csh-en-bar';
+      ebar.className = 'csh-es-bar';
+      ebar.setAttribute('data-i18n-skip', '');   // to zdanie ma zostać po angielsku
+      ebar.innerHTML = '<div class="csh-es-in">'
+        + '<svg class="csh-es-fl" viewBox="0 0 24 16" aria-hidden="true"><rect width="24" height="16" fill="#012169"/><path d="M0 0l24 16M24 0L0 16" stroke="#fff" stroke-width="3"/><path d="M12 0v16M0 8h24" stroke="#fff" stroke-width="5"/><path d="M12 0v16M0 8h24" stroke="#C8102E" stroke-width="3"/></svg>'
+        + '<a href="' + enUrl + '" hreflang="en" lang="en">This page in English &rarr;</a></div>';
+      var eafter = host.nextElementSibling;
+      if (eafter && eafter.classList && eafter.classList.contains('flagbar')) eafter.insertAdjacentElement('afterend', ebar);
+      else host.insertAdjacentElement('afterend', ebar);
+    }
+
+    var esUrl = LOCDIR ? null : esAlt();
     if (esUrl && !document.getElementById('csh-es-bar')) {
       var bar = document.createElement('div');
       bar.id = 'csh-es-bar';

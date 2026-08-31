@@ -273,6 +273,14 @@
             try { alt = window.COSC_ES_ALT(); } catch (err) { alt = null; }
             if (alt) { closeAll(); location.href = alt; return; }
           }
+          /* Angielski: to samo co przy hiszpanskim — jesli strona ma pelny odpowiednik
+           * w /en/ (mapa EN_PAIRS w site-header.js), przechodzimy na niego zamiast
+           * tlumaczyc polska w locie. Tylko po klikniecu, bez autoprzekierowan. */
+          if (code === 'en' && typeof window.COSC_EN_ALT === 'function') {
+            var altEn = null;
+            try { altEn = window.COSC_EN_ALT(); } catch (err) { altEn = null; }
+            if (altEn) { closeAll(); location.href = altEn; return; }
+          }
           setLang(code);
           closeAll();
         });
