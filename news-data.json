@@ -1,6 +1,17 @@
 {
-  "updated": "2026-08-31T08:14:56",
+  "updated": "2026-08-31T08:16:55",
   "items": [
+    {
+      "id": "2026-08-31-cosc-pip-przygotowanie-do-kontroli-zdalnej",
+      "added": "2026-08-31",
+      "category": "Urzędy",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-pip-przygotowanie-do-kontroli-zdalnej.html",
+      "title": "Jak przygotować firmę do zdalnej kontroli PIP",
+      "summary": "Kontrola zdalna PIP wymaga innych przygotowań niż wizyta inspektora. Lista czynności opartych na art. 23, 26 i 31 ustawy o PIP w brzmieniu od 8 lipca 2026 r."
+    },
     {
       "id": "2026-08-31-bezpieczny-przewoz-lotnisko-chopina",
       "added": "2026-08-31",
