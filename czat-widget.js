@@ -152,19 +152,30 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 button { font: inherit; color: inherit; cursor: pointer; border: 0; background: none; }
 
+/* Zaczepka w kolorach marki — ma wygrywać z przyciskami WhatsApp na stronie.
+   Biała ginęła na jasnym tle serwisu. */
 .zaczepka {
   position: fixed; right: 24px; bottom: 24px; z-index: 2147483000;
-  display: inline-flex; align-items: center; gap: 10px;
-  min-height: 48px; padding: 0 20px;
-  background: #fff; color: #111; border-radius: 6px;
-  font-size: 14px; font-weight: 600;
-  box-shadow: 0 6px 16px rgba(0,0,0,.16), 0 24px 48px -20px rgba(0,0,0,.4);
+  display: inline-flex; align-items: center; gap: 11px;
+  min-height: 58px; padding: 0 24px;
+  background: var(--tlo); color: #fff; border-radius: 999px;
+  font-size: 15.5px; font-weight: 600;
+  box-shadow: 0 8px 20px rgba(22,36,76,.28), 0 28px 56px -20px rgba(22,36,76,.55);
   opacity: 0; transform: translateY(20px); pointer-events: none;
-  transition: opacity .3s ease, transform .3s ease;
+  transition: opacity .3s ease, transform .3s ease, box-shadow .2s ease;
 }
 .zaczepka.widoczna { opacity: 1; transform: none; pointer-events: auto; }
-.kropka { width: 7px; height: 7px; border-radius: 50%; background: #1DA851; }
-@media (max-width: 599px) { .zaczepka { right: 16px; bottom: 16px; } }
+.zaczepka:hover { box-shadow: 0 10px 24px rgba(22,36,76,.36), 0 32px 64px -20px rgba(22,36,76,.6); }
+.zaczepka .ikona { flex: none; }
+/* Jedno spokojne tętnienie po pojawieniu się — sygnał, nie migająca reklama. */
+.zaczepka.widoczna { animation: tetno 2.6s ease-out 2; }
+@keyframes tetno {
+  0%, 55%, 100% { box-shadow: 0 8px 20px rgba(22,36,76,.28), 0 28px 56px -20px rgba(22,36,76,.55), 0 0 0 0 rgba(212,33,61,0); }
+  20% { box-shadow: 0 8px 20px rgba(22,36,76,.28), 0 28px 56px -20px rgba(22,36,76,.55), 0 0 0 12px rgba(212,33,61,.22); }
+}
+.kropka { width: 8px; height: 8px; border-radius: 50%; background: #4ade80; flex: none; }
+@media (prefers-reduced-motion: reduce) { .zaczepka.widoczna { animation: none; } }
+@media (max-width: 599px) { .zaczepka { right: 16px; bottom: 16px; min-height: 52px; padding: 0 18px; font-size: 14.5px; } }
 
 .panel {
   position: fixed; right: 24px; bottom: 24px; z-index: 2147483001;
@@ -238,7 +249,7 @@ button { font: inherit; color: inherit; cursor: pointer; border: 0; background: 
 
   var korzen = document.createElement('div');
   korzen.innerHTML =
-    '<button class="zaczepka" type="button"><span class="kropka"></span>' + T.zaczepka + '</button>' +
+    '<button class="zaczepka" type="button"><svg class="ikona" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.9 8.9 0 0 1-4-.9L3 21l1.9-4.6A8.4 8.4 0 0 1 12 3.1a8.4 8.4 0 0 1 9 8.4z"/></svg>' + T.zaczepka + '</button>' +
     '<div class="panel" data-otwarty="false" role="dialog" aria-label="' + T.naglowek + '">' +
       '<div class="glowa"><span class="znak">P</span><span><span class="tytul">' + T.naglowek + '</span>' +
       '<span class="podtytul">' + T.podtytul + '</span></span>' +
@@ -478,8 +489,13 @@ button { font: inherit; color: inherit; cursor: pointer; border: 0; background: 
 
     /* Dowolny element strony gospodarza z atrybutem data-prc-otworz-czat
        otwiera widget — dzięki temu można podpiąć własny przycisk. */
-    document.querySelectorAll('[data-prc-otworz-czat]').forEach(function (el) {
-      el.addEventListener('click', function (e) { e.preventDefault(); otworz(el.getAttribute('data-prc-otworz-czat') || 'przycisk'); });
+    /* Delegacja, nie pojedyncze nasłuchy: przyciski mogą powstać po starcie
+       widgetu (nagłówek, banery wstrzykiwane przez skrypty). */
+    document.addEventListener('click', function (e) {
+      var el = e.target && e.target.closest && e.target.closest('[data-prc-otworz-czat]');
+      if (!el) return;
+      e.preventDefault();
+      otworz(el.getAttribute('data-prc-otworz-czat') || 'przycisk');
     });
 
     /* Zaczepka pojawia się po zachowaniu, nie po zegarze. */
@@ -497,7 +513,18 @@ button { font: inherit; color: inherit; cursor: pointer; border: 0; background: 
         if (h > 0 && window.scrollY / h > 0.45) { pokaz('gleboko_przewiniete'); window.removeEventListener('scroll', naScroll); }
       };
       window.addEventListener('scroll', naScroll, { passive: true });
-      setTimeout(function () { pokaz('czas'); }, 45000);   // ostatnia deska ratunku na krótkich stronach
+
+      /* Czat jest głównym kanałem kontaktu, nie dodatkiem — pokazujemy go od razu.
+         4 sekundy, żeby nie wskoczył w trakcie ładowania strony. */
+      setTimeout(function () { pokaz('czas'); }, 4000);
+
+      /* Auto-otwarcie: raz na sesję, tylko na szerokim ekranie. Na telefonie
+         panel zasłania treść, więc tam zostaje sama zaczepka. */
+      setTimeout(function () {
+        if (otwarty || window.innerWidth < 940) return;
+        try { if (sessionStorage.getItem('prc_chat_auto') === '1') return; sessionStorage.setItem('prc_chat_auto', '1'); } catch (e) {}
+        otworz('samo_otwarcie');
+      }, 15000);
       var nudge = false;
       document.addEventListener('mouseout', function (e) {
         if (nudge || e.relatedTarget || e.clientY > 24 || window.innerWidth < 940) return;

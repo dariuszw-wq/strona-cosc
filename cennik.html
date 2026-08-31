@@ -469,6 +469,20 @@ footer .upd{margin-top:14px;font-size:11.5px;color:#6B7890}
   .path-steps>div{opacity:1;transform:none}
   .ct-demo .bar div{width:71%}
 }
+
+/* ===== Karta czatu nad formularzem — czat jest głównym kanałem kontaktu ===== */
+.czat-cta{margin-top:20px;display:flex;flex-wrap:wrap;align-items:center;gap:16px;justify-content:space-between;
+  background:#fff;border-radius:14px;padding:18px 20px;box-shadow:0 10px 28px rgba(0,0,0,.22)}
+.czat-cta-t{display:flex;flex-direction:column;gap:4px;min-width:220px;flex:1}
+.czat-cta-t strong{font-size:16px;color:#16244c}
+.czat-cta-t span{font-size:13.5px;color:#4a5570;line-height:1.5}
+.czat-cta-btn{flex:none;cursor:pointer;border:none;font-family:inherit;font-size:15px;font-weight:700;color:#fff;
+  background:#D4213D;border-radius:10px;padding:14px 22px;transition:.2s;box-shadow:0 6px 16px rgba(212,33,61,.32)}
+.czat-cta-btn:hover{background:#b81a33;transform:translateY(-1px)}
+@media(max-width:600px){.czat-cta{flex-direction:column;align-items:stretch}.czat-cta-btn{width:100%}}
+/* Formularz WhatsApp zostaje, ale jako kanał drugiego wyboru — obrys zamiast plamy koloru */
+.k-send{background:transparent!important;color:#fff!important;border:1.5px solid rgba(255,255,255,.55)!important;box-shadow:none!important}
+.k-send:hover{background:rgba(255,255,255,.10)!important;border-color:#fff!important}
 </style>
 <style id="fix-mobilny-2026-07-25">
 /* Poprawka mobilna: flaga PL nie nachodzi na logo, tytul hero nie jest uciety */
@@ -809,6 +823,15 @@ footer .upd{margin-top:14px;font-size:11.5px;color:#6B7890}
   <div class="wrap">
     <h2>Bezpłatna ocena Twojej sprawy</h2>
     <p class="sub">Napisz w kilku zdaniach, z czym masz problem. Odezwiemy się w ciągu 24 godzin — w Twoim języku.</p>
+
+    <!-- CZAT jako kanał pierwszego wyboru: 4 pytania zamiast pustego pola -->
+    <div class="czat-cta">
+      <div class="czat-cta-t">
+        <strong>Nie wiesz, jak opisać sprawę?</strong>
+        <span>Odpowiedz na 4 krótkie pytania — zajmie to minutę. Możesz też po prostu powiedzieć, o co chodzi.</span>
+      </div>
+      <button type="button" class="czat-cta-btn" data-prc-otworz-czat="kontakt_karta">Opisz sprawę w czacie →</button>
+    </div>
     <form id="leadForm" novalidate>
       <label>Imię
         <input type="text" name="imie" required placeholder="Jak się do Ciebie zwracać?">
