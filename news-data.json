@@ -1,6 +1,39 @@
 {
- "updated": "2026-08-31T08:19:53Z",
+ "updated": "2026-08-31T06:27:54Z",
  "items": [
+  {
+   "id": "2026-08-31-decyzja-pip-stwierdzenie-stosunku-pracy",
+   "added": "2026-08-31",
+   "category": "Legislacja",
+   "scope": "PL",
+   "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+   "author": "Dariusz Włodarczyk Kancelaria TRC",
+   "url": "artykul-decyzja-pip-stwierdzenie-stosunku-pracy.html",
+   "title": "Decyzja PIP stwierdzająca istnienie stosunku pracy [materiał własny COSC]",
+   "summary": "Od 8 lipca 2026 r. okręgowy inspektor pracy może decyzją stwierdzić istnienie stosunku pracy (art. 11 ust. 1 pkt 7a ustawy o PIP, Dz.U. 2026 poz. 473). Warunkiem wydania decyzji jest niewykonanie wcześniejszego polecenia usunięcia naruszeń. Omawiamy przebieg postępowania z art. 33a, obowiązkową treść rozstrzygnięcia, reguły domyślne przy brakach dowodowych (umowa na czas nieokreślony, pełny etat, minimalne wynagrodzenie), datę zawarcia umowy oraz skutki na gruncie prawa pracy, podatków i ubezpieczeń.",
+   "t": {
+    "en": {
+     "title": "Labour Inspectorate decision establishing an employment relationship [COSC own material]",
+     "summary": "From 8 July 2026 the regional labour inspector may establish the existence of an employment relationship by administrative decision (art. 11 ust. 1 pkt 7a of the PIP Act, Dz.U. 2026 poz. 473). The decision may only be issued if an earlier order to remedy breaches was not carried out. We cover the procedure under art. 33a, the mandatory content of the decision, the default rules where evidence is lacking (open-ended contract, full-time, minimum wage), the date of conclusion of the employment contract and the effects under labour, tax and social insurance law."
+    },
+    "es": {
+     "title": "Resolución de la Inspección de Trabajo que declara la relación laboral [material propio de COSC]",
+     "summary": "Desde el 8 de julio de 2026 el inspector regional de trabajo puede declarar mediante resolución administrativa la existencia de una relación laboral (art. 11 ust. 1 pkt 7a de la Ley sobre la Inspección Estatal de Trabajo, Dz.U. 2026 poz. 473). La resolución solo puede dictarse si no se cumplió la orden previa de subsanar las infracciones. Analizamos el procedimiento del art. 33a, el contenido obligatorio de la resolución, las reglas supletorias ante falta de pruebas (contrato por tiempo indefinido, jornada completa, salario mínimo), la fecha de celebración del contrato y los efectos en materia laboral, fiscal y de seguridad social."
+    },
+    "uk": {
+     "title": "Рішення Державної інспекції праці про встановлення трудових відносин [власний матеріал COSC]",
+     "summary": "Від 8 липня 2026 року окружний інспектор праці може адміністративним рішенням встановити існування трудових відносин (art. 11 ust. 1 pkt 7a Закону про PIP, Dz.U. 2026 poz. 473). Умовою видання рішення є невиконання попереднього припису про усунення порушень. Розглядаємо порядок за art. 33a, обов'язковий зміст рішення, правила за замовчуванням у разі браку доказів (безстроковий договір, повна ставка, мінімальна заробітна плата), дату укладення трудового договору та наслідки у сфері трудового, податкового права і соціального страхування."
+    },
+    "ru": {
+     "title": "Решение Государственной инспекции труда об установлении трудовых отношений [собственный материал COSC]",
+     "summary": "С 8 июля 2026 года окружной инспектор труда может административным решением установить наличие трудовых отношений (art. 11 ust. 1 pkt 7a Закона о PIP, Dz.U. 2026 poz. 473). Условием вынесения решения является невыполнение ранее выданного предписания об устранении нарушений. Разбираем порядок по art. 33a, обязательное содержание решения, правила по умолчанию при нехватке доказательств (бессрочный договор, полная ставка, минимальная заработная плата), дату заключения трудового договора и последствия в трудовом, налоговом праве и в сфере социального страхования."
+    },
+    "fr": {
+     "title": "Décision de l'Inspection du travail constatant une relation de travail [document propre COSC]",
+     "summary": "Depuis le 8 juillet 2026, l'inspecteur régional du travail peut constater l'existence d'une relation de travail par décision administrative (art. 11 ust. 1 pkt 7a de la loi sur la PIP, Dz.U. 2026 poz. 473). La décision ne peut être rendue que si une injonction antérieure de mettre fin aux manquements n'a pas été exécutée. Nous présentons la procédure de l'art. 33a, le contenu obligatoire de la décision, les règles supplétives en cas d'insuffisance de preuves (contrat à durée indéterminée, temps plein, salaire minimum), la date de conclusion du contrat de travail et les effets en droit du travail, fiscal et de la sécurité sociale."
+    }
+   }
+  },
   {
    "id": "2026-08-31-cosc-pip-obowiazki-pracodawcy-kontrola",
    "added": "2026-08-31",
