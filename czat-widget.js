@@ -357,7 +357,7 @@ button { font: inherit; color: inherit; cursor: pointer; border: 0; background: 
       var ot = document.createElement('div'); ot.className = 'otoczka';
       var input = document.createElement(k.tryb === 'tekst' ? 'textarea' : 'input');
       input.placeholder = k.pole || '';
-      if (k.tryb === 'kontakt') { input.type = 'text'; input.autocomplete = 'email'; }
+      if (k.tryb === 'kontakt') { input.type = 'tel'; input.autocomplete = 'tel'; input.inputMode = 'tel'; }
       ot.appendChild(input);
       var m = mikrofon(input); if (m) ot.appendChild(m);
       var s = document.createElement('button');
@@ -368,7 +368,12 @@ button { font: inherit; color: inherit; cursor: pointer; border: 0; background: 
         e.preventDefault();
         if (aktywnyMik) aktywnyMik();
         var v = input.value.trim(); if (!v) return;
-        if (k.tryb === 'kontakt' && !/(@|\d{6,})/.test(v.replace(/[\s()-]/g, ''))) { bąbel(T.kontaktZly, 'bot'); return; }
+        /* Wymagamy NUMERU TELEFONU: to jedyny kanał, którym kancelaria realnie
+           oddzwania. Sam e-mail nie wystarczy; e-mail można dopisać obok. */
+        if (k.tryb === 'kontakt') {
+          var cyfry = (v.match(/\d/g) || []).length;
+          if (cyfry < 9) { bąbel(T.kontaktZly, 'bot'); return; }
+        }
         odpowiedz(v);
       });
       if (k.tryb === 'tekst') {
