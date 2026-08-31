@@ -376,7 +376,7 @@
   window.__coscCzatWczytany = true;
 
   var KONF = {
-    endpoint: 'https://script.google.com/macros/s/AKfycbwC7lGyiNjMGYV4ihMOXK4lfqRYeW7DSDA4673qWpANoIm26_30qNiRT0jODZpNbhWw/exec',
+    endpoint: 'https://script.google.com/macros/s/AKfycbyOqUYYIvW4OCwY79AFqp2j5BXUTdef43tK42FrsEBVSmFH4hB3lxzr3Oslg9OkO24/exec',
     whatsapp: '48539999549',
     akcent: '#D4213D',
     tlo: '#16244C',
