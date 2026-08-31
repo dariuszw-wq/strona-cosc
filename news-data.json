@@ -1,6 +1,204 @@
 {
-  "updated": "2026-08-31T06:49:30Z",
+  "updated": "2026-08-31T15:48:24Z",
   "items": [
+    {
+      "id": "2026-08-31-cosc-mobilnosc-krotkoterminowa-niebieska-karta-ict",
+      "added": "2026-08-31",
+      "category": "Rynek pracy",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-mobilnosc-krotkoterminowa-niebieska-karta-ict.html",
+      "title": "Mobilność krótkoterminowa — praca w Polsce na statusie z innego państwa UE",
+      "summary": "Mobilność krótkoterminowa cudzoziemca: Niebieska Karta UE, przeniesienie wewnątrz przedsiębiorstwa (ICT), naukowiec, student. Warunki, zawiadomienia i ryzyko. Podstawa: ustawa o cudzoziemcach. 2026.",
+      "t": {
+        "en": {
+          "title": "Short-term mobility — working in Poland on a status granted by another EU country",
+          "summary": "Short-term mobility of a foreigner: EU Blue Card, intra-corporate transfer (ICT), researcher, student. Conditions, notifications and risks. Basis: the Act on Foreigners. 2026."
+        },
+        "es": {
+          "title": "Movilidad de corta duración — trabajar en Polonia con un estatus de otro país de la UE",
+          "summary": "Movilidad de corta duración del extranjero: Tarjeta Azul UE, traslado intraempresarial (ICT), investigador, estudiante. Condiciones, notificaciones y riesgos. Base: la Ley de extranjería. 2026."
+        },
+        "uk": {
+          "title": "Короткострокова мобільність — робота в Польщі на статусі з іншої країни ЄС",
+          "summary": "Короткострокова мобільність іноземця: Блакитна карта ЄС, внутрішньокорпоративне переведення (ICT), науковець, студент. Умови, повідомлення та ризики. Підстава: закон про іноземців. 2026."
+        },
+        "ru": {
+          "title": "Краткосрочная мобильность — работа в Польше на статусе из другой страны ЕС",
+          "summary": "Краткосрочная мобильность иностранца: Голубая карта ЕС, внутрикорпоративный перевод (ICT), научный сотрудник, студент. Условия, уведомления и риски. Основание: закон об иностранцах. 2026."
+        },
+        "fr": {
+          "title": "Mobilité de courte durée — travailler en Pologne avec un statut délivré par un autre pays de l'UE",
+          "summary": "Mobilité de courte durée de l'étranger : Carte bleue européenne, transfert intragroupe (ICT), chercheur, étudiant. Conditions, notifications et risques. Base : la loi sur les étrangers. 2026."
+        }
+      }
+    },
+    {
+      "id": "2026-08-28-cosc-umowy-miedzynarodowe-zabezpieczenie-spoleczne",
+      "added": "2026-08-28",
+      "category": "Rynek pracy",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-umowy-miedzynarodowe-zabezpieczenie-spoleczne.html",
+      "title": "Umowy o zabezpieczeniu społecznym z państwami spoza UE",
+      "summary": "Dwustronne umowy o zabezpieczeniu społecznym: gdzie płaci składki cudzoziemiec spoza UE, zaświadczenie zamiast A1, sumowanie okresów. Jak sprawdzić, czy jest umowa. Stan 2026.",
+      "t": {
+        "en": {
+          "title": "Social security agreements with countries outside the EU",
+          "summary": "Bilateral social security agreements: where a non-EU foreigner pays contributions, a certificate instead of the A1, aggregation of periods. How to check whether an agreement exists. Status 2026."
+        },
+        "es": {
+          "title": "Convenios de seguridad social con países de fuera de la UE",
+          "summary": "Convenios bilaterales de seguridad social: dónde cotiza el extranjero de fuera de la UE, certificado en lugar del A1, totalización de períodos. Cómo comprobar si existe un convenio. Situación 2026."
+        },
+        "uk": {
+          "title": "Угоди про соціальне забезпечення з країнами поза ЄС",
+          "summary": "Двосторонні угоди про соціальне забезпечення: де сплачує внески іноземець з-поза ЄС, довідка замість A1, підсумовування періодів. Як перевірити, чи є угода. Стан 2026."
+        },
+        "ru": {
+          "title": "Соглашения о социальном обеспечении со странами вне ЕС",
+          "summary": "Двусторонние соглашения о социальном обеспечении: где платит взносы иностранец из-за пределов ЕС, справка вместо A1, суммирование периодов. Как проверить, есть ли соглашение. Состояние 2026."
+        },
+        "fr": {
+          "title": "Conventions de sécurité sociale avec des pays hors UE",
+          "summary": "Conventions bilatérales de sécurité sociale : où l'étranger hors UE paie ses cotisations, une attestation au lieu du A1, totalisation des périodes. Comment vérifier l'existence d'une convention. État 2026."
+        }
+      }
+    },
+    {
+      "id": "2026-08-04-cosc-pracodawca-nie-oddaje-dokumentow",
+      "added": "2026-07-31",
+      "category": "Urzędy",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-pracodawca-nie-oddaje-dokumentow.html",
+      "title": "Pracodawca nie oddaje dokumentów do karty pobytu — co robić krok po kroku",
+      "summary": "Bez dokumentów od pracodawcy łatwo przegapić wezwanie z urzędu i stracić legalny pobyt. Krok po kroku: jak odzyskać dokumenty, jakie masz prawa (art. 97 KP, art. 64 § 2 KPA) i termin 15 dni po utracie pracy.",
+      "t": {
+        "en": {
+          "title": "The employer will not return the documents for the residence card — what to do step by step",
+          "summary": "Without documents from the employer it is easy to miss a summons from the authority and lose legal residence. Step by step: how to recover the documents, what rights you have (art. 97 KP, art. 64 § 2 KPA) and the 15-day deadline after losing your job."
+        },
+        "es": {
+          "title": "El empleador no devuelve los documentos para la tarjeta de residencia — qué hacer paso a paso",
+          "summary": "Sin los documentos del empleador es fácil pasar por alto un requerimiento de la administración y perder la residencia legal. Paso a paso: cómo recuperar los documentos, qué derechos tiene (art. 97 KP, art. 64 § 2 KPA) y el plazo de 15 días tras perder el trabajo."
+        },
+        "uk": {
+          "title": "Роботодавець не віддає документи для карти побиту — що робити крок за кроком",
+          "summary": "Без документів від роботодавця легко пропустити виклик з установи і втратити легальне перебування. Крок за кроком: як повернути документи, які у вас права (ст. 97 KP, ст. 64 § 2 KPA) і термін 15 днів після втрати роботи."
+        },
+        "ru": {
+          "title": "Работодатель не отдаёт документы для карты побыта — что делать шаг за шагом",
+          "summary": "Без документов от работодателя легко пропустить вызов из учреждения и потерять легальное пребывание. Шаг за шагом: как вернуть документы, какие у вас права (ст. 97 KP, ст. 64 § 2 KPA) и срок 15 дней после потери работы."
+        },
+        "fr": {
+          "title": "L'employeur ne rend pas les documents pour la carte de séjour — que faire étape par étape",
+          "summary": "Sans les documents de l'employeur, il est facile de manquer une convocation de l'administration et de perdre le séjour légal. Étape par étape : comment récupérer les documents, quels sont vos droits (art. 97 KP, art. 64 § 2 KPA) et le délai de 15 jours après la perte de l'emploi."
+        }
+      }
+    },
+    {
+      "id": "2026-07-31-cosc-czy-cudzoziemiec-podlega-zus",
+      "added": "2026-07-31",
+      "category": "Rynek pracy",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-czy-cudzoziemiec-podlega-zus.html",
+      "title": "Czy cudzoziemiec podlega ubezpieczeniom ZUS w Polsce",
+      "summary": "Czy trzeba płacić ZUS za cudzoziemca? Zasada terytorialności, zgłoszenie ZUS ZUA/ZZA, wyjątki (delegowanie A1, umowy międzynarodowe). Podstawa: art. 6 ustawy o systemie ubezpieczeń społecznych. 2026.",
+      "t": {
+        "en": {
+          "title": "Is a foreigner subject to ZUS social insurance in Poland",
+          "summary": "Do you have to pay ZUS for a foreigner? The territoriality principle, ZUS ZUA/ZZA registration, exceptions (A1 posting, international agreements). Basis: art. 6 of the Social Insurance System Act. 2026."
+        },
+        "es": {
+          "title": "¿Está el extranjero sujeto al seguro social ZUS en Polonia?",
+          "summary": "¿Hay que pagar ZUS por un extranjero? El principio de territorialidad, el alta ZUS ZUA/ZZA, las excepciones (desplazamiento A1, convenios internacionales). Base: art. 6 de la Ley del sistema de seguros sociales. 2026."
+        },
+        "uk": {
+          "title": "Чи підлягає іноземець страхуванню ZUS у Польщі",
+          "summary": "Чи потрібно платити ZUS за іноземця? Принцип територіальності, реєстрація ZUS ZUA/ZZA, винятки (відрядження A1, міжнародні угоди). Підстава: ст. 6 закону про систему соціального страхування. 2026."
+        },
+        "ru": {
+          "title": "Подлежит ли иностранец страхованию ZUS в Польше",
+          "summary": "Нужно ли платить ZUS за иностранца? Принцип территориальности, регистрация ZUS ZUA/ZZA, исключения (командирование A1, международные соглашения). Основание: ст. 6 закона о системе социального страхования. 2026."
+        },
+        "fr": {
+          "title": "L'étranger est-il soumis aux assurances sociales ZUS en Pologne",
+          "summary": "Faut-il payer le ZUS pour un étranger ? Le principe de territorialité, la déclaration ZUS ZUA/ZZA, les exceptions (détachement A1, conventions internationales). Base : art. 6 de la loi sur le système d'assurances sociales. 2026."
+        }
+      }
+    },
+    {
+      "id": "2026-07-29-cosc-rezydencja-podatkowa-cudzoziemca",
+      "added": "2026-07-29",
+      "category": "Rynek pracy",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-rezydencja-podatkowa-cudzoziemca.html",
+      "title": "Rezydencja podatkowa cudzoziemca w Polsce — reguła 183 dni i ośrodek interesów życiowych",
+      "summary": "Kiedy cudzoziemiec jest polskim rezydentem podatkowym? Reguła 183 dni, ośrodek interesów życiowych, nieograniczony i ograniczony obowiązek podatkowy, certyfikat rezydencji. Stan prawny 2026.",
+      "t": {
+        "en": {
+          "title": "Tax residence of a foreigner in Poland — the 183-day rule and the centre of vital interests",
+          "summary": "When is a foreigner a Polish tax resident? The 183-day rule, the centre of vital interests, unlimited and limited tax liability, the certificate of residence. Legal status 2026."
+        },
+        "es": {
+          "title": "Residencia fiscal del extranjero en Polonia — la regla de los 183 días y el centro de intereses vitales",
+          "summary": "¿Cuándo es un extranjero residente fiscal polaco? La regla de los 183 días, el centro de intereses vitales, la obligación tributaria ilimitada y limitada, el certificado de residencia. Situación jurídica 2026."
+        },
+        "uk": {
+          "title": "Податкове резидентство іноземця в Польщі — правило 183 днів і центр життєвих інтересів",
+          "summary": "Коли іноземець є польським податковим резидентом? Правило 183 днів, центр життєвих інтересів, необмежений і обмежений податковий обов'язок, сертифікат резидентства. Правовий стан 2026."
+        },
+        "ru": {
+          "title": "Налоговое резидентство иностранца в Польше — правило 183 дней и центр жизненных интересов",
+          "summary": "Когда иностранец является польским налоговым резидентом? Правило 183 дней, центр жизненных интересов, неограниченная и ограниченная налоговая обязанность, сертификат резидентства. Правовое состояние 2026."
+        },
+        "fr": {
+          "title": "Résidence fiscale de l'étranger en Pologne — la règle des 183 jours et le centre des intérêts vitaux",
+          "summary": "Quand un étranger est-il résident fiscal polonais ? La règle des 183 jours, le centre des intérêts vitaux, l'obligation fiscale illimitée et limitée, le certificat de résidence. État du droit 2026."
+        }
+      }
+    },
+    {
+      "id": "2026-07-27-cosc-nowa-ustawa-powierzanie-pracy-2025",
+      "added": "2026-07-27",
+      "category": "Rynek pracy",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-nowa-ustawa-powierzanie-pracy-2025.html",
+      "title": "Nowa ustawa o powierzaniu pracy cudzoziemcom — co zmieniło się od 1 czerwca 2025 r.",
+      "summary": "Ustawa z 20 marca 2025 r. o powierzaniu pracy cudzoziemcom (Dz.U. 2025 poz. 621) obowiązuje od 1 czerwca 2025. Zniesienie testu rynku pracy, elektronizacja, wyższe kary. Dla pracodawców i kadr.",
+      "t": {
+        "en": {
+          "title": "New act on entrusting work to foreigners — what changed from 1 June 2025",
+          "summary": "The Act of 20 March 2025 on entrusting work to foreigners (Dz.U. 2025 poz. 621) has been in force since 1 June 2025. Abolition of the labour market test, full digitalisation, higher penalties. For employers and HR departments."
+        },
+        "es": {
+          "title": "Nueva ley sobre la contratación de extranjeros — qué cambió desde el 1 de junio de 2025",
+          "summary": "La Ley de 20 de marzo de 2025 sobre la contratación de extranjeros (Dz.U. 2025 poz. 621) está en vigor desde el 1 de junio de 2025. Supresión del test del mercado laboral, digitalización, sanciones más altas. Para empleadores y departamentos de RR.HH."
+        },
+        "uk": {
+          "title": "Новий закон про доручення роботи іноземцям — що змінилося з 1 червня 2025 р.",
+          "summary": "Закон від 20 березня 2025 р. про доручення роботи іноземцям (Dz.U. 2025 poz. 621) діє з 1 червня 2025 р. Скасування тесту ринку праці, електронізація, вищі штрафи. Для роботодавців і кадрових служб."
+        },
+        "ru": {
+          "title": "Новый закон о поручении работы иностранцам — что изменилось с 1 июня 2025 г.",
+          "summary": "Закон от 20 марта 2025 г. о поручении работы иностранцам (Dz.U. 2025 poz. 621) действует с 1 июня 2025 г. Отмена теста рынка труда, электронизация, более высокие штрафы. Для работодателей и кадровых служб."
+        },
+        "fr": {
+          "title": "Nouvelle loi sur l'emploi des étrangers — ce qui a changé depuis le 1er juin 2025",
+          "summary": "La loi du 20 mars 2025 sur l'emploi des étrangers (Dz.U. 2025 poz. 621) est en vigueur depuis le 1er juin 2025. Suppression du test du marché du travail, dématérialisation, sanctions plus lourdes. Pour les employeurs et les services RH."
+        }
+      }
+    },
     {
       "id": "2026-08-31-polecenie-inspektora-pracy-umowa-cywilnoprawna",
       "added": "2026-08-31",
