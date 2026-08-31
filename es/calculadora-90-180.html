@@ -467,5 +467,15 @@ $('b-pdf').onclick=async()=>{
 </script>
 <script>(function(){var mb=document.querySelector('.csh-more-btn'),mo=document.querySelector('.csh-more');if(!mb||!mo)return;mb.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();var o=mo.classList.toggle('open');mb.setAttribute('aria-expanded',o);});document.addEventListener('click',function(e){if(!mo.contains(e.target)){mo.classList.remove('open');mb.setAttribute('aria-expanded','false');}});document.addEventListener('keydown',function(e){if(e.key==='Escape'){mo.classList.remove('open');mb.setAttribute('aria-expanded','false');}});})();</script>
 <script>try{setLang('es');}catch(e){}</script>
+<!-- Czat — wstępne rozpoznanie sprawy (kolejność plików istotna) -->
+<script src="/czat-jezyki.js" defer></script>
+<script src="/czat-widget.js"
+        data-endpoint="https://script.google.com/macros/s/AKfycbwC7lGyiNjMGYV4ihMOXK4lfqRYeW7DSDA4673qWpANoIm26_30qNiRT0jODZpNbhWw/exec"
+        data-whatsapp="48539999549"
+        data-akcent="#D4213D"
+        data-tlo="#16244C"
+        data-kroj="'IBM Plex Sans', sans-serif"
+        data-jezyk="es"
+        defer></script>
 </body>
 </html>
