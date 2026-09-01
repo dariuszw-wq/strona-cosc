@@ -1,6 +1,17 @@
 {
-  "updated": "2026-08-31T15:48:24Z",
+  "updated": "2026-09-01T05:40:51.827370+00:00",
   "items": [
+    {
+      "id": "2026-09-01-cosc-pip-uprawnienia-inspektora-granice",
+      "added": "2026-09-01",
+      "category": "Urzędy",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-pip-uprawnienia-inspektora-granice.html",
+      "title": "Uprawnienia inspektora pracy — czego może żądać",
+      "summary": "Katalog uprawnień inspektora pracy z art. 23 ustawy o PIP po nowelizacji z 2026 r. — czego inspektor może żądać, a gdzie leży granica wyznaczona upoważnieniem."
+    },
     {
       "id": "2026-08-31-cosc-mobilnosc-krotkoterminowa-niebieska-karta-ict",
       "added": "2026-08-31",
