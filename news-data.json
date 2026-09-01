@@ -1,6 +1,39 @@
 {
-  "updated": "2026-09-01T05:40:51.827370+00:00",
+  "updated": "2026-09-01T06:04:57.978730+00:00",
   "items": [
+    {
+      "id": "2026-09-01-sg-ees-koniec-stempli-w-paszportach",
+      "added": "2026-09-01",
+      "category": "Urzędy",
+      "title": "EES zastąpił stemple w paszportach — mniej fałszerstw na granicy",
+      "summary": "Straż Graniczna informuje, że po pełnym uruchomieniu systemu Entry/Exit (EES) w kwietniu 2026 r. zaprzestano stemplowania paszportów cudzoziemców objętych tą procedurą, a wjazdy i wyjazdy są rejestrowane elektronicznie. Skutkiem jest wyraźny spadek liczby fałszowanych stempli kontroli granicznej. Przykładem wciąż wykrywanych prób jest sprawa z 29 sierpnia 2026 r. na przejściu w Medyce, gdzie w paszporcie 41-letniej obywatelki Ukrainy ujawniono cztery podrobione odbitki węgierskich stempli; kobieta dobrowolnie poddała się karze 6 miesięcy pozbawienia wolności w zawieszeniu na rok. Dla cudzoziemców oznacza to, że czas pobytu w strefie Schengen liczy się dziś z rejestru elektronicznego, a nie z pieczątek w dokumencie — próba „poprawiania\" historii wjazdów jest nie tylko nieskuteczna, ale i karalna.",
+      "source_name": "Straż Graniczna",
+      "author": "Komenda Główna Straży Granicznej",
+      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16143,System-EntryExit-w-Bieszczadzkim-Oddziale-SG-i-malejaca-liczba-falszywych-stempl.html",
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "EES has replaced passport stamps — fewer forgeries at the border",
+          "summary": "The Border Guard reports that after the Entry/Exit System (EES) became fully operational in April 2026, passports of third-country nationals covered by the procedure are no longer stamped; entries and exits are recorded electronically. The result is a clear drop in forged border-control stamps. Attempts are still detected: on 29 August 2026 at the Medyka crossing, four counterfeit Hungarian control stamps were found in the passport of a 41-year-old Ukrainian citizen; she voluntarily accepted a penalty of 6 months' imprisonment suspended for one year. For foreigners this means that time spent in the Schengen area is now counted from the electronic register, not from stamps in the document — trying to \"correct\" one's entry history is both ineffective and punishable."
+        },
+        "es": {
+          "title": "El EES ha sustituido a los sellos en el pasaporte: menos falsificaciones en la frontera",
+          "summary": "La Guardia de Fronteras informa de que, tras la puesta en marcha completa del Sistema de Entradas y Salidas (EES) en abril de 2026, se dejó de sellar los pasaportes de los extranjeros sujetos a ese procedimiento y las entradas y salidas se registran electrónicamente. El efecto es un claro descenso de los sellos de control fronterizo falsificados. Todavía se detectan intentos: el 29 de agosto de 2026, en el paso fronterizo de Medyka, se hallaron cuatro sellos húngaros falsificados en el pasaporte de una ciudadana ucraniana de 41 años; la mujer se sometió voluntariamente a una pena de 6 meses de prisión suspendida durante un año. Para los extranjeros esto significa que el tiempo de estancia en el espacio Schengen se cuenta hoy a partir del registro electrónico y no de los sellos del documento: intentar \"corregir\" el historial de entradas es ineficaz y además punible."
+        },
+        "uk": {
+          "title": "EES замінив штампи в паспортах — менше підробок на кордоні",
+          "summary": "Прикордонна служба повідомляє, що після повного запуску системи в’їзду/виїзду (EES) у квітні 2026 року паспорти іноземців, охоплених цією процедурою, більше не штампують, а в’їзди та виїзди фіксуються електронно. Наслідком є помітне зменшення кількості підроблених штампів прикордонного контролю. Спроби все ще виявляють: 29 серпня 2026 року на пункті пропуску в Медиці в паспорті 41-річної громадянки України знайшли чотири підроблені відбитки угорських штампів; жінка добровільно погодилася на покарання у вигляді 6 місяців позбавлення волі з випробувальним терміном один рік. Для іноземців це означає, що час перебування в Шенгенській зоні тепер рахується за електронним реєстром, а не за печатками в документі — спроба «виправити» історію в’їздів не лише неефективна, а й карна."
+        },
+        "ru": {
+          "title": "EES заменил штампы в паспортах — меньше подделок на границе",
+          "summary": "Пограничная служба сообщает, что после полного запуска системы въезда/выезда (EES) в апреле 2026 года паспорта иностранцев, подпадающих под эту процедуру, больше не штампуются, а въезды и выезды фиксируются электронно. Результат — заметное сокращение числа поддельных штампов пограничного контроля. Попытки всё ещё выявляют: 29 августа 2026 года на пункте пропуска в Медыке в паспорте 41-летней гражданки Украины обнаружили четыре поддельных оттиска венгерских штампов; женщина добровольно согласилась на наказание в виде 6 месяцев лишения свободы условно с испытательным сроком один год. Для иностранцев это означает, что время пребывания в Шенгенской зоне теперь считается по электронному реестру, а не по печатям в документе — попытка «исправить» историю въездов неэффективна и наказуема."
+        },
+        "fr": {
+          "title": "L'EES a remplacé les cachets sur les passeports — moins de falsifications à la frontière",
+          "summary": "Les Gardes-frontières indiquent qu'après la mise en service complète du système d'entrée/sortie (EES) en avril 2026, les passeports des ressortissants de pays tiers concernés ne sont plus tamponnés et les entrées et sorties sont enregistrées électroniquement. Il en résulte une nette baisse des cachets de contrôle frontalier falsifiés. Des tentatives sont encore détectées : le 29 août 2026, au poste-frontière de Medyka, quatre faux cachets hongrois ont été découverts dans le passeport d'une ressortissante ukrainienne de 41 ans ; elle a accepté volontairement une peine de 6 mois d'emprisonnement avec sursis d'un an. Pour les étrangers, cela signifie que la durée de séjour dans l'espace Schengen est désormais calculée à partir du registre électronique et non des cachets figurant dans le document — tenter de « corriger » son historique d'entrées est à la fois inefficace et punissable."
+        }
+      }
+    },
     {
       "id": "2026-09-01-cosc-pip-uprawnienia-inspektora-granice",
       "added": "2026-09-01",
@@ -2529,39 +2562,6 @@
         "fr": {
           "title": "Emploi illégal et impôt — conséquences pour le salarié et l'employeur",
           "summary": "Qui paie le PIT en cas d'emploi illégal d'un étranger ? Exonération du revenu du salarié (art. 21 al. 1 pt 151 de la loi PIT) et transfert des conséquences sur l'employeur.…"
-        }
-      }
-    },
-    {
-      "id": "2026-08-01-udsc-termin-wymiany-dokumentow-ue-3-sierpnia",
-      "added": "2026-08-01",
-      "category": "Urzędy",
-      "title": "Już 3 sierpnia 2026 r. mija termin wymiany starych dokumentów obywateli UE i członków ich rodzin",
-      "summary": "Urząd do Spraw Cudzoziemców przypomina: 3 sierpnia 2026 r. upływa ważność ostatnich dokumentów wydanych obywatelom Unii Europejskiej i członkom ich rodzin według wzorów sprzed 2 sierpnia 2021 r., które zachowały ważność na podstawie przepisów przejściowych ustawy z 10 grudnia 2020 r. (Dz.U. z 2020 r. poz. 2369). Kto posługuje się jeszcze starym zaświadczeniem o zarejestrowaniu pobytu, dokumentem potwierdzającym prawo stałego pobytu lub kartą pobytu/kartą stałego pobytu członka rodziny obywatela UE, powinien niezwłocznie wystąpić o nowy dokument do właściwego wojewody.",
-      "source_name": "Urząd do Spraw Cudzoziemców",
-      "author": "",
-      "url": "https://www.gov.pl/web/udsc/wazne-zbliza-sie-termin-wymiany-dokumentow-wydanych-obywatelom-ue-i-czlonkom-ich-rodzin-wydanych-wedlug-wzorow-obowiazujacych-przed--2-sierpnia-2021-r",
-      "scope": "PL",
-      "t": {
-        "en": {
-          "title": "3 August 2026 is the deadline to replace old documents of EU citizens and their family members",
-          "summary": "The Office for Foreigners reminds that on 3 August 2026 the validity of the last documents issued to European Union citizens and their family members under templates in force before 2 August 2021 expires. These documents remained valid under the transitional provisions of the Act of 10 December 2020 (Journal of Laws 2020, item 2369). Anyone still using an old certificate of registration of residence, a document confirming the right of permanent residence, or a residence card / permanent residence card of an EU citizen's family member should apply to the competent voivode for a new document without delay."
-        },
-        "es": {
-          "title": "El 3 de agosto de 2026 vence el plazo para canjear los documentos antiguos de ciudadanos de la UE y sus familiares",
-          "summary": "La Oficina para Extranjeros recuerda que el 3 de agosto de 2026 expira la validez de los últimos documentos expedidos a ciudadanos de la Unión Europea y a sus familiares según los modelos vigentes antes del 2 de agosto de 2021. Estos documentos mantuvieron su validez en virtud de las disposiciones transitorias de la ley del 10 de diciembre de 2020 (Dz.U. de 2020, pos. 2369). Quien todavía utilice un certificado antiguo de registro de residencia, un documento que confirme el derecho de residencia permanente o una tarjeta de residencia / tarjeta de residencia permanente de familiar de ciudadano de la UE debe solicitar sin demora un nuevo documento al voivoda competente."
-        },
-        "uk": {
-          "title": "3 серпня 2026 р. спливає строк заміни старих документів громадян ЄС та членів їхніх сімей",
-          "summary": "Управління у справах іноземців нагадує: 3 серпня 2026 р. закінчується строк дії останніх документів, виданих громадянам Європейського Союзу та членам їхніх сімей за зразками, що діяли до 2 серпня 2021 р. Ці документи зберігали чинність на підставі перехідних положень закону від 10 грудня 2020 р. (Dz.U. 2020, poz. 2369). Хто досі користується старою довідкою про реєстрацію перебування, документом, що підтверджує право постійного перебування, або карткою перебування / карткою постійного перебування члена сім'ї громадянина ЄС, повинен невідкладно звернутися до відповідного воєводи за новим документом."
-        },
-        "ru": {
-          "title": "3 августа 2026 г. истекает срок замены старых документов граждан ЕС и членов их семей",
-          "summary": "Управление по делам иностранцев напоминает: 3 августа 2026 г. истекает срок действия последних документов, выданных гражданам Европейского союза и членам их семей по образцам, действовавшим до 2 августа 2021 г. Эти документы сохраняли действительность на основании переходных положений закона от 10 декабря 2020 г. (Dz.U. 2020, poz. 2369). Тем, кто всё ещё пользуется старой справкой о регистрации пребывания, документом, подтверждающим право постоянного пребывания, или картой пребывания / картой постоянного пребывания члена семьи гражданина ЕС, следует незамедлительно обратиться к соответствующему воеводе за новым документом."
-        },
-        "fr": {
-          "title": "Le 3 août 2026 expire le délai d'échange des anciens documents des citoyens de l'UE et des membres de leur famille",
-          "summary": "L'Office des étrangers rappelle que le 3 août 2026 expire la validité des derniers documents délivrés aux citoyens de l'Union européenne et aux membres de leur famille selon les modèles en vigueur avant le 2 août 2021. Ces documents restaient valables en vertu des dispositions transitoires de la loi du 10 décembre 2020 (Dz.U. 2020, poz. 2369). Toute personne utilisant encore une ancienne attestation d'enregistrement de séjour, un document confirmant le droit de séjour permanent ou une carte de séjour / carte de séjour permanent de membre de la famille d'un citoyen de l'UE doit demander sans délai un nouveau document au voïvode compétent."
         }
       }
     },
