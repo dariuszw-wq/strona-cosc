@@ -1090,5 +1090,61 @@
    "summary": "Інструкція для іноземця, який хоче самостійно подати заяву про дозвіл на тимчасове перебування і роботу в порталі MOS (Moduł Obsługi Spraw). Описуємо шість кроків: підготовка документів, створення облікового запису, додаток, який роботодавець підписує електронно (посилання дійсне 30 днів), заповнення заяви, додатки (фото до 2,5 МБ, окремий файл до 10 МБ, разом до 50 МБ) та виклик для особистої явки. Подаємо збори: 440 злотих гербового збору і 100 злотих за видачу посвідки на проживання (karta pobytu), 50 злотих для дитини до 16 років, учня і студента. Нагадуємо, що чернетка заяви зберігається 45 днів, що для усунення формальних недоліків орган встановлює строк не коротший ніж 7 днів, а при недоступності системи заява подається протягом 3 робочих днів після її усунення.",
    "title": "Тимчасове перебування і робота: заява в MOS крок за кроком, з термінами та зборами [власний матеріал COSC]"
   }
+ },
+ "artykul-pip-co-po-protokole.html": {
+  "en": {
+   "title": "What to do after receiving a PIP inspection report",
+   "summary": "Order of action after an inspection report of the State Labour Inspectorate (Panstwowa Inspekcja Pracy, PIP): objections within 7 days, reply to the post-inspection statement within 30 days, information on implementing the decision, appeal. Deadlines and legal basis."
+  },
+  "es": {
+   "title": "Que hacer tras recibir el acta de control de la PIP",
+   "summary": "Orden de actuacion tras el acta de control de la Inspeccion Estatal de Trabajo (Panstwowa Inspekcja Pracy, PIP): objeciones en 7 dias, respuesta al requerimiento en un plazo de 30 dias, informacion sobre la ejecucion de la decision y recurso. Plazos y base legal."
+  },
+  "uk": {
+   "title": "Що робити після отримання протоколу перевірки PIP",
+   "summary": "Порядок дій після протоколу перевірки Державної інспекції праці (Panstwowa Inspekcja Pracy, PIP): заперечення протягом 7 днів, відповідь на подання протягом 30 днів, інформація про виконання рішення, оскарження. Строки та правові підстави."
+  }
+ },
+ "artykul-odpowiedzialnosc-karna-nielegalna-praca.html": {
+  "en": {
+   "title": "Liability for illegal work of a foreigner - offence or crime",
+   "summary": "Liability for illegally entrusting work to a foreigner: petty offence versus crime, the penal provisions of the 2025 Act (including art. 84), fines of up to PLN 50,000 and further consequences. Position as of 2026."
+  },
+  "es": {
+   "title": "Responsabilidad por el trabajo ilegal de un extranjero: infraccion o delito",
+   "summary": "Responsabilidad por encomendar trabajo de forma ilegal a un extranjero: infraccion frente a delito, las disposiciones penales de la ley de 2025 (entre otras, el art. 84), multas de hasta 50 000 PLN y otras consecuencias. Estado de 2026."
+  },
+  "uk": {
+   "title": "Відповідальність за нелегальну працю іноземця — проступок чи злочин",
+   "summary": "Відповідальність за нелегальне доручення роботи іноземцю: проступок чи злочин, кримінальні норми закону 2025 р. (зокрема art. 84), штрафи до 50 000 злотих та інші наслідки. Стан на 2026 рік."
+  }
+ },
+ "artykul-odwolanie-od-decyzji-pip-stosunek-pracy.html": {
+  "en": {
+   "title": "Appeal against a PIP decision on an employment relationship - deadline and procedure",
+   "summary": "An appeal against a decision of the district labour inspector stating the existence of an employment relationship is filed in writing through that inspector within one month of service (art. 477(7)b § 1 k.p.c., Dz.U. 2026 poz. 473). The case is heard by the district court with jurisdiction over the place of work established in the decision. We discuss evidentiary preclusion, self-review by the authority, immediate enforceability and the suspension of the limitation period for social security contributions (art. 24 ust. 5h u.s.u.s.)."
+  },
+  "es": {
+   "title": "Recurso contra la decision de la PIP sobre la relacion laboral: plazo y procedimiento",
+   "summary": "El recurso contra la decision del inspector de trabajo de distrito que declara la existencia de una relacion laboral se presenta por escrito a traves de dicho inspector en el plazo de un mes desde la notificacion (art. 477(7)b § 1 k.p.c., Dz.U. 2026 poz. 473). Conoce del asunto el tribunal de distrito competente por el lugar de trabajo determinado en la decision. Se explican la preclusion probatoria, la autorrevision del organo, la ejecutividad inmediata y la suspension de la prescripcion de las cotizaciones (art. 24 ust. 5h u.s.u.s.)."
+  },
+  "uk": {
+   "title": "Оскарження рішення PIP про трудові відносини — строк і порядок",
+   "summary": "Скарга на рішення окружного інспектора праці про встановлення трудових відносин подається письмово через цього інспектора протягом місяця з дня вручення (art. 477(7)b § 1 k.p.c., Dz.U. 2026 poz. 473). Справу розглядає районний суд за місцем виконання роботи, визначеним у рішенні. Розглядаємо преклюзію доказів, самоконтроль органу, негайну виконуваність та зупинення давності щодо внесків (art. 24 ust. 5h u.s.u.s.)."
+  }
+ },
+ "artykul-pip-protokol-kontroli-zastrzezenia.html": {
+  "en": {
+   "title": "PIP inspection report - objections and deadlines",
+   "summary": "After 8 July 2026 an inspection report of the State Labour Inspectorate (Panstwowa Inspekcja Pracy, PIP) may take electronic form. We explain the content of the report, the right to raise objections within 7 days and the consequences of refusing to sign it."
+  },
+  "es": {
+   "title": "Acta de control de la PIP: objeciones y plazos",
+   "summary": "Desde el 8 de julio de 2026 el acta de control de la Inspeccion Estatal de Trabajo (Panstwowa Inspekcja Pracy, PIP) puede tener forma electronica. Se explica el contenido del acta, el derecho a presentar objeciones en el plazo de 7 dias y las consecuencias de negarse a firmarla."
+  },
+  "uk": {
+   "title": "Протокол перевірки PIP — заперечення та строки",
+   "summary": "Після 8 липня 2026 року протокол перевірки Державної інспекції праці (Panstwowa Inspekcja Pracy, PIP) може мати електронну форму. Пояснюємо зміст протоколу, право подати заперечення протягом 7 днів і наслідки відмови від підпису."
+  }
  }
 }
