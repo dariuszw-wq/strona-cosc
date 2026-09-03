@@ -1,6 +1,17 @@
 {
-  "updated": "2026-09-02T13:03:37",
+  "updated": "2026-09-03T07:40:39",
   "items": [
+    {
+      "id": "2026-09-03-cosc-pip-nakaz-wystapienie-polecenie-mandat",
+      "added": "2026-09-03",
+      "category": "Urzędy",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-pip-nakaz-wystapienie-polecenie-mandat.html",
+      "title": "Środki prawne PIP — nakaz, wystąpienie, polecenie, mandat",
+      "summary": "Czym różni się nakaz od wystąpienia, polecenia i mandatu PIP. Nowe polecenie z art. 11 ust. 2 ustawy o PIP i jego rola przed decyzją o stosunku pracy."
+    },
     {
       "id": "2026-09-02-cosc-pip-co-po-protokole",
       "added": "2026-09-02",
