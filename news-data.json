@@ -1,6 +1,39 @@
 {
-  "updated": "2026-09-03T08:06:22",
+  "updated": "2026-09-03T09:05:00+02:00",
   "items": [
+    {
+      "id": "2026-09-01-sg-nielegalne-zatrudnienie-restauracja-poznan",
+      "added": "2026-09-03",
+      "category": "Rynek pracy",
+      "title": "Mandat 9 tys. zł dla restauratora i procedury powrotowe wobec trojga pracowników z Wietnamu",
+      "summary": "Funkcjonariusze Placówki Straży Granicznej w Poznaniu-Ławicy ustalili podczas kontroli legalności zatrudnienia, że troje obywateli Wietnamu pracowało w poznańskiej restauracji bez wymaganych zezwoleń i bez zawartych umów. Właściciel lokalu został ukarany mandatem w wysokości 9 tys. zł; Straż Graniczna przypomina, że za nielegalne powierzenie pracy cudzoziemcowi grozi grzywna sięgająca 50 tys. zł. Konsekwencje objęły także samych pracowników — wobec całej trójki wszczęto postępowania w sprawie zobowiązania do powrotu do kraju pochodzenia. Sprawa pokazuje, że kontrola w gastronomii kończy się dwustronnie: sankcją finansową dla pracodawcy i utratą prawa pobytu przez cudzoziemca.",
+      "source_name": "Straż Graniczna",
+      "author": "Komenda Główna Straży Granicznej",
+      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16151,Nielegalne-zatrudnienie-cudzoziemcow-w-poznanskiej-restauracji.html",
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "PLN 9,000 fine for a restaurant owner and return proceedings against three Vietnamese workers",
+          "summary": "Officers of the Border Guard post in Poznan-Lawica established during a check on the legality of employment that three Vietnamese nationals had been working in a Poznan restaurant without the required work permits and without any contracts. The owner of the venue was fined PLN 9,000; the Border Guard recalls that illegally entrusting work to a foreigner carries a fine of up to PLN 50,000. The consequences also reached the workers themselves - return proceedings were initiated against all three. The case shows that an inspection in the catering sector ends on both sides: a financial penalty for the employer and loss of the right of residence for the foreigner."
+        },
+        "es": {
+          "title": "Multa de 9.000 PLN al dueno de un restaurante y procedimientos de retorno contra tres trabajadores vietnamitas",
+          "summary": "Los agentes del puesto de la Guardia de Fronteras en Poznan-Lawica constataron, durante un control de la legalidad del empleo, que tres ciudadanos de Vietnam trabajaban en un restaurante de Poznan sin los permisos de trabajo exigidos y sin contrato. El propietario del local fue sancionado con una multa de 9.000 PLN; la Guardia de Fronteras recuerda que encomendar trabajo a un extranjero de forma ilegal conlleva una multa de hasta 50.000 PLN. Las consecuencias alcanzaron tambien a los propios trabajadores: se iniciaron procedimientos de retorno contra los tres. El caso muestra que una inspeccion en la hosteleria termina por partida doble: sancion economica para el empleador y perdida del derecho de residencia para el extranjero."
+        },
+        "uk": {
+          "title": "Штраф 9 тис. злотих для ресторатора та процедури повернення щодо трьох працівників із В'єтнаму",
+          "summary": "Функціонери підрозділу Прикордонної служби в Познані-Лавиці під час перевірки законності працевлаштування встановили, що троє громадян В'єтнаму працювали в познанському ресторані без потрібних дозволів на роботу та без укладених договорів. Власника закладу оштрафовано на 9 тис. злотих; Прикордонна служба нагадує, що за незаконне доручення роботи іноземцеві загрожує штраф до 50 тис. злотих. Наслідки торкнулися й самих працівників — щодо всіх трьох розпочато провадження про зобов'язання до повернення в країну походження. Справа показує, що перевірка в громадському харчуванні закінчується з двох боків: фінансовою санкцією для роботодавця та втратою права перебування для іноземця."
+        },
+        "ru": {
+          "title": "Штраф 9 тыс. злотых для ресторатора и процедуры возвращения в отношении трёх работников из Вьетнама",
+          "summary": "Сотрудники подразделения Пограничной службы в Познани-Лавице в ходе проверки законности трудоустройства установили, что трое граждан Вьетнама работали в познанском ресторане без необходимых разрешений на работу и без заключённых договоров. Владелец заведения оштрафован на 9 тыс. злотых; Пограничная служба напоминает, что за незаконное поручение работы иностранцу грозит штраф до 50 тыс. злотых. Последствия коснулись и самих работников — в отношении всех троих начаты производства об обязании вернуться в страну происхождения. Дело показывает, что проверка в общепите заканчивается с двух сторон: финансовой санкцией для работодателя и утратой права пребывания для иностранца."
+        },
+        "fr": {
+          "title": "Amende de 9 000 PLN pour un restaurateur et procedures de retour contre trois travailleurs vietnamiens",
+          "summary": "Les agents du poste de la Garde-frontiere de Poznan-Lawica ont constate, lors d'un controle de la legalite de l'emploi, que trois ressortissants vietnamiens travaillaient dans un restaurant de Poznan sans les autorisations de travail requises et sans contrat. Le proprietaire de l'etablissement a ete sanctionne d'une amende de 9 000 PLN; la Garde-frontiere rappelle que confier illegalement un travail a un etranger expose a une amende pouvant atteindre 50 000 PLN. Les consequences ont aussi touche les travailleurs eux-memes: des procedures de retour ont ete engagees contre les trois. L'affaire montre qu'un controle dans la restauration se solde des deux cotes: sanction financiere pour l'employeur et perte du droit de sejour pour l'etranger."
+        }
+      }
+    },
     {
       "id": "2026-09-03-cosc-interpretacja-indywidualna-glowny-inspektor-pracy",
       "added": "2026-09-03",
