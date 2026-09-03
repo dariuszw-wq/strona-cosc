@@ -1,6 +1,17 @@
 {
-  "updated": "2026-09-03T09:05:00+02:00",
+  "updated": "2026-09-03T13:03:14+02:00",
   "items": [
+    {
+      "id": "2026-09-03-cosc-pip-nowe-kary-60000-zl",
+      "added": "2026-09-03",
+      "category": "Legislacja",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-pip-nowe-kary-60000-zl.html",
+      "title": "Nowe kary za naruszenia prawa pracy — do 60 000 zł",
+      "summary": "Od 8 lipca 2026 r. grzywny z art. 281–283 Kodeksu pracy wynoszą od 2000 do 60 000 zł, a w kwalifikowanych przypadkach do 90 000 zł. Mandat PIP — do 5000 zł."
+    },
     {
       "id": "2026-09-01-sg-nielegalne-zatrudnienie-restauracja-poznan",
       "added": "2026-09-03",
