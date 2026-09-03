@@ -1,6 +1,39 @@
 {
-  "updated": "2026-09-03T07:40:39",
+  "updated": "2026-09-03T08:06:22",
   "items": [
+    {
+      "id": "2026-09-03-cosc-interpretacja-indywidualna-glowny-inspektor-pracy",
+      "added": "2026-09-03",
+      "category": "Legislacja",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-interpretacja-indywidualna-glowny-inspektor-pracy.html",
+      "title": "Interpretacja indywidualna Głównego Inspektora Pracy — czy to umowa o pracę [materiał własny COSC]",
+      "summary": "Od 8 lipca 2026 r. Główny Inspektor Pracy wydaje interpretacje indywidualne w sprawie kwalifikacji stosunku prawnego jako stosunku pracy (art. 14b ustawy o PIP). Opłata 40 zł, termin 30 dni, 7 dni na braki, forma decyzji i odwołanie do sądu okręgowego (opłata 200 zł). Interpretacja wiąże organy PIP, ale nie chroni, gdy stan faktyczny ustalony w kontroli różni się od opisanego we wniosku.",
+      "t": {
+        "en": {
+          "title": "Individual interpretation by the Chief Labour Inspector — is it an employment relationship?",
+          "summary": "From 8 July 2026 the Chief Labour Inspector (Główny Inspektor Pracy) issues individual interpretations on whether a legal relationship qualifies as an employment relationship (art. 14b ustawy o PIP). Fee 40 zł, 30-day deadline, 7 days to cure formal defects, issued as a decision appealable to the regional court (fee 200 zł). The interpretation binds the PIP authorities, but offers no protection where the facts established during an inspection differ from those described in the application."
+        },
+        "es": {
+          "title": "Interpretación individual del Inspector General de Trabajo: ¿es una relación laboral?",
+          "summary": "Desde el 8 de julio de 2026, el Inspector General de Trabajo (Główny Inspektor Pracy) emite interpretaciones individuales sobre si una relación jurídica constituye una relación laboral (art. 14b ustawy o PIP). Tasa de 40 zł, plazo de 30 días, 7 días para subsanar defectos formales, se emite mediante resolución recurrible ante el tribunal regional (tasa de 200 zł). La interpretación vincula a los órganos de la PIP, pero no protege si los hechos comprobados durante la inspección difieren de los descritos en la solicitud."
+        },
+        "uk": {
+          "title": "Індивідуальне тлумачення Головного інспектора праці — чи це трудові відносини?",
+          "summary": "Від 8 липня 2026 р. Головний інспектор праці (Główny Inspektor Pracy) видає індивідуальні тлумачення щодо того, чи є правовідносини трудовими (art. 14b ustawy o PIP). Оплата 40 zł, строк 30 днів, 7 днів на усунення недоліків, видається у формі рішення, яке оскаржується до окружного суду (оплата 200 zł). Тлумачення є обов'язковим для органів PIP, але не захищає, якщо фактичні обставини, встановлені під час перевірки, відрізняються від описаних у заяві."
+        },
+        "ru": {
+          "title": "Индивидуальное толкование Главного инспектора труда — являются ли это трудовыми отношениями?",
+          "summary": "С 8 июля 2026 г. Главный инспектор труда (Główny Inspektor Pracy) выдаёт индивидуальные толкования о том, являются ли правоотношения трудовыми (art. 14b ustawy o PIP). Плата 40 zł, срок 30 дней, 7 дней на устранение недостатков, выдаётся в форме решения, обжалуемого в окружной суд (плата 200 zł). Толкование обязательно для органов PIP, но не защищает, если установленные в ходе проверки обстоятельства отличаются от описанных в заявлении."
+        },
+        "fr": {
+          "title": "Interprétation individuelle de l'Inspecteur général du travail — s'agit-il d'une relation de travail ?",
+          "summary": "Depuis le 8 juillet 2026, l'Inspecteur général du travail (Główny Inspektor Pracy) délivre des interprétations individuelles indiquant si une relation juridique constitue une relation de travail (art. 14b ustawy o PIP). Redevance de 40 zł, délai de 30 jours, 7 jours pour régulariser les vices de forme, délivrée par décision susceptible de recours devant le tribunal régional (redevance de 200 zł). L'interprétation lie les organes de la PIP, mais ne protège pas lorsque les faits établis lors du contrôle diffèrent de ceux décrits dans la demande."
+        }
+      }
+    },
     {
       "id": "2026-09-03-cosc-pip-nakaz-wystapienie-polecenie-mandat",
       "added": "2026-09-03",
