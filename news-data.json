@@ -1,6 +1,17 @@
 {
-  "updated": "2026-09-03T13:03:14+02:00",
+  "updated": "2026-09-04T07:40:38.472323+02:00",
   "items": [
+    {
+      "id": "2026-09-04-cosc-pip-zlecenie-czy-umowa-o-prace",
+      "added": "2026-09-04",
+      "category": "Legislacja",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-pip-zlecenie-czy-umowa-o-prace.html",
+      "title": "Umowa zlecenia czy o pracę — nowe kompetencje PIP",
+      "summary": "Od 8 lipca 2026 r. PIP może przekwalifikować umowę zlecenia na umowę o pracę decyzją. Wyjaśniamy przesłanki z art. 22 § 1 k.p., procedurę polecenia i skutki decyzji."
+    },
     {
       "id": "2026-09-03-cosc-pip-nowe-kary-60000-zl",
       "added": "2026-09-03",
