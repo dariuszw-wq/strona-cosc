@@ -1,6 +1,17 @@
 {
-  "updated": "2026-09-04T13:03:31",
+  "updated": "2026-09-05T07:40:58.391697",
   "items": [
+    {
+      "id": "2026-09-05-cosc-pip-interpretacje-indywidualne-gip",
+      "added": "2026-09-05",
+      "category": "Legislacja",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-pip-interpretacje-indywidualne-gip.html",
+      "title": "Interpretacje indywidualne Głównego Inspektora Pracy",
+      "summary": "Od 8 lipca 2026 r. można uzyskać interpretację indywidualną GIP w sprawie kwalifikacji stosunku prawnego. Opłata 40 zł, termin 30 dni, ochrona przed sankcjami. Art. 14b ustawy o PIP."
+    },
     {
       "id": "2026-09-04-cosc-pip-decyzja-stwierdzajaca-stosunek-pracy",
       "added": "2026-09-04",
