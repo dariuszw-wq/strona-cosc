@@ -1,6 +1,17 @@
 {
-  "updated": "2026-09-05T07:40:58.391697",
+  "updated": "2026-09-05T13:02:51",
   "items": [
+    {
+      "id": "2026-09-05-cosc-pip-outsourcing-kadr-i-ksiegowosci",
+      "added": "2026-09-05",
+      "category": "Urzędy",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-pip-outsourcing-kadr-i-ksiegowosci.html",
+      "title": "Kontrola PIP a outsourcing kadr i księgowości",
+      "summary": "Powierzenie kadr biuru rachunkowemu nie przenosi odpowiedzialności wobec PIP. Kto odpowiada za dokumentację, kto odbiera protokół i jak zorganizować obsługę kontroli."
+    },
     {
       "id": "2026-09-05-cosc-pip-interpretacje-indywidualne-gip",
       "added": "2026-09-05",
