@@ -1,6 +1,17 @@
 {
-  "updated": "2026-09-06T07:40:47",
+  "updated": "2026-09-06T13:03:03",
   "items": [
+    {
+      "id": "2026-09-06-cosc-pip-skarga-pracownika-anonimowosc",
+      "added": "2026-09-06",
+      "category": "Urzędy",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-pip-skarga-pracownika-anonimowosc.html",
+      "title": "Skarga pracownika do PIP — czy poznasz jej autora?",
+      "summary": "Art. 44 ust. 3 ustawy o PIP zakazuje ujawniania informacji, że kontrola jest następstwem skargi, bez pisemnej zgody skarżącego. Co to oznacza dla pracodawcy."
+    },
     {
       "id": "2026-09-06-cosc-pip-kontrola-w-kilku-lokalizacjach",
       "added": "2026-09-06",
