@@ -1,6 +1,17 @@
 {
-  "updated": "2026-09-05T13:02:51",
+  "updated": "2026-09-06T07:40:47",
   "items": [
+    {
+      "id": "2026-09-06-cosc-pip-kontrola-w-kilku-lokalizacjach",
+      "added": "2026-09-06",
+      "category": "Urzędy",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-pip-kontrola-w-kilku-lokalizacjach.html",
+      "title": "Kontrola PIP w kilku lokalizacjach firmy",
+      "summary": "Jak przebiega kontrola PIP w firmie z oddziałami w różnych województwach. Art. 23a ustawy o PIP, właściwość okręgowego inspektora i tryb zdalny."
+    },
     {
       "id": "2026-09-05-cosc-pip-outsourcing-kadr-i-ksiegowosci",
       "added": "2026-09-05",
