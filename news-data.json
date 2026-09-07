@@ -1,6 +1,17 @@
 {
-  "updated": "2026-09-06T20:10:00",
+  "updated": "2026-09-07T07:41:09",
   "items": [
+    {
+      "id": "2026-09-07-cosc-pip-ochrona-tozsamosci-pracownika",
+      "added": "2026-09-07",
+      "category": "Urzędy",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-pip-ochrona-tozsamosci-pracownika.html",
+      "title": "Ochrona tożsamości pracownika podczas kontroli PIP",
+      "summary": "Jak chroniona jest tożsamość pracownika w kontroli PIP: art. 44 ust. 3 ustawy o PIP, zakaz odwetu z art. 34 ust. 2l i ochrona sygnalistów. Perspektywa pracownika."
+    },
     {
       "id": "2026-09-06-wniosek-po-terminie-nie-legalizuje-pobytu",
       "added": "2026-09-06",
