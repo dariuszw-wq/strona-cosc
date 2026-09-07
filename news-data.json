@@ -1,6 +1,72 @@
 {
-  "updated": "2026-09-07T07:41:09",
+  "updated": "2026-09-07T07:09:06Z",
   "items": [
+    {
+      "id": "2026-09-07-cosc-przedluzenie-zezwolenia-na-prace",
+      "added": "2026-09-07",
+      "category": "Rynek pracy",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-przedluzenie-zezwolenia-na-prace.html",
+      "title": "Przedłużenie zezwolenia na pracę cudzoziemca — terminy i ciągłość legalnej pracy",
+      "summary": "Jak przedłużyć zezwolenie na pracę cudzoziemca: terminy, ciągłość legalnej pracy, praca w okresie oczekiwania, legalność po upływie oświadczenia. Planowanie dla kadr. Stan 2026.",
+      "t": {
+        "en": {
+          "title": "Extending a foreigner's work permit — deadlines and continuity of legal work",
+          "summary": "How to extend a foreigner's work permit: deadlines, continuity of legal work, working while awaiting a decision, legality after the declaration (oswiadczenie) expires. Planning for HR. Status 2026."
+        },
+        "es": {
+          "title": "Prórroga del permiso de trabajo de un extranjero — plazos y continuidad del trabajo legal",
+          "summary": "Cómo prorrogar el permiso de trabajo de un extranjero: plazos, continuidad del trabajo legal, trabajo durante la espera de la resolución, legalidad tras la expiración de la declaración (oświadczenie). Planificación para RR.HH. Estado 2026."
+        },
+        "uk": {
+          "title": "Продовження дозволу на роботу для іноземця — строки та безперервність легальної праці",
+          "summary": "Як продовжити дозвіл на роботу для іноземця: строки, безперервність легальної праці, робота в період очікування рішення, легальність після закінчення строку дії заяви (oświadczenie). Планування для кадрів. Стан 2026."
+        },
+        "ru": {
+          "title": "Продление разрешения на работу для иностранца — сроки и непрерывность легальной работы",
+          "summary": "Как продлить разрешение на работу для иностранца: сроки, непрерывность легальной работы, работа в период ожидания решения, легальность после истечения заявления (oświadczenie). Планирование для кадров. Состояние 2026."
+        },
+        "fr": {
+          "title": "Prolongation du permis de travail d'un étranger — délais et continuité du travail légal",
+          "summary": "Comment prolonger le permis de travail d'un étranger : délais, continuité du travail légal, travail pendant l'attente de la décision, légalité après l'expiration de la déclaration (oświadczenie). Planification pour les RH. État 2026."
+        }
+      }
+    },
+    {
+      "id": "2026-09-04-cosc-unikanie-podwojnego-opodatkowania-upo",
+      "added": "2026-09-04",
+      "category": "Rynek pracy",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-unikanie-podwojnego-opodatkowania-upo.html",
+      "title": "Unikanie podwójnego opodatkowania — UPO, metody i certyfikat rezydencji",
+      "summary": "Jak uniknąć podwójnego opodatkowania dochodu z pracy: metody (wyłączenie z progresją, odliczenie proporcjonalne), ulga abolicyjna, certyfikat rezydencji, przykład Polska–Ukraina. Stan 2026.",
+      "t": {
+        "en": {
+          "title": "Avoiding double taxation — DTA, methods and certificate of residence",
+          "summary": "How to avoid double taxation of employment income: methods (exemption with progression, proportional credit), the abolition relief, certificate of residence, Poland–Ukraine example. Status 2026."
+        },
+        "es": {
+          "title": "Evitar la doble imposición — CDI, métodos y certificado de residencia",
+          "summary": "Cómo evitar la doble imposición de los ingresos del trabajo: métodos (exención con progresión, deducción proporcional), la deducción de abolición, el certificado de residencia, ejemplo Polonia–Ucrania. Estado 2026."
+        },
+        "uk": {
+          "title": "Уникнення подвійного оподаткування — УУПО, методи та сертифікат резидентності",
+          "summary": "Як уникнути подвійного оподаткування доходу від праці: методи (звільнення з прогресією, пропорційне зарахування), пільга abolicyjna, сертифікат резидентності, приклад Польща–Україна. Стан 2026."
+        },
+        "ru": {
+          "title": "Избежание двойного налогообложения — СИДН, методы и сертификат резидентства",
+          "summary": "Как избежать двойного налогообложения дохода от работы: методы (освобождение с прогрессией, пропорциональный зачёт), льгота abolicyjna, сертификат резидентства, пример Польша–Украина. Состояние 2026."
+        },
+        "fr": {
+          "title": "Éviter la double imposition — convention fiscale, méthodes et certificat de résidence",
+          "summary": "Comment éviter la double imposition des revenus du travail : méthodes (exonération avec progressivité, imputation proportionnelle), l'abattement « abolicyjna », le certificat de résidence, exemple Pologne–Ukraine. État 2026."
+        }
+      }
+    },
     {
       "id": "2026-09-07-cosc-pip-ochrona-tozsamosci-pracownika",
       "added": "2026-09-07",
