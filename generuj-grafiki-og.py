@@ -92,15 +92,23 @@ def process(fn, write_meta=True):
     og_png='og/'+fn.replace('.html','.png')
     os.makedirs('og',exist_ok=True)
     cairosvg.svg2png(bytestring=build_svg(title,badge).encode(),write_to=og_png,output_width=1200,output_height=630)
+    # Priorytet grafiki social: zdjęcie własne artykułu (img/...), a karta OG dopiero gdy zdjęcia brak.
+    social_url=f'https://cosc.org.pl/{og_png}'; social_w,social_h='1200','630'
+    body=h.split('</head>',1)[-1]
+    mi=re.search(r'<img\s+[^>]*src="(img/[^"]+)"[^>]*>',body)
+    if mi:
+        social_url='https://cosc.org.pl/'+mi.group(1)
+        mw=re.search(r'width="(\d+)"',mi.group(0)); mh=re.search(r'height="(\d+)"',mi.group(0))
+        if mw and mh: social_w,social_h=mw.group(1),mh.group(1)
     if write_meta and 'og:image' not in h:
         metas=(f'\n<meta property="og:type" content="article">'
          f'\n<meta property="og:title" content="{H.escape((mt.group(1) if mt else title).strip())}">'
          f'\n<meta property="og:description" content="{md.group(1) if md else ""}">'
          f'\n<meta property="og:url" content="https://cosc.org.pl/{fn}">'
-         f'\n<meta property="og:image" content="https://cosc.org.pl/{og_png}">'
-         f'\n<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">'
+         f'\n<meta property="og:image" content="{social_url}">'
+         f'\n<meta property="og:image:width" content="{social_w}"><meta property="og:image:height" content="{social_h}">'
          f'\n<meta name="twitter:card" content="summary_large_image">'
-         f'\n<meta name="twitter:image" content="https://cosc.org.pl/{og_png}">\n')
+         f'\n<meta name="twitter:image" content="{social_url}">\n')
         h=h.replace('</head>',metas+'</head>',1)
         open(fn,'w',encoding='utf-8').write(h)
     print('OK',fn,'->',og_png,f'({os.path.getsize(og_png)//1024} KB) badge:',badge)
