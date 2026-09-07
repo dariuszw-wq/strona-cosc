@@ -171,4 +171,19 @@
     <loc>https://cosc.org.pl/artykul-pip-ochrona-tozsamosci-pracownika.html</loc>
     <lastmod>2026-09-07</lastmod>
   </url>
+  <url>
+    <loc>https://cosc.org.pl/artykul-kto-podlega-kontroli-pip-dane-do-zus.html</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cosc.org.pl/artykul-odwolanie-od-decyzji-pip-stosunek-pracy.html</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cosc.org.pl/artykul-ponad-50-dni-wolnego-forma-zatrudnienia.html</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.6</priority>
+  </url>
 </urlset>
