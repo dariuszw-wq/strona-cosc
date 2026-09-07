@@ -1244,5 +1244,75 @@
    "summary": "Інструкція для іноземця, який хоче самостійно подати заяву про дозвіл на тимчасове перебування і роботу в порталі MOS (Moduł Obsługi Spraw). Описуємо шість кроків: підготовка документів, створення облікового запису, додаток, який роботодавець підписує електронно (посилання дійсне 30 днів), заповнення заяви, додатки (фото до 2,5 МБ, окремий файл до 10 МБ, разом до 50 МБ) та виклик для особистої явки. Подаємо збори: 440 злотих гербового збору і 100 злотих за видачу посвідки на проживання (karta pobytu), 50 злотих для дитини до 16 років, учня і студента. Нагадуємо, що чернетка заяви зберігається 45 днів, що для усунення формальних недоліків орган встановлює строк не коротший ніж 7 днів, а при недоступності системи заява подається протягом 3 робочих днів після її усунення.",
    "title": "Тимчасове перебування і робота: заява в MOS крок за кроком, з термінами та зборами [власний матеріал COSC]"
   }
+ },
+ "https://www.strazgraniczna.pl/pl/aktualnosci/16166,Straz-Graniczna-przewodniczy-pracom-nad-unijnym-systemem-interoperacyjnosci.html": {
+  "en": {
+   "title": "Poland links migration databases: EES, VIS, ETIAS, SIS and Eurodac in one search system",
+   "summary": "The Border Guard (Straz Graniczna) has reported a meeting of the Task Force on launching the interoperability components of the EU large-scale IT systems. For a foreign national this means that data from the Entry/Exit System (EES), the Visa Information System (VIS), ETIAS, Eurodac, SIS and ECRIS-TCN will be searched with a single query through the European Search Portal (ESP), while identity will be verified biometrically (sBMS) and compared in the Common Identity Repository (CIR) with the Multiple Identity Detector (MID). The work is coordinated by the National Headquarters of the Border Guard together with the Ministry of the Interior and Administration (MSWiA), the Ministry of Foreign Affairs (MSZ), the Ministry of Justice, the Police and the Office for Foreigners (Urzad do Spraw Cudzoziemcow), with testing run with the eu-LISA agency. The legal basis is Regulations (EU) 2019/817 and 2019/818 of the European Parliament and of the Council. Practical effect: discrepancies between data given in different proceedings - visa, residence and asylum - will be detected automatically, so consistency of the data in applications becomes a matter of legal safety, not a formality."
+  },
+  "es": {
+   "title": "Polonia conecta las bases migratorias: EES, VIS, ETIAS, SIS y Eurodac en un unico sistema de busqueda",
+   "summary": "La Guardia de Fronteras (Straz Graniczna) informo de la reunion del Grupo de Trabajo para la puesta en marcha de los componentes de interoperabilidad de los sistemas informaticos de gran escala de la UE. Para la persona extranjera esto significa que los datos del Sistema de Entradas y Salidas (EES), del Sistema de Informacion de Visados (VIS), de ETIAS, de Eurodac, del SIS y de ECRIS-TCN se consultaran con una sola peticion a traves del Portal Europeo de Busqueda (ESP), y la identidad se verificara de forma biometrica (sBMS) y se comparara en el Repositorio Comun de Identidades (CIR) con el Detector de Identidades Multiples (MID). Los trabajos los coordina la Comandancia General de la Guardia de Fronteras junto con el Ministerio del Interior y Administracion (MSWiA), el Ministerio de Asuntos Exteriores (MSZ), el Ministerio de Justicia, la Policia y la Oficina de Extranjeros (Urzad do Spraw Cudzoziemcow); las pruebas se realizan con la agencia eu-LISA. La base juridica son los Reglamentos (UE) 2019/817 y 2019/818 del Parlamento Europeo y del Consejo. Efecto practico: las discrepancias entre los datos indicados en distintos procedimientos - de visado, de residencia y de asilo - se detectaran de forma automatica, por lo que la coherencia de los datos en las solicitudes pasa a ser una cuestion de seguridad juridica y no un mero formalismo."
+  },
+  "uk": {
+   "title": "Польща поєднує міграційні бази: EES, VIS, ETIAS, SIS та Eurodac в одній системі пошуку",
+   "summary": "Прикордонна служба (Straz Graniczna) повідомила про засідання Робочої групи із запуску компонентів інтероперабельності великомасштабних інформаційних систем ЄС. Для іноземця це означає, що дані Системи в'їзду/виїзду (EES), Візової інформаційної системи (VIS), ETIAS, Eurodac, SIS та ECRIS-TCN шукатимуться одним запитом через Європейський пошуковий портал (ESP), а особу перевірятимуть біометрично (sBMS) і порівнюватимуть у Спільному репозиторії даних про особу (CIR) з Детектором множинних ідентичностей (MID). Роботу координує Головна комендатура Прикордонної служби разом з Міністерством внутрішніх справ і адміністрації (MSWiA), Міністерством закордонних справ (MSZ), Міністерством юстиції, Поліцією та Управлінням у справах іноземців (Urzad do Spraw Cudzoziemcow), тестування проводиться з агенцією eu-LISA. Підстава - регламенти Європейського Парламенту і Ради (ЄС) 2019/817 та 2019/818. Практичний наслідок: розбіжності між даними, поданими в різних провадженнях - візовому, побутовому та у справах про захист - виявлятимуться автоматично, тож узгодженість даних у заявах стає питанням правової безпеки, а не формальністю."
+  }
+ },
+ "artykul-pip-skarga-pracownika-anonimowosc.html": {
+  "en": {
+   "title": "An employee complaint to the Labour Inspectorate - will you learn who filed it?",
+   "summary": "Art. 44 ust. 3 of the Act on the National Labour Inspectorate (PIP) prohibits disclosing that an inspection follows a complaint, without the written consent of the complainant. What this means for the employer."
+  },
+  "es": {
+   "title": "Denuncia de un trabajador ante la Inspeccion de Trabajo: sabra usted quien la presento?",
+   "summary": "El art. 44 ust. 3 de la Ley sobre la Inspeccion Nacional de Trabajo (PIP) prohibe revelar que una inspeccion es consecuencia de una denuncia sin el consentimiento escrito de la persona denunciante. Que significa esto para el empleador."
+  },
+  "uk": {
+   "title": "Скарга працівника до Інспекції праці - чи дізнаєтесь ви її автора?",
+   "summary": "Art. 44 ust. 3 Закону про Державну інспекцію праці (PIP) забороняє розкривати інформацію про те, що перевірка є наслідком скарги, без письмової згоди скаржника. Що це означає для роботодавця."
+  }
+ },
+ "artykul-pip-kontrola-w-kilku-lokalizacjach.html": {
+  "en": {
+   "title": "A Labour Inspectorate inspection across several company locations",
+   "summary": "How an inspection by the National Labour Inspectorate (PIP) proceeds in a company with branches in different voivodeships. Art. 23a of the Act on the PIP, the competence of the district labour inspector and the remote procedure."
+  },
+  "es": {
+   "title": "Inspeccion de Trabajo en varias sedes de la empresa",
+   "summary": "Como se desarrolla una inspeccion de la Inspeccion Nacional de Trabajo (PIP) en una empresa con delegaciones en distintos voivodatos. Art. 23a de la Ley sobre la PIP, la competencia del inspector regional de trabajo y el procedimiento a distancia."
+  },
+  "uk": {
+   "title": "Перевірка Інспекції праці в кількох локаціях фірми",
+   "summary": "Як відбувається перевірка Державної інспекції праці (PIP) у фірмі з підрозділами в різних воєводствах. Art. 23a Закону про PIP, компетенція окружного інспектора праці та дистанційний порядок."
+  }
+ },
+ "artykul-pip-outsourcing-kadr-i-ksiegowosci.html": {
+  "en": {
+   "title": "A Labour Inspectorate inspection and outsourced HR and accounting",
+   "summary": "Handing HR over to an accounting office does not transfer liability towards the National Labour Inspectorate (PIP). Who answers for the records, who receives the inspection report and how to organise handling of the inspection."
+  },
+  "es": {
+   "title": "Inspeccion de Trabajo y externalizacion de personal y contabilidad",
+   "summary": "Encargar la gestion de personal a una asesoria contable no traslada la responsabilidad frente a la Inspeccion Nacional de Trabajo (PIP). Quien responde de la documentacion, quien recibe el acta y como organizar la atencion de la inspeccion."
+  },
+  "uk": {
+   "title": "Перевірка Інспекції праці та аутсорсинг кадрів і бухгалтерії",
+   "summary": "Передання кадрів бухгалтерському бюро не переносить відповідальності перед Державною інспекцією праці (PIP). Хто відповідає за документацію, хто отримує протокол і як організувати обслуговування перевірки."
+  }
+ },
+ "artykul-pip-interpretacje-indywidualne-gip.html": {
+  "en": {
+   "title": "Individual interpretations issued by the Chief Labour Inspector",
+   "summary": "From 8 July 2026 it is possible to obtain an individual interpretation from the Chief Labour Inspector (GIP) on the classification of a legal relationship. Fee 40 zl, time limit 30 days, protection against sanctions. Art. 14b of the Act on the National Labour Inspectorate (PIP)."
+  },
+  "es": {
+   "title": "Interpretaciones individuales del Inspector General de Trabajo",
+   "summary": "Desde el 8 de julio de 2026 se puede obtener una interpretacion individual del Inspector General de Trabajo (GIP) sobre la calificacion de la relacion juridica. Tasa de 40 zl, plazo de 30 dias, proteccion frente a sanciones. Art. 14b de la Ley sobre la Inspeccion Nacional de Trabajo (PIP)."
+  },
+  "uk": {
+   "title": "Індивідуальні тлумачення Головного інспектора праці",
+   "summary": "Від 8 липня 2026 р. можна отримати індивідуальне тлумачення Головного інспектора праці (GIP) щодо кваліфікації правовідносин. Оплата 40 zl, строк 30 днів, захист від санкцій. Art. 14b Закону про Державну інспекцію праці (PIP)."
+  }
  }
 }
