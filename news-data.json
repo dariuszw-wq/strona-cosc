@@ -1,6 +1,17 @@
 {
- "updated": "2026-09-07T07:52:14Z",
+ "updated": "2026-09-07T13:03:23",
  "items": [
+  {
+   "id": "2026-09-07-cosc-pip-najczestsze-nieprawidlowosci",
+   "added": "2026-09-07",
+   "category": "Urzędy",
+   "scope": "PL",
+   "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+   "author": "Dariusz Włodarczyk Kancelaria TRC",
+   "url": "artykul-pip-najczestsze-nieprawidlowosci.html",
+   "title": "Najczęstsze nieprawidłowości wykrywane przez PIP",
+   "summary": "Kategorie naruszeń, które PIP kwalifikuje jako wykroczenia z art. 281–283 Kodeksu pracy, oraz nowy obszar ryzyka po 8 lipca 2026 r. — kwalifikacja umów cywilnoprawnych."
+  },
   {
    "id": "2026-09-07-cosc-ponad-50-dni-wolnego-forma-zatrudnienia",
    "added": "2026-09-07",
