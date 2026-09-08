@@ -1,6 +1,17 @@
 {
- "updated": "2026-09-08T09:32:02",
+ "updated": "2026-09-08T13:03:18",
  "items": [
+  {
+   "id": "2026-09-08-cosc-pip-kontrola-dokumentacji-pracowniczej",
+   "added": "2026-09-08",
+   "category": "Urzędy",
+   "scope": "PL",
+   "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+   "author": "Dariusz Włodarczyk Kancelaria TRC",
+   "url": "artykul-pip-kontrola-dokumentacji-pracowniczej.html",
+   "title": "Kontrola dokumentacji pracowniczej przez PIP",
+   "summary": "Zakres, postać i okresy przechowywania dokumentacji pracowniczej w kontroli PIP. Art. 94 pkt 9a i 9b Kodeksu pracy, rozporządzenie z 2018 r. i postać elektroniczna."
+  },
   {
    "id": "2026-09-08-sprawozdanie-gip-2025-umowy-zlecenia",
    "added": "2026-09-08",
