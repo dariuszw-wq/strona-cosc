@@ -1384,5 +1384,47 @@
    "summary": "Інструкція для іноземця, який хоче самостійно подати заяву про дозвіл на тимчасове перебування і роботу в порталі MOS (Moduł Obsługi Spraw). Описуємо шість кроків: підготовка документів, створення облікового запису, додаток, який роботодавець підписує електронно (посилання дійсне 30 днів), заповнення заяви, додатки (фото до 2,5 МБ, окремий файл до 10 МБ, разом до 50 МБ) та виклик для особистої явки. Подаємо збори: 440 злотих гербового збору і 100 злотих за видачу посвідки на проживання (karta pobytu), 50 злотих для дитини до 16 років, учня і студента. Нагадуємо, що чернетка заяви зберігається 45 днів, що для усунення формальних недоліків орган встановлює строк не коротший ніж 7 днів, а при недоступності системи заява подається протягом 3 робочих днів після її усунення.",
    "title": "Тимчасове перебування і робота: заява в MOS крок за кроком, з термінами та зборами [власний матеріал COSC]"
   }
+ },
+ "artykul-pip-kontrola-dokumentacji-pracowniczej.html": {
+  "en": {
+   "title": "Inspection of employee documentation by the National Labour Inspectorate (PIP)",
+   "summary": "Scope, form and retention periods of employee documentation during an inspection by the National Labour Inspectorate (Panstwowa Inspekcja Pracy, PIP). Article 94 points 9a and 9b of the Labour Code (Kodeks pracy), the 2018 regulation and the electronic form of records. The material explains which files the inspector may ask for, how long personal files and payroll records must be kept, and what follows from keeping documentation electronically."
+  },
+  "es": {
+   "title": "Control de la documentacion laboral por la Inspeccion de Trabajo (PIP)",
+   "summary": "Alcance, forma y plazos de conservacion de la documentacion laboral durante un control de la Inspeccion Estatal de Trabajo (Panstwowa Inspekcja Pracy, PIP). Art. 94 pkt 9a y 9b del Codigo de Trabajo (Kodeks pracy), el reglamento de 2018 y la forma electronica de los registros. El material explica que documentos puede solicitar el inspector, cuanto tiempo deben conservarse los expedientes personales y de nominas, y que implica llevar la documentacion en formato electronico."
+  },
+  "uk": {
+   "title": "Перевірка кадрової документації Державною інспекцією праці (PIP)",
+   "summary": "Обсяг, форма та строки зберігання кадрової документації під час перевірки Державної інспекції праці (Panstwowa Inspekcja Pracy, PIP). Art. 94 pkt 9a i 9b Kodeksu pracy, розпорядження 2018 р. та електронна форма документів. Матеріал пояснює, які документи може вимагати інспектор, скільки часу зберігаються особові справи та платіжні документи і що означає ведення документації в електронній формі."
+  }
+ },
+ "https://www.pip.gov.pl/aktualnosci/sprawozdanie-glownego-inspektora-pracy-za-2025-rok": {
+  "en": {
+   "title": "PIP examined 49,000 civil-law contracts. A mandate contract is the most common basis of work for foreigners in Poland",
+   "summary": "The Chief Labour Inspector presented to Sejm committees the report on the activity of the National Labour Inspectorate (Panstwowa Inspekcja Pracy, PIP) in 2025. Inspectors examined almost 49,000 civil-law contracts, of which 46,500 were mandate contracts (umowa zlecenia); 2006 of them were challenged. Pay irregularities led to 6000 decisions - thanks to them 48,500 employees recovered outstanding wages and other amounts totalling PLN 158.4 million. For 4300 people working under civil-law contracts, benefits for breach of the minimum hourly rate were enforced in the amount of PLN 2.6 million. The Inspectorate stressed that in 2025 it was preparing for the reform strengthening its powers to reclassify improperly used civil-law contracts. This matters in practice for foreigners: a mandate contract is the most common basis on which foreigners work in Poland, and where an inspector challenges such a contract there are consequences on both sides - for the employer in terms of social security contributions and sanctions, for the foreigner in terms of whether the actual working conditions match what was stated in the work permit or declaration. The rule is simple: the basis of work entered in the legalisation document must match how the work is actually performed."
+  },
+  "es": {
+   "title": "La Inspeccion de Trabajo examino 49 000 contratos civiles. El contrato de mandato es la base de trabajo mas frecuente de los extranjeros en Polonia",
+   "summary": "El Inspector General de Trabajo presento ante las comisiones del Sejm el informe de actividad de la Inspeccion Estatal de Trabajo (Panstwowa Inspekcja Pracy, PIP) correspondiente a 2025. Los inspectores examinaron casi 49 000 contratos civiles, de los cuales 46 500 eran contratos de mandato (umowa zlecenia); se cuestionaron 2006 de ellos. Las irregularidades salariales dieron lugar a 6000 decisiones; gracias a ellas 48 500 trabajadores recuperaron salarios atrasados y otras cantidades por un total de 158,4 millones de PLN. Respecto de 4300 personas con contratos civiles se ejecutaron prestaciones por incumplimiento de la tarifa horaria minima por importe de 2,6 millones de PLN. La Inspeccion subrayo que en 2025 se preparaba para la reforma que refuerza sus competencias para reclasificar contratos civiles utilizados de forma indebida. Para los extranjeros esto tiene importancia practica: el contrato de mandato es la base mas frecuente de trabajo de los extranjeros en Polonia, y si el inspector lo cuestiona hay consecuencias para ambas partes: para el empleador en materia de cotizaciones y sanciones, y para el extranjero en cuanto a la correspondencia entre las condiciones reales de trabajo y lo indicado en el permiso de trabajo o la declaracion. La regla es sencilla: la base de trabajo inscrita en el documento de legalizacion debe corresponder a como se realiza el trabajo en la practica."
+  },
+  "uk": {
+   "title": "Інспекція праці перевірила 49 тис. цивільно-правових договорів. Договір доручення — найчастіша підстава роботи іноземців у Польщі",
+   "summary": "Головний інспектор праці представив комісіям Сейму звіт про діяльність Державної інспекції праці (Panstwowa Inspekcja Pracy, PIP) за 2025 рік. Інспектори перевірили майже 49 тис. цивільно-правових договорів, з яких 46,5 тис. становили договори доручення (umowa zlecenia); 2006 з них було оскаржено. Порушення в оплаті праці призвели до 6000 рішень — завдяки їм 48,5 тис. працівників повернули заборговану зарплату та інші виплати на суму 158,4 млн злотих. Щодо 4300 осіб, які працювали за цивільно-правовими договорами, стягнуто виплати за порушення мінімальної погодинної ставки на суму 2,6 млн злотих. Інспекція наголосила, що у 2025 році готувалася до реформи, яка посилює її повноваження щодо перекваліфікації неправильно застосованих цивільно-правових договорів. Для іноземців це має практичне значення: договір доручення — найчастіша підстава виконання роботи іноземцями в Польщі, а оскарження такого договору інспектором означає наслідки для обох сторін: для роботодавця — щодо внесків і санкцій, для іноземця — щодо відповідності фактичних умов праці тому, що зазначено в дозволі на роботу або заяві. Правило просте: підстава роботи, вписана в легалізаційний документ, повинна відповідати тому, як робота виконується насправді."
+  }
+ },
+ "artykul-pip-kontrola-czasu-pracy-i-wynagrodzen.html": {
+  "en": {
+   "title": "Inspection of working time and pay by the National Labour Inspectorate (PIP)",
+   "summary": "What the inspector checks in working-time records and payroll documentation: standards, rest periods, overtime, payment deadlines and deductions. Legal bases and sanctions after 2026. The material sets out the duties of the employer of the National Labour Inspectorate (Panstwowa Inspekcja Pracy, PIP) and the practical consequences for employees, including foreigners."
+  },
+  "es": {
+   "title": "Control del tiempo de trabajo y de los salarios por la Inspeccion de Trabajo (PIP)",
+   "summary": "Que revisa el inspector en el registro de la jornada laboral y en la documentacion salarial: normas, descanso, horas extraordinarias, plazos de pago y descuentos. Bases legales y sanciones a partir de 2026. El material expone las obligaciones del empleador ante la Inspeccion Estatal de Trabajo (Panstwowa Inspekcja Pracy, PIP) y las consecuencias practicas para los trabajadores, incluidos los extranjeros."
+  },
+  "uk": {
+   "title": "Перевірка робочого часу та заробітної плати Державною інспекцією праці (PIP)",
+   "summary": "Що перевіряє інспектор в обліку робочого часу та платіжній документації: норми, відпочинок, надурочні, строки виплат, утримання. Правові підстави та санкції після 2026 року. Матеріал описує обов'язки роботодавця перед Державною інспекцією праці (Panstwowa Inspekcja Pracy, PIP) та практичні наслідки для працівників, зокрема іноземців."
+  }
  }
 }
