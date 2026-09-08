@@ -1,6 +1,17 @@
 {
- "updated": "2026-09-07T13:03:23",
+ "updated": "2026-09-08T09:29:14",
  "items": [
+  {
+   "id": "2026-09-08-cosc-pip-kontrola-czasu-pracy-i-wynagrodzen",
+   "added": "2026-09-08",
+   "category": "Urzędy",
+   "scope": "PL",
+   "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+   "author": "Dariusz Włodarczyk Kancelaria TRC",
+   "url": "artykul-pip-kontrola-czasu-pracy-i-wynagrodzen.html",
+   "title": "Kontrola czasu pracy i wynagrodzeń przez PIP",
+   "summary": "Co sprawdza inspektor w ewidencji czasu pracy i dokumentacji płacowej: normy, odpoczynek, nadgodziny, terminy wypłat, potrącenia. Podstawy prawne i sankcje po 2026 r."
+  },
   {
    "id": "2026-09-07-cosc-pip-najczestsze-nieprawidlowosci",
    "added": "2026-09-07",
