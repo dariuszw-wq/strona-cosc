@@ -1,6 +1,17 @@
 {
- "updated": "2026-09-11T07:08:31",
+ "updated": "2026-09-11T19:08:49",
  "items": [
+  {
+   "id": "2026-09-11-cosc-pip-odwolanie-do-sadu-pracy",
+   "added": "2026-09-11",
+   "category": "Legislacja",
+   "scope": "PL",
+   "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+   "author": "Dariusz Włodarczyk Kancelaria TRC",
+   "url": "artykul-pip-odwolanie-do-sadu-pracy.html",
+   "title": "Jak odwołać się od decyzji PIP do sądu pracy",
+   "summary": "Odwołanie od decyzji PIP o stwierdzeniu stosunku pracy: miesiąc, sąd rejonowy, prekluzja dowodowa, zabezpieczenie z art. 755(6) k.p.c. Pełna procedura."
+  },
   {
    "id": "2026-09-11-cosc-rodzaje-zezwolen-na-prace-2026",
    "added": "2026-09-11",
