@@ -1,6 +1,17 @@
 {
- "updated": "2026-09-08T13:03:18",
+ "updated": "2026-09-11T07:40:42",
  "items": [
+  {
+   "id": "2026-09-11-cosc-pip-program-dzialania-2026",
+   "added": "2026-09-11",
+   "category": "Legislacja",
+   "scope": "PL",
+   "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+   "author": "Dariusz Włodarczyk Kancelaria TRC",
+   "url": "artykul-pip-program-dzialania-2026.html",
+   "title": "Program działania PIP — czego spodziewać się w 2026 r.",
+   "summary": "Po nowelizacji programy działania PIP dotyczą kontroli ukierunkowanych na podstawie analizy ryzyka. Co z przepisów wynika dla pracodawców: dane z ZUS i KAS, strategia GIP, standardy kontroli."
+  },
   {
    "id": "2026-09-08-cosc-pip-kontrola-dokumentacji-pracowniczej",
    "added": "2026-09-08",
