@@ -26,7 +26,7 @@
    * W katalogu jezykowym menu jest budowane z wlasnej mapy (MENU_EN), a odnosniki
    * do stron polskich musza dostac '../'. Jedno zrodlo prawdy dla calego serwisu. */
   var LOCDIR = (function () {
-    var m = /^\/(en|es)(\/|$)/.exec(location.pathname);
+    var m = /^\/(en|es|uk|ru|fr)(\/|$)/.exec(location.pathname);
     return m ? m[1] : '';
   })();
   var P = LOCDIR ? '../' : (/\/(cudzoziemcy|pracodawcy)\//.test(location.pathname) ? '../' : '');
@@ -223,17 +223,28 @@
    * NIE laduja i18n.js: uzytkownik ma byc przeniesiony na odpowiednik strony w innym
    * katalogu, a nie dostac tlumaczenie w locie. Pokazujemy wylacznie te wersje, ktore
    * dla TEJ strony faktycznie istnieja. */
+  /* Zrodlem prawdy sa znaczniki <link rel="alternate" hreflang> tej strony —
+   * te same, ktore widzi Google. Dzieki temu przelacznik nigdy nie rozjedzie sie
+   * z mapa wersji jezykowych i nie trzeba go aktualizowac przy nowej podstronie. */
+  function altLinks() {
+    var out = {};
+    var ls = document.querySelectorAll('link[rel="alternate"][hreflang]');
+    for (var i = 0; i < ls.length; i++) {
+      var c = ls[i].getAttribute('hreflang');
+      if (c && c !== 'x-default') out[c] = ls[i].getAttribute('href');
+    }
+    return out;
+  }
+  var LANG_ORDER = ['pl', 'en', 'es', 'uk', 'ru', 'fr'];
   function localeChip() {
     if (!LOCDIR) return '<div class="lang"><!-- przelacznik generuje i18n.js --></div>';
-    var pl = plPathOfCurrent();
+    var alts = altLinks();
     var out = [];
-    out.push(pl ? '<a href="' + pl + '" hreflang="pl" lang="pl">PL</a>'
-                : '<a href="/" hreflang="pl" lang="pl">PL</a>');
-    ['en', 'es'].forEach(function (code) {
-      var map = (code === 'en') ? EN_PAIRS : ES_PAIRS;
+    LANG_ORDER.forEach(function (code) {
       if (code === LOCDIR) { out.push('<a href="#" class="on" aria-current="true">' + code.toUpperCase() + '</a>'); return; }
-      var target = pl ? map[pl] : null;
-      if (target) out.push('<a href="/' + target + '" hreflang="' + code + '" lang="' + code + '">' + code.toUpperCase() + '</a>');
+      var href = alts[code];
+      if (!href && code === 'pl') href = plPathOfCurrent() || '/';
+      if (href) out.push('<a href="' + href + '" hreflang="' + code + '" lang="' + code + '">' + code.toUpperCase() + '</a>');
     });
     return '<div class="csh-lang">' + out.join('') + '</div>';
   }
@@ -306,7 +317,8 @@
     var path = location.pathname;
     if (/^\/en\/?$/.test(path)) return '/';
     if (/^\/es\/?$/.test(path)) return '/';
-    return (LOCDIR === 'en' ? EN_TO_PL : ES_TO_PL)[path] || null;
+    var map = (LOCDIR === 'en') ? EN_TO_PL : (LOCDIR === 'es') ? ES_TO_PL : null;
+    return map ? (map[path] || null) : path.replace(/^\/(en|es|uk|ru|fr)\//, '/');
   }
   function esAlt() {
     var path = location.pathname.replace(/\/+$/, '/') || '/';
@@ -453,8 +465,8 @@
 
     // język: reaguj na przełącznik i18n; ustaw stan początkowy z localStorage/URL
     document.addEventListener('cosc:langchange', function (e) { applyLang(e && e.detail && e.detail.lang); });
-    var init = 'pl';
-    if (!IS_PRACODAWCA_PAGE) {
+    var init = LOCDIR || 'pl';
+    if (!IS_PRACODAWCA_PAGE && !LOCDIR) {
       try {
         var q = new URLSearchParams(location.search).get('lang');
         init = q || localStorage.getItem('cosc_lang') || 'pl';

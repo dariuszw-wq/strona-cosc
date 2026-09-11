@@ -4,7 +4,9 @@ Allow: /og/
 Disallow: /fb-automat/
 Disallow: /zrodla-zablokowane.txt
 
-
 Sitemap: https://cosc.org.pl/sitemap.xml
-Sitemap: https://cosc.org.pl/sitemap-es.xml
 Sitemap: https://cosc.org.pl/sitemap-en.xml
+Sitemap: https://cosc.org.pl/sitemap-es.xml
+Sitemap: https://cosc.org.pl/sitemap-uk.xml
+Sitemap: https://cosc.org.pl/sitemap-ru.xml
+Sitemap: https://cosc.org.pl/sitemap-fr.xml

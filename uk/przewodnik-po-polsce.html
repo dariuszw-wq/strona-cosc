@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="uk" data-cosc-gen="2026-09-11">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Як пересуватися Польщею — путівник для іноземця (праця) | COSC</title>
+<meta name="description" content="Практичний путівник для іноземця, який приїжджає до Польщі на роботу: аеропорти, залізниця, автобуси, міський транспорт, перші кроки (PESEL.">
+<meta property="og:title" content="Jak poruszać się po Polsce — przewodnik dla cudzoziemca (praca) | COSC">
+<meta property="og:description" content="Praktyczny przewodnik dla cudzoziemca przyjeżdżającego do Polski do pracy: lotniska, kolej, autobusy, komunikacja miejska, pierwsze kroki (PESEL.">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;600;700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#16244c; --navy-d:#111a3a; --gold:#4636c9; --gold-l:#6d6ae0;
+  --cream:#f4f6fb; --ink:#16244c; --mut:#5B6478; --line:#e6e9f0;
+  --ok:#1a9a52; --red:#d4213d;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'IBM Plex Sans',sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;font-size:16px}
+h1,h2,h3,h4{font-family:'IBM Plex Serif',serif;color:var(--navy);line-height:1.18}
+a{color:var(--gold)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.btn{display:inline-block;text-decoration:none;font-weight:700;font-size:15px;padding:14px 26px;border-radius:10px;transition:.2s;text-align:center;cursor:pointer;border:none}
+.btn-gold{background:var(--red);color:#fff}
+.btn-gold:hover{background:#b81a32;transform:translateY(-1px)}
+.btn-line{border:1.5px solid rgba(255,255,255,.7);color:#fff}
+.btn-line:hover{background:rgba(255,255,255,.12)}
+.eyebrow{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#e7e5ff;margin-bottom:12px}
+
+/* TOP BARS */
+.mos{background:var(--gold);color:#fff;font-size:13.5px;font-weight:600;text-align:center;padding:9px 16px}
+.mos a{color:#ffd34d;font-weight:800}
+header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);position:sticky;top:0;z-index:50;box-shadow:0 2px 12px rgba(19,32,58,.25)}
+.flagbar{height:8px;background:linear-gradient(to bottom,#f5f5f5 50%,#d4213d 50%);border-bottom:1px solid rgba(22,36,76,.18);position:sticky;top:66px;z-index:49}
+.flag{flex-shrink:0;width:44px;height:29px;border-radius:3px;box-shadow:0 0 0 1px rgba(255,255,255,.4);overflow:hidden;display:flex;align-items:center;justify-content:center}
+.flag-ue{background:#1e3a8a}
+.flag-pl{flex-direction:column;width:34px;height:34px;border-radius:6px;margin-left:4px}
+.flag-pl .fw{flex:1;width:100%;background:#f5f5f5}
+.flag-pl .fr{flex:1;width:100%;background:#d4213d}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none}
+.logo .name{color:#fff;font-size:14px;line-height:1.3;font-weight:600;max-width:220px}
+.menu{display:flex;gap:22px;align-items:center}
+.menu a{color:#E9ECF3;text-decoration:none;font-size:14px;font-weight:500}
+.menu a:hover{color:var(--gold-l)}
+.lang{display:flex;gap:2px;border:1px solid rgba(255,255,255,.25);border-radius:8px;padding:2px}
+.lang a{padding:4px 8px;font-size:11.5px;font-weight:700;border-radius:6px;text-decoration:none;color:#cfd6e4}
+.lang a.on{background:var(--gold);color:#fff}
+.burger{display:none;background:none;border:none;color:#fff;font-size:26px;cursor:pointer;line-height:1}
+
+/* HERO */
+.hero{background:linear-gradient(160deg,#4636c9 0%,#3b2fbf 60%,#2f2699 100%);color:#fff;padding:54px 0 46px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border:1px solid rgba(255,255,255,.12);border-radius:50%}
+.crumb{font-size:12.5px;color:#c7cdf0;margin-bottom:14px}
+.crumb a{color:#c7cdf0;text-decoration:none}
+.crumb a:hover{color:#fff}
+.hero h1{color:#fff;font-size:clamp(28px,5.4vw,46px);font-weight:600;position:relative;z-index:2}
+.hero h1 em{font-style:normal;color:#ffd34d}
+.hero p.lead{margin:16px 0 24px;font-size:clamp(15px,2.4vw,18px);color:#dce4f5;max-width:640px;position:relative;z-index:2}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap;position:relative;z-index:2}
+.pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px;position:relative;z-index:2}
+.pill{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);color:#eef1fb;font-size:12.5px;font-weight:600;padding:7px 13px;border-radius:999px}
+
+/* LAYOUT */
+.layout{display:grid;grid-template-columns:260px 1fr;gap:40px;padding:44px 0 20px;align-items:start}
+/* TABLE OF CONTENTS */
+.toc{position:sticky;top:92px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 18px 14px;box-shadow:0 8px 24px rgba(19,32,58,.05)}
+.toc h2{font-size:13px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut);margin-bottom:12px}
+.toc ol{list-style:none;counter-reset:t}
+.toc li{counter-increment:t;margin:2px 0}
+.toc a{display:flex;gap:9px;align-items:baseline;text-decoration:none;color:var(--ink);font-size:14px;padding:7px 8px;border-radius:8px;font-weight:500}
+.toc a::before{content:counter(t);flex:none;width:20px;height:20px;font-size:11px;font-weight:700;color:var(--gold);background:#ece9fb;border-radius:6px;display:inline-flex;align-items:center;justify-content:center;font-family:'IBM Plex Sans'}
+.toc a:hover{background:var(--cream);color:var(--gold)}
+.toc-toggle{display:none}
+
+/* ARTICLE */
+article h2{font-size:clamp(23px,3.6vw,31px);font-weight:600;margin:8px 0 6px;scroll-margin-top:96px}
+article h3{font-size:19px;font-weight:600;margin:22px 0 6px}
+article p{margin:12px 0;color:#333b52}
+article .sec{padding:20px 0 8px;border-top:1px solid var(--line)}
+article .sec:first-child{border-top:none}
+.lead-in{font-size:17px;color:var(--mut)}
+.section-kicker{letter-spacing:.16em;text-transform:uppercase;font-size:12px;color:var(--gold);font-weight:700}
+
+/* CARDS */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:18px 0}
+.grid4{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:0 8px 24px rgba(19,32,58,.05)}
+.card .ic{font-size:30px;margin-bottom:8px}
+.card h3{margin:0 0 6px;font-size:18px}
+.card p{margin:0;font-size:14.5px;color:var(--mut)}
+a.card{text-decoration:none;color:inherit;display:block;transition:.2s}
+a.card:hover{transform:translateY(-3px);border-color:var(--gold-l);box-shadow:0 14px 32px rgba(70,54,201,.13)}
+a.card .go{display:inline-block;margin-top:12px;color:var(--gold);font-weight:700;font-size:14px}
+
+/* CALLOUT */
+.note{background:#f0f7ff;border-left:4px solid var(--gold);border-radius:0 12px 12px 0;padding:16px 18px;margin:18px 0;font-size:14.5px}
+.note.warn{background:#fff6ed;border-left-color:var(--red)}
+.note.ok{background:#f0faf3;border-left-color:var(--ok)}
+.note b{color:var(--navy)}
+
+/* TABLE */
+.tbl{width:100%;border-collapse:collapse;margin:16px 0;font-size:14px;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.tbl th,.tbl td{text-align:left;padding:11px 13px;border-bottom:1px solid var(--line);vertical-align:top}
+.tbl th{background:#f2f0fb;color:var(--navy);font-weight:700;font-size:13px}
+.tbl tr:last-child td{border-bottom:none}
+.tbl .yes{color:var(--ok);font-weight:700}
+.tbl .maybe{color:#b8791a;font-weight:700}
+
+/* FAQ */
+.faq details{background:#fff;border:1px solid var(--line);border-radius:12px;margin:10px 0;overflow:hidden}
+.faq summary{cursor:pointer;padding:16px 18px;font-weight:600;color:var(--navy);font-size:15.5px;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:22px;color:var(--gold);flex:none;transition:.2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq .a{padding:0 18px 16px;color:#333b52;font-size:14.5px}
+
+/* CTA */
+.cta{background:linear-gradient(150deg,#4636c9,#2f2699);color:#fff;border-radius:20px;padding:32px 26px;margin:36px 0;text-align:center;position:relative;overflow:hidden}
+.cta h2{color:#fff;font-size:clamp(22px,3.4vw,30px)}
+.cta p{color:#dce4f5;max-width:560px;margin:12px auto 20px}
+.cta .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* LEGAL SOURCES */
+.legal{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;margin:24px 0}
+.legal h3{font-size:16px;margin-bottom:8px}
+.legal ul{margin:6px 0 0 18px;font-size:13.5px;color:var(--mut);line-height:1.8}
+.legal .disc{margin-top:14px;font-size:12.5px;color:#8894ab;border-top:1px dashed var(--line);padding-top:12px}
+
+/* FOOTER */
+footer{background:var(--navy-d);color:#93A0B8;font-size:12.5px;padding:34px 0;margin-top:20px}
+.f-grid{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer a{color:#B9C3D6;text-decoration:none}
+footer .upd{margin-top:14px;font-size:11.5px;color:#6B7890}
+.wa-float{position:fixed;bottom:20px;right:20px;width:56px;height:56px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:26px;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.28);z-index:60}
+
+/* MOBILE */
+@media(max-width:900px){
+  .menu{display:none;position:absolute;top:66px;left:0;right:0;flex-direction:column;gap:0;background:#2f2699;padding:8px 0;box-shadow:0 12px 24px rgba(0,0,0,.25)}
+  .menu.open{display:flex}
+  .menu a{padding:13px 22px;width:100%;font-size:15px;border-bottom:1px solid rgba(255,255,255,.08)}
+  .nav{position:relative;justify-content:center}
+  .logo{justify-content:center;text-align:center}
+  .lang{position:absolute;right:54px;top:50%;transform:translateY(-50%)}
+  .burger{display:block;position:absolute;right:14px;top:50%;transform:translateY(-50%)}
+  .layout{grid-template-columns:1fr;gap:0;padding:22px 0 10px}
+  .toc{position:static;top:auto;margin-bottom:22px}
+  .toc h2{cursor:pointer;display:flex;justify-content:space-between;align-items:center;margin-bottom:0}
+  .toc h2::after{content:"▾";color:var(--gold);font-size:16px}
+  .toc.closed h2{margin-bottom:0}
+  .toc.closed ol{display:none}
+  .toc h2{margin-bottom:12px}
+  .grid2,.grid4{grid-template-columns:1fr}
+  .hero{padding:40px 0 36px}
+  .tbl{display:block;overflow-x:auto;white-space:nowrap}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+
+/* COSC-CANON-HEADER — ujednolicony pasek (wzór: index.html) */
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);position:sticky;top:0;z-index:50;box-shadow:0 2px 12px rgba(19,32,58,.25)}
+.flagbar{height:8px;background:linear-gradient(to bottom,#f5f5f5 50%,#d4213d 50%);border-bottom:1px solid rgba(22,36,76,.18);position:sticky;top:66px;z-index:49}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none}
+.logo .name{color:#fff;font-size:14px;line-height:1.3;font-weight:600;max-width:220px;font-family:'IBM Plex Serif',serif}
+.flag{flex-shrink:0;width:44px;height:29px;border-radius:3px;box-shadow:0 0 0 1px rgba(255,255,255,.4);overflow:hidden;display:flex;align-items:center;justify-content:center}
+.flag-pl{flex-direction:column;width:34px;height:34px;border-radius:6px;margin-left:4px}
+.flag-pl .fw{flex:1;width:100%;background:#f5f5f5}
+.flag-pl .fr{flex:1;width:100%;background:#d4213d}
+.menu{display:flex;gap:24px;align-items:center}
+.menu a{color:#E9ECF3;text-decoration:none;font-size:14px;font-weight:500}
+.menu a:hover{color:#6d6ae0}
+.menu a.on{color:#6d6ae0}
+.lang{display:flex;gap:2px;border:1px solid rgba(255,255,255,.25);border-radius:8px;padding:2px}
+.lang a{padding:4px 8px;font-size:11.5px;font-weight:700;border-radius:6px;text-decoration:none;color:#cfd6e4}
+.lang a.on{background:#4636c9;color:#16244c}
+.burger{display:none;background:none;border:none;color:#fff;font-size:26px;cursor:pointer}
+@media(max-width:900px){
+  header .nav{position:relative;justify-content:center}
+  header .logo{justify-content:center;text-align:center}
+  .lang{position:absolute;right:54px;top:50%;transform:translateY(-50%)}
+  .burger{display:block;position:absolute;right:14px;top:50%;transform:translateY(-50%)}
+  .menu{display:none;position:absolute;top:66px;left:0;right:0;flex-direction:column;gap:0;background:#2f2699;padding:6px 0;box-shadow:0 12px 24px rgba(0,0,0,.25);z-index:48}
+  .menu.open{display:flex}
+  .menu a{padding:13px 22px;width:100%;font-size:15px;border-bottom:1px solid rgba(255,255,255,.08)}
+}
+
+</style>
+<style id="fix-mobilny-2026-07-25">
+/* Poprawka mobilna: flaga PL nie nachodzi na logo, tytul hero nie jest uciety */
+@media(max-width:900px){
+  header .nav{justify-content:flex-start;padding-right:104px;box-sizing:border-box}
+  header .logo{justify-content:flex-start;text-align:left}
+  header .logo .flag-pl{display:flex!important;width:34px;height:34px}
+  header .logo .name{max-width:none}
+  .hero h1{font-size:clamp(23px,6.4vw,44px);overflow-wrap:break-word}
+}
+</style>
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Jak poruszać się po Polsce — przewodnik dla cudzoziemca (praca) | COSC">
+<meta property="og:description" content="Praktyczny przewodnik dla cudzoziemca przyjeżdżającego do Polski do pracy: lotniska, kolej, autobusy, komunikacja miejska, pierwsze kroki (PESEL.">
+<meta property="og:url" content="https://cosc.org.pl/uk/przewodnik-po-polsce.html">
+<meta property="og:image" content="https://cosc.org.pl/og/przewodnik-po-polsce.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://cosc.org.pl/og/przewodnik-po-polsce.png">
+<link rel="canonical" href="https://cosc.org.pl/uk/przewodnik-po-polsce.html"><link rel="alternate" hreflang="pl" href="https://cosc.org.pl/przewodnik-po-polsce.html"><link rel="alternate" hreflang="en" href="https://cosc.org.pl/en/przewodnik-po-polsce.html"><link rel="alternate" hreflang="es" href="https://cosc.org.pl/es/przewodnik-po-polsce.html"><link rel="alternate" hreflang="uk" href="https://cosc.org.pl/uk/przewodnik-po-polsce.html"><link rel="alternate" hreflang="ru" href="https://cosc.org.pl/ru/przewodnik-po-polsce.html"><link rel="alternate" hreflang="fr" href="https://cosc.org.pl/fr/przewodnik-po-polsce.html"><link rel="alternate" hreflang="x-default" href="https://cosc.org.pl/przewodnik-po-polsce.html"></head>
+<body>
+
+<header id="site-header"></header>
+<div class="flagbar" aria-hidden="true"></div>
+
+<div class="hero">
+  <div class="wrap">
+    <nav class="crumb" aria-label="Навігаційний шлях"><a href="index.html">Головна</a> › <a href="przewodnik-po-polsce.html">Путівник по Польщі</a></nav>
+    <span class="eyebrow">Практичний путівник · для тих, хто шукає роботу</span>
+    <h1>Як пересуватися Польщею — <em>путівник для іноземця</em></h1>
+    <p class="lead">Дорога до міста роботи, щоденний транспорт і перші формальності після приїзду — зібрані в одному місці, під патронатом юриста.</p>
+    <div class="hero-ctas"><a class="btn btn-gold" href="#transport">Дивіться транспорт →</a><a class="btn btn-line" href="#pierwsze">Перші кроки</a></div>
+    <div class="pills"><span class="pill">✈️ Аеропорти</span><span class="pill">🚆 Залізниця</span><span class="pill">🚌 Автобуси</span><span class="pill">🎫 Міські квитки</span><span class="pill">🧭 Перші кроки</span></div>
+  </div>
+</div>
+
+<div class="wrap layout">
+
+  <aside class="toc" id="toc">
+    <h2 id="tocHead">Зміст</h2>
+    <ol>
+      <li><a href="#start">Почніть тут</a></li>
+      <li><a href="#transport">Транспорт Польщею</a></li>
+      <li><a href="#pierwsze">Перші кроки</a></li>
+      <li><a href="#bezpieczenstwo">Як не дати себе обдурити</a></li>
+      <li><a href="#praca">Праця і легалізація</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#zrodla">Джерела</a></li>
+    </ol>
+  </aside>
+
+  <article>
+    <section class="sec" id="start">
+      <span class="section-kicker">Почніть тут</span>
+      <h2>Порадник для тих, хто приїжджає до Польщі на роботу</h2>
+<p class="lead-in">Це не туристичний путівник. Ми зібрали в ньому практичні знання для людини, яка приїжджає до Польщі <b>заробити</b>: як дешево і зручно дістатися міста роботи, як пересуватися транспортом та що залагодити в перші дні, щоб усе було легально й безпечно.</p>
+<p>Нижче знайдете чотири розділи про транспорт і короткий план «перших кроків». Наприкінці — як розпізнати нечесного посередника і не втратити гроші.</p>
+    </section>
+    <section class="sec" id="transport">
+      <span class="section-kicker">Як пересуватися</span>
+      <h2>Транспорт Польщею — 4 способи</h2>
+<div class="grid4">
+  <a class="card" href="lotniska-w-polsce-dla-cudzoziemcow.html"><div class="ic">✈️</div><h3>Аеропорти</h3><p>Які є аеропорти, де вони розташовані і як дістатися з аеропорту до центру.</p><span class="go">Відкрити →</span></a>
+  <a class="card" href="dworce-kolejowe-pkp-dla-cudzoziemcow.html"><div class="ic">🚆</div><h3>Залізниця і вокзали PKP</h3><p>Адреси головних вокзалів, перевізники і як купити квиток.</p><span class="go">Відкрити →</span></a>
+  <a class="card" href="autobusy-dalekobiezne-dla-cudzoziemcow.html"><div class="ic">🚌</div><h3>Міжміські автобуси</h3><p>FlixBus і національні перевізники, міжнародні маршрути, квитки.</p><span class="go">Відкрити →</span></a>
+  <a class="card" href="komunikacja-miejska-bilety-aplikacje.html"><div class="ic">🎫</div><h3>Міський транспорт</h3><p>Квитки, зони, компостування і застосунки в телефоні.</p><span class="go">Відкрити →</span></a>
+</div>
+    </section>
+    <section class="sec" id="pierwsze">
+      <span class="section-kicker">Перші дні</span>
+      <h2>Що залагодити одразу після приїзду</h2>
+<p>Перш ніж вирушите на роботу, кілька формальностей полегшать вам життя: номер PESEL, прописка, рахунок у банку, польська SIM-карта та медичне страхування. Черговість і деталі описали окремо.</p>
+<a class="card" href="pierwsze-kroki-po-przyjezdzie.html" style="display:block;margin-top:8px"><div class="ic">🧭</div><h3>Перші кроки після приїзду</h3><p>PESEL · прописка · банківський рахунок · SIM-карта · медичне страхування (NFZ/ZUS).</p><span class="go">Дивіться план крок за кроком →</span></a>
+    </section>
+    <section class="sec" id="bezpieczenstwo">
+      <span class="section-kicker">Обережно</span>
+      <h2>Як не дати себе обдурити</h2>
+<div class="note warn"><b>Золоте правило:</b> за саме лише знаходження роботи в Польщі <b>посереднику не платять</b>. Якщо хтось вимагає оплату «за влаштування на роботу» або зарплату «в конверті» без договору — це тривожний сигнал.</div>
+<h3>На що звернути увагу</h3>
+<p>Перевірте агенцію праці в офіційному <b>Національному реєстрі агенцій зайнятості (KRAZ)</b> — легальна агенція мусить мати в ньому запис. Завжди вимагайте <b>договір у письмовій формі</b> мовою, яку розумієте, і нікому не віддавайте паспорт «на зберігання». Стережіться пропозицій житла, де ви платите наперед, перш ніж побачити приміщення.</p>
+<p>Якщо роботодавець порушує право (не платить, не реєструє в ZUS), безкоштовну допомогу пропонує <b>Державна інспекція праці</b> — зокрема в межах кампанії «Іноземці на роботі». Посилання знайдете в джерелах унизу.</p>
+    </section>
+    <section class="sec" id="praca">
+      <span class="section-kicker">Ми під патронатом юриста</span>
+      <h2>Праця і легалізація перебування — допоможемо</h2>
+<div class="cta"><h2>Маєте питання про працю, перебування або виплати?</h2><p>Перевіримо вашу ситуацію, проведемо заяву про перебування і працю в системі MOS та допоможемо відшкодувати кошти від нечесного роботодавця.</p><div class="btns"><a class="btn btn-gold" href="../formularz-pobyt-czasowy-praca-NOWA.html">Заповніть анкету — допоможемо →</a><a class="btn btn-line" href="swiadczenia-cudzoziemcy.html">Виплати і допомоги</a></div></div>
+    </section>
+    <section class="sec" id="faq">
+      <span class="section-kicker">Часті запитання</span>
+      <h2>FAQ</h2>
+<div class="faq"><details><summary>Чи путівник лише для працівників з України?</summary><div class="a">Ні. Поради стосуються кожного іноземця, який приїжджає до Польщі на роботу — незалежно від країни походження. Частина інформації (напр. про автобусні сполучення) особливо корисна для осіб зі Сходу.</div></details><details><summary>Чи мушу мати PESEL, щоб почати роботу?</summary><div class="a">Для самого початку роботи не завжди, але PESEL дуже полегшує життя — він потрібен, зокрема, для трудового договору/договору доручення, банківського рахунку та розрахунків. Деталі в розділі «Перші кроки».</div></details><details><summary>Звідки я знаю, що агенція праці легальна?</summary><div class="a">Перевірте її запис у Національному реєстрі агенцій зайнятості (KRAZ) — безкоштовний онлайн-пошуковик, який веде Міністерство. Відсутність запису — серйозний тривожний сигнал.</div></details></div>
+    </section>
+    <section class="sec" id="zrodla">
+      <span class="section-kicker">Основа</span>
+      <h2>Джерела та корисні посилання</h2>
+<div class="legal"><h3>Джерела та корисні посилання</h3><ul><li>Національний реєстр агенцій зайнятості (KRAZ) — <a href="https://psz.praca.gov.pl/rynek-pracy/bazy-danych/rejestr-agencji-zatrudnienia" target="_blank" rel="noopener nofollow">psz.praca.gov.pl</a></li><li>Державна інспекція праці — кампанія «Іноземці на роботі» — <a href="https://cudzoziemcywpracy.pip.gov.pl/" target="_blank" rel="noopener nofollow">cudzoziemcywpracy.pip.gov.pl</a></li><li>Отримайте номер PESEL для іноземців — <a href="https://www.gov.pl/web/gov/uzyskaj-numer-pesel-dla-cudzoziemcow" target="_blank" rel="noopener nofollow">gov.pl</a></li></ul><div class="disc">Зміст має інформаційний характер і не є юридичною порадою. Ціни, розклади, адреси й процедури можуть змінюватися — перед подорожжю або поданням документів підтвердьте актуальну інформацію у вказаному джерелі або в нас. Станом на 07.2026.</div></div>
+    </section>
+  </article>
+</div>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"Article","headline":"Jak poruszać się po Polsce — przewodnik dla cudzoziemca","inLanguage":"pl","author":{"@type":"Organization","name":"Centrum Obsługi Spraw Cudzoziemców — Dariusz Włodarczyk Kancelaria TRC"},"publisher":{"@type":"Organization","name":"Centrum Obsługi Spraw Cudzoziemców"},"dateModified":"2026-07-25","description":"Praktyczny przewodnik transportowy i startowy dla cudzoziemca przyjeżdżającego do Polski do pracy."},
+{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Strona główna","item":"https://cosc.org.pl/index.html"},{"@type":"ListItem","position":2,"name":"Przewodnik po Polsce","item":"https://cosc.org.pl/przewodnik-po-polsce.html"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Skąd wiem, że agencja pracy jest legalna?","acceptedAnswer":{"@type":"Answer","text":"Sprawdź jej wpis w Krajowym Rejestrze Agencji Zatrudnienia (KRAZ) — bezpłatna wyszukiwarka online. Brak wpisu to sygnał ostrzegawczy."}},{"@type":"Question","name":"Czy muszę mieć PESEL, żeby zacząć pracę?","acceptedAnswer":{"@type":"Answer","text":"PESEL bardzo ułatwia formalności (umowa, konto bankowe, rozliczenia) i w wielu sytuacjach jest wymagany."}}]}
+]}
+</script>
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>© 2026 Центр обслуговування справ іноземців · Dariusz Włodarczyk Kancelaria TRC</div>
+      <div><a href="index.html">Головна</a> · <a href="regulamin.html">Умови</a> · <a href="polityka-prywatnosci.html">Політика конфіденційності</a></div>
+    </div>
+    <div class="upd">Зміст має інформаційний характер і не є юридичною консультацією. Правовий стан на: 25.07.2026.</div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/48539999549" aria-label="Напишіть нам у WhatsApp">✆</a>
+
+
+
+<script>
+// menu mobilne
+var b=document.getElementById('burger'),m=document.getElementById('menu');
+b&&b.addEventListener('click',function(){m.classList.toggle('open')});
+m&&m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open')})});
+// spis treści — zwijany na telefonie
+var th=document.getElementById('tocHead'),toc=document.getElementById('toc');
+if(window.matchMedia('(max-width:900px)').matches){toc.classList.add('closed')}
+th&&th.addEventListener('click',function(){if(window.matchMedia('(max-width:900px)').matches)toc.classList.toggle('closed')});
+</script>
+<script src="../site-header.js"></script>
+<script>
+(function(){var b=document.querySelector('.burger'),m=document.querySelector('.menu');if(b&&m){b.addEventListener('click',function(){m.classList.toggle('open')});m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open')})});}})();
+</script>
+</body>
+</html>

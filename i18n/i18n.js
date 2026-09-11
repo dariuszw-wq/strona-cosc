@@ -268,6 +268,17 @@
            * w site-header.js), przechodzimy na niego zamiast tłumaczyć w locie —
            * użytkownik dostaje treść napisaną po hiszpańsku, a nie fallback do PL.
            * To NIE jest przekierowanie automatyczne: dzieje się tylko po kliknięciu. */
+          /* Statyczna wersja jezykowa: jesli strona deklaruje <link rel="alternate"
+           * hreflang="xx">, przechodzimy na ten adres zamiast tlumaczyc w locie.
+           * Te same znaczniki widzi Google, wiec przelacznik i mapa wersji jezykowych
+           * nie moga sie rozjechac. Tylko po klikniecu — bez autoprzekierowan. */
+          var stat = document.querySelector('link[rel="alternate"][hreflang="' + code + '"]');
+          if (stat && code !== DEFAULT_LANG) {
+            var href = stat.getAttribute('href');
+            if (href && href.replace(/^https?:\/\/[^\/]+/, '') !== location.pathname) {
+              closeAll(); location.href = href; return;
+            }
+          }
           if (code === 'es' && typeof window.COSC_ES_ALT === 'function') {
             var alt = null;
             try { alt = window.COSC_ES_ALT(); } catch (err) { alt = null; }
