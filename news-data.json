@@ -1,6 +1,72 @@
 {
- "updated": "2026-09-11T08:05:39",
+ "updated": "2026-09-11T07:08:31",
  "items": [
+  {
+   "id": "2026-09-11-cosc-rodzaje-zezwolen-na-prace-2026",
+   "added": "2026-09-11",
+   "category": "Rynek pracy",
+   "scope": "PL",
+   "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+   "author": "Dariusz Włodarczyk Kancelaria TRC",
+   "url": "artykul-rodzaje-zezwolen-na-prace-2026.html",
+   "title": "Rodzaje zezwoleń na pracę cudzoziemca w 2026 r. — nowe nazwy zamiast typów A–E",
+   "summary": "Od 1.01.2026 nie ma typów A–E. Nowe nazwy wniosków: ZC-WWZPP, ZC-WWZF, ZC-WWZD i praca sezonowa. Opłaty 100–800 zł. Przewodnik dla pracodawców i kadr. Stan 2026.",
+   "t": {
+    "en": {
+     "title": "Types of work permits for foreigners in 2026 — new names instead of types A–E",
+     "summary": "From 1.01.2026 there are no types A–E. New application names: ZC-WWZPP, ZC-WWZF, ZC-WWZD and seasonal work. Fees 100–800 PLN. A guide for employers and HR. Status 2026."
+    },
+    "es": {
+     "title": "Tipos de permisos de trabajo para extranjeros en 2026: nuevos nombres en lugar de los tipos A–E",
+     "summary": "Desde el 1.01.2026 no existen los tipos A–E. Nuevos nombres de solicitudes: ZC-WWZPP, ZC-WWZF, ZC-WWZD y trabajo de temporada. Tasas de 100 a 800 PLN. Guía para empleadores y recursos humanos. Estado 2026."
+    },
+    "uk": {
+     "title": "Види дозволів на роботу для іноземців у 2026 р. — нові назви замість типів A–E",
+     "summary": "З 1.01.2026 типів A–E немає. Нові назви заяв: ZC-WWZPP, ZC-WWZF, ZC-WWZD та сезонна робота. Збори 100–800 злотих. Посібник для роботодавців і кадрових служб. Стан 2026."
+    },
+    "ru": {
+     "title": "Виды разрешений на работу для иностранцев в 2026 г. — новые названия вместо типов A–E",
+     "summary": "С 1.01.2026 типов A–E нет. Новые названия заявлений: ZC-WWZPP, ZC-WWZF, ZC-WWZD и сезонная работа. Пошлины 100–800 злотых. Руководство для работодателей и кадров. Состояние 2026."
+    },
+    "fr": {
+     "title": "Types d'autorisations de travail pour étrangers en 2026 — de nouveaux noms à la place des types A–E",
+     "summary": "Depuis le 1.01.2026, les types A–E n'existent plus. Nouveaux noms des demandes : ZC-WWZPP, ZC-WWZF, ZC-WWZD et travail saisonnier. Frais de 100 à 800 PLN. Guide pour les employeurs et les RH. État 2026."
+    }
+   }
+  },
+  {
+   "id": "2026-09-09-cosc-zus-obywatel-ukrainy-polska-ukraina",
+   "added": "2026-09-09",
+   "category": "Rynek pracy",
+   "scope": "PL",
+   "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+   "author": "Dariusz Włodarczyk Kancelaria TRC",
+   "url": "artykul-zus-obywatel-ukrainy-polska-ukraina.html",
+   "title": "Składki ZUS obywatela Ukrainy i umowa Polska–Ukraina",
+   "summary": "ZUS za obywatela Ukrainy: umowa o zabezpieczeniu społecznym (Dz.U. 2013 poz. 1373), gdzie płaci się składki, sumowanie okresów, delegowanie. Praktyczny przewodnik. Stan 2026.",
+   "t": {
+    "en": {
+     "title": "Social security contributions for Ukrainian citizens and the Poland–Ukraine agreement",
+     "summary": "Social security (ZUS) for a Ukrainian citizen: the social security agreement (Dz.U. 2013 poz. 1373), where contributions are paid, aggregation of periods, posting of workers. A practical guide. Status 2026."
+    },
+    "es": {
+     "title": "Cotizaciones ZUS del ciudadano ucraniano y el convenio Polonia–Ucrania",
+     "summary": "ZUS por un ciudadano ucraniano: el convenio de seguridad social (Dz.U. 2013 poz. 1373), dónde se pagan las cotizaciones, la totalización de periodos, el desplazamiento de trabajadores. Guía práctica. Estado 2026."
+    },
+    "uk": {
+     "title": "Внески ZUS громадянина України та угода Польща–Україна",
+     "summary": "ZUS за громадянина України: угода про соціальне забезпечення (Dz.U. 2013 poz. 1373), де сплачуються внески, підсумовування періодів, відрядження. Практичний посібник. Стан 2026."
+    },
+    "ru": {
+     "title": "Взносы ZUS гражданина Украины и соглашение Польша–Украина",
+     "summary": "ZUS за гражданина Украины: соглашение о социальном обеспечении (Dz.U. 2013 poz. 1373), где уплачиваются взносы, суммирование периодов, командирование. Практическое руководство. Состояние 2026."
+    },
+    "fr": {
+     "title": "Cotisations ZUS du citoyen ukrainien et la convention Pologne–Ukraine",
+     "summary": "ZUS pour un citoyen ukrainien : la convention de sécurité sociale (Dz.U. 2013 poz. 1373), où les cotisations sont payées, la totalisation des périodes, le détachement. Guide pratique. État 2026."
+    }
+   }
+  },
   {
    "id": "2026-09-09-kontrola-legalnosci-zatrudnienia-podlaskie",
    "added": "2026-09-11",
