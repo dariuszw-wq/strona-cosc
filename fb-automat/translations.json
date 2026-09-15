@@ -1580,5 +1580,19 @@
    "title": "Чи може PIP вимагати документи в електронній формі?",
    "summary": "Власний матеріал Центру обслуговування справ іноземців. Від 8 липня 2026 року art. 23 ust. 1 pkt 5 ustawy o PIP прямо дозволяє вимагати особові справи в паперовій або електронній формі. У статті пояснено обсяг і межі такої вимоги."
   }
+ },
+ "artykul-checklista-dokumentow-kontrola.html": {
+  "en": {
+   "title": "Document checklist before an inspection of foreign national employment",
+   "summary": "Checklist for lawful employment of a foreign national: residence document, legal basis for work, contract, delivery of the contract and notification, ZUS registrations, deadlines. Get ready for a PIP/SG inspection. 2026."
+  },
+  "es": {
+   "title": "Lista de documentos antes de una inspección del empleo de un extranjero",
+   "summary": "Lista de comprobación del empleo legal de un extranjero: documento de residencia, base legal del trabajo, contrato, entrega del contrato y notificación, altas en el ZUS, plazos. Prepárese para una inspección de la PIP/SG. 2026."
+  },
+  "uk": {
+   "title": "Чек-лист документів перед перевіркою працевлаштування іноземця",
+   "summary": "Чек-лист легального працевлаштування іноземця: документ про перебування, підстава для роботи, договір, передання договору та повідомлення, реєстрація в ZUS, строки. Підготуйтеся до перевірки PIP/SG. 2026."
+  }
  }
 }
