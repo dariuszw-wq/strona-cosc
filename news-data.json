@@ -1,6 +1,39 @@
 {
- "updated": "2026-09-15T09:08:22",
+ "updated": "2026-09-15T11:41:30",
  "items": [
+  {
+   "id": "2026-09-15-migranci-w-chlodni-a2-poznan",
+   "added": "2026-09-15",
+   "category": "Bezpieczeństwo",
+   "scope": "PL",
+   "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+   "author": "Dariusz Włodarczyk Kancelaria TRC",
+   "url": "artykul-migranci-w-chlodni-a2-poznan-straz-graniczna.html",
+   "title": "35 migrantów w chłodni ciężarówki na A2 pod Poznaniem [materiał własny COSC]",
+   "summary": "Straż Graniczna zatrzymała na A2 pod Poznaniem 35 osób ukrytych w chłodni ciężarówki. Omawiamy, co grozi za organizowanie nielegalnego przekroczenia granicy (art. 264 § 3 i § 4 k.k.), za ułatwianie nielegalnego pobytu (art. 264a k.k.) oraz jakie skutki ma to dla cudzoziemców (art. 302 ustawy o cudzoziemcach).",
+   "t": {
+    "en": {
+     "title": "35 migrants in a refrigerated truck on the A2 near Poznań [COSC original]",
+     "summary": "The Border Guard detained 35 people hidden in a refrigerated truck on the A2 motorway near Poznań. We explain the penalties for organising illegal border crossings (art. 264 § 3 and § 4 k.k.), for facilitating illegal stay (art. 264a k.k.) and the consequences for foreign nationals (art. 302 of the Act on Foreigners)."
+    },
+    "es": {
+     "title": "35 migrantes en un camión frigorífico en la A2 cerca de Poznań [material propio COSC]",
+     "summary": "La Guardia de Fronteras detuvo en la autopista A2 cerca de Poznań a 35 personas ocultas en un camión frigorífico. Explicamos las penas por organizar el cruce ilegal de la frontera (art. 264 § 3 y § 4 k.k.), por facilitar la estancia ilegal (art. 264a k.k.) y las consecuencias para los extranjeros (art. 302 de la Ley de Extranjeros)."
+    },
+    "uk": {
+     "title": "35 мігрантів у рефрижераторі на трасі A2 під Познанню [власний матеріал COSC]",
+     "summary": "Прикордонна служба затримала на автомагістралі A2 під Познанню 35 осіб, які переховувалися в рефрижераторі вантажівки. Пояснюємо, що загрожує за організацію незаконного перетину кордону (art. 264 § 3 і § 4 k.k.), за сприяння незаконному перебуванню (art. 264a k.k.) та які наслідки це має для іноземців (art. 302 закону про іноземців)."
+    },
+    "ru": {
+     "title": "35 мигрантов в рефрижераторе на трассе A2 под Познанью [собственный материал COSC]",
+     "summary": "Пограничная служба задержала на автомагистрали A2 под Познанью 35 человек, спрятанных в рефрижераторе грузовика. Объясняем, что грозит за организацию незаконного пересечения границы (art. 264 § 3 и § 4 k.k.), за содействие незаконному пребыванию (art. 264a k.k.) и какие последствия это имеет для иностранцев (art. 302 закона об иностранцах)."
+    },
+    "fr": {
+     "title": "35 migrants dans un camion frigorifique sur l’A2 près de Poznań [contenu original COSC]",
+     "summary": "Les garde-frontières ont interpellé sur l’autoroute A2 près de Poznań 35 personnes cachées dans un camion frigorifique. Nous expliquons les peines encourues pour l’organisation du franchissement illégal de la frontière (art. 264 § 3 et § 4 k.k.), pour la facilitation du séjour illégal (art. 264a k.k.) et les conséquences pour les étrangers (art. 302 de la loi sur les étrangers)."
+    }
+   }
+  },
   {
    "id": "2026-09-14-cosc-checklista-dokumentow-kontrola",
    "added": "2026-09-14",
