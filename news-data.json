@@ -1,6 +1,39 @@
 {
- "updated": "2026-09-15T08:05:27",
+ "updated": "2026-09-15T09:08:22",
  "items": [
+  {
+   "id": "2026-09-14-cosc-checklista-dokumentow-kontrola",
+   "added": "2026-09-14",
+   "category": "Rynek pracy",
+   "scope": "PL",
+   "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+   "author": "Dariusz Włodarczyk Kancelaria TRC",
+   "url": "artykul-checklista-dokumentow-kontrola.html",
+   "title": "Checklista dokumentów przed kontrolą zatrudnienia cudzoziemca",
+   "summary": "Checklista legalnego zatrudnienia cudzoziemca: dokument pobytowy, podstawa pracy, umowa, przekazanie umowy i powiadomienie, zgłoszenia ZUS, terminy. Przygotuj się do kontroli PIP/SG. 2026.",
+   "t": {
+    "en": {
+     "title": "Document checklist before an inspection of foreign national employment",
+     "summary": "Checklist for lawful employment of a foreign national: residence document, legal basis for work, contract, delivery of the contract and notification, ZUS registrations, deadlines. Get ready for a PIP/SG inspection. 2026."
+    },
+    "es": {
+     "title": "Lista de documentos antes de una inspección del empleo de un extranjero",
+     "summary": "Lista de comprobación del empleo legal de un extranjero: documento de residencia, base legal del trabajo, contrato, entrega del contrato y notificación, altas en el ZUS, plazos. Prepárese para una inspección de la PIP/SG. 2026."
+    },
+    "uk": {
+     "title": "Чек-лист документів перед перевіркою працевлаштування іноземця",
+     "summary": "Чек-лист легального працевлаштування іноземця: документ про перебування, підстава для роботи, договір, передання договору та повідомлення, реєстрація в ZUS, строки. Підготуйтеся до перевірки PIP/SG. 2026."
+    },
+    "ru": {
+     "title": "Чек-лист документов перед проверкой трудоустройства иностранца",
+     "summary": "Чек-лист легального трудоустройства иностранца: документ о пребывании, основание для работы, договор, передача договора и уведомление, регистрация в ZUS, сроки. Подготовьтесь к проверке PIP/SG. 2026."
+    },
+    "fr": {
+     "title": "Liste des documents à préparer avant un contrôle de l'emploi d'un étranger",
+     "summary": "Liste de contrôle de l'emploi légal d'un étranger : document de séjour, base légale du travail, contrat, remise du contrat et notification, déclarations au ZUS, délais. Préparez-vous à un contrôle PIP/SG. 2026."
+    }
+   }
+  },
   {
    "id": "2026-09-15-przekroczenie-pobytu-schengen-zakazy-wjazdu-poznan",
    "added": "2026-09-15",
