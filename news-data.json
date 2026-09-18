@@ -1,6 +1,39 @@
 {
-  "updated": "2026-09-18T06:04:50Z",
+  "updated": "2026-09-18T07:09:03Z",
   "items": [
+    {
+      "id": "2026-09-18-cosc-cofniecie-uchylenie-wygasniecie-zezwolenia",
+      "added": "2026-09-18",
+      "category": "Rynek pracy",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-cofniecie-uchylenie-wygasniecie-zezwolenia.html",
+      "title": "Cofnięcie, uchylenie i wygaśnięcie zezwolenia na pracę — co robić",
+      "summary": "Cofnięcie, uchylenie i wygaśnięcie zezwolenia na pracę cudzoziemca: czym się różnią, skutki dla pracownika i pracodawcy, jak zareagować i jak zapobiegać. Stan 2026.",
+      "t": {
+        "en": {
+          "title": "Withdrawal, revocation and expiry of a work permit — what to do",
+          "summary": "Withdrawal, revocation and expiry of a foreign national's work permit: how they differ, the consequences for the employee and the employer, how to react and how to prevent them. Position as at 2026."
+        },
+        "es": {
+          "title": "Retirada, revocación y caducidad del permiso de trabajo: qué hacer",
+          "summary": "Retirada, revocación y caducidad del permiso de trabajo de un extranjero: en qué se diferencian, consecuencias para el trabajador y para el empleador, cómo reaccionar y cómo prevenirlas. Situación en 2026."
+        },
+        "uk": {
+          "title": "Скасування, відкликання та втрата чинності дозволу на роботу — що робити",
+          "summary": "Скасування, відкликання та втрата чинності дозволу на роботу іноземця: чим вони відрізняються, наслідки для працівника та роботодавця, як зреагувати і як цьому запобігти. Стан на 2026 рік."
+        },
+        "ru": {
+          "title": "Аннулирование, отмена и прекращение действия разрешения на работу — что делать",
+          "summary": "Аннулирование, отмена и прекращение действия разрешения на работу иностранца: чем они различаются, последствия для работника и работодателя, как отреагировать и как этого избежать. Состояние на 2026 год."
+        },
+        "fr": {
+          "title": "Retrait, annulation et expiration de l'autorisation de travail : que faire",
+          "summary": "Retrait, annulation et expiration de l'autorisation de travail d'un étranger : en quoi ils diffèrent, conséquences pour le salarié et pour l'employeur, comment réagir et comment les prévenir. État en 2026."
+        }
+      }
+    },
     {
       "id": "2026-09-17-kontrola-legalnosci-zatrudnienia-sosnowiec-zarzad",
       "added": "2026-09-17",
