@@ -28,6 +28,10 @@ from lxml import etree
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = 'https://cosc.org.pl'
 LANGS = ['en', 'es', 'uk', 'ru', 'fr']
+
+def pretty(p):
+    """Adres kanoniczny: 'a/b/index.html' -> 'a/b/', 'index.html' -> ''."""
+    return p[:-len('index.html')] if p.endswith('index.html') else p
 PROG = 0.80          # minimalne pokrycie slownikowe strony, zeby ja wydac
 DATA_ATTR = 'data-cosc-gen'   # znacznik "plik wygenerowany automatycznie"
 
@@ -226,7 +230,7 @@ def translate_page(page, lang, dicts, local_map, alternates):
     # 7) canonical + hreflang (pelny, wzajemny zestaw)
     for el in doc.xpath('//link[@rel="canonical"] | //link[@rel="alternate"][@hreflang]'):
         el.getparent().remove(el)
-    self_url = SITE + '/' + lang + '/' + ('' if page == 'index.html' else page)
+    self_url = SITE + '/' + lang + '/' + pretty(page)
     can = etree.SubElement(head, 'link'); can.set('rel', 'canonical'); can.set('href', self_url)
     for code, url_ in alternates:
         a = etree.SubElement(head, 'link')
@@ -306,14 +310,14 @@ def main():
 
     # --- mapa alternatyw (pelna wzajemnosc) ---
     def alts_for(p):
-        out = [('pl', SITE + '/' + ('' if p == 'index.html' else p))]
+        out = [('pl', SITE + '/' + pretty(p))]
         for lg in LANGS:
             if p in MANUAL[lg]:
                 tgt = MANUAL[lg][p]
-                if tgt.endswith('/index.html'): tgt = tgt[:-len('index.html')]
+                tgt = pretty(tgt)
                 out.append((lg, SITE + '/' + tgt))
             elif p in gen[lg]:
-                out.append((lg, SITE + '/' + lg + '/' + ('' if p == 'index.html' else p)))
+                out.append((lg, SITE + '/' + lg + '/' + pretty(p)))
         return out
 
     written = {lg: [] for lg in LANGS}
@@ -333,7 +337,7 @@ def main():
     for lg in LANGS:
         for pl_, tgt in MANUAL[lg].items():
             if not os.path.exists(tgt): continue
-            self_url = SITE + '/' + (tgt[:-len('index.html')] if tgt.endswith('/index.html') else tgt)
+            self_url = SITE + '/' + pretty(tgt)
             patch_alt_links(tgt, alts_for(pl_), self_url)
             fixed += 1
     print('  stron recznych z odswiezonym hreflang: %d' % fixed)
@@ -349,8 +353,8 @@ def main():
     for lg in LANGS:
         urls = []
         for tgt in sorted(set(list(MANUAL[lg].values()) + [lg + '/' + p for p in written[lg]])):
-            if tgt.endswith('/index.html'): tgt = tgt[:-len('index.html')]
-            if tgt.endswith('/index.html'): tgt = tgt[:-len('index.html')]
+            tgt = pretty(tgt)
+            tgt = pretty(tgt)
             urls.append('  <url><loc>%s/%s</loc><lastmod>%s</lastmod><priority>0.7</priority></url>'
                         % (SITE, tgt, today))
         open('sitemap-%s.xml' % lg, 'w', encoding='utf-8').write(
