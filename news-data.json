@@ -1,6 +1,39 @@
 {
-  "updated": "2026-09-21T07:08:47Z",
+  "updated": "2026-09-21T09:15:00Z",
   "items": [
+    {
+      "id": "2026-09-21-cosc-niekompletny-wniosek-wszczyna-postepowanie",
+      "added": "2026-09-21",
+      "category": "Urzędy",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-niekompletny-wniosek-wszczyna-postepowanie.html",
+      "title": "Niekompletny wniosek o pobyt czasowy też wszczyna postępowanie [materiał własny COSC]",
+      "summary": "NSA (wyrok z 9.07.2026 r., II OSK 256/26) potwierdził, że wniosek o zezwolenie na pobyt czasowy z brakami formalnymi wszczyna postępowanie z dniem wpływu do wojewody, a wezwanie z art. 64 § 2 k.p.a. jest czynnością w już wszczętej sprawie. Art. 112a ustawy o cudzoziemcach wyznacza jedynie początek biegu terminu 60 dni, nie datę wszczęcia. Sąd I instancji odmówił zastosowania przedłużenia zawieszenia terminów z art. 100d specustawy ukraińskiej jako niezgodnego z art. 45 ust. 1 w zw. z art. 31 ust. 3 Konstytucji RP. NSA uznał bezczynność za stwierdzoną, ale nie rażącą.",
+      "t": {
+        "en": {
+          "title": "An incomplete temporary residence application also initiates proceedings [COSC own analysis]",
+          "summary": "The Supreme Administrative Court (judgment of 9.07.2026, II OSK 256/26) confirmed that an application for a temporary residence permit with formal defects initiates proceedings on the day it reaches the voivode, and that a request to remedy defects under Article 64 § 2 of the Code of Administrative Procedure is an act within proceedings already pending. Article 112a of the Act on Foreigners only sets the start of the 60-day time limit, not the date of initiation. The first-instance court refused to apply the extension of the suspension of time limits under Article 100d of the Ukraine special act as incompatible with Article 45(1) in conjunction with Article 31(3) of the Constitution. The Supreme Administrative Court held that the inaction occurred, but not with a flagrant breach of law."
+        },
+        "es": {
+          "title": "Una solicitud de residencia temporal incompleta también inicia el procedimiento [análisis propio de COSC]",
+          "summary": "El Tribunal Supremo Administrativo (sentencia de 9.07.2026, II OSK 256/26) confirmó que una solicitud de permiso de residencia temporal con defectos formales inicia el procedimiento el día en que llega al voivoda (autoridad regional competente), y que el requerimiento del art. 64 § 2 k.p.a. es un acto dentro de un procedimiento ya iniciado. El art. 112a de la Ley de Extranjería solo fija el inicio del plazo de 60 días, no la fecha de iniciación. El tribunal de primera instancia se negó a aplicar la prórroga de la suspensión de plazos del art. 100d de la ley especial ucraniana por ser incompatible con el art. 45 ap. 1 en relación con el art. 31 ap. 3 de la Constitución. El Tribunal Supremo Administrativo apreció la inactividad, pero no una infracción flagrante de la ley."
+        },
+        "uk": {
+          "title": "Неповна заява про тимчасове перебування також відкриває провадження [власний матеріал COSC]",
+          "summary": "Вищий адміністративний суд (рішення від 9.07.2026, II OSK 256/26) підтвердив, що заява про дозвіл на тимчасове перебування з формальними недоліками відкриває провадження з дня її надходження до воєводи, а виклик за art. 64 § 2 k.p.a. є дією вже у відкритому провадженні. Art. 112a закону про іноземців визначає лише початок перебігу 60-денного строку, а не дату відкриття провадження. Суд першої інстанції відмовився застосувати продовження зупинення строків за art. 100d спецзакону про допомогу громадянам України як несумісне зі ст. 45 ч. 1 у зв'язку зі ст. 31 ч. 3 Конституції РП. ВАС визнав бездіяльність, але не грубе порушення права."
+        },
+        "ru": {
+          "title": "Неполное заявление о временном пребывании также возбуждает производство [собственный материал COSC]",
+          "summary": "Высший административный суд (решение от 9.07.2026, II OSK 256/26) подтвердил, что заявление о разрешении на временное пребывание с формальными недостатками возбуждает производство со дня его поступления к воеводе, а вызов по art. 64 § 2 k.p.a. является действием в уже возбуждённом производстве. Art. 112a закона об иностранцах определяет только начало течения 60-дневного срока, а не дату возбуждения производства. Суд первой инстанции отказался применить продление приостановления сроков по art. 100d спецзакона о помощи гражданам Украины как несовместимое со ст. 45 ч. 1 во взаимосвязи со ст. 31 ч. 3 Конституции РП. ВАС признал бездействие, но не грубое нарушение права."
+        },
+        "fr": {
+          "title": "Une demande de séjour temporaire incomplète ouvre aussi la procédure [analyse propre de COSC]",
+          "summary": "La Cour administrative suprême (arrêt du 9.07.2026, II OSK 256/26) a confirmé qu'une demande de titre de séjour temporaire entachée de défauts formels ouvre la procédure le jour de sa réception par le voïvode, et que l'invitation à régulariser prévue à l'art. 64 § 2 k.p.a. est un acte accompli dans une procédure déjà ouverte. L'art. 112a de la loi sur les étrangers ne fixe que le point de départ du délai de 60 jours, non la date d'ouverture. La juridiction de première instance a refusé d'appliquer la prolongation de la suspension des délais prévue à l'art. 100d de la loi spéciale ukrainienne, comme incompatible avec l'art. 45 al. 1 en lien avec l'art. 31 al. 3 de la Constitution. La Cour a retenu l'inaction, mais non une violation flagrante du droit."
+        }
+      }
+    },
     {
       "id": "2026-09-21-cosc-skladka-zdrowotna-cudzoziemca-nfz",
       "added": "2026-09-21",
