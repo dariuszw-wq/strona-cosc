@@ -1,6 +1,39 @@
 {
-  "updated": "2026-09-21T06:20:00Z",
+  "updated": "2026-09-21T07:08:47Z",
   "items": [
+    {
+      "id": "2026-09-21-cosc-skladka-zdrowotna-cudzoziemca-nfz",
+      "added": "2026-09-21",
+      "category": "Rynek pracy",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-skladka-zdrowotna-cudzoziemca-nfz.html",
+      "title": "Składka zdrowotna cudzoziemca — 9%, NFZ i zgłoszenie do ZUS",
+      "summary": "Ubezpieczenie zdrowotne cudzoziemca: obowiązek niezależny od obywatelstwa (art. 66 ustawy zdrowotnej), składka 9%, zgłoszenie ZUS ZUA/ZZA, dostęp do NFZ, delegowani. Stan 2026.",
+      "t": {
+        "en": {
+          "title": "Health insurance contribution for foreigners — 9%, NFZ and registration with ZUS",
+          "summary": "Health insurance for foreigners: the obligation does not depend on citizenship (Article 66 of the Health Care Act), a 9% contribution, ZUS ZUA/ZZA registration, access to NFZ, posted workers. Status: 2026."
+        },
+        "es": {
+          "title": "Cotización sanitaria del extranjero — 9 %, NFZ y alta en ZUS",
+          "summary": "Seguro de salud del extranjero: la obligación no depende de la nacionalidad (art. 66 de la Ley sanitaria), cotización del 9 %, alta ZUS ZUA/ZZA, acceso al NFZ, trabajadores desplazados. Situación 2026."
+        },
+        "uk": {
+          "title": "Медичний внесок іноземця — 9%, NFZ та реєстрація в ZUS",
+          "summary": "Медичне страхування іноземця: обов'язок не залежить від громадянства (ст. 66 закону про охорону здоров'я), внесок 9%, реєстрація ZUS ZUA/ZZA, доступ до NFZ, відряджені працівники. Стан на 2026 рік."
+        },
+        "ru": {
+          "title": "Взнос на медицинское страхование иностранца — 9%, NFZ и регистрация в ZUS",
+          "summary": "Медицинское страхование иностранца: обязанность не зависит от гражданства (ст. 66 закона о здравоохранении), взнос 9%, регистрация ZUS ZUA/ZZA, доступ к NFZ, командированные работники. Состояние на 2026 год."
+        },
+        "fr": {
+          "title": "Cotisation santé de l'étranger — 9 %, NFZ et déclaration à la ZUS",
+          "summary": "Assurance maladie de l'étranger : l'obligation ne dépend pas de la nationalité (art. 66 de la loi sur les soins de santé), cotisation de 9 %, déclaration ZUS ZUA/ZZA, accès au NFZ, travailleurs détachés. État 2026."
+        }
+      }
+    },
     {
       "id": "2026-09-21-udsc-sobota-informacyjna-26-wrzesnia",
       "added": "2026-09-21",
