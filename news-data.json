@@ -1,6 +1,39 @@
 {
-  "updated": "2026-09-23T08:30:00Z",
+  "updated": "2026-09-23T07:09:55Z",
   "items": [
+    {
+      "id": "2026-09-23-cosc-rozliczenie-pit-cudzoziemca-kadry",
+      "added": "2026-09-23",
+      "category": "Rynek pracy",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-rozliczenie-pit-cudzoziemca-kadry.html",
+      "title": "Rozliczenie PIT cudzoziemca — obowiązki płatnika, PIT-11 i terminy",
+      "summary": "Jak rozliczyć PIT pracownika cudzoziemca: obowiązki płatnika, PIT-11, PIT-37/PIT-36, IFT-1, terminy i rola rezydencji podatkowej. Praktyczny przewodnik dla kadr i księgowych. Stan 2026.",
+      "t": {
+        "en": {
+          "title": "Foreigner's PIT settlement — withholding agent's obligations, PIT-11 and deadlines",
+          "summary": "How to settle the personal income tax (PIT) of a foreign employee: the withholding agent's obligations, PIT-11, PIT-37/PIT-36, IFT-1, deadlines and the role of tax residence. A practical guide for HR and accounting staff. Status as of 2026."
+        },
+        "es": {
+          "title": "Liquidación del PIT de un extranjero: obligaciones del pagador, PIT-11 y plazos",
+          "summary": "Cómo liquidar el PIT (impuesto sobre la renta de las personas físicas) de un trabajador extranjero: obligaciones del pagador (płatnik), PIT-11, PIT-37/PIT-36, IFT-1, plazos y el papel de la residencia fiscal. Guía práctica para recursos humanos y contabilidad. Estado en 2026."
+        },
+        "uk": {
+          "title": "Розрахунок PIT іноземця — обов'язки податкового агента, PIT-11 і строки",
+          "summary": "Як розрахувати PIT (податок на доходи фізичних осіб) працівника-іноземця: обов'язки податкового агента (płatnik), PIT-11, PIT-37/PIT-36, IFT-1, строки та роль податкового резидентства. Практичний посібник для кадрових і бухгалтерських служб. Стан на 2026 рік."
+        },
+        "ru": {
+          "title": "Расчёт PIT иностранца — обязанности налогового агента, PIT-11 и сроки",
+          "summary": "Как рассчитать PIT (подоходный налог с физических лиц) работника-иностранца: обязанности налогового агента (płatnik), PIT-11, PIT-37/PIT-36, IFT-1, сроки и роль налогового резидентства. Практическое руководство для кадровых и бухгалтерских служб. Состояние на 2026 год."
+        },
+        "fr": {
+          "title": "Déclaration du PIT d'un étranger — obligations du payeur, PIT-11 et délais",
+          "summary": "Comment déclarer le PIT (impôt sur le revenu des personnes physiques) d'un salarié étranger : obligations du payeur (płatnik), PIT-11, PIT-37/PIT-36, IFT-1, délais et rôle de la résidence fiscale. Guide pratique pour les services RH et comptables. État en 2026."
+        }
+      }
+    },
     {
       "id": "2026-09-23-grzywna-25-tys-nielegalne-powierzenie-pracy-radom",
       "added": "2026-09-23",
