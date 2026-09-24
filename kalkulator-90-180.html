@@ -73,6 +73,7 @@ input[type=date]{width:100%;padding:11px;border:1px solid #d8dce8;border-radius:
 
 /* CTA + PDF */
 .actions{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap}
+#b-share{display:none}.can-share #b-share{display:inline-block}
 .cta{margin-top:14px;background:var(--navy);border-radius:12px;padding:16px;color:#fff}
 .cta p{font-size:14px;margin-bottom:10px}
 .cta a{display:inline-block;background:var(--violet-l);color:#fff;text-decoration:none;font-weight:700;font-size:14px;padding:10px 18px;border-radius:8px}
@@ -207,7 +208,8 @@ header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);po
       <div class="meta" id="r-meta"></div>
       <div class="meta" id="r-next"></div>
       <div class="actions" id="acts" style="display:none">
-        <button class="btn gold" id="b-pdf">📄 <span id="t-pdf">Zapisz / udostępnij PDF</span></button>
+        <button class="btn gold" id="b-pdf">📄 <span id="t-pdf">Zapisz PDF</span></button>
+        <button class="btn" id="b-share">↗ <span id="t-share">Udostępnij</span></button>
       </div>
     </div>
 
@@ -240,13 +242,13 @@ header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);po
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <script>
 const T={
-pl:{eyebrow:"Bezpłatne narzędzie",title:"Kalkulator Legalności Pobytu w Polsce (Zasada 90/180 dni)",sub:"Sprawdź, ile dni pobytu bezwizowego w strefie Schengen Ci pozostało",in:"Data wjazdu",out:"Data wyjazdu (lub dziś, jeśli trwa)",add:"Dodaj pobyt",ref:"Sprawdź stan na dzień",calc:"Oblicz",pdf:"Zapisz / udostępnij PDF",used:"dni wykorzystanych z 90",left:d=>`Pozostało: <strong>${d} dni</strong> w bieżącym oknie 180 dni`,over:d=>`Przekroczenie limitu o <strong>${d} dni</strong> — pobyt może być nielegalny!`,next:s=>`Najbliższe „odzyskanie" dni: <strong>${s}</strong>`,cta:"Kończą Ci się dni pobytu bezwizowego? Złóż wniosek o kartę pobytu, zanim będzie za późno.",btn:"Zacznij sprawę dziś — bez ryzyka odmowy",del:"usuń",err:"Uzupełnij poprawnie daty (wyjazd ≥ wjazd).",disc:"Kalkulator ma charakter wyłącznie informacyjny i nie stanowi porady prawnej. Obliczenia oparte są na art. 6 ust. 1 Kodeksu Granicznego Schengen (rozporządzenie UE 2016/399) — 90 dni w każdym 180-dniowym okresie. Wynik nie uwzględnia umów bilateralnych, wiz krajowych ani indywidualnych okoliczności. Skontaktuj się z nami: tel. 539 999 549.",contact:"Kontakt",
+pl:{eyebrow:"Bezpłatne narzędzie",title:"Kalkulator Legalności Pobytu w Polsce (Zasada 90/180 dni)",sub:"Sprawdź, ile dni pobytu bezwizowego w strefie Schengen Ci pozostało",in:"Data wjazdu",out:"Data wyjazdu (lub dziś, jeśli trwa)",add:"Dodaj pobyt",ref:"Sprawdź stan na dzień",calc:"Oblicz",pdf:"Zapisz PDF",used:"dni wykorzystanych z 90",left:d=>`Pozostało: <strong>${d} dni</strong> w bieżącym oknie 180 dni`,over:d=>`Przekroczenie limitu o <strong>${d} dni</strong> — pobyt może być nielegalny!`,next:s=>`Najbliższe „odzyskanie" dni: <strong>${s}</strong>`,cta:"Kończą Ci się dni pobytu bezwizowego? Złóż wniosek o kartę pobytu, zanim będzie za późno.",btn:"Zacznij sprawę dziś — bez ryzyka odmowy",del:"usuń",err:"Uzupełnij poprawnie daty (wyjazd ≥ wjazd).",disc:"Kalkulator ma charakter wyłącznie informacyjny i nie stanowi porady prawnej. Obliczenia oparte są na art. 6 ust. 1 Kodeksu Granicznego Schengen (rozporządzenie UE 2016/399) — 90 dni w każdym 180-dniowym okresie. Wynik nie uwzględnia umów bilateralnych, wiz krajowych ani indywidualnych okoliczności. Skontaktuj się z nami: tel. 539 999 549.",contact:"Kontakt",
  pdfTitle:"Wynik kalkulatora dni pobytu 90/180",pdfStays:"Wpisane pobyty",pdfRef:"Stan na dzień",pdfGen:"Wygenerowano",pdfNone:"(brak wpisanych pobytów)",pdfName:"kalkulator-dni-pobytu-COSC.pdf",pdfShare:"Wynik kalkulatora dni pobytu 90/180 — Centrum Obsługi Spraw Cudzoziemców"},
-en:{eyebrow:"Free tool",title:"Legal Stay Calculator for Poland (90/180-Day Rule)",sub:"Check how many visa-free days you have left in the Schengen area",in:"Entry date",out:"Exit date (or today if ongoing)",add:"Add stay",ref:"Check status as of",calc:"Calculate",pdf:"Save / share PDF",used:"days used out of 90",left:d=>`Remaining: <strong>${d} days</strong> in the current 180-day window`,over:d=>`Limit exceeded by <strong>${d} days</strong> — your stay may be illegal!`,next:s=>`Next days “recovered”: <strong>${s}</strong>`,cta:"Running out of visa-free days? Apply for a residence card before it's too late.",btn:"Start your case today",del:"remove",err:"Please fill in valid dates (exit ≥ entry).",disc:"This calculator is for information only and does not constitute legal advice. Based on Art. 6(1) of the Schengen Borders Code (Regulation EU 2016/399) — 90 days in any 180-day period. It does not account for bilateral agreements, national visas or individual circumstances. Contact us: +48 539 999 549.",contact:"Contact",
+en:{eyebrow:"Free tool",title:"Legal Stay Calculator for Poland (90/180-Day Rule)",sub:"Check how many visa-free days you have left in the Schengen area",in:"Entry date",out:"Exit date (or today if ongoing)",add:"Add stay",ref:"Check status as of",calc:"Calculate",pdf:"Save PDF",used:"days used out of 90",left:d=>`Remaining: <strong>${d} days</strong> in the current 180-day window`,over:d=>`Limit exceeded by <strong>${d} days</strong> — your stay may be illegal!`,next:s=>`Next days “recovered”: <strong>${s}</strong>`,cta:"Running out of visa-free days? Apply for a residence card before it's too late.",btn:"Start your case today",del:"remove",err:"Please fill in valid dates (exit ≥ entry).",disc:"This calculator is for information only and does not constitute legal advice. Based on Art. 6(1) of the Schengen Borders Code (Regulation EU 2016/399) — 90 days in any 180-day period. It does not account for bilateral agreements, national visas or individual circumstances. Contact us: +48 539 999 549.",contact:"Contact",
  pdfTitle:"90/180 stay calculator result",pdfStays:"Entered stays",pdfRef:"Status as of",pdfGen:"Generated",pdfNone:"(no stays entered)",pdfName:"stay-days-calculator-COSC.pdf",pdfShare:"90/180 stay calculator result — Centre for Foreigners' Affairs"},
-es:{eyebrow:"Herramienta gratuita",title:"Calculadora de legalidad de la estancia en Polonia (regla de 90/180 días)",sub:"Comprueba cuántos días sin visado te quedan en el espacio Schengen",in:"Fecha de entrada",out:"Fecha de salida (u hoy, si continúa)",add:"Añadir estancia",ref:"Comprobar al día",calc:"Calcular",pdf:"Guardar / compartir PDF",used:"días usados de 90",left:d=>`Te quedan: <strong>${d} días</strong> en la ventana actual de 180 días`,over:d=>`Límite superado en <strong>${d} días</strong> — ¡tu estancia puede ser ilegal!`,next:s=>`Próxima “recuperación” de días: <strong>${s}</strong>`,cta:"¿Se te acaban los días sin visado? Solicita la tarjeta de residencia antes de que sea tarde.",btn:"Empieza tu caso hoy",del:"eliminar",err:"Introduce fechas válidas (salida ≥ entrada).",disc:"Esta calculadora es solo informativa y no constituye asesoramiento jurídico. Basada en el art. 6(1) del Código de Fronteras Schengen (Reglamento UE 2016/399): 90 días en cualquier período de 180 días. No considera acuerdos bilaterales, visados nacionales ni circunstancias individuales. Contáctanos: +48 539 999 549.",contact:"Contacto",
+es:{eyebrow:"Herramienta gratuita",title:"Calculadora de legalidad de la estancia en Polonia (regla de 90/180 días)",sub:"Comprueba cuántos días sin visado te quedan en el espacio Schengen",in:"Fecha de entrada",out:"Fecha de salida (u hoy, si continúa)",add:"Añadir estancia",ref:"Comprobar al día",calc:"Calcular",pdf:"Guardar PDF",used:"días usados de 90",left:d=>`Te quedan: <strong>${d} días</strong> en la ventana actual de 180 días`,over:d=>`Límite superado en <strong>${d} días</strong> — ¡tu estancia puede ser ilegal!`,next:s=>`Próxima “recuperación” de días: <strong>${s}</strong>`,cta:"¿Se te acaban los días sin visado? Solicita la tarjeta de residencia antes de que sea tarde.",btn:"Empieza tu caso hoy",del:"eliminar",err:"Introduce fechas válidas (salida ≥ entrada).",disc:"Esta calculadora es solo informativa y no constituye asesoramiento jurídico. Basada en el art. 6(1) del Código de Fronteras Schengen (Reglamento UE 2016/399): 90 días en cualquier período de 180 días. No considera acuerdos bilaterales, visados nacionales ni circunstancias individuales. Contáctanos: +48 539 999 549.",contact:"Contacto",
  pdfTitle:"Resultado de la calculadora 90/180",pdfStays:"Estancias introducidas",pdfRef:"Estado al día",pdfGen:"Generado",pdfNone:"(sin estancias introducidas)",pdfName:"calculadora-estancia-COSC.pdf",pdfShare:"Resultado de la calculadora 90/180 — Centro de Atención a Extranjeros"},
-pt:{eyebrow:"Ferramenta gratuita",title:"Calculadora de legalidade da estadia na Polónia (regra dos 90/180 dias)",sub:"Veja quantos dias sem visto ainda tem no espaço Schengen",in:"Data de entrada",out:"Data de saída (ou hoje, se em curso)",add:"Adicionar estadia",ref:"Verificar na data",calc:"Calcular",pdf:"Guardar / partilhar PDF",used:"dias usados de 90",left:d=>`Restam: <strong>${d} dias</strong> na janela atual de 180 dias`,over:d=>`Limite excedido em <strong>${d} dias</strong> — a sua estadia pode ser ilegal!`,next:s=>`Próxima “recuperação” de dias: <strong>${s}</strong>`,cta:"Os seus dias sem visto estão a acabar? Peça o cartão de residência antes que seja tarde.",btn:"Comece o seu processo hoje",del:"remover",err:"Preencha datas válidas (saída ≥ entrada).",disc:"Esta calculadora é apenas informativa e não constitui aconselhamento jurídico. Baseada no art. 6(1) do Código de Fronteiras Schengen (Regulamento UE 2016/399) — 90 dias em qualquer período de 180 dias. Não considera acordos bilaterais, vistos nacionais nem circunstâncias individuais. Contacte-nos: +48 539 999 549.",contact:"Contacto",
+pt:{eyebrow:"Ferramenta gratuita",title:"Calculadora de legalidade da estadia na Polónia (regra dos 90/180 dias)",sub:"Veja quantos dias sem visto ainda tem no espaço Schengen",in:"Data de entrada",out:"Data de saída (ou hoje, se em curso)",add:"Adicionar estadia",ref:"Verificar na data",calc:"Calcular",pdf:"Guardar PDF",used:"dias usados de 90",left:d=>`Restam: <strong>${d} dias</strong> na janela atual de 180 dias`,over:d=>`Limite excedido em <strong>${d} dias</strong> — a sua estadia pode ser ilegal!`,next:s=>`Próxima “recuperação” de dias: <strong>${s}</strong>`,cta:"Os seus dias sem visto estão a acabar? Peça o cartão de residência antes que seja tarde.",btn:"Comece o seu processo hoje",del:"remover",err:"Preencha datas válidas (saída ≥ entrada).",disc:"Esta calculadora é apenas informativa e não constitui aconselhamento jurídico. Baseada no art. 6(1) do Código de Fronteiras Schengen (Regulamento UE 2016/399) — 90 dias em qualquer período de 180 dias. Não considera acordos bilaterais, vistos nacionais nem circunstâncias individuais. Contacte-nos: +48 539 999 549.",contact:"Contacto",
  pdfTitle:"Resultado da calculadora 90/180",pdfStays:"Estadias introduzidas",pdfRef:"Estado na data",pdfGen:"Gerado",pdfNone:"(sem estadias introduzidas)",pdfName:"calculadora-estadia-COSC.pdf",pdfShare:"Resultado da calculadora 90/180 — Centro de Apoio a Estrangeiros"}
 };
 let L='pl',trips=[],lastResult=null;
@@ -379,9 +381,9 @@ function buildPdfNode(){
  return el;
 }
 
-async function onPdf(){
+async function onPdf(mode){
  if(!lastResult)return;
- const btn=$('b-pdf');const old=$('t-pdf').textContent;btn.disabled=true;$('t-pdf').textContent='…';
+ const share=mode==='share';const btn=$(share?'b-share':'b-pdf');const lbl=$(share?'t-share':'t-pdf');const old=lbl.textContent;btn.disabled=true;lbl.textContent='…';
  try{
   if(document.fonts&&document.fonts.ready) await document.fonts.ready;
   const node=buildPdfNode();document.body.appendChild(node);
@@ -417,7 +419,8 @@ async function onPdf(){
   const t=T[L];
   const blob=pdf.output('blob');
   const file=new File([blob],t.pdfName,{type:'application/pdf'});
-  if(navigator.canShare&&navigator.canShare({files:[file]})){
+  // „Zapisz PDF" zawsze pobiera plik; „Udostępnij" otwiera systemowe udostępnianie (gdy urządzenie je obsługuje)
+  if(share&&navigator.canShare&&navigator.canShare({files:[file]})){
    try{await navigator.share({files:[file],title:t.pdfShare,text:t.pdfShare});}
    catch(e){if(e&&e.name!=='AbortError') pdf.save(t.pdfName);}
   }else{
@@ -426,15 +429,21 @@ async function onPdf(){
  }catch(err){
   alert('PDF: '+(err&&err.message?err.message:err));
  }finally{
-  btn.disabled=false;$('t-pdf').textContent=old;
+  btn.disabled=false;lbl.textContent=old;
  }
 };
 // DELEGACJA: i18n.js (restorePL/applyDict) nadpisuje innerHTML kontenerów i kasuje
 // nasłuchy przypięte bezpośrednio do przycisków — dlatego łapiemy kliknięcia na dokumencie.
 document.addEventListener('click',function(e){
- const t=e.target.closest&&e.target.closest('#b-add,#b-calc,#b-pdf');if(!t||t.disabled)return;
+ const t=e.target.closest&&e.target.closest('#b-add,#b-calc,#b-pdf,#b-share');if(!t||t.disabled)return;
  e.preventDefault();
- if(t.id==='b-add')onAdd();else if(t.id==='b-calc')onCalc();else onPdf();
+ if(t.id==='b-add')onAdd();else if(t.id==='b-calc')onCalc();else onPdf(t.id==='b-share'?'share':'save');
+});
+// przycisk „Udostępnij" tylko tam, gdzie da się udostępnić plik (głównie telefony)
+try{if(navigator.canShare&&navigator.canShare({files:[new File(['x'],'t.pdf',{type:'application/pdf'})]}))document.documentElement.classList.add('can-share');}catch(e){}
+const PDFLBL={"pl": ["Zapisz PDF", "Udostępnij"], "en": ["Save PDF", "Share"], "es": ["Guardar PDF", "Compartir"], "pt": ["Guardar PDF", "Partilhar"], "uk": ["Зберегти PDF", "Поділитися"], "ru": ["Сохранить PDF", "Поделиться"], "fr": ["Enregistrer le PDF", "Partager"]};
+function pdfLabels(l){const x=PDFLBL[l]||PDFLBL.en;const a=$('t-pdf'),b=$('t-share');if(a)a.textContent=x[0];if(b)b.textContent=x[1];}
+document.addEventListener('cosc:langchange',function(e){pdfLabels((e&&e.detail&&e.detail.lang)||'pl');
 });
 </script>
 
