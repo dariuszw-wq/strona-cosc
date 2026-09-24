@@ -304,12 +304,14 @@ function setLang(l){L=l;const t=T[l];
 }
 // most do wspólnego przełącznika języka (silnik nagłówka / i18n.js):
 document.addEventListener('cosc:langchange',function(e){var l=(e&&e.detail&&e.detail.lang)||'pl';setLang(T[l]?l:'en');});
-$('d-ref').valueAsDate=new Date();
+function todayISO(){const d=new Date();return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');}
+function ensureRef(){const r=$('d-ref');if(r&&!r.value)r.value=todayISO();}
+ensureRef();window.addEventListener('load',()=>setTimeout(ensureRef,50));
 
 function renderTrips(){$('trips').innerHTML=trips.map((tr,i)=>
  `<div class="trip"><span>${tr[0]} → ${tr[1]}</span><button class="btn ghost" onclick="delTrip(${i})">✕ ${T[L].del}</button></div>`).join('');}
 window.delTrip=i=>{trips.splice(i,1);renderTrips();};
-$('b-add').onclick=()=>{const a=$('d-in').value,b=$('d-out').value;
+function onAdd(){const a=$('d-in').value,b=$('d-out').value;
  if(!a||!b||b<a){alert(T[L].err);return;}
  trips.push([a,b]);trips.sort();$('d-in').value='';$('d-out').value='';renderTrips();};
 
@@ -329,8 +331,8 @@ function computeNext(ref,used){
  return '—';
 }
 
-$('b-calc').onclick=()=>{
- const ref=$('d-ref').value; if(!ref||!trips.length){alert(T[L].err);return;}
+function onCalc(){
+ ensureRef();const ref=$('d-ref').value; if(!ref||!trips.length){alert(T[L].err);return;}
  const used=daysUsed(ref),left=90-used;
  lastResult={ref,used,left,next:computeNext(ref,used),trips:trips.slice()};
  renderResult();
@@ -410,7 +412,7 @@ function buildPdfNode(){
  return el;
 }
 
-$('b-pdf').onclick=async()=>{
+async function onPdf(){
  if(!lastResult)return;
  const btn=$('b-pdf');const old=$('t-pdf').textContent;btn.disabled=true;$('t-pdf').textContent='…';
  try{
@@ -460,6 +462,12 @@ $('b-pdf').onclick=async()=>{
   btn.disabled=false;$('t-pdf').textContent=old;
  }
 };
+// delegacja kliknięć — odporna na podmianę przycisków przez skrypty tłumaczeń
+document.addEventListener('click',function(e){
+ const t=e.target.closest&&e.target.closest('#b-add,#b-calc,#b-pdf');if(!t||t.disabled)return;
+ e.preventDefault();
+ if(t.id==='b-add')onAdd();else if(t.id==='b-calc')onCalc();else onPdf();
+});
 </script>
 
 <script>
