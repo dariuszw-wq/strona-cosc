@@ -1,6 +1,39 @@
 {
-  "updated": "2026-09-23T07:09:55Z",
+  "updated": "2026-09-25T07:09:12Z",
   "items": [
+    {
+      "id": "2026-09-25-cosc-zezwolenie-jednolite-pobyt-i-praca",
+      "added": "2026-09-25",
+      "category": "Rynek pracy",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-zezwolenie-jednolite-pobyt-i-praca.html",
+      "title": "Zezwolenie jednolite — pobyt czasowy i praca cudzoziemca w jednej decyzji",
+      "summary": "Zezwolenie jednolite łączy pobyt czasowy i pracę cudzoziemca w jednej decyzji wojewody. Kiedy się opłaca, jak złożyć wniosek przez MOS, czym różni się od zezwolenia na pracę. Stan 2026.",
+      "t": {
+        "en": {
+          "title": "Single permit — a foreigner's temporary residence and work in one decision",
+          "summary": "The single permit combines a foreigner's temporary residence and work in one decision of the voivode. When it pays off, how to apply via MOS, and how it differs from a work permit. Status as of 2026."
+        },
+        "es": {
+          "title": "Permiso único: residencia temporal y trabajo del extranjero en una sola decisión",
+          "summary": "El permiso único combina la residencia temporal y el trabajo del extranjero en una sola decisión del voivoda. Cuándo compensa, cómo presentar la solicitud a través del MOS y en qué se diferencia del permiso de trabajo. Estado en 2026."
+        },
+        "uk": {
+          "title": "Єдиний дозвіл — тимчасове проживання і робота іноземця в одному рішенні",
+          "summary": "Єдиний дозвіл поєднує тимчасове проживання і роботу іноземця в одному рішенні воєводи. Коли він вигідний, як подати заяву через MOS і чим він відрізняється від дозволу на роботу. Стан на 2026 рік."
+        },
+        "ru": {
+          "title": "Единое разрешение — временное проживание и работа иностранца в одном решении",
+          "summary": "Единое разрешение объединяет временное проживание и работу иностранца в одном решении воеводы. Когда оно выгодно, как подать заявление через MOS и чем оно отличается от разрешения на работу. Состояние на 2026 год."
+        },
+        "fr": {
+          "title": "Permis unique — séjour temporaire et travail d'un étranger en une seule décision",
+          "summary": "Le permis unique réunit le séjour temporaire et le travail d'un étranger en une seule décision du voïvode. Quand il est avantageux, comment déposer la demande via le MOS et en quoi il diffère du permis de travail. État en 2026."
+        }
+      }
+    },
     {
       "id": "2026-09-23-cosc-rozliczenie-pit-cudzoziemca-kadry",
       "added": "2026-09-23",
