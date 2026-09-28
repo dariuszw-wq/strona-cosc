@@ -1734,5 +1734,19 @@
    "title": "Єдиний дозвіл (zezwolenie jednolite) — тимчасове перебування і робота іноземця в одному рішенні",
    "summary": "Єдиний дозвіл (zezwolenie jednolite) поєднує тимчасове перебування і роботу іноземця в одному рішенні воєводи (wojewoda). Коли він вигідний, як подати заяву через MOS (Moduł Obsługi Spraw) і чим він відрізняється від дозволу на роботу (zezwolenie na pracę). Правовий стан: 2026."
   }
+ },
+ "artykul-nielegalne-zatrudnienie-a-podatek.html": {
+  "en": {
+   "summary": "Who pays PIT (personal income tax) when a foreigner is employed illegally? The exemption of the worker's income (art. 21 ust. 1 pkt 151 PIT) and the shift of the consequences to the employer. Risks and recommendations. Legal status: 2026.",
+   "title": "Illegal employment (nielegalne zatrudnienie) and tax — who bears the consequences"
+  },
+  "es": {
+   "summary": "¿Quién paga el PIT (impuesto sobre la renta de las personas físicas) cuando un extranjero trabaja de forma ilegal? La exención de los ingresos del trabajador (art. 21 ust. 1 pkt 151 PIT) y el traslado de las consecuencias al empleador. Riesgos y recomendaciones. Situación jurídica: 2026.",
+   "title": "Empleo ilegal (nielegalne zatrudnienie) e impuestos: quién asume las consecuencias"
+  },
+  "uk": {
+   "summary": "Хто сплачує PIT (податок на доходи фізичних осіб) у разі нелегального працевлаштування іноземця? Звільнення доходу працівника від оподаткування (art. 21 ust. 1 pkt 151 PIT) і перенесення наслідків на роботодавця. Ризики та рекомендації. Правовий стан: 2026.",
+   "title": "Нелегальне працевлаштування (nielegalne zatrudnienie) і податок — хто несе наслідки"
+  }
  }
 }
