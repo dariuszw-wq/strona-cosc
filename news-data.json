@@ -1,6 +1,39 @@
 {
-  "updated": "2026-09-28T07:46:38Z",
+  "updated": "2026-09-28T07:50:45Z",
   "items": [
+    {
+      "id": "2026-09-28-cosc-nielegalne-zatrudnienie-a-podatek",
+      "added": "2026-09-28",
+      "category": "Rynek pracy",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-nielegalne-zatrudnienie-a-podatek.html",
+      "title": "Nielegalne zatrudnienie a podatek — kto ponosi skutki",
+      "summary": "Kto płaci PIT przy nielegalnym zatrudnieniu cudzoziemca? Zwolnienie przychodu pracownika (art. 21 ust. 1 pkt 151 PIT) i przeniesienie skutków na pracodawcę. Ryzyka i rekomendacje. Stan 2026.",
+      "t": {
+        "en": {
+          "title": "Illegal employment and tax — who bears the consequences",
+          "summary": "Who pays PIT when a foreigner is employed illegally? The exemption of the employee's income (Art. 21(1)(151) of the PIT Act) and the shift of the consequences onto the employer. Risks and recommendations. Status as of 2026."
+        },
+        "es": {
+          "title": "Empleo ilegal e impuestos: quién asume las consecuencias",
+          "summary": "¿Quién paga el PIT cuando un extranjero trabaja de forma ilegal? La exención de los ingresos del trabajador (art. 21, apdo. 1, punto 151 de la Ley del PIT) y el traslado de las consecuencias al empleador. Riesgos y recomendaciones. Situación en 2026."
+        },
+        "uk": {
+          "title": "Нелегальне працевлаштування і податок — хто несе наслідки",
+          "summary": "Хто сплачує PIT у разі нелегального працевлаштування іноземця? Звільнення доходу працівника (ст. 21 ч. 1 п. 151 Закону про PIT) і перенесення наслідків на роботодавця. Ризики та рекомендації. Стан на 2026 рік."
+        },
+        "ru": {
+          "title": "Нелегальное трудоустройство и налог — кто несёт последствия",
+          "summary": "Кто платит PIT при нелегальном трудоустройстве иностранца? Освобождение дохода работника (ст. 21 п. 1 пп. 151 Закона о PIT) и перенос последствий на работодателя. Риски и рекомендации. По состоянию на 2026 год."
+        },
+        "fr": {
+          "title": "Emploi illégal et impôt : qui en supporte les conséquences",
+          "summary": "Qui paie le PIT en cas d'emploi illégal d'un étranger ? L'exonération du revenu du salarié (art. 21, al. 1, point 151 de la loi sur le PIT) et le report des conséquences sur l'employeur. Risques et recommandations. Situation en 2026."
+        }
+      }
+    },
     {
       "id": "2026-09-28-fikcyjne-zatrudnienie-nielegalny-pobyt-284-cudzoziemcow-ena",
       "added": "2026-09-28",
