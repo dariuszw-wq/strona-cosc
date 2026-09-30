@@ -1,6 +1,39 @@
 {
-  "updated": "2026-09-29T06:14:24Z",
+  "updated": "2026-09-30T09:38:31Z",
   "items": [
+    {
+      "id": "2026-09-30-cosc-zatrudnienie-obywatela-ukrainy-2026",
+      "added": "2026-09-30",
+      "category": "Rynek pracy",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-zatrudnienie-obywatela-ukrainy-2026.html",
+      "title": "Zatrudnienie obywatela Ukrainy w 2026 r. — tryb i powiadomienie",
+      "summary": "Jak legalnie zatrudnić obywatela Ukrainy w 2026 r.: uproszczony tryb i powiadomienie o powierzeniu pracy, związek z pobytem (status UKR). Przepisy zmienne — sprawdź aktualny stan. 2026.",
+      "t": {
+        "en": {
+          "title": "Employing a Ukrainian citizen in 2026 – procedure and notification",
+          "summary": "How to legally employ a Ukrainian citizen in 2026: the simplified procedure and the notification of entrusting work, the link with residence (UKR status). The rules change – check the current legal status. 2026."
+        },
+        "es": {
+          "title": "Contratación de un ciudadano de Ucrania en 2026: procedimiento y notificación",
+          "summary": "Cómo contratar legalmente a un ciudadano de Ucrania en 2026: el procedimiento simplificado y la notificación de encomienda de trabajo, la relación con la estancia (estatus UKR). Las normas cambian: compruebe el estado legal vigente. 2026."
+        },
+        "uk": {
+          "title": "Працевлаштування громадянина України у 2026 р. – порядок і повідомлення",
+          "summary": "Як легально працевлаштувати громадянина України у 2026 р.: спрощений порядок і повідомлення про доручення роботи, зв’язок із перебуванням (статус UKR). Норми змінюються – перевірте актуальний правовий стан. 2026."
+        },
+        "ru": {
+          "title": "Трудоустройство гражданина Украины в 2026 г. – порядок и уведомление",
+          "summary": "Как легально трудоустроить гражданина Украины в 2026 г.: упрощённый порядок и уведомление о поручении работы, связь с пребыванием (статус UKR). Нормы меняются – проверьте актуальное правовое состояние. 2026."
+        },
+        "fr": {
+          "title": "Emploi d’un ressortissant ukrainien en 2026 – procédure et notification",
+          "summary": "Comment employer légalement un ressortissant ukrainien en 2026 : la procédure simplifiée et la notification de confier un travail, le lien avec le séjour (statut UKR). Les règles évoluent – vérifiez l’état du droit en vigueur. 2026."
+        }
+      }
+    },
     {
       "id": "2026-09-29-11-decyzji-powrotowych-zakazy-wjazdu-nwosg",
       "added": "2026-09-29",
