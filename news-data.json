@@ -1,6 +1,39 @@
 {
-  "updated": "2026-10-02T06:05:07Z",
+  "updated": "2026-10-02T07:09:04Z",
   "items": [
+    {
+      "id": "2026-10-02-cosc-pracownik-delegowany-z-ue-skladki-polska",
+      "added": "2026-10-02",
+      "category": "Rynek pracy",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-pracownik-delegowany-z-ue-skladki-polska.html",
+      "title": "Pracownik delegowany z UE do Polski — gdzie płaci się składki",
+      "summary": "Delegowanie z UE do Polski: gdzie płaci się składki, rola A1, ubezpieczenie zdrowotne (EKUZ), obowiązki firm i ryzyko braku A1. Przewodnik dla kadr i księgowych. Stan 2026.",
+      "t": {
+        "en": {
+          "title": "Posted worker from the EU in Poland – where social security contributions are paid",
+          "summary": "Posting from the EU to Poland: where contributions are paid, the role of A1, health insurance (EHIC), company obligations and the risk of not having A1. A guide for HR and accountants. As of 2026."
+        },
+        "es": {
+          "title": "Trabajador desplazado de la UE a Polonia: dónde se pagan las cotizaciones",
+          "summary": "Desplazamiento desde la UE a Polonia: dónde se pagan las cotizaciones, el papel del A1, el seguro de salud (TSE), las obligaciones de las empresas y el riesgo de no tener el A1. Guía para departamentos de personal y contables. Situación en 2026."
+        },
+        "uk": {
+          "title": "Відряджений працівник з ЄС до Польщі – де сплачуються внески",
+          "summary": "Відрядження з ЄС до Польщі: де сплачуються внески, роль A1, медичне страхування (EKUZ/ЄКМС), обов’язки компаній і ризик відсутності A1. Посібник для кадровиків і бухгалтерів. Стан на 2026 рік."
+        },
+        "ru": {
+          "title": "Командированный работник из ЕС в Польшу – где уплачиваются взносы",
+          "summary": "Командирование из ЕС в Польшу: где уплачиваются взносы, роль A1, медицинское страхование (EKUZ/ЕКМС), обязанности компаний и риск отсутствия A1. Руководство для кадровиков и бухгалтеров. По состоянию на 2026 год."
+        },
+        "fr": {
+          "title": "Travailleur détaché de l’UE en Pologne : où sont payées les cotisations",
+          "summary": "Détachement de l’UE vers la Pologne : où sont payées les cotisations, le rôle du A1, l’assurance maladie (CEAM), les obligations des entreprises et le risque d’absence de A1. Guide pour les services RH et les comptables. Situation en 2026."
+        }
+      }
+    },
     {
       "id": "2026-10-02-fikcyjne-spolki-karty-pobytu-zarzuty",
       "added": "2026-10-02",
