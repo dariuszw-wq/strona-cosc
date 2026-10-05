@@ -1,6 +1,39 @@
 {
-  "updated": "2026-10-03T08:09:01Z",
+  "updated": "2026-10-05T09:15:36+02:00",
   "items": [
+    {
+      "id": "2026-10-05-cosc-obowiazek-umowy-i-sankcje-2026",
+      "added": "2026-10-05",
+      "category": "Rynek pracy",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-obowiazek-umowy-i-sankcje-2026.html",
+      "title": "Obowiązek przekazania umowy i kary za nielegalne zatrudnienie cudzoziemca w 2026 r.",
+      "summary": "Nowe obowiązki: przekazanie umowy cudzoziemca do urzędu i powiadomienie o podjęciu pracy. Kary do 50 000 zł, mandaty PIP do 10 000 zł, wspólne kontrole PIP i Straży Granicznej. Stan 2026.",
+      "t": {
+        "en": {
+          "title": "Obligation to submit the employment contract and penalties for illegal employment of foreigners in 2026",
+          "summary": "New obligations: submitting the foreigner's contract to the authority and notifying that work has started. Fines up to PLN 50,000, PIP tickets up to PLN 10,000, joint inspections by PIP and the Border Guard. Status as of 2026."
+        },
+        "es": {
+          "title": "Obligación de presentar el contrato y sanciones por empleo ilegal de extranjeros en 2026",
+          "summary": "Nuevas obligaciones: presentar el contrato del extranjero a la oficina y notificar el inicio del trabajo. Multas de hasta 50 000 PLN, multas de la PIP de hasta 10 000 PLN, inspecciones conjuntas de la PIP y la Guardia de Fronteras. Situación en 2026."
+        },
+        "uk": {
+          "title": "Обов'язок передати договір і штрафи за нелегальне працевлаштування іноземця у 2026 р.",
+          "summary": "Нові обов'язки: передача договору з іноземцем до установи та повідомлення про початок роботи. Штрафи до 50 000 злотих, штрафи PIP до 10 000 злотих, спільні перевірки PIP і Прикордонної служби. Стан на 2026 р."
+        },
+        "ru": {
+          "title": "Обязанность передать договор и штрафы за нелегальное трудоустройство иностранца в 2026 г.",
+          "summary": "Новые обязанности: передача договора с иностранцем в ведомство и уведомление о начале работы. Штрафы до 50 000 злотых, штрафы PIP до 10 000 злотых, совместные проверки PIP и Пограничной службы. Состояние на 2026 г."
+        },
+        "fr": {
+          "title": "Obligation de transmettre le contrat et sanctions pour l'emploi illégal d'étrangers en 2026",
+          "summary": "Nouvelles obligations : transmission du contrat de l'étranger à l'administration et notification du début du travail. Amendes jusqu'à 50 000 PLN, amendes de la PIP jusqu'à 10 000 PLN, contrôles conjoints de la PIP et de la Garde-frontières. Situation en 2026."
+        }
+      }
+    },
     {
       "id": "2026-10-03-kronika-tygodnia",
       "added": "2026-10-03",
