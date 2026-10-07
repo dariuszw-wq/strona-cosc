@@ -1,6 +1,105 @@
 {
-  "updated": "2026-10-05T09:15:36+02:00",
+  "updated": "2026-10-07T18:03:10+02:00",
   "items": [
+    {
+      "id": "2026-10-07-udsc-mos-subkonta-dzieci",
+      "added": "2026-10-07",
+      "category": "Urzędy",
+      "title": "MOS: wniosek o pobyt dla dziecka lub podopiecznego wymaga wcześniejszego założenia subkonta",
+      "summary": "Urząd do Spraw Cudzoziemców przypomina (komunikat z 7 października 2026 r.), że aby złożyć w Module Obsługi Spraw (MOS) wniosek o zezwolenie na pobyt dla dziecka lub podopiecznego, trzeba najpierw utworzyć dla niego subkonto. Po zalogowaniu do MOS należy wejść w „Moje konto” – „Dane osobowe” i przy sekcji kont dzieci/podopiecznych wybrać „Dodaj konto”. Dopiero po założeniu subkonta można złożyć wniosek w imieniu dziecka lub podopiecznego. Praktyczna zasada: rodzic lub opiekun powinien założyć subkonta przed przygotowaniem wniosków, aby nie tracić czasu przy składaniu dokumentów.",
+      "source_name": "Urząd do Spraw Cudzoziemców",
+      "author": "",
+      "url": "https://www.gov.pl/web/udsc/subkonta-dla-dzieci-i-podopiecznych-w-mos",
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "MOS: an application for a child's or ward's residence permit requires creating a sub-account first",
+          "summary": "The Office for Foreigners (UdSC) reminds applicants (notice of 7 October 2026) that, to file a residence permit application in the Case Handling Module (MOS) for a child or ward, a sub-account must first be created for that person. After logging in to MOS, go to “My account” – “Personal data” and, in the section for children's/wards' accounts, choose “Add account”. Only once the sub-account exists can the application be filed on behalf of the child or ward. In practice: a parent or guardian should set up the sub-accounts before preparing the applications, so as not to lose time when filing."
+        },
+        "es": {
+          "title": "MOS: la solicitud de residencia para un menor o tutelado exige crear antes una subcuenta",
+          "summary": "La Oficina de Extranjería (UdSC) recuerda (comunicado del 7 de octubre de 2026) que, para presentar en el Módulo de Gestión de Asuntos (MOS) una solicitud de permiso de residencia para un menor o tutelado, primero hay que crear una subcuenta para esa persona. Tras iniciar sesión en MOS, hay que ir a «Mi cuenta» – «Datos personales» y, en la sección de cuentas de menores/tutelados, elegir «Añadir cuenta». Solo cuando exista la subcuenta se puede presentar la solicitud en nombre del menor o tutelado. En la práctica: el progenitor o tutor debería crear las subcuentas antes de preparar las solicitudes, para no perder tiempo al presentarlas."
+        },
+        "uk": {
+          "title": "MOS: для подання заяви про дозвіл на проживання для дитини чи підопічного спершу потрібно створити субакаунт",
+          "summary": "Управління у справах іноземців (UdSC) нагадує (повідомлення від 7 жовтня 2026 р.), що для подання в Модулі обслуговування справ (MOS) заяви про дозвіл на проживання для дитини або підопічного спершу необхідно створити для неї субакаунт. Після входу в MOS перейдіть до «Мій обліковий запис» – «Особисті дані» та в розділі акаунтів дітей/підопічних виберіть «Додати акаунт». Лише після створення субакаунта можна подати заяву від імені дитини чи підопічного. На практиці: батькам або опікуну варто створити субакаунти ще до підготовки заяв, щоб не втрачати час під час подання."
+        },
+        "ru": {
+          "title": "MOS: для подачи заявления о разрешении на проживание для ребёнка или подопечного сначала нужно создать субаккаунт",
+          "summary": "Управление по делам иностранцев (UdSC) напоминает (сообщение от 7 октября 2026 г.), что для подачи в Модуле обслуживания дел (MOS) заявления о разрешении на проживание для ребёнка или подопечного сначала необходимо создать для него субаккаунт. После входа в MOS перейдите в «Моя учётная запись» – «Личные данные» и в разделе учётных записей детей/подопечных выберите «Добавить учётную запись». Только после создания субаккаунта можно подать заявление от имени ребёнка или подопечного. На практике: родителю или опекуну стоит создать субаккаунты до подготовки заявлений, чтобы не терять время при подаче."
+        },
+        "fr": {
+          "title": "MOS : la demande de titre de séjour pour un enfant ou une personne sous tutelle exige de créer d'abord un sous-compte",
+          "summary": "L'Office des étrangers (UdSC) rappelle (communiqué du 7 octobre 2026) que, pour déposer dans le Module de gestion des dossiers (MOS) une demande de titre de séjour pour un enfant ou une personne placée sous sa tutelle, un sous-compte doit d'abord être créé pour elle. Après connexion à MOS, il faut aller dans « Mon compte » – « Données personnelles » et, dans la section des comptes des enfants/personnes sous tutelle, choisir « Ajouter un compte ». Ce n'est qu'une fois le sous-compte créé que la demande peut être déposée au nom de l'enfant ou de la personne sous tutelle. En pratique : le parent ou tuteur devrait créer les sous-comptes avant de préparer les demandes, pour ne pas perdre de temps lors du dépôt."
+        }
+      }
+    },
+    {
+      "id": "2026-10-07-lodz-130-fikcyjnych-spolek-oswiadczenia-pracy",
+      "added": "2026-10-07",
+      "category": "Rynek pracy",
+      "title": "Ok. 130 fikcyjnych spółek i blisko 11,5 tys. oświadczeń o powierzeniu pracy cudzoziemcom: kolejny zarzut w śledztwie z Łodzi",
+      "summary": "Według komunikatu Straży Granicznej z 7 października 2026 r. w śledztwie Prokuratury Okręgowej w Łodzi, prowadzonym wspólnie z Placówką SG w Łodzi, kolejna osoba (czwarta w sprawie), zatrzymana 26 września, usłyszała zarzuty organizowania innym osobom przekraczania granicy wbrew przepisom oraz wyłudzenia poświadczenia nieprawdy; sąd zastosował trzymiesięczny areszt. Z ustaleń wynika, że na terenie kraju utworzono około 130 spółek, które nie prowadziły faktycznej działalności gospodarczej, a za ich pośrednictwem zarejestrowano blisko 11,5 tys. oświadczeń o powierzeniu wykonywania pracy cudzoziemcom. Trzy osoby zatrzymano w maju 2026 r.; śledztwo ma charakter rozwojowy. Zatrzymanie i zarzuty nie oznaczają skazania. Reguła ogólna: oświadczenie o powierzeniu pracy złożone przez spółkę, która faktycznie nie działa, nie tworzy legalnego zatrudnienia, a udział w takim schemacie wiąże się z odpowiedzialnością karną.",
+      "source_name": "Straż Graniczna",
+      "author": "Opracowanie COSC",
+      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16260,Kolejne-zatrzymanie-w-sledztwie-dotyczacym-130-fikcyjnych-spolek.html",
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "About 130 sham companies and nearly 11,500 declarations on entrusting work to foreigners: another suspect charged in the Łódź investigation",
+          "summary": "According to a Border Guard notice of 7 October 2026, in an investigation by the Łódź Regional Prosecutor's Office conducted jointly with the Border Guard Post in Łódź, another person (the fourth in the case), detained on 26 September, was charged with organising the crossing of the border contrary to the law for other persons and with obtaining a false certification; the court ordered three months' pre-trial detention. The findings indicate that about 130 companies were set up across the country that did not conduct any actual business activity, and nearly 11,500 declarations on entrusting work to foreigners were registered through them. Three persons were detained in May 2026; the investigation is developing. Detention and charges do not mean a conviction. General rule: a declaration on entrusting work filed by a company that does not actually operate does not create legal employment, and taking part in such a scheme entails criminal liability."
+        },
+        "es": {
+          "title": "Unas 130 empresas ficticias y casi 11 500 declaraciones de encomienda de trabajo a extranjeros: nuevo imputado en la investigación de Łódź",
+          "summary": "Según un comunicado de la Guardia de Fronteras del 7 de octubre de 2026, en la investigación de la Fiscalía Regional de Łódź, llevada a cabo junto con el Puesto de la Guardia de Fronteras en Łódź, otra persona (la cuarta del caso), detenida el 26 de septiembre, fue imputada por organizar a otras personas el cruce de la frontera contra la ley y por obtención de una certificación falsa; el tribunal ordenó tres meses de prisión preventiva. De las constataciones se desprende que en el país se crearon unas 130 empresas que no ejercían una actividad económica real y que a través de ellas se registraron casi 11 500 declaraciones de encomienda de trabajo a extranjeros. Tres personas fueron detenidas en mayo de 2026; la investigación tiene carácter evolutivo. La detención y la imputación no equivalen a una condena. Regla general: la declaración de encomienda de trabajo presentada por una empresa que en la práctica no funciona no crea un empleo legal, y participar en un esquema así conlleva responsabilidad penal."
+        },
+        "uk": {
+          "title": "Близько 130 фіктивних компаній і майже 11,5 тис. заяв про доручення роботи іноземцям: ще одне обвинувачення в розслідуванні з Лодзі",
+          "summary": "Згідно з повідомленням Прикордонної служби від 7 жовтня 2026 р., у розслідуванні Окружної прокуратури в Лодзі, яке ведеться спільно з Підрозділом ПС у Лодзі, ще одна особа (четверта у справі), затримана 26 вересня, отримала обвинувачення в організації для інших осіб перетину кордону всупереч закону та в отриманні неправдивого посвідчення; суд застосував тримісячний арешт. З встановлених обставин випливає, що в країні було створено близько 130 компаній, які не провадили фактичної господарської діяльності, а через них зареєстровано майже 11,5 тис. заяв про доручення виконання роботи іноземцям. Трьох осіб затримано в травні 2026 р.; розслідування має розвивальний характер. Затримання та обвинувачення не означають засудження. Загальне правило: заява про доручення роботи, подана компанією, яка фактично не діє, не створює легального працевлаштування, а участь у такій схемі тягне кримінальну відповідальність."
+        },
+        "ru": {
+          "title": "Около 130 фиктивных компаний и почти 11,5 тыс. заявлений о поручении работы иностранцам: ещё одно обвинение в расследовании из Лодзи",
+          "summary": "Согласно сообщению Пограничной службы от 7 октября 2026 г., в расследовании Окружной прокуратуры в Лодзи, проводимом совместно с Пунктом ПС в Лодзи, ещё одно лицо (четвёртое по делу), задержанное 26 сентября, получило обвинение в организации для других лиц пересечения границы вопреки закону и в получении ложного удостоверения; суд применил трёхмесячный арест. Из установленных обстоятельств следует, что в стране было создано около 130 компаний, не осуществлявших фактической хозяйственной деятельности, а через них зарегистрировано почти 11,5 тыс. заявлений о поручении выполнения работы иностранцам. Трое лиц задержаны в мае 2026 г.; расследование носит развивающийся характер. Задержание и обвинение не означают осуждения. Общее правило: заявление о поручении работы, поданное компанией, которая фактически не действует, не создаёт легального трудоустройства, а участие в такой схеме влечёт уголовную ответственность."
+        },
+        "fr": {
+          "title": "Environ 130 sociétés fictives et près de 11 500 déclarations de confier un travail à des étrangers : nouvelle mise en cause dans l'enquête de Łódź",
+          "summary": "Selon un communiqué des garde-frontières du 7 octobre 2026, dans l'enquête du parquet régional de Łódź menée conjointement avec le poste des garde-frontières de Łódź, une autre personne (la quatrième dans l'affaire), arrêtée le 26 septembre, a été mise en cause pour avoir organisé pour d'autres personnes le franchissement de la frontière contrairement à la loi et pour obtention d'une attestation mensongère ; le tribunal a ordonné trois mois de détention provisoire. Il ressort des constatations qu'environ 130 sociétés ont été créées dans le pays sans exercer d'activité économique réelle, et que près de 11 500 déclarations de confier un travail à des étrangers ont été enregistrées par leur intermédiaire. Trois personnes ont été arrêtées en mai 2026 ; l'enquête est évolutive. L'arrestation et la mise en cause ne valent pas condamnation. Règle générale : une déclaration de confier un travail déposée par une société qui n'exerce pas réellement d'activité ne crée pas d'emploi légal, et la participation à un tel montage engage la responsabilité pénale."
+        }
+      }
+    },
+    {
+      "id": "2026-10-07-goldap-organizowanie-przekraczania-granicy-zarzuty",
+      "added": "2026-10-07",
+      "category": "Bezpieczeństwo",
+      "title": "Zarzuty organizowania nielegalnego przekraczania granicy z Białorusi: areszt i dozór dla trzech cudzoziemców, zagrożenie do 8 lat więzienia",
+      "summary": "Straż Graniczna poinformowała 7 października 2026 r., że 30 września funkcjonariusze Placówki SG w Gołdapi zatrzymali obywatela Uzbekistanu oraz dwóch innych cudzoziemców (obywateli Mołdawii i Gruzji), którym przedstawiono zarzuty organizowania cudzoziemcom nielegalnego przekraczania granicy państwowej z Białorusi do Polski. Wobec obywatela Gruzji sąd zastosował tymczasowe aresztowanie na 3 miesiące, a wobec pozostałych dozór Policji i zakaz opuszczania kraju. Przestępstwo to zagrożone jest karą do 8 lat pozbawienia wolności. Zatrzymanie i zarzuty nie oznaczają skazania. Reguła ogólna: organizowanie przekraczania granicy innym osobom jest przestępstwem niezależnie od tego, czy sprawca sam jest cudzoziemcem z legalnym pobytem.",
+      "source_name": "Straż Graniczna",
+      "author": "Opracowanie COSC",
+      "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16259,Trzej-cudzoziemcy-zatrzymani-za-organizowanie-nielegalnego-przekraczania-granicy.html",
+      "scope": "PL",
+      "t": {
+        "en": {
+          "title": "Charges for organising illegal border crossings from Belarus: detention and police supervision for three foreigners, up to 8 years' imprisonment",
+          "summary": "The Border Guard announced on 7 October 2026 that on 30 September officers of the Border Guard Post in Gołdap detained a citizen of Uzbekistan and two other foreigners (citizens of Moldova and Georgia), who were charged with organising illegal crossings of the state border from Belarus to Poland for foreigners. The court ordered 3 months' pre-trial detention for the citizen of Georgia and police supervision and a ban on leaving the country for the others. The offence carries a penalty of up to 8 years' imprisonment. Detention and charges do not mean a conviction. General rule: organising border crossings for other people is a criminal offence, regardless of whether the perpetrator is himself a foreigner with legal residence."
+        },
+        "es": {
+          "title": "Cargos por organizar cruces ilegales de la frontera desde Bielorrusia: prisión preventiva y supervisión policial para tres extranjeros, pena de hasta 8 años",
+          "summary": "La Guardia de Fronteras anunció el 7 de octubre de 2026 que el 30 de septiembre agentes del Puesto de la Guardia de Fronteras en Gołdap detuvieron a un ciudadano de Uzbekistán y a otros dos extranjeros (ciudadanos de Moldavia y Georgia), a quienes se imputó la organización para extranjeros del cruce ilegal de la frontera estatal desde Bielorrusia a Polonia. El tribunal ordenó la prisión preventiva de 3 meses para el ciudadano de Georgia y la supervisión policial y la prohibición de salir del país para los demás. El delito se castiga con hasta 8 años de prisión. La detención y la imputación no equivalen a una condena. Regla general: organizar el cruce de la frontera para otras personas es un delito, con independencia de que el autor sea a su vez un extranjero con residencia legal."
+        },
+        "uk": {
+          "title": "Обвинувачення в організації нелегального перетину кордону з Білоруссю: арешт і нагляд поліції для трьох іноземців, загроза до 8 років ув'язнення",
+          "summary": "Прикордонна служба повідомила 7 жовтня 2026 р., що 30 вересня співробітники Підрозділу ПС у Ґолдапі затримали громадянина Узбекистану та ще двох іноземців (громадян Молдови та Грузії), яким висунуто обвинувачення в організації для іноземців нелегального перетину державного кордону з Білорусі до Польщі. Щодо громадянина Грузії суд застосував тримісячний арешт, а щодо інших — нагляд поліції та заборону залишати країну. Цей злочин карається позбавленням волі до 8 років. Затримання та обвинувачення не означають засудження. Загальне правило: організація перетину кордону для інших осіб є злочином незалежно від того, чи сам виконавець є іноземцем із легальним проживанням."
+        },
+        "ru": {
+          "title": "Обвинения в организации незаконного пересечения границы из Беларуси: арест и надзор полиции для трёх иностранцев, угроза до 8 лет лишения свободы",
+          "summary": "Пограничная служба сообщила 7 октября 2026 г., что 30 сентября сотрудники Пункта ПС в Голдапе задержали гражданина Узбекистана и ещё двух иностранцев (граждан Молдовы и Грузии), которым предъявлено обвинение в организации для иностранцев незаконного пересечения государственной границы из Беларуси в Польшу. В отношении гражданина Грузии суд применил арест на 3 месяца, а в отношении остальных — надзор полиции и запрет покидать страну. Это преступление наказывается лишением свободы до 8 лет. Задержание и обвинение не означают осуждения. Общее правило: организация пересечения границы для других лиц является преступлением независимо от того, является ли сам исполнитель иностранцем с легальным проживанием."
+        },
+        "fr": {
+          "title": "Mises en cause pour organisation de passages illégaux de la frontière depuis la Biélorussie : détention et contrôle judiciaire pour trois étrangers, jusqu'à 8 ans d'emprisonnement",
+          "summary": "Les garde-frontières ont annoncé le 7 octobre 2026 que, le 30 septembre, les agents du poste des garde-frontières de Gołdap ont interpellé un ressortissant d'Ouzbékistan et deux autres étrangers (ressortissants de Moldavie et de Géorgie), mis en cause pour avoir organisé à l'intention d'étrangers le franchissement illégal de la frontière de l'État depuis la Biélorussie vers la Pologne. Le tribunal a ordonné trois mois de détention provisoire pour le ressortissant géorgien, et un contrôle de la police ainsi qu'une interdiction de quitter le pays pour les autres. L'infraction est passible de 8 ans d'emprisonnement au maximum. L'arrestation et la mise en cause ne valent pas condamnation. Règle générale : organiser le franchissement de la frontière pour d'autres personnes est une infraction, que l'auteur soit lui-même ou non un étranger en séjour régulier."
+        }
+      }
+    },
     {
       "id": "2026-10-05-cosc-obowiazek-umowy-i-sankcje-2026",
       "added": "2026-10-05",
