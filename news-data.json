@@ -1,6 +1,39 @@
 {
-  "updated": "2026-10-07T18:03:10+02:00",
+  "updated": "2026-10-07T18:05:11+02:00",
   "items": [
+    {
+      "id": "2026-10-07-cosc-ulgi-pit-mlodzi-rodziny-seniorzy",
+      "added": "2026-10-07",
+      "category": "Rynek pracy",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-ulgi-pit-mlodzi-rodziny-seniorzy.html",
+      "title": "Ulgi PIT dla cudzoziemca — młodzi, rodziny 4+, seniorzy i limit 85 528 zł",
+      "summary": "Ulgi PIT-0 dla cudzoziemca: ulga dla młodych (do 26 lat), 4+, dla seniorów i na powrót. Podstawy prawne (art. 21 ust. 1 pkt 148, 152–154 PIT) i wspólny limit 85 528 zł. Stan 2026.",
+      "t": {
+        "en": {
+          "title": "PIT reliefs for foreigners — young people, families 4+, seniors and the PLN 85,528 limit",
+          "summary": "PIT-0 reliefs for foreigners: relief for the young (under 26), 4+ families, seniors and return relief. Legal basis (Art. 21(1) points 148, 152–154 PIT Act) and the joint limit of PLN 85,528. Legal status 2026."
+        },
+        "es": {
+          "title": "Desgravaciones del PIT para extranjeros: jóvenes, familias 4+, seniors y el límite de 85 528 PLN",
+          "summary": "Desgravaciones PIT-0 para extranjeros: desgravación para jóvenes (hasta 26 años), 4+, para seniors y de retorno. Bases jurídicas (art. 21 apdo. 1 puntos 148, 152–154 de la ley del PIT) y límite conjunto de 85 528 PLN. Estado jurídico 2026."
+        },
+        "uk": {
+          "title": "Пільги зі сплати PIT для іноземця — молодь, сім’ї 4+, пенсіонери та ліміт 85 528 зл",
+          "summary": "Пільги PIT-0 для іноземця: пільга для молоді (до 26 років), 4+, для пенсіонерів та пільга на повернення. Правові підстави (ст. 21 ч. 1 п. 148, 152–154 закону про PIT) і спільний ліміт 85 528 зл. Правовий стан на 2026 рік."
+        },
+        "ru": {
+          "title": "Льготы по PIT для иностранца — молодёжь, семьи 4+, пенсионеры и лимит 85 528 зл",
+          "summary": "Льготы PIT-0 для иностранца: льгота для молодёжи (до 26 лет), 4+, для пенсионеров и льгота на возвращение. Правовые основания (ст. 21 ч. 1 п. 148, 152–154 закона о PIT) и общий лимит 85 528 зл. Правовое состояние на 2026 год."
+        },
+        "fr": {
+          "title": "Exonérations de PIT pour les étrangers — jeunes, familles 4+, seniors et plafond de 85 528 PLN",
+          "summary": "Exonérations PIT-0 pour les étrangers : exonération pour les jeunes (moins de 26 ans), 4+, pour les seniors et de retour. Bases juridiques (art. 21 al. 1 points 148, 152–154 de la loi sur le PIT) et plafond commun de 85 528 PLN. État du droit 2026."
+        }
+      }
+    },
     {
       "id": "2026-10-07-udsc-mos-subkonta-dzieci",
       "added": "2026-10-07",
