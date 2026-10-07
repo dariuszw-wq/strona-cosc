@@ -1804,5 +1804,19 @@
    "title": "Урядовий законопроєкт у Сеймі: Frontex зможе проводити в Польщі операції та інтервенції з повернення (друк № 3146)",
    "summary": "До Сейму надійшов урядовий законопроєкт про внесення змін до закону про Прикордонну службу (ustawa o Straży Granicznej) та деяких інших законів (друк № 3146), який 28 вересня 2026 р. було скеровано на перше читання в комісіях. Проєкт приводить польське право у відповідність до Регламенту (ЄС) 2019/1896 про Європейську прикордонну та берегову охорону. До закону про іноземців (ustawa o cudzoziemcach) має бути додано нову ст. 329b: Головний комендант Прикордонної служби зможе звертатися до Агентства Frontex з проханням організувати або координувати операції з повернення та інтервенції з повернення на території Польщі, а також погоджуватися на допомогу з ініціативи Агентства; завдання, пов'язані з поверненням, зможуть виконувати також службовці інших держав ЄС і персонал постійного корпусу Frontex. Проєкт також передбачає відрядження службовців Прикордонної служби до третіх країн як офіцерів зв'язку з питань повернення. Закон має набути чинності через 14 днів після оголошення. Для іноземців це означає посилення механізмів виконання рішень про зобов'язання до повернення (zobowiązanie do powrotu)."
   }
+ },
+ "artykul-obowiazek-umowy-i-sankcje-2026.html": {
+  "en": {
+   "title": "Obligation to submit the contract and penalties for illegally employing a foreigner in 2026",
+   "summary": "New obligations: submitting the foreigner's contract to the office and notifying about the start of work. Fines of up to PLN 50,000, PIP (National Labour Inspectorate) penalty notices of up to PLN 10,000, joint inspections by the PIP and the Border Guard. Legal status as of 2026."
+  },
+  "es": {
+   "title": "Obligación de remitir el contrato y sanciones por el empleo ilegal de un extranjero en 2026",
+   "summary": "Nuevas obligaciones: remitir el contrato del extranjero a la oficina y notificar el inicio del trabajo. Multas de hasta 50 000 PLN, multas de la PIP (Inspección Nacional de Trabajo) de hasta 10 000 PLN, inspecciones conjuntas de la PIP y la Guardia Fronteriza. Estado jurídico en 2026."
+  },
+  "uk": {
+   "title": "Обов’язок передати договір і штрафи за незаконне працевлаштування іноземця у 2026 році",
+   "summary": "Нові обов’язки: передати договір іноземця до відомства та повідомити про початок роботи. Штрафи до 50 000 злотих, мандати PIP (Національної інспекції праці) до 10 000 злотих, спільні перевірки PIP і Прикордонної служби. Правовий стан на 2026 рік."
+  }
  }
 }
