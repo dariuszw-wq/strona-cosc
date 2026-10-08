@@ -93,6 +93,10 @@ header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);po
   .menu.open{display:flex}
   .menu a{padding:13px 22px;width:100%;font-size:15px;border-bottom:1px solid rgba(255,255,255,.08)}
 }
+.ctab{width:100%;border-collapse:collapse;margin:20px 0;font-size:15px;background:#fff;border:1px solid #e6e9f0;border-radius:12px;overflow:hidden}
+.ctab th{background:#16244c;color:#fff;padding:12px 14px;text-align:left;font-weight:600;font-size:14px}
+.ctab td{padding:12px 14px;border-top:1px solid #e6e9f0;vertical-align:top}
+.tablewrap{overflow-x:auto}
 </style>
 <style id="fix-mobilny-2026-07-25">
 @media(max-width:900px){
@@ -225,7 +229,7 @@ a świadczenia płyną z ZUS za pośrednictwem agencji.</p>
 <p>Oba systemy liczą jednorazowe odszkodowanie tak samo — jako iloczyn procentu stałego lub długotrwałego
 uszczerbku na zdrowiu i stawki za jeden procent. Różnią się stawką.</p>
 <div class="tablewrap">
-<table>
+<table class="ctab">
 <tr><th>Świadczenie</th><th>KRUS (pomocnik rolnika)</th><th>ZUS (umowa o pracę, zlecenie, praca tymczasowa)</th></tr>
 <tr><td>Za każdy 1% uszczerbku na zdrowiu</td><td>1431 zł</td><td>1781 zł</td></tr>
 <tr><td>Niezdolność do samodzielnej egzystencji</td><td>zwiększenie o 28 620 zł</td><td>31 162 zł</td></tr>
