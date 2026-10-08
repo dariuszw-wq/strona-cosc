@@ -1,6 +1,39 @@
 {
-  "updated": "2026-10-07T18:05:11+02:00",
+  "updated": "2026-10-08T12:10:49+02:00",
   "items": [
+    {
+      "id": "2026-10-08-cosc-wypadek-pracownika-sezonowego-rolnictwo",
+      "added": "2026-10-08",
+      "category": "Rynek pracy",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-wypadek-pracownika-sezonowego-rolnictwo-odszkodowanie.html",
+      "title": "Wypadek pracownika sezonowego w rolnictwie — odszkodowanie z KRUS, ZUS i OC rolnika",
+      "summary": "Po wypadku w gospodarstwie działają trzy równoległe ścieżki: jednorazowe odszkodowanie z KRUS (1431 zł za 1% uszczerbku), świadczenia z ZUS (1781 zł za 1% od 1 kwietnia 2026 r.) oraz roszczenia cywilne z OC rolnika. Obywatelstwo nie decyduje o prawie do świadczeń, ale w ubezpieczeniu KRUS znaczenie ma podstawa pobytu i tytuł do pracy. Stan prawny: październik 2026.",
+      "t": {
+        "en": {
+          "title": "Accident of a seasonal worker in agriculture — compensation from KRUS, ZUS and the farmer's liability insurance",
+          "summary": "After an accident on a farm three parallel routes apply: a one-off compensation from KRUS (the Agricultural Social Insurance Fund) — PLN 1,431 for each 1% of health damage, benefits from ZUS (the Social Insurance Institution) — PLN 1,781 for each 1% from 1 April 2026, and civil claims under the farmer's compulsory third-party liability insurance (OC rolników). Citizenship does not decide the right to benefits, but in KRUS insurance the basis of stay and the right to work do matter. Legal status: October 2026."
+        },
+        "es": {
+          "title": "Accidente de un trabajador de temporada en la agricultura: indemnización de KRUS, ZUS y del seguro de responsabilidad civil del agricultor",
+          "summary": "Tras un accidente en una explotación agrícola existen tres vías paralelas: la indemnización única de KRUS (Caja de Seguro Social Agrícola) — 1431 PLN por cada 1% de daño a la salud, las prestaciones de ZUS (Instituto de la Seguridad Social) — 1781 PLN por cada 1% desde el 1 de abril de 2026, y las reclamaciones civiles con cargo al seguro obligatorio de responsabilidad civil del agricultor (OC rolników). La nacionalidad no determina el derecho a las prestaciones, pero en el seguro de KRUS sí importan la base de residencia y el título para trabajar. Estado jurídico: octubre de 2026."
+        },
+        "uk": {
+          "title": "Нещасний випадок сезонного працівника в сільському господарстві — відшкодування від KRUS, ZUS і з OC фермера",
+          "summary": "Після нещасного випадку в господарстві діють три паралельні шляхи: одноразове відшкодування від KRUS (Каса сільськогосподарського соціального страхування) — 1431 зл за кожен 1% шкоди здоров’ю, виплати від ZUS (Заклад соціального страхування) — 1781 зл за кожен 1% від 1 квітня 2026 р., а також цивільні вимоги з обов’язкового страхування відповідальності фермера (OC rolników). Громадянство не вирішує права на виплати, але в страхуванні KRUS мають значення підстава перебування та право на роботу. Правовий стан: жовтень 2026 р."
+        },
+        "ru": {
+          "title": "Несчастный случай с сезонным работником в сельском хозяйстве — возмещение от KRUS, ZUS и по OC фермера",
+          "summary": "После несчастного случая в хозяйстве действуют три параллельных пути: единовременное возмещение от KRUS (Касса сельскохозяйственного социального страхования) — 1431 зл за каждый 1% вреда здоровью, выплаты от ZUS (Учреждение социального страхования) — 1781 зл за каждый 1% с 1 апреля 2026 г., а также гражданские требования по обязательному страхованию ответственности фермера (OC rolników). Гражданство не определяет право на выплаты, но в страховании KRUS имеют значение основание пребывания и право на работу. Правовое состояние: октябрь 2026 г."
+        },
+        "fr": {
+          "title": "Accident d'un travailleur saisonnier dans l'agriculture — indemnisation par la KRUS, la ZUS et l'assurance de responsabilité civile de l'agriculteur",
+          "summary": "Après un accident dans une exploitation agricole, trois voies parallèles s'appliquent : l'indemnité forfaitaire de la KRUS (Caisse d'assurance sociale agricole) — 1431 PLN pour chaque 1% d'atteinte à la santé, les prestations de la ZUS (Institut d'assurances sociales) — 1781 PLN pour chaque 1% à compter du 1er avril 2026, et les actions civiles au titre de l'assurance obligatoire de responsabilité civile de l'agriculteur (OC rolników). La nationalité ne détermine pas le droit aux prestations, mais dans l'assurance de la KRUS la base du séjour et le titre permettant de travailler comptent. État du droit : octobre 2026."
+        }
+      }
+    },
     {
       "id": "2026-10-07-cosc-ulgi-pit-mlodzi-rodziny-seniorzy",
       "added": "2026-10-07",
