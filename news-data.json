@@ -1,6 +1,39 @@
 {
-  "updated": "2026-10-08T12:10:49+02:00",
+  "updated": "2026-10-13T10:00:38+02:00",
   "items": [
+    {
+      "id": "2026-10-13-cosc-komornik-kwota-wolna-od-potracen-2027",
+      "added": "2026-10-13",
+      "category": "Rynek pracy",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-komornik-kwota-wolna-od-potracen-2027.html",
+      "title": "Ile komornik może zabrać z pensji w 2027 r. — kwoty wolne od potrąceń",
+      "summary": "Od 1 stycznia 2027 r. płaca minimalna wyniesie 4950 zł brutto (Dz.U. 2026 poz. 1213), a wraz z nią rośnie kwota wolna od potrąceń — ok. 3703,93 zł netto przy pełnym etacie. Limity zajęcia to 50% wynagrodzenia przy zwykłych długach i 60% przy alimentach, a na rachunku bankowym wolne jest 75% minimalnego wynagrodzenia, czyli 3712,50 zł. Obywatelstwo nie zmienia tych zasad. Materiał własny COSC z wyliczeniem krok po kroku.",
+      "t": {
+        "en": {
+          "title": "How much can a bailiff take from your pay in 2027 — amounts exempt from deductions",
+          "summary": "From 1 January 2027 the minimum wage will be PLN 4,950 gross (Dz.U. 2026 poz. 1213), and with it the amount exempt from deductions rises to about PLN 3,703.93 net on a full-time contract. Garnishment limits are 50% of pay for ordinary debts and 60% for maintenance, while 75% of the minimum wage — PLN 3,712.50 — is exempt on a bank account. Citizenship does not change these rules. COSC original analysis with a step-by-step calculation."
+        },
+        "es": {
+          "title": "¿Cuánto puede embargar el agente judicial del salario en 2027? Importes exentos de retenciones",
+          "summary": "Desde el 1 de enero de 2027 el salario mínimo será de 4950 PLN brutos (Dz.U. 2026 poz. 1213) y con él sube el importe exento de retenciones: unos 3703,93 PLN netos a jornada completa. Los límites de embargo son el 50% del salario para deudas ordinarias y el 60% para alimentos; en la cuenta bancaria queda exento el 75% del salario mínimo, es decir 3712,50 PLN. La nacionalidad no altera estas reglas. Material propio de COSC con el cálculo paso a paso."
+        },
+        "uk": {
+          "title": "Скільки виконавець може стягнути із зарплати у 2027 році — суми, вільні від відрахувань",
+          "summary": "З 1 січня 2027 р. мінімальна зарплата становитиме 4950 зл брутто (Dz.U. 2026 poz. 1213), а разом із нею зростає сума, вільна від відрахувань — близько 3703,93 зл нетто на повній ставці. Ліміти стягнення — 50% зарплати за звичайними боргами та 60% за аліментами, а на банківському рахунку вільними є 75% мінімальної зарплати, тобто 3712,50 зл. Громадянство цих правил не змінює. Власний матеріал COSC із покроковим розрахунком."
+        },
+        "ru": {
+          "title": "Сколько пристав может взыскать из зарплаты в 2027 году — суммы, свободные от удержаний",
+          "summary": "С 1 января 2027 г. минимальная зарплата составит 4950 зл брутто (Dz.U. 2026 poz. 1213), а вместе с ней растёт сумма, свободная от удержаний — около 3703,93 зл нетто на полной ставке. Лимиты взыскания — 50% зарплаты по обычным долгам и 60% по алиментам, а на банковском счёте свободны 75% минимальной зарплаты, то есть 3712,50 зл. Гражданство этих правил не меняет. Собственный материал COSC с пошаговым расчётом."
+        },
+        "fr": {
+          "title": "Combien l'huissier peut-il prélever sur le salaire en 2027 — les montants insaisissables",
+          "summary": "À compter du 1er janvier 2027, le salaire minimum s'élèvera à 4950 PLN bruts (Dz.U. 2026 poz. 1213) et, avec lui, le montant insaisissable passe à environ 3703,93 PLN nets à temps plein. Les plafonds de saisie sont de 50% du salaire pour les dettes ordinaires et de 60% pour les pensions alimentaires ; sur un compte bancaire, 75% du salaire minimum — soit 3712,50 PLN — restent insaisissables. La nationalité ne modifie pas ces règles. Contenu original du COSC avec un calcul pas à pas."
+        }
+      }
+    },
     {
       "id": "2026-10-08-cosc-wypadek-pracownika-sezonowego-rolnictwo",
       "added": "2026-10-08",
