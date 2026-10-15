@@ -1,6 +1,39 @@
 {
-  "updated": "2026-10-13T10:00:38+02:00",
+  "updated": "2026-10-15T13:32:52+02:00",
   "items": [
+    {
+      "id": "2026-10-15-cosc-srodki-finansowe-na-wjazd-projekt",
+      "added": "2026-10-15",
+      "category": "Legislacja",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-srodki-finansowe-na-wjazd-projekt-2026.html",
+      "title": "Cztery razy wyższe środki finansowe na wjazd do Polski — projekt MSWiA",
+      "summary": "Projekt rozporządzenia MSWiA (nr 1351 w wykazie prac legislacyjnych, publikacja 14.10.2026) podnosi środki wymagane przy wjeździe: z 75 do 300 zł za dzień, z 300 do 1000 zł przy pobycie do 4 dni, a przy celach edukacyjno-naukowych z 1270 do 2020 zł. Wymóg nie dotyczy osób wjeżdżających na podstawie karty pobytu ani wizy w celu wykonywania pracy (art. 25 ust. 3 ustawy o cudzoziemcach). To projekt — obowiązują kwoty dotychczasowe. Materiał własny COSC.",
+      "t": {
+        "en": {
+          "title": "Four times higher funds required to enter Poland — draft regulation of the Interior Ministry",
+          "summary": "A draft regulation of the Ministry of the Interior and Administration (MSWiA) — no. 1351 in the legislative work list, published on 14 October 2026 — raises the funds required at the border: from PLN 75 to PLN 300 per day, from PLN 300 to PLN 1,000 for stays of up to 4 days, and from PLN 1,270 to PLN 2,020 for study and research purposes. The requirement does not apply to people entering on a residence card (karta pobytu) or a visa issued for the purpose of work (Art. 25(3) of the Act on Foreigners). It is still a draft — the current amounts remain in force. COSC original analysis."
+        },
+        "es": {
+          "title": "Fondos cuatro veces mayores para entrar en Polonia: proyecto de reglamento del Ministerio del Interior",
+          "summary": "Un proyecto de reglamento del Ministerio del Interior y Administración (MSWiA) — nº 1351 de la lista de trabajos legislativos, publicado el 14 de octubre de 2026 — eleva los fondos exigidos en la frontera: de 75 a 300 PLN por día, de 300 a 1000 PLN para estancias de hasta 4 días y de 1270 a 2020 PLN para fines de estudio e investigación. El requisito no se aplica a quienes entran con tarjeta de residencia (karta pobytu) ni con visado expedido para trabajar (art. 25 apdo. 3 de la Ley de Extranjería). Es un proyecto: siguen vigentes los importes actuales. Material propio de COSC."
+        },
+        "uk": {
+          "title": "Учетверо більші кошти на в’їзд до Польщі — проєкт MSWiA",
+          "summary": "Проєкт розпорядження Міністерства внутрішніх справ (№ 1351 у переліку законодавчих робіт, опубліковано 14 жовтня 2026 р.) підвищує кошти, необхідні на кордоні: з 75 до 300 зл за день, з 300 до 1000 зл при перебуванні до 4 днів та з 1270 до 2020 зл для навчання й наукових цілей. Вимога не стосується осіб, які в’їжджають за картою побуту або за візою з метою виконання роботи (ст. 25 ч. 3 закону про іноземців). Це проєкт — чинними залишаються нинішні суми. Власний матеріал COSC."
+        },
+        "ru": {
+          "title": "Вчетверо больше средств на въезд в Польшу — проект MSWiA",
+          "summary": "Проект распоряжения Министерства внутренних дел (№ 1351 в перечне законодательных работ, опубликован 14 октября 2026 г.) повышает средства, требуемые на границе: с 75 до 300 зл в день, с 300 до 1000 зл при пребывании до 4 дней и с 1270 до 2020 зл для учёбы и научных целей. Требование не касается тех, кто въезжает по карте побыта или по визе для работы (ст. 25 ч. 3 закона об иностранцах). Это проект — действуют нынешние суммы. Собственный материал COSC."
+        },
+        "fr": {
+          "title": "Des ressources quatre fois plus élevées pour entrer en Pologne — projet du ministère de l'Intérieur",
+          "summary": "Un projet d'arrêté du ministère de l'Intérieur et de l'Administration (MSWiA) — n° 1351 de la liste des travaux législatifs, publié le 14 octobre 2026 — relève les ressources exigées à la frontière : de 75 à 300 PLN par jour, de 300 à 1000 PLN pour les séjours jusqu'à 4 jours et de 1270 à 2020 PLN pour les études et la recherche. L'exigence ne s'applique pas aux personnes entrant avec une carte de séjour (karta pobytu) ou un visa délivré pour travailler (art. 25 al. 3 de la loi sur les étrangers). Il s'agit d'un projet : les montants actuels restent en vigueur. Contenu original du COSC."
+        }
+      }
+    },
     {
       "id": "2026-10-13-cosc-komornik-kwota-wolna-od-potracen-2027",
       "added": "2026-10-13",

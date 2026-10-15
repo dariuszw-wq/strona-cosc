@@ -1,0 +1,134 @@
+<svg viewBox="0 0 640 470" xmlns="http://www.w3.org/2000/svg" font-family="'IBM Plex Sans',sans-serif">
+<defs>
+<linearGradient id="wsky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1b2a55"/><stop offset="0.55" stop-color="#2b3b6b"/><stop offset="1" stop-color="#46588f"/></linearGradient>
+<linearGradient id="wfar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a3a68"/><stop offset="1" stop-color="#36487a"/></linearGradient>
+<linearGradient id="wleft" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#16244c"/><stop offset="1" stop-color="#243461"/></linearGradient>
+<linearGradient id="wright" x1="1" y1="0" x2="0" y2="0"><stop offset="0" stop-color="#16244c"/><stop offset="1" stop-color="#243461"/></linearGradient>
+<linearGradient id="wroad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3c4a76"/><stop offset="1" stop-color="#222f57"/></linearGradient>
+<radialGradient id="wglow" cx="0.5" cy="0.62" r="0.42"><stop offset="0" stop-color="#8d9fd6" stop-opacity="0.55"/><stop offset="1" stop-color="#8d9fd6" stop-opacity="0"/></radialGradient>
+<filter id="wsoft" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="8" stdDeviation="11" flood-color="#0b1226" flood-opacity="0.45"/></filter>
+<clipPath id="wclip"><rect width="640" height="470" rx="18"/></clipPath>
+</defs>
+
+<g clip-path="url(#wclip)">
+<rect width="640" height="470" fill="url(#wsky)"/>
+
+<!-- odlegla pierzeja i wysokosciowce (sylwety, bez logotypow i napisow) -->
+<g fill="url(#wfar)" opacity="0.95">
+  <rect x="236" y="196" width="46" height="106"/>
+  <rect x="288" y="150" width="30" height="152"/>
+  <rect x="312" y="118" width="20" height="184"/>
+  <rect x="332" y="92"  width="13" height="210"/>
+  <rect x="352" y="176" width="40" height="126"/>
+  <rect x="396" y="210" width="34" height="92"/>
+</g>
+<!-- iglica -->
+<rect x="337" y="66" width="3" height="30" fill="#46588f"/>
+<g fill="#aebbe2" opacity="0.5">
+  <rect x="294" y="166" width="4" height="6"/><rect x="304" y="182" width="4" height="6"/>
+  <rect x="316" y="140" width="4" height="6"/><rect x="316" y="162" width="4" height="6"/>
+  <rect x="336" y="116" width="4" height="6"/><rect x="336" y="140" width="4" height="6"/>
+  <rect x="360" y="196" width="4" height="6"/><rect x="372" y="214" width="4" height="6"/>
+</g>
+
+<!-- poswiata nad ulica -->
+<rect width="640" height="470" fill="url(#wglow)"/>
+
+<!-- jezdnia w perspektywie -->
+<path d="M0 470 L214 302 L426 302 L640 470 Z" fill="url(#wroad)"/>
+<g stroke="#9fb0d6" stroke-width="3" opacity="0.35" stroke-linecap="round">
+  <line x1="320" y1="312" x2="320" y2="330"/>
+  <line x1="320" y1="346" x2="320" y2="374"/>
+  <line x1="320" y1="394" x2="320" y2="438"/>
+</g>
+<!-- chodniki -->
+<path d="M0 470 L214 302 L196 302 L0 418 Z" fill="#4a5a89" opacity="0.85"/>
+<path d="M640 470 L426 302 L444 302 L640 418 Z" fill="#4a5a89" opacity="0.85"/>
+
+<!-- pierzeja lewa -->
+<g fill="url(#wleft)">
+  <path d="M0 60 L120 128 L120 320 L0 420 Z"/>
+  <path d="M120 128 L196 172 L196 302 L120 320 Z"/>
+</g>
+<g fill="#8fa2d2" opacity="0.5">
+  <rect x="22" y="150" width="16" height="24"/><rect x="22" y="196" width="16" height="24"/><rect x="22" y="242" width="16" height="24"/>
+  <rect x="58" y="176" width="14" height="22"/><rect x="58" y="218" width="14" height="22"/><rect x="58" y="260" width="14" height="22"/>
+  <rect x="92" y="200" width="12" height="20"/><rect x="92" y="238" width="12" height="20"/>
+  <rect x="140" y="196" width="11" height="18"/><rect x="140" y="230" width="11" height="18"/>
+  <rect x="166" y="214" width="10" height="16"/>
+</g>
+<!-- pierzeja prawa -->
+<g fill="url(#wright)">
+  <path d="M640 60 L520 128 L520 320 L640 420 Z"/>
+  <path d="M520 128 L444 172 L444 302 L520 320 Z"/>
+</g>
+<g fill="#8fa2d2" opacity="0.5">
+  <rect x="602" y="150" width="16" height="24"/><rect x="602" y="196" width="16" height="24"/><rect x="602" y="242" width="16" height="24"/>
+  <rect x="568" y="176" width="14" height="22"/><rect x="568" y="218" width="14" height="22"/><rect x="568" y="260" width="14" height="22"/>
+  <rect x="536" y="200" width="12" height="20"/><rect x="536" y="238" width="12" height="20"/>
+  <rect x="489" y="196" width="11" height="18"/><rect x="489" y="230" width="11" height="18"/>
+  <rect x="464" y="214" width="10" height="16"/>
+</g>
+
+<!-- latarnie -->
+<g stroke="#6d7fb0" stroke-width="3" fill="none" opacity="0.9">
+  <line x1="178" y1="312" x2="178" y2="246"/><line x1="462" y1="312" x2="462" y2="246"/>
+</g>
+<circle cx="178" cy="242" r="5" fill="#cfd9f2" opacity="0.85"/>
+<circle cx="462" cy="242" r="5" fill="#cfd9f2" opacity="0.85"/>
+
+<!-- przechodnie: sylwety, bez twarzy -->
+<!-- dalsza grupa -->
+<g fill="#1a2748" opacity="0.8">
+  <g transform="translate(262 300) scale(0.52)">
+    <circle cx="0" cy="-54" r="9"/><path d="M-9 -44 h18 l4 34 h-26 z"/><path d="M-7 -10 l-3 30 h7 l3 -30 z"/><path d="M7 -10 l3 30 h-7 l-3 -30 z"/>
+  </g>
+  <g transform="translate(288 302) scale(0.56)">
+    <circle cx="0" cy="-54" r="9"/><path d="M-10 -44 h20 l4 34 h-28 z"/><path d="M-7 -10 l-4 30 h7 l4 -30 z"/><path d="M7 -10 l4 30 h-7 l-4 -30 z"/>
+  </g>
+  <g transform="translate(372 302) scale(0.54)">
+    <circle cx="0" cy="-54" r="9"/><path d="M-9 -44 h18 l4 34 h-26 z"/><path d="M-6 -10 l-3 30 h7 l3 -30 z"/><path d="M8 -10 l3 30 h-7 l-3 -30 z"/>
+  </g>
+</g>
+
+<!-- srodkowa para -->
+<g fill="#16244c" filter="url(#wsoft)">
+  <g transform="translate(236 352) scale(0.92)">
+    <circle cx="0" cy="-62" r="11"/>
+    <path d="M-12 -50 h24 l5 40 h-34 z"/>
+    <path d="M-17 -48 l-7 28 4 2 9 -24 z"/>
+    <path d="M17 -48 l7 26 -5 2 -8 -22 z"/>
+    <path d="M-8 -10 l-5 34 h9 l5 -34 z"/>
+    <path d="M9 -10 l6 34 h-9 l-5 -34 z"/>
+  </g>
+  <g transform="translate(404 358) scale(0.96)">
+    <circle cx="0" cy="-62" r="11"/>
+    <path d="M-13 -50 h26 l5 40 h-36 z"/>
+    <path d="M-18 -48 l-8 26 5 3 9 -23 z"/>
+    <path d="M18 -48 l8 28 -5 2 -9 -24 z"/>
+    <path d="M-9 -10 l-6 34 h9 l6 -34 z"/>
+    <path d="M10 -10 l6 34 h-9 l-5 -34 z"/>
+  </g>
+</g>
+
+<!-- postac pierwszoplanowa z czerwona walizka: jedyny czerwony akcent -->
+<g filter="url(#wsoft)">
+  <g transform="translate(316 416) scale(1.18)">
+    <g fill="#101b3a">
+      <circle cx="0" cy="-66" r="12"/>
+      <path d="M-14 -53 h28 l6 43 h-40 z"/>
+      <path d="M-19 -51 l-9 30 5 3 10 -27 z"/>
+      <path d="M19 -51 l10 28 -5 3 -10 -25 z"/>
+      <path d="M-9 -10 l-6 36 h10 l6 -36 z"/>
+      <path d="M11 -10 l7 36 h-10 l-6 -36 z"/>
+    </g>
+    <!-- walizka -->
+    <rect x="26" y="-16" width="22" height="17" rx="3" fill="#d4213d"/>
+    <rect x="33" y="-22" width="8" height="6" rx="2" fill="none" stroke="#d4213d" stroke-width="2.5"/>
+  </g>
+</g>
+
+<!-- winieta dolna -->
+<rect y="432" width="640" height="38" fill="#0e1730" opacity="0.35"/>
+</g>
+</svg>
