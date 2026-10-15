@@ -1,0 +1,73 @@
+<svg viewBox="0 0 640 470" xmlns="http://www.w3.org/2000/svg" font-family="'IBM Plex Sans',sans-serif">
+<defs>
+<linearGradient id="dbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7f9fd"/><stop offset="1" stop-color="#e7ecf7"/></linearGradient>
+<linearGradient id="dcard" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f1f4fc"/></linearGradient>
+<linearGradient id="dmain" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4636c9"/><stop offset="1" stop-color="#37248F"/></linearGradient>
+<filter id="dsoft" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="9" stdDeviation="12" flood-color="#0b1226" flood-opacity="0.3"/></filter>
+<filter id="dsoft2" x="-35%" y="-35%" width="170%" height="170%"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#0b1226" flood-opacity="0.22"/></filter>
+</defs>
+
+<rect width="640" height="470" rx="18" fill="url(#dbg)"/>
+<g stroke="#d3dcee" stroke-width="1" opacity="0.6">
+  <line x1="0" y1="140" x2="640" y2="140"/><line x1="0" y1="300" x2="640" y2="300"/>
+</g>
+
+<!-- dwie karty wejsciowe: pobyt i praca -->
+<g filter="url(#dsoft2)">
+  <g transform="rotate(-7 128 196)">
+    <rect x="58" y="128" width="140" height="96" rx="12" fill="url(#dcard)" stroke="#dbe2f1"/>
+    <circle cx="86" cy="156" r="11" fill="#c3cde6"/>
+    <rect x="104" y="150" width="68" height="8" rx="4" fill="#d7ddee"/>
+    <rect x="76" y="178" width="106" height="7" rx="3.5" fill="#e3e8f5"/>
+    <rect x="76" y="194" width="78" height="7" rx="3.5" fill="#e3e8f5"/>
+  </g>
+  <g transform="rotate(7 128 318)">
+    <rect x="58" y="250" width="140" height="96" rx="12" fill="url(#dcard)" stroke="#dbe2f1"/>
+    <rect x="74" y="272" width="30" height="22" rx="4" fill="none" stroke="#c3cde6" stroke-width="3"/>
+    <rect x="82" y="266" width="14" height="7" rx="2" fill="none" stroke="#c3cde6" stroke-width="3"/>
+    <rect x="114" y="276" width="62" height="8" rx="4" fill="#d7ddee"/>
+    <rect x="74" y="308" width="108" height="7" rx="3.5" fill="#e3e8f5"/>
+    <rect x="74" y="324" width="70" height="7" rx="3.5" fill="#e3e8f5"/>
+  </g>
+</g>
+
+<!-- strzalki laczace -->
+<g stroke="#8b99c4" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.85">
+  <path d="M212 180 C248 192 258 208 266 224"/>
+  <path d="M212 314 C248 302 258 286 266 270"/>
+</g>
+<path d="M258 216 L270 226 L256 234" fill="none" stroke="#8b99c4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M258 278 L270 268 L256 260" fill="none" stroke="#8b99c4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+<!-- jedno zezwolenie -->
+<g filter="url(#dsoft)">
+  <rect x="286" y="168" width="200" height="134" rx="16" fill="url(#dmain)"/>
+  <rect x="286" y="168" width="200" height="134" rx="16" fill="none" stroke="#6d6ae0" stroke-width="1.5" opacity="0.7"/>
+  <circle cx="322" cy="204" r="13" fill="#ffffff" opacity="0.92"/>
+  <rect x="346" y="197" width="104" height="9" rx="4.5" fill="#ffffff" opacity="0.72"/>
+  <rect x="308" y="236" width="142" height="8" rx="4" fill="#ffffff" opacity="0.4"/>
+  <rect x="308" y="254" width="112" height="8" rx="4" fill="#ffffff" opacity="0.4"/>
+  <rect x="308" y="272" width="86" height="8" rx="4" fill="#ffffff" opacity="0.4"/>
+  <path d="M430 258 L444 272 L470 243" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+
+<!-- tarcza terminu: pelny okrag + czerwony wycinek -->
+<g transform="translate(548 234)">
+  <circle r="54" fill="#ffffff" filter="url(#dsoft2)"/>
+  <circle r="54" fill="none" stroke="#e1e7f4" stroke-width="12"/>
+  <circle r="54" fill="none" stroke="#4636c9" stroke-width="12" stroke-linecap="round"
+          stroke-dasharray="248 339" transform="rotate(-90)"/>
+  <circle r="54" fill="none" stroke="#d4213d" stroke-width="12" stroke-linecap="round"
+          stroke-dasharray="52 339" stroke-dashoffset="-252" transform="rotate(-90)"/>
+  <circle r="30" fill="#f4f6fb"/>
+  <g stroke="#16244c" stroke-width="4" stroke-linecap="round">
+    <line x1="0" y1="0" x2="0" y2="-17"/>
+    <line x1="0" y1="0" x2="13" y2="7"/>
+  </g>
+  <circle r="3.5" fill="#16244c"/>
+</g>
+
+<!-- podstawa -->
+<rect x="58" y="392" width="524" height="10" rx="5" fill="#d9e0f0"/>
+<rect x="58" y="392" width="196" height="10" rx="5" fill="#c3cde6"/>
+</svg>

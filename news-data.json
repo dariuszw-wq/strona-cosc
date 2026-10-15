@@ -1,6 +1,39 @@
 {
-  "updated": "2026-10-15T13:32:52+02:00",
+  "updated": "2026-10-15T13:57:14+02:00",
   "items": [
+    {
+      "id": "2026-10-15-cosc-dyrektywa-2024-1233-jedno-zezwolenie",
+      "added": "2026-10-15",
+      "category": "Legislacja",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-dyrektywa-2024-1233-jedno-zezwolenie-wdrozenie.html",
+      "title": "Dyrektywa o jednym zezwoleniu — czego Polska jeszcze nie wdrożyła",
+      "summary": "Komisja Europejska wezwała 15 lipca 2026 r. 17 państw, w tym Polskę, do wdrożenia dyrektywy (UE) 2024/1233 o jednym zezwoleniu na pobyt i pracę; termin transpozycji upłynął 21 maja 2026 r. Polska ma już samą konstrukcję jednego zezwolenia (art. 114 ustawy o cudzoziemcach), ale różni się w szczegółach: ochrona po utracie pracy to 30 dni (art. 123 ust. 1) wobec 3 miesięcy w dyrektywie, a 6 miesięcy przy zezwoleniu posiadanym ponad 2 lata. Materiał własny COSC z porównaniem przepisów.",
+      "t": {
+        "en": {
+          "title": "The Single Permit Directive — what Poland has not implemented yet",
+          "summary": "On 15 July 2026 the European Commission sent letters of formal notice to 17 Member States, including Poland, over Directive (EU) 2024/1233 on the single permit for residence and work; the transposition deadline was 21 May 2026. Poland already has the single-permit structure itself (Art. 114 of the Act on Foreigners), but differs in the detail: protection after losing a job is 30 days (Art. 123(1)) against three months under the Directive, and six months for holders of a single permit for over two years. COSC original analysis comparing the provisions."
+        },
+        "es": {
+          "title": "La Directiva de permiso único: lo que Polonia aún no ha aplicado",
+          "summary": "El 15 de julio de 2026 la Comisión Europea envió cartas de emplazamiento a 17 Estados miembros, entre ellos Polonia, por la Directiva (UE) 2024/1233 sobre el permiso único de residencia y trabajo; el plazo de transposición venció el 21 de mayo de 2026. Polonia ya cuenta con la figura del permiso único (art. 114 de la Ley de Extranjería), pero difiere en los detalles: la protección tras perder el empleo es de 30 días (art. 123 apdo. 1) frente a tres meses en la Directiva, y seis meses para quienes lo poseen desde hace más de dos años. Material propio de COSC con comparativa."
+        },
+        "uk": {
+          "title": "Директива про єдиний дозвіл — чого Польща ще не впровадила",
+          "summary": "15 липня 2026 р. Європейська комісія надіслала вимоги 17 державам, зокрема Польщі, щодо директиви (ЄС) 2024/1233 про єдиний дозвіл на проживання та роботу; термін транспозиції сплив 21 травня 2026 р. У Польщі сама конструкція єдиного дозволу вже є (ст. 114 закону про іноземців), але деталі різняться: захист після втрати роботи — 30 днів (ст. 123 ч. 1) проти трьох місяців за директивою та шести місяців для тих, хто має дозвіл понад два роки. Власний матеріал COSC із порівнянням норм."
+        },
+        "ru": {
+          "title": "Директива о едином разрешении — что Польша ещё не внедрила",
+          "summary": "15 июля 2026 г. Европейская комиссия направила требования 17 государствам, в том числе Польше, по директиве (ЕС) 2024/1233 о едином разрешении на проживание и работу; срок транспозиции истёк 21 мая 2026 г. Сама конструкция единого разрешения в Польше есть (ст. 114 закона об иностранцах), но детали расходятся: защита после потери работы — 30 дней (ст. 123 ч. 1) против трёх месяцев по директиве и шести месяцев для тех, кто владеет разрешением более двух лет. Собственный материал COSC со сравнением норм."
+        },
+        "fr": {
+          "title": "La directive sur le permis unique — ce que la Pologne n’a pas encore transposé",
+          "summary": "Le 15 juillet 2026, la Commission européenne a adressé des mises en demeure à 17 États membres, dont la Pologne, au sujet de la directive (UE) 2024/1233 relative au permis unique de séjour et de travail ; le délai de transposition expirait le 21 mai 2026. La Pologne dispose déjà du mécanisme du permis unique (art. 114 de la loi sur les étrangers), mais les détails diffèrent : la protection après la perte d’un emploi est de 30 jours (art. 123 al. 1) contre trois mois dans la directive, et six mois pour les titulaires depuis plus de deux ans. Contenu original du COSC avec comparatif."
+        }
+      }
+    },
     {
       "id": "2026-10-15-cosc-srodki-finansowe-na-wjazd-projekt",
       "added": "2026-10-15",
