@@ -1,6 +1,39 @@
 {
-  "updated": "2026-10-15T13:57:14+02:00",
+  "updated": "2026-10-16T15:07:06+02:00",
   "items": [
+    {
+      "id": "2026-10-16-cosc-adwokat-czy-radca-prawny-cudzoziemcy",
+      "added": "2026-10-16",
+      "category": "Urzędy",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-adwokat-czy-radca-prawny-sprawy-cudzoziemcow.html",
+      "title": "Adwokat czy radca prawny przy karcie pobytu i zezwoleniu na pracę?",
+      "summary": "W sprawach o kartę pobytu i zezwolenie na pracę pełnomocnikiem może być każda osoba fizyczna z pełną zdolnością do czynności prawnych — żaden tytuł zawodowy nie jest wymagany (art. 33 § 1 k.p.a.). Tytuł staje się konieczny dopiero w sądzie administracyjnym (art. 35 § 1 p.p.s.a.), a przy skardze kasacyjnej do NSA obowiązuje przymus (art. 175 § 1 p.p.s.a.). Materiał własny COSC.",
+      "t": {
+        "en": {
+          "title": "Advocate or legal adviser for your residence card and work permit?",
+          "summary": "In residence card and work permit cases any natural person with full legal capacity may act as your representative — no professional title is required (Art. 33 § 1 of the Code of Administrative Procedure). A title becomes necessary only before the administrative court (Art. 35 § 1 of the Law on Proceedings before Administrative Courts), and a cassation complaint to the Supreme Administrative Court must be drafted by an advocate (adwokat) or a legal adviser (radca prawny) — Art. 175 § 1. COSC original analysis."
+        },
+        "es": {
+          "title": "¿Abogado o asesor jurídico para la tarjeta de residencia y el permiso de trabajo?",
+          "summary": "En los asuntos de tarjeta de residencia y permiso de trabajo cualquier persona física con plena capacidad de obrar puede actuar como representante: no se exige ningún título profesional (art. 33 § 1 del Código de Procedimiento Administrativo). El título resulta necesario solo ante el tribunal administrativo (art. 35 § 1), y el recurso de casación ante el Tribunal Supremo Administrativo debe redactarlo un adwokat o un radca prawny (art. 175 § 1). Material propio de COSC."
+        },
+        "uk": {
+          "title": "Адвокат чи юрисконсульт для карти побуту та дозволу на роботу?",
+          "summary": "У справах про карту побуту та дозвіл на роботу представником може бути будь-яка фізична особа з повною дієздатністю — жодного фахового звання не потрібно (ст. 33 § 1 Кодексу адміністративного провадження). Звання стає необхідним лише в адміністративному суді (ст. 35 § 1), а касаційну скаргу до NSA має складати adwokat або radca prawny (ст. 175 § 1). Власний матеріал COSC."
+        },
+        "ru": {
+          "title": "Адвокат или юрисконсульт для карты побыта и разрешения на работу?",
+          "summary": "В делах о карте побыта и разрешении на работу представителем может быть любое физическое лицо с полной дееспособностью — никакого профессионального звания не требуется (ст. 33 § 1 Кодекса административного производства). Звание становится необходимым только в административном суде (ст. 35 § 1), а кассационную жалобу в NSA должен составлять adwokat или radca prawny (ст. 175 § 1). Собственный материал COSC."
+        },
+        "fr": {
+          "title": "Avocat ou conseil juridique pour la carte de séjour et le permis de travail ?",
+          "summary": "Dans les dossiers de carte de séjour et de permis de travail, toute personne physique ayant la pleine capacité juridique peut agir comme représentant : aucun titre professionnel n’est exigé (art. 33 § 1 du Code de procédure administrative). Le titre ne devient nécessaire que devant le tribunal administratif (art. 35 § 1), et le pourvoi en cassation devant la Cour administrative suprême doit être rédigé par un adwokat ou un radca prawny (art. 175 § 1). Contenu original du COSC."
+        }
+      }
+    },
     {
       "id": "2026-10-15-cosc-dyrektywa-2024-1233-jedno-zezwolenie",
       "added": "2026-10-15",
