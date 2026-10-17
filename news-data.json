@@ -1,6 +1,39 @@
 {
-  "updated": "2026-10-16T15:07:06+02:00",
+  "updated": "2026-10-17T11:57:53+02:00",
   "items": [
+    {
+      "id": "2026-10-17-cosc-300-plus-wyprawka-szkolna-cudzoziemcy",
+      "added": "2026-10-17",
+      "category": "Urzędy",
+      "scope": "PL",
+      "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+      "author": "Dariusz Włodarczyk Kancelaria TRC",
+      "url": "artykul-300-plus-wyprawka-szkolna-cudzoziemcy.html",
+      "title": "300 zł na wyprawę szkolną dla dziecka cudzoziemca — komu przysługuje",
+      "summary": "Świadczenie dobry start (300 zł) przysługuje też cudzoziemcom, ale decyduje podstawa pobytu, nie obywatelstwo. Dla większości pracujących spoza UE rozstrzyga karta pobytu z adnotacją „dostęp do rynku pracy” — sama wiza pracownicza nie wystarcza. Od 1 lipca 2026 r. (Dz.U. 2026 poz. 866) osoby objęte ochroną czasową muszą dodatkowo spełnić warunek aktywności zawodowej. Wnioski tylko elektronicznie i tylko do 30 listopada. Materiał własny COSC.",
+      "t": {
+        "en": {
+          "title": "PLN 300 school allowance for a foreigner’s child — who is entitled",
+          "summary": "The “Dobry start” allowance (PLN 300) is also available to foreigners, but entitlement depends on the basis of residence, not citizenship. For most non-EU workers it comes down to a residence card bearing the annotation “access to the labour market” — a work visa alone is not enough. From 1 July 2026 (Dz.U. 2026 poz. 866) people under temporary protection must also meet an economic-activity condition. Applications are filed online only and only until 30 November. COSC original analysis."
+        },
+        "es": {
+          "title": "300 PLN de ayuda escolar para el hijo de un extranjero: quién tiene derecho",
+          "summary": "La ayuda “Dobry start” (300 PLN) también alcanza a los extranjeros, pero lo decisivo es la base de la residencia, no la nacionalidad. Para la mayoría de los trabajadores de fuera de la UE todo depende de que la tarjeta de residencia lleve la anotación “acceso al mercado laboral”: el visado de trabajo por sí solo no basta. Desde el 1 de julio de 2026 (Dz.U. 2026 poz. 866) las personas bajo protección temporal deben cumplir además un requisito de actividad laboral. Solicitudes solo en línea y solo hasta el 30 de noviembre. Material propio de COSC."
+        },
+        "uk": {
+          "title": "300 зл на шкільне придбання для дитини іноземця — кому належиться",
+          "summary": "Допомога „Dobry start” (300 зл) належить також іноземцям, але вирішальною є підстава перебування, а не громадянство. Для більшості працівників з-поза ЄС вирішує карта побуту з відміткою „доступ до ринку праці” — самої робочої візи недостатньо. З 1 липня 2026 р. (Dz.U. 2026 poz. 866) особи під тимчасовим захистом мають додатково відповідати умові професійної активності. Заяви — лише електронно і лише до 30 листопада. Власний матеріал COSC."
+        },
+        "ru": {
+          "title": "300 зл на школьные принадлежности для ребёнка иностранца — кому полагается",
+          "summary": "Пособие „Dobry start” (300 зл) полагается и иностранцам, но решает основание пребывания, а не гражданство. Для большинства работников из-за пределов ЕС решает карта побыта с отметкой „доступ к рынку труда” — одной рабочей визы недостаточно. С 1 июля 2026 г. (Dz.U. 2026 poz. 866) лица под временной защитой должны также выполнить условие трудовой активности. Заявления — только электронно и только до 30 ноября. Собственный материал COSC."
+        },
+        "fr": {
+          "title": "300 PLN de fournitures scolaires pour l’enfant d’un étranger — qui y a droit",
+          "summary": "L’allocation “Dobry start” (300 PLN) concerne aussi les étrangers, mais c’est la base du séjour qui décide, pas la nationalité. Pour la plupart des travailleurs hors UE, tout tient à la carte de séjour portant la mention “accès au marché du travail” : un visa de travail seul ne suffit pas. Depuis le 1er juillet 2026 (Dz.U. 2026 poz. 866), les personnes sous protection temporaire doivent en outre remplir une condition d’activité professionnelle. Les demandes se font uniquement en ligne et seulement jusqu’au 30 novembre. Contenu original du COSC."
+        }
+      }
+    },
     {
       "id": "2026-10-16-cosc-adwokat-czy-radca-prawny-cudzoziemcy",
       "added": "2026-10-16",
