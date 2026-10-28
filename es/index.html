@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<script src="../formularz-silnik.js"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tarjeta de residencia y trabajo legal en Polonia &mdash; ayuda en espa&ntilde;ol | COSC</title>
-<meta name="description" content="Despacho polaco en Varsovia que acompa&ntilde;a a hispanohablantes en la tarjeta de residencia y el trabajo legal en Polonia. Evaluaci&oacute;n gratuita en espa&ntilde;ol por WhatsApp.">
+<title>Tarjeta de residencia y trabajo legal en Polonia | COSC</title>
 <link rel="canonical" href="https://cosc.org.pl/es/">
 <link rel="alternate" hreflang="pl" href="https://cosc.org.pl/">
 <link rel="alternate" hreflang="en" href="https://cosc.org.pl/en/">
@@ -13,341 +13,892 @@
 <link rel="alternate" hreflang="ru" href="https://cosc.org.pl/ru/">
 <link rel="alternate" hreflang="fr" href="https://cosc.org.pl/fr/">
 <link rel="alternate" hreflang="x-default" href="https://cosc.org.pl/">
+<meta name="description" content="Gestionamos tu tarjeta de residencia y trabajo legal en Polonia: de la solicitud en MOS a recoger la tarjeta. Ayuda eficaz o devolucion del dinero.">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#16244c; --navy-d:#111a3a; --gold:#4636c9; --gold-l:#6d6ae0;
+  --cream:#f4f6fb; --ink:#16244c; --mut:#5B6478; --line:#e6e9f0;
+  --ok:#2E7D4F;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'IBM Plex Sans',sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;font-size:16px}
+h1,h2,h3{font-family:'IBM Plex Serif',serif;color:var(--navy);line-height:1.15}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.btn{display:inline-block;text-decoration:none;font-weight:700;font-size:15px;padding:14px 26px;border-radius:10px;transition:.2s;text-align:center}
+.btn-gold{background:#d4213d;color:#fff}
+.btn-gold:hover{background:#b81a32;transform:translateY(-1px)}
+.btn-line{border:1.5px solid rgba(255,255,255,.7);color:#fff}
+.hero .eyebrow{color:#e7e5ff}
+.hero h1 em{color:#ffd34d}
+.hero .rotator{color:#ffd34d}
+.gwar{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.35)}
+.gwar .seal{border-color:#ffd34d;color:#ffd34d}
+.gwar strong{color:#ffd34d}
+.btn-line:hover{background:rgba(70,54,201,.15)}
+.eyebrow{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+
+.mos{background:var(--gold);color:#fff;font-size:13.5px;font-weight:600;text-align:center;padding:9px 16px}
+.mos a{color:#ffd34d;font-weight:800}
+
+header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);position:sticky;top:0;z-index:50;box-shadow:0 2px 12px rgba(19,32,58,.25)}
+.flagbar{height:8px;background:linear-gradient(to bottom,#f5f5f5 50%,#d4213d 50%);border-bottom:1px solid rgba(22,36,76,.18);position:sticky;top:var(--hh,66px);z-index:49}
+.flag{flex-shrink:0;width:44px;height:29px;border-radius:3px;box-shadow:0 0 0 1px rgba(255,255,255,.4);overflow:hidden;display:flex;align-items:center;justify-content:center}
+.flag-ue{background:#1e3a8a}
+.flag-pl{flex-direction:column;width:34px;height:34px;border-radius:6px;margin-left:4px}
+.flag-pl .fw{flex:1;width:100%;background:#f5f5f5}
+.flag-pl .fr{flex:1;width:100%;background:#d4213d}
+.hdr-flags{display:flex;gap:9px;align-items:center}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:22px;min-height:66px;padding:9px 0}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none}
+.logo .mark{width:40px;height:40px;border:1.5px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Serif',serif;font-weight:700;color:var(--gold);font-size:15px}
+.logo .name{color:#fff;font-size:14px;line-height:1.3;font-weight:600;max-width:220px}
+.menu{display:flex;flex-wrap:wrap;gap:7px 20px;align-items:center;justify-content:center;flex:1 1 auto;min-width:0}
+.menu a{color:#E9ECF3;text-decoration:none;font-size:14px;font-weight:500}
+.menu a:hover{color:var(--gold-l)}
+.menu a.cta-menu{background:#d4213d;color:#fff;font-weight:700;padding:8px 16px;border-radius:8px;box-shadow:0 2px 8px rgba(212,33,61,.35)}
+.menu a.cta-menu:hover{background:#b81a32;color:#fff}
+.more{position:relative;display:flex;align-items:center}
+.more-btn{display:inline-flex;align-items:center;gap:6px;font-family:inherit;font-size:14px;font-weight:700;color:#fff;text-shadow:0 1px 2px rgba(212,33,61,.55);background:rgba(201,169,97,.10);border:1px solid rgba(201,169,97,.45);border-radius:8px;padding:7px 13px;cursor:pointer;line-height:1;transition:background .2s ease,border-color .2s ease}
+.more-btn:hover{background:rgba(201,169,97,.20);border-color:var(--gold)}
+.more-btn .chev{font-size:11px;transition:transform .2s ease}
+.more.open .more-btn{background:rgba(201,169,97,.22);border-color:var(--gold)}
+.more.open .more-btn .chev{transform:rotate(180deg)}
+.more-menu{position:absolute;top:calc(100% + 12px);left:0;min-width:264px;background:#241C86;border:1px solid rgba(201,169,97,.35);border-radius:14px;padding:8px;box-shadow:0 18px 40px rgba(10,16,40,.45);display:flex;flex-direction:column;gap:2px;opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .18s ease,transform .18s ease,visibility .18s;z-index:60}
+.more.open .more-menu{opacity:1;visibility:visible;transform:translateY(0)}
+.more-menu a{color:#E9ECF3;text-decoration:none;font-size:14px;font-weight:500;padding:11px 14px;border-radius:9px;white-space:nowrap;transition:background .15s ease,color .15s ease}
+.more-menu a:hover{background:rgba(201,169,97,.16);color:var(--gold-l)}
+.lang{display:flex;gap:2px;border:1px solid rgba(255,255,255,.25);border-radius:8px;padding:2px}
+.lang a{padding:4px 8px;font-size:11.5px;font-weight:700;border-radius:6px;text-decoration:none;color:#cfd6e4}
+.lang a.on{background:var(--gold);color:var(--navy)}
+.burger{display:none;background:none;border:none;color:#fff;font-size:26px;cursor:pointer}
+
+/* HERO */
+.hero{background:linear-gradient(160deg,#4636c9 0%,#3b2fbf 60%,#2f2699 100%);color:#fff;padding:72px 0 0;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:460px;height:460px;border:1px solid rgba(70,54,201,.22);border-radius:50%}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;position:relative;z-index:2}
+.hero h1{color:#fff;font-size:clamp(34px,4.6vw,52px);font-weight:600}
+.hero h1 em{font-style:normal;color:#ffd34d}
+.hero p.lead{margin:18px 0 26px;font-size:17px;color:#dce4f5;max-width:540px}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap}
+/* ANIMACJA 1: rotujący wielojęzyczny wers */
+.rotator{height:30px;overflow:hidden;margin-top:20px;font-size:16.5px;color:var(--gold-l);font-weight:600}
+.rotator ul{animation:spin 12s cubic-bezier(.6,0,.2,1) infinite;list-style:none}
+.rotator li{height:30px;display:flex;align-items:center;gap:8px}
+.rotator .fl{font-size:14px;opacity:.8}
+@keyframes spin{
+ 0%,20%{transform:translateY(0)} 25%,45%{transform:translateY(-30px)}
+ 50%,70%{transform:translateY(-60px)} 75%,95%{transform:translateY(-90px)}
+ 100%{transform:translateY(-120px)}
+}
+.gwar{margin-top:24px;display:flex;align-items:center;gap:12px;background:rgba(70,54,201,.12);border:1px solid rgba(70,54,201,.4);border-radius:12px;padding:13px 16px;max-width:560px}
+.gwar .seal{flex:none;width:44px;height:44px;border-radius:50%;border:1.5px solid var(--gold);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:20px;animation:pulse 3s ease-in-out infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(70,54,201,.35)}50%{box-shadow:0 0 0 9px rgba(70,54,201,0)}}
+.gwar p{font-size:13.5px;color:#e7e5ff;line-height:1.45}
+.gwar strong{color:#ffd34d}
+
+.card-visual{position:relative;padding:20px 0 70px}
+.residence-card{background:linear-gradient(135deg,#f4f6fb,#e6e9f0);border-radius:16px;padding:28px 28px 22px;color:var(--navy);box-shadow:0 24px 60px rgba(0,0,0,.35);transform:rotate(-3deg);max-width:480px;margin:0 auto;border:1px solid rgba(70,54,201,.6);animation:floaty 6s ease-in-out infinite}
+@keyframes floaty{0%,100%{transform:rotate(-3deg) translateY(0)}50%{transform:rotate(-3deg) translateY(-8px)}}
+.residence-card .rc-top{display:flex;justify-content:space-between;font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#4636c9;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid rgba(70,54,201,.3)}
+.residence-card .rc-main{display:flex;gap:18px}
+.residence-card .rc-photo{flex:none;width:74px;height:92px;border-radius:8px;background:linear-gradient(160deg,#d8dce6,#b9bff0);border:1px solid rgba(70,54,201,.5);display:flex;align-items:center;justify-content:center;font-size:38px;box-shadow:inset 0 0 0 3px rgba(255,255,255,.4)}
+.residence-card .rc-fields{flex:1;min-width:0}
+.residence-card .rc-name{font-family:'IBM Plex Serif',serif;font-size:28px;font-weight:700}
+.residence-card .rc-row{display:flex;flex-wrap:wrap;gap:14px 18px;margin-top:14px;font-size:12px}
+.residence-card .rc-row div span{display:block;color:#6f7691;font-size:10px;text-transform:uppercase;letter-spacing:.08em}
+.residence-card .rc-chip{width:38px;height:29px;border-radius:5px;background:linear-gradient(135deg,var(--gold),#3b2fbf);margin-top:16px}
+.residence-card .rc-mrz{margin-top:20px;padding-top:14px;border-top:1px dashed rgba(70,54,201,.4);font-family:'Courier New',monospace;font-size:12px;letter-spacing:.05em;color:#4636c9;line-height:1.7;white-space:pre}
+/* ANIMACJA 4: pieczęć przybijająca się po załadowaniu */
+.rc-stamp{position:absolute;bottom:34px;right:8%;border:2.5px solid var(--ok);color:var(--ok);font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding:7px 14px;border-radius:8px;background:rgba(250,248,245,.94);opacity:0;transform:rotate(8deg) scale(2.4);animation:stamp .5s .9s cubic-bezier(.2,1.4,.4,1) forwards}
+@keyframes stamp{to{opacity:1;transform:rotate(8deg) scale(1)}}
+
+/* ANIMACJA 3: liczniki zaufania */
+.trustbar{background:#fff;border-bottom:1px solid var(--line)}
+.trust{display:flex;justify-content:space-between;gap:16px;padding:24px 0;flex-wrap:wrap}
+.trust div{text-align:center;flex:1;min-width:130px}
+.trust .n{font-family:'IBM Plex Serif',serif;font-size:32px;font-weight:700;color:var(--navy)}
+.trust .l{font-size:12.5px;color:var(--mut)}
+
+section{padding:72px 0}
+.sec-head{max-width:660px;margin-bottom:40px}
+.sec-head h2{font-size:clamp(28px,3.4vw,40px);font-weight:600}
+.sec-head p{color:var(--mut);margin-top:10px}
+
+/* ANIMACJA 2: złota ścieżka SVG */
+.path-sec{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:64px 0}
+.path-svg{width:100%;height:auto;display:block}
+.path-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:8px;text-align:center}
+.path-steps h3{font-size:20px;margin-bottom:6px}
+.path-steps p{font-size:13.5px;color:var(--mut)}
+#goldpath{stroke-dasharray:1400;stroke-dashoffset:1400;transition:stroke-dashoffset 2.2s ease}
+.path-sec.inview #goldpath{stroke-dashoffset:0}
+.pnode{opacity:0;transition:opacity .5s ease}
+.path-sec.inview .pnode{opacity:1}
+.path-sec.inview .pnode:nth-child(2){transition-delay:.6s}
+.path-sec.inview .pnode:nth-child(3){transition-delay:1.3s}
+.path-sec.inview .pnode:nth-child(4){transition-delay:2s}
+.pnode-final{transform:translate(940px,60px)}
+.card-pop{transform:scale(.25);transform-origin:0 0;transition:transform .85s cubic-bezier(.34,1.56,.64,1)}
+.path-sec.inview .card-pop{transform:scale(1);transition-delay:2s}
+.check-pop{transform:scale(0) rotate(-30deg);transform-origin:44px -28px;opacity:0;transition:transform .5s cubic-bezier(.34,1.8,.64,1),opacity .3s ease}
+.path-sec.inview .check-pop{transform:scale(1) rotate(8deg);opacity:1;transition-delay:2.5s}
+@keyframes cardPulse{0%,100%{opacity:.18;r:46}50%{opacity:.38;r:54}}
+.path-sec.inview .card-glow{animation:cardPulse 2.1s ease-in-out 2.8s infinite}
+.path-steps>div{opacity:0;transform:translateY(10px);transition:opacity .5s ease,transform .5s ease}
+.path-sec.inview .path-steps>div{opacity:1;transform:translateY(0)}
+.path-sec.inview .path-steps>div:nth-child(1){transition-delay:.6s}
+.path-sec.inview .path-steps>div:nth-child(2){transition-delay:1.3s}
+.path-sec.inview .path-steps>div:nth-child(3){transition-delay:2s}
+
+.serv{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.s-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;display:flex;flex-direction:column;position:relative;overflow:hidden}
+.s-card::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--gold),var(--gold-l));transform:scaleX(0);transform-origin:left;transition:transform .35s ease}
+.s-card:hover::before{transform:scaleX(1)}
+.s-card:hover{border-color:var(--gold);box-shadow:0 20px 60px rgba(27,42,74,.16);transform:translateY(-6px)}
+.s-card .ic{width:44px;height:44px;border-radius:10px;background:var(--cream);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:14px;transition:transform .3s cubic-bezier(.34,1.56,.64,1),background .3s ease,border-color .3s ease}
+.s-card:hover .ic{background:var(--gold);border-color:var(--gold);transform:scale(1.18) rotate(-8deg)}
+.s-card h3{font-size:21px;margin-bottom:8px;position:relative;z-index:1}
+.s-card p{font-size:14px;color:var(--mut);flex:1;position:relative;z-index:1}
+.s-card a{margin-top:14px;font-size:13.5px;font-weight:700;color:var(--navy);text-decoration:none;display:inline-flex;align-items:center;gap:4px}
+.s-card a::after{content:"→";color:var(--gold);transition:transform .25s ease}
+.s-card:hover a::after{transform:translateX(5px)}
+.s-card--side{flex-direction:row;align-items:center;gap:16px}
+.s-card--side .mascot-box{flex:none;margin-bottom:0}
+.s-card--side .ic{flex:none;margin-bottom:0}
+.s-card--side .s-text{flex:1;min-width:0;display:flex;flex-direction:column}
+@media(max-width:520px){.s-card--side{flex-direction:column;align-items:flex-start}}
+.s-num{position:absolute;top:14px;right:18px;font-family:'IBM Plex Serif',serif;font-size:34px;font-weight:700;color:var(--line);z-index:0;pointer-events:none}
+
+/* MASKOTKA: postać reagująca na temat karty (test — karta "wniosek online") */
+.mascot-box{width:88px;height:88px;border-radius:14px;background:var(--cream);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;margin-bottom:14px;overflow:hidden}
+.mascot-box svg{width:100%;height:100%}
+.mascot-box video.mascot-video{width:100%;height:100%;object-fit:cover;display:block}
+
+.m-face-worried{opacity:0}
+.m-eyes-closed{opacity:0}
+.mascot.inview .m-eyes-open{animation:mBlinkOpen 4s ease-in-out infinite}
+.mascot.inview .m-eyes-closed{animation:mBlinkClosed 4s ease-in-out infinite}
+@keyframes mBlinkOpen{0%,90%,100%{opacity:1}94%,97%{opacity:0}}
+@keyframes mBlinkClosed{0%,90%,100%{opacity:0}94%,97%{opacity:1}}
+
+/* karta 02 — zagubienie przy wniosku online */
+.mascot-02.inview .m-head{animation:mHead02 5s ease-in-out infinite}
+.mascot-02.inview .m-arm-l{animation:mArmL02 5s ease-in-out infinite}
+.mascot-02.inview .m-arm-r{animation:mArmR02 5s ease-in-out infinite}
+.mascot-02.inview .m-face-worried{animation:mFaceIn02 5s ease infinite}
+.mascot-02.inview .m-face-focused{animation:mFaceOut02 5s ease infinite}
+@keyframes mHead02{
+  0%,10%{transform:rotate(0deg) translateY(0)}
+  20%{transform:rotate(-4deg) translateY(-2px)}
+  28%{transform:rotate(11deg)}
+  34%{transform:rotate(-11deg)}
+  40%{transform:rotate(9deg)}
+  46%{transform:rotate(-9deg)}
+  52%{transform:rotate(4deg)}
+  58%,80%{transform:rotate(2deg) translateY(-1px)}
+  92%,100%{transform:rotate(0deg) translateY(0)}
+}
+@keyframes mArmL02{
+  0%,50%{transform:rotate(0deg)}
+  60%{transform:rotate(-263deg)}
+  72%,82%{transform:rotate(-219deg)}
+  95%,100%{transform:rotate(0deg)}
+}
+@keyframes mArmR02{
+  0%,50%{transform:rotate(0deg)}
+  60%{transform:rotate(263deg)}
+  72%,82%{transform:rotate(219deg)}
+  95%,100%{transform:rotate(0deg)}
+}
+@keyframes mFaceIn02{0%,28%{opacity:0}45%,80%{opacity:1}95%,100%{opacity:0}}
+@keyframes mFaceOut02{0%,28%{opacity:1}45%,80%{opacity:0}95%,100%{opacity:1}}
+
+/* karta 01 — nadzieja/radość, ręce przy sercu, kiwanie na tak */
+.mascot-01.inview .m-head{animation:mHead01 5s ease-in-out infinite}
+.mascot-01.inview .m-arm-l{animation:mArmL01 5s ease-in-out infinite}
+.mascot-01.inview .m-arm-r{animation:mArmR01 5s ease-in-out infinite}
+.mascot-01.inview .m-face-worried{animation:mFaceIn01 5s ease infinite}
+.mascot-01.inview .m-face-focused{animation:mFaceOut01 5s ease infinite}
+.mascot-01.inview .m-pupils{animation:mPupilsUp01 5s ease infinite}
+@keyframes mHead01{
+  0%,15%{transform:rotate(0deg) translateY(0)}
+  30%{transform:rotate(-2deg) translateY(-1px)}
+  40%{transform:rotate(2deg) translateY(2px)}
+  50%{transform:rotate(-2deg) translateY(-1px)}
+  60%{transform:rotate(2deg) translateY(2px)}
+  70%,88%{transform:rotate(0deg) translateY(0)}
+  100%{transform:rotate(0deg) translateY(0)}
+}
+@keyframes mArmL01{
+  0%,35%{transform:rotate(0deg)}
+  50%,85%{transform:rotate(-95deg)}
+  95%,100%{transform:rotate(0deg)}
+}
+@keyframes mArmR01{
+  0%,35%{transform:rotate(0deg)}
+  50%,85%{transform:rotate(95deg)}
+  95%,100%{transform:rotate(0deg)}
+}
+@keyframes mFaceIn01{0%,30%{opacity:0}45%,85%{opacity:1}95%,100%{opacity:0}}
+@keyframes mFaceOut01{0%,30%{opacity:1}45%,85%{opacity:0}95%,100%{opacity:1}}
+@keyframes mPupilsUp01{0%,30%{transform:translateY(0)}45%,85%{transform:translateY(-1.5px)}95%,100%{transform:translateY(0)}}
+
+/* karta 03 — zagubienie w opcjach, potem uśmiech i kiwanie na tak */
+.m-face-alt03{opacity:0}
+.mascot-03.inview .m-head{animation:mHead03 5s ease-in-out infinite}
+.mascot-03.inview .m-arm-r{animation:mArmR03 5s ease-in-out infinite}
+.mascot-03.inview .m-face-worried{animation:mFaceIn03 5s ease infinite}
+.mascot-03.inview .m-face-focused{animation:mFaceOut03 5s ease infinite}
+.mascot-03.inview .m-face-alt03{animation:mFaceAlt03 5s ease infinite}
+@keyframes mHead03{
+  0%,15%{transform:rotate(0deg) translateY(0)}
+  30%,55%{transform:rotate(9deg) translateY(-1px)}
+  65%{transform:rotate(0deg) translateY(0)}
+  73%{transform:rotate(-3deg) translateY(-1px)}
+  80%{transform:rotate(3deg) translateY(2px)}
+  87%{transform:rotate(-3deg) translateY(-1px)}
+  93%,100%{transform:rotate(0deg) translateY(0)}
+}
+@keyframes mArmR03{
+  0%,20%{transform:rotate(0deg)}
+  35%,65%{transform:rotate(219deg)}
+  80%,100%{transform:rotate(0deg)}
+}
+@keyframes mFaceIn03{0%,20%{opacity:0}30%,65%{opacity:1}75%,100%{opacity:0}}
+@keyframes mFaceOut03{0%,20%{opacity:1}30%,70%{opacity:0}93%,100%{opacity:1}}
+@keyframes mFaceAlt03{0%,70%{opacity:0}78%,90%{opacity:1}97%,100%{opacity:0}}
+
+/* karta 04 — uśmiech, dzieci wjeżdżają z boków, mrugnięcie */
+.m-child-l{transform:translate(-25px,90px)}
+.m-child-r{transform:translate(145px,90px)}
+.mascot-04.inview .m-head{animation:mHead04 5s ease-in-out infinite}
+.mascot-04.inview .m-face-worried{animation:mFaceIn04 5s ease infinite}
+.mascot-04.inview .m-face-focused{animation:mFaceOut04 5s ease infinite}
+.mascot-04.inview .m-child-l{animation:mChildL04 5s ease-in-out infinite}
+.mascot-04.inview .m-child-r{animation:mChildR04 5s ease-in-out infinite}
+.mascot-04.inview .m-eyes-open{animation:mBlinkOpen04 5s ease-in-out infinite}
+.mascot-04.inview .m-eyes-closed{animation:mBlinkClosed04 5s ease-in-out infinite}
+@keyframes mHead04{
+  0%,15%{transform:rotate(0deg) translateY(0)}
+  30%{transform:rotate(-3deg) translateY(-1px)}
+  45%,85%{transform:rotate(2deg) translateY(-1px)}
+  95%,100%{transform:rotate(0deg) translateY(0)}
+}
+@keyframes mFaceIn04{0%,20%{opacity:0}32%,88%{opacity:1}96%,100%{opacity:0}}
+@keyframes mFaceOut04{0%,20%{opacity:1}32%,88%{opacity:0}96%,100%{opacity:1}}
+@keyframes mChildL04{0%,42%{transform:translate(-25px,90px)}60%,90%{transform:translate(14px,90px)}100%{transform:translate(-25px,90px)}}
+@keyframes mChildR04{0%,42%{transform:translate(145px,90px)}60%,90%{transform:translate(106px,90px)}100%{transform:translate(145px,90px)}}
+@keyframes mBlinkOpen04{0%,70%,100%{opacity:1}75%,79%{opacity:0}}
+@keyframes mBlinkClosed04{0%,70%,100%{opacity:0}75%,79%{opacity:1}}
+
+/* karta 05 — niepokój przed zmianą, splecione dłonie, zerkanie na boki */
+.mascot-05.inview .m-head{animation:mHead05 5s ease-in-out infinite}
+.mascot-05.inview .m-arm-l{animation:mArmL05 5s ease-in-out infinite}
+.mascot-05.inview .m-arm-r{animation:mArmR05 5s ease-in-out infinite}
+.mascot-05.inview .m-face-worried{animation:mFaceIn05 5s ease infinite}
+.mascot-05.inview .m-face-focused{animation:mFaceOut05 5s ease infinite}
+@keyframes mHead05{
+  0%,15%{transform:rotate(0deg)}
+  22%{transform:rotate(6deg)}
+  28%{transform:rotate(-6deg)}
+  34%{transform:rotate(6deg)}
+  40%{transform:rotate(-6deg)}
+  46%{transform:rotate(4deg)}
+  52%,66%{transform:rotate(0deg)}
+  100%{transform:rotate(0deg)}
+}
+@keyframes mArmL05{
+  0%,20%{transform:rotate(0deg)}
+  35%{transform:rotate(-75deg)}
+  40%{transform:rotate(-68deg)}
+  46%{transform:rotate(-78deg)}
+  52%{transform:rotate(-68deg)}
+  58%{transform:rotate(-78deg)}
+  64%{transform:rotate(-75deg)}
+  80%,100%{transform:rotate(0deg)}
+}
+@keyframes mArmR05{
+  0%,20%{transform:rotate(0deg)}
+  35%{transform:rotate(75deg)}
+  40%{transform:rotate(68deg)}
+  46%{transform:rotate(78deg)}
+  52%{transform:rotate(68deg)}
+  58%{transform:rotate(78deg)}
+  64%{transform:rotate(75deg)}
+  80%,100%{transform:rotate(0deg)}
+}
+@keyframes mFaceIn05{0%,15%{opacity:0}25%,75%{opacity:1}90%,100%{opacity:0}}
+@keyframes mFaceOut05{0%,15%{opacity:1}25%,75%{opacity:0}90%,100%{opacity:1}}
+
+/* karta 06 — rozczarowanie z iskrą determinacji */
+.m-face-alt06{opacity:0}
+.mascot-06.inview .m-head{animation:mHead06 5s ease-in-out infinite}
+.mascot-06.inview .m-arm-l{animation:mArmL06 5s ease-in-out infinite}
+.mascot-06.inview .m-face-worried{animation:mFaceIn06 5s ease infinite}
+.mascot-06.inview .m-face-focused{animation:mFaceOut06 5s ease infinite}
+.mascot-06.inview .m-face-alt06{animation:mFaceAlt06 5s ease infinite}
+@keyframes mHead06{
+  0%,15%{transform:rotate(0deg) translateY(0)}
+  30%,50%{transform:rotate(8deg) translateY(3px)}
+  65%{transform:rotate(0deg) translateY(0)}
+  78%,92%{transform:rotate(-4deg) translateY(-2px)}
+  100%{transform:rotate(0deg) translateY(0)}
+}
+@keyframes mArmL06{
+  0%,20%{transform:rotate(0deg)}
+  35%,55%{transform:rotate(-219deg)}
+  70%,100%{transform:rotate(0deg)}
+}
+@keyframes mFaceIn06{0%,20%{opacity:0}30%,55%{opacity:1}62%,100%{opacity:0}}
+@keyframes mFaceOut06{0%,20%{opacity:1}30%,90%{opacity:0}95%,100%{opacity:1}}
+@keyframes mFaceAlt06{0%,65%{opacity:0}72%,90%{opacity:1}96%,100%{opacity:0}}
+
+@media(prefers-reduced-motion:reduce){
+  .mascot .m-head,.mascot .m-arm-l,.mascot .m-arm-r,.mascot .m-face-worried,.mascot .m-face-focused{animation:none!important}
+  .mascot .m-face-worried{opacity:1}
+  .mascot .m-face-focused{opacity:0}
+  .mascot-02 .m-arm-l{transform:rotate(-219deg)}
+  .mascot-02 .m-arm-r{transform:rotate(219deg)}
+  .mascot-01 .m-arm-l{transform:rotate(-95deg)}
+  .mascot-01 .m-arm-r{transform:rotate(95deg)}
+  .mascot-03 .m-arm-r{transform:rotate(219deg)}
+  .mascot-04 .m-child-l,.mascot-04 .m-child-r{animation:none!important}
+  .mascot-04 .m-child-l{transform:translate(14px,90px)}
+  .mascot-04 .m-child-r{transform:translate(106px,90px)}
+  .mascot-05 .m-arm-l{transform:rotate(-75deg)}
+  .mascot-05 .m-arm-r{transform:rotate(75deg)}
+  .mascot-06 .m-arm-l{transform:rotate(-219deg)}
+}
+
+.mos-sec{background:var(--navy);color:#fff}
+.mos-sec h2{color:#fff}
+.mos-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.mos-list{list-style:none;margin-top:18px}
+.mos-list li{padding:10px 0 10px 30px;position:relative;font-size:15px;color:#dce4f5;border-bottom:1px solid rgba(255,255,255,.08)}
+.mos-list li::before{content:"✓";position:absolute;left:0;color:var(--gold);font-weight:700}
+.mos-panel{background:rgba(255,255,255,.05);border:1px solid rgba(70,54,201,.35);border-radius:16px;padding:28px}
+.mos-panel .price{font-family:'IBM Plex Serif',serif;font-size:44px;color:var(--gold-l);font-weight:700}
+.mos-panel .per{font-size:13px;color:#cdd8ee}
+
+.plany{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:stretch}
+.plan{background:#fff;border:1px solid var(--line);border-radius:16px;padding:30px 26px;display:flex;flex-direction:column;position:relative}
+.plan.best{border:2px solid var(--gold);box-shadow:0 14px 40px rgba(27,42,74,.10)}
+.plan .tag{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--gold);color:var(--navy);font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:5px 14px;border-radius:999px;white-space:nowrap}
+.plan h3{font-size:22px}
+.plan .cena{font-family:'IBM Plex Serif',serif;font-size:42px;font-weight:700;color:var(--navy);margin:8px 0 2px}
+.plan .cena small{font-size:16px;color:var(--mut);font-family:'IBM Plex Sans',sans-serif;font-weight:500}
+.plan ul{list-style:none;margin:18px 0;flex:1}
+.plan li{font-size:14px;padding:7px 0 7px 26px;position:relative}
+.plan li::before{content:"✓";position:absolute;left:0;color:var(--gold);font-weight:800}
+.plan .btn{width:100%}
+.plan .gw{font-size:12px;color:var(--mut);margin-top:10px;text-align:center}
+
+.calc-teaser{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.ct-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.ct-demo{background:var(--cream);border:1px solid var(--line);border-radius:16px;padding:26px}
+.ct-demo .bar{height:12px;background:#e6e9f0;border-radius:8px;overflow:hidden;margin:14px 0 8px}
+.ct-demo .bar div{width:0;height:100%;background:linear-gradient(90deg,var(--ok),#7FB894);transition:width 1.4s ease}
+.ct-demo.inview .bar div{width:71%}
+.ct-demo .big{font-family:'IBM Plex Serif',serif;font-size:40px;font-weight:700;color:var(--navy)}
+
+.faq details{background:#fff;border:1px solid var(--line);border-radius:12px;margin-bottom:10px;overflow:hidden}
+.faq summary{cursor:pointer;padding:18px 20px 18px 24px;font-weight:600;font-size:15.5px;color:var(--navy);list-style:none;display:flex;justify-content:space-between;gap:16px;position:relative;transition:background .25s ease,padding-left .25s ease}
+.faq summary::before{content:"";position:absolute;left:0;top:0;bottom:0;width:0;background:var(--gold);transition:width .25s ease}
+.faq summary:hover{background:var(--cream);padding-left:30px}
+.faq summary:hover::before{width:4px}
+.faq summary::after{content:"+";color:var(--gold);font-size:22px}
+.faq details[open] summary::after{content:"–"}
+.faq .a{padding:0 20px 18px;font-size:14.5px;color:var(--mut)}
+
+.kontakt{background:var(--navy);color:#fff}
+.kontakt h2{color:#fff}
+.k-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.k-ways{display:flex;flex-direction:column;gap:12px;margin-top:22px}
+.k-way{display:flex;align-items:center;gap:14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:14px 16px;text-decoration:none;color:#fff;transition:.2s}
+.k-way:hover{border-color:var(--gold)}
+.k-way .ki{width:42px;height:42px;border-radius:10px;background:var(--gold);color:var(--navy);display:flex;align-items:center;justify-content:center;font-size:19px;flex:none}
+.k-way b{display:block;font-size:15px}
+.k-way span{font-size:12.5px;color:#cdd8ee}
+.k-info{background:rgba(255,255,255,.05);border:1px solid rgba(70,54,201,.3);border-radius:16px;padding:28px;font-size:14.5px;color:#dce4f5}
+.k-info h3{color:var(--gold-l);font-size:22px;margin-bottom:12px}
+.k-info p{margin-bottom:8px}
+.k-form{margin-top:22px;display:flex;flex-direction:column;gap:14px}
+.k-form label{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:#cdd8ee}
+.k-form input,.k-form select,.k-form textarea{font-family:inherit;font-size:15px;font-weight:400;color:#fff;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);border-radius:10px;padding:12px 14px;transition:.2s}
+.k-form input::placeholder,.k-form textarea::placeholder{color:#8fa0bd}
+.k-form input:focus,.k-form select:focus,.k-form textarea:focus{outline:none;border-color:var(--gold-l);background:rgba(255,255,255,.09)}
+.k-form select option{color:#16244c}
+.k-form textarea{resize:vertical;min-height:96px}
+.k-consent{flex-direction:row!important;align-items:flex-start;gap:10px!important;font-weight:400!important;font-size:12.5px!important;color:#b9c3d6!important}
+.k-consent input{flex:none;width:18px;height:18px;margin-top:1px;padding:0}
+.k-consent a{color:var(--gold-l)}
+.k-send{border:none;cursor:pointer;width:100%;margin-top:2px}
+.k-alt{text-align:center;font-size:13px;color:#b9c3d6;text-decoration:underline;text-underline-offset:3px}
+.k-alt:hover{color:var(--gold-l)}
+.k-or{margin:22px 0 4px;font-size:12.5px;color:#8fa0bd;text-transform:uppercase;letter-spacing:.12em}
+
+footer{background:var(--navy-d);color:#93A0B8;font-size:12.5px;padding:34px 0}
+.f-grid{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer a{color:#B9C3D6;text-decoration:none}
+footer .upd{margin-top:14px;font-size:11.5px;color:#6B7890}
+
+.wa-float{position:fixed;bottom:20px;right:20px;width:56px;height:56px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:26px;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.28);z-index:60}
+
+@media(max-width:900px){
+  .nav{position:relative;justify-content:center}
+  .logo{justify-content:center;text-align:center}
+  .lang{position:absolute;right:54px;top:50%;transform:translateY(-50%)}
+  .burger{display:block;position:absolute;right:14px;top:50%;transform:translateY(-50%)}
+  .menu{display:none;position:absolute;top:var(--hh,66px);left:0;right:0;flex-wrap:nowrap;flex-direction:column;gap:0;background:#2f2699;padding:6px 0;box-shadow:0 12px 24px rgba(0,0,0,.25);z-index:48}
+  .menu.open{display:flex}
+  .menu a{padding:13px 22px;width:100%;font-size:15px;border-bottom:1px solid rgba(255,255,255,.08)}
+  .more{display:contents}
+  .more-btn{display:none}
+  .more-menu{position:static;opacity:1;visibility:visible;transform:none;display:flex;background:transparent;border:none;box-shadow:none;padding:0;min-width:0;gap:0}
+  .more-menu a{border-radius:0;padding:13px 22px;border-bottom:1px solid rgba(255,255,255,.08)}
+  .hero-grid,.mos-grid,.ct-grid,.k-grid{grid-template-columns:1fr}
+  .serv,.plany,.path-steps{grid-template-columns:1fr}
+  .hero{padding-top:48px}
+  section{padding:52px 0}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .rc-stamp{opacity:1;transform:rotate(8deg) scale(1)}
+  #goldpath{stroke-dashoffset:0}
+  .pnode{opacity:1}
+  .card-pop{transform:none}
+  .check-pop{transform:none;opacity:1}
+  .path-steps>div{opacity:1;transform:none}
+  .ct-demo .bar div{width:71%}
+}
+</style>
+<style id="fix-mobilny-2026-07-25">
+/* Poprawka mobilna: flaga PL nie nachodzi na logo, tytul hero nie jest uciety */
+@media(max-width:900px){
+  header .nav{justify-content:flex-start;padding-right:104px;box-sizing:border-box}
+  header .logo{justify-content:flex-start;text-align:left}
+  header .logo .flag-pl{display:flex!important;width:34px;height:34px}
+  header .logo .name{max-width:none}
+  .hero h1{font-size:clamp(23px,6.4vw,44px);overflow-wrap:break-word}
+}
+/* Poprawka mobilna 2026-07-31: karta pobytu w proporcji poziomej karty plastikowej (ID-1, ~1.59:1) */
+@media(max-width:640px){
+  .residence-card{aspect-ratio:1.586/1;padding:12px 14px 10px;max-width:400px;display:flex;flex-direction:column;overflow:hidden}
+  .residence-card .rc-top{font-size:9px;margin-bottom:8px;padding-bottom:6px}
+  .residence-card .rc-main{gap:12px;flex:1;min-height:0}
+  .residence-card .rc-photo{width:52px;height:64px;font-size:26px;border-radius:6px}
+  .residence-card .rc-name{font-size:17px}
+  .residence-card .rc-row{gap:8px 12px;margin-top:8px;font-size:10px}
+  .residence-card .rc-row div span{font-size:8px}
+  .residence-card .rc-chip{width:28px;height:21px;margin-top:8px}
+  .residence-card .rc-mrz{margin-top:auto;padding-top:6px;font-size:8.5px;line-height:1.5}
+}
+</style>
+
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Centro de Atenci&oacute;n de Asuntos de Extranjeros">
-<meta property="og:locale" content="es_CO">
-<meta property="og:locale:alternate" content="es_ES">
-<meta property="og:title" content="Tarjeta de residencia y trabajo legal en Polonia &mdash; ayuda en espa&ntilde;ol | COSC">
-<meta property="og:description" content="Despacho polaco en Varsovia que acompa&ntilde;a a hispanohablantes en la tarjeta de residencia y el trabajo legal en Polonia. Evaluaci&oacute;n gratuita en espa&ntilde;ol por WhatsApp.">
+<meta property="og:site_name" content="Centro de Atencion a Extranjeros">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="Tarjeta de residencia y trabajo legal en Polonia | COSC">
+<meta property="og:description" content="Gestionamos tu tarjeta de residencia y trabajo legal en Polonia: de la solicitud en MOS a recoger la tarjeta. Ayuda eficaz o devolucion del dinero.">
 <meta property="og:url" content="https://cosc.org.pl/es/">
-<meta property="og:image" content="https://cosc.org.pl/og/es/index.png">
+<meta property="og:image" content="https://cosc.org.pl/og/strona-glowna.png">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Tarjeta de residencia y trabajo legal en Polonia &mdash; ayuda en espa&ntilde;ol | COSC">
-<meta name="twitter:description" content="Despacho polaco en Varsovia que acompa&ntilde;a a hispanohablantes en la tarjeta de residencia y el trabajo legal en Polonia. Evaluaci&oacute;n gratuita en espa&ntilde;ol por WhatsApp.">
-<meta name="twitter:image" content="https://cosc.org.pl/og/es/index.png">
-<link rel="icon" href="https://cosc.org.pl/favicon.svg" type="image/svg+xml">
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-:root{--navy:#16244c;--violet:#4636c9;--violet-d:#37248F;--violet-l:#6d6ae0;--cream:#f4f6fb;--mut:#5a6478;--red:#d4213d;--green:#1a9a52;--amber:#C07A1E;--line:#e6e9f0}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:'IBM Plex Sans',system-ui,sans-serif;background:var(--cream);color:var(--navy);line-height:1.65;font-size:16px}
-h1,h2,h3{font-family:'IBM Plex Serif',Georgia,serif;color:var(--navy);line-height:1.2}
-a{color:inherit}
-.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
-/* ===== NAGLOWEK (kalka .csh- z site-header.js) ===== */
-.csh-header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);position:sticky;top:0;z-index:50;box-shadow:0 2px 12px rgba(19,32,58,.25);display:block}
-.csh-wrap{max-width:1120px;margin:0 auto;padding:0 16px;display:flex;align-items:center;gap:12px;min-height:66px;flex-wrap:nowrap}
-.csh-logo{display:flex;align-items:center;gap:9px;text-decoration:none;flex:none}
-.csh-flag{flex-shrink:0;width:32px;height:32px;border-radius:6px;box-shadow:0 0 0 1px rgba(255,255,255,.4);overflow:hidden;display:flex;flex-direction:column}
-.csh-flag .csh-fw{flex:1;width:100%;background:#f5f5f5}.csh-flag .csh-fr{flex:1;width:100%;background:#d4213d}
-.csh-name{color:#fff;font-family:'IBM Plex Serif',Georgia,serif;font-weight:700;font-size:13.5px;line-height:1.15;white-space:nowrap}
-.csh-menu{display:flex;flex-wrap:wrap;gap:2px 4px;align-items:center;justify-content:flex-end;flex:1 1 auto;min-width:0}
-.csh-menu>a{white-space:nowrap}
-.csh-menu>a{color:#E9ECF3;text-decoration:none;font-size:13.5px;font-weight:600;padding:8px 10px;border-radius:8px;transition:background .18s,color .18s}
-.csh-menu>a:hover,.csh-menu>a.on{background:rgba(255,255,255,.12);color:#ffd34d}
-.csh-cta{background:#d4213d !important;color:#fff !important;font-weight:700;padding:8px 14px;border-radius:8px;box-shadow:0 2px 8px rgba(212,33,61,.35);margin-left:4px}
-.csh-cta:hover{background:#b81a32 !important;color:#fff !important}
-.csh-lang{flex:none;display:flex;gap:2px;border:1px solid rgba(255,255,255,.3);border-radius:8px;padding:2px;margin-left:6px}
-.csh-lang a{padding:4px 9px;font-size:11.5px;font-weight:800;border-radius:6px;text-decoration:none;color:#dfe4ee}
-.csh-lang a.on{background:#fff;color:#4636c9}
-.csh-burger{display:none;background:none;border:none;color:#fff;font-size:26px;cursor:pointer;flex:none}
-/* rozwijana lista „Más" */
-.csh-more{position:relative;display:flex;align-items:center}
-.csh-more-btn{display:inline-flex;align-items:center;gap:5px;font-family:inherit;font-size:13.5px;font-weight:600;color:#E9ECF3;background:none;border:none;border-radius:8px;padding:8px 10px;cursor:pointer;line-height:1;white-space:nowrap;transition:background .18s,color .18s}
-.csh-more-btn:hover,.csh-more-btn.on{background:rgba(255,255,255,.12);color:#ffd34d}
-.csh-more-btn .chev{font-size:10px;opacity:.75;transition:transform .2s}
-.csh-more.open .csh-more-btn{background:rgba(255,255,255,.16);color:#ffd34d}
-.csh-more.open .csh-more-btn .chev{transform:rotate(180deg)}
-.csh-more-menu{position:absolute;top:calc(100% + 12px);right:0;min-width:250px;background:#241C86;border:1px solid rgba(255,255,255,.22);border-radius:14px;padding:8px;box-shadow:0 18px 40px rgba(10,16,40,.45);display:flex;flex-direction:column;gap:2px;opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .18s,transform .18s,visibility .18s;z-index:60}
-.csh-more.open .csh-more-menu{opacity:1;visibility:visible;transform:translateY(0)}
-.csh-more-menu a{color:#E9ECF3;text-decoration:none;font-size:14px;font-weight:500;padding:11px 14px;border-radius:9px;white-space:nowrap}
-.csh-more-menu a:hover,.csh-more-menu a.on{background:rgba(255,255,255,.14);color:#ffd34d}
-.flagbar{height:8px;background:linear-gradient(to bottom,#f5f5f5 50%,#d4213d 50%);border-bottom:1px solid rgba(22,36,76,.18)}
-@media(max-width:900px){
- .csh-wrap{flex-wrap:wrap;gap:8px;padding:10px;min-height:0}
- .csh-name{font-size:11px}.csh-flag{width:24px;height:24px}.csh-logo svg{width:22px;height:22px}
- .csh-burger{display:block;margin-left:auto}
- .csh-menu{display:none;order:5;flex-basis:100%;flex-wrap:wrap;justify-content:flex-start;gap:6px}
- .csh-menu.open{display:flex}
- .csh-menu>a{font-size:14px;padding:9px 10px}
- /* na telefonie lista „Más" nie jest dropdownem — pozycje widać od razu */
- .csh-more{flex-basis:100%;display:block}
- .csh-more-btn{display:none}
- .csh-more-menu{position:static;opacity:1;visibility:visible;transform:none;background:rgba(255,255,255,.08);border:none;box-shadow:none;min-width:0;padding:4px 0;flex-direction:row;flex-wrap:wrap;gap:4px}
- .csh-more-menu a{font-size:14px;padding:9px 10px}
-}
-/* ===== TRESC ===== */
-.hero{background:linear-gradient(140deg,#4636c9,#37248F);color:#fff;padding:44px 0 40px}
-.hero h1{color:#fff;font-size:clamp(26px,4.2vw,40px);margin-bottom:14px}
-.hero h1 em{color:#ffd34d;font-style:normal}
-.hero p.lead{color:#e7e5ff;font-size:17px;max-width:760px}
-.eyebrow{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#ffd34d;margin-bottom:10px}
-.crumbs{font-size:13px;color:#5a6478;padding:12px 0}
-.crumbs a{color:#4636c9;text-decoration:none}
-.btnrow{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
-.btn{display:inline-block;text-decoration:none;font-weight:700;font-size:15px;padding:14px 24px;border-radius:10px;transition:.2s;text-align:center}
-.btn-wa{background:#25D366;color:#0b3d20}
-.btn-wa:hover{background:#1eb959}
-.btn-red{background:#d4213d;color:#fff}
-.btn-red:hover{background:#b81a32}
-.btn-line{border:1.5px solid rgba(255,255,255,.7);color:#fff}
-.btn-line:hover{background:rgba(255,255,255,.14)}
-main{padding:10px 0 40px}
-section.blk{background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px;margin:18px 0;box-shadow:0 1px 3px rgba(19,32,58,.05)}
-section.blk h2{font-size:clamp(20px,3vw,26px);margin-bottom:12px}
-section.blk h3{font-size:18px;margin:18px 0 8px}
-section.blk p{margin:10px 0}
-section.blk ul,section.blk ol{margin:10px 0 10px 22px}
-section.blk li{margin:6px 0}
-.alert{border-left:5px solid var(--red);background:#fff5f6;border-radius:10px;padding:16px 18px;margin:16px 0}
-.alert strong{color:#a5142b}
-.note{border-left:5px solid var(--violet);background:#f2f1fe;border-radius:10px;padding:16px 18px;margin:16px 0}
-.ok{border-left:5px solid var(--green);background:#f1faf4;border-radius:10px;padding:16px 18px;margin:16px 0}
-table{width:100%;border-collapse:collapse;margin:14px 0;font-size:15px}
-th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
-th{background:#f2f1fe;font-weight:700}
-.tw{overflow-x:auto}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:14px}
-.card{border:1px solid var(--line);border-radius:14px;padding:18px;background:#fbfbff;text-decoration:none;display:block;transition:.18s}
-.card:hover{border-color:var(--violet);transform:translateY(-2px)}
-.card b{display:block;font-size:16px;margin-bottom:6px;color:var(--violet)}
-.card span{font-size:14px;color:var(--mut)}
-.steps{counter-reset:s;margin-top:10px}
-.step{position:relative;padding-left:52px;margin:16px 0}
-.step:before{counter-increment:s;content:counter(s);position:absolute;left:0;top:0;width:36px;height:36px;border-radius:50%;background:var(--violet);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800}
-details{border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:8px 0;background:#fbfbff}
-details summary{cursor:pointer;font-weight:700}
-details p{margin-top:8px}
-.ctabox{background:linear-gradient(140deg,#4636c9,#37248F);color:#fff;border-radius:16px;padding:28px;margin:22px 0;text-align:center}
-.ctabox h2{color:#fff}
-.ctabox p{color:#e7e5ff;max-width:640px;margin:10px auto}
-.ctabox .btnrow{justify-content:center}
-.src{font-size:14px;color:var(--mut)}
-.src a{color:var(--violet)}
-footer{background:#16244c;color:#cfd6e4;padding:30px 0;font-size:14px;margin-top:30px}
-footer a{color:#ffd34d;text-decoration:none}
-footer .fgrid{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between}
-footer .disc{margin-top:18px;padding-top:16px;border-top:1px solid rgba(255,255,255,.15);font-size:13px;color:#aab3c6;line-height:1.6}
-</style>
-<script type="application/ld+json">{
-"@context":"https://schema.org","@type":"Organization","name":"Centro de Atencion de Asuntos de Extranjeros (Centrum Obslugi Spraw Cudzoziemcow)",
-"legalName":"Dariusz Wlodarczyk - Kancelaria","url":"https://cosc.org.pl/es/","telephone":"+48539999549","email":"office@cosc.org.pl",
-"vatID":"PL1250476187","address":{"@type":"PostalAddress","streetAddress":"ul. Kuropatwy 34S","postalCode":"02-892","addressLocality":"Warszawa","addressCountry":"PL"},
-"areaServed":"PL","availableLanguage":["es","pl","en","uk","ru","fr"]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Atienden en español?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Atendemos por WhatsApp, teléfono y correo en español. Los documentos y los escritos ante la administración polaca se redactan en polaco, porque es el idioma oficial del procedimiento."}}, {"@type": "Question", "name": "¿Cuánto cuesta la primera consulta?", "acceptedAnswer": {"@type": "Answer", "text": "La primera evaluación de su caso es gratuita. Le decimos con franqueza si su situación tiene salida legal y qué documentos le faltan, antes de que usted pague nada."}}, {"@type": "Question", "name": "¿Tienen ustedes el título polaco de adwokat o radca prawny?", "acceptedAnswer": {"@type": "Answer", "text": "No. Dariusz Włodarczyk dirige un despacho jurídico, pero no posee esos dos títulos profesionales, que en Polonia están protegidos por ley. Actuamos como asesores jurídicos y especialistas en trámites migratorios, y como representantes en procedimientos administrativos con poder de representación (pełnomocnictwo), conforme al art. 33 del Código de Procedimiento Administrativo polaco."}}, {"@type": "Question", "name": "¿Pueden garantizarme la tarjeta de residencia?", "acceptedAnswer": {"@type": "Answer", "text": "No. Nadie puede garantizar el resultado de un procedimiento administrativo: la decisión la toma el voivoda. Lo que sí podemos hacer es preparar la solicitud correctamente, cumplir los plazos y evitar los errores que hacen que una solicitud se deje sin examinar."}}]}</script>
+<meta name="twitter:image" content="https://cosc.org.pl/og/strona-glowna.png">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-96.png" type="image/png" sizes="96x96">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization",
+"name":"Centrum Obsługi Spraw Cudzoziemców",
+"alternateName":"Centro de Atencion a Extranjeros",
+"url":"https://cosc.org.pl/es/",
+"logo":"https://cosc.org.pl/favicon-96.png",
+"image":"https://cosc.org.pl/og/strona-glowna.png",
+"address":{"@type":"PostalAddress","streetAddress":"Kuropatwy 34S","postalCode":"02-892","addressLocality":"Warszawa","addressCountry":"PL"},
+"parentOrganization":{"@type":"Organization","name":"Dariusz Włodarczyk Kancelaria TRC"}}
+</script>
 </head>
 <body>
-<header class="csh-header">
-<div class="csh-wrap">
-  <a class="csh-logo" href="index.html" aria-label="Inicio">
-    <span class="csh-flag" aria-label="Polonia"><span class="csh-fw"></span><span class="csh-fr"></span></span>
-    <span class="csh-name">Centro de Atenci&oacute;n<br>de Asuntos de Extranjeros</span><svg width="30" height="30" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Union Europea"><rect width="36" height="36" rx="7" fill="#0A2A8C"/><g fill="#F5C518"><path id="esEuStar" d="M18,4.6 l0.85,1.75 l1.95,0.2 l-1.45,1.32 l0.42,1.9 l-1.77,-1.0 l-1.77,1.0 l0.42,-1.9 l-1.45,-1.32 l1.95,-0.2 Z"/><use href="#esEuStar" transform="rotate(30 18 18)"/><use href="#esEuStar" transform="rotate(60 18 18)"/><use href="#esEuStar" transform="rotate(90 18 18)"/><use href="#esEuStar" transform="rotate(120 18 18)"/><use href="#esEuStar" transform="rotate(150 18 18)"/><use href="#esEuStar" transform="rotate(180 18 18)"/><use href="#esEuStar" transform="rotate(210 18 18)"/><use href="#esEuStar" transform="rotate(240 18 18)"/><use href="#esEuStar" transform="rotate(270 18 18)"/><use href="#esEuStar" transform="rotate(300 18 18)"/><use href="#esEuStar" transform="rotate(330 18 18)"/></g></svg>
-  </a>
-  <button class="csh-burger" type="button" aria-label="Men&uacute;" aria-expanded="false">&#9776;</button>
-  <nav class="csh-menu"><a href="tarjeta-de-residencia-polonia.html">Tarjeta de residencia</a><a href="trabajo-legal-polonia-colombianos.html">Trabajo legal</a><a href="90-dias-schengen-polonia.html">90 d&iacute;as</a><a href="mos-solicitud-en-linea.html">Solicitud MOS</a>
-    <div class="csh-more"><button class="csh-more-btn" type="button" aria-haspopup="true" aria-expanded="false">M&aacute;s <span class="chev" aria-hidden="true">&#9662;</span></button>
-      <div class="csh-more-menu"><a href="visa-nacional-polonia-desde-colombia.html">Visa desde Colombia</a><a href="primeros-pasos-en-polonia.html">Primeros pasos en Polonia</a><a href="cambiar-de-empleador-polonia.html">Cambiar de empleador</a><a href="residencia-permanente-polonia.html">Residencia permanente</a><a href="reagrupacion-familiar-polonia.html">Reagrupaci&oacute;n familiar</a><a href="me-negaron-la-tarjeta-de-residencia.html">Me negaron la tarjeta</a><a href="calculadora-90-180.html">Calculadora 90/180</a><a href="preguntas-frecuentes.html">Preguntas frecuentes</a><a href="precios-y-servicios.html">Precios y servicios</a></div></div>
-    <a class="csh-cta" href="contacto.html">Consulta gratuita</a></nav>
-  <div class="csh-lang"><a href="https://cosc.org.pl/" hreflang="pl" lang="pl">PL</a><a href="#" class="on" aria-current="true">ES</a></div>
-</div>
-</header>
-<div class="flagbar" aria-hidden="true"></div>
-<div class="hero"><div class="wrap">
-<span class="eyebrow">Centro de Atenci&oacute;n de Asuntos de Extranjeros &middot; Polonia</span>
-<h1>Tarjeta de residencia y trabajo legal en Polonia: <em>ayuda en espa&ntilde;ol</em></h1>
-<p class="lead">Somos un despacho polaco con sede en Varsovia. Acompa&ntilde;amos a personas de habla hispana en los tr&aacute;mites de residencia y trabajo ante las autoridades polacas: desde la solicitud en el sistema MOS hasta la entrega de la tarjeta de residencia (<i>karta pobytu</i>).</p>
-<div class="btnrow">
-  <a class="btn btn-wa" href="contacto.html">Reserve una consulta gratuita</a>
-  <a class="btn btn-line" href="tel:+48539999549">Llamar +48 539 999 549</a>
-  <a class="btn btn-red" href="contacto.html">Evaluaci&oacute;n gratuita de su caso</a>
-</div>
-</div></div><div class="wrap"><nav class="crumbs" aria-label="Ruta"><a href="https://cosc.org.pl/">cosc.org.pl</a> &rsaquo; <a href="index.html">Espa&ntilde;ol</a> &rsaquo; Inicio</nav></div>
-<main><div class="wrap">
 
-<div class="alert">
-<strong>Aviso importante para ciudadanos colombianos.</strong> Desde el 15 de agosto de 2024, quien entre a Polonia
-<b>con la intenci&oacute;n de trabajar</b> necesita un <b>visado</b>, sin importar cu&aacute;nto vaya a durar el empleo.
-La entrada sin visado (exenci&oacute;n de 90 d&iacute;as) <b>no</b> autoriza a viajar a Polonia a trabajar.
-As&iacute; lo confirman la Embajada de Polonia en Bogot&aacute; y el Ministerio de Asuntos Exteriores polaco.
-Desconf&iacute;e de cualquier agencia que le diga lo contrario &mdash; la Embajada advierte expresamente que esas
-afirmaciones son falsas.
-<a href="trabajo-legal-polonia-colombianos.html">Leer la explicaci&oacute;n completa &rarr;</a>
+<div class="mos">⚠ Desde el 27 de abril de 2026 las solicitudes de residencia se presentan <strong>solo en línea, por el sistema MOS</strong>. <a href="#mos">La presentamos por ti, sin errores →</a></div>
+
+<header id="site-header"></header>
+<div class="flagbar" aria-hidden="true"></div>
+
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Ayuda legal para extranjeros en Polonia.</span>
+      <h1>Tarjeta de residencia y trabajo legal en Polonia.<br><em>Ayuda eficaz o te devolvemos el dinero.</em></h1>
+      <p class="lead">Tu familia puede dejar de preocuparse: de la tarjeta de residencia nos ocupamos nosotros. Ayuda eficaz o te devolvemos el dinero*.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-gold" href="contacto.html">Empieza tu caso hoy, sin riesgo económico</a>
+        <a class="btn btn-line" href="precios-y-servicios.html">Ver paquetes y precios</a>
+      </div>
+      <div class="rotator" aria-hidden="true">
+        <ul>
+          <li><span class="fl">PL</span> Rozumiemy Cię — w Twoim języku.</li>
+          <li><span class="fl">EN</span> We understand you — in your language.</li>
+          <li><span class="fl">ES</span> Te entendemos — en tu idioma.</li>
+          <li><span class="fl">PT</span> Nós te entendemos — no seu idioma.</li>
+          <li><span class="fl">PL</span> Rozumiemy Cię — w Twoim języku.</li>
+        </ul>
+      </div>
+      <div class="gwar">
+        <div class="seal">✦</div>
+        <p><strong>Ayuda eficaz o te devolvemos el dinero*</strong><br>*Las condiciones de devolución figuran en el Reglamento. Se aplica al paquete VIP.</p>
+      </div>
+    </div>
+    <div class="card-visual">
+      <div class="residence-card">
+        <div class="rc-top"><span>Rzeczpospolita Polska · Poland</span><span>Tarjeta de residencia</span></div>
+        <div class="rc-main">
+          <div class="rc-photo">🧑</div>
+          <div class="rc-fields">
+            <div class="rc-name">TU APELLIDO</div>
+            <div class="rc-row">
+              <div><span>Tipo</span>residencia temporal</div>
+              <div><span>Válida hasta</span>2029</div>
+              <div><span>Acceso al mercado laboral</span>sí</div>
+            </div>
+            <div class="rc-chip"></div>
+          </div>
+        </div>
+        <div class="rc-mrz">KP&lt;POLXXXXXXXXX&lt;&lt;TU&lt;&lt;APELLIDO&lt;&lt;&lt;&lt;&lt;<br>1234567890POL2912319&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;06</div>
+      </div>
+      <div class="rc-stamp">Decisión favorable</div>
+    </div>
+  </div>
+</div>
+
+<div class="trustbar">
+  <div class="wrap trust">
+    <div><div class="n"><span class="cnt" data-to="1240" data-since="2026-07-31">0</span>+</div><div class="l">solicitudes presentadas</div></div>
+    <div><div class="n"><span class="cnt" data-to="6">0</span></div><div class="l">idiomas en los que te atendemos</div></div>
+    <div><div class="n">1</div><div class="l">persona a cargo de tu caso, de principio a fin</div></div>
+    <div><div class="n">0 zł</div><div class="l">de riesgo: condiciones de devolución por escrito*</div></div>
+  </div>
+</div>
+
+<div class="path-sec" id="droga">
+  <div class="wrap">
+    <div class="sec-head" style="text-align:center;margin:0 auto 10px">
+      <span class="eyebrow">Tu camino a la tarjeta de residencia</span>
+      <h2>Tres pasos hacia la residencia legal</h2>
+    </div>
+    <svg class="path-svg" viewBox="0 0 660 420" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="max-width:760px;margin:0 auto;display:block">
+  <ellipse cx="330" cy="250" rx="290" ry="150" fill="#4636c9" opacity=".06"/>
+  <path d="M330 360 L560 240 L330 120 L100 240 Z" stroke="#c9cdf2" stroke-width="3" fill="none" stroke-linejoin="round" stroke-dasharray="7 7"/>
+  <path d="M330 360 L560 240" pathLength="100" stroke="#4636c9" stroke-width="3.5" fill="none" stroke-dasharray="100" stroke-dashoffset="100" stroke-linecap="round"><animate attributeName="stroke-dashoffset" values="100;0;0" keyTimes="0;.18;1" dur="6s" repeatCount="indefinite"/></path>
+  <path d="M560 240 L330 120" pathLength="100" stroke="#4636c9" stroke-width="3.5" fill="none" stroke-dasharray="100" stroke-dashoffset="100" stroke-linecap="round"><animate attributeName="stroke-dashoffset" values="100;100;0;0" keyTimes="0;.26;.44;1" dur="6s" repeatCount="indefinite"/></path>
+  <path d="M330 120 L100 240" pathLength="100" stroke="#4636c9" stroke-width="3.5" fill="none" stroke-dasharray="100" stroke-dashoffset="100" stroke-linecap="round"><animate attributeName="stroke-dashoffset" values="100;100;0;0" keyTimes="0;.52;.7;1" dur="6s" repeatCount="indefinite"/></path>
+  <g transform="translate(330,360)"><rect x="-13" y="-13" width="26" height="26" rx="4" transform="rotate(45)" fill="#4636c9" stroke="#4636c9" stroke-width="2.5"/></g>
+  <text x="330" y="398" text-anchor="middle" font-size="14" font-weight="600" fill="#1c2434" data-svgk="Prawnik">Nuestro despacho</text>
+  <g transform="translate(560,240)"><rect x="-13" y="-13" width="26" height="26" rx="4" transform="rotate(45)" stroke="#4636c9" stroke-width="2.5"><animate attributeName="fill" values="#ffffff;#ffffff;#4636c9;#4636c9" keyTimes="0;.17;.2;1" dur="6s" repeatCount="indefinite"/></rect></g>
+  <text x="560" y="282" text-anchor="middle" font-size="14" font-weight="600" fill="#1c2434" data-svgk="1. Wniosek">1. Solicitud</text>
+  <g transform="translate(330,120)"><rect x="-13" y="-13" width="26" height="26" rx="4" transform="rotate(45)" stroke="#4636c9" stroke-width="2.5"><animate attributeName="fill" values="#ffffff;#ffffff;#4636c9;#4636c9" keyTimes="0;.43;.46;1" dur="6s" repeatCount="indefinite"/></rect></g>
+  <text x="330" y="94" text-anchor="middle" font-size="14" font-weight="600" fill="#1c2434" data-svgk="2. Urząd">2. La oficina</text>
+  <g transform="translate(100,240)"><rect x="-13" y="-13" width="26" height="26" rx="4" transform="rotate(45)" stroke="#4636c9" stroke-width="2.5"><animate attributeName="fill" values="#ffffff;#ffffff;#4636c9;#4636c9" keyTimes="0;.69;.72;1" dur="6s" repeatCount="indefinite"/></rect></g>
+  <text x="100" y="284" text-anchor="middle" font-size="14" font-weight="600" fill="#1c2434" data-svgk="3. Karta pobytu">3. La tarjeta</text>
+  <g>
+    <animateMotion dur="6s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;.333;.333;.667;.667;1;1" keyTimes="0;.08;.22;.28;.46;.52;.7;1" path="M330 360 L560 240 L330 120 L100 240"/>
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 0;0 -34;0 0;0 -20;0 0;0 0" keyTimes="0;.72;.75;.78;.81;.84;1" dur="6s" repeatCount="indefinite"/>
+      <g opacity="1">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;.275;.28;1" dur="6s" repeatCount="indefinite"/>
+        <g transform="translate(0,-41) scale(.8)"><g><animateTransform attributeName="transform" type="translate" values="0 0;0 4;0 0" dur=".15s" repeatCount="indefinite"/>
+          <g stroke="#4636c9" stroke-width="11" stroke-linecap="round" fill="none">
+            <g transform="translate(10,-40)"><g><animateTransform attributeName="transform" type="rotate" values="-48;48;-48" begin="-.15s" dur=".3s" repeatCount="indefinite"/><path d="M0 0 V16"/><g transform="translate(0,16) rotate(-95)"><path d="M0 0 V15"/></g></g></g>
+            <g><g><animateTransform attributeName="transform" type="rotate" values="-60;45;-60" begin="-.15s" dur=".3s" repeatCount="indefinite"/><path d="M0 0 V26"/><g transform="translate(0,26)"><g><animateTransform attributeName="transform" type="rotate" values="82;10;55;122;82" keyTimes="0;.28;.5;.75;1" begin="-.15s" dur=".3s" repeatCount="indefinite"/><path d="M0 0 V24"/><path d="M0 24 L10 24"/></g></g></g></g>
+            <path d="M13 -44 L0 0" stroke-width="17"/>
+            <g transform="translate(10,-40)"><g><animateTransform attributeName="transform" type="rotate" values="48;-48;48" dur=".3s" repeatCount="indefinite"/><path d="M0 0 V16"/><g transform="translate(0,16) rotate(-95)"><path d="M0 0 V15"/></g></g></g>
+            <g><g><animateTransform attributeName="transform" type="rotate" values="-60;45;-60" dur=".3s" repeatCount="indefinite"/><path d="M0 0 V26"/><g transform="translate(0,26)"><g><animateTransform attributeName="transform" type="rotate" values="82;10;55;122;82" keyTimes="0;.28;.5;.75;1" dur=".3s" repeatCount="indefinite"/><path d="M0 0 V24"/><path d="M0 24 L10 24"/></g></g></g></g>
+          </g>
+          <circle cx="19" cy="-57" r="10" fill="#4636c9"/>
+        </g></g>
+      </g>
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;.275;.28;.695;.7;1" dur="6s" repeatCount="indefinite"/>
+        <g transform="translate(0,-41) scale(-.8,.8)"><g><animateTransform attributeName="transform" type="translate" values="0 0;0 4;0 0" dur=".15s" repeatCount="indefinite"/>
+          <g stroke="#4636c9" stroke-width="11" stroke-linecap="round" fill="none">
+            <g transform="translate(10,-40)"><g><animateTransform attributeName="transform" type="rotate" values="-48;48;-48" begin="-.15s" dur=".3s" repeatCount="indefinite"/><path d="M0 0 V16"/><g transform="translate(0,16) rotate(-95)"><path d="M0 0 V15"/></g></g></g>
+            <g><g><animateTransform attributeName="transform" type="rotate" values="-60;45;-60" begin="-.15s" dur=".3s" repeatCount="indefinite"/><path d="M0 0 V26"/><g transform="translate(0,26)"><g><animateTransform attributeName="transform" type="rotate" values="82;10;55;122;82" keyTimes="0;.28;.5;.75;1" begin="-.15s" dur=".3s" repeatCount="indefinite"/><path d="M0 0 V24"/><path d="M0 24 L10 24"/></g></g></g></g>
+            <path d="M13 -44 L0 0" stroke-width="17"/>
+            <g transform="translate(10,-40)"><g><animateTransform attributeName="transform" type="rotate" values="48;-48;48" dur=".3s" repeatCount="indefinite"/><path d="M0 0 V16"/><g transform="translate(0,16) rotate(-95)"><path d="M0 0 V15"/></g></g></g>
+            <g><g><animateTransform attributeName="transform" type="rotate" values="-60;45;-60" dur=".3s" repeatCount="indefinite"/><path d="M0 0 V26"/><g transform="translate(0,26)"><g><animateTransform attributeName="transform" type="rotate" values="82;10;55;122;82" keyTimes="0;.28;.5;.75;1" dur=".3s" repeatCount="indefinite"/><path d="M0 0 V24"/><path d="M0 24 L10 24"/></g></g></g></g>
+          </g>
+          <circle cx="19" cy="-57" r="10" fill="#4636c9"/>
+        </g></g>
+      </g>
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;.695;.7;1" dur="6s" repeatCount="indefinite"/>
+        <g transform="translate(0,-41) scale(.8)">
+          <g stroke="#4636c9" stroke-width="11" stroke-linecap="round" fill="none">
+            <path d="M0 0 L-8 48"/><path d="M0 0 L8 48"/><path d="M0 -44 V0" stroke-width="17"/>
+            <g><animateTransform attributeName="transform" type="rotate" values="0;0;-14;10;-6;0;0" keyTimes="0;.72;.75;.78;.81;.84;1" dur="6s" repeatCount="indefinite"/><path d="M0 -40 L-17 -64"/><path d="M0 -40 L17 -64"/></g>
+          </g>
+          <circle cx="0" cy="-58" r="10" fill="#4636c9"/>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g fill="#b4b2a9">
+    <circle cx="545" cy="252" r="5" opacity="0"><animate attributeName="opacity" values="0;0;.8;0;0" keyTimes="0;.22;.24;.28;1" dur="6s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;0 0;-14 -4;-22 -2;-22 -2" keyTimes="0;.22;.25;.28;1" dur="6s" repeatCount="indefinite"/></circle>
+    <circle cx="552" cy="258" r="4" opacity="0"><animate attributeName="opacity" values="0;0;.7;0;0" keyTimes="0;.22;.25;.29;1" dur="6s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;0 0;-10 4;-18 6;-18 6" keyTimes="0;.22;.26;.29;1" dur="6s" repeatCount="indefinite"/></circle>
+    <circle cx="345" cy="132" r="5" opacity="0"><animate attributeName="opacity" values="0;0;.8;0;0" keyTimes="0;.46;.48;.54;1" dur="6s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;0 0;12 -4;20 -2;20 -2" keyTimes="0;.46;.49;.54;1" dur="6s" repeatCount="indefinite"/></circle>
+    <circle cx="338" cy="138" r="4" opacity="0"><animate attributeName="opacity" values="0;0;.7;0;0" keyTimes="0;.46;.49;.55;1" dur="6s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;0 0;8 4;16 6;16 6" keyTimes="0;.46;.5;.55;1" dur="6s" repeatCount="indefinite"/></circle>
+    <circle cx="115" cy="252" r="5" opacity="0"><animate attributeName="opacity" values="0;0;.8;0;0" keyTimes="0;.7;.72;.78;1" dur="6s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;0 0;12 -4;20 -2;20 -2" keyTimes="0;.7;.73;.78;1" dur="6s" repeatCount="indefinite"/></circle>
+    <circle cx="122" cy="258" r="4" opacity="0"><animate attributeName="opacity" values="0;0;.7;0;0" keyTimes="0;.7;.73;.79;1" dur="6s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;0 0;8 4;16 6;16 6" keyTimes="0;.7;.74;.79;1" dur="6s" repeatCount="indefinite"/></circle>
+  </g>
+  <g transform="translate(100,140)">
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.72;.76;.94;1" dur="6s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="scale" values="0;0;1.25;1;1;1" keyTimes="0;.72;.76;.8;.94;1" dur="6s" repeatCount="indefinite"/>
+      <rect x="-52" y="-52" width="104" height="30" rx="15" fill="#4636c9"/>
+      <text x="0" y="-31.5" text-anchor="middle" font-size="16" font-weight="700" letter-spacing="2" fill="#fff">WINNER!</text>
+      <rect x="-28" y="-12" width="56" height="38" rx="5" fill="#fff" stroke="#4636c9" stroke-width="2.5"/>
+      <rect x="-28" y="-12" width="56" height="10" rx="5" fill="#c9cdf2" stroke="#4636c9" stroke-width="2"/>
+      <text x="0" y="-4.5" text-anchor="middle" font-size="6.5" font-weight="700" letter-spacing=".5" fill="#2a2170">TARJETA</text>
+      <rect x="-22" y="3" width="14" height="18" rx="2" fill="#e4e7f5" stroke="#4636c9" stroke-width="1.8"/>
+      <circle cx="-15" cy="9" r="3" fill="#9aa4e8"/>
+      <line x1="-3" y1="7" x2="22" y2="7" stroke="#4636c9" stroke-width="2.2" stroke-linecap="round"/>
+      <line x1="-3" y1="14" x2="16" y2="14" stroke="#4636c9" stroke-width="2.2" stroke-linecap="round"/>
+    </g>
+  </g>
+  <g fill="#4636c9"><rect x="80" y="180" width="7" height="7" rx="2" opacity="0"><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;.73;.77;.88;1" dur="6s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;0 0;-18 -20;-30 -34;-30 -34" keyTimes="0;.73;.8;.88;1" dur="6s" repeatCount="indefinite"/></rect></g>
+  <g fill="#ffd34d"><rect x="120" y="176" width="7" height="7" rx="2" opacity="0"><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;.73;.77;.88;1" dur="6s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;0 0;14 -24;24 -40;24 -40" keyTimes="0;.73;.8;.88;1" dur="6s" repeatCount="indefinite"/></rect></g>
+  <g fill="#9aa4e8"><rect x="100" y="170" width="7" height="7" rx="2" opacity="0"><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;.73;.77;.88;1" dur="6s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;0 0;2 -28;3 -46;3 -46" keyTimes="0;.73;.8;.88;1" dur="6s" repeatCount="indefinite"/></rect></g>
+</svg>
+    <div class="path-steps">
+      <div><h3>1. Solicitud</h3><p>Preparamos y presentamos tu solicitud en el sistema MOS, bien a la primera y en tu idioma.</p></div>
+      <div><h3>2. La oficina</h3><p>Vigilamos tu expediente: plazos, requerimientos, subsanaciones. Tú recibes información clara, no escritos administrativos.</p></div>
+      <div><h3>3. La tarjeta</h3><p>Recoges tu tarjeta y te olvidas del tema durante años. Y si algo sale mal, devolvemos nuestros honorarios*.</p></div>
+    </div>
+  </div>
 </div>
 
 
 <!-- Baner czatu: główny kanał pierwszego kontaktu -->
-<section class="czat-baner" style="background:linear-gradient(135deg,#16244c,#2b1f6b);color:#fff;padding:30px 26px;border-radius:16px;margin:26px 0">
+<section class="czat-baner" style="background:linear-gradient(135deg,#16244c,#2b1f6b);color:#fff;padding:38px 0">
   <div class="wrap" style="display:flex;align-items:center;gap:26px;flex-wrap:wrap;justify-content:space-between">
     <div style="flex:1 1 420px">
-      <h2 style="color:#fff;font-size:clamp(21px,2.6vw,29px);margin:0 0 8px">Cu&eacute;ntenos su caso &mdash; le responderemos con concreci&oacute;n</h2>
-      <p style="color:#dfe3f5;font-size:16px;line-height:1.55;margin:0;max-width:640px">Cuatro preguntas breves en lugar de un campo vac&iacute;o. Nos dice de qu&eacute; trata su caso y en qu&eacute; etapa est&aacute;, y lo dirigimos a la persona adecuada. Puede escribir o simplemente hablar, en su idioma.</p>
+      <h2 style="color:#fff;font-size:clamp(21px,2.6vw,29px);margin:0 0 8px">Cuéntanos tu caso y te respondemos con concreción</h2>
+      <p style="color:#dfe3f5;font-size:16px;line-height:1.55;margin:0;max-width:640px">Cuatro preguntas breves en lugar de una caja vacía. Nos dices de qué trata tu caso y en qué fase está, y lo dirigimos a la persona adecuada. Puedes escribir o simplemente hablar, en tu idioma.</p>
     </div>
     <div style="flex:0 0 auto;display:flex;flex-direction:column;align-items:stretch;gap:8px">
-      <button type="button" data-prc-otworz-czat="baner_es"
-        style="cursor:pointer;border:none;font-family:inherit;font-size:16.5px;font-weight:700;color:#fff;background:#D4213D;border-radius:12px;padding:16px 30px;box-shadow:0 10px 26px rgba(212,33,61,.4)">Describir mi caso en el chat &rarr;</button>
-      <span style="color:#b9c6e4;font-size:12.5px;text-align:center">1 minuto &middot; gratuito &middot; sin compromiso</span>
+      <button type="button" data-prc-otworz-czat="baner"
+        style="cursor:pointer;border:none;font-family:inherit;font-size:16.5px;font-weight:700;color:#fff;background:#D4213D;border-radius:12px;padding:16px 30px;box-shadow:0 10px 26px rgba(212,33,61,.4)">Cuéntanos tu caso en el chat →</button>
+      <span style="color:#b9c6e4;font-size:12.5px;text-align:center">1 minuto · gratis · sin compromiso</span>
     </div>
   </div>
 </section>
 
-<section class="blk">
-<h2>Qui&eacute;nes somos</h2>
-<p>Centro de Atenci&oacute;n de Asuntos de Extranjeros (en polaco: <i>Centrum Obs&#322;ugi Spraw Cudzoziemc&oacute;w</i>)
-es la marca de <b>Dariusz W&#322;odarczyk &ndash; Kancelaria</b>, un despacho polaco que trabaja desde 2002 y tiene su
-oficina en Varsovia. Nos ocupamos de un solo campo: la legalizaci&oacute;n de la <b>residencia</b> y del <b>trabajo</b>
-de personas extranjeras en Polonia.</p>
-<p>No somos una agencia de empleo ni un intermediario laboral. No cobramos por buscarle trabajo. Nuestro trabajo
-consiste en preparar su expediente, presentarlo en plazo y representarle ante la autoridad regional
-(<i>wojewoda</i>) mientras dura el procedimiento.</p>
-<div class="note">
-<b>Somos independientes de su empleador.</b> Cuando el tr&aacute;mite lo lleva la empresa que le contrata, usted
-depende de ella tambi&eacute;n para sus papeles. Con un representante propio, sus documentos son suyos y le siguen
-si cambia de trabajo.
-</div>
+<section id="uslugi">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Cómo podemos ayudarte</span>
+      <h2>Los problemas más frecuentes de los extranjeros en Polonia</h2>
+    </div>
+    <div class="serv">
+      <div class="s-card s-card--side"><div class="s-num">01</div><div class="mascot-box"><video class="mascot-video" src="../animacje_kolumbijka/pobyt-czasowy-audio.mp4" poster="../animacje_kolumbijka/pobyt-czasowy-poster.jpg" muted playsinline preload="metadata" loop></video></div><div class="s-text"><h3>Residencia temporal en Polonia</h3><p>Te ayudamos con la primera solicitud de residencia temporal, con las siguientes y a ordenar tu estancia legal, hasta recoger la tarjeta.</p><a href="uslugi.html#pobyt-czasowy">Ver la solución</a></div></div>
+      <div class="s-card s-card--side"><div class="s-num">02</div><div class="mascot-box"><video class="mascot-video" src="../animacje_kolumbijka/legalna-praca-audio.mp4" poster="../animacje_kolumbijka/legalna-praca-poster.jpg" muted playsinline preload="metadata" loop></video></div><div class="s-text"><h3>Trabajo y residencia legales</h3><p>Comprobamos si puedes trabajar legalmente en Polonia y qué documentos necesitas: permiso de trabajo, permiso único o declaración de encargo de trabajo.</p><a href="uslugi.html#legalna-praca">Ver la solución</a></div></div>
+      <div class="s-card s-card--side"><div class="s-num">03</div><div class="mascot-box"><video class="mascot-video" src="../animacje_kolumbijka/brak-decyzji-audio.mp4" poster="../animacje_kolumbijka/brak-decyzji-poster.jpg" muted playsinline preload="metadata" loop></video></div><div class="s-text"><h3>Sin resolución, espera interminable</h3><p>Actuamos cuando tu expediente se eterniza y la oficina no hace nada: requerimiento formal y recurso por inactividad.</p><a href="uslugi.html#brak-decyzji">Ver la solución</a></div></div>
+      <div class="s-card s-card--side"><div class="s-num">04</div><div class="mascot-box"><video class="mascot-video" src="../animacje_kolumbijka/bledy-wniosek-audio.mp4" poster="../animacje_kolumbijka/bledy-wniosek-poster.jpg" muted playsinline preload="metadata" loop></video></div><div class="s-text"><h3>Errores y documentos que faltan</h3><p>Completamos la documentación, corregimos la solicitud y dejamos el expediente listo para presentar, antes de que la oficina lo archive sin examinar.</p><a href="uslugi.html#bledy-wniosek">Ver la solución</a></div></div>
+      <div class="s-card s-card--side"><div class="s-num">05</div><div class="mascot-box"><video class="mascot-video" src="../animacje_kolumbijka/zmiana-pracodawcy-audio.mp4" poster="../animacje_kolumbijka/zmiana-pracodawcy-poster.jpg" muted playsinline preload="metadata" loop></video></div><div class="s-text"><h3>Cambio de empleador o de condiciones</h3><p>Te explicamos qué hay que comunicar al voivoda y cómo no perder la legalidad de tu estancia ni de tu trabajo al cambiar de empleador.</p><p style="background:#f4f6fb;border-left:3px solid var(--gold);padding:7px 11px;font-size:13px;margin:0 0 10px"><strong>¿Tu empleador o una agencia tramitó la tarjeta por ti?</strong> <a href="karta-pobytu-prawnik-czy-pracodawca.html" style="font-weight:700">Conoce tus derechos →</a></p><a href="uslugi.html#zmiana-pracodawcy">Ver la solución</a></div></div>
+      <div class="s-card s-card--side"><div class="s-num">06</div><div class="mascot-box"><video class="mascot-video" src="../animacje_kolumbijka/odmowa-odwolanie-audio.mp4" poster="../animacje_kolumbijka/odmowa-odwolanie-poster.jpg" muted playsinline preload="metadata" loop></video></div><div class="s-text"><h3>Denegación, retirada, estancia irregular</h3><p>Una denegación o la retirada del permiso no es el final. Preparamos recursos y buscamos la siguiente vía legal.</p><a href="uslugi.html#odmowa-odwolanie">Ver la solución</a></div></div>
+    </div>
+  </div>
 </section>
 
-<section class="blk">
-<h2>Para qui&eacute;n es esta p&aacute;gina</h2>
-<ul>
-<li>Personas <b>colombianas y de otros pa&iacute;ses hispanohablantes</b> que ya est&aacute;n en Polonia y quieren regularizar su situaci&oacute;n.</li>
-<li>Personas que planean venir a Polonia y quieren saber <b>qu&eacute; exige realmente la ley</b> antes de pagar a nadie.</li>
-<li>Personas a quienes se les acaba el plazo de la exenci&oacute;n de visado (90 d&iacute;as) y no saben qu&eacute; hacer.</li>
-<li>Personas cuya solicitud fue <b>dejada sin examinar</b> (<i>pozostawienie bez rozpoznania</i>) o recibi&oacute; una negativa.</li>
-</ul>
+<!-- Baner: prawnik czy pracodawca (skrót → podstrona) -->
+<section id="prawnik-czy-pracodawca" style="background:var(--navy);color:#fff;padding:46px 0">
+  <div class="wrap" style="display:flex;align-items:center;gap:28px;flex-wrap:wrap">
+    <div style="flex:1 1 480px">
+      <span class="eyebrow" style="color:#ffd34d">Antes de poner tu caso en manos de alguien</span>
+      <h2 style="color:#fff;font-size:clamp(24px,3vw,34px)">¿Quién debe llevar tu tarjeta de residencia: un representante independiente o tu empleador?</h2>
+      <p style="margin-top:10px;font-size:15px;color:#dce4f5;max-width:640px">Las dos vías son legales. La diferencia es una: <strong style="color:#ffd34d">a qué interés responde quien lleva tu expediente</strong> y quién tiene tus documentos cuando cambias de trabajo.</p>
+    </div>
+    <div style="flex:0 0 auto">
+      <a class="btn btn-gold" href="karta-pobytu-prawnik-czy-pracodawca.html">Ver la comparación y tus derechos →</a>
+    </div>
+  </div>
 </section>
 
-<section class="blk">
-<h2>Tres pasos hacia una residencia legal</h2>
-<div class="steps">
-<div class="step"><h3>Evaluaci&oacute;n gratuita de su situaci&oacute;n</h3>
-<p>Usted nos escribe por WhatsApp y nos cuenta su caso: cu&aacute;ndo entr&oacute; a la zona Schengen, con qu&eacute; documento
-est&aacute; en Polonia y si tiene trabajo. Le respondemos qu&eacute; v&iacute;as legales tiene y cu&aacute;les no.</p></div>
-<div class="step"><h3>Preparaci&oacute;n del expediente</h3>
-<p>Revisamos qu&eacute; documentos le faltan, en qu&eacute; idioma deben estar y qui&eacute;n tiene que firmarlos.
-En los permisos de residencia y trabajo, una parte del anexo la firma electr&oacute;nicamente <b>el empleador</b>:
-sin esa firma la solicitud no se puede enviar.</p></div>
-<div class="step"><h3>Solicitud y seguimiento</h3>
-<p>Presentamos la solicitud en el sistema <b>MOS</b> (obligatorio desde el 27 de abril de 2026), guardamos el
-justificante de env&iacute;o y seguimos el expediente: requerimientos de la oficina, defectos formales, citaci&oacute;n
-para huellas dactilares y, finalmente, la decisi&oacute;n.</p></div>
-</div>
+<section class="calc-teaser" id="kalkulator">
+  <div class="wrap ct-grid">
+    <div>
+      <span class="eyebrow">Herramienta gratuita</span>
+      <h2 style="font-size:clamp(26px,3.2vw,36px)">¿Cuántos días de estancia te quedan? Compruébalo en 30 segundos</h2>
+      <p style="color:var(--mut);margin:12px 0 22px">¿Estás en Polonia sin visado? Cuenta tus días en el espacio Schengen antes de superar el límite de 90/180, y cuando empiecen a faltarte, te enseñamos cómo quedarte más tiempo de forma legal.</p>
+      <a class="btn btn-gold" href="calculadora-90-180.html">Calcula tus días de estancia</a>
+    </div>
+    <div class="ct-demo">
+      <div style="font-size:13px;font-weight:700;color:var(--mut);text-transform:uppercase;letter-spacing:.08em">Días usados</div>
+      <div class="big">64 / 90</div>
+      <div class="bar"><div></div></div>
+      <div style="font-size:13.5px;color:var(--ok);font-weight:600">Quedan 26 días en la ventana actual de 180 días</div>
+    </div>
+  </div>
 </section>
 
-<section class="blk">
-<h2>Los seis problemas que m&aacute;s nos consultan</h2>
-<div class="cards">
-<a class="card" href="90-dias-schengen-polonia.html"><b>Se me acaban los 90 d&iacute;as</b><span>Qu&eacute; significa la regla 90/180, qu&eacute; pasa si se pasa del plazo y qu&eacute; v&iacute;as legales existen para quedarse m&aacute;s tiempo.</span></a>
-<a class="card" href="tarjeta-de-residencia-polonia.html"><b>No s&eacute; c&oacute;mo sacar la tarjeta de residencia</b><span>Qu&eacute; es la <i>karta pobytu</i>, en qu&eacute; se diferencia del permiso, cu&aacute;ndo hay que solicitarla y cu&aacute;nto cuesta.</span></a>
-<a class="card" href="mos-solicitud-en-linea.html"><b>La solicitud ahora es solo por internet</b><span>Desde el 27 de abril de 2026 el tr&aacute;mite se hace &uacute;nicamente en el sistema MOS. En papel ya no se admite.</span></a>
-<a class="card" href="trabajo-legal-polonia-colombianos.html"><b>Quiero trabajar legalmente</b><span>Residir legalmente no es lo mismo que poder trabajar. Qu&eacute; documento le autoriza a usted &mdash; y qu&eacute; arriesga su empleador.</span></a>
-<a class="card" href="contacto.html"><b>Me dejaron la solicitud sin examinar</b><span>Los defectos formales tienen plazo de subsanaci&oacute;n. Cu&eacute;ntenos su caso antes de que venza.</span></a>
-<a class="card" href="calculadora-90-180.html"><b>No s&eacute; cu&aacute;ntos d&iacute;as me quedan</b><span>Calculadora gratuita 90/180: introduzca sus entradas y salidas y vea cu&aacute;ntos d&iacute;as le quedan.</span></a>
-</div>
+<section class="mos-sec" id="mos">
+  <div class="wrap">
+    <div style="text-align:center;max-width:820px;margin:0 auto 38px">
+      <span class="eyebrow">Dos vías, un mismo objetivo: la residencia legal</span>
+      <h2 style="font-size:clamp(26px,3.2vw,38px)">Elige cómo quieres empezar</h2>
+    </div>
+    <div class="mos-grid" style="align-items:stretch">
+      <div class="mos-panel" style="display:flex;flex-direction:column">
+        <span class="eyebrow">El sistema MOS, obligatorio desde el 27 de abril de 2026</span>
+        <div class="price" style="font-size:28px;line-height:1.2">Llevamos tu expediente</div>
+        <div class="per">desde rellenar la solicitud hasta la resolución</div>
+        <ul class="mos-list" style="flex:1">
+          <li>No necesitas saber polaco ni conocer la administración: creamos juntos tu perfil de confianza y tu cuenta MOS, paso a paso</li>
+          <li>Duermes tranquilo: rellenamos la solicitud sin los errores que cuestan el expediente y la estancia legal</li>
+          <li>No persigues a tu empleador: nos encargamos del anexo y de las firmas electrónicas</li>
+          <li>Tienes el justificante de presentación al instante: la confirmación oficial (UPO), sin colas ni visitas</li>
+          <li>Vives y trabajas legalmente durante todo el procedimiento, con el certificado correspondiente</li>
+        </ul>
+        <a class="btn btn-gold" style="width:100%;margin-top:22px" href="../formularz-pobyt-czasowy-praca-NOWA.html">Empieza tu solicitud: rellena el cuestionario →</a>
+        <div class="per" style="text-align:center;margin-top:8px">El cuestionario recoge los datos de la solicitud. Sobre esa base llevamos el expediente.</div>
+      </div>
+      <div class="mos-panel" style="display:flex;flex-direction:column">
+        <span class="eyebrow">Antes de pagar nada</span>
+        <div class="price" style="font-size:28px;line-height:1.2">Revisión gratuita</div>
+        <div class="per">revisamos tus documentos y tus posibilidades, sin compromiso</div>
+        <ul class="mos-list" style="flex:1">
+          <li>Sabrás si la solicitud saldrá adelante a la primera, antes de gastar un solo zloty</li>
+          <li>Detectamos los errores que llevan al archivo sin examen y a la pérdida de la estancia</li>
+          <li>Evaluamos tus posibilidades reales a partir del pasaporte sellado y de los escritos de la administración y de tus empleadores</li>
+          <li>Recibes un plan claro: qué falta, qué hacer y cuánto va a durar</li>
+          <li>Respondemos en 24 horas, en tu idioma y sin compromiso</li>
+        </ul>
+        <a class="btn btn-gold" style="width:100%;margin-top:22px" href="contacto.html">Que revisemos tu caso, gratis →</a>
+        <div class="per" style="text-align:center;margin-top:8px">Escríbenos y adjunta tus documentos: el escaneo del pasaporte sellado y los escritos de la administración y de tus empleadores.</div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="blk">
-<h2>Otras situaciones frecuentes</h2>
-<div class="cards">
-<a class="card" href="me-negaron-la-tarjeta-de-residencia.html"><b>Me negaron la tarjeta</b><span>Tiene 14 d&iacute;as para recurrir. Qui&eacute;n resuelve, qu&eacute; puede pasar y en qu&eacute; se diferencia de una solicitud dejada sin examinar.</span></a>
-<a class="card" href="residencia-permanente-polonia.html"><b>Residencia permanente</b><span>Qui&eacute;n puede pedirla: hijos y c&oacute;nyuges de ciudadanos polacos, origen polaco, Tarjeta del Polaco. Tasas y tr&aacute;mite.</span></a>
-<a class="card" href="reagrupacion-familiar-polonia.html"><b>Traer a mi familia</b><span>Reagrupaci&oacute;n familiar. Ojo: si su familiar est&aacute; fuera de Polonia, la solicitud sigue siendo en papel.</span></a>
-<a class="card" href="precios-y-servicios.html"><b>Cu&aacute;nto cuesta</b><span>Nuestros paquetes y, por separado, lo que cobra el Estado. Sin sorpresas y antes de que usted decida nada.</span></a>
-</div>
-</section>
 
-<section class="blk">
-<h2>Revisi&oacute;n gratuita de sus documentos</h2>
-<p>Antes de cobrar nada, revisamos lo que usted ya tiene y le decimos qu&eacute; falta. Para esa primera revisi&oacute;n
-nos basta con que nos cuente por escrito:</p>
-<ul>
-<li>su nacionalidad y la fecha de su &uacute;ltima entrada a la zona Schengen;</li>
-<li>con qu&eacute; documento est&aacute; hoy en Polonia (exenci&oacute;n de visado, visado nacional, tarjeta de residencia);</li>
-<li>si tiene contrato de trabajo o una oferta, y de qu&eacute; empresa;</li>
-<li>si ya present&oacute; alguna solicitud y qu&eacute; le contestaron.</li>
-</ul>
-<div class="alert"><strong>Por seguridad:</strong> en el primer mensaje <b>no env&iacute;e</b> fotos ni esc&aacute;neres de su
-pasaporte, tarjeta de residencia u otros documentos de identidad. Primero hablamos; los documentos se env&iacute;an
-despu&eacute;s, por el canal que acordemos.</div>
-</section>
 
-<div class="ctabox">
-<h2>&iquest;Empezamos por su caso?</h2>
-<p>Escr&iacute;banos por WhatsApp en espa&ntilde;ol. La primera evaluaci&oacute;n es gratuita y sin compromiso.</p>
-<div class="btnrow">
-  <a class="btn btn-wa" href="contacto.html">Reserve una consulta gratuita</a>
-  <a class="btn btn-line" href="tel:+48539999549">Llamar +48 539 999 549</a>
-  <a class="btn btn-line" href="contacto.html">Ver todas las formas de contacto</a>
-</div>
-</div>
-
-<section class="blk"><h2>Preguntas frecuentes</h2><details><summary>&iquest;Atienden en espa&ntilde;ol?</summary><p>S&iacute;. Atendemos por WhatsApp, tel&eacute;fono y correo en espa&ntilde;ol. Los documentos y los escritos ante la administraci&oacute;n polaca se redactan en polaco, porque es el idioma oficial del procedimiento.</p></details><details><summary>&iquest;Cu&aacute;nto cuesta la primera consulta?</summary><p>La primera evaluaci&oacute;n de su caso es gratuita. Le decimos con franqueza si su situaci&oacute;n tiene salida legal y qu&eacute; documentos le faltan, antes de que usted pague nada.</p></details><details><summary>&iquest;Tienen ustedes el t&iacute;tulo polaco de <i>adwokat</i> o <i>radca prawny</i>?</summary><p>No. Dariusz W&#322;odarczyk dirige un despacho jur&iacute;dico, pero no posee esos dos t&iacute;tulos profesionales, que en Polonia est&aacute;n protegidos por ley. Actuamos como asesores jur&iacute;dicos y especialistas en tr&aacute;mites migratorios, y como representantes en procedimientos administrativos con poder de representaci&oacute;n (pe&#322;nomocnictwo), conforme al art. 33 del C&oacute;digo de Procedimiento Administrativo polaco.</p></details><details><summary>&iquest;Pueden garantizarme la tarjeta de residencia?</summary><p>No. Nadie puede garantizar el resultado de un procedimiento administrativo: la decisi&oacute;n la toma el voivoda. Lo que s&iacute; podemos hacer es preparar la solicitud correctamente, cumplir los plazos y evitar los errores que hacen que una solicitud se deje sin examinar.</p></details></section>
-<section class="blk">
-<h2>Fuentes oficiales</h2>
-<p class="src">Toda la informaci&oacute;n de esta p&aacute;gina procede de fuentes oficiales polacas y de la Uni&oacute;n Europea.
-Le recomendamos consultarlas directamente antes de tomar decisiones:</p>
-<ul class="src"><li><a href="https://www.gov.pl/web/udsc/info-mos" rel="noopener" target="_blank">Oficina de Extranjeros (UdSC) &mdash; informaci&oacute;n sobre el sistema MOS</a></li><li><a href="https://www.gov.pl/web/udsc/informacje-dotyczace-oplat" rel="noopener" target="_blank">UdSC &mdash; tasas: tasa administrativa y tasa por la expedici&oacute;n de la tarjeta</a></li><li><a href="https://mos.cudzoziemcy.gov.pl" rel="noopener" target="_blank">Portal MOS &mdash; mos.cudzoziemcy.gov.pl</a></li><li><a href="https://www.gov.pl/web/colombia/informacion-importante-para-quienes-viajan-a-trabajar-a-polonia" rel="noopener" target="_blank">Embajada de Polonia en Bogot&aacute; &mdash; Informaci&oacute;n importante para quienes viajan a trabajar a Polonia (27.07.2026)</a></li><li><a href="https://www.gov.pl/web/kolumbia/zmiana-przepisow-wizowych" rel="noopener" target="_blank">Embajada de Polonia &mdash; Limitaci&oacute;n del r&eacute;gimen sin visado para ciudadanos de Colombia (14.08.2024)</a></li></ul>
-<p class="src">Estado legal: 3 de agosto de 2026. Si alguna norma cambia despu&eacute;s de esa fecha, la fuente oficial prevalece sobre este texto.</p>
-</section>
-
-</div></main>
-<!-- INDEKS-ARTYKULOW -->
-<section aria-label="Todos los artículos y guías" style="max-width:1120px;margin:34px auto;padding:0 20px">
-<div style="background:#fff;border:1px solid #e6e9f0;border-left:4px solid #4636c9;border-radius:0 14px 14px 0;padding:22px 26px">
-<h2 style="font-family:'IBM Plex Serif',Georgia,serif;color:#16244c;font-size:22px;line-height:1.25;margin:0 0 8px">Todos los artículos y guías</h2>
-<p style="color:#5a6478;font-size:15.5px;line-height:1.6;margin:0 0 14px">Todo lo que hemos publicado en español sobre residencia, trabajo y vida cotidiana en Polonia, en una sola lista.</p>
-<a href="artykuly.html" style="display:inline-block;background:#4636c9;color:#fff;font-weight:700;font-size:14.5px;padding:11px 20px;border-radius:9px;text-decoration:none">Ver todos los artículos &rarr;</a>
-</div>
-</section>
-<!-- /INDEKS-ARTYKULOW -->
 <footer>
-<div class="wrap">
-  <div class="fgrid">
-    <div>
-      <strong style="color:#fff;font-size:15px">Centro de Atenci&oacute;n de Asuntos de Extranjeros</strong><br>
-      Dariusz W&#322;odarczyk &ndash; Kancelaria (despacho jur&iacute;dico)<br>
-      NIP 1250476187 &middot; ul. Kuropatwy 34S, 02-892 Varsovia, Polonia
+  <div class="wrap">
+    <div class="f-grid">
+      <div>© 2026 Centrum Obsługi Spraw Cudzoziemców · Dariusz Włodarczyk Kancelaria TRC</div>
+      <div><a href="swiadczenia-cudzoziemcy.html">Prestaciones y ayudas</a> · <a href="baza-noclegowa.html">Alojamiento</a> · <a href="regulamin.html">Reglamento</a> · <a href="polityka-prywatnosci.html">Política de privacidad</a></div>
     </div>
-    <div>
-      WhatsApp / tel&eacute;fono: <a href="tel:+48539999549">+48 539 999 549</a><br>
-      Correo: <a href="mailto:office@cosc.org.pl">office@cosc.org.pl</a><br>
-      <a href="https://cosc.org.pl/">Versi&oacute;n en polaco (cosc.org.pl)</a>
-    </div>
+    <div class="upd">El contenido de esta página es informativo y no constituye asesoramiento jurídico individual. Estado legal a: 07.07.2026. Última actualización: 07.07.2026. El polaco es la lengua de origen de este sitio.</div>
   </div>
-  <p class="disc">Los contenidos de esta p&aacute;gina tienen car&aacute;cter informativo y no constituyen asesoramiento
-  jur&iacute;dico individual. Cada caso se eval&uacute;a por separado. Estado legal: 3 de agosto de 2026. Las cantidades y las listas
-  de documentos son orientativas &mdash; confirme siempre la informaci&oacute;n vigente en la oficina del voivodato
-  (<i>urz&#261;d wojew&oacute;dzki</i>) competente o en la Oficina de Extranjeros (<i>Urz&#261;d do Spraw Cudzoziemc&oacute;w</i>).<br>
-  Dariusz W&#322;odarczyk no es <i>adwokat</i> ni <i>radca prawny</i> (t&iacute;tulos profesionales protegidos en Polonia);
-  act&uacute;a como asesor jur&iacute;dico y representante en procedimientos administrativos conforme al art. 33 del
-  C&oacute;digo de Procedimiento Administrativo polaco.</p>
-</div>
 </footer>
+
+<a class="wa-float" href="https://wa.me/48539999549" aria-label="Escríbenos por WhatsApp">✆</a>
+
 <script>
+// licznik rosnący +1 dziennie od daty bazowej (data-since)
+document.querySelectorAll('.cnt[data-since]').forEach(c=>{
+  const days=Math.max(0,Math.floor((Date.now()-new Date(c.dataset.since+'T00:00:00'))/86400000));
+  c.dataset.to=+c.dataset.to+days;
+});
+// liczniki nabijające się przy scrollu
+const io=new IntersectionObserver(es=>es.forEach(e=>{
+  if(!e.isIntersecting)return;
+  if(e.target.classList.contains('trust')){
+    e.target.querySelectorAll('.cnt').forEach(c=>{
+      const to=+c.dataset.to,t0=performance.now(),dur=1400;
+      const tick=n=>{const p=Math.min(1,(n-t0)/dur);c.textContent=Math.round(to*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(tick)};
+      requestAnimationFrame(tick);
+    });
+  }
+  e.target.classList.add('inview');io.unobserve(e.target);
+}),{threshold:.35});
+document.querySelectorAll('.trust,.path-sec,.ct-demo,.mascot').forEach(el=>io.observe(el));
+// menu mobilne (hamburger)
+(function(){var b=document.querySelector('.burger'),m=document.querySelector('.menu');if(b&&m){b.addEventListener('click',function(){m.classList.toggle('open')});m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open')})});}})();
+(function(){var h=document.querySelector('header');if(!h)return;function set(){document.documentElement.style.setProperty('--hh',h.offsetHeight+'px');}set();window.addEventListener('resize',set);window.addEventListener('load',set);if(document.fonts&&document.fonts.ready){document.fonts.ready.then(set);}})();
+(function(){var mores=document.querySelectorAll('.more');if(!mores.length)return;function closeAll(except){mores.forEach(function(m){if(m===except)return;m.classList.remove('open');var b=m.querySelector('.more-btn');if(b)b.setAttribute('aria-expanded','false');});}mores.forEach(function(more){var btn=more.querySelector('.more-btn');if(!btn)return;btn.addEventListener('click',function(e){e.stopPropagation();var open=more.classList.toggle('open');btn.setAttribute('aria-expanded',open?'true':'false');closeAll(more);});more.querySelectorAll('.more-menu a').forEach(function(a){a.addEventListener('click',function(){more.classList.remove('open');btn.setAttribute('aria-expanded','false');});});});document.addEventListener('click',function(e){var inside=false;mores.forEach(function(m){if(m.contains(e.target))inside=true;});if(!inside)closeAll(null);});document.addEventListener('keydown',function(e){if(e.key==='Escape')closeAll(null);});})();
+// formularz kontaktowy → WhatsApp (prefill) + fallback e-mail
 (function(){
-  var b=document.querySelector('.csh-burger'),m=document.querySelector('.csh-menu');
-  if(b&&m){b.addEventListener('click',function(){m.classList.toggle('open');b.setAttribute('aria-expanded',m.classList.contains('open'));});}
-  var mb=document.querySelector('.csh-more-btn'),mo=document.querySelector('.csh-more');
-  if(mb&&mo){
-    mb.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();
-      var open=mo.classList.toggle('open');mb.setAttribute('aria-expanded',open);});
-    document.addEventListener('click',function(e){
-      if(!mo.contains(e.target)){mo.classList.remove('open');mb.setAttribute('aria-expanded','false');}});
-    document.addEventListener('keydown',function(e){
-      if(e.key==='Escape'){mo.classList.remove('open');mb.setAttribute('aria-expanded','false');}});
+  var WA='48539999549', MAIL='office@cosc.org.pl';
+  var APPS_SCRIPT_URL = window.COSC_ANKIETY.URL; // adres w formularz-silnik.js
+  function zapiszLead(f){
+    try{
+      var d=new FormData(f);
+      var payload={
+        _formularz:'Kontakt (index)',
+        _data_wyslania:new Date().toISOString(),
+        rodzaj_wniosku:'Zapytanie kontaktowe',
+        imie:(d.get('imie')||'').trim(),
+        telefon_wlasny:(d.get('tel')||'').trim(),
+        jezyk_kontaktu:(d.get('jezyk')||'').trim(),
+        uwagi:(d.get('opis')||'').trim(),
+        rodo_zgoda:(f.zgoda&&f.zgoda.checked)?'tak':'nie'
+      };
+      fetch(APPS_SCRIPT_URL,{method:'POST',mode:'cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload)}).catch(function(){});
+    }catch(_e){}
+  }
+  function build(f){
+    var d=new FormData(f);
+    var imie=(d.get('imie')||'').trim();
+    var tel=(d.get('tel')||'').trim();
+    var jezyk=(d.get('jezyk')||'').trim();
+    var opis=(d.get('opis')||'').trim();
+    var t='Dzień dobry';
+    if(imie)t+=', nazywam się '+imie;
+    t+='.\n';
+    if(jezyk)t+='Język kontaktu: '+jezyk+'\n';
+    if(tel)t+='Telefon: '+tel+'\n';
+    if(opis)t+='Moja sprawa: '+opis;
+    return t;
+  }
+  // delegacja na document — odporne na przerenderowanie przez i18n
+  document.addEventListener('submit',function(e){
+    var f=e.target;if(!f||f.id!=='leadForm')return;
+    e.preventDefault();
+    if(!f.imie.value.trim()||!f.opis.value.trim()){f.reportValidity&&f.reportValidity();return;}
+    if(!f.zgoda.checked){f.zgoda.reportValidity&&f.zgoda.reportValidity();return;}
+    zapiszLead(f); // najpierw zapis do arkusza
+    window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(build(f)),'_blank'); // potem WhatsApp
+  });
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('#leadMail');if(!a)return;
+    var f=document.getElementById('leadForm');if(!f)return;
+    a.href='mailto:'+MAIL+'?subject='+encodeURIComponent('Zapytanie ze strony COSC')+'&body='+encodeURIComponent(build(f));
+  });
+})();
+</script>
+<script src="../site-header.js"></script>
+<script>
+/* Etykiety schematu sa wpisane w HTML w jezyku tej wersji. */
+// hover = podgląd bez dźwięku, klik = odtwarzanie z dźwiękiem (delegacja — odporna na i18n)
+(function(){
+  var touch=window.matchMedia('(hover: none)').matches;
+  function vidOf(el){var c=el&&el.closest?el.closest('.s-card'):null;return c?c.querySelector('.mascot-video'):null;}
+  function stopOthers(cur){document.querySelectorAll('.mascot-video').forEach(function(v){if(v!==cur){v.pause();v.muted=true;v.currentTime=0;}});}
+  document.addEventListener('click',function(e){
+    var v=vidOf(e.target);if(!v)return;
+    if(e.target.closest('a'))return;
+    if(v.paused||v.muted){stopOthers(v);v.muted=false;v.play().catch(function(){});}
+    else{v.pause();v.muted=true;v.currentTime=0;}
+  });
+  if(!touch){
+    document.addEventListener('mouseover',function(e){var v=vidOf(e.target);if(v&&v.paused){v.play().catch(function(){});}});
+    document.addEventListener('mouseout',function(e){
+      var v=vidOf(e.target);if(!v)return;
+      var to=e.relatedTarget;
+      if(to&&to.closest&&vidOf(to)===v)return; /* wciąż w tym samym banerze */
+      v.pause();v.muted=true;v.currentTime=0;  /* koniec podświetlenia = koniec dźwięku */
+    });
+  }
+  /* baner poza ekranem (scroll/dotyk) → stop dźwięku */
+  if('IntersectionObserver' in window){
+    var vio=new IntersectionObserver(function(es){es.forEach(function(en){if(!en.isIntersecting){var v=en.target;v.pause();v.muted=true;v.currentTime=0;}})},{threshold:.2});
+    document.querySelectorAll('.mascot-video').forEach(function(v){vio.observe(v);});
   }
 })();
 </script>
-<!-- Czat — wstępne rozpoznanie sprawy (kolejność plików istotna) -->
-<script src="/czat-jezyki.js" defer></script>
-<script src="/czat-widget.js"
-        data-endpoint="https://script.google.com/macros/s/AKfycbyOqUYYIvW4OCwY79AFqp2j5BXUTdef43tK42FrsEBVSmFH4hB3lxzr3Oslg9OkO24/exec"
-        data-whatsapp="48539999549"
-        data-akcent="#D4213D"
-        data-tlo="#16244C"
-        data-kroj="'IBM Plex Sans', sans-serif"
-        data-jezyk="es"
-        defer></script>
 </body>
 </html>

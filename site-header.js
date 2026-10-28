@@ -144,13 +144,6 @@
     + '.csh-header .lang{flex:none;position:relative !important;top:auto !important;right:auto !important;transform:none !important;margin-left:auto}'
     + '.csh-burger{display:none;background:none;border:none;color:#fff;font-size:26px;cursor:pointer;flex:none}'
     + '.csh-l-short{display:none}.csh-mob-x{display:none}'
-    /* pasek "Esta página en español" — dyskretny, pod paskiem flagowym */
-    + '.csh-es-bar{background:#fff;border-bottom:1px solid #e6e9f0;font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:13.5px}'
-    + '.csh-es-bar .csh-es-in{max-width:1120px;margin:0 auto;padding:8px 16px;display:flex;align-items:center;gap:8px;justify-content:flex-end}'
-    + '.csh-es-bar a{color:#4636c9;text-decoration:none;font-weight:600}'
-    + '.csh-es-bar a:hover{text-decoration:underline}'
-    + '.csh-es-fl{width:20px;height:14px;border-radius:3px;flex:none;box-shadow:0 0 0 1px rgba(22,36,76,.15)}'
-    + '@media(max-width:600px){.csh-es-bar .csh-es-in{justify-content:center;padding:7px 12px;font-size:13px}}'
     + '@media(max-width:900px){'
     /* JEDEN wiersz: małe logo + przyciski Cudzoziemiec/Pracodawca + języki; bez burgera */
     + '.csh-wrap{flex-wrap:nowrap;gap:8px;padding:0 10px;min-height:54px}'
@@ -265,9 +258,10 @@
 
   /* ---- pary stron PL <-> hiszpańska wersja /es/ (JEDNO źródło prawdy) ----
    * Klucz = ścieżka strony polskiej, wartość = plik w katalogu /es/.
-   * Używane w dwóch miejscach: (a) pasek "Esta página en español" pod nagłówkiem,
-   * (b) i18n.js — kliknięcie ES prowadzi na pełną stronę hiszpańską zamiast
-   * tłumaczyć polską w locie. Dodając nową stronę ES, dopisz ją TUTAJ. */
+   * Czyta to i18n.js: kliknięcie ES w przełączniku prowadzi na pełną stronę
+   * hiszpańską zamiast tłumaczyć polską w locie. Ścieżka zapasowa — pierwszeństwo
+   * ma <link rel="alternate" hreflang="es"> w nagłówku strony.
+   * Dodając nową stronę ES, dopisz ją TUTAJ. */
   var ES_PAIRS = {
     '/': 'es/',
     '/index.html': 'es/',
@@ -408,36 +402,6 @@
     host.className = 'csh-header';
     host.setAttribute('data-i18n-skip', ''); // globalny i18n pomija nagłówek — tłumaczymy sami
     host.innerHTML = render();
-
-    /* pasek zapraszający na pełne wersje obcojęzyczne — tylko na stronach POLSKICH,
-     * i tylko dla tych wersji, które dla tej strony istnieją. */
-    var enUrl = LOCDIR ? null : enAlt();
-    if (enUrl && !document.getElementById('csh-en-bar')) {
-      var ebar = document.createElement('div');
-      ebar.id = 'csh-en-bar';
-      ebar.className = 'csh-es-bar';
-      ebar.setAttribute('data-i18n-skip', '');   // to zdanie ma zostać po angielsku
-      ebar.innerHTML = '<div class="csh-es-in">'
-        + '<svg class="csh-es-fl" viewBox="0 0 24 16" aria-hidden="true"><rect width="24" height="16" fill="#012169"/><path d="M0 0l24 16M24 0L0 16" stroke="#fff" stroke-width="3"/><path d="M12 0v16M0 8h24" stroke="#fff" stroke-width="5"/><path d="M12 0v16M0 8h24" stroke="#C8102E" stroke-width="3"/></svg>'
-        + '<a href="' + enUrl + '" hreflang="en" lang="en">This page in English &rarr;</a></div>';
-      var eafter = host.nextElementSibling;
-      if (eafter && eafter.classList && eafter.classList.contains('flagbar')) eafter.insertAdjacentElement('afterend', ebar);
-      else host.insertAdjacentElement('afterend', ebar);
-    }
-
-    var esUrl = LOCDIR ? null : esAlt();
-    if (esUrl && !document.getElementById('csh-es-bar')) {
-      var bar = document.createElement('div');
-      bar.id = 'csh-es-bar';
-      bar.className = 'csh-es-bar';
-      bar.setAttribute('data-i18n-skip', '');   // to zdanie ma zostać po hiszpańsku
-      bar.innerHTML = '<div class="csh-es-in">'
-        + '<svg class="csh-es-fl" viewBox="0 0 24 16" aria-hidden="true"><rect width="24" height="16" fill="#c60b1e"/><rect y="4" width="24" height="8" fill="#ffc400"/></svg>'
-        + '<a href="' + esUrl + '" hreflang="es" lang="es">Esta p&aacute;gina en espa&ntilde;ol &rarr;</a></div>';
-      var after = host.nextElementSibling;
-      if (after && after.classList && after.classList.contains('flagbar')) after.insertAdjacentElement('afterend', bar);
-      else host.insertAdjacentElement('afterend', bar);
-    }
 
     host.addEventListener('click', function (e) {
       var btn = e.target.closest ? e.target.closest('.csh-more-btn') : null;
