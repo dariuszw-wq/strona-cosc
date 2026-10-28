@@ -505,7 +505,12 @@ footer .upd{margin-top:14px;font-size:11.5px;color:#6B7890}
 <meta property="og:description" content="Prowadzimy Twoją sprawę o kartę pobytu i legalną pracę w Polsce — od wniosku w systemie MOS do odbioru karty. Skuteczna pomoc albo zwrot kosztów.">
 <meta property="og:url" content="https://cosc.org.pl/">
 <meta property="og:image" content="https://cosc.org.pl/og/strona-glowna.png">
-<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+
+
+
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://cosc.org.pl/og/strona-glowna.png">
 
@@ -535,59 +540,124 @@ footer .upd{margin-top:14px;font-size:11.5px;color:#6B7890}
  }
 }
 </script>
+<link rel="stylesheet" href="hero-nowy.css">
 </head>
-<body>
+<body class="page-index">
+<div class="kb-grid-layer" aria-hidden="true">
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern id="pg-grid-pattern" width="80" height="80" patternUnits="userSpaceOnUse">
+<line x1="80" y1="0" x2="80" y2="80" stroke="rgba(226,236,255,0.045)" stroke-width="0.5"/>
+<line x1="0" y1="80" x2="80" y2="80" stroke="rgba(226,236,255,0.045)" stroke-width="0.5"/>
+</pattern>
+<pattern id="pg-grid-glow" width="240" height="240" patternUnits="userSpaceOnUse">
+<circle cx="80" cy="80" r="1" fill="rgba(122,138,255,0.14)">
+<animate attributeName="opacity" values="0.14;0.30;0.14" dur="4s" repeatCount="indefinite"/>
+<animate attributeName="r" values="1;1.5;1" dur="4s" repeatCount="indefinite"/>
+</circle>
+<circle cx="240" cy="0" r="1" fill="rgba(90,160,240,0.11)">
+<animate attributeName="opacity" values="0.11;0.24;0.11" dur="5s" begin="1.5s" repeatCount="indefinite"/>
+<animate attributeName="r" values="1;1.5;1" dur="5s" begin="1.5s" repeatCount="indefinite"/>
+</circle>
+<circle cx="0" cy="240" r="1" fill="rgba(122,138,255,0.1)">
+<animate attributeName="opacity" values="0.10;0.20;0.10" dur="6s" begin="3s" repeatCount="indefinite"/>
+<animate attributeName="r" values="1;1.5;1" dur="6s" begin="3s" repeatCount="indefinite"/>
+</circle>
+</pattern>
+</defs>
+<rect width="100%" height="100%" fill="url(#pg-grid-pattern)"/>
+<rect width="100%" height="100%" fill="url(#pg-grid-glow)"/>
+</svg>
+</div>
+
 
 <div class="mos">⚠ Od 27.04.2026 wnioski o pobyt składa się <strong>wyłącznie elektronicznie przez system MOS</strong>. <a href="#mos">Pomożemy złożyć go bez błędów →</a></div>
 
 <header id="site-header"></header>
 <div class="flagbar" aria-hidden="true"></div>
 
-<div class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <span class="eyebrow">Prawnik dla cudzoziemców w Polsce.</span>
-      <h1>Karta pobytu i legalizacja pracy w Polsce.<br><em>Skuteczna pomoc albo zwrot kosztów.</em></h1>
-      <p class="lead">Twoja rodzina może przestać się martwić — kartą pobytu zajmujemy się my. Skuteczna pomoc albo zwrot kosztów*.</p>
-      <div class="hero-ctas">
-        <a class="btn btn-gold" href="kontakt.html">Zacznij sprawę dziś — bez ryzyka odmowy</a>
-        <a class="btn btn-line" href="cennik.html">Zobacz pakiety i ceny</a>
+<section class="hx">
+  <div class="hx-bg" aria-hidden="true">
+    <span class="hx-orb hx-orb-a"></span>
+    <span class="hx-orb hx-orb-b"></span>
+  </div>
+
+  <div class="hx-inner">
+    <div class="hx-copy">
+      <span class="hx-eyebrow"><i></i>Prawnik dla cudzoziemców w Polsce</span>
+
+      <h1 class="hx-title">Karta pobytu i legalizacja pracy w Polsce.<br><span>Skuteczna pomoc albo zwrot kosztów.</span></h1>
+
+      <p class="hx-lead">Prowadzimy Twoją sprawę o kartę pobytu od wniosku w systemie MOS aż po odbiór karty. W pakiecie VIP przy ostatecznej odmowie zwracamy 100% wynagrodzenia*.</p>
+
+      <div class="hx-ctas">
+        <a class="hx-btn hx-btn-primary" href="kontakt.html">Umów bezpłatną konsultację</a>
+        <a class="hx-btn hx-btn-ghost" href="cennik.html">Zobacz pakiety i ceny</a>
       </div>
-      <div class="rotator" aria-hidden="true">
-        <ul>
-          <li><span class="fl">PL</span> Rozumiemy Cię — w Twoim języku.</li>
-          <li><span class="fl">EN</span> We understand you — in your language.</li>
-          <li><span class="fl">ES</span> Te entendemos — en tu idioma.</li>
-          <li><span class="fl">PT</span> Nós te entendemos — no seu idioma.</li>
-          <li><span class="fl">PL</span> Rozumiemy Cię — w Twoim języku.</li>
-        </ul>
-      </div>
-      <div class="gwar">
-        <div class="seal">✦</div>
-        <p><strong>Skuteczna pomoc albo zwrot kosztów*</strong><br>*Zasady zwrotu wynagrodzenia określa Regulamin. Dotyczy pakietu VIP.</p>
-      </div>
+
+      <ul class="hx-facts">
+        <li><strong><span id="hx-licznik" data-od="2026-07-31" data-baza="1240">1240</span>+</strong><span>złożonych wniosków</span></li>
+        <li><strong>6</strong><span>języków obsługi</span></li>
+        <li><strong>100%</strong><span>zwrotu przy odmowie — pakiet VIP*</span></li>
+      </ul>
+
+      <p class="hx-note"><span>Od 27.04.2026</span> wnioski o pobyt składa się wyłącznie elektronicznie przez system MOS — <a href="#mos">pomożemy złożyć go bez błędów →</a><br>
+      * Zwrot wynagrodzenia dotyczy wyłącznie pakietu VIP i postępowania administracyjnego. Nie obejmuje m.in. spraw, w których nie są spełnione ustawowe przesłanki udzielenia zezwolenia, ani drogi sądowej. <a href="cennik.html">Pełne warunki zwrotu →</a></p>
     </div>
-    <div class="card-visual">
-      <div class="residence-card">
-        <div class="rc-top"><span>Rzeczpospolita Polska · Poland</span><span>Karta pobytu</span></div>
-        <div class="rc-main">
-          <div class="rc-photo">🧑</div>
-          <div class="rc-fields">
-            <div class="rc-name">TWOJE NAZWISKO</div>
-            <div class="rc-row">
-              <div><span>Rodzaj</span>pobyt czasowy</div>
-              <div><span>Ważna do</span>2029</div>
-              <div><span>Dostęp do rynku pracy</span>tak</div>
+
+    <div class="hx-visual">
+      <div class="hx-card" aria-hidden="true">
+        <div class="hx-guilloche"></div>
+        <div class="hx-card-top">
+          <span class="hx-pol">POL</span>
+          <span class="hx-holo"></span>
+          <span class="hx-card-title">KARTA POBYTU</span>
+          <span class="hx-card-no">ZR2002387</span>
+        </div>
+
+        <div class="hx-card-body">
+          <div class="hx-photo">
+            <img class="hx-photo-face" src="animacje_kolumbijka/usmiech-poster.jpg" alt="Wizualizacja karty pobytu — pole ze zdjęciem" width="736" height="912" loading="lazy" decoding="async">
+            <span class="hx-photo-tag">POL</span>
+          </div>
+          <div class="hx-fields">
+            <div class="hx-f">
+              <span>NAZWISKO I IMIĘ / SURNAME AND FORNAME(S)</span>
+              <b>TWOJE NAZWISKO</b>
+              <b class="hx-thin">Imię</b>
             </div>
-            <div class="rc-chip"></div>
+            <div class="hx-frow">
+              <div class="hx-f"><span>RODZAJ ZEZWOLENIA</span><b>POBYT CZASOWY</b></div>
+              <div class="hx-f"><span>DATA WAŻNOŚCI</span><b>17 07 2029</b></div>
+            </div>
+            <div class="hx-frow">
+              <div class="hx-f"><span>DOSTĘP DO RYNKU PRACY</span><b>TAK</b></div>
+              <div class="hx-f"><span>OBYWATELSTWO</span><b>UKR</b></div>
+            </div>
           </div>
         </div>
-        <div class="rc-mrz">KP&lt;POLXXXXXXXXX&lt;&lt;TWOJE&lt;&lt;NAZWISKO&lt;&lt;&lt;&lt;&lt;<br>1234567890POL2912319&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;06</div>
+
+        <div class="hx-card-foot">
+          <span class="hx-sign">Signature</span>
+          <span class="hx-permit">RESIDENCE PERMIT</span>
+        </div>
+        <div class="hx-mrz">IPPOL ZR2002387&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;<br>8412194M2907177UKR&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;06</div>
       </div>
-      <div class="rc-stamp">Decyzja pozytywna</div>
+
+      <div class="hx-stamp"><span>Decyzja</span><strong>pozytywna</strong></div>
+
+      <div class="hx-badge">
+        <i>&#10003;</i>
+        <div><b>Wniosek złożony w MOS</b><span>bez błędów formalnych</span></div>
+      </div>
     </div>
   </div>
-</div>
+
+  <a class="hx-scroll" href="#uslugi" aria-label="Przewiń w dół">
+    <span class="hx-scroll-mouse"><i></i></span>
+    <span class="hx-scroll-label">Przewiń</span>
+  </a>
+</section>
 
 <div class="trustbar">
   <div class="wrap trust">
@@ -891,10 +961,10 @@ document.querySelectorAll('.trust,.path-sec,.ct-demo,.mascot').forEach(el=>io.ob
 // Tłumaczenie etykiet w SVG "Trzy kroki" (i18n.js pomija svg) — nasłuch cosc:langchange
 (function(){
   var T={
-    'Prawnik':{en:'Our office',es:'Nuestro despacho',uk:'Наш офіс',ru:'Наш офис',fr:'Notre cabinet'},
+    'Prawnik':{en:'Lawyer',es:'Abogado',uk:'Юрист',ru:'Юрист',fr:'Avocat'},
     '1. Wniosek':{en:'1. Application',es:'1. Solicitud',uk:'1. Заява',ru:'1. Заявление',fr:'1. Demande'},
-    '2. Urząd':{en:'2. The office',es:'2. La oficina',uk:'2. Установа',ru:'2. Ведомство',fr:'2. L\'administration'},
-    '3. Karta pobytu':{en:'3. Residence card',es:'3. La tarjeta',uk:'3. Карта перебування',ru:'3. Карта пребывания',fr:'3. Carte de séjour'}
+    '2. Urząd':{en:'2. The office',es:'2. La oficina',uk:'2. Уряд',ru:'2. Ужонд',fr:'2. L\'administration'},
+    '3. Karta pobytu':{en:'3. Residence card',es:'3. Tarjeta de residencia',uk:'3. Карта побиту',ru:'3. Карта побыта',fr:'3. Carte de séjour'}
   };
   function apply(lang){
     document.querySelectorAll('[data-svgk]').forEach(function(el){
@@ -930,6 +1000,59 @@ document.querySelectorAll('.trust,.path-sec,.ct-demo,.mascot').forEach(el=>io.ob
     var vio=new IntersectionObserver(function(es){es.forEach(function(en){if(!en.isIntersecting){var v=en.target;v.pause();v.muted=true;v.currentTime=0;}})},{threshold:.2});
     document.querySelectorAll('.mascot-video').forEach(function(v){vio.observe(v);});
   }
+})();
+</script>
+<script>
+/* Przenikanie sekcji przy przewijaniu + plynne przejscie do sekcji z bannera.
+   Odpowiednik komponentow ScrollReveal i hx-scroll z projektu Lovable. */
+(function () {
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+  /* Licznik wnioskow w bannerze - ten sam mechanizm co w pasku zaufania
+     (baza + 1 dziennie od daty bazowej), zeby obie liczby byly zgodne. */
+  var lic = document.getElementById("hx-licznik");
+  if (lic) {
+    var dni = Math.max(0, Math.floor((Date.now() - new Date(lic.dataset.od + "T00:00:00")) / 86400000));
+    lic.textContent = (+lic.dataset.baza) + dni;
+  }
+
+  if (!reduce.matches && "IntersectionObserver" in window) {
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add("sr-in"); obs.unobserve(e.target); }
+      });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.06 });
+
+    var vh = window.innerHeight;
+    var sel = "body > section, body > .trustbar, body > .path-sec, body > .mos-sec, body > .calc-teaser, body > .gry-sec, [data-reveal]";
+    Array.prototype.forEach.call(document.querySelectorAll(sel), function (n) {
+      if (n.classList.contains("sr") || n.classList.contains("hx")) return;
+      if (n.getBoundingClientRect().top < vh * 0.9) return;
+      n.classList.add("sr");
+      obs.observe(n);
+    });
+  }
+
+  var link = document.querySelector(".hx-scroll");
+  if (!link) return;
+  link.addEventListener("click", function (ev) {
+    var cel = document.getElementById("uslugi");
+    if (!cel) return;
+    ev.preventDefault();
+    var start = window.scrollY;
+    var end = cel.getBoundingClientRect().top + start - 84;
+    var dist = end - start;
+    if (reduce.matches || Math.abs(dist) < 2) { window.scrollTo(0, end); return; }
+    var t0 = null, czas = 1100;
+    var ease = function (t) { return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+    var krok = function (now) {
+      if (t0 === null) t0 = now;
+      var p = Math.min((now - t0) / czas, 1);
+      window.scrollTo(0, start + dist * ease(p));
+      if (p < 1) window.requestAnimationFrame(krok);
+    };
+    window.requestAnimationFrame(krok);
+  });
 })();
 </script>
 </body>

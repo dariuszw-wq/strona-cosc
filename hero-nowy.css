@@ -1,0 +1,1188 @@
+/* ===========================================================
+   COSC — nowa szata strony głównej (przeniesiona z projektu Lovable
+   2ebca823-39f0-4069-88be-a9ee06411f4c, stan 26.07.2026).
+   Źródło: src/styles/hero-modern.css + src/styles/pages/index-dark.css
+   Przeniesione 28.10.2026 bez zmian wizualnych; usunięte wyłącznie
+   zależności od Reacta. Zakres: wyłącznie body.page-index.
+   =========================================================== */
+
+/* ===========================================================
+   1. HERO — ciemny banner
+   =========================================================== */
+
+.page-index .hx,
+.page-index .hx * {
+  box-sizing: border-box;
+  font-family: "Inter", "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+}
+
+.page-index .hx {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: linear-gradient(115deg, #080d1c 0%, #101a35 45%, #1d1a52 100%);
+  color: #fff;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  padding: 132px 0 118px;
+}
+
+.page-index .hx-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+.page-index .hx-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.55;
+}
+.page-index .hx-orb-a {
+  width: 520px;
+  height: 520px;
+  right: -140px;
+  top: -180px;
+  background: radial-gradient(circle, #4636c9, transparent 70%);
+}
+.page-index .hx-orb-b {
+  width: 420px;
+  height: 420px;
+  left: -160px;
+  bottom: -200px;
+  background: radial-gradient(circle, #1f6fd0, transparent 70%);
+}
+
+.page-index .hx-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 18px;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 56px;
+  align-items: center;
+}
+
+/* ---------- lewa kolumna ---------- */
+.page-index .hx-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 7px 14px 7px 11px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 12.5px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  backdrop-filter: blur(8px);
+}
+.page-index .hx-eyebrow i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #5ee0a4;
+  box-shadow: 0 0 0 4px rgba(94, 224, 164, 0.18);
+}
+
+.page-index .hx-title {
+  margin: 22px 0 0;
+  color: #fff;
+  font-size: clamp(32px, 4.3vw, 54px);
+  line-height: 1.06;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+}
+.page-index .hx-title span {
+  background: linear-gradient(92deg, #cfd6ff 0%, #8ea2ff 55%, #f0d78c 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 600;
+}
+
+.page-index .hx-lead {
+  margin: 20px 0 0;
+  max-width: 520px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16.5px;
+  line-height: 1.6;
+}
+
+.page-index .hx-ctas {
+  margin-top: 30px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.page-index .hx-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 20px;
+  border-radius: 11px;
+  font-size: 14.5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    transform 0.16s ease,
+    box-shadow 0.16s ease,
+    background 0.16s ease;
+}
+.page-index .hx-btn-primary {
+  background: #fff;
+  color: #101828;
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.35);
+}
+.page-index .hx-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+}
+.page-index .hx-btn-ghost {
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+}
+.page-index .hx-btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-2px);
+}
+
+.page-index .hx-facts {
+  list-style: none;
+  margin: 38px 0 0;
+  padding: 22px 0 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  gap: 38px;
+  flex-wrap: wrap;
+}
+.page-index .hx-facts li {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.page-index .hx-facts strong {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+.page-index .hx-facts span {
+  font-size: 12.5px;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/* ---------- prawa kolumna: karta pobytu ---------- */
+.page-index .hx-visual {
+  position: relative;
+  perspective: 1400px;
+  padding-top: 46px;
+  display: flex;
+  justify-content: center;
+}
+
+.page-index .hx-card {
+  position: relative;
+  width: min(100%, 460px);
+  aspect-ratio: 1.585;
+  border-radius: 18px;
+  padding: 16px 18px 14px;
+  overflow: hidden;
+  color: #16244c;
+  background:
+    linear-gradient(118deg, rgba(255, 214, 170, 0.55) 0%, transparent 32%),
+    linear-gradient(200deg, rgba(255, 176, 205, 0.42) 0%, transparent 46%),
+    linear-gradient(20deg, rgba(160, 230, 220, 0.5) 6%, transparent 52%),
+    linear-gradient(160deg, #f6fbfb 0%, #eaf3f6 55%, #f4eef6 100%);
+  box-shadow:
+    0 40px 80px rgba(0, 0, 0, 0.55),
+    0 0 0 1px rgba(255, 255, 255, 0.55) inset;
+  transform: rotate(-6deg) rotateY(11deg) rotateX(4deg);
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.page-index .hx-visual:hover .hx-card {
+  transform: rotate(-3deg) rotateY(5deg) rotateX(2deg) translateY(-6px);
+}
+
+.page-index .hx-guilloche {
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-radial-gradient(
+      circle at 68% 58%,
+      rgba(22, 36, 76, 0.14) 0 1px,
+      transparent 1px 7px
+    ),
+    repeating-linear-gradient(58deg, rgba(22, 36, 76, 0.07) 0 1px, transparent 1px 6px);
+  opacity: 0.75;
+  pointer-events: none;
+}
+
+.page-index .hx-card-top {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(22, 36, 76, 0.18);
+}
+.page-index .hx-pol {
+  font-weight: 900;
+  font-size: 17px;
+  letter-spacing: 0.06em;
+  color: #2c37b8;
+}
+.page-index .hx-holo {
+  width: 26px;
+  height: 17px;
+  border-radius: 3px;
+  background: linear-gradient(120deg, #2fa06a, #8ee0a8 45%, #2fa06a);
+  box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.6);
+}
+.page-index .hx-card-title {
+  font-size: 13.5px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: #101828;
+}
+.page-index .hx-card-no {
+  margin-left: auto;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #101828;
+}
+
+.page-index .hx-card-body {
+  position: relative;
+  display: grid;
+  grid-template-columns: 88px 1fr;
+  gap: 14px;
+  padding-top: 12px;
+}
+.page-index .hx-photo {
+  position: relative;
+  border-radius: 6px;
+  background: linear-gradient(170deg, #cfd8de, #9aa7b2);
+  overflow: hidden;
+  aspect-ratio: 0.78;
+}
+.page-index .hx-photo-face {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 22%;
+  filter: grayscale(0.12) contrast(1.02);
+}
+.page-index .hx-photo-tag {
+  position: absolute;
+  left: 6px;
+  bottom: 5px;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.page-index .hx-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  min-width: 0;
+}
+.page-index .hx-frow {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 10px;
+}
+.page-index .hx-f {
+  min-width: 0;
+}
+.page-index .hx-f span {
+  display: block;
+  font-size: 7.5px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: rgba(22, 36, 76, 0.62);
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.page-index .hx-f b {
+  display: block;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #101828;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.page-index .hx-f b.hx-thin {
+  font-weight: 400;
+  font-size: 11.5px;
+}
+
+.page-index .hx-card-foot {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+.page-index .hx-sign {
+  font-family: "Segoe Script", "Brush Script MT", cursive;
+  font-size: 19px;
+  color: #101828;
+  transform: rotate(-4deg);
+}
+.page-index .hx-permit {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: rgba(22, 36, 76, 0.7);
+}
+.page-index .hx-mrz {
+  position: relative;
+  margin-top: 6px;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 9px;
+  line-height: 1.35;
+  letter-spacing: 0.08em;
+  color: rgba(22, 36, 76, 0.62);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* pieczątka */
+.page-index .hx-stamp {
+  position: absolute;
+  right: 2%;
+  bottom: 4%;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  padding: 10px 16px;
+  border: 2.5px solid #57d79f;
+  border-radius: 10px;
+  color: #57d79f;
+  background: rgba(9, 16, 32, 0.72);
+  backdrop-filter: blur(6px);
+  transform: rotate(-11deg);
+  text-transform: uppercase;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.4);
+}
+.page-index .hx-stamp span {
+  font-size: 9.5px;
+  letter-spacing: 0.18em;
+}
+.page-index .hx-stamp strong {
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+/* plakietka */
+.page-index .hx-badge {
+  position: absolute;
+  left: -6%;
+  top: 0;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 11px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(12, 20, 42, 0.7);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+}
+.page-index .hx-badge i {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #5ee0a4;
+  color: #08301f;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 13px;
+}
+.page-index .hx-badge b {
+  display: block;
+  font-size: 13px;
+  color: #fff;
+  font-weight: 600;
+}
+.page-index .hx-badge span {
+  font-size: 11.5px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 980px) {
+  .page-index .hx {
+    padding: 56px 0 64px;
+  }
+  .page-index .hx-inner {
+    grid-template-columns: 1fr;
+    gap: 46px;
+  }
+  .page-index .hx-visual {
+    padding: 26px 0 10px;
+  }
+  .page-index .hx-card {
+    transform: rotate(-3deg);
+  }
+  .page-index .hx-badge {
+    top: -4px;
+    left: 0;
+  }
+  .page-index .hx-facts {
+    gap: 26px;
+  }
+  .page-index .hx-btn {
+    flex: 1 1 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-index .hx-card,
+  .page-index .hx-btn {
+    transition: none;
+  }
+}
+
+/* ---------- wskaźnik przewijania ---------- */
+.page-index .hx-scroll {
+  position: absolute;
+  left: 50%;
+  bottom: 26px;
+  transform: translateX(-50%);
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  transition: color 0.25s ease;
+}
+.page-index .hx-scroll:hover {
+  color: #fff;
+}
+.page-index .hx-scroll-mouse {
+  width: 26px;
+  height: 42px;
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  padding-top: 7px;
+}
+.page-index .hx-scroll-mouse i {
+  width: 3px;
+  height: 8px;
+  border-radius: 2px;
+  background: currentColor;
+  animation: hxScroll 1.8s ease-in-out infinite;
+}
+@keyframes hxScroll {
+  0% { transform: translateY(0); opacity: 0; }
+  25% { opacity: 1; }
+  70% { transform: translateY(13px); opacity: 0; }
+  100% { opacity: 0; }
+}
+@media (max-width: 900px) {
+  .page-index .hx {
+    padding: 112px 0 96px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .page-index .hx-scroll-mouse i { animation: none; opacity: 1; }
+}
+
+.page-index .hx-note {
+  margin: 20px 0 0;
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.55);
+}
+.page-index .hx-note span {
+  color: #f0d78c;
+  font-weight: 600;
+}
+.page-index .hx-note a {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ===== wejście na stronę: morfujące, wyblurowane pojawianie się hero ===== */
+@keyframes hxEnter {
+  from {
+    opacity: 0;
+    filter: blur(16px);
+    transform: translate3d(0, 22px, 0);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: none;
+  }
+}
+
+@keyframes hxEnterVisual {
+  from {
+    opacity: 0;
+    filter: blur(22px);
+    transform: translate3d(0, 34px, 0) scale(0.965);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: none;
+  }
+}
+
+.page-index .hx-eyebrow,
+.page-index .hx-title,
+.page-index .hx-lead,
+.page-index .hx-ctas,
+.page-index .hx-facts,
+.page-index .hx-note {
+  opacity: 0;
+  animation: hxEnter 0.95s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+}
+
+.page-index .hx-eyebrow { animation-delay: 0.05s; }
+.page-index .hx-title { animation-delay: 0.16s; }
+.page-index .hx-lead { animation-delay: 0.28s; }
+.page-index .hx-ctas { animation-delay: 0.4s; }
+.page-index .hx-facts { animation-delay: 0.5s; }
+.page-index .hx-note { animation-delay: 0.6s; }
+
+.page-index .hx-visual {
+  opacity: 0;
+  animation: hxEnterVisual 1.15s cubic-bezier(0.22, 0.61, 0.36, 1) 0.22s forwards;
+}
+
+.page-index #site-header {
+  opacity: 0;
+  animation: hxEnter 0.9s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-index .hx-eyebrow,
+  .page-index .hx-title,
+  .page-index .hx-lead,
+  .page-index .hx-ctas,
+  .page-index .hx-facts,
+  .page-index .hx-note,
+  .page-index .hx-visual,
+  .page-index #site-header {
+    opacity: 1;
+    animation: none;
+  }
+}
+
+/* ===========================================================
+   2. CIEMNY MOTYW POZOSTAŁYCH SEKCJI STRONY GŁÓWNEJ
+   (nadpisuje jasny motyw; nazwy klas są te same co na stronie)
+   =========================================================== */
+
+/* UWAGA: nie nadpisujemy --navy ani --gold. W projekcie Lovable słuzyły one
+   wyłącznie za kolor tekstu, ale na tej stronie bywają też TŁEM
+   (np. sekcja #prawnik-czy-pracodawca i pasek .mos). Nadpisanie ich na jasne
+   wartości robiło białe dziury w ciemnej stronie. Kolory tekstu ustawiamy
+   niżej wprost. */
+body.page-index {
+  --ink: #ffffff;
+  --navy-d: #0b1226;
+  --mut: rgba(255, 255, 255, 0.62);
+  --line: rgba(255, 255, 255, 0.1);
+  --cream: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  background: transparent;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Kolor bazowy dokumentu. Arkusz ładuje tylko strona z ciemną szatą,
+   więc regułę można zapisać wprost na html. Dzięki temu warstwy tła
+   mogą siedzieć pod treścią (z-index: -1) i nic jasnego nie prześwituje
+   pod stopką. */
+html {
+  background: #080d1c;
+}
+
+body.page-index h1,
+body.page-index h2,
+body.page-index h3,
+body.page-index h4 {
+  color: #fff;
+  letter-spacing: -0.02em;
+}
+
+/* ---------- statyczne tło paralaksowe ---------- */
+body.page-index::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-color: #080d1c;
+  background-image:
+    radial-gradient(70% 60% at 15% 0%, rgba(70, 54, 201, 0.26), transparent 62%),
+    radial-gradient(60% 55% at 88% 12%, rgba(31, 111, 208, 0.2), transparent 65%);
+  transform: translateZ(0);
+  contain: layout style;
+}
+body.page-index::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image: radial-gradient(circle, rgba(226, 236, 255, 0.09) 1px, rgba(0, 0, 0, 0) 1px);
+  background-size: 28px 28px;
+  -webkit-mask-image: radial-gradient(80% 70%, rgb(0, 0, 0) 30%, rgba(0, 0, 0, 0) 100%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) clamp(28px, 10vw, 220px), rgb(0, 0, 0) calc(100% - clamp(28px, 10vw, 220px)), rgba(0, 0, 0, 0) 100%);
+  mask-image: radial-gradient(80% 70%, rgb(0, 0, 0) 30%, rgba(0, 0, 0, 0) 100%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) clamp(28px, 10vw, 220px), rgb(0, 0, 0) calc(100% - clamp(28px, 10vw, 220px)), rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-composite: source-in;
+  mask-composite: intersect;
+  transform: translateZ(0);
+  contain: layout style;
+}
+body.page-index .kb-grid-layer {
+  -webkit-mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) clamp(28px, 10vw, 220px), rgb(0, 0, 0) calc(100% - clamp(28px, 10vw, 220px)), rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) clamp(28px, 10vw, 220px), rgb(0, 0, 0) calc(100% - clamp(28px, 10vw, 220px)), rgba(0, 0, 0, 0) 100%);
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  transform: translateZ(0);
+  contain: layout style;
+}
+body.page-index .kb-grid-layer > svg { display: block; width: 100%; height: 100%; }
+
+body.page-index > *:not(#site-header):not(.flagbar):not(.wa-float):not(.kb-grid-layer) {
+  position: relative;
+  z-index: 1;
+}
+
+/* ---------- sekcje: zdejmujemy jasne tła ---------- */
+body.page-index section,
+body.page-index .trustbar,
+body.page-index .path-sec,
+body.page-index .mos-sec,
+body.page-index .calc-teaser,
+body.page-index .gry-sec {
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.07);
+}
+
+body.page-index .sec-head h2 { color: #fff; }
+body.page-index .sec-head p { color: rgba(255, 255, 255, 0.62); }
+body.page-index .eyebrow { color: #8ea2ff; }
+
+/* ---------- trustbar ---------- */
+body.page-index .trustbar {
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.025);
+  backdrop-filter: blur(10px);
+}
+body.page-index .trustbar .n,
+body.page-index .trustbar .cnt,
+body.page-index .trustbar .big { color: #fff; }
+body.page-index .trustbar .l { color: rgba(255, 255, 255, 0.58); }
+
+/* ---------- ścieżka / droga do karty pobytu ---------- */
+body.page-index .path-sec { border-top: 0; }
+body.page-index .path-steps > div { color: rgba(255, 255, 255, 0.7); }
+body.page-index .path-steps h3,
+body.page-index .path-steps strong { color: #fff; }
+
+/* ---------- szklane karty (usługi, gry, mos, faq) ---------- */
+body.page-index .s-card,
+body.page-index .gry-card,
+body.page-index .mos-panel,
+body.page-index .faq details {
+  background: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 20px 50px rgba(4, 8, 20, 0.35);
+  color: #fff;
+}
+body.page-index .s-card:hover,
+body.page-index .gry-card:hover {
+  border-color: rgba(142, 162, 255, 0.45);
+  background: rgba(255, 255, 255, 0.075);
+  box-shadow: 0 26px 70px rgba(4, 8, 20, 0.5);
+}
+body.page-index .s-card h3,
+body.page-index .gry-card h3 { color: #fff; }
+body.page-index .s-card p,
+body.page-index .gry-card p { color: rgba(255, 255, 255, 0.62); }
+body.page-index .s-card a { color: #cfd6ff; }
+body.page-index .s-card a::after { color: #f0d78c; }
+body.page-index .s-card .ic {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(255, 255, 255, 0.14);
+}
+body.page-index .s-num { color: rgba(255, 255, 255, 0.35); }
+body.page-index .gry-ic {
+  background: linear-gradient(135deg, rgba(109, 106, 224, 0.5), rgba(31, 111, 208, 0.4));
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+body.page-index .gry-go { color: #f0d78c; }
+body.page-index .gry-card:hover .gry-go { color: #fff; }
+
+/* ---------- MOS ---------- */
+body.page-index .mos-sec { color: #fff; }
+body.page-index .mos-list li {
+  color: rgba(255, 255, 255, 0.72);
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+body.page-index .mos-list li::before { color: #f0d78c; }
+
+/* ---------- FAQ ---------- */
+body.page-index .faq summary { color: #fff; }
+body.page-index .faq summary:hover { background: rgba(255, 255, 255, 0.05); }
+body.page-index .faq summary::before { background: #8ea2ff; }
+body.page-index .faq summary::after { color: #f0d78c; }
+body.page-index .faq .a { color: rgba(255, 255, 255, 0.65); }
+
+/* ---------- przyciski ---------- */
+body.page-index .btn-gold {
+  background: linear-gradient(100deg, #6d6ae0, #4636c9);
+  color: #fff;
+  box-shadow: 0 16px 40px rgba(70, 54, 201, 0.4);
+}
+body.page-index .btn-gold:hover {
+  background: linear-gradient(100deg, #7c79ec, #5241dd);
+}
+body.page-index .btn-line {
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  color: #fff;
+  background: rgba(255, 255, 255, 0.05);
+}
+body.page-index .btn-line:hover { background: rgba(255, 255, 255, 0.12); }
+
+/* ---------- kalkulator (teaser) ---------- */
+body.page-index .calc-teaser { border-top: 0; }
+body.page-index .ct-demo {
+  background: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(14px);
+  border-radius: 16px;
+}
+body.page-index .ct-demo .bar { background: rgba(255, 255, 255, 0.1); }
+body.page-index .ct-demo .per { color: #f0d78c; }
+
+/* ---------- hero: miękkie wtopienie w tło strony ---------- */
+body.page-index .hx { background: transparent; }
+body.page-index .hx::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 26svh;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(8, 13, 28, 0) 0%, rgba(8, 13, 28, 0.55) 55%, #080d1c 100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.page-index .kb-grid-layer animate { display: none; }
+}
+
+/* ---------- brak szarych separatorów między sekcjami ---------- */
+body.page-index .trustbar,
+body.page-index .path-sec,
+body.page-index .calc-teaser,
+body.page-index .gry-sec,
+body.page-index .mos-sec,
+body.page-index section {
+  border-top: 0;
+  border-bottom: 0;
+}
+
+/* ---------- elementy, ktore uzywaja zmiennych jako TLA ---------- */
+/* pasek zapowiedzi nad nagłówkiem */
+body.page-index .mos {
+  background: linear-gradient(100deg, #6d6ae0, #4636c9);
+  color: #fff;
+}
+/* sekcja „Zanim oddasz komuś swoją sprawę" — tło ustawione stylem w HTML,
+   dlatego wymaga !important; zamieniamy na szklaną kartę jak pozostałe */
+body.page-index #prawnik-czy-pracodawca {
+  background: rgba(255, 255, 255, 0.045) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(14px);
+}
+
+/* ---------- stopka domknięta do samego dołu ---------- */
+body.page-index footer {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  background: #080d1c;
+  color: rgba(255, 255, 255, 0.6);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ===========================================================
+   3. PRZENIKANIE SEKCJI PRZY PRZEWIJANIU
+   =========================================================== */
+.sr {
+  opacity: 0;
+  filter: blur(14px);
+  transform: translate3d(0, 26px, 0);
+  will-change: opacity, transform, filter;
+  transition:
+    opacity 0.75s cubic-bezier(0.22, 0.61, 0.36, 1),
+    filter 0.75s cubic-bezier(0.22, 0.61, 0.36, 1),
+    transform 0.75s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.sr-in {
+  opacity: 1;
+  filter: blur(0);
+  transform: none;
+  will-change: auto;
+}
+@media (prefers-reduced-motion: reduce) {
+  .sr,
+  .sr-in {
+    opacity: 1 !important;
+    filter: none !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+/* ===========================================================
+   4. RYTM SEKCJI — przerwanie monotonii jednego tła
+   Warstwy sa POLPRZEZROCZYSTE, zeby siatka i kropki nadal
+   pracowaly pod spodem. Zrodlo kolorow: projekt Lovable.
+   =========================================================== */
+
+body.page-index {
+  --t-raise: rgba(255, 255, 255, 0.030);   /* panel wyniesiony */
+  --t-deep: rgba(4, 8, 20, 0.42);          /* pas zaglebiony */
+  --acc-peri: #8ea2ff;
+  --acc-sand: #f0d78c;
+  --acc-mint: #5ee0a4;
+}
+
+/* wlosowa linia swiatla na gornej krawedzi sekcji */
+body.page-index .path-sec,
+body.page-index .czat-baner,
+body.page-index .calc-teaser,
+body.page-index .mos-sec,
+body.page-index #prawnik-czy-pracodawca {
+  position: relative;
+}
+body.page-index .czat-baner::before,
+body.page-index .calc-teaser::before,
+body.page-index .mos-sec::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 1px;
+  pointer-events: none;
+  background: linear-gradient(90deg, transparent,
+              rgba(142, 162, 255, 0.38) 18%, rgba(142, 162, 255, 0.38) 82%, transparent);
+}
+
+/* pasy zaglebione — kontrapunkt dla paneli.
+   Baner czatu ma wlasny gradient granat->fiolet wpisany stylem w HTML
+   i sam w sobie przerywa rytm, wiec go tu nie ruszamy. */
+body.page-index .mos-sec {
+  background: var(--t-deep);
+}
+
+/* panel wyniesiony — kalkulator */
+body.page-index .calc-teaser {
+  background: var(--t-raise);
+}
+
+/* ===========================================================
+   5. „TRZY KROKI" — panel sledzenia sprawy
+   Problem: schemat zlewal sie z tlem, bo SVG rysuje indygo
+   #4636c9 na granacie. Panel go wyodrebnia, a kreski
+   przekolorowujemy na peri z poswiata.
+   =========================================================== */
+
+body.page-index .path-sec {
+  background: transparent;
+  padding-top: 18px;
+}
+body.page-index .path-sec > .wrap {
+  position: relative;
+  padding: 44px 30px 38px;
+  border-radius: 22px;
+  background:
+    linear-gradient(168deg, rgba(255, 255, 255, 0.055) 0%, rgba(255, 255, 255, 0.018) 58%),
+    radial-gradient(90% 70% at 50% 0%, rgba(70, 54, 201, 0.22), transparent 70%);
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 30px 70px rgba(4, 8, 20, 0.42);
+  overflow: hidden;
+}
+/* delikatna siatka wewnatrz panelu — czyta sie jak tablica statusu */
+body.page-index .path-sec > .wrap::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(226, 236, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(226, 236, 255, 0.045) 1px, transparent 1px);
+  background-size: 44px 44px;
+  -webkit-mask-image: radial-gradient(75% 65% at 50% 45%, #000 20%, transparent 100%);
+  mask-image: radial-gradient(75% 65% at 50% 45%, #000 20%, transparent 100%);
+}
+body.page-index .path-sec > .wrap > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* przekolorowanie schematu: indygo -> peri, prowadnica -> swiatlo */
+body.page-index .path-svg path[stroke="#4636c9"] {
+  stroke: var(--acc-peri);
+  filter: drop-shadow(0 0 7px rgba(142, 162, 255, 0.55));
+}
+body.page-index .path-svg path[stroke="#c9cdf2"] {
+  stroke: rgba(255, 255, 255, 0.24);
+}
+body.page-index .path-svg ellipse[fill="#4636c9"] {
+  fill: var(--acc-peri);
+  opacity: 0.1;
+}
+body.page-index .path-steps h3 {
+  color: var(--acc-peri);
+}
+
+/* ===========================================================
+   6. KARTY „NAJCZESTSZE PROBLEMY" — kontur gradientowy,
+   gorna krawedz niosaca informacje, cyfra w tle
+   =========================================================== */
+
+body.page-index #uslugi .s-card {
+  position: relative;
+  border-radius: 18px;
+  border: 0;
+  overflow: hidden;
+  background:
+    linear-gradient(165deg, rgba(255, 255, 255, 0.062) 0%, rgba(255, 255, 255, 0.018) 62%);
+  box-shadow: 0 22px 54px rgba(4, 8, 20, 0.40);
+  transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.28s ease, background 0.28s ease;
+}
+/* kontur gradientowy (1 px) */
+body.page-index #uslugi .s-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  pointer-events: none;
+  background: linear-gradient(158deg, rgba(142, 162, 255, 0.55) 0%,
+              rgba(255, 255, 255, 0.07) 46%, rgba(240, 215, 140, 0.30) 100%);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  transition: opacity 0.28s ease;
+}
+/* gorna krawedz: peri = zakladam sprawe, piaskowy = sprawa poszla zle */
+body.page-index #uslugi .s-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 22px;
+  width: 58px;
+  height: 2px;
+  border-radius: 0 0 3px 3px;
+  background: var(--acc-peri);
+  box-shadow: 0 0 14px rgba(142, 162, 255, 0.6);
+}
+body.page-index #uslugi .s-card:nth-child(n + 3)::after {
+  background: var(--acc-sand);
+  box-shadow: 0 0 14px rgba(240, 215, 140, 0.5);
+}
+body.page-index #uslugi .s-card:hover {
+  transform: translateY(-5px);
+  background: linear-gradient(165deg, rgba(255, 255, 255, 0.085) 0%, rgba(255, 255, 255, 0.03) 62%);
+  box-shadow: 0 32px 74px rgba(4, 8, 20, 0.55);
+}
+body.page-index #uslugi .s-card:hover::before {
+  opacity: 1;
+  background: linear-gradient(158deg, rgba(142, 162, 255, 0.85) 0%,
+              rgba(255, 255, 255, 0.14) 46%, rgba(240, 215, 140, 0.55) 100%);
+}
+
+/* numer jako znak wodny, nie ozdobnik */
+body.page-index #uslugi .s-num {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.10);
+  letter-spacing: -0.02em;
+}
+
+/* kadr z filmem — pierscien i winieta */
+body.page-index #uslugi .mascot-box {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.12), 0 10px 26px rgba(4, 8, 20, 0.45);
+}
+body.page-index #uslugi .mascot-video {
+  display: block;
+  filter: saturate(1.04) contrast(1.02);
+}
+body.page-index #uslugi .s-text h3 { color: #fff; }
+body.page-index #uslugi .s-text a { color: var(--acc-peri); font-weight: 600; }
+body.page-index #uslugi .s-text a:hover { color: #fff; }
+
+/* ===========================================================
+   7. PAS „ZANIM ODDASZ KOMUS SWOJA SPRAWE" — akcent ostrzegawczy
+   =========================================================== */
+body.page-index #prawnik-czy-pracodawca {
+  background: var(--t-deep) !important;
+  border-top: 1px solid rgba(240, 215, 140, 0.22);
+  border-bottom: 1px solid rgba(240, 215, 140, 0.22);
+  backdrop-filter: blur(14px);
+}
+body.page-index #prawnik-czy-pracodawca .eyebrow { color: var(--acc-sand) !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  body.page-index #uslugi .s-card { transition: none; }
+  body.page-index #uslugi .s-card:hover { transform: none; }
+}
+
+/* --- czytelnosc schematu „Trzy kroki" na ciemnym tle ---
+   Podpisy byly rysowane kolorem #1c2434 (granat), czyli praktycznie
+   niewidocznym na granatowym tle. To bylo wrecz nieczytelne, nie tylko
+   monotonne. Znaczniki rombow rozjasniamy do peri. */
+body.page-index .path-svg text[fill="#1c2434"] {
+  fill: rgba(255, 255, 255, 0.88);
+}
+body.page-index .path-svg rect[transform="rotate(45)"] {
+  fill: var(--acc-peri);
+  stroke: var(--acc-peri);
+  filter: drop-shadow(0 0 8px rgba(142, 162, 255, 0.55));
+}
+body.page-index .path-svg g[fill="#4636c9"] {
+  fill: var(--acc-peri);
+}
+body.page-index .path-svg circle[fill="#4636c9"] {
+  fill: var(--acc-peri);
+}
+body.page-index .path-svg g[fill="#9aa4e8"],
+body.page-index .path-svg circle[fill="#9aa4e8"] {
+  fill: #cfd6ff;
+}
+
+/* ramka „Kartę robił za Ciebie pracodawca lub agencja?" w karcie 05 —
+   tlo #f4f6fb wpisane stylem w HTML, stad !important */
+body.page-index #uslugi .s-card p[style*="background:#f4f6fb"] {
+  background: rgba(240, 215, 140, 0.10) !important;
+  border-left-color: var(--acc-sand) !important;
+  color: rgba(255, 255, 255, 0.82);
+  border-radius: 0 8px 8px 0;
+}
+body.page-index #uslugi .s-card p[style*="background:#f4f6fb"] strong { color: #fff; }
+body.page-index #uslugi .s-card p[style*="background:#f4f6fb"] a { color: var(--acc-sand); }
+
+/* ===========================================================
+   RYTM TEŁ SEKCJI  (28.10.2026)
+   Problem: poniżej hero cała strona była jednym ciemnym polem —
+   „Trzy kroki" i karty z problemami zlewały się z podłożem.
+   Rozwiązanie: naprzemiennie PASMO JAŚNIEJSZE (wypiętrzenie) i
+   ZAGŁĘBIENIE (ciemniejsze), rozdzielone włoskową linią. Tła są
+   półprzezroczyste, więc stałe tło strony (poświaty + siatka kropek)
+   nadal przez nie prześwituje i strona zostaje jedną całością.
+   =========================================================== */
+body.page-index {
+  --sx-raise: rgba(255, 255, 255, 0.045);   /* pasmo jaśniejsze */
+  --sx-deep: rgba(3, 6, 16, 0.55);          /* zagłębienie */
+  --sx-line: rgba(255, 255, 255, 0.09);
+}
+
+/* --- wypiętrzenie 1: ścieżka „Trzy kroki do legalnego pobytu" --- */
+body.page-index .path-sec {
+  background:
+    radial-gradient(58% 68% at 50% 46%, rgba(70, 54, 201, 0.3), rgba(0, 0, 0, 0) 72%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.018));
+  border-top: 1px solid var(--sx-line);
+  border-bottom: 1px solid var(--sx-line);
+}
+
+/* --- zagłębienie 1: karty „Najczęstsze problemy" --- */
+body.page-index #uslugi {
+  background: var(--sx-deep);
+  border-bottom: 1px solid var(--sx-line);
+  box-shadow: inset 0 26px 54px rgba(0, 0, 0, 0.4), inset 0 -26px 54px rgba(0, 0, 0, 0.4);
+}
+/* na ciemniejszym podłożu karty muszą być wyraźnie jaśniejsze,
+   inaczej zostają płaskimi prostokątami */
+body.page-index #uslugi .s-card {
+  background: rgba(255, 255, 255, 0.075);
+  border-color: rgba(255, 255, 255, 0.16);
+}
+body.page-index #uslugi .s-card:hover {
+  background: rgba(255, 255, 255, 0.105);
+  border-color: rgba(142, 162, 255, 0.5);
+}
+
+/* --- wypiętrzenie 2: kalkulator --- */
+body.page-index .calc-teaser {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.015));
+  border-top: 1px solid var(--sx-line);
+  border-bottom: 1px solid var(--sx-line);
+}
+
+/* --- zagłębienie 2: MOS, z poświatą na górnej krawędzi --- */
+body.page-index .mos-sec {
+  position: relative;
+  background: var(--sx-deep);
+  box-shadow: inset 0 26px 54px rgba(0, 0, 0, 0.45);
+}
+body.page-index .mos-sec::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(142, 162, 255, 0.55) 25%, rgba(240, 215, 140, 0.45) 60%, rgba(0, 0, 0, 0));
+}
+
+/* --- dno strony: najciemniej, żeby stopka zamykała rytm --- */
+body.page-index > footer {
+  background: rgba(2, 4, 12, 0.6);
+  border-top: 1px solid var(--sx-line);
+}
