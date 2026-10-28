@@ -9,7 +9,10 @@ Uzycie:
 import re, json, sys, argparse, hashlib, html
 from datetime import datetime, timezone
 
-CATS = ("Legislacja", "Urzędy", "Rynek pracy")
+# "Wydarzenia" = cotygodniowy przeglad (cosc-news-kronika-tygodniowa); dodane 28.10.2026
+# za zgoda Dariusza. Zadna inna pozycja w news-data.json nie ma tej kategorii, wiec
+# dolozenie jej nie wciaga do feedu zadnych starych wpisow.
+CATS = ("Legislacja", "Urzędy", "Rynek pracy", "Wydarzenia")
 LANGS = ("en", "es", "uk")
 SITE = "https://cosc.org.pl"
 NEWS_URL = SITE + "/aktualnosci.html"
@@ -26,7 +29,10 @@ CTA = {
  "uk": "Більше та контакт: {url} • WhatsApp +48 539 999 549",
 }
 SRC = {"en":"Source","es":"Fuente","uk":"Джерело"}
-IMG = {"Legislacja": SITE+"/fb/legislacja.png", "Urzędy": SITE+"/fb/urzedy.png", "Rynek pracy": SITE+"/fb/rynek-pracy.png"}
+IMG = {"Legislacja": SITE+"/fb/legislacja.png", "Urzędy": SITE+"/fb/urzedy.png", "Rynek pracy": SITE+"/fb/rynek-pracy.png",
+       # TYMCZASOWO: przeglad tygodnia pozycza grafike legislacji — wlasna
+       # „Przeglad tygodnia" do zrobienia; bez wpisu post szedlby bez obrazka.
+       "Wydarzenia": SITE+"/fb/legislacja.png"}
 TAGS = {
  "en": "#PolandImmigration #residencecardPoland #kartapobytu #MOS #workpermitPoland",
  "es": "#Polonia #tarjetaderesidencia #kartapobytu #MOS #permisodetrabajo #extranjerosenPolonia",
