@@ -2,9 +2,9 @@
  "_meta": {
   "lang": "pl",
   "name": "Polski",
-  "count": 522,
+  "count": 525,
   "note": "Klucz = tekst źródłowy PL (może zawierać HTML). Pusta wartość = pokazuje polski oryginał.",
-  "filled": 522
+  "filled": 525
  },
  "strings": {
   "⚠ Od 27.04.2026 wnioski o pobyt składa się <strong>wyłącznie elektronicznie przez system MOS</strong>. <a href=\"#mos\">Złożymy go za Ciebie, bez błędów →</a>": "⚠ Od 27.04.2026 wnioski o pobyt składa się <strong>wyłącznie elektronicznie przez system MOS</strong>. <a href=\"#mos\">Złożymy go za Ciebie, bez błędów →</a>",
@@ -154,6 +154,7 @@
   "News room": "News room",
   "Aktualności dla cudzoziemców w Polsce": "Aktualności dla cudzoziemców w Polsce",
   "Wszystko, co dotyczy cudzoziemców w Polsce — od zmian w przepisach, orzecznictwa i komunikatów urzędów, przez rynek pracy, po życie społeczne, wydarzenia i bieżące zdarzenia. Każdy wpis to nasze krótkie omówienie z linkiem do oryginalnego źródła.": "Wszystko, co dotyczy cudzoziemców w Polsce — od zmian w przepisach, orzecznictwa i komunikatów urzędów, przez rynek pracy, po życie społeczne, wydarzenia i bieżące zdarzenia. Każdy wpis to nasze krótkie omówienie z linkiem do oryginalnego źródła.",
+  "Omówienia przygotowuje asystent redakcyjny COSC — narzędzie sztucznej inteligencji. Dane i cytaty z przepisów są sprawdzane w źródłach urzędowych, a odpowiedzialność redakcyjną za publikację ponosi Dariusz Włodarczyk.": "Omówienia przygotowuje asystent redakcyjny COSC — narzędzie sztucznej inteligencji. Dane i cytaty z przepisów są sprawdzane w źródłach urzędowych, a odpowiedzialność redakcyjną za publikację ponosi Dariusz Włodarczyk.",
   "<span class=\"dot\"></span> Aktualizowane automatycznie — kilka razy dziennie": "<span class=\"dot\"></span> Aktualizowane automatycznie — kilka razy dziennie",
   "Wczytywanie aktualności…": "Wczytywanie aktualności…",
   "<strong>Nota redakcyjna i prawna.</strong> Powyższe wpisy są autorskimi, skróconymi omówieniami przygotowanymi przez redakcję Centrum Obsługi Spraw Cudzoziemców — nie są przedrukiem cudzych artykułów. Pełną treść znajdziesz u wskazanego źródła (link). Materiały mają charakter wyłącznie informacyjny i nie stanowią porady prawnej ani oceny indywidualnej sprawy. Stan prawny i daty wejścia poszczególnych przepisów należy każdorazowo zweryfikować w źródle lub bezpośrednio u nas.": "<strong>Nota redakcyjna i prawna.</strong> Powyższe wpisy są autorskimi, skróconymi omówieniami przygotowanymi przez redakcję Centrum Obsługi Spraw Cudzoziemców — nie są przedrukiem cudzych artykułów. Pełną treść znajdziesz u wskazanego źródła (link). Materiały mają charakter wyłącznie informacyjny i nie stanowią porady prawnej ani oceny indywidualnej sprawy. Stan prawny i daty wejścia poszczególnych przepisów należy każdorazowo zweryfikować w źródle lub bezpośrednio u nas.",

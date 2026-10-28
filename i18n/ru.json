@@ -2,8 +2,8 @@
  "_meta": {
   "lang": "ru",
   "name": "Русский",
-  "count": 4792,
-  "filled": 4791
+  "count": 4844,
+  "filled": 4843
  },
  "strings": {
   "⚠ Od 27.04.2026 wnioski o pobyt składa się <strong>wyłącznie elektronicznie przez system MOS</strong>. <a href=\"#mos\">Złożymy go za Ciebie, bez błędów →</a>": "⚠ С 27.04.2026 заявления на побыт подаются <strong>исключительно электронно через систему MOS</strong>. <a href=\"#mos\">Подадим его за вас, без ошибок →</a>",
@@ -87,6 +87,7 @@
   "News room": "News room",
   "Aktualności dla cudzoziemców w Polsce": "Новости для иностранцев в Польше",
   "Wszystko, co dotyczy cudzoziemców w Polsce — od zmian w przepisach, orzecznictwa i komunikatów urzędów, przez rynek pracy, po życie społeczne, wydarzenia i bieżące zdarzenia. Każdy wpis to nasze krótkie omówienie z linkiem do oryginalnego źródła.": "Всё, что касается иностранцев в Польше — от изменений в законодательстве, судебной практики и сообщений учреждений, через рынок труда, до общественной жизни, событий и текущих происшествий. Каждая запись — это наш краткий обзор со ссылкой на оригинальный источник.",
+  "Omówienia przygotowuje asystent redakcyjny COSC — narzędzie sztucznej inteligencji. Dane i cytaty z przepisów są sprawdzane w źródłach urzędowych, a odpowiedzialność redakcyjną za publikację ponosi Dariusz Włodarczyk.": "Обзоры готовит редакционный ассистент COSC — инструмент искусственного интеллекта. Данные и цитаты из нормативных актов проверяются по официальным источникам, а редакционную ответственность за публикацию несёт Dariusz Włodarczyk.",
   "<span class=\"dot\"></span> Aktualizowane automatycznie — kilka razy dziennie": "<span class=\"dot\"></span> Обновляется автоматически — несколько раз в день",
   "Wczytywanie aktualności…": "Загрузка новостей…",
   "<strong>Nota redakcyjna i prawna.</strong> Powyższe wpisy są autorskimi, skróconymi omówieniami przygotowanymi przez redakcję Centrum Obsługi Spraw Cudzoziemców — nie są przedrukiem cudzych artykułów. Pełną treść znajdziesz u wskazanego źródła (link). Materiały mają charakter wyłącznie informacyjny i nie stanowią porady prawnej ani oceny indywidualnej sprawy. Stan prawny i daty wejścia poszczególnych przepisów należy każdorazowo zweryfikować w źródle lub bezpośrednio u nas.": "<strong>Редакционная и правовая заметка.</strong> Приведённые выше записи — это собственные, сокращённые обзоры, подготовленные редакцией Центра обслуживания дел иностранцев — они не являются перепечаткой чужих статей. Полный текст вы найдёте в указанном источнике (ссылка). Материалы носят исключительно информационный характер и не являются юридической консультацией или оценкой индивидуального дела. Правовое состояние и даты вступления в силу отдельных положений следует каждый раз проверять в источнике или напрямую у нас.",

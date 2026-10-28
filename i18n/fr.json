@@ -2,8 +2,8 @@
  "_meta": {
   "lang": "fr",
   "name": "Français",
-  "count": 4792,
-  "filled": 4791
+  "count": 4844,
+  "filled": 4843
  },
  "strings": {
   "⚠ Od 27.04.2026 wnioski o pobyt składa się <strong>wyłącznie elektronicznie przez system MOS</strong>. <a href=\"#mos\">Złożymy go za Ciebie, bez błędów →</a>": "⚠ À partir du 27.04.2026, les demandes de séjour se déposent <strong>exclusivement en ligne via le système MOS</strong>. <a href=\"#mos\">Nous la déposons pour vous, sans erreurs →</a>",
@@ -87,6 +87,7 @@
   "News room": "News room",
   "Aktualności dla cudzoziemców w Polsce": "Actualités pour les étrangers en Pologne",
   "Wszystko, co dotyczy cudzoziemców w Polsce — od zmian w przepisach, orzecznictwa i komunikatów urzędów, przez rynek pracy, po życie społeczne, wydarzenia i bieżące zdarzenia. Każdy wpis to nasze krótkie omówienie z linkiem do oryginalnego źródła.": "Tout ce qui concerne les étrangers en Pologne — des changements législatifs, de la jurisprudence et des communiqués des administrations, en passant par le marché du travail, jusqu'à la vie sociale, aux événements et à l'actualité. Chaque entrée est notre court résumé avec un lien vers la source originale.",
+  "Omówienia przygotowuje asystent redakcyjny COSC — narzędzie sztucznej inteligencji. Dane i cytaty z przepisów są sprawdzane w źródłach urzędowych, a odpowiedzialność redakcyjną za publikację ponosi Dariusz Włodarczyk.": "Les résumés sont préparés par l’assistant éditorial de COSC, un outil d’intelligence artificielle. Les données et les citations de la législation sont vérifiées dans des sources officielles, et la responsabilité éditoriale de la publication incombe à Dariusz Włodarczyk.",
   "<span class=\"dot\"></span> Aktualizowane automatycznie — kilka razy dziennie": "<span class=\"dot\"></span> Mis à jour automatiquement — plusieurs fois par jour",
   "Wczytywanie aktualności…": "Chargement des actualités…",
   "<strong>Nota redakcyjna i prawna.</strong> Powyższe wpisy są autorskimi, skróconymi omówieniami przygotowanymi przez redakcję Centrum Obsługi Spraw Cudzoziemców — nie są przedrukiem cudzych artykułów. Pełną treść znajdziesz u wskazanego źródła (link). Materiały mają charakter wyłącznie informacyjny i nie stanowią porady prawnej ani oceny indywidualnej sprawy. Stan prawny i daty wejścia poszczególnych przepisów należy każdorazowo zweryfikować w źródle lub bezpośrednio u nas.": "<strong>Note éditoriale et juridique.</strong> Les entrées ci-dessus sont nos propres résumés abrégés préparés par la rédaction du Centre d'assistance aux affaires des étrangers — ce ne sont pas des reproductions d'articles de tiers. Vous trouverez le texte intégral à la source indiquée (lien). Les documents ont un caractère purement informatif et ne constituent pas un conseil juridique ni l'évaluation d'un cas individuel. L'état du droit et les dates d'entrée en vigueur de chaque disposition doivent toujours être vérifiés à la source ou directement auprès de nous.",

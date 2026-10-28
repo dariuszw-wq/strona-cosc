@@ -2,8 +2,8 @@
  "_meta": {
   "lang": "en",
   "name": "English",
-  "count": 4792,
-  "filled": 4791
+  "count": 4844,
+  "filled": 4843
  },
  "strings": {
   "⚠ Od 27.04.2026 wnioski o pobyt składa się <strong>wyłącznie elektronicznie przez system MOS</strong>. <a href=\"#mos\">Złożymy go za Ciebie, bez błędów →</a>": "⚠ From 27.04.2026, residence applications are filed <strong>exclusively online via the MOS system</strong>. <a href=\"#mos\">We'll file it for you, error-free →</a>",
@@ -87,6 +87,7 @@
   "News room": "News room",
   "Aktualności dla cudzoziemców w Polsce": "News for foreigners in Poland",
   "Wszystko, co dotyczy cudzoziemców w Polsce — od zmian w przepisach, orzecznictwa i komunikatów urzędów, przez rynek pracy, po życie społeczne, wydarzenia i bieżące zdarzenia. Każdy wpis to nasze krótkie omówienie z linkiem do oryginalnego źródła.": "Everything concerning foreigners in Poland — from changes in the law, case-law and official announcements, through the labour market, to social life, events and current developments. Each entry is our short summary with a link to the original source.",
+  "Omówienia przygotowuje asystent redakcyjny COSC — narzędzie sztucznej inteligencji. Dane i cytaty z przepisów są sprawdzane w źródłach urzędowych, a odpowiedzialność redakcyjną za publikację ponosi Dariusz Włodarczyk.": "Our summaries are prepared by the COSC editorial assistant — an artificial intelligence tool. Figures and quotations from legislation are checked against official sources, and editorial responsibility for publication rests with Dariusz Włodarczyk.",
   "<span class=\"dot\"></span> Aktualizowane automatycznie — kilka razy dziennie": "<span class=\"dot\"></span> Updated automatically — several times a day",
   "Wczytywanie aktualności…": "Loading news…",
   "<strong>Nota redakcyjna i prawna.</strong> Powyższe wpisy są autorskimi, skróconymi omówieniami przygotowanymi przez redakcję Centrum Obsługi Spraw Cudzoziemców — nie są przedrukiem cudzych artykułów. Pełną treść znajdziesz u wskazanego źródła (link). Materiały mają charakter wyłącznie informacyjny i nie stanowią porady prawnej ani oceny indywidualnej sprawy. Stan prawny i daty wejścia poszczególnych przepisów należy każdorazowo zweryfikować w źródle lub bezpośrednio u nas.": "<strong>Editorial and legal note.</strong> The entries above are our own, abridged summaries prepared by the editorial team of the Foreigners' Affairs Service Centre — they are not reprints of third-party articles. You will find the full text at the indicated source (link). The materials are for information only and do not constitute legal advice or an assessment of an individual case. The legal status and the effective dates of particular provisions should always be verified at the source or directly with us.",

@@ -2,8 +2,8 @@
  "_meta": {
   "lang": "es",
   "name": "Español",
-  "count": 4792,
-  "filled": 4790
+  "count": 4844,
+  "filled": 4842
  },
  "strings": {
   "⚠ Od 27.04.2026 wnioski o pobyt składa się <strong>wyłącznie elektronicznie przez system MOS</strong>. <a href=\"#mos\">Złożymy go za Ciebie, bez błędów →</a>": "⚠ Desde el 27.04.2026, las solicitudes de residencia se presentan <strong>exclusivamente en línea a través del sistema MOS</strong>. <a href=\"#mos\">La presentamos por ti, sin errores →</a>",
@@ -87,6 +87,7 @@
   "News room": "News room",
   "Aktualności dla cudzoziemców w Polsce": "Novedades para extranjeros en Polonia",
   "Wszystko, co dotyczy cudzoziemców w Polsce — od zmian w przepisach, orzecznictwa i komunikatów urzędów, przez rynek pracy, po życie społeczne, wydarzenia i bieżące zdarzenia. Każdy wpis to nasze krótkie omówienie z linkiem do oryginalnego źródła.": "Todo lo relativo a los extranjeros en Polonia — desde los cambios legislativos, la jurisprudencia y los comunicados de las oficinas, pasando por el mercado laboral, hasta la vida social, los eventos y la actualidad. Cada entrada es nuestro breve resumen con un enlace a la fuente original.",
+  "Omówienia przygotowuje asystent redakcyjny COSC — narzędzie sztucznej inteligencji. Dane i cytaty z przepisów są sprawdzane w źródłach urzędowych, a odpowiedzialność redakcyjną za publikację ponosi Dariusz Włodarczyk.": "Los resúmenes los prepara el asistente editorial de COSC, una herramienta de inteligencia artificial. Los datos y las citas de la normativa se verifican en fuentes oficiales, y la responsabilidad editorial de la publicación corresponde a Dariusz Włodarczyk.",
   "<span class=\"dot\"></span> Aktualizowane automatycznie — kilka razy dziennie": "<span class=\"dot\"></span> Actualizado automáticamente — varias veces al día",
   "Wczytywanie aktualności…": "Cargando novedades…",
   "<strong>Nota redakcyjna i prawna.</strong> Powyższe wpisy są autorskimi, skróconymi omówieniami przygotowanymi przez redakcję Centrum Obsługi Spraw Cudzoziemców — nie są przedrukiem cudzych artykułów. Pełną treść znajdziesz u wskazanego źródła (link). Materiały mają charakter wyłącznie informacyjny i nie stanowią porady prawnej ani oceny indywidualnej sprawy. Stan prawny i daty wejścia poszczególnych przepisów należy każdorazowo zweryfikować w źródle lub bezpośrednio u nas.": "<strong>Nota editorial y jurídica.</strong> Las entradas anteriores son resúmenes propios y abreviados elaborados por la redacción del Centro de Atención a Asuntos de Extranjeros — no son reproducciones de artículos ajenos. Encontrarás el texto completo en la fuente indicada (enlace). Los materiales tienen carácter meramente informativo y no constituyen asesoramiento jurídico ni una evaluación de un caso individual. El estado legal y las fechas de entrada en vigor de cada disposición deben verificarse siempre en la fuente o directamente con nosotros.",
