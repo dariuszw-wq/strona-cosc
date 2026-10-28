@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<script src="../formularz-silnik.js"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Precios y servicios &mdash; tr&aacute;mites de residencia en Polonia | COSC</title>
-<meta name="description" content="Cu&aacute;nto cuesta que llevemos su expediente de residencia en Polonia: paquetes desde 615 PLN, qu&eacute; incluye cada uno y qu&eacute; tasas cobra el Estado aparte. En espa&ntilde;ol.">
+<title>Precios: paquetes Standard y VIP — residencia | COSC</title>
+<meta name="description" content="Tarjeta de residencia: paquete Standard 1950 zl y VIP 2900 zl. Devolucion del 100% si la resolucion final es denegatoria, solo en el paquete VIP.">
 <link rel="canonical" href="https://cosc.org.pl/es/precios-y-servicios.html">
 <link rel="alternate" hreflang="pl" href="https://cosc.org.pl/cennik.html">
 <link rel="alternate" hreflang="en" href="https://cosc.org.pl/en/prices-and-services.html">
@@ -13,279 +14,829 @@
 <link rel="alternate" hreflang="ru" href="https://cosc.org.pl/ru/cennik.html">
 <link rel="alternate" hreflang="fr" href="https://cosc.org.pl/fr/cennik.html">
 <link rel="alternate" hreflang="x-default" href="https://cosc.org.pl/cennik.html">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#16244c; --navy-d:#111a3a; --gold:#4636c9; --gold-l:#6d6ae0;
+  --cream:#f4f6fb; --ink:#16244c; --mut:#5B6478; --line:#e6e9f0;
+  --ok:#2E7D4F;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'IBM Plex Sans',sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;font-size:16px}
+h1,h2,h3{font-family:'IBM Plex Serif',serif;color:var(--navy);line-height:1.15}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.btn{display:inline-block;text-decoration:none;font-weight:700;font-size:15px;padding:14px 26px;border-radius:10px;transition:.2s;text-align:center}
+.btn-gold{background:#d4213d;color:#fff}
+.btn-gold:hover{background:#b81a32;transform:translateY(-1px)}
+.btn-line{border:1.5px solid rgba(255,255,255,.7);color:#fff}
+.hero .eyebrow{color:#e7e5ff}
+.hero h1 em{color:#ffd34d}
+.hero .rotator{color:#ffd34d}
+.gwar{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.35)}
+.gwar .seal{border-color:#ffd34d;color:#ffd34d}
+.gwar strong{color:#ffd34d}
+.btn-line:hover{background:rgba(70,54,201,.15)}
+.eyebrow{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+
+.mos{background:var(--gold);color:#fff;font-size:13.5px;font-weight:600;text-align:center;padding:9px 16px}
+.mos a{color:#ffd34d;font-weight:800}
+
+header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);position:sticky;top:0;z-index:50;box-shadow:0 2px 12px rgba(19,32,58,.25)}
+.flagbar{height:8px;background:linear-gradient(to bottom,#f5f5f5 50%,#d4213d 50%);border-bottom:1px solid rgba(22,36,76,.18);position:sticky;top:var(--hh,66px);z-index:49}
+.flag{flex-shrink:0;width:44px;height:29px;border-radius:3px;box-shadow:0 0 0 1px rgba(255,255,255,.4);overflow:hidden;display:flex;align-items:center;justify-content:center}
+.flag-ue{background:#1e3a8a}
+.flag-pl{flex-direction:column;width:34px;height:34px;border-radius:6px;margin-left:4px}
+.flag-pl .fw{flex:1;width:100%;background:#f5f5f5}
+.flag-pl .fr{flex:1;width:100%;background:#d4213d}
+.hdr-flags{display:flex;gap:9px;align-items:center}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:22px;min-height:66px;padding:9px 0}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none}
+.logo .mark{width:40px;height:40px;border:1.5px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Serif',serif;font-weight:700;color:var(--gold);font-size:15px}
+.logo .name{color:#fff;font-size:14px;line-height:1.3;font-weight:600;max-width:220px}
+.menu{display:flex;flex-wrap:wrap;gap:7px 20px;align-items:center;justify-content:center;flex:1 1 auto;min-width:0}
+.menu a{color:#E9ECF3;text-decoration:none;font-size:14px;font-weight:500}
+.menu a:hover{color:var(--gold-l)}
+.menu a.cta-menu{background:#d4213d;color:#fff;font-weight:700;padding:8px 16px;border-radius:8px;box-shadow:0 2px 8px rgba(212,33,61,.35)}
+.menu a.cta-menu:hover{background:#b81a32;color:#fff}
+.more{position:relative;display:flex;align-items:center}
+.more-btn{display:inline-flex;align-items:center;gap:6px;font-family:inherit;font-size:14px;font-weight:700;color:#fff;text-shadow:0 1px 2px rgba(212,33,61,.55);background:rgba(201,169,97,.10);border:1px solid rgba(201,169,97,.45);border-radius:8px;padding:7px 13px;cursor:pointer;line-height:1;transition:background .2s ease,border-color .2s ease}
+.more-btn:hover{background:rgba(201,169,97,.20);border-color:var(--gold)}
+.more-btn .chev{font-size:11px;transition:transform .2s ease}
+.more.open .more-btn{background:rgba(201,169,97,.22);border-color:var(--gold)}
+.more.open .more-btn .chev{transform:rotate(180deg)}
+.more-menu{position:absolute;top:calc(100% + 12px);left:0;min-width:264px;background:#241C86;border:1px solid rgba(201,169,97,.35);border-radius:14px;padding:8px;box-shadow:0 18px 40px rgba(10,16,40,.45);display:flex;flex-direction:column;gap:2px;opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .18s ease,transform .18s ease,visibility .18s;z-index:60}
+.more.open .more-menu{opacity:1;visibility:visible;transform:translateY(0)}
+.more-menu a{color:#E9ECF3;text-decoration:none;font-size:14px;font-weight:500;padding:11px 14px;border-radius:9px;white-space:nowrap;transition:background .15s ease,color .15s ease}
+.more-menu a:hover{background:rgba(201,169,97,.16);color:var(--gold-l)}
+.lang{display:flex;gap:2px;border:1px solid rgba(255,255,255,.25);border-radius:8px;padding:2px}
+.lang a{padding:4px 8px;font-size:11.5px;font-weight:700;border-radius:6px;text-decoration:none;color:#cfd6e4}
+.lang a.on{background:var(--gold);color:var(--navy)}
+.burger{display:none;background:none;border:none;color:#fff;font-size:26px;cursor:pointer}
+
+/* HERO */
+.hero{background:linear-gradient(160deg,#4636c9 0%,#3b2fbf 60%,#2f2699 100%);color:#fff;padding:72px 0 0;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:460px;height:460px;border:1px solid rgba(70,54,201,.22);border-radius:50%}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;position:relative;z-index:2}
+.hero h1{color:#fff;font-size:clamp(34px,4.6vw,52px);font-weight:600}
+.hero h1 em{font-style:normal;color:#ffd34d}
+.hero p.lead{margin:18px 0 26px;font-size:17px;color:#dce4f5;max-width:540px}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap}
+/* ANIMACJA 1: rotujący wielojęzyczny wers */
+.rotator{height:30px;overflow:hidden;margin-top:20px;font-size:16.5px;color:var(--gold-l);font-weight:600}
+.rotator ul{animation:spin 12s cubic-bezier(.6,0,.2,1) infinite;list-style:none}
+.rotator li{height:30px;display:flex;align-items:center;gap:8px}
+.rotator .fl{font-size:14px;opacity:.8}
+@keyframes spin{
+ 0%,20%{transform:translateY(0)} 25%,45%{transform:translateY(-30px)}
+ 50%,70%{transform:translateY(-60px)} 75%,95%{transform:translateY(-90px)}
+ 100%{transform:translateY(-120px)}
+}
+.gwar{margin-top:24px;display:flex;align-items:center;gap:12px;background:rgba(70,54,201,.12);border:1px solid rgba(70,54,201,.4);border-radius:12px;padding:13px 16px;max-width:560px}
+.gwar .seal{flex:none;width:44px;height:44px;border-radius:50%;border:1.5px solid var(--gold);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:20px;animation:pulse 3s ease-in-out infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(70,54,201,.35)}50%{box-shadow:0 0 0 9px rgba(70,54,201,0)}}
+.gwar p{font-size:13.5px;color:#e7e5ff;line-height:1.45}
+.gwar strong{color:#ffd34d}
+
+.card-visual{position:relative;padding:20px 0 70px}
+.residence-card{background:linear-gradient(135deg,#f4f6fb,#e6e9f0);border-radius:16px;padding:28px 28px 22px;color:var(--navy);box-shadow:0 24px 60px rgba(0,0,0,.35);transform:rotate(-3deg);max-width:480px;margin:0 auto;border:1px solid rgba(70,54,201,.6);animation:floaty 6s ease-in-out infinite}
+@keyframes floaty{0%,100%{transform:rotate(-3deg) translateY(0)}50%{transform:rotate(-3deg) translateY(-8px)}}
+.residence-card .rc-top{display:flex;justify-content:space-between;font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#4636c9;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid rgba(70,54,201,.3)}
+.residence-card .rc-main{display:flex;gap:18px}
+.residence-card .rc-photo{flex:none;width:74px;height:92px;border-radius:8px;background:linear-gradient(160deg,#d8dce6,#b9bff0);border:1px solid rgba(70,54,201,.5);display:flex;align-items:center;justify-content:center;font-size:38px;box-shadow:inset 0 0 0 3px rgba(255,255,255,.4)}
+.residence-card .rc-fields{flex:1;min-width:0}
+.residence-card .rc-name{font-family:'IBM Plex Serif',serif;font-size:28px;font-weight:700}
+.residence-card .rc-row{display:flex;flex-wrap:wrap;gap:14px 18px;margin-top:14px;font-size:12px}
+.residence-card .rc-row div span{display:block;color:#6f7691;font-size:10px;text-transform:uppercase;letter-spacing:.08em}
+.residence-card .rc-chip{width:38px;height:29px;border-radius:5px;background:linear-gradient(135deg,var(--gold),#3b2fbf);margin-top:16px}
+.residence-card .rc-mrz{margin-top:20px;padding-top:14px;border-top:1px dashed rgba(70,54,201,.4);font-family:'Courier New',monospace;font-size:12px;letter-spacing:.05em;color:#4636c9;line-height:1.7;white-space:pre}
+/* ANIMACJA 4: pieczęć przybijająca się po załadowaniu */
+.rc-stamp{position:absolute;bottom:34px;right:8%;border:2.5px solid var(--ok);color:var(--ok);font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding:7px 14px;border-radius:8px;background:rgba(250,248,245,.94);opacity:0;transform:rotate(8deg) scale(2.4);animation:stamp .5s .9s cubic-bezier(.2,1.4,.4,1) forwards}
+@keyframes stamp{to{opacity:1;transform:rotate(8deg) scale(1)}}
+
+/* ANIMACJA 3: liczniki zaufania */
+.trustbar{background:#fff;border-bottom:1px solid var(--line)}
+.trust{display:flex;justify-content:space-between;gap:16px;padding:24px 0;flex-wrap:wrap}
+.trust div{text-align:center;flex:1;min-width:130px}
+.trust .n{font-family:'IBM Plex Serif',serif;font-size:32px;font-weight:700;color:var(--navy)}
+.trust .l{font-size:12.5px;color:var(--mut)}
+
+section{padding:72px 0}
+.sec-head{max-width:660px;margin-bottom:40px}
+.sec-head h2{font-size:clamp(28px,3.4vw,40px);font-weight:600}
+.sec-head p{color:var(--mut);margin-top:10px}
+
+/* ANIMACJA 2: złota ścieżka SVG */
+.path-sec{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:64px 0}
+.path-svg{width:100%;height:auto;display:block}
+.path-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:8px;text-align:center}
+.path-steps h3{font-size:20px;margin-bottom:6px}
+.path-steps p{font-size:13.5px;color:var(--mut)}
+#goldpath{stroke-dasharray:1400;stroke-dashoffset:1400;transition:stroke-dashoffset 2.2s ease}
+.path-sec.inview #goldpath{stroke-dashoffset:0}
+.pnode{opacity:0;transition:opacity .5s ease}
+.path-sec.inview .pnode{opacity:1}
+.path-sec.inview .pnode:nth-child(2){transition-delay:.6s}
+.path-sec.inview .pnode:nth-child(3){transition-delay:1.3s}
+.path-sec.inview .pnode:nth-child(4){transition-delay:2s}
+.pnode-final{transform:translate(940px,60px)}
+.card-pop{transform:scale(.25);transform-origin:0 0;transition:transform .85s cubic-bezier(.34,1.56,.64,1)}
+.path-sec.inview .card-pop{transform:scale(1);transition-delay:2s}
+.check-pop{transform:scale(0) rotate(-30deg);transform-origin:44px -28px;opacity:0;transition:transform .5s cubic-bezier(.34,1.8,.64,1),opacity .3s ease}
+.path-sec.inview .check-pop{transform:scale(1) rotate(8deg);opacity:1;transition-delay:2.5s}
+@keyframes cardPulse{0%,100%{opacity:.18;r:46}50%{opacity:.38;r:54}}
+.path-sec.inview .card-glow{animation:cardPulse 2.1s ease-in-out 2.8s infinite}
+.path-steps>div{opacity:0;transform:translateY(10px);transition:opacity .5s ease,transform .5s ease}
+.path-sec.inview .path-steps>div{opacity:1;transform:translateY(0)}
+.path-sec.inview .path-steps>div:nth-child(1){transition-delay:.6s}
+.path-sec.inview .path-steps>div:nth-child(2){transition-delay:1.3s}
+.path-sec.inview .path-steps>div:nth-child(3){transition-delay:2s}
+
+.serv{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.s-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;display:flex;flex-direction:column;position:relative;overflow:hidden}
+.s-card::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--gold),var(--gold-l));transform:scaleX(0);transform-origin:left;transition:transform .35s ease}
+.s-card:hover::before{transform:scaleX(1)}
+.s-card:hover{border-color:var(--gold);box-shadow:0 20px 60px rgba(27,42,74,.16);transform:translateY(-6px)}
+.s-card .ic{width:44px;height:44px;border-radius:10px;background:var(--cream);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:14px;transition:transform .3s cubic-bezier(.34,1.56,.64,1),background .3s ease,border-color .3s ease}
+.s-card:hover .ic{background:var(--gold);border-color:var(--gold);transform:scale(1.18) rotate(-8deg)}
+.s-card h3{font-size:21px;margin-bottom:8px;position:relative;z-index:1}
+.s-card p{font-size:14px;color:var(--mut);flex:1;position:relative;z-index:1}
+.s-card a{margin-top:14px;font-size:13.5px;font-weight:700;color:var(--navy);text-decoration:none;display:inline-flex;align-items:center;gap:4px}
+.s-card a::after{content:"→";color:var(--gold);transition:transform .25s ease}
+.s-card:hover a::after{transform:translateX(5px)}
+.s-card--side{flex-direction:row;align-items:center;gap:16px}
+.s-card--side .mascot-box{flex:none;margin-bottom:0}
+.s-card--side .ic{flex:none;margin-bottom:0}
+.s-card--side .s-text{flex:1;min-width:0;display:flex;flex-direction:column}
+@media(max-width:520px){.s-card--side{flex-direction:column;align-items:flex-start}}
+.s-num{position:absolute;top:14px;right:18px;font-family:'IBM Plex Serif',serif;font-size:34px;font-weight:700;color:var(--line);z-index:0;pointer-events:none}
+
+/* MASKOTKA: postać reagująca na temat karty (test — karta "wniosek online") */
+.mascot-box{width:88px;height:88px;border-radius:14px;background:var(--cream);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;margin-bottom:14px;overflow:hidden}
+.mascot-box svg{width:100%;height:100%}
+.m-face-worried{opacity:0}
+.m-eyes-closed{opacity:0}
+.mascot.inview .m-eyes-open{animation:mBlinkOpen 4s ease-in-out infinite}
+.mascot.inview .m-eyes-closed{animation:mBlinkClosed 4s ease-in-out infinite}
+@keyframes mBlinkOpen{0%,90%,100%{opacity:1}94%,97%{opacity:0}}
+@keyframes mBlinkClosed{0%,90%,100%{opacity:0}94%,97%{opacity:1}}
+
+/* karta 02 — zagubienie przy wniosku online */
+.mascot-02.inview .m-head{animation:mHead02 5s ease-in-out infinite}
+.mascot-02.inview .m-arm-l{animation:mArmL02 5s ease-in-out infinite}
+.mascot-02.inview .m-arm-r{animation:mArmR02 5s ease-in-out infinite}
+.mascot-02.inview .m-face-worried{animation:mFaceIn02 5s ease infinite}
+.mascot-02.inview .m-face-focused{animation:mFaceOut02 5s ease infinite}
+@keyframes mHead02{
+  0%,10%{transform:rotate(0deg) translateY(0)}
+  20%{transform:rotate(-4deg) translateY(-2px)}
+  28%{transform:rotate(11deg)}
+  34%{transform:rotate(-11deg)}
+  40%{transform:rotate(9deg)}
+  46%{transform:rotate(-9deg)}
+  52%{transform:rotate(4deg)}
+  58%,80%{transform:rotate(2deg) translateY(-1px)}
+  92%,100%{transform:rotate(0deg) translateY(0)}
+}
+@keyframes mArmL02{
+  0%,50%{transform:rotate(0deg)}
+  60%{transform:rotate(-263deg)}
+  72%,82%{transform:rotate(-219deg)}
+  95%,100%{transform:rotate(0deg)}
+}
+@keyframes mArmR02{
+  0%,50%{transform:rotate(0deg)}
+  60%{transform:rotate(263deg)}
+  72%,82%{transform:rotate(219deg)}
+  95%,100%{transform:rotate(0deg)}
+}
+@keyframes mFaceIn02{0%,28%{opacity:0}45%,80%{opacity:1}95%,100%{opacity:0}}
+@keyframes mFaceOut02{0%,28%{opacity:1}45%,80%{opacity:0}95%,100%{opacity:1}}
+
+/* karta 01 — nadzieja/radość, ręce przy sercu, kiwanie na tak */
+.mascot-01.inview .m-head{animation:mHead01 5s ease-in-out infinite}
+.mascot-01.inview .m-arm-l{animation:mArmL01 5s ease-in-out infinite}
+.mascot-01.inview .m-arm-r{animation:mArmR01 5s ease-in-out infinite}
+.mascot-01.inview .m-face-worried{animation:mFaceIn01 5s ease infinite}
+.mascot-01.inview .m-face-focused{animation:mFaceOut01 5s ease infinite}
+.mascot-01.inview .m-pupils{animation:mPupilsUp01 5s ease infinite}
+@keyframes mHead01{
+  0%,15%{transform:rotate(0deg) translateY(0)}
+  30%{transform:rotate(-2deg) translateY(-1px)}
+  40%{transform:rotate(2deg) translateY(2px)}
+  50%{transform:rotate(-2deg) translateY(-1px)}
+  60%{transform:rotate(2deg) translateY(2px)}
+  70%,88%{transform:rotate(0deg) translateY(0)}
+  100%{transform:rotate(0deg) translateY(0)}
+}
+@keyframes mArmL01{
+  0%,35%{transform:rotate(0deg)}
+  50%,85%{transform:rotate(-95deg)}
+  95%,100%{transform:rotate(0deg)}
+}
+@keyframes mArmR01{
+  0%,35%{transform:rotate(0deg)}
+  50%,85%{transform:rotate(95deg)}
+  95%,100%{transform:rotate(0deg)}
+}
+@keyframes mFaceIn01{0%,30%{opacity:0}45%,85%{opacity:1}95%,100%{opacity:0}}
+@keyframes mFaceOut01{0%,30%{opacity:1}45%,85%{opacity:0}95%,100%{opacity:1}}
+@keyframes mPupilsUp01{0%,30%{transform:translateY(0)}45%,85%{transform:translateY(-1.5px)}95%,100%{transform:translateY(0)}}
+
+/* karta 03 — zagubienie w opcjach, potem uśmiech i kiwanie na tak */
+.m-face-alt03{opacity:0}
+.mascot-03.inview .m-head{animation:mHead03 5s ease-in-out infinite}
+.mascot-03.inview .m-arm-r{animation:mArmR03 5s ease-in-out infinite}
+.mascot-03.inview .m-face-worried{animation:mFaceIn03 5s ease infinite}
+.mascot-03.inview .m-face-focused{animation:mFaceOut03 5s ease infinite}
+.mascot-03.inview .m-face-alt03{animation:mFaceAlt03 5s ease infinite}
+@keyframes mHead03{
+  0%,15%{transform:rotate(0deg) translateY(0)}
+  30%,55%{transform:rotate(9deg) translateY(-1px)}
+  65%{transform:rotate(0deg) translateY(0)}
+  73%{transform:rotate(-3deg) translateY(-1px)}
+  80%{transform:rotate(3deg) translateY(2px)}
+  87%{transform:rotate(-3deg) translateY(-1px)}
+  93%,100%{transform:rotate(0deg) translateY(0)}
+}
+@keyframes mArmR03{
+  0%,20%{transform:rotate(0deg)}
+  35%,65%{transform:rotate(219deg)}
+  80%,100%{transform:rotate(0deg)}
+}
+@keyframes mFaceIn03{0%,20%{opacity:0}30%,65%{opacity:1}75%,100%{opacity:0}}
+@keyframes mFaceOut03{0%,20%{opacity:1}30%,70%{opacity:0}93%,100%{opacity:1}}
+@keyframes mFaceAlt03{0%,70%{opacity:0}78%,90%{opacity:1}97%,100%{opacity:0}}
+
+/* karta 04 — uśmiech, dzieci wjeżdżają z boków, mrugnięcie */
+.m-child-l{transform:translate(-25px,90px)}
+.m-child-r{transform:translate(145px,90px)}
+.mascot-04.inview .m-head{animation:mHead04 5s ease-in-out infinite}
+.mascot-04.inview .m-face-worried{animation:mFaceIn04 5s ease infinite}
+.mascot-04.inview .m-face-focused{animation:mFaceOut04 5s ease infinite}
+.mascot-04.inview .m-child-l{animation:mChildL04 5s ease-in-out infinite}
+.mascot-04.inview .m-child-r{animation:mChildR04 5s ease-in-out infinite}
+.mascot-04.inview .m-eyes-open{animation:mBlinkOpen04 5s ease-in-out infinite}
+.mascot-04.inview .m-eyes-closed{animation:mBlinkClosed04 5s ease-in-out infinite}
+@keyframes mHead04{
+  0%,15%{transform:rotate(0deg) translateY(0)}
+  30%{transform:rotate(-3deg) translateY(-1px)}
+  45%,85%{transform:rotate(2deg) translateY(-1px)}
+  95%,100%{transform:rotate(0deg) translateY(0)}
+}
+@keyframes mFaceIn04{0%,20%{opacity:0}32%,88%{opacity:1}96%,100%{opacity:0}}
+@keyframes mFaceOut04{0%,20%{opacity:1}32%,88%{opacity:0}96%,100%{opacity:1}}
+@keyframes mChildL04{0%,42%{transform:translate(-25px,90px)}60%,90%{transform:translate(14px,90px)}100%{transform:translate(-25px,90px)}}
+@keyframes mChildR04{0%,42%{transform:translate(145px,90px)}60%,90%{transform:translate(106px,90px)}100%{transform:translate(145px,90px)}}
+@keyframes mBlinkOpen04{0%,70%,100%{opacity:1}75%,79%{opacity:0}}
+@keyframes mBlinkClosed04{0%,70%,100%{opacity:0}75%,79%{opacity:1}}
+
+/* karta 05 — niepokój przed zmianą, splecione dłonie, zerkanie na boki */
+.mascot-05.inview .m-head{animation:mHead05 5s ease-in-out infinite}
+.mascot-05.inview .m-arm-l{animation:mArmL05 5s ease-in-out infinite}
+.mascot-05.inview .m-arm-r{animation:mArmR05 5s ease-in-out infinite}
+.mascot-05.inview .m-face-worried{animation:mFaceIn05 5s ease infinite}
+.mascot-05.inview .m-face-focused{animation:mFaceOut05 5s ease infinite}
+@keyframes mHead05{
+  0%,15%{transform:rotate(0deg)}
+  22%{transform:rotate(6deg)}
+  28%{transform:rotate(-6deg)}
+  34%{transform:rotate(6deg)}
+  40%{transform:rotate(-6deg)}
+  46%{transform:rotate(4deg)}
+  52%,66%{transform:rotate(0deg)}
+  100%{transform:rotate(0deg)}
+}
+@keyframes mArmL05{
+  0%,20%{transform:rotate(0deg)}
+  35%{transform:rotate(-75deg)}
+  40%{transform:rotate(-68deg)}
+  46%{transform:rotate(-78deg)}
+  52%{transform:rotate(-68deg)}
+  58%{transform:rotate(-78deg)}
+  64%{transform:rotate(-75deg)}
+  80%,100%{transform:rotate(0deg)}
+}
+@keyframes mArmR05{
+  0%,20%{transform:rotate(0deg)}
+  35%{transform:rotate(75deg)}
+  40%{transform:rotate(68deg)}
+  46%{transform:rotate(78deg)}
+  52%{transform:rotate(68deg)}
+  58%{transform:rotate(78deg)}
+  64%{transform:rotate(75deg)}
+  80%,100%{transform:rotate(0deg)}
+}
+@keyframes mFaceIn05{0%,15%{opacity:0}25%,75%{opacity:1}90%,100%{opacity:0}}
+@keyframes mFaceOut05{0%,15%{opacity:1}25%,75%{opacity:0}90%,100%{opacity:1}}
+
+/* karta 06 — rozczarowanie z iskrą determinacji */
+.m-face-alt06{opacity:0}
+.mascot-06.inview .m-head{animation:mHead06 5s ease-in-out infinite}
+.mascot-06.inview .m-arm-l{animation:mArmL06 5s ease-in-out infinite}
+.mascot-06.inview .m-face-worried{animation:mFaceIn06 5s ease infinite}
+.mascot-06.inview .m-face-focused{animation:mFaceOut06 5s ease infinite}
+.mascot-06.inview .m-face-alt06{animation:mFaceAlt06 5s ease infinite}
+@keyframes mHead06{
+  0%,15%{transform:rotate(0deg) translateY(0)}
+  30%,50%{transform:rotate(8deg) translateY(3px)}
+  65%{transform:rotate(0deg) translateY(0)}
+  78%,92%{transform:rotate(-4deg) translateY(-2px)}
+  100%{transform:rotate(0deg) translateY(0)}
+}
+@keyframes mArmL06{
+  0%,20%{transform:rotate(0deg)}
+  35%,55%{transform:rotate(-219deg)}
+  70%,100%{transform:rotate(0deg)}
+}
+@keyframes mFaceIn06{0%,20%{opacity:0}30%,55%{opacity:1}62%,100%{opacity:0}}
+@keyframes mFaceOut06{0%,20%{opacity:1}30%,90%{opacity:0}95%,100%{opacity:1}}
+@keyframes mFaceAlt06{0%,65%{opacity:0}72%,90%{opacity:1}96%,100%{opacity:0}}
+
+@media(prefers-reduced-motion:reduce){
+  .mascot .m-head,.mascot .m-arm-l,.mascot .m-arm-r,.mascot .m-face-worried,.mascot .m-face-focused{animation:none!important}
+  .mascot .m-face-worried{opacity:1}
+  .mascot .m-face-focused{opacity:0}
+  .mascot-02 .m-arm-l{transform:rotate(-219deg)}
+  .mascot-02 .m-arm-r{transform:rotate(219deg)}
+  .mascot-01 .m-arm-l{transform:rotate(-95deg)}
+  .mascot-01 .m-arm-r{transform:rotate(95deg)}
+  .mascot-03 .m-arm-r{transform:rotate(219deg)}
+  .mascot-04 .m-child-l,.mascot-04 .m-child-r{animation:none!important}
+  .mascot-04 .m-child-l{transform:translate(14px,90px)}
+  .mascot-04 .m-child-r{transform:translate(106px,90px)}
+  .mascot-05 .m-arm-l{transform:rotate(-75deg)}
+  .mascot-05 .m-arm-r{transform:rotate(75deg)}
+  .mascot-06 .m-arm-l{transform:rotate(-219deg)}
+}
+
+.mos-sec{background:var(--navy);color:#fff}
+.mos-sec h2{color:#fff}
+.mos-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.mos-list{list-style:none;margin-top:18px}
+.mos-list li{padding:10px 0 10px 30px;position:relative;font-size:15px;color:#dce4f5;border-bottom:1px solid rgba(255,255,255,.08)}
+.mos-list li::before{content:"✓";position:absolute;left:0;color:var(--gold);font-weight:700}
+.mos-panel{background:rgba(255,255,255,.05);border:1px solid rgba(70,54,201,.35);border-radius:16px;padding:28px}
+.mos-panel .price{font-family:'IBM Plex Serif',serif;font-size:44px;color:var(--gold-l);font-weight:700}
+.mos-panel .per{font-size:13px;color:#cdd8ee}
+
+.plany{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:stretch}
+.plan{background:#fff;border:1px solid var(--line);border-radius:16px;padding:30px 26px;display:flex;flex-direction:column;position:relative}
+.plan.best{border:2px solid var(--gold);box-shadow:0 14px 40px rgba(27,42,74,.10)}
+.plan .tag{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--gold);color:var(--navy);font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:5px 14px;border-radius:999px;white-space:nowrap}
+.plan h3{font-size:22px}
+.plan .cena{font-family:'IBM Plex Serif',serif;font-size:42px;font-weight:700;color:var(--navy);margin:8px 0 2px}
+.plan .cena small{font-size:16px;color:var(--mut);font-family:'IBM Plex Sans',sans-serif;font-weight:500}
+.plan ul{list-style:none;margin:18px 0;flex:1}
+.plan li{font-size:14px;padding:7px 0 7px 26px;position:relative}
+.plan li::before{content:"✓";position:absolute;left:0;color:var(--gold);font-weight:800}
+.plan .btn{width:100%}
+.plan .gw{font-size:12px;color:var(--mut);margin-top:10px;text-align:center}
+
+.calc-teaser{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.ct-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.ct-demo{background:var(--cream);border:1px solid var(--line);border-radius:16px;padding:26px}
+.ct-demo .bar{height:12px;background:#e6e9f0;border-radius:8px;overflow:hidden;margin:14px 0 8px}
+.ct-demo .bar div{width:0;height:100%;background:linear-gradient(90deg,var(--ok),#7FB894);transition:width 1.4s ease}
+.ct-demo.inview .bar div{width:71%}
+.ct-demo .big{font-family:'IBM Plex Serif',serif;font-size:40px;font-weight:700;color:var(--navy)}
+
+.faq details{background:#fff;border:1px solid var(--line);border-radius:12px;margin-bottom:10px;overflow:hidden}
+.faq summary{cursor:pointer;padding:18px 20px 18px 24px;font-weight:600;font-size:15.5px;color:var(--navy);list-style:none;display:flex;justify-content:space-between;gap:16px;position:relative;transition:background .25s ease,padding-left .25s ease}
+.faq summary::before{content:"";position:absolute;left:0;top:0;bottom:0;width:0;background:var(--gold);transition:width .25s ease}
+.faq summary:hover{background:var(--cream);padding-left:30px}
+.faq summary:hover::before{width:4px}
+.faq summary::after{content:"+";color:var(--gold);font-size:22px}
+.faq details[open] summary::after{content:"–"}
+.faq .a{padding:0 20px 18px;font-size:14.5px;color:var(--mut)}
+
+.kontakt{background:var(--navy);color:#fff}
+.kontakt h2{color:#fff}
+.k-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.k-ways{display:flex;flex-direction:column;gap:12px;margin-top:22px}
+.k-way{display:flex;align-items:center;gap:14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:14px 16px;text-decoration:none;color:#fff;transition:.2s}
+.k-way:hover{border-color:var(--gold)}
+.k-way .ki{width:42px;height:42px;border-radius:10px;background:var(--gold);color:var(--navy);display:flex;align-items:center;justify-content:center;font-size:19px;flex:none}
+.k-way b{display:block;font-size:15px}
+.k-way span{font-size:12.5px;color:#cdd8ee}
+.k-info{background:rgba(255,255,255,.05);border:1px solid rgba(70,54,201,.3);border-radius:16px;padding:28px;font-size:14.5px;color:#dce4f5}
+.k-info h3{color:var(--gold-l);font-size:22px;margin-bottom:12px}
+.k-info p{margin-bottom:8px}
+.k-form{margin-top:22px;display:flex;flex-direction:column;gap:14px}
+.k-form label{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:#cdd8ee}
+.k-form input,.k-form select,.k-form textarea{font-family:inherit;font-size:15px;font-weight:400;color:#fff;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);border-radius:10px;padding:12px 14px;transition:.2s}
+.k-form input::placeholder,.k-form textarea::placeholder{color:#8fa0bd}
+.k-form input:focus,.k-form select:focus,.k-form textarea:focus{outline:none;border-color:var(--gold-l);background:rgba(255,255,255,.09)}
+.k-form select option{color:#16244c}
+.k-form textarea{resize:vertical;min-height:96px}
+.k-consent{flex-direction:row!important;align-items:flex-start;gap:10px!important;font-weight:400!important;font-size:12.5px!important;color:#b9c3d6!important}
+.k-consent input{flex:none;width:18px;height:18px;margin-top:1px;padding:0}
+.k-consent a{color:var(--gold-l)}
+.k-send{border:none;cursor:pointer;width:100%;margin-top:2px}
+.k-alt{text-align:center;font-size:13px;color:#b9c3d6;text-decoration:underline;text-underline-offset:3px}
+.k-alt:hover{color:var(--gold-l)}
+.k-or{margin:22px 0 4px;font-size:12.5px;color:#8fa0bd;text-transform:uppercase;letter-spacing:.12em}
+
+footer{background:var(--navy-d);color:#93A0B8;font-size:12.5px;padding:34px 0}
+.f-grid{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer a{color:#B9C3D6;text-decoration:none}
+footer .upd{margin-top:14px;font-size:11.5px;color:#6B7890}
+
+.wa-float{position:fixed;bottom:20px;right:20px;width:56px;height:56px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:26px;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.28);z-index:60}
+
+@media(max-width:900px){
+  .nav{position:relative;justify-content:center}
+  .logo{justify-content:center;text-align:center}
+  .lang{position:absolute;right:54px;top:50%;transform:translateY(-50%)}
+  .burger{display:block;position:absolute;right:14px;top:50%;transform:translateY(-50%)}
+  .menu{display:none;position:absolute;top:var(--hh,66px);left:0;right:0;flex-wrap:nowrap;flex-direction:column;gap:0;background:#2f2699;padding:6px 0;box-shadow:0 12px 24px rgba(0,0,0,.25);z-index:48}
+  .menu.open{display:flex}
+  .menu a{padding:13px 22px;width:100%;font-size:15px;border-bottom:1px solid rgba(255,255,255,.08)}
+  .more{display:contents}
+  .more-btn{display:none}
+  .more-menu{position:static;opacity:1;visibility:visible;transform:none;display:flex;background:transparent;border:none;box-shadow:none;padding:0;min-width:0;gap:0}
+  .more-menu a{border-radius:0;padding:13px 22px;border-bottom:1px solid rgba(255,255,255,.08)}
+  .hero-grid,.mos-grid,.ct-grid,.k-grid{grid-template-columns:1fr}
+  .serv,.plany,.path-steps{grid-template-columns:1fr}
+  .hero{padding-top:48px}
+  section{padding:52px 0}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .rc-stamp{opacity:1;transform:rotate(8deg) scale(1)}
+  #goldpath{stroke-dashoffset:0}
+  .pnode{opacity:1}
+  .card-pop{transform:none}
+  .check-pop{transform:none;opacity:1}
+  .path-steps>div{opacity:1;transform:none}
+  .ct-demo .bar div{width:71%}
+}
+
+/* ===== Karta czatu nad formularzem — czat jest głównym kanałem kontaktu ===== */
+.czat-cta{margin-top:20px;display:flex;flex-wrap:wrap;align-items:center;gap:16px;justify-content:space-between;
+  background:#fff;border-radius:14px;padding:18px 20px;box-shadow:0 10px 28px rgba(0,0,0,.22)}
+.czat-cta-t{display:flex;flex-direction:column;gap:4px;min-width:220px;flex:1}
+.czat-cta-t strong{font-size:16px;color:#16244c}
+.czat-cta-t span{font-size:13.5px;color:#4a5570;line-height:1.5}
+.czat-cta-btn{flex:none;cursor:pointer;border:none;font-family:inherit;font-size:15px;font-weight:700;color:#fff;
+  background:#D4213D;border-radius:10px;padding:14px 22px;transition:.2s;box-shadow:0 6px 16px rgba(212,33,61,.32)}
+.czat-cta-btn:hover{background:#b81a33;transform:translateY(-1px)}
+@media(max-width:600px){.czat-cta{flex-direction:column;align-items:stretch}.czat-cta-btn{width:100%}}
+/* Formularz WhatsApp zostaje, ale jako kanał drugiego wyboru — obrys zamiast plamy koloru */
+.k-send{background:transparent!important;color:#fff!important;border:1.5px solid rgba(255,255,255,.55)!important;box-shadow:none!important}
+.k-send:hover{background:rgba(255,255,255,.10)!important;border-color:#fff!important}
+</style>
+<style id="fix-mobilny-2026-07-25">
+/* Poprawka mobilna: flaga PL nie nachodzi na logo, tytul hero nie jest uciety */
+@media(max-width:900px){
+  header .nav{justify-content:flex-start;padding-right:104px;box-sizing:border-box}
+  header .logo{justify-content:flex-start;text-align:left}
+  header .logo .flag-pl{display:flex!important;width:34px;height:34px}
+  header .logo .name{max-width:none}
+  .hero h1{font-size:clamp(23px,6.4vw,44px);overflow-wrap:break-word}
+}
+</style>
+
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Centro de Atenci&oacute;n de Asuntos de Extranjeros">
-<meta property="og:locale" content="es_CO">
-<meta property="og:locale:alternate" content="es_ES">
-<meta property="og:title" content="Precios y servicios &mdash; tr&aacute;mites de residencia en Polonia | COSC">
-<meta property="og:description" content="Cu&aacute;nto cuesta que llevemos su expediente de residencia en Polonia: paquetes desde 615 PLN, qu&eacute; incluye cada uno y qu&eacute; tasas cobra el Estado aparte. En espa&ntilde;ol.">
+<meta property="og:site_name" content="Centrum Obsługi Spraw Cudzoziemców">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="Precios: paquetes Standard y VIP — residencia | COSC">
+<meta property="og:description" content="Tarjeta de residencia: paquete Standard 1950 zl y VIP 2900 zl. Devolucion del 100% si la resolucion final es denegatoria, solo en el paquete VIP.">
 <meta property="og:url" content="https://cosc.org.pl/es/precios-y-servicios.html">
-<meta property="og:image" content="https://cosc.org.pl/og/es/precios-y-servicios.png">
+<meta property="og:image" content="https://cosc.org.pl/og/strona-glowna.png">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Precios y servicios &mdash; tr&aacute;mites de residencia en Polonia | COSC">
-<meta name="twitter:description" content="Cu&aacute;nto cuesta que llevemos su expediente de residencia en Polonia: paquetes desde 615 PLN, qu&eacute; incluye cada uno y qu&eacute; tasas cobra el Estado aparte. En espa&ntilde;ol.">
-<meta name="twitter:image" content="https://cosc.org.pl/og/es/precios-y-servicios.png">
-<link rel="icon" href="https://cosc.org.pl/favicon.svg" type="image/svg+xml">
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-:root{--navy:#16244c;--violet:#4636c9;--violet-d:#37248F;--violet-l:#6d6ae0;--cream:#f4f6fb;--mut:#5a6478;--red:#d4213d;--green:#1a9a52;--amber:#C07A1E;--line:#e6e9f0}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:'IBM Plex Sans',system-ui,sans-serif;background:var(--cream);color:var(--navy);line-height:1.65;font-size:16px}
-h1,h2,h3{font-family:'IBM Plex Serif',Georgia,serif;color:var(--navy);line-height:1.2}
-a{color:inherit}
-.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
-/* ===== NAGLOWEK (kalka .csh- z site-header.js) ===== */
-.csh-header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);position:sticky;top:0;z-index:50;box-shadow:0 2px 12px rgba(19,32,58,.25);display:block}
-.csh-wrap{max-width:1120px;margin:0 auto;padding:0 16px;display:flex;align-items:center;gap:12px;min-height:66px;flex-wrap:nowrap}
-.csh-logo{display:flex;align-items:center;gap:9px;text-decoration:none;flex:none}
-.csh-flag{flex-shrink:0;width:32px;height:32px;border-radius:6px;box-shadow:0 0 0 1px rgba(255,255,255,.4);overflow:hidden;display:flex;flex-direction:column}
-.csh-flag .csh-fw{flex:1;width:100%;background:#f5f5f5}.csh-flag .csh-fr{flex:1;width:100%;background:#d4213d}
-.csh-name{color:#fff;font-family:'IBM Plex Serif',Georgia,serif;font-weight:700;font-size:13.5px;line-height:1.15;white-space:nowrap}
-.csh-menu{display:flex;flex-wrap:wrap;gap:2px 4px;align-items:center;justify-content:flex-end;flex:1 1 auto;min-width:0}
-.csh-menu>a{white-space:nowrap}
-.csh-menu>a{color:#E9ECF3;text-decoration:none;font-size:13.5px;font-weight:600;padding:8px 10px;border-radius:8px;transition:background .18s,color .18s}
-.csh-menu>a:hover,.csh-menu>a.on{background:rgba(255,255,255,.12);color:#ffd34d}
-.csh-cta{background:#d4213d !important;color:#fff !important;font-weight:700;padding:8px 14px;border-radius:8px;box-shadow:0 2px 8px rgba(212,33,61,.35);margin-left:4px}
-.csh-cta:hover{background:#b81a32 !important;color:#fff !important}
-.csh-lang{flex:none;display:flex;gap:2px;border:1px solid rgba(255,255,255,.3);border-radius:8px;padding:2px;margin-left:6px}
-.csh-lang a{padding:4px 9px;font-size:11.5px;font-weight:800;border-radius:6px;text-decoration:none;color:#dfe4ee}
-.csh-lang a.on{background:#fff;color:#4636c9}
-.csh-burger{display:none;background:none;border:none;color:#fff;font-size:26px;cursor:pointer;flex:none}
-/* rozwijana lista „Más" */
-.csh-more{position:relative;display:flex;align-items:center}
-.csh-more-btn{display:inline-flex;align-items:center;gap:5px;font-family:inherit;font-size:13.5px;font-weight:600;color:#E9ECF3;background:none;border:none;border-radius:8px;padding:8px 10px;cursor:pointer;line-height:1;white-space:nowrap;transition:background .18s,color .18s}
-.csh-more-btn:hover,.csh-more-btn.on{background:rgba(255,255,255,.12);color:#ffd34d}
-.csh-more-btn .chev{font-size:10px;opacity:.75;transition:transform .2s}
-.csh-more.open .csh-more-btn{background:rgba(255,255,255,.16);color:#ffd34d}
-.csh-more.open .csh-more-btn .chev{transform:rotate(180deg)}
-.csh-more-menu{position:absolute;top:calc(100% + 12px);right:0;min-width:250px;background:#241C86;border:1px solid rgba(255,255,255,.22);border-radius:14px;padding:8px;box-shadow:0 18px 40px rgba(10,16,40,.45);display:flex;flex-direction:column;gap:2px;opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .18s,transform .18s,visibility .18s;z-index:60}
-.csh-more.open .csh-more-menu{opacity:1;visibility:visible;transform:translateY(0)}
-.csh-more-menu a{color:#E9ECF3;text-decoration:none;font-size:14px;font-weight:500;padding:11px 14px;border-radius:9px;white-space:nowrap}
-.csh-more-menu a:hover,.csh-more-menu a.on{background:rgba(255,255,255,.14);color:#ffd34d}
-.flagbar{height:8px;background:linear-gradient(to bottom,#f5f5f5 50%,#d4213d 50%);border-bottom:1px solid rgba(22,36,76,.18)}
-@media(max-width:900px){
- .csh-wrap{flex-wrap:wrap;gap:8px;padding:10px;min-height:0}
- .csh-name{font-size:11px}.csh-flag{width:24px;height:24px}.csh-logo svg{width:22px;height:22px}
- .csh-burger{display:block;margin-left:auto}
- .csh-menu{display:none;order:5;flex-basis:100%;flex-wrap:wrap;justify-content:flex-start;gap:6px}
- .csh-menu.open{display:flex}
- .csh-menu>a{font-size:14px;padding:9px 10px}
- /* na telefonie lista „Más" nie jest dropdownem — pozycje widać od razu */
- .csh-more{flex-basis:100%;display:block}
- .csh-more-btn{display:none}
- .csh-more-menu{position:static;opacity:1;visibility:visible;transform:none;background:rgba(255,255,255,.08);border:none;box-shadow:none;min-width:0;padding:4px 0;flex-direction:row;flex-wrap:wrap;gap:4px}
- .csh-more-menu a{font-size:14px;padding:9px 10px}
+<meta name="twitter:image" content="https://cosc.org.pl/og/strona-glowna.png">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "WebPage",
+ "name": "Precios y paquetes — legalizacion de la residencia",
+ "description": "Tarjeta de residencia: paquete Standard 1950 zl y VIP 2900 zl. Devolucion del 100% si la resolucion final es denegatoria, solo en el paquete VIP.",
+ "url": "https://cosc.org.pl/es/precios-y-servicios.html",
+ "inLanguage": "es-ES",
+ "isPartOf": {
+  "@type": "WebSite",
+  "name": "COSC",
+  "url": "https://cosc.org.pl/"
+ },
+ "publisher": {
+  "@type": "Organization",
+  "name": "Centrum Obsługi Spraw Cudzoziemców",
+  "url": "https://cosc.org.pl/",
+  "logo": {
+   "@type": "ImageObject",
+   "url": "https://cosc.org.pl/favicon-96.png"
+  }
+ }
 }
-/* ===== TRESC ===== */
-.hero{background:linear-gradient(140deg,#4636c9,#37248F);color:#fff;padding:44px 0 40px}
-.hero h1{color:#fff;font-size:clamp(26px,4.2vw,40px);margin-bottom:14px}
-.hero h1 em{color:#ffd34d;font-style:normal}
-.hero p.lead{color:#e7e5ff;font-size:17px;max-width:760px}
-.eyebrow{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#ffd34d;margin-bottom:10px}
-.crumbs{font-size:13px;color:#5a6478;padding:12px 0}
-.crumbs a{color:#4636c9;text-decoration:none}
-.btnrow{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
-.btn{display:inline-block;text-decoration:none;font-weight:700;font-size:15px;padding:14px 24px;border-radius:10px;transition:.2s;text-align:center}
-.btn-wa{background:#25D366;color:#0b3d20}
-.btn-wa:hover{background:#1eb959}
-.btn-red{background:#d4213d;color:#fff}
-.btn-red:hover{background:#b81a32}
-.btn-line{border:1.5px solid rgba(255,255,255,.7);color:#fff}
-.btn-line:hover{background:rgba(255,255,255,.14)}
-main{padding:10px 0 40px}
-section.blk{background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px;margin:18px 0;box-shadow:0 1px 3px rgba(19,32,58,.05)}
-section.blk h2{font-size:clamp(20px,3vw,26px);margin-bottom:12px}
-section.blk h3{font-size:18px;margin:18px 0 8px}
-section.blk p{margin:10px 0}
-section.blk ul,section.blk ol{margin:10px 0 10px 22px}
-section.blk li{margin:6px 0}
-.alert{border-left:5px solid var(--red);background:#fff5f6;border-radius:10px;padding:16px 18px;margin:16px 0}
-.alert strong{color:#a5142b}
-.note{border-left:5px solid var(--violet);background:#f2f1fe;border-radius:10px;padding:16px 18px;margin:16px 0}
-.ok{border-left:5px solid var(--green);background:#f1faf4;border-radius:10px;padding:16px 18px;margin:16px 0}
-table{width:100%;border-collapse:collapse;margin:14px 0;font-size:15px}
-th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
-th{background:#f2f1fe;font-weight:700}
-.tw{overflow-x:auto}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:14px}
-.card{border:1px solid var(--line);border-radius:14px;padding:18px;background:#fbfbff;text-decoration:none;display:block;transition:.18s}
-.card:hover{border-color:var(--violet);transform:translateY(-2px)}
-.card b{display:block;font-size:16px;margin-bottom:6px;color:var(--violet)}
-.card span{font-size:14px;color:var(--mut)}
-.steps{counter-reset:s;margin-top:10px}
-.step{position:relative;padding-left:52px;margin:16px 0}
-.step:before{counter-increment:s;content:counter(s);position:absolute;left:0;top:0;width:36px;height:36px;border-radius:50%;background:var(--violet);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800}
-details{border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:8px 0;background:#fbfbff}
-details summary{cursor:pointer;font-weight:700}
-details p{margin-top:8px}
-.ctabox{background:linear-gradient(140deg,#4636c9,#37248F);color:#fff;border-radius:16px;padding:28px;margin:22px 0;text-align:center}
-.ctabox h2{color:#fff}
-.ctabox p{color:#e7e5ff;max-width:640px;margin:10px auto}
-.ctabox .btnrow{justify-content:center}
-.src{font-size:14px;color:var(--mut)}
-.src a{color:var(--violet)}
-footer{background:#16244c;color:#cfd6e4;padding:30px 0;font-size:14px;margin-top:30px}
-footer a{color:#ffd34d;text-decoration:none}
-footer .fgrid{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between}
-footer .disc{margin-top:18px;padding-top:16px;border-top:1px solid rgba(255,255,255,.15);font-size:13px;color:#aab3c6;line-height:1.6}
-</style>
-<script type="application/ld+json">{
-"@context":"https://schema.org","@type":"Organization","name":"Centro de Atencion de Asuntos de Extranjeros (Centrum Obslugi Spraw Cudzoziemcow)",
-"legalName":"Dariusz Wlodarczyk - Kancelaria","url":"https://cosc.org.pl/es/","telephone":"+48539999549","email":"office@cosc.org.pl",
-"vatID":"PL1250476187","address":{"@type":"PostalAddress","streetAddress":"ul. Kuropatwy 34S","postalCode":"02-892","addressLocality":"Warszawa","addressCountry":"PL"},
-"areaServed":"PL","availableLanguage":["es","pl","en","uk","ru","fr"]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Las tasas oficiales están incluidas en el precio?", "acceptedAnswer": {"@type": "Answer", "text": "No. Nuestros honorarios y las tasas que cobra el Estado son cosas distintas. Las tasas oficiales (de 340 a 640 PLN según el tipo de permiso, más 100 PLN por la tarjeta) las paga usted directamente a las cuentas de la oficina del voivodato."}}, {"@type": "Question", "name": "¿Puedo presentar la solicitud yo solo, sin pagar a nadie?", "acceptedAnswer": {"@type": "Answer", "text": "Sí, y la propia Oficina de Extranjeros lo dice: el acceso a MOS es gratuito y usted puede presentar la solicitud por su cuenta. Nuestro trabajo tiene sentido cuando el caso es complicado, cuando ya hubo un problema o cuando prefiere no arriesgarse con los plazos."}}, {"@type": "Question", "name": "¿Qué significa «ayuda eficaz o le devolvemos el dinero»?", "acceptedAnswer": {"@type": "Answer", "text": "Es un compromiso limitado a los paquetes con representación y sujeto a condiciones concretas descritas en el reglamento del servicio. No es una garantía de resultado: la decisión la toma el voivoda y nadie puede prometerla."}}, {"@type": "Question", "name": "¿En qué idioma trabajamos?", "acceptedAnswer": {"@type": "Answer", "text": "Con usted, en español. Con la administración polaca, en polaco — es el idioma oficial del procedimiento y todos los escritos van en polaco."}}]}</script>
+</script>
 </head>
 <body>
-<header class="csh-header">
-<div class="csh-wrap">
-  <a class="csh-logo" href="index.html" aria-label="Inicio">
-    <span class="csh-flag" aria-label="Polonia"><span class="csh-fw"></span><span class="csh-fr"></span></span>
-    <span class="csh-name">Centro de Atenci&oacute;n<br>de Asuntos de Extranjeros</span><svg width="30" height="30" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Union Europea"><rect width="36" height="36" rx="7" fill="#0A2A8C"/><g fill="#F5C518"><path id="esEuStar" d="M18,4.6 l0.85,1.75 l1.95,0.2 l-1.45,1.32 l0.42,1.9 l-1.77,-1.0 l-1.77,1.0 l0.42,-1.9 l-1.45,-1.32 l1.95,-0.2 Z"/><use href="#esEuStar" transform="rotate(30 18 18)"/><use href="#esEuStar" transform="rotate(60 18 18)"/><use href="#esEuStar" transform="rotate(90 18 18)"/><use href="#esEuStar" transform="rotate(120 18 18)"/><use href="#esEuStar" transform="rotate(150 18 18)"/><use href="#esEuStar" transform="rotate(180 18 18)"/><use href="#esEuStar" transform="rotate(210 18 18)"/><use href="#esEuStar" transform="rotate(240 18 18)"/><use href="#esEuStar" transform="rotate(270 18 18)"/><use href="#esEuStar" transform="rotate(300 18 18)"/><use href="#esEuStar" transform="rotate(330 18 18)"/></g></svg>
-  </a>
-  <button class="csh-burger" type="button" aria-label="Men&uacute;" aria-expanded="false">&#9776;</button>
-  <nav class="csh-menu"><a href="tarjeta-de-residencia-polonia.html">Tarjeta de residencia</a><a href="trabajo-legal-polonia-colombianos.html">Trabajo legal</a><a href="90-dias-schengen-polonia.html">90 d&iacute;as</a><a href="mos-solicitud-en-linea.html">Solicitud MOS</a>
-    <div class="csh-more"><button class="csh-more-btn on" type="button" aria-haspopup="true" aria-expanded="false">M&aacute;s <span class="chev" aria-hidden="true">&#9662;</span></button>
-      <div class="csh-more-menu"><a href="visa-nacional-polonia-desde-colombia.html">Visa desde Colombia</a><a href="primeros-pasos-en-polonia.html">Primeros pasos en Polonia</a><a href="cambiar-de-empleador-polonia.html">Cambiar de empleador</a><a href="residencia-permanente-polonia.html">Residencia permanente</a><a href="reagrupacion-familiar-polonia.html">Reagrupaci&oacute;n familiar</a><a href="me-negaron-la-tarjeta-de-residencia.html">Me negaron la tarjeta</a><a href="calculadora-90-180.html">Calculadora 90/180</a><a href="preguntas-frecuentes.html">Preguntas frecuentes</a><a href="precios-y-servicios.html" class="on">Precios y servicios</a></div></div>
-    <a class="csh-cta" href="contacto.html">Consulta gratuita</a></nav>
-  <div class="csh-lang"><a href="https://cosc.org.pl/cennik.html" hreflang="pl" lang="pl">PL</a><a href="#" class="on" aria-current="true">ES</a></div>
-</div>
-</header>
+
+<div class="mos">⚠ Desde el 27 de abril de 2026 las solicitudes de residencia se presentan <strong>solo en línea, por el sistema MOS</strong>. <a href="index.html#mos">La presentamos por ti, sin errores →</a></div>
+
+<header id="site-header"></header>
 <div class="flagbar" aria-hidden="true"></div>
-<div class="hero"><div class="wrap">
-<span class="eyebrow">Precios claros, sin sorpresas</span>
-<h1><em>Precios y servicios</em> &mdash; llevamos su caso de principio a fin</h1>
-<p class="lead">Cu&aacute;nto cuesta que llevemos su expediente, qu&eacute; incluye cada paquete y qu&eacute; pagos son del Estado y no nuestros. Todo en un sitio, antes de que usted decida nada.</p>
-<div class="btnrow">
-  <a class="btn btn-wa" href="contacto.html">Reserve una consulta gratuita</a>
-  <a class="btn btn-line" href="tel:+48539999549">Llamar +48 539 999 549</a>
-  
-</div>
-</div></div><div class="wrap"><nav class="crumbs" aria-label="Ruta"><a href="https://cosc.org.pl/">cosc.org.pl</a> &rsaquo; <a href="index.html">Espa&ntilde;ol</a> &rsaquo; Precios y servicios</nav></div>
-<main><div class="wrap">
 
-<div class="note">
-<b>Dos bolsillos distintos, no los mezcle.</b> Por un lado est&aacute;n las <b>tasas oficiales</b>, que cobra el Estado
-polaco y que usted paga directamente a la oficina del voivodato. Por otro, nuestros <b>honorarios</b> por llevar
-el expediente. Lo de abajo son honorarios; las tasas oficiales van aparte y las explicamos en la tabla final.
-</div>
-
-<section class="blk">
-<h2>Primera solicitud de tarjeta de residencia</h2>
-<div class="tw"><table>
-<tr><th>Paquete</th><th>Precio</th><th>Forma de pago</th></tr>
-<tr><td><b>START</b></td><td>1200 PLN</td><td>pago &uacute;nico</td></tr>
-<tr><td><b>STANDARD</b> <span style="color:#d4213d;font-weight:700">&mdash; el m&aacute;s elegido</span></td><td>1950 PLN</td><td>en 2 plazos</td></tr>
-<tr><td><b>ALL INCLUSIVE</b></td><td>3500 PLN</td><td>en 3 plazos</td></tr>
-</table></div>
+<section style="background:linear-gradient(160deg,#4636c9,#2f2699);color:#fff;padding:52px 0 46px">
+  <div class="wrap">
+    <a href="index.html" style="color:#dfe3f5;text-decoration:none;font-size:14px">← Inicio</a>
+    <h1 style="color:#fff;font-size:clamp(26px,3.4vw,40px);margin-top:12px">Paquetes y precios</h1>
+    <p style="color:#dfe3f5;font-size:17px;margin-top:10px;max-width:700px">Dos paquetes para llevar tu caso de tarjeta de residencia: Standard y VIP. Solo el paquete VIP incluye la garantía de devolución si la resolución final es denegatoria, en las condiciones que se detallan más abajo.</p>
+  </div>
 </section>
 
-<section class="blk">
-<h2>Continuaci&oacute;n de un expediente ya empezado</h2>
-<p>Si su procedimiento ya est&aacute; en marcha &mdash; lo empez&oacute; usted, otra oficina o su empleador &mdash; y quiere
-que lo terminemos nosotros:</p>
-<div class="tw"><table>
-<tr><th>Paquete</th><th>Precio</th><th>Forma de pago</th></tr>
-<tr><td><b>REVISI&Oacute;N</b> (<i>Przegl&#261;d</i>)</td><td>615 PLN</td><td>pago &uacute;nico</td></tr>
-<tr><td><b>STANDARD</b></td><td>1650 PLN</td><td>en 2 plazos</td></tr>
-<tr><td><b>ALL INCLUSIVE</b></td><td>2200 PLN</td><td>en 3 plazos</td></tr>
-</table></div>
-<p class="src">Precios orientativos, tomados de nuestra p&aacute;gina de tarifas en polaco. El detalle de lo que
-incluye cada paquete est&aacute; en <a href="https://cosc.org.pl/cennik.html">cennik.html</a> (en polaco). Si algo no le cuadra,
-preg&uacute;ntenos antes de pagar.</p>
-</section>
+<section id="cennik">
+  <style>
+  #cennik{padding:46px 0 10px}
+  #cennik .wrap{max-width:1000px}
+  #cennik .pk-intro{font-size:16px;color:var(--mut);margin:0 0 26px;max-width:760px}
+  .pk-tab{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);
+    border-radius:14px;overflow:hidden;font-size:15px}
+  .pk-tab thead th{background:var(--navy);color:#fff;padding:18px 16px;text-align:center;
+    vertical-align:top;font-weight:700}
+  .pk-tab thead th:first-child{text-align:left;font-size:13px;letter-spacing:.08em;
+    text-transform:uppercase;font-weight:600}
+  .pk-tab .pk-name{display:block;font-size:19px;letter-spacing:.04em}
+  .pk-tab .pk-cena{display:block;font-size:27px;font-weight:800;margin-top:4px}
+  .pk-tab .pk-rat{display:block;font-size:12.5px;font-weight:500;opacity:.85;margin-top:3px}
+  .pk-tab tbody th{font-weight:500;text-align:left;padding:13px 16px;border-top:1px solid var(--line);
+    color:var(--ink)}
+  .pk-tab tbody th small{display:block;font-size:12.5px;color:var(--mut);margin-top:3px;font-weight:400}
+  .pk-tab tbody td{width:150px;text-align:center;padding:13px 16px;border-top:1px solid var(--line)}
+  .pk-tab tbody tr:nth-child(even) th,.pk-tab tbody tr:nth-child(even) td{background:#fafbfe}
+  .pk-tab .cy{color:#2E7D4F;font-size:18px;font-weight:700}
+  .pk-tab .cy-star{color:#c9961a;font-size:19px}
+  .pk-tab .cn{color:#b6bdcc}
+  .pk-tab tfoot td{padding:16px;text-align:center;border-top:1px solid var(--line)}
+  .pk-tab tfoot td:first-child{background:#fafbfe}
+  .pk-btn{display:inline-block;background:var(--gold);color:#fff;text-decoration:none;
+    padding:11px 24px;border-radius:10px;font-weight:700;font-size:15px}
+  .pk-btn:hover{background:var(--gold-l)}
+  .pk-wrapscroll{overflow-x:auto}
+  .pk-every{margin:30px 0 0;padding:22px 24px;background:var(--cream);border:1px solid var(--line);
+    border-radius:14px}
+  .pk-every h2{font-size:15px;letter-spacing:.08em;text-transform:uppercase;margin:0 0 12px;
+    color:var(--gold)}
+  .pk-every ul{margin:0;padding:0;list-style:none;display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:9px 26px}
+  .pk-every li{padding-left:22px;position:relative;font-size:15px}
+  .pk-every li::before{content:"\2022";position:absolute;left:4px;color:var(--gold);font-weight:700}
+  .pk-trust{margin:16px 0 0;font-size:14.5px;color:var(--mut)}
+  .pk-etapy{margin:38px 0 0}
+  .pk-etapy h2,#gwarancja h2{font-size:clamp(20px,2.4vw,26px);margin:0 0 16px}
+  .pk-etapy .et{padding:16px 18px;border-left:3px solid var(--gold);background:#fafbfe;
+    border-radius:0 10px 10px 0;margin:0 0 12px;font-size:15px;line-height:1.6}
+  .pk-etapy .et strong{color:var(--navy)}
+  .pk-etapy ul{margin:10px 0 0 0;padding-left:20px;font-size:14.5px}
+  .pk-etapy ul li{margin:4px 0}
+  #gwarancja{margin:38px 0 0;padding:26px 24px;background:#fff;border:1px solid var(--line);
+    border-radius:14px}
+  #gwarancja h3{font-size:14px;letter-spacing:.06em;text-transform:uppercase;margin:22px 0 8px;
+    color:var(--gold)}
+  #gwarancja p,#gwarancja li{font-size:14.5px;line-height:1.65}
+  #gwarancja ul{padding-left:20px;margin:0}
+  #gwarancja li{margin:6px 0}
+  #gwarancja .uwaga{background:#fff8e6;border:1px solid #f0d78c;border-radius:10px;
+    padding:14px 16px;margin:0 0 4px}
+  @media(max-width:760px){
+    .pk-tab{font-size:14px}
+    .pk-tab tbody td{width:84px;padding:12px 8px}
+    .pk-tab thead th{padding:14px 8px}
+    .pk-tab .pk-cena{font-size:22px}
+  }
+  </style>
 
-<section class="blk">
-<h2>Lo que cobra el Estado (no nosotros)</h2>
-<div class="tw"><table>
-<tr><th>Concepto</th><th>Importe</th></tr>
-<tr><td>Tasa administrativa por la concesi&oacute;n del permiso</td><td>de 340 a 640 PLN, seg&uacute;n el tipo</td></tr>
-<tr><td>Tasa por la expedici&oacute;n de la tarjeta de residencia</td><td>100 PLN</td></tr>
-</table></div>
-<p>Se pagan a <b>cuentas distintas</b> de la oficina del voivodato y <b>no</b> se pueden abonar dentro de MOS.
-Los justificantes se adjuntan a la solicitud.</p>
-</section>
+  <div class="wrap">
+    <p class="pk-intro"><strong>Tu tarjeta de residencia: un camino tranquilo hacia una vida legal para ti y tu familia.</strong> Un caso nuevo, o retomarlo de tu representante actual.</p>
 
-<section class="blk">
-<h2>Qu&eacute; hacemos y qu&eacute; no</h2>
-<div class="tw"><table>
-<tr><th>S&iacute; hacemos</th><th>No hacemos</th></tr>
-<tr><td>Analizar su caso y decirle qu&eacute; v&iacute;as legales tiene.</td><td>Prometer el resultado: la decisi&oacute;n la toma el voivoda.</td></tr>
-<tr><td>Preparar y presentar la solicitud en MOS y seguir el expediente.</td><td>Buscarle empleo ni cobrarle por conseguirle un contrato.</td></tr>
-<tr><td>Representarle ante la administraci&oacute;n con poder de representaci&oacute;n.</td><td>Acelerar los plazos de la oficina: nadie puede.</td></tr>
-<tr><td>Explicarle los costes por escrito antes de empezar.</td><td>Aconsejarle trabajar sin autorizaci&oacute;n mientras espera.</td></tr>
-</table></div>
-</section>
-
-<div class="ctabox">
-<h2>&iquest;No sabe qu&eacute; paquete le conviene?</h2>
-<p>No hace falta que lo decida usted. Cu&eacute;ntenos su caso por WhatsApp y le decimos qu&eacute; hace falta de verdad &mdash; a veces es menos de lo que teme.</p>
-<div class="btnrow">
-  <a class="btn btn-wa" href="contacto.html">Reserve una consulta gratuita</a>
-  <a class="btn btn-line" href="tel:+48539999549">Llamar +48 539 999 549</a>
-  <a class="btn btn-line" href="contacto.html">Ver todas las formas de contacto</a>
-</div>
-</div>
-
-<section class="blk"><h2>Preguntas frecuentes</h2><details><summary>&iquest;Las tasas oficiales est&aacute;n incluidas en el precio?</summary><p>No. Nuestros honorarios y las tasas que cobra el Estado son cosas distintas. Las tasas oficiales (de 340 a 640 PLN seg&uacute;n el tipo de permiso, m&aacute;s 100 PLN por la tarjeta) las paga usted directamente a las cuentas de la oficina del voivodato.</p></details><details><summary>&iquest;Puedo presentar la solicitud yo solo, sin pagar a nadie?</summary><p>S&iacute;, y la propia Oficina de Extranjeros lo dice: el acceso a MOS es gratuito y usted puede presentar la solicitud por su cuenta. Nuestro trabajo tiene sentido cuando el caso es complicado, cuando ya hubo un problema o cuando prefiere no arriesgarse con los plazos.</p></details><details><summary>&iquest;Qu&eacute; significa &laquo;ayuda eficaz o le devolvemos el dinero&raquo;?</summary><p>Es un compromiso limitado a los paquetes con representaci&oacute;n y sujeto a condiciones concretas descritas en el reglamento del servicio. No es una garant&iacute;a de resultado: la decisi&oacute;n la toma el voivoda y nadie puede prometerla.</p></details><details><summary>&iquest;En qu&eacute; idioma trabajamos?</summary><p>Con usted, en espa&ntilde;ol. Con la administraci&oacute;n polaca, en polaco &mdash; es el idioma oficial del procedimiento y todos los escritos van en polaco.</p></details></section>
-<section class="blk">
-<h2>Fuentes oficiales</h2>
-<p class="src">Toda la informaci&oacute;n de esta p&aacute;gina procede de fuentes oficiales polacas y de la Uni&oacute;n Europea.
-Le recomendamos consultarlas directamente antes de tomar decisiones:</p>
-<ul class="src"><li><a href="https://www.gov.pl/web/udsc/info-mos" rel="noopener" target="_blank">Oficina de Extranjeros (UdSC) &mdash; informaci&oacute;n sobre el sistema MOS</a></li><li><a href="https://www.gov.pl/web/udsc/informacje-dotyczace-oplat" rel="noopener" target="_blank">UdSC &mdash; tasas: tasa administrativa y tasa por la expedici&oacute;n de la tarjeta</a></li><li><a href="https://mos.cudzoziemcy.gov.pl" rel="noopener" target="_blank">Portal MOS &mdash; mos.cudzoziemcy.gov.pl</a></li><li><a href="https://www.gov.pl/web/colombia/informacion-importante-para-quienes-viajan-a-trabajar-a-polonia" rel="noopener" target="_blank">Embajada de Polonia en Bogot&aacute; &mdash; Informaci&oacute;n importante para quienes viajan a trabajar a Polonia (27.07.2026)</a></li><li><a href="https://www.gov.pl/web/kolumbia/zmiana-przepisow-wizowych" rel="noopener" target="_blank">Embajada de Polonia &mdash; Limitaci&oacute;n del r&eacute;gimen sin visado para ciudadanos de Colombia (14.08.2024)</a></li></ul>
-<p class="src">Estado legal: 3 de agosto de 2026. Si alguna norma cambia despu&eacute;s de esa fecha, la fuente oficial prevalece sobre este texto.</p>
-</section>
-
-</div></main>
-<footer>
-<div class="wrap">
-  <div class="fgrid">
-    <div>
-      <strong style="color:#fff;font-size:15px">Centro de Atenci&oacute;n de Asuntos de Extranjeros</strong><br>
-      Dariusz W&#322;odarczyk &ndash; Kancelaria (despacho jur&iacute;dico)<br>
-      NIP 1250476187 &middot; ul. Kuropatwy 34S, 02-892 Varsovia, Polonia
+    <div class="pk-wrapscroll">
+    <table class="pk-tab">
+      <thead>
+        <tr>
+          <th scope="col">Alcance del servicio</th>
+          <th scope="col"><span class="pk-name">STANDARD</span><span class="pk-cena">1950 zł</span><span class="pk-rat">pago único</span></th>
+          <th scope="col"><span class="pk-name">VIP</span><span class="pk-cena">2900 zł</span><span class="pk-rat">en 2 plazos</span></th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr><th scope="row">Análisis de documentos y lista de lo que falta</th><td><span class="cy" aria-label="incluido">&#10003;</span></td><td><span class="cy" aria-label="incluido">&#10003;</span></td></tr>
+      <tr><th scope="row">Domicilio permanente para notificaciones y reenvío del correo</th><td><span class="cy" aria-label="incluido">&#10003;</span></td><td><span class="cy" aria-label="incluido">&#10003;</span></td></tr>
+      <tr><th scope="row">Cumplimentación y presentación de la solicitud en línea</th><td><span class="cy" aria-label="incluido">&#10003;</span></td><td><span class="cy" aria-label="incluido">&#10003;</span></td></tr>
+      <tr><th scope="row">Conjunto completo de documentos del empleador</th><td><span class="cy" aria-label="incluido">&#10003;</span></td><td><span class="cy" aria-label="incluido">&#10003;</span></td></tr>
+      <tr><th scope="row">Revisión completa del caso y representación en la presentación</th><td><span class="cy" aria-label="incluido">&#10003;</span></td><td><span class="cy" aria-label="incluido">&#10003;</span></td></tr>
+      <tr><th scope="row">Respuestas a requerimientos y escritos de la oficina</th><td><span class="cy" aria-label="incluido">&#10003;</span></td><td><span class="cy" aria-label="incluido">&#10003;</span></td></tr>
+      <tr><th scope="row">Llevar el caso hasta la resolución + recursos administrativos</th><td><span class="cy" aria-label="incluido">&#10003;</span></td><td><span class="cy" aria-label="incluido">&#10003;</span></td></tr>
+      <tr><th scope="row">Consulta sobre el cambio de condiciones de trabajo</th><td><span class="cn" aria-label="no incluido">&mdash;</span></td><td><span class="cy" aria-label="incluido">&#10003;</span></td></tr>
+      <tr><th scope="row">Solicitud de modificación de la resolución por cambio de empleador</th><td><span class="cn" aria-label="no incluido">&mdash;</span></td><td><span class="cy" aria-label="incluido">&#10003;</span></td></tr>
+      <tr><th scope="row">Consulta sobre residencia permanente / nacionalidad</th><td><span class="cn" aria-label="no incluido">&mdash;</span></td><td><span class="cy" aria-label="incluido">&#10003;</span></td></tr>
+      <tr><th scope="row">Gestión gratuita de determinadas solicitudes de prestaciones<br><small>prestación por enfermedad, maternidad, parental y de cuidados; prestación familiar; la ayuda 800+; asistencia social</small></th><td><span class="cn" aria-label="no incluido">&mdash;</span></td><td><span class="cy" aria-label="incluido">&#10003;</span></td></tr>
+      <tr><th scope="row">12 meses de apoyo después de la resolución</th><td><span class="cn" aria-label="no incluido">&mdash;</span></td><td><span class="cy" aria-label="incluido">&#10003;</span></td></tr>
+      <tr><th scope="row"><strong>Garantía de resolución favorable: devolución del 100% de los honorarios si la resolución final es denegatoria<a href="#gwarancja">*</a></strong></th><td><span class="cn" aria-label="no incluido">&mdash;</span></td><td><span class="cy cy-star" aria-label="incluido">&#9733;</span></td></tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td></td>
+          <td><a class="pk-btn" href="contacto.html">Elijo este</a></td>
+          <td><a class="pk-btn" href="contacto.html">Elijo este</a></td>
+        </tr>
+      </tfoot>
+    </table>
     </div>
-    <div>
-      WhatsApp / tel&eacute;fono: <a href="tel:+48539999549">+48 539 999 549</a><br>
-      Correo: <a href="mailto:office@cosc.org.pl">office@cosc.org.pl</a><br>
-      <a href="https://cosc.org.pl/">Versi&oacute;n en polaco (cosc.org.pl)</a>
+
+    <div class="pk-every">
+      <h2>Incluido en todos los paquetes</h2>
+      <ul>
+        <li>Una lista de documentos hecha para tu caso</li>
+        <li>Seguimiento del estado de tu expediente en la oficina</li>
+        <li>Respuesta a los requerimientos y aporte de lo que falta</li>
+        <li>Información sobre cada fase del procedimiento</li>
+        <li>Contacto directo con tu asesor jurídico</li>
+      </ul>
+    </div>
+
+    <p class="pk-trust">Cientos de extranjeros de Asia, América del Sur y África han confiado en nosotros.</p>
+
+    <div class="pk-etapy">
+      <h2>Cómo empezamos a trabajar juntos: las fases</h2>
+
+      <div class="et"><strong>Fase 1 — examen del caso.</strong> Revisamos sus documentos y nos preparamos para el caso. Para ello necesitamos:
+        <ul>
+          <li>su pasaporte;</li>
+          <li>los sellos de entrada en el territorio de la Unión Europea o, si no hay sello, la fecha de entrada;</li>
+          <li>la dirección y el teléfono de su empleador actual;</li>
+          <li>la confirmación de que está empleado legalmente y su permiso de trabajo.</li>
+        </ul>
+      </div>
+
+      <div class="et"><strong>Fase 2 — decisión del despacho.</strong> A partir de esos documentos decidimos si aceptamos el caso. No aceptamos casos sin una posibilidad real de terminar bien. Si el caso puede no resolverse en vía administrativa (en el trato con la oficina) y exigiría acudir a los tribunales, lo advertimos de antemano: la vía judicial supone costes muy elevados.</div>
+
+      <div class="et"><strong>Fase 3 — poder de representación.</strong> Aceptado el caso, el cliente firma un poder para que el despacho pueda actuar en su nombre ante las oficinas de extranjería.</div>
+
+      <div class="et"><strong>Fase 4 — elección del paquete.</strong> El cliente elige Standard o VIP y encarga la llevanza del caso. El servicio cubre todos los recursos ante los órganos administrativos.</div>
+    </div>
+
+    <div id="gwarancja">
+      <h2>* Garantía de resolución favorable (paquete VIP): condiciones</h2>
+
+      <p class="uwaga"><strong>Alcance.</strong> Solo el paquete VIP garantiza un desenlace favorable en vía administrativa: si la resolución final es denegatoria, el despacho devuelve el 100% de los honorarios pagados. <strong>El paquete Standard no incluye devolución de honorarios.</strong> La garantía cubre todos los recursos ante los órganos administrativos (incluido el recurso ante el órgano superior y la solicitud de reconsideración).</p>
+
+      <h3>La vía judicial</h3>
+      <p>Los recursos ante el tribunal contencioso-administrativo (WSA, NSA) quedan fuera de ambos paquetes y se presupuestan por separado; suponen costes bastante más altos.</p>
+
+      <h3>La devolución no cubre los casos en que:</h3>
+      <ul>
+        <li>el cliente no cumple los requisitos legales del permiso (por ejemplo, falta de base de estancia o del empleo exigido, o motivos de seguridad del Estado);</li>
+        <li>el cliente aportó documentos o información falsos o incompletos, los aportó con retraso u ocultó circunstancias relevantes;</li>
+        <li>el cliente no atendió los requerimientos de la oficina o las indicaciones del despacho en el plazo fijado;</li>
+        <li>tras otorgarse el poder y examinarse el expediente, resultó que el caso no tiene posibilidades en vía administrativa (agotadas las opciones de aclararlo con la oficina, de aportar documentos y el último grado de recurso) y solo queda la vía judicial;</li>
+        <li>durante el procedimiento cambió la situación de hecho o de derecho del cliente (por ejemplo, terminó el empleo, se trasladó a otro país o retiró la solicitud).</li>
+      </ul>
+
+      <h3>Base legal y tasas</h3>
+      <p>Contrato de prestación de servicios jurídicos conforme al art. 750 del Código civil polaco (texto refundido: Dz.U. 2026 poz. 795). Los precios se refieren a los honorarios por el servicio jurídico y no incluyen las tasas administrativas (impuesto de actos 440 zł, 100 zł, 17 zł) ni los costes de terceros (traducciones juradas, gastos notariales, tasas consulares). Pago: Standard, pago único; VIP, en 2 plazos. El alcance de cada paquete se fija en el contrato de servicios.</p>
+
+      <p>Este resumen es informativo y no constituye una oferta en el sentido del art. 66 del Código civil polaco.<br>Autor: Dariusz Włodarczyk Kancelaria TRC. Precios a fecha de: 28.10.2026.</p>
     </div>
   </div>
-  <p class="disc">Los contenidos de esta p&aacute;gina tienen car&aacute;cter informativo y no constituyen asesoramiento
-  jur&iacute;dico individual. Cada caso se eval&uacute;a por separado. Estado legal: 3 de agosto de 2026. Las cantidades y las listas
-  de documentos son orientativas &mdash; confirme siempre la informaci&oacute;n vigente en la oficina del voivodato
-  (<i>urz&#261;d wojew&oacute;dzki</i>) competente o en la Oficina de Extranjeros (<i>Urz&#261;d do Spraw Cudzoziemc&oacute;w</i>).<br>
-  Dariusz W&#322;odarczyk no es <i>adwokat</i> ni <i>radca prawny</i> (t&iacute;tulos profesionales protegidos en Polonia);
-  act&uacute;a como asesor jur&iacute;dico y representante en procedimientos administrativos conforme al art. 33 del
-  C&oacute;digo de Procedimiento Administrativo polaco.</p>
-</div>
+</section>
+
+<!-- Formularz kontaktowy → WhatsApp + zapis do arkusza Google -->
+<section class="lead-cta">
+  <style>
+    .lead-cta{background:linear-gradient(135deg,#0b2545,#13315c);color:#fff;padding:48px 0;margin-top:40px}
+    .lead-cta .wrap{max-width:720px;margin:0 auto;padding:0 20px}
+    .lead-cta h2{font-size:clamp(24px,3vw,34px);margin:0 0 8px;color:#fff}
+    .lead-cta p.sub{margin:0 0 22px;color:#dce4f5;font-size:15px}
+    .lead-cta form{display:grid;gap:14px}
+    .lead-cta label{display:block;font-size:14px;color:#eaf0fb;font-weight:600}
+    .lead-cta input,.lead-cta select,.lead-cta textarea{width:100%;margin-top:6px;padding:11px 13px;border:1px solid #cdd7ea;border-radius:10px;font:inherit;font-size:15px;background:#fff;color:#12233f;box-sizing:border-box}
+    .lead-cta textarea{resize:vertical}
+    .lead-cta .lc-consent{display:flex;gap:10px;align-items:flex-start;font-weight:400;font-size:13px;color:#dce4f5}
+    .lead-cta .lc-consent input{width:auto;margin-top:3px}
+    .lead-cta .lc-consent a{color:#ffd479}
+    .lead-cta button{background:#e3b23c;color:#12233f;border:0;border-radius:10px;padding:13px 18px;font-weight:700;font-size:16px;cursor:pointer}
+    .lead-cta button:hover{background:#f0c14b}
+    .lead-cta .lc-alt{display:inline-block;margin-top:4px;color:#cfe0ff;font-size:14px}
+  </style>
+  <div class="wrap">
+    <h2>Evaluación gratuita de tu caso</h2>
+    <p class="sub">Escribe en unas frases cuál es tu problema. Respondemos en 24 horas, en tu idioma.</p>
+
+    <!-- CZAT jako kanał pierwszego wyboru: 4 pytania zamiast pustego pola -->
+    <div class="czat-cta">
+      <div class="czat-cta-t">
+        <strong>¿No sabes cómo describir tu caso?</strong>
+        <span>Responde a 4 preguntas breves: tarda un minuto. También puedes contarlo de viva voz.</span>
+      </div>
+      <button type="button" class="czat-cta-btn" data-prc-otworz-czat="kontakt_karta">Cuéntanos tu caso en el chat →</button>
+    </div>
+    <form id="leadForm" novalidate>
+      <label>Nombre
+        <input type="text" name="imie" required placeholder="¿Cómo nos dirigimos a ti?">
+      </label>
+      <label>Teléfono / WhatsApp
+        <input type="tel" name="tel" placeholder="+48 …">
+      </label>
+      <label>Idioma de contacto
+        <select name="jezyk">
+          <option>Polski</option><option>English</option><option>Español</option><option>Português</option><option>Українська</option><option>Français</option>
+        </select>
+      </label>
+      <label>Describe tu caso
+        <textarea name="opis" rows="4" required placeholder="Por ejemplo: se me acaba la tarjeta de residencia, cambio de empleador, me han denegado…"></textarea>
+      </label>
+      <label class="lc-consent">
+        <input type="checkbox" name="zgoda" required>
+        <span>Acepto el contacto y el tratamiento de mis datos para responder a mi consulta, conforme a la <a href="polityka-prywatnosci.html">Política de privacidad</a>.</span>
+      </label>
+      <button type="submit">Enviar por WhatsApp →</button>
+      <a class="lc-alt" id="leadMail" href="mailto:office@cosc.org.pl">Prefiero enviar un correo</a>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>© 2026 Centrum Obsługi Spraw Cudzoziemców · Dariusz Włodarczyk Kancelaria TRC</div>
+      <div><a href="swiadczenia-cudzoziemcy.html">Prestaciones y ayudas</a> · <a href="baza-noclegowa.html">Alojamiento</a> · <a href="regulamin.html">Reglamento</a> · <a href="polityka-prywatnosci.html">Política de privacidad</a></div>
+    </div>
+    <div class="upd">El contenido de esta página es informativo y no constituye asesoramiento jurídico individual. Estado legal a: 07.07.2026. Última actualización: 28.10.2026. El polaco es la lengua de origen de este sitio.</div>
+  </div>
 </footer>
+
+<a class="wa-float" href="https://wa.me/48539999549" aria-label="Escríbenos por WhatsApp">✆</a>
+
 <script>
-(function(){
-  var b=document.querySelector('.csh-burger'),m=document.querySelector('.csh-menu');
-  if(b&&m){b.addEventListener('click',function(){m.classList.toggle('open');b.setAttribute('aria-expanded',m.classList.contains('open'));});}
-  var mb=document.querySelector('.csh-more-btn'),mo=document.querySelector('.csh-more');
-  if(mb&&mo){
-    mb.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();
-      var open=mo.classList.toggle('open');mb.setAttribute('aria-expanded',open);});
-    document.addEventListener('click',function(e){
-      if(!mo.contains(e.target)){mo.classList.remove('open');mb.setAttribute('aria-expanded','false');}});
-    document.addEventListener('keydown',function(e){
-      if(e.key==='Escape'){mo.classList.remove('open');mb.setAttribute('aria-expanded','false');}});
+// liczniki nabijające się przy scrollu
+const io=new IntersectionObserver(es=>es.forEach(e=>{
+  if(!e.isIntersecting)return;
+  if(e.target.classList.contains('trust')){
+    e.target.querySelectorAll('.cnt').forEach(c=>{
+      const to=+c.dataset.to,t0=performance.now(),dur=1400;
+      const tick=n=>{const p=Math.min(1,(n-t0)/dur);c.textContent=Math.round(to*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(tick)};
+      requestAnimationFrame(tick);
+    });
   }
+  e.target.classList.add('inview');io.unobserve(e.target);
+}),{threshold:.35});
+document.querySelectorAll('.trust,.path-sec,.ct-demo,.mascot').forEach(el=>io.observe(el));
+// menu mobilne (hamburger)
+(function(){var b=document.querySelector('.burger'),m=document.querySelector('.menu');if(b&&m){b.addEventListener('click',function(){m.classList.toggle('open')});m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open')})});}})();
+(function(){var h=document.querySelector('header');if(!h)return;function set(){document.documentElement.style.setProperty('--hh',h.offsetHeight+'px');}set();window.addEventListener('resize',set);window.addEventListener('load',set);if(document.fonts&&document.fonts.ready){document.fonts.ready.then(set);}})();
+(function(){var mores=document.querySelectorAll('.more');if(!mores.length)return;function closeAll(except){mores.forEach(function(m){if(m===except)return;m.classList.remove('open');var b=m.querySelector('.more-btn');if(b)b.setAttribute('aria-expanded','false');});}mores.forEach(function(more){var btn=more.querySelector('.more-btn');if(!btn)return;btn.addEventListener('click',function(e){e.stopPropagation();var open=more.classList.toggle('open');btn.setAttribute('aria-expanded',open?'true':'false');closeAll(more);});more.querySelectorAll('.more-menu a').forEach(function(a){a.addEventListener('click',function(){more.classList.remove('open');btn.setAttribute('aria-expanded','false');});});});document.addEventListener('click',function(e){var inside=false;mores.forEach(function(m){if(m.contains(e.target))inside=true;});if(!inside)closeAll(null);});document.addEventListener('keydown',function(e){if(e.key==='Escape')closeAll(null);});})();
+// formularz kontaktowy → WhatsApp (prefill) + fallback e-mail
+(function(){
+  var WA='48539999549', MAIL='office@cosc.org.pl';
+  var APPS_SCRIPT_URL = window.COSC_ANKIETY.URL; // adres w formularz-silnik.js
+  function zapiszLead(f){
+    try{
+      var d=new FormData(f);
+      var payload={
+        _formularz:'Kontakt (cennik)',
+        _data_wyslania:new Date().toISOString(),
+        rodzaj_wniosku:'Zapytanie kontaktowe',
+        imie:(d.get('imie')||'').trim(),
+        telefon_wlasny:(d.get('tel')||'').trim(),
+        jezyk_kontaktu:(d.get('jezyk')||'').trim(),
+        uwagi:(d.get('opis')||'').trim(),
+        rodo_zgoda:(f.zgoda&&f.zgoda.checked)?'tak':'nie'
+      };
+      fetch(APPS_SCRIPT_URL,{method:'POST',mode:'cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload)}).catch(function(){});
+    }catch(_e){}
+  }
+  function build(f){
+    var d=new FormData(f);
+    var imie=(d.get('imie')||'').trim();
+    var tel=(d.get('tel')||'').trim();
+    var jezyk=(d.get('jezyk')||'').trim();
+    var opis=(d.get('opis')||'').trim();
+    var t='Dzień dobry';
+    if(imie)t+=', nazywam się '+imie;
+    t+='.\n';
+    if(jezyk)t+='Język kontaktu: '+jezyk+'\n';
+    if(tel)t+='Telefon: '+tel+'\n';
+    if(opis)t+='Moja sprawa: '+opis;
+    return t;
+  }
+  // delegacja na document — odporne na przerenderowanie przez i18n
+  document.addEventListener('submit',function(e){
+    var f=e.target;if(!f||f.id!=='leadForm')return;
+    e.preventDefault();
+    if(!f.imie.value.trim()||!f.opis.value.trim()){f.reportValidity&&f.reportValidity();return;}
+    if(!f.zgoda.checked){f.zgoda.reportValidity&&f.zgoda.reportValidity();return;}
+    zapiszLead(f); // najpierw zapis do arkusza
+    window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(build(f)),'_blank'); // potem WhatsApp
+  });
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('#leadMail');if(!a)return;
+    var f=document.getElementById('leadForm');if(!f)return;
+    a.href='mailto:'+MAIL+'?subject='+encodeURIComponent('Zapytanie ze strony COSC')+'&body='+encodeURIComponent(build(f));
+  });
 })();
 </script>
-<!-- Czat — wstępne rozpoznanie sprawy (kolejność plików istotna) -->
-<script src="/czat-jezyki.js" defer></script>
-<script src="/czat-widget.js"
-        data-endpoint="https://script.google.com/macros/s/AKfycbyOqUYYIvW4OCwY79AFqp2j5BXUTdef43tK42FrsEBVSmFH4hB3lxzr3Oslg9OkO24/exec"
-        data-whatsapp="48539999549"
-        data-akcent="#D4213D"
-        data-tlo="#16244C"
-        data-kroj="'IBM Plex Sans', sans-serif"
-        data-jezyk="es"
-        defer></script>
+<script src="../site-header.js"></script>
 </body>
 </html>
