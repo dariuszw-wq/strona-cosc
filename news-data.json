@@ -1,6 +1,39 @@
 {
-  "updated": "2026-10-29T09:30:00+01:00",
+  "updated": "2026-10-29T08:24:28+01:00",
   "items": [
+    {
+      "id": "2026-10-29-cosc-800-plus-aktywnosc-zawodowa",
+      "added": "2026-10-29",
+      "category": "Legislacja",
+      "scope": "PL",
+      "source_name": "COSC",
+      "author": "asystent redakcyjny COSC (AI), red. Dariusz Włodarczyk",
+      "url": "https://cosc.org.pl/artykul-800-plus-cudzoziemiec-aktywnosc-zawodowa.html",
+      "title": "800+ dla cudzoziemca bez pracy: trzy ustawowe wyjątki i spór z ZUS",
+      "summary": "Od 1 lutego 2026 r. cudzoziemiec musi być aktywny zawodowo, żeby dostać świadczenie wychowawcze (art. 1 ust. 2a ustawy z 11 lutego 2016 r., t.j. Dz.U. z 2026 r. poz. 508). Ustawa zna trzy wyjątki, a sądy administracyjne czytają je szerzej niż ZUS: orzeczenie o niepełnosprawności jednego dziecka ma zwalniać rodzica z tego warunku także wobec pozostałych dzieci. Wyjaśniamy przepis, spór i terminy na odwołanie.",
+      "t": {
+        "en": {
+          "title": "800+ for a foreigner without a job: three statutory exceptions",
+          "summary": "Since 1 February 2026 a foreigner must be economically active to receive the child benefit (Article 1(2a) of the Act of 11 February 2016, consolidated text: Dz.U. 2026 item 508). The Act provides three exceptions, and the administrative courts read them more broadly than ZUS: a disability certificate held by one child should release the parent from that condition for the remaining children as well. We explain the provision, the dispute and the appeal deadlines."
+        },
+        "es": {
+          "title": "800+ para un extranjero sin trabajo: tres excepciones legales",
+          "summary": "Desde el 1 de febrero de 2026 el extranjero debe estar activo laboralmente para recibir la prestación (art. 1 ap. 2a de la Ley de 11 de febrero de 2016, texto refundido: Dz.U. 2026 pos. 508). La ley prevé tres excepciones y los tribunales administrativos las interpretan de forma más amplia que ZUS: el certificado de discapacidad de un hijo debe eximir al progenitor de ese requisito también respecto de los demás hijos. Explicamos la norma, el conflicto y los plazos de recurso."
+        },
+        "uk": {
+          "title": "800+ для іноземця без роботи: три винятки в законі",
+          "summary": "Від 1 лютого 2026 р. іноземець має бути економічно активним, щоб отримати виховну виплату (ст. 1 ч. 2a закону від 11 лютого 2016 р., єдиний текст: Dz.U. 2026 поз. 508). Закон передбачає три винятки, а адміністративні суди тлумачать їх ширше, ніж ZUS: посвідчення про інвалідність однієї дитини має звільняти батьків від цієї умови також щодо решти дітей. Пояснюємо норму, спір і строки на оскарження."
+        },
+        "ru": {
+          "title": "800+ для иностранца без работы: три исключения в законе",
+          "summary": "С 1 февраля 2026 г. иностранец должен быть экономически активен, чтобы получить воспитательную выплату (ст. 1 ч. 2a закона от 11 февраля 2016 г., единый текст: Dz.U. 2026 поз. 508). Закон предусматривает три исключения, а административные суды толкуют их шире, чем ZUS: справка об инвалидности одного ребёнка должна освобождать родителя от этого условия и в отношении остальных детей. Объясняем норму, спор и сроки обжалования."
+        },
+        "fr": {
+          "title": "800+ pour un étranger sans emploi : trois exceptions légales",
+          "summary": "Depuis le 1er février 2026, l’étranger doit être actif professionnellement pour percevoir la prestation (art. 1 al. 2a de la loi du 11 février 2016, texte unifié : Dz.U. 2026 pos. 508). La loi prévoit trois exceptions et les tribunaux administratifs les lisent plus largement que la ZUS : le certificat de handicap d’un enfant devrait dispenser le parent de cette condition également pour les autres enfants. Nous expliquons la règle, le litige et les délais de recours."
+        }
+      }
+    },
     {
       "id": "2026-10-29-falszywe-zaswiadczenia-o-nauce-zezwolenia-pobyt-23-zarzuty",
       "added": "2026-10-29",
