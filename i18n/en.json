@@ -2,11 +2,11 @@
  "_meta": {
   "lang": "en",
   "name": "English",
-  "count": 4844,
-  "filled": 4843
+  "count": 4864,
+  "filled": 4863
  },
  "strings": {
-  "⚠ Od 27.04.2026 wnioski o pobyt składa się <strong>wyłącznie elektronicznie przez system MOS</strong>. <a href=\"#mos\">Pomożemy złożyć go bez błędów →</a>": "⚠ From 27.04.2026, residence applications are filed <strong>exclusively online via the MOS system</strong>. <a href=\"#mos\">We'll file it for you, error-free →</a>",
+  "⚠ Od 27.04.2026 wnioski o pobyt składa się <strong>wyłącznie elektronicznie przez system MOS</strong>. <a href=\"#mos\">Pomożemy złożyć go bez błędów →</a>": "⚠ From 27.04.2026, residence applications are filed <strong>exclusively online via the MOS system</strong>. <a href=\"#mos\">We will help you file it, with no mistakes →</a>",
   "Prawnik dla cudzoziemców w Polsce.": "A lawyer for foreigners in Poland.",
   "Karta pobytu i legalizacja pracy w Polsce.<br><em>Skuteczna pomoc albo zwrot kosztów.</em>": "Residence card and work legalisation in Poland.<br><em>Effective help or your money back.</em>",
   "Twoja rodzina może przestać się martwić — kartą pobytu zajmujemy się my. Skuteczna pomoc albo zwrot kosztów*.": "Your family can stop worrying — we take care of your residence card. Effective help or a refund*.",
@@ -47,7 +47,7 @@
   "Odmowa, cofnięcie, pobyt nielegalny": "Refusal, withdrawal, illegal stay",
   "Odmowa wydania karty pobytu lub cofnięcie zezwolenia to nie koniec. Przygotowujemy odwołania i szukamy dalszego rozwiązania prawnego.": "A refusal of a residence card or withdrawal of a permit is not the end. We prepare appeals and look for further legal solutions.",
   "Zanim oddasz komuś swoją sprawę": "Before you hand your case to someone",
-  "Kto lepiej zrobi Twoją kartę pobytu — niezależny prawnik czy pracodawca?": "Who will handle your residence card better — an independent lawyer or your employer?",
+  "Kto lepiej zrobi Twoją kartę pobytu — niezależny prawnik czy pracodawca?": "Who will handle your residence card better — an independent legal adviser or your employer?",
   "Obie drogi są legalne. Różnica jest jedna: <strong style=\"color:#ffd34d\">czyj interes reprezentuje osoba prowadząca Twoją sprawę</strong> — i kto ma Twoje dokumenty, gdy zmieniasz pracę.": "Both paths are legal. There is one difference: <strong style=\"color:#ffd34d\">whose interest the person handling your case represents</strong> — and who holds your documents when you change jobs.",
   "<a class=\"btn btn-gold\" href=\"karta-pobytu-prawnik-czy-pracodawca.html\">Zobacz porównanie i swoje prawa →</a>": "<a class=\"btn btn-gold\" href=\"karta-pobytu-prawnik-czy-pracodawca.html\">See the comparison and your rights →</a>",
   "Bezpłatne narzędzie": "Free tool",
@@ -1821,7 +1821,7 @@
   "Katalog ma charakter informacyjny i nie stanowi oferty w rozumieniu Kodeksu cywilnego ani porady prawnej. Obiekty prowadzą podmioty zewnętrzne. Data ostatniej aktualizacji listy: <span id=\"lastupd\">—</span>.": "The catalogue is for information purposes and does not constitute an offer within the meaning of the Civil Code, nor legal advice. The properties are run by external entities. List last updated: <span id=\"lastupd\">—</span>.",
   "Baza noclegowa — kwatery i hostele pracownicze w Polsce | Centrum Obsługi Spraw Cudzoziemców": "Accommodation base — workers' lodgings and hostels in Poland | Centre for Foreigners' Affairs",
   "Katalog baz noclegowych i hosteli pracowniczych w Polsce — kwatery dla pracowników i cudzoziemców w największych miastach. Dane orientacyjne z linkiem do dostawcy.": "Catalogue of accommodation bases and workers' hostels in Poland — lodgings for workers and foreigners in the largest cities. Indicative data with a link to the provider.",
-  "⚠ Od 27.04.2026 wnioski o pobyt składa się <strong>wyłącznie elektronicznie przez system MOS</strong>. <a href=\"index.html#mos\">Pomożemy złożyć go bez błędów →</a>": "⚠ From 27.04.2026 residence applications are filed <strong>exclusively electronically via the MOS system</strong>. <a href=\"index.html#mos\">We will file it for you, without errors →</a>",
+  "⚠ Od 27.04.2026 wnioski o pobyt składa się <strong>wyłącznie elektronicznie przez system MOS</strong>. <a href=\"index.html#mos\">Pomożemy złożyć go bez błędów →</a>": "⚠ From 27.04.2026 residence applications are filed <strong>exclusively electronically via the MOS system</strong>. <a href=\"index.html#mos\">We will help you file it, with no mistakes →</a>",
   "← Strona główna": "← Home",
   "Pakiety i ceny": "Packages and prices",
   "Wybierz, ile spokoju i bezpieczeństwa potrzebujesz. Skuteczna pomoc albo zwrot kosztów — na piśmie, w pakietach z reprezentacją.": "Choose how much peace of mind and security you need. Effective help or a refund — in writing, in packages with representation.",
@@ -4849,6 +4849,26 @@
   "<a href=\"artykul-dowod-doreczenia-wezwania-urzad.html\">Urząd twierdzi, że wysłał wezwanie. Listu nie było, koperty w aktach też nie</a>": "<a href=\"artykul-dowod-doreczenia-wezwania-urzad.html\">The office claims it sent a call. There was no letter, and no envelope in the file either</a>",
   "<a href=\"artykul-zaswiadczenie-zamiast-stempla.html\">Zaświadczenie o złożeniu wniosku zamiast stempla w paszporcie — co potwierdza i czego nie</a>": "<a href=\"artykul-zaswiadczenie-zamiast-stempla.html\">A certificate of filing instead of a stamp in the passport — what it confirms and what it does not</a>",
   "Kalkulator Legalności Pobytu w Polsce (Zasada 90/180 dni)": "Legal Stay Calculator for Poland (90/180-Day Rule)",
-  "Kalkulator Legalności Pobytu w Polsce (Zasada 90/180 dni) — Centrum Obsługi Spraw Cudzoziemców": "Legal Stay Calculator for Poland (90/180-Day Rule) — Centrum Obsługi Spraw Cudzoziemców"
+  "Kalkulator Legalności Pobytu w Polsce (Zasada 90/180 dni) — Centrum Obsługi Spraw Cudzoziemców": "Legal Stay Calculator for Poland (90/180-Day Rule) — Centrum Obsługi Spraw Cudzoziemców",
+  "<i></i>Prawnik dla cudzoziemców w Polsce": "<i></i>Legal help for foreigners in Poland",
+  "Karta pobytu i legalizacja pracy w Polsce.<br><span>Skuteczna pomoc albo zwrot kosztów.</span>": "Residence card and legal work in Poland.<br><span>Effective help or your money back.</span>",
+  "Prowadzimy Twoją sprawę o kartę pobytu od wniosku w systemie MOS aż po odbiór karty. W pakiecie VIP przy ostatecznej odmowie zwracamy 100% wynagrodzenia*.": "We handle your residence card case from the MOS application to collecting the card. In the VIP package, if the refusal is final, we return 100% of our fee*.",
+  "<a class=\"hx-btn hx-btn-primary\" href=\"kontakt.html\">Umów bezpłatną konsultację</a> <a class=\"hx-btn hx-btn-ghost\" href=\"cennik.html\">Zobacz pakiety i ceny</a>": "<a class=\"hx-btn hx-btn-primary\" href=\"kontakt.html\">Book a free consultation</a> <a class=\"hx-btn hx-btn-ghost\" href=\"cennik.html\">See packages and prices</a>",
+  "<strong><span id=\"hx-licznik\" data-od=\"2026-07-31\" data-baza=\"1240\">1330</span>+</strong><span>złożonych wniosków</span>": "<strong><span id=\"hx-licznik\" data-od=\"2026-07-31\" data-baza=\"1240\">1330</span>+</strong><span>applications filed</span>",
+  "<strong>6</strong><span>języków obsługi</span>": "<strong>6</strong><span>service languages</span>",
+  "<strong>100%</strong><span>zwrotu przy odmowie — pakiet VIP*</span>": "<strong>100%</strong><span>refund if refused — VIP package*</span>",
+  "<span>Od 27.04.2026</span> wnioski o pobyt składa się wyłącznie elektronicznie przez system MOS — <a href=\"#mos\">pomożemy złożyć go bez błędów →</a><br> * Zwrot wynagrodzenia dotyczy wyłącznie pakietu VIP i postępowania administracyjnego. Nie obejmuje m.in. spraw, w których nie są spełnione ustawowe przesłanki udzielenia zezwolenia, ani drogi sądowej. <a href=\"cennik.html\">Pełne warunki zwrotu →</a>": "<span>Since 27 April 2026</span> residence applications are filed online only, through the MOS system — <a href=\"#mos\">we will help you file it, with no mistakes →</a><br> * The refund covers only the VIP package and administrative proceedings. It does not cover, among others, cases where the statutory conditions for the permit are not met, or court proceedings. <a href=\"cennik.html\">Full refund terms →</a>",
+  "<span class=\"hx-pol\">POL</span> <span class=\"hx-holo\"></span> <span class=\"hx-card-title\">KARTA POBYTU</span> <span class=\"hx-card-no\">ZR2002387</span>": "<span class=\"hx-pol\">POL</span> <span class=\"hx-holo\"></span> <span class=\"hx-card-title\">RESIDENCE CARD</span> <span class=\"hx-card-no\">ZR2002387</span>",
+  "<img class=\"hx-photo-face\" src=\"animacje_kolumbijka/usmiech-poster.jpg\" alt=\"Wizualizacja karty pobytu — pole ze zdjęciem\" width=\"736\" height=\"912\" loading=\"lazy\" decoding=\"async\"> <span class=\"hx-photo-tag\">POL</span>": "<img class=\"hx-photo-face\" src=\"animacje_kolumbijka/usmiech-poster.jpg\" alt=\"Residence card illustration — photo field\" width=\"736\" height=\"912\" loading=\"lazy\" decoding=\"async\"> <span class=\"hx-photo-tag\">POL</span>",
+  "<span>NAZWISKO I IMIĘ / SURNAME AND FORNAME(S)</span> <b>TWOJE NAZWISKO</b> <b class=\"hx-thin\">Imię</b>": "<span>SURNAME AND FORENAME(S)</span> <b>YOUR SURNAME</b> <b class=\"hx-thin\">Name</b>",
+  "<span>RODZAJ ZEZWOLENIA</span><b>POBYT CZASOWY</b>": "<span>TYPE OF PERMIT</span><b>TEMPORARY RESIDENCE</b>",
+  "<span>DATA WAŻNOŚCI</span><b>17 07 2029</b>": "<span>VALID UNTIL</span><b>17 07 2029</b>",
+  "<span>DOSTĘP DO RYNKU PRACY</span><b>TAK</b>": "<span>ACCESS TO LABOUR MARKET</span><b>YES</b>",
+  "<span>OBYWATELSTWO</span><b>UKR</b>": "<span>NATIONALITY</span><b>UKR</b>",
+  "<span>Decyzja</span><strong>pozytywna</strong>": "<span>Decision</span><strong>granted</strong>",
+  "<b>Wniosek złożony w MOS</b><span>bez błędów formalnych</span>": "<b>Application filed in MOS</b><span>no formal errors</span>",
+  "<span class=\"hx-scroll-mouse\"><i></i></span> <span class=\"hx-scroll-label\">Przewiń</span>": "<span class=\"hx-scroll-mouse\"><i></i></span> <span class=\"hx-scroll-label\">Scroll</span>",
+  "<button type=\"button\" data-prc-otworz-czat=\"baner\" style=\"cursor:pointer;border:none;font-family:inherit;font-size:16.5px;font-weight:700;color:#fff;background:#D4213D;border-radius:12px;padding:16px 30px;box-shadow:0 10px 26px rgba(212,33,61,.4)\">Opisz sprawę w czacie →</button> <span style=\"color:#b9c6e4;font-size:12.5px;text-align:center\">1 minuta · bezpłatnie · bez zobowiązań</span>": "<button type=\"button\" data-prc-otworz-czat=\"baner\" style=\"cursor:pointer;border:none;font-family:inherit;font-size:16.5px;font-weight:700;color:#fff;background:#D4213D;border-radius:12px;padding:16px 30px;box-shadow:0 10px 26px rgba(212,33,61,.4)\">Describe your case in chat →</button> <span style=\"color:#b9c6e4;font-size:12.5px;text-align:center\">1 minute · free · no obligation</span>",
+  "<a href=\"swiadczenia-cudzoziemcy.html\">Świadczenia i zasiłki</a> · <a href=\"baza-noclegowa.html\">Baza noclegowa</a> · <a href=\"regulamin.html\">Regulamin</a> · <a href=\"polityka-prywatnosci.html\">Polityka prywatności</a> · <a href=\"https://www.facebook.com/CentrumObslugiSprawCudzoziemcow\" target=\"_blank\" rel=\"noopener\">Jesteśmy na Facebooku</a>": "<a href=\"swiadczenia-cudzoziemcy.html\">Benefits and allowances</a> · <a href=\"baza-noclegowa.html\">Accommodation</a> · <a href=\"regulamin.html\">Terms of Service</a> · <a href=\"polityka-prywatnosci.html\">Privacy policy</a> · <a href=\"https://www.facebook.com/CentrumObslugiSprawCudzoziemcow\" target=\"_blank\" rel=\"noopener\">Find us on Facebook</a>"
  }
 }

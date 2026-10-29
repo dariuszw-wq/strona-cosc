@@ -2,9 +2,9 @@
  "_meta": {
   "lang": "pl",
   "name": "Polski",
-  "count": 525,
+  "count": 545,
   "note": "Klucz = tekst źródłowy PL (może zawierać HTML). Pusta wartość = pokazuje polski oryginał.",
-  "filled": 525
+  "filled": 545
  },
  "strings": {
   "⚠ Od 27.04.2026 wnioski o pobyt składa się <strong>wyłącznie elektronicznie przez system MOS</strong>. <a href=\"#mos\">Pomożemy złożyć go bez błędów →</a>": "⚠ Od 27.04.2026 wnioski o pobyt składa się <strong>wyłącznie elektronicznie przez system MOS</strong>. <a href=\"#mos\">Pomożemy złożyć go bez błędów →</a>",
@@ -531,6 +531,26 @@
   "Zlecenie studenta bez ZUS — zasady, nadużycia, kary | COSC": "Zlecenie studenta bez ZUS — zasady, nadużycia, kary | COSC",
   "Umowa zlecenia ze studentem lub uczniem do 26 lat: brak składek ZUS (art. 6 ust. 4 u.s.u.s.), praca cudzoziemca bez zezwolenia, kontrole ZUS, opłata dodatkowa do 100% i grzywna do 46 000 zł.": "Umowa zlecenia ze studentem lub uczniem do 26 lat: brak składek ZUS (art. 6 ust. 4 u.s.u.s.), praca cudzoziemca bez zezwolenia, kontrole ZUS, opłata dodatkowa do 100% i grzywna do 46 000 zł.",
   "Kalkulator Legalności Pobytu w Polsce (Zasada 90/180 dni)": "Kalkulator Legalności Pobytu w Polsce (Zasada 90/180 dni)",
-  "Kalkulator Legalności Pobytu w Polsce (Zasada 90/180 dni) — Centrum Obsługi Spraw Cudzoziemców": "Kalkulator Legalności Pobytu w Polsce (Zasada 90/180 dni) — Centrum Obsługi Spraw Cudzoziemców"
+  "Kalkulator Legalności Pobytu w Polsce (Zasada 90/180 dni) — Centrum Obsługi Spraw Cudzoziemców": "Kalkulator Legalności Pobytu w Polsce (Zasada 90/180 dni) — Centrum Obsługi Spraw Cudzoziemców",
+  "<i></i>Prawnik dla cudzoziemców w Polsce": "<i></i>Prawnik dla cudzoziemców w Polsce",
+  "Karta pobytu i legalizacja pracy w Polsce.<br><span>Skuteczna pomoc albo zwrot kosztów.</span>": "Karta pobytu i legalizacja pracy w Polsce.<br><span>Skuteczna pomoc albo zwrot kosztów.</span>",
+  "Prowadzimy Twoją sprawę o kartę pobytu od wniosku w systemie MOS aż po odbiór karty. W pakiecie VIP przy ostatecznej odmowie zwracamy 100% wynagrodzenia*.": "Prowadzimy Twoją sprawę o kartę pobytu od wniosku w systemie MOS aż po odbiór karty. W pakiecie VIP przy ostatecznej odmowie zwracamy 100% wynagrodzenia*.",
+  "<a class=\"hx-btn hx-btn-primary\" href=\"kontakt.html\">Umów bezpłatną konsultację</a> <a class=\"hx-btn hx-btn-ghost\" href=\"cennik.html\">Zobacz pakiety i ceny</a>": "<a class=\"hx-btn hx-btn-primary\" href=\"kontakt.html\">Umów bezpłatną konsultację</a> <a class=\"hx-btn hx-btn-ghost\" href=\"cennik.html\">Zobacz pakiety i ceny</a>",
+  "<strong><span id=\"hx-licznik\" data-od=\"2026-07-31\" data-baza=\"1240\">1330</span>+</strong><span>złożonych wniosków</span>": "<strong><span id=\"hx-licznik\" data-od=\"2026-07-31\" data-baza=\"1240\">1330</span>+</strong><span>złożonych wniosków</span>",
+  "<strong>6</strong><span>języków obsługi</span>": "<strong>6</strong><span>języków obsługi</span>",
+  "<strong>100%</strong><span>zwrotu przy odmowie — pakiet VIP*</span>": "<strong>100%</strong><span>zwrotu przy odmowie — pakiet VIP*</span>",
+  "<span>Od 27.04.2026</span> wnioski o pobyt składa się wyłącznie elektronicznie przez system MOS — <a href=\"#mos\">pomożemy złożyć go bez błędów →</a><br> * Zwrot wynagrodzenia dotyczy wyłącznie pakietu VIP i postępowania administracyjnego. Nie obejmuje m.in. spraw, w których nie są spełnione ustawowe przesłanki udzielenia zezwolenia, ani drogi sądowej. <a href=\"cennik.html\">Pełne warunki zwrotu →</a>": "<span>Od 27.04.2026</span> wnioski o pobyt składa się wyłącznie elektronicznie przez system MOS — <a href=\"#mos\">pomożemy złożyć go bez błędów →</a><br> * Zwrot wynagrodzenia dotyczy wyłącznie pakietu VIP i postępowania administracyjnego. Nie obejmuje m.in. spraw, w których nie są spełnione ustawowe przesłanki udzielenia zezwolenia, ani drogi sądowej. <a href=\"cennik.html\">Pełne warunki zwrotu →</a>",
+  "<span class=\"hx-pol\">POL</span> <span class=\"hx-holo\"></span> <span class=\"hx-card-title\">KARTA POBYTU</span> <span class=\"hx-card-no\">ZR2002387</span>": "<span class=\"hx-pol\">POL</span> <span class=\"hx-holo\"></span> <span class=\"hx-card-title\">KARTA POBYTU</span> <span class=\"hx-card-no\">ZR2002387</span>",
+  "<img class=\"hx-photo-face\" src=\"animacje_kolumbijka/usmiech-poster.jpg\" alt=\"Wizualizacja karty pobytu — pole ze zdjęciem\" width=\"736\" height=\"912\" loading=\"lazy\" decoding=\"async\"> <span class=\"hx-photo-tag\">POL</span>": "<img class=\"hx-photo-face\" src=\"animacje_kolumbijka/usmiech-poster.jpg\" alt=\"Wizualizacja karty pobytu — pole ze zdjęciem\" width=\"736\" height=\"912\" loading=\"lazy\" decoding=\"async\"> <span class=\"hx-photo-tag\">POL</span>",
+  "<span>NAZWISKO I IMIĘ / SURNAME AND FORNAME(S)</span> <b>TWOJE NAZWISKO</b> <b class=\"hx-thin\">Imię</b>": "<span>NAZWISKO I IMIĘ / SURNAME AND FORNAME(S)</span> <b>TWOJE NAZWISKO</b> <b class=\"hx-thin\">Imię</b>",
+  "<span>RODZAJ ZEZWOLENIA</span><b>POBYT CZASOWY</b>": "<span>RODZAJ ZEZWOLENIA</span><b>POBYT CZASOWY</b>",
+  "<span>DATA WAŻNOŚCI</span><b>17 07 2029</b>": "<span>DATA WAŻNOŚCI</span><b>17 07 2029</b>",
+  "<span>DOSTĘP DO RYNKU PRACY</span><b>TAK</b>": "<span>DOSTĘP DO RYNKU PRACY</span><b>TAK</b>",
+  "<span>OBYWATELSTWO</span><b>UKR</b>": "<span>OBYWATELSTWO</span><b>UKR</b>",
+  "<span>Decyzja</span><strong>pozytywna</strong>": "<span>Decyzja</span><strong>pozytywna</strong>",
+  "<b>Wniosek złożony w MOS</b><span>bez błędów formalnych</span>": "<b>Wniosek złożony w MOS</b><span>bez błędów formalnych</span>",
+  "<span class=\"hx-scroll-mouse\"><i></i></span> <span class=\"hx-scroll-label\">Przewiń</span>": "<span class=\"hx-scroll-mouse\"><i></i></span> <span class=\"hx-scroll-label\">Przewiń</span>",
+  "<button type=\"button\" data-prc-otworz-czat=\"baner\" style=\"cursor:pointer;border:none;font-family:inherit;font-size:16.5px;font-weight:700;color:#fff;background:#D4213D;border-radius:12px;padding:16px 30px;box-shadow:0 10px 26px rgba(212,33,61,.4)\">Opisz sprawę w czacie →</button> <span style=\"color:#b9c6e4;font-size:12.5px;text-align:center\">1 minuta · bezpłatnie · bez zobowiązań</span>": "<button type=\"button\" data-prc-otworz-czat=\"baner\" style=\"cursor:pointer;border:none;font-family:inherit;font-size:16.5px;font-weight:700;color:#fff;background:#D4213D;border-radius:12px;padding:16px 30px;box-shadow:0 10px 26px rgba(212,33,61,.4)\">Opisz sprawę w czacie →</button> <span style=\"color:#b9c6e4;font-size:12.5px;text-align:center\">1 minuta · bezpłatnie · bez zobowiązań</span>",
+  "<a href=\"swiadczenia-cudzoziemcy.html\">Świadczenia i zasiłki</a> · <a href=\"baza-noclegowa.html\">Baza noclegowa</a> · <a href=\"regulamin.html\">Regulamin</a> · <a href=\"polityka-prywatnosci.html\">Polityka prywatności</a> · <a href=\"https://www.facebook.com/CentrumObslugiSprawCudzoziemcow\" target=\"_blank\" rel=\"noopener\">Jesteśmy na Facebooku</a>": "<a href=\"swiadczenia-cudzoziemcy.html\">Świadczenia i zasiłki</a> · <a href=\"baza-noclegowa.html\">Baza noclegowa</a> · <a href=\"regulamin.html\">Regulamin</a> · <a href=\"polityka-prywatnosci.html\">Polityka prywatności</a> · <a href=\"https://www.facebook.com/CentrumObslugiSprawCudzoziemcow\" target=\"_blank\" rel=\"noopener\">Jesteśmy na Facebooku</a>"
  }
 }

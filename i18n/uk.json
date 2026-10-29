@@ -2,8 +2,8 @@
  "_meta": {
   "lang": "uk",
   "name": "Українська",
-  "count": 4844,
-  "filled": 4843
+  "count": 4864,
+  "filled": 4863
  },
  "strings": {
   "⚠ Od 27.04.2026 wnioski o pobyt składa się <strong>wyłącznie elektronicznie przez system MOS</strong>. <a href=\"#mos\">Pomożemy złożyć go bez błędów →</a>": "⚠ Від 27.04.2026 заяви на побит подаються <strong>виключно електронно через систему MOS</strong>. <a href=\"#mos\">Допоможемо подати її без помилок →</a>",
@@ -4849,6 +4849,26 @@
   "<a href=\"artykul-dowod-doreczenia-wezwania-urzad.html\">Urząd twierdzi, że wysłał wezwanie. Listu nie było, koperty w aktach też nie</a>": "<a href=\"artykul-dowod-doreczenia-wezwania-urzad.html\">Установа стверджує, що надіслала виклик. Листа не було, конверта в справі теж</a>",
   "<a href=\"artykul-zaswiadczenie-zamiast-stempla.html\">Zaświadczenie o złożeniu wniosku zamiast stempla w paszporcie — co potwierdza i czego nie</a>": "<a href=\"artykul-zaswiadczenie-zamiast-stempla.html\">Довідка про подання заяви замість штампа в паспорті — що вона підтверджує, а що ні</a>",
   "Kalkulator Legalności Pobytu w Polsce (Zasada 90/180 dni)": "Калькулятор легальності перебування в Польщі (правило 90/180 днів)",
-  "Kalkulator Legalności Pobytu w Polsce (Zasada 90/180 dni) — Centrum Obsługi Spraw Cudzoziemców": "Калькулятор легальності перебування в Польщі (правило 90/180 днів) — Centrum Obsługi Spraw Cudzoziemców"
+  "Kalkulator Legalności Pobytu w Polsce (Zasada 90/180 dni) — Centrum Obsługi Spraw Cudzoziemców": "Калькулятор легальності перебування в Польщі (правило 90/180 днів) — Centrum Obsługi Spraw Cudzoziemców",
+  "<i></i>Prawnik dla cudzoziemców w Polsce": "<i></i>Юрист для іноземців у Польщі",
+  "Karta pobytu i legalizacja pracy w Polsce.<br><span>Skuteczna pomoc albo zwrot kosztów.</span>": "Карта побиту та легалізація роботи в Польщі.<br><span>Ефективна допомога або повернення коштів.</span>",
+  "Prowadzimy Twoją sprawę o kartę pobytu od wniosku w systemie MOS aż po odbiór karty. W pakiecie VIP przy ostatecznej odmowie zwracamy 100% wynagrodzenia*.": "Ведемо вашу справу про карту побиту від заяви в системі MOS до отримання картки. У пакеті VIP при остаточній відмові повертаємо 100% винагороди*.",
+  "<a class=\"hx-btn hx-btn-primary\" href=\"kontakt.html\">Umów bezpłatną konsultację</a> <a class=\"hx-btn hx-btn-ghost\" href=\"cennik.html\">Zobacz pakiety i ceny</a>": "<a class=\"hx-btn hx-btn-primary\" href=\"kontakt.html\">Записатися на безкоштовну консультацію</a> <a class=\"hx-btn hx-btn-ghost\" href=\"cennik.html\">Переглянути пакети та ціни</a>",
+  "<strong><span id=\"hx-licznik\" data-od=\"2026-07-31\" data-baza=\"1240\">1330</span>+</strong><span>złożonych wniosków</span>": "<strong><span id=\"hx-licznik\" data-od=\"2026-07-31\" data-baza=\"1240\">1330</span>+</strong><span>поданих заяв</span>",
+  "<strong>6</strong><span>języków obsługi</span>": "<strong>6</strong><span>мов обслуговування</span>",
+  "<strong>100%</strong><span>zwrotu przy odmowie — pakiet VIP*</span>": "<strong>100%</strong><span>повернення при відмові — пакет VIP*</span>",
+  "<span>Od 27.04.2026</span> wnioski o pobyt składa się wyłącznie elektronicznie przez system MOS — <a href=\"#mos\">pomożemy złożyć go bez błędów →</a><br> * Zwrot wynagrodzenia dotyczy wyłącznie pakietu VIP i postępowania administracyjnego. Nie obejmuje m.in. spraw, w których nie są spełnione ustawowe przesłanki udzielenia zezwolenia, ani drogi sądowej. <a href=\"cennik.html\">Pełne warunki zwrotu →</a>": "<span>Від 27.04.2026</span> заяви на побит подаються виключно електронно через систему MOS — <a href=\"#mos\">допоможемо подати її без помилок →</a><br> * Повернення винагороди стосується виключно пакета VIP і адміністративного провадження. Не охоплює, зокрема, справ, у яких не виконані законні умови видачі дозволу, ані судового шляху. <a href=\"cennik.html\">Повні умови повернення →</a>",
+  "<span class=\"hx-pol\">POL</span> <span class=\"hx-holo\"></span> <span class=\"hx-card-title\">KARTA POBYTU</span> <span class=\"hx-card-no\">ZR2002387</span>": "<span class=\"hx-pol\">POL</span> <span class=\"hx-holo\"></span> <span class=\"hx-card-title\">КАРТА ПОБИТУ</span> <span class=\"hx-card-no\">ZR2002387</span>",
+  "<img class=\"hx-photo-face\" src=\"animacje_kolumbijka/usmiech-poster.jpg\" alt=\"Wizualizacja karty pobytu — pole ze zdjęciem\" width=\"736\" height=\"912\" loading=\"lazy\" decoding=\"async\"> <span class=\"hx-photo-tag\">POL</span>": "<img class=\"hx-photo-face\" src=\"animacje_kolumbijka/usmiech-poster.jpg\" alt=\"Візуалізація карти побиту — поле для фото\" width=\"736\" height=\"912\" loading=\"lazy\" decoding=\"async\"> <span class=\"hx-photo-tag\">POL</span>",
+  "<span>NAZWISKO I IMIĘ / SURNAME AND FORNAME(S)</span> <b>TWOJE NAZWISKO</b> <b class=\"hx-thin\">Imię</b>": "<span>ПРІЗВИЩЕ ТА ІМ’Я</span> <b>ВАШЕ ПРІЗВИЩЕ</b> <b class=\"hx-thin\">Ім’я</b>",
+  "<span>RODZAJ ZEZWOLENIA</span><b>POBYT CZASOWY</b>": "<span>ТИП ДОЗВОЛУ</span><b>ТИМЧАСОВЕ ПЕРЕБУВАННЯ</b>",
+  "<span>DATA WAŻNOŚCI</span><b>17 07 2029</b>": "<span>ДІЙСНА ДО</span><b>17 07 2029</b>",
+  "<span>DOSTĘP DO RYNKU PRACY</span><b>TAK</b>": "<span>ДОСТУП ДО РИНКУ ПРАЦІ</span><b>ТАК</b>",
+  "<span>OBYWATELSTWO</span><b>UKR</b>": "<span>ГРОМАДЯНСТВО</span><b>UKR</b>",
+  "<span>Decyzja</span><strong>pozytywna</strong>": "<span>Рішення</span><strong>позитивне</strong>",
+  "<b>Wniosek złożony w MOS</b><span>bez błędów formalnych</span>": "<b>Заяву подано в MOS</b><span>без формальних помилок</span>",
+  "<span class=\"hx-scroll-mouse\"><i></i></span> <span class=\"hx-scroll-label\">Przewiń</span>": "<span class=\"hx-scroll-mouse\"><i></i></span> <span class=\"hx-scroll-label\">Гортайте</span>",
+  "<button type=\"button\" data-prc-otworz-czat=\"baner\" style=\"cursor:pointer;border:none;font-family:inherit;font-size:16.5px;font-weight:700;color:#fff;background:#D4213D;border-radius:12px;padding:16px 30px;box-shadow:0 10px 26px rgba(212,33,61,.4)\">Opisz sprawę w czacie →</button> <span style=\"color:#b9c6e4;font-size:12.5px;text-align:center\">1 minuta · bezpłatnie · bez zobowiązań</span>": "<button type=\"button\" data-prc-otworz-czat=\"baner\" style=\"cursor:pointer;border:none;font-family:inherit;font-size:16.5px;font-weight:700;color:#fff;background:#D4213D;border-radius:12px;padding:16px 30px;box-shadow:0 10px 26px rgba(212,33,61,.4)\">Опишіть справу в чаті →</button> <span style=\"color:#b9c6e4;font-size:12.5px;text-align:center\">1 хвилина · безкоштовно · без зобов’язань</span>",
+  "<a href=\"swiadczenia-cudzoziemcy.html\">Świadczenia i zasiłki</a> · <a href=\"baza-noclegowa.html\">Baza noclegowa</a> · <a href=\"regulamin.html\">Regulamin</a> · <a href=\"polityka-prywatnosci.html\">Polityka prywatności</a> · <a href=\"https://www.facebook.com/CentrumObslugiSprawCudzoziemcow\" target=\"_blank\" rel=\"noopener\">Jesteśmy na Facebooku</a>": "<a href=\"swiadczenia-cudzoziemcy.html\">Виплати та допомоги</a> · <a href=\"baza-noclegowa.html\">База житла</a> · <a href=\"regulamin.html\">Регламент</a> · <a href=\"polityka-prywatnosci.html\">Політика конфіденційності</a> · <a href=\"https://www.facebook.com/CentrumObslugiSprawCudzoziemcow\" target=\"_blank\" rel=\"noopener\">Ми у Facebook</a>"
  }
 }
