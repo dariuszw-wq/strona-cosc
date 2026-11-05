@@ -1,7 +1,40 @@
 {
-  "updated": "2026-11-02T08:15:06+01:00",
+  "updated": "2026-11-05T10:15:19.034958+00:00",
   "items": [
     {
+  "id": "2026-11-05-zmiana-stanowiska-zezwolenie-na-prace",
+  "added": "2026-11-05",
+  "category": "Rynek pracy",
+  "title": "Zmieniasz stanowisko? Kiedy potrzebujesz nowego zezwolenia na pracę",
+  "summary": "Sama zmiana nazwy stanowiska nie wymaga nowego zezwolenia, jeśli obowiązki pozostają te same. Wyjaśniamy terminy 7 dni i 15 dni roboczych, wyjątek 30 dni oraz warunki zwiększenia etatu.",
+  "source_name": "COSC",
+  "author": "asystent redakcyjny COSC (AI), red. Dariusz Włodarczyk",
+  "url": "artykul-zmiana-stanowiska-zezwolenie-na-prace.html",
+  "scope": "PL",
+  "t": {
+    "en": {
+      "title": "Changing jobs within your company: when do you need a new work permit?",
+      "summary": "A change of job title alone requires no new permit if duties stay the same. We explain the deadlines of 7 days and 15 working days, the 30-day exception and the conditions for increasing working time."
+    },
+    "es": {
+      "title": "¿Cambias de puesto? Cuándo necesitas un nuevo permiso de trabajo",
+      "summary": "Cambiar solo el nombre del puesto no exige otro permiso si las tareas no cambian. Explicamos los plazos de 7 días y 15 días laborables, la excepción de 30 días y el aumento de jornada."
+    },
+    "uk": {
+      "title": "Змінюєш посаду? Коли потрібен новий дозвіл на роботу",
+      "summary": "Сама зміна назви посади не потребує нового дозволу, якщо обов’язки ті самі. Пояснюємо строки 7 днів і 15 робочих днів, виняток 30 днів та умови збільшення робочого часу."
+    },
+    "ru": {
+      "title": "Меняешь должность? Когда нужно новое разрешение на работу",
+      "summary": "Само изменение названия должности не требует нового разрешения, если обязанности прежние. Объясняем сроки 7 дней и 15 рабочих дней, исключение 30 дней и условия увеличения рабочего времени."
+    },
+    "fr": {
+      "title": "Vous changez de poste ? Quand faut-il un nouveau permis de travail ?",
+      "summary": "Un simple changement d’intitulé ne nécessite pas de nouveau permis si les tâches restent identiques. Nous expliquons les délais de 7 jours et 15 jours ouvrables, l’exception de 30 jours et l’augmentation du temps de travail."
+    }
+  }
+},
+{
       "id": "2026-10-27-senat-poprawki-ustawa-sg-frontex-operacje-powrotowe",
       "added": "2026-11-02",
       "category": "Legislacja",
