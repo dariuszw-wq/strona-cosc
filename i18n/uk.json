@@ -4973,6 +4973,23 @@
   "<label for=\"point-city\">Miejscowość</label>": "<label for=\"point-city\">Місто</label>",
   "Lista punktów według województwa": "Пункти за воєводствами",
   "<a href=\"punkty-potwierdzajace-profil-zaufany.html\">Punkty potwierdzające Profil Zaufany w Polsce</a>": "<a href=\"punkty-potwierdzajace-profil-zaufany.html\">Пункти підтвердження довіреного профілю в Польщі</a>",
-  "<button type=\"reset\">Wyczyść filtry</button>": "<button type=\"reset\">Очистити фільтри</button>"
+  "<button type=\"reset\">Wyczyść filtry</button>": "<button type=\"reset\">Очистити фільтри</button>",
+  "Profil Zaufany — pomoc w założeniu | COSC": "Довірений профіль — допомога зі створенням | COSC",
+  "Profil Zaufany — pomoc, jak założyć": "Довірений профіль — допомога зі створенням",
+  "Profil Zaufany dla cudzoziemca: pomoc w wyborze sposobu rejestracji, przygotowaniu danych i znalezieniu punktu potwierdzającego. Zobacz, jak zacząć.": "Довірений профіль для іноземця: допомога з вибором реєстрації, підготовкою даних і пошуком пункту підтвердження. Дізнайся, як почати.",
+  "Profil Zaufany — jak założyć?": "Довірений профіль — як створити?",
+  "Pomagamy zrozumieć, jak założyć Profil Zaufany, przygotować potrzebne dane i znaleźć punkt potwierdzający — aby łatwiej załatwiać sprawy urzędowe online.": "Допомагаємо зрозуміти, як створити довірений профіль, підготувати дані та знайти пункт підтвердження, щоб легше вирішувати офіційні справи онлайн.",
+  "Chcesz załatwiać sprawy urzędowe przez internet, ale nie wiesz, od czego zacząć? Profil Zaufany służy do potwierdzania tożsamości w e-usługach i podpisywania dokumentów. COSC pomaga zrozumieć kolejne kroki oraz przygotować się do rejestracji.": "Хочеш вирішувати офіційні справи онлайн, але не знаєш, із чого почати? Довірений профіль підтверджує особу в електронних послугах і дозволяє підписувати документи. COSC допомагає зрозуміти кроки та підготуватися до реєстрації.",
+  "W czym możemy pomóc?": "Чим можемо допомогти?",
+  "Wyjaśniamy różnicę między rejestracją przez bank a potwierdzeniem w placówce. Pomagamy przejść przez instrukcję, uporządkować potrzebne dane i znaleźć punkt w Polsce. Jeśli formularz lub komunikat systemu jest niezrozumiały, możesz omówić z nami problem podczas konsultacji.": "Пояснюємо різницю між реєстрацією через банк і підтвердженням в установі. Допомагаємо розібратися з інструкцією, підготувати дані та знайти пункт у Польщі. Незрозумілі форми чи повідомлення системи можна обговорити на консультації.",
+  "Zacznij od instrukcji i wyboru punktu": "Почни з інструкції та вибору пункту",
+  "Przed rejestracją przygotuj numer PESEL, ważny dokument tożsamości oraz własny e-mail i telefon. W poradniku znajdziesz opis rejestracji przez bank lub z wizytą w punkcie, dokumentów i potwierdzenia profilu. Katalog pomoże wyszukać placówkę po miejscowości, nazwie lub adresie.": "Підготуй PESEL, чинний документ, власну електронну пошту й телефон. Інструкція пояснює реєстрацію через банк або з візитом, документи та підтвердження. Каталог дозволяє шукати за містом, назвою чи адресою.",
+  "Profil i dostęp pozostają pod Twoją kontrolą": "Профіль і доступ залишаються під твоїм контролем",
+  "Założenie Profilu Zaufanego w usłudze publicznej jest bezpłatne. COSC nie jest punktem potwierdzającym. Pomoc w zrozumieniu procedury nie zastępuje potwierdzenia tożsamości. Nie przesyłaj nam hasła ani kodów SMS — logowanie i zatwierdzanie podpisu wykonujesz samodzielnie.": "Створення профілю в державному сервісі безкоштовне. COSC не є пунктом підтвердження. Пояснення процедури не замінює перевірку особи. Не надсилай паролі чи SMS-коди: вхід і підтвердження підпису виконуєш самостійно.",
+  "Instrukcja: jak założyć Profil Zaufany": "Інструкція: як створити довірений профіль",
+  "Znajdź punkt potwierdzający Profil Zaufany": "Знайди пункт підтвердження профілю",
+  "<a href=\"artykul-profil-zaufany-cudzoziemiec-instrukcja.html\">Instrukcja: jak założyć Profil Zaufany</a>": "<a href=\"artykul-profil-zaufany-cudzoziemiec-instrukcja.html\">Інструкція: як створити довірений профіль</a>",
+  "<a href=\"punkty-potwierdzajace-profil-zaufany.html\">Znajdź punkt potwierdzający Profil Zaufany</a>": "<a href=\"punkty-potwierdzajace-profil-zaufany.html\">Знайди пункт підтвердження профілю</a>",
+  "Na konsultację przygotuj opis etapu, na którym pojawił się problem: wybór metody, formularz, potwierdzenie danych czy wizyta w placówce. Dzięki temu łatwiej ustalimy, jaka pomoc będzie potrzebna. Nie wysyłaj dokumentów ani danych logowania w pierwszej wiadomości.": "Для консультації опиши етап проблеми: вибір способу, форма, підтвердження даних чи візит. Так легше визначити потрібну допомогу. Не надсилай документи чи дані входу в першому повідомленні."
  }
 }

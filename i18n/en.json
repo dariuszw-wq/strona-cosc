@@ -4973,6 +4973,23 @@
   "<label for=\"point-city\">Miejscowość</label>": "<label for=\"point-city\">City</label>",
   "Lista punktów według województwa": "Points by province",
   "<a href=\"punkty-potwierdzajace-profil-zaufany.html\">Punkty potwierdzające Profil Zaufany w Polsce</a>": "<a href=\"punkty-potwierdzajace-profil-zaufany.html\">Trusted Profile confirmation points in Poland</a>",
-  "<button type=\"reset\">Wyczyść filtry</button>": "<button type=\"reset\">Clear filters</button>"
+  "<button type=\"reset\">Wyczyść filtry</button>": "<button type=\"reset\">Clear filters</button>",
+  "Profil Zaufany — pomoc w założeniu | COSC": "Trusted Profile — help setting it up | COSC",
+  "Profil Zaufany — pomoc, jak założyć": "Trusted Profile — help getting started",
+  "Profil Zaufany dla cudzoziemca: pomoc w wyborze sposobu rejestracji, przygotowaniu danych i znalezieniu punktu potwierdzającego. Zobacz, jak zacząć.": "Trusted Profile for foreigners: help choosing a registration method, preparing your details and finding a confirmation point. Learn how to start.",
+  "Profil Zaufany — jak założyć?": "Trusted Profile — how to set it up?",
+  "Pomagamy zrozumieć, jak założyć Profil Zaufany, przygotować potrzebne dane i znaleźć punkt potwierdzający — aby łatwiej załatwiać sprawy urzędowe online.": "We help you understand how to set up a Trusted Profile, prepare your details and find a confirmation point to handle official matters online more easily.",
+  "Chcesz załatwiać sprawy urzędowe przez internet, ale nie wiesz, od czego zacząć? Profil Zaufany służy do potwierdzania tożsamości w e-usługach i podpisywania dokumentów. COSC pomaga zrozumieć kolejne kroki oraz przygotować się do rejestracji.": "Want to handle official matters online but unsure where to start? A Trusted Profile identifies you in public e-services and lets you sign documents. COSC helps you understand the steps and prepare for registration.",
+  "W czym możemy pomóc?": "How can we help?",
+  "Wyjaśniamy różnicę między rejestracją przez bank a potwierdzeniem w placówce. Pomagamy przejść przez instrukcję, uporządkować potrzebne dane i znaleźć punkt w Polsce. Jeśli formularz lub komunikat systemu jest niezrozumiały, możesz omówić z nami problem podczas konsultacji.": "We explain the difference between bank registration and confirmation at an office. We help you follow the instructions, organise the details you need and find a point in Poland. You can discuss unclear forms or system messages during a consultation.",
+  "Zacznij od instrukcji i wyboru punktu": "Start with the guide and choose a point",
+  "Przed rejestracją przygotuj numer PESEL, ważny dokument tożsamości oraz własny e-mail i telefon. W poradniku znajdziesz opis rejestracji przez bank lub z wizytą w punkcie, dokumentów i potwierdzenia profilu. Katalog pomoże wyszukać placówkę po miejscowości, nazwie lub adresie.": "Before registering, prepare your PESEL number, valid identity document, personal email and phone. Our guide explains registration through a bank or an office visit, documents and confirmation. The directory helps you find a point by city, name or address.",
+  "Profil i dostęp pozostają pod Twoją kontrolą": "Your profile and access stay under your control",
+  "Założenie Profilu Zaufanego w usłudze publicznej jest bezpłatne. COSC nie jest punktem potwierdzającym. Pomoc w zrozumieniu procedury nie zastępuje potwierdzenia tożsamości. Nie przesyłaj nam hasła ani kodów SMS — logowanie i zatwierdzanie podpisu wykonujesz samodzielnie.": "Creating a Trusted Profile through the public service is free. COSC is not a confirmation point. Help understanding the procedure does not replace identity verification. Do not send us passwords or SMS codes: you log in and approve signatures yourself.",
+  "Instrukcja: jak założyć Profil Zaufany": "Guide: how to set up a Trusted Profile",
+  "Znajdź punkt potwierdzający Profil Zaufany": "Find a Trusted Profile confirmation point",
+  "<a href=\"artykul-profil-zaufany-cudzoziemiec-instrukcja.html\">Instrukcja: jak założyć Profil Zaufany</a>": "<a href=\"artykul-profil-zaufany-cudzoziemiec-instrukcja.html\">Guide: how to set up a Trusted Profile</a>",
+  "<a href=\"punkty-potwierdzajace-profil-zaufany.html\">Znajdź punkt potwierdzający Profil Zaufany</a>": "<a href=\"punkty-potwierdzajace-profil-zaufany.html\">Find a Trusted Profile confirmation point</a>",
+  "Na konsultację przygotuj opis etapu, na którym pojawił się problem: wybór metody, formularz, potwierdzenie danych czy wizyta w placówce. Dzięki temu łatwiej ustalimy, jaka pomoc będzie potrzebna. Nie wysyłaj dokumentów ani danych logowania w pierwszej wiadomości.": "For your consultation, describe where the problem occurred: choosing a method, the form, confirming details or the office visit. This helps us identify the support you need. Do not send documents or login details in your first message."
  }
 }

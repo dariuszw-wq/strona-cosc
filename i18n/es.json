@@ -4973,6 +4973,23 @@
   "<label for=\"point-city\">Miejscowość</label>": "<label for=\"point-city\">Localidad</label>",
   "Lista punktów według województwa": "Puntos por voivodato",
   "<a href=\"punkty-potwierdzajace-profil-zaufany.html\">Punkty potwierdzające Profil Zaufany w Polsce</a>": "<a href=\"punkty-potwierdzajace-profil-zaufany.html\">Puntos de confirmación del Perfil de Confianza en Polonia</a>",
-  "<button type=\"reset\">Wyczyść filtry</button>": "<button type=\"reset\">Borrar filtros</button>"
+  "<button type=\"reset\">Wyczyść filtry</button>": "<button type=\"reset\">Borrar filtros</button>",
+  "Profil Zaufany — pomoc w założeniu | COSC": "Perfil de Confianza — ayuda para crearlo | COSC",
+  "Profil Zaufany — pomoc, jak założyć": "Perfil de Confianza — ayuda para crearlo",
+  "Profil Zaufany dla cudzoziemca: pomoc w wyborze sposobu rejestracji, przygotowaniu danych i znalezieniu punktu potwierdzającego. Zobacz, jak zacząć.": "Perfil de Confianza para extranjeros: ayuda para elegir el registro, preparar los datos y encontrar un punto de confirmación. Descubre cómo empezar.",
+  "Profil Zaufany — jak założyć?": "Perfil de Confianza: ¿cómo crearlo?",
+  "Pomagamy zrozumieć, jak założyć Profil Zaufany, przygotować potrzebne dane i znaleźć punkt potwierdzający — aby łatwiej załatwiać sprawy urzędowe online.": "Te ayudamos a entender cómo crear un Perfil de Confianza, preparar tus datos y encontrar un punto de confirmación para facilitar los trámites en línea.",
+  "Chcesz załatwiać sprawy urzędowe przez internet, ale nie wiesz, od czego zacząć? Profil Zaufany służy do potwierdzania tożsamości w e-usługach i podpisywania dokumentów. COSC pomaga zrozumieć kolejne kroki oraz przygotować się do rejestracji.": "¿Quieres hacer trámites en línea y no sabes por dónde empezar? El Perfil de Confianza identifica al usuario en servicios públicos y permite firmar documentos. COSC te ayuda a entender los pasos y preparar el registro.",
+  "W czym możemy pomóc?": "¿En qué podemos ayudarte?",
+  "Wyjaśniamy różnicę między rejestracją przez bank a potwierdzeniem w placówce. Pomagamy przejść przez instrukcję, uporządkować potrzebne dane i znaleźć punkt w Polsce. Jeśli formularz lub komunikat systemu jest niezrozumiały, możesz omówić z nami problem podczas konsultacji.": "Explicamos la diferencia entre registrarse mediante un banco y confirmar en una oficina. Te ayudamos a seguir las instrucciones, organizar los datos y encontrar un punto en Polonia. Puedes consultar los formularios o mensajes que no entiendas.",
+  "Zacznij od instrukcji i wyboru punktu": "Empieza con la guía y elige un punto",
+  "Przed rejestracją przygotuj numer PESEL, ważny dokument tożsamości oraz własny e-mail i telefon. W poradniku znajdziesz opis rejestracji przez bank lub z wizytą w punkcie, dokumentów i potwierdzenia profilu. Katalog pomoże wyszukać placówkę po miejscowości, nazwie lub adresie.": "Prepara tu PESEL, documento de identidad vigente, correo y teléfono propios. La guía explica el registro mediante banco o visita, documentos y confirmación. El catálogo permite buscar por localidad, nombre o dirección.",
+  "Profil i dostęp pozostają pod Twoją kontrolą": "El perfil y el acceso quedan bajo tu control",
+  "Założenie Profilu Zaufanego w usłudze publicznej jest bezpłatne. COSC nie jest punktem potwierdzającym. Pomoc w zrozumieniu procedury nie zastępuje potwierdzenia tożsamości. Nie przesyłaj nam hasła ani kodów SMS — logowanie i zatwierdzanie podpisu wykonujesz samodzielnie.": "Crear el Perfil de Confianza en el servicio público es gratuito. COSC no es un punto de confirmación. La ayuda con el procedimiento no sustituye la verificación de identidad. No nos envíes contraseñas ni códigos SMS: tú inicias sesión y autorizas las firmas.",
+  "Instrukcja: jak założyć Profil Zaufany": "Guía: cómo crear un Perfil de Confianza",
+  "Znajdź punkt potwierdzający Profil Zaufany": "Encuentra un punto de confirmación",
+  "<a href=\"artykul-profil-zaufany-cudzoziemiec-instrukcja.html\">Instrukcja: jak założyć Profil Zaufany</a>": "<a href=\"artykul-profil-zaufany-cudzoziemiec-instrukcja.html\">Guía: cómo crear un Perfil de Confianza</a>",
+  "<a href=\"punkty-potwierdzajace-profil-zaufany.html\">Znajdź punkt potwierdzający Profil Zaufany</a>": "<a href=\"punkty-potwierdzajace-profil-zaufany.html\">Encuentra un punto de confirmación</a>",
+  "Na konsultację przygotuj opis etapu, na którym pojawił się problem: wybór metody, formularz, potwierdzenie danych czy wizyta w placówce. Dzięki temu łatwiej ustalimy, jaka pomoc będzie potrzebna. Nie wysyłaj dokumentów ani danych logowania w pierwszej wiadomości.": "Para la consulta, explica dónde surgió el problema: método, formulario, confirmación de datos o visita. Así podremos identificar la ayuda necesaria. No envíes documentos ni datos de acceso en el primer mensaje."
  }
 }
