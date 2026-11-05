@@ -1,7 +1,40 @@
 {
-  "updated": "2026-11-05T10:15:19.034958+00:00",
+  "updated": "2026-11-05T10:47:46.415731+00:00",
   "items": [
     {
+  "id": "2026-11-05-profil-zaufany-instrukcja-punkty",
+  "added": "2026-11-05",
+  "category": "Urzędy",
+  "title": "Jak założyć Profil Zaufany? Instrukcja dla cudzoziemców",
+  "summary": "Instrukcja dla cudzoziemców: PESEL, założenie Profilu Zaufanego przez bank lub punkt, dokumenty i termin 30 dni. Do poradnika dołączyliśmy katalog 2293 punktów w Polsce z filtrami i mapami.",
+  "source_name": "COSC",
+  "author": "asystent redakcyjny COSC (AI), red. Dariusz Włodarczyk",
+  "url": "artykul-profil-zaufany-cudzoziemiec-instrukcja.html",
+  "scope": "PL",
+  "t": {
+    "en": {
+      "title": "How to set up a Trusted Profile: a guide for foreigners",
+      "summary": "Guide for foreigners: PESEL, setting up a Trusted Profile through a bank or confirmation point, documents and the 30-day deadline. Includes a directory of 2293 points in Poland with filters and maps."
+    },
+    "es": {
+      "title": "Cómo crear un Perfil de Confianza: guía para extranjeros",
+      "summary": "Guía para extranjeros: PESEL, Perfil de Confianza mediante banco o punto, documentos y plazo de 30 días. Incluye un catálogo de 2293 puntos en Polonia con filtros y mapas."
+    },
+    "uk": {
+      "title": "Як створити довірений профіль: інструкція для іноземців",
+      "summary": "Інструкція для іноземців: PESEL, створення довіреного профілю через банк або пункт, документи й строк 30 днів. Додано каталог 2293 пунктів у Польщі з фільтрами та картами."
+    },
+    "ru": {
+      "title": "Как создать доверенный профиль: инструкция для иностранцев",
+      "summary": "Инструкция для иностранцев: PESEL, создание доверенного профиля через банк или пункт, документы и срок 30 дней. Добавлен каталог 2293 пунктов в Польше с фильтрами и картами."
+    },
+    "fr": {
+      "title": "Comment créer un profil de confiance : guide pour les étrangers",
+      "summary": "Guide pour étrangers : PESEL, création par banque ou guichet, documents et délai de 30 jours. Avec un annuaire de 2293 points en Pologne, des filtres et des cartes."
+    }
+  }
+},
+{
   "id": "2026-11-05-zmiana-stanowiska-zezwolenie-na-prace",
   "added": "2026-11-05",
   "category": "Rynek pracy",
