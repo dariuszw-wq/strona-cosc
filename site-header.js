@@ -64,6 +64,7 @@
     'ZUS i rozliczenia': { en: 'Social security (ZUS) and settlements', es: 'Seguridad social (ZUS) y liquidaciones', uk: 'ZUS та розрахунки', ru: 'ZUS и расчёты', fr: 'Sécurité sociale (ZUS) et déclarations' },
     'Obsługa firm': { en: 'Business services', es: 'Servicios para empresas', uk: 'Обслуговування компаній', ru: 'Обслуживание компаний', fr: 'Services aux entreprises' },
     'Kontrola i sankcje': { en: 'Inspections and sanctions', es: 'Inspecciones y sanciones', uk: 'Контроль та санкції', ru: 'Контроль и санкции', fr: 'Contrôles et sanctions' },
+    'To musisz wiedzieć': { en: 'What you need to know', es: 'Lo que debes saber', uk: 'Це потрібно знати', ru: 'Это нужно знать', fr: 'Ce que vous devez savoir' },
     'Kalkulator 90/180': { en: '90/180 calculator', es: 'Calculadora 90/180', uk: 'Калькулятор 90/180', ru: 'Калькулятор 90/180', fr: 'Calculateur 90/180' },
     'Kto powinien robić Twoją kartę?': { en: 'Who should handle your card?', es: '¿Quién debe tramitar tu tarjeta?', uk: 'Хто має робити твою карту?', ru: 'Кто должен делать твою карту?', fr: 'Qui doit gérer votre carte ?' },
     'Darmowa konsultacja': { en: 'Free consultation', es: 'Consulta gratuita', uk: 'Безкоштовна консультація', ru: 'Бесплатная консультация', fr: 'Consultation gratuite' }
@@ -96,7 +97,7 @@
         { t: 'Aktualności', href: 'aktualnosci.html' }
       ] }
     ],
-    links: [ { t: 'Kalkulator 90/180', href: 'kalkulator-90-180.html' } ],
+    links: [ { t: 'To musisz wiedzieć', href: 'aktualnosci.html' } ],
     cta: { t: 'Darmowa konsultacja', href: 'kontakt.html' }
   };
 
