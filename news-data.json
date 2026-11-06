@@ -1,6 +1,39 @@
 {
-  "updated": "2026-11-05T10:47:46.415731+00:00",
+  "updated": "2026-11-06T07:12:05.093704+00:00",
   "items": [
+{
+  "id": "2026-11-06-dzien-wolny-26-grudnia-urlop",
+  "added": "2026-11-06",
+  "category": "Rynek pracy",
+  "scope": "PL",
+  "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+  "author": "asystent redakcyjny COSC (AI), red. Dariusz Włodarczyk",
+  "url": "artykul-dzien-wolny-26-grudnia-2026-urlop.html",
+  "title": "Dzień wolny za 26 grudnia 2026: co z Twoim urlopem?",
+  "summary": "26 grudnia 2026 wypada w sobotę. Wyjaśniamy termin dnia wolnego, rozliczenie urlopu i zasady dla cudzoziemców na umowie o pracę.",
+  "t": {
+    "en": {
+      "title": "Day off for 26 December 2026: what about your annual leave?",
+      "summary": "26 December 2026 falls on Saturday. Learn when the replacement day off is due and how it affects annual leave for foreign employees in Poland."
+    },
+    "es": {
+      "title": "Descanso por el 26 de diciembre de 2026: ¿qué pasa con tus vacaciones?",
+      "summary": "El 26 de diciembre de 2026 cae en sábado. Explicamos el descanso compensatorio y las vacaciones de extranjeros con contrato laboral en Polonia."
+    },
+    "uk": {
+      "title": "Вихідний за 26 грудня 2026: що буде з Вашою відпусткою?",
+      "summary": "26 грудня 2026 припадає на суботу. Пояснюємо строки надання вихідного та облік відпустки для іноземців за трудовим договором у Польщі."
+    },
+    "ru": {
+      "title": "Выходной за 26 декабря 2026: что будет с Вашим отпуском?",
+      "summary": "26 декабря 2026 приходится на субботу. Объясняем сроки предоставления выходного и учёт отпуска иностранцев по трудовому договору в Польше."
+    },
+    "fr": {
+      "title": "Repos pour le 26 décembre 2026 : que deviennent vos congés ?",
+      "summary": "Le 26 décembre 2026 tombe un samedi. Découvrez la date du repos compensatoire et son effet sur les congés des salariés étrangers en Pologne."
+    }
+  }
+},
     {
   "id": "2026-11-05-profil-zaufany-instrukcja-punkty",
   "added": "2026-11-05",
