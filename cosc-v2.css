@@ -39,3 +39,6 @@
 @media(min-width:1001px){.cosc-modern .main-nav{gap:20px}.cosc-modern:lang(fr) .header-flags,.cosc-modern:lang(uk) .header-flags,.cosc-modern:lang(ru) .header-flags{display:none}}
 
 .anchor-alias{display:block;scroll-margin-top:100px}
+/* Dłuższe tłumaczenia pozostają czytelne również na ekranach 320 px. */
+.cosc-modern .container>*{min-width:0}.cosc-modern .steps li>div{min-width:0}.cosc-modern h2,.cosc-modern h3{overflow-wrap:anywhere}
+@media(max-width:700px){.cosc-modern .topic-band .container{flex-wrap:wrap;justify-content:center;gap:12px}.cosc-modern .service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.cosc-modern .service{min-width:0;overflow-wrap:anywhere}.cosc-modern .service .text-link{white-space:normal}.cosc-modern .process-layout,.cosc-modern .about-layout,.cosc-modern .situation-layout,.cosc-modern .faq-layout,.cosc-modern .contact-layout{grid-template-columns:minmax(0,1fr)}}
