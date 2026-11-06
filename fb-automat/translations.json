@@ -2014,5 +2014,33 @@
    "title": "Операції Frontex з повернення в Польщі: Сенат вніс 6 поправок до ухваленого закону, тепер слово за Сеймом",
    "summary": "22 жовтня 2026 р. Сейм ухвалив закон про внесення змін до закону про Прикордонну службу (ustawa o zmianie ustawy o Straży Granicznej oraz niektórych innych ustaw) (druk nr 3146; 251 депутат «за», 144 «проти», 41 утрималися). 27 жовтня Сенат вніс до нього 6 поправок (druk nr 3275), які 28 жовтня направлено до сеймової Комісії з питань адміністрації та внутрішніх справ. Закон додає до закону про іноземців (ustawa o cudzoziemcach) art. 329b: Головний комендант Прикордонної служби (Komendant Główny Straży Granicznej) зможе звертатися до Агентства Frontex з проханням організувати або координувати операції з повернення та втручання з повернення на території Польщі, а завдання, пов'язані з поверненням, виконуватимуть також службовці інших держав ЄС і персонал постійного корпусу Frontex. Поправки Сенату додають, зокрема, ust. 5a: дозвіл на застосування засобів безпосереднього примусу, зброї та боєприпасів (art. 82 ust. 8 Регламенту (ЄС) 2019/1896) надає Головний комендант Прикордонної служби після отримання згоди міністра, відповідального за внутрішні справи. Після розгляду поправок Сеймом і підписання Президентом закон набере чинності через 14 днів після оприлюднення. Для іноземця з рішенням про зобов'язання до повернення (decyzja o zobowiązaniu do powrotu) це означає, що його примусове виконання може здійснюватися також за участю європейських команд з повернення."
   }
+ },
+ "artykul-profil-zaufany-cudzoziemiec-instrukcja.html": {
+  "en": {
+   "title": "How to set up a Trusted Profile: a guide for foreigners",
+   "summary": "Guide for foreigners: PESEL, setting up a Trusted Profile through a bank or confirmation point, documents and the 30-day deadline. Includes a directory of 2293 points in Poland with filters and maps."
+  },
+  "es": {
+   "title": "Cómo crear un Perfil de Confianza: guía para extranjeros",
+   "summary": "Guía para extranjeros: PESEL, Perfil de Confianza mediante banco o punto, documentos y plazo de 30 días. Incluye un catálogo de 2293 puntos en Polonia con filtros y mapas."
+  },
+  "uk": {
+   "title": "Як створити довірений профіль: інструкція для іноземців",
+   "summary": "Інструкція для іноземців: PESEL, створення довіреного профілю через банк або пункт, документи й строк 30 днів. Додано каталог 2293 пунктів у Польщі з фільтрами та картами."
+  }
+ },
+ "artykul-zmiana-stanowiska-zezwolenie-na-prace.html": {
+  "en": {
+   "title": "Changing jobs within your company: when do you need a new work permit?",
+   "summary": "A change of job title alone requires no new permit if duties stay the same. We explain the deadlines of 7 days and 15 working days, the 30-day exception and the conditions for increasing working time."
+  },
+  "es": {
+   "title": "¿Cambia de puesto? Cuándo necesita un nuevo permiso de trabajo",
+   "summary": "Cambiar solo el nombre del puesto no exige otro permiso si las tareas no cambian. Explicamos los plazos de 7 días y 15 días laborables, la excepción de 30 días y el aumento de jornada."
+  },
+  "uk": {
+   "title": "Змінюєш посаду? Коли потрібен новий дозвіл на роботу",
+   "summary": "Сама зміна назви посади не потребує нового дозволу, якщо обов’язки ті самі. Пояснюємо строки 7 днів і 15 робочих днів, виняток 30 днів та умови збільшення робочого часу."
+  }
  }
 }

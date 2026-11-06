@@ -13,7 +13,7 @@ for it in items[:25]:
     g = f.guid(it); src = it.get("source_name","")
     for lang in f.LANGS:
         t = tr.get(g, {}).get(lang)
-        if not t or not t.get("title"): continue
+        if not f.complete_translation(t): continue
         link = f.item_link(it, lang, os.path.dirname(os.path.abspath(html)))
         body = t["summary"].strip() + "\n\n" + (f"{f.SRC[lang]}: {src}\n" if src else "") + \
                f.CTA[lang].format(url=link) + "\n\n" + f.TAGS[lang]
@@ -34,5 +34,5 @@ xml = ('<?xml version="1.0" encoding="UTF-8"?>\n'
        f'    <lastBuildDate>{datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S +0000")}</lastBuildDate>\n'
        + "\n".join(rows) + "\n</channel></rss>\n")
 os.makedirs(out, exist_ok=True)
-open(os.path.join(out,"feed-all.xml"),"w",encoding="utf-8").write(xml)
-print("napisano feed-all.xml | itemow:", len(rows))
+changed = f.write_feed(os.path.join(out,"feed-all.xml"), xml)
+print("napisano" if changed else "bez zmian", "feed-all.xml | itemow:", len(rows))

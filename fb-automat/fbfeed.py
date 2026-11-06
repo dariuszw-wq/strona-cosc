@@ -45,17 +45,12 @@ def load_items(html_path):
     podgladu file://, wiec parsowanie HTML gubilo wiekszosc wpisow."""
     import os
     data_path = os.path.join(os.path.dirname(os.path.abspath(html_path)), "news-data.json")
-    items = []
-    if os.path.exists(data_path):
-        try:
-            d = json.load(open(data_path, encoding="utf-8"))
-            items = d.get("items", d) if isinstance(d, dict) else d
-        except Exception:
-            items = []
-    if not items:  # awaryjnie: stary tryb parsowania HTML
-        txt = open(html_path, encoding="utf-8").read()
-        objs = re.findall(r'\{"added":.*?\}', txt)
-        items = [json.loads(o) for o in objs]
+    # Nie maskuj awarii zrodla prawdy stara kopia danych z HTML.
+    with open(data_path, encoding="utf-8") as source:
+        d = json.load(source)
+    items = d.get("items") if isinstance(d, dict) else d
+    if not isinstance(items, list) or not all(isinstance(it, dict) for it in items):
+        raise ValueError("news-data.json: oczekiwano listy obiektow items")
     return [it for it in items if it.get("category") in CATS]
 
 ES_MAP_CACHE = {}
@@ -130,6 +125,26 @@ def rfc822(dstr):
 
 def esc(s): return html.escape(s, quote=True)
 
+def complete_translation(t):
+    return isinstance(t, dict) and all(
+        isinstance(t.get(key), str) and t[key].strip()
+        for key in ("title", "summary")
+    )
+
+def write_feed(path, xml):
+    """Zachowaj plik i lastBuildDate, jezeli tresc RSS sie nie zmienila."""
+    from pathlib import Path
+    from xml.dom import minidom
+    minidom.parseString(xml)
+    path = Path(path)
+    if path.exists():
+        previous = path.read_text(encoding="utf-8")
+        strip_date = lambda text: re.sub(r"<lastBuildDate>.*?</lastBuildDate>", "", text)
+        if strip_date(previous) == strip_date(xml):
+            return False
+    path.write_text(xml, encoding="utf-8")
+    return True
+
 def cmd_detect(args):
     items = load_items(args.html)
     tr = json.load(open(args.tr, encoding="utf-8")) if _exists(args.tr) else {}
@@ -137,12 +152,12 @@ def cmd_detect(args):
     for it in items:
         g = guid(it)
         have = tr.get(g, {})
-        missing = [l for l in LANGS if l not in have or not have[l].get("title")]
+        missing = [l for l in LANGS if not complete_translation(have.get(l))]
         if missing:
             todo.append({"guid": g, "added": it["added"], "category": it["category"],
                          "title": it["title"], "summary": it["summary"],
                          "source_name": it.get("source_name",""), "missing": missing})
-    print(json.dumps({"todo": todo}, ensure_ascii=False, indent=2))
+    print(json.dumps({"qualified": len(items), "feed_limit": 25, "todo": todo}, ensure_ascii=False, indent=2))
 
 def _exists(p):
     import os; return os.path.exists(p)
@@ -157,7 +172,7 @@ def cmd_build(args):
         rows = []
         for it in items[:25]:
             g = guid(it); t = tr.get(g, {}).get(lang)
-            if not t or not t.get("title"):
+            if not complete_translation(t):
                 continue
             link = item_link(it, lang, os.path.dirname(os.path.abspath(args.html)))
             desc = t["summary"].strip()
@@ -184,8 +199,8 @@ def cmd_build(args):
                f'    <lastBuildDate>{datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S +0000")}</lastBuildDate>\n'
                + "\n".join(rows) + "\n</channel></rss>\n")
         out = os.path.join(args.out, f"feed-{lang}.xml")
-        open(out, "w", encoding="utf-8").write(xml)
-        print("napisano", out, "| itemow:", len(rows))
+        changed = write_feed(out, xml)
+        print("napisano" if changed else "bez zmian", out, "| itemow:", len(rows))
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
