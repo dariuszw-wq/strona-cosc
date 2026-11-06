@@ -32,7 +32,7 @@
   var P = LOCDIR ? '../' : (/\/(cudzoziemcy|pracodawcy)\//.test(location.pathname) ? '../' : '');
   function url(href) {
     if (!href) return P || './';
-    if (/^(https?:|mailto:|tel:|#)/.test(href)) return href;
+    if (/^(https?:|mailto:|tel:|#|\/)/.test(href)) return href;
     if (/^~/.test(href)) return href.slice(1);   // '~plik.html' = plik w TYM katalogu jezykowym
     return P + href;
   }
@@ -65,6 +65,7 @@
     'Obsługa firm': { en: 'Business services', es: 'Servicios para empresas', uk: 'Обслуговування компаній', ru: 'Обслуживание компаний', fr: 'Services aux entreprises' },
     'Kontrola i sankcje': { en: 'Inspections and sanctions', es: 'Inspecciones y sanciones', uk: 'Контроль та санкції', ru: 'Контроль и санкции', fr: 'Contrôles et sanctions' },
     'To musisz wiedzieć': { en: 'What you need to know', es: 'Lo que debes saber', uk: 'Це потрібно знати', ru: 'Это нужно знать', fr: 'Ce que vous devez savoir' },
+    'Kalkulator pobytu': { en: 'Stay calculator', es: 'Calculadora de estancia', uk: 'Калькулятор перебування', ru: 'Калькулятор пребывания', fr: 'Calculateur de séjour' },
     'Kalkulator 90/180': { en: '90/180 calculator', es: 'Calculadora 90/180', uk: 'Калькулятор 90/180', ru: 'Калькулятор 90/180', fr: 'Calculateur 90/180' },
     'Kto powinien robić Twoją kartę?': { en: 'Who should handle your card?', es: '¿Quién debe tramitar tu tarjeta?', uk: 'Хто має робити твою карту?', ru: 'Кто должен делать твою карту?', fr: 'Qui doit gérer votre carte ?' },
     'Darmowa konsultacja': { en: 'Free consultation', es: 'Consulta gratuita', uk: 'Безкоштовна консультація', ru: 'Бесплатная консультация', fr: 'Consultation gratuite' }
@@ -97,7 +98,10 @@
         { t: 'Aktualności', href: 'aktualnosci.html' }
       ] }
     ],
-    links: [ { t: 'To musisz wiedzieć', href: 'aktualnosci.html' } ],
+    links: [
+      { t: 'To musisz wiedzieć', href: 'aktualnosci.html' },
+      { t: 'Kalkulator pobytu', href: (LOCDIR ? '/' + LOCDIR + '/' : '/') + '#kalkulator' }
+    ],
     cta: { t: 'Darmowa konsultacja', href: 'kontakt.html' }
   };
 
@@ -117,20 +121,20 @@
         { t: 'Prices and services', href: '~prices-and-services.html' }
       ] }
     ],
-    links: [],
+    links: [ { t: 'Stay calculator', href: '/en/#kalkulator' } ],
     cta: { t: 'Book a free consultation', href: '~contact.html' }
   };
 
   /* ---- CSS (samodzielny, namespace .csh-) ---- */
   var CSS = ''
     + '.csh-header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);position:sticky;top:0;z-index:50;box-shadow:0 2px 12px rgba(19,32,58,.25);display:block}'
-    + '.csh-wrap{max-width:1120px;margin:0 auto;padding:0 16px;display:flex;align-items:center;gap:12px;min-height:66px;flex-wrap:nowrap}'
+    + '.csh-wrap{max-width:1120px;margin:0 auto;padding:0 16px;display:flex;align-items:center;gap:6px;min-height:66px;flex-wrap:nowrap}'
     + '.csh-logo{display:flex;align-items:center;gap:9px;text-decoration:none;flex:none}'
     + '.csh-flag{flex-shrink:0;width:32px;height:32px;border-radius:6px;box-shadow:0 0 0 1px rgba(255,255,255,.4);overflow:hidden;display:flex;flex-direction:column}'
     + '.csh-flag .csh-fw{flex:1;width:100%;background:#f5f5f5}.csh-flag .csh-fr{flex:1;width:100%;background:#d4213d}'
     + '.csh-name{color:#fff;font-family:"IBM Plex Serif",Georgia,serif;font-weight:700;font-size:13.5px;line-height:1.15;white-space:nowrap}'
     + '.csh-menu{display:flex;flex-wrap:nowrap;gap:4px;align-items:center;justify-content:flex-end;flex:1 1 auto;min-width:0;white-space:nowrap}'
-    + '.csh-menu>a{color:#E9ECF3;text-decoration:none;font-size:13.5px;font-weight:600;padding:8px 10px;border-radius:8px;transition:background .18s,color .18s}'
+    + '.csh-menu>a{color:#E9ECF3;text-decoration:none;font-size:13px;font-weight:600;padding:8px 6px;border-radius:8px;transition:background .18s,color .18s}'
     + '.csh-menu>a:hover{background:rgba(255,255,255,.12);color:#ffd34d}'
     + '.csh-cta{background:#d4213d !important;color:#fff !important;font-weight:700;padding:8px 14px;border-radius:8px;box-shadow:0 2px 8px rgba(212,33,61,.35);margin-left:4px}.csh-cta:hover{background:#b81a32 !important;color:#fff !important}'
     + '.csh-more{position:relative;display:flex;align-items:center}'
@@ -145,6 +149,8 @@
     + '.csh-header .lang{flex:none;position:relative !important;top:auto !important;right:auto !important;transform:none !important;margin-left:auto}'
     + '.csh-burger{display:none;background:none;border:none;color:#fff;font-size:26px;cursor:pointer;flex:none}'
     + '.csh-l-short{display:none}.csh-mob-x{display:none}'
+    + '#kalkulator{scroll-margin-top:86px}'
+    + '@media(min-width:901px) and (max-width:1150px){.csh-wrap{gap:4px;padding:0 10px}.csh-l-full{display:none}.csh-l-short{display:inline}.csh-more-btn{padding:8px 6px}.csh-menu{gap:2px}}'
     + '@media(max-width:900px){'
     /* JEDEN wiersz: małe logo + przyciski Cudzoziemiec/Pracodawca + języki; bez burgera */
     + '.csh-wrap{flex-wrap:nowrap;gap:8px;padding:0 10px;min-height:54px}'
@@ -196,9 +202,12 @@
     var lis = hub.items.map(function (it) {
       return '<a href="' + url(it.href) + '">' + span(it.t) + '</a>';
     }).join('');
-    /* na telefonie: tylko CTA na dole listy (bez kalkulatora) */
+    /* Na telefonie dodatkowe zakładki i CTA są na dole każdej listy. */
     var AM = (LOCDIR === 'en') ? MENU_EN : MENU;   /* CTA z menu wlasciwego dla katalogu */
-    var mob = '<a class="csh-mob-x csh-mob-cta" href="' + url(AM.cta.href) + '">' + span(AM.cta.t) + '</a>';
+    var mob = AM.links.map(function (it) {
+      return '<a class="csh-mob-x" href="' + url(it.href) + '">' + span(it.t) + '</a>';
+    }).join('');
+    mob += '<a class="csh-mob-x csh-mob-cta" href="' + url(AM.cta.href) + '">' + span(AM.cta.t) + '</a>';
     return '<div class="csh-more" data-csh-hub="' + (hub.id || '') + '"><button class="csh-more-btn" type="button" aria-haspopup="true" aria-expanded="false">'
       + '<span class="csh-l-full">' + span(hub.label) + '</span>'
       + '<span class="csh-l-short">' + span(hub.short || hub.label) + '</span>'
