@@ -2042,5 +2042,19 @@
    "title": "Змінюєш посаду? Коли потрібен новий дозвіл на роботу",
    "summary": "Сама зміна назви посади не потребує нового дозволу, якщо обов’язки ті самі. Пояснюємо строки 7 днів і 15 робочих днів, виняток 30 днів та умови збільшення робочого часу."
   }
+ },
+ "artykul-dzien-wolny-26-grudnia-2026-urlop.html": {
+  "en": {
+   "title": "Day off for 26 December 2026: what happens to your annual leave?",
+   "summary": "26 December 2026 falls on a Saturday. We explain when the replacement day off is due, how annual leave is settled and the rules for foreigners on an employment contract in Poland."
+  },
+  "es": {
+   "title": "Día libre por el 26 de diciembre de 2026: ¿qué pasa con sus vacaciones?",
+   "summary": "El 26 de diciembre de 2026 cae en sábado. Explicamos cuándo corresponde el día libre, cómo se liquidan las vacaciones y las reglas para extranjeros con contrato de trabajo en Polonia."
+  },
+  "uk": {
+   "title": "Вихідний за 26 грудня 2026 року: що буде з Вашою відпусткою?",
+   "summary": "26 грудня 2026 року припадає на суботу. Пояснюємо строк надання вихідного дня, облік відпустки та правила для іноземців, які працюють за трудовим договором у Польщі."
+  }
  }
 }
