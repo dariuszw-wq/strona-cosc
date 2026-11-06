@@ -91,12 +91,14 @@ footer a{color:#c9d2e8;text-decoration:none}
  }
 }
 </script>
-<link rel="canonical" href="https://cosc.org.pl/fr/cudzoziemcy/"><link rel="alternate" hreflang="pl" href="https://cosc.org.pl/cudzoziemcy/"><link rel="alternate" hreflang="en" href="https://cosc.org.pl/en/cudzoziemcy/"><link rel="alternate" hreflang="es" href="https://cosc.org.pl/es/cudzoziemcy/"><link rel="alternate" hreflang="uk" href="https://cosc.org.pl/uk/cudzoziemcy/"><link rel="alternate" hreflang="ru" href="https://cosc.org.pl/ru/cudzoziemcy/"><link rel="alternate" hreflang="fr" href="https://cosc.org.pl/fr/cudzoziemcy/"><link rel="alternate" hreflang="x-default" href="https://cosc.org.pl/cudzoziemcy/"></head>
-<body>
+<link rel="canonical" href="https://cosc.org.pl/fr/cudzoziemcy/"><link rel="alternate" hreflang="pl" href="https://cosc.org.pl/cudzoziemcy/"><link rel="alternate" hreflang="en" href="https://cosc.org.pl/en/cudzoziemcy/"><link rel="alternate" hreflang="es" href="https://cosc.org.pl/es/cudzoziemcy/"><link rel="alternate" hreflang="uk" href="https://cosc.org.pl/uk/cudzoziemcy/"><link rel="alternate" hreflang="ru" href="https://cosc.org.pl/ru/cudzoziemcy/"><link rel="alternate" hreflang="fr" href="https://cosc.org.pl/fr/cudzoziemcy/"><link rel="alternate" hreflang="x-default" href="https://cosc.org.pl/cudzoziemcy/"><link rel="stylesheet" href="/cosc-shared.css?v=all-20261106-1">
+<script src="/cosc-shared.js?v=all-20261106-1" defer></script>
+</head>
+<body class="cosc-unified cosc-reading">
 <header id="site-header"></header>
 <div class="flagbar" aria-hidden="true"></div>
 
-<div class="hero">
+<div class="hero cosc-page-intro">
   <div class="wrap">
     <span class="eyebrow">Pour l'étranger</span>
     <h1>Vous êtes en Pologne ? Tout ce qu'il vous faut — au même endroit</h1>
@@ -137,6 +139,6 @@ footer a{color:#c9d2e8;text-decoration:none}
 (function(){var b=document.querySelector('.burger'),m=document.querySelector('.menu');if(b&&m){b.addEventListener('click',function(){m.classList.toggle('open')});}}());
 (function(){var mores=document.querySelectorAll('.more');if(!mores.length)return;function closeAll(except){mores.forEach(function(m){if(m===except)return;m.classList.remove('open');var b=m.querySelector('.more-btn');if(b)b.setAttribute('aria-expanded','false');});}mores.forEach(function(more){var btn=more.querySelector('.more-btn');if(!btn)return;btn.addEventListener('click',function(e){e.stopPropagation();var open=more.classList.toggle('open');btn.setAttribute('aria-expanded',open?'true':'false');closeAll(more);});});document.addEventListener('click',function(e){var inside=false;mores.forEach(function(m){if(m.contains(e.target))inside=true;});if(!inside)closeAll(null);});document.addEventListener('keydown',function(e){if(e.key==='Escape')closeAll(null);});}());
 </script>
-<script src="../../site-header.js"></script>
+<script src="/site-header.js?v=all-20261106-1"></script>
 </div></section></body>
 </html>

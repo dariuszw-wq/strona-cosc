@@ -196,13 +196,16 @@ header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);po
  }
 }
 </script>
+<link rel="stylesheet" href="/cosc-shared.css?v=all-20261106-1">
+<script src="/cosc-shared.js?v=all-20261106-1" defer></script>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="cosc-unified cosc-form">
 
 <header id="site-header"></header>
 <div class="flagbar" aria-hidden="true"></div><div class="accent-line"></div>
 
-<div class="hero"><div class="wrap">
+<div class="hero cosc-page-intro"><div class="wrap">
 <a class="back" href="index.html">← Strona główna</a>
 <span class="eyebrow">Ankieta · Pobyt czasowy i praca</span>
 <h1>Ankieta danych do wniosku o zezwolenie na pobyt czasowy i pracę</h1>
@@ -523,10 +526,10 @@ function fillSelect(sel, list){
 }
 function refillStaticSelects(){
   const t = T(); const lang = curLang();
-  const countryL = (lang==='pl'||!t) ? COUNTRIES : t.countries;
+  const countryL = (lang==='pl'||!t||!Array.isArray(t.countries)) ? COUNTRIES : t.countries;
   document.querySelectorAll('.ls-country').forEach(s=>fillSelect(s, countryL));
-  document.querySelectorAll('.ls-nationality').forEach(s=>fillSelect(s, (lang==='pl'||!t)?NATIONALITIES:t.countries));
-  document.querySelectorAll('.ls-citizenship').forEach(s=>fillSelect(s, (lang==='pl'||!t)?CITIZENSHIPS:t.countries));
+  document.querySelectorAll('.ls-nationality').forEach(s=>fillSelect(s, (lang==='pl'||!t||!Array.isArray(t.countries))?NATIONALITIES:t.countries));
+  document.querySelectorAll('.ls-citizenship').forEach(s=>fillSelect(s, (lang==='pl'||!t||!Array.isArray(t.countries))?CITIZENSHIPS:t.countries));
   document.querySelectorAll('.ls-province').forEach(s=>fillSelect(s, PROVINCES));
 }
 refillStaticSelects();
@@ -859,8 +862,8 @@ document.addEventListener('cosc:langchange', function(){ try{ localizeDynamic();
 <script>
 (function(){var b=document.querySelector('.burger'),m=document.querySelector('.menu');if(b&&m){b.addEventListener('click',function(){m.classList.toggle('open')});m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open')})});}})();
 </script>
-<script src="site-header.js"></script>
-<script src="i18n/i18n.js"></script>
+<script src="/site-header.js?v=all-20261106-1"></script>
+<script src="i18n/i18n.js?v=all-20261106-1"></script>
 <script>
 /* Walidacja: data ważności paszportu nie może być wcześniejsza niż dzisiejsza */
 (function(){

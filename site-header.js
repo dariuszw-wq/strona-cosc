@@ -1,5 +1,6 @@
 /* Nowa oprawa korzysta z tego samego pliku nagłówka i tego samego czatu. */
 function coscModernHeader(host) {
+  host.setAttribute('data-i18n-skip','');
   var lang = document.documentElement.lang.slice(0,2);
   var labels = {
     pl:['Jak pomagamy','O nas','Poradniki','Kontakt','Więcej','Wybierz język','Strona główna','Cennik','Kalkulator pobytu','Aktualności','Formularze','Centrum Obsługi<br>Spraw Cudzoziemców'],
@@ -23,6 +24,9 @@ function coscModernHeader(host) {
     return '<a href="'+href+'" lang="'+code+'"'+(code===lang?' aria-current="page"':'')+'>'+languages[code]+' <span>'+code.toUpperCase()+'</span></a>';
   }).join('');
   host.innerHTML='<div class="container header-inner"><a class="brand" href="'+home+'" aria-label="COSC — '+t[6]+'"><strong>COSC</strong><span>'+t[11]+'</span></a><div class="header-flags" aria-hidden="true">'+eu+'<span class="flag-pl"></span></div><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span class="menu-lines" aria-hidden="true"></span><span>Menu</span></button><nav id="main-nav" class="main-nav" aria-label="Menu"><a href="'+home+'#pomoc">'+t[0]+'</a><a href="'+home+'#o-nas">'+t[1]+'</a><a href="'+home+'#poradniki">'+t[2]+'</a><a href="'+home+'#kontakt">'+t[3]+'</a><details class="nav-more"><summary>'+t[4]+' ⌄</summary><div><a href="'+prices+'">'+t[7]+'</a><a href="'+calc+'">'+t[8]+'</a><a href="/aktualnosci.html">'+t[9]+'</a><a href="/formularz-pobyt-czasowy-praca-NOWA.html">'+t[10]+'</a>'+(lang==='pl'?'<a href="/pracodawcy/">Jestem pracodawcą</a>':'')+'</div></details></nav><details class="language"><summary aria-label="'+t[5]+'">'+lang.toUpperCase()+' <span aria-hidden="true">⌄</span></summary><div class="language-list">'+choices+'</div></details></div>';
+  var contact=lang==='en'?'/en/contact.html':lang==='es'?'/es/contacto.html':home+'kontakt.html';
+  host.querySelector('a[href="'+home+'#kontakt"]').href=contact;
+  if (/^\/pracodawcy(?:\/|$)/.test(location.pathname)) host.querySelector('.language').hidden=true;
   var toggle=host.querySelector('.menu-toggle'),nav=host.querySelector('.main-nav'),language=host.querySelector('.language'),more=host.querySelector('.nav-more');
   function close(){toggle.setAttribute('aria-expanded','false');nav.classList.remove('is-open');more.open=false;}
   toggle.addEventListener('click',function(){var open=toggle.getAttribute('aria-expanded')!=='true';toggle.setAttribute('aria-expanded',String(open));nav.classList.toggle('is-open',open);language.open=false;});
@@ -439,7 +443,19 @@ function coscModernHeader(host) {
   function mount() {
     var host = document.getElementById('site-header');
     if (!host) return;
-    if (document.body.classList.contains('cosc-modern')) {
+    // Również nowe artykuły dodawane przez automaty dziedziczą wspólną oprawę.
+    if (!document.body.classList.contains('cosc-modern') && !document.body.classList.contains('cosc-unified')) {
+      document.body.classList.add('cosc-unified');
+      var kind=document.querySelector('.calc')?'calculator':document.querySelector('.k-grid')?'contact':document.querySelector('#ankieta')?'form':document.querySelector('article')?'document':'reading';
+      document.body.classList.add('cosc-'+kind);
+    }
+    if (!document.querySelector('link[href*="cosc-shared.css"]')) {
+      var theme=document.createElement('link');theme.rel='stylesheet';theme.href='/cosc-shared.css?v=all-20261106-1';document.head.appendChild(theme);
+    }
+    if (!document.querySelector('script[src*="cosc-shared.js"]')) {
+      var shared=document.createElement('script');shared.src='/cosc-shared.js?v=all-20261106-1';document.head.appendChild(shared);
+    }
+    if (document.body.classList.contains('cosc-modern') || document.body.classList.contains('cosc-unified')) {
       coscModernHeader(host);
       return;
     }

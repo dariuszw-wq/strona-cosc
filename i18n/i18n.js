@@ -359,6 +359,8 @@
    * języków i nie tłumaczymy treści. Wyłączyć można też ręcznie, dodając atrybut
    * data-i18n-off do znacznika <html>. */
   function translationDisabled() {
+    // Nowy wspólny nagłówek prowadzi do statycznych wersji językowych.
+    if (document.body && document.body.classList.contains('cosc-unified')) return true;
     if (document.documentElement.hasAttribute('data-i18n-off')) return true;
     return /\/pracodawcy(\/|$)/.test(location.pathname);
   }

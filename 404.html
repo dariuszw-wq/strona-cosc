@@ -54,20 +54,16 @@ footer{background:var(--navy);color:#cfd6e4;padding:22px 0;font-size:13.5px}
 footer a{color:#ffd34d;text-decoration:none}
 @media(max-width:600px){.code{font-size:48px}.hero{padding:30px 0 26px}}
 </style>
+<script src="/site-header.js?v=all-20261106-1" defer></script>
+<link rel="stylesheet" href="/cosc-shared.css?v=all-20261106-1">
+<script src="/cosc-shared.js?v=all-20261106-1" defer></script>
 </head>
-<body>
+<body class="cosc-unified cosc-reading">
 
-<header>
-  <div class="wrap">
-    <a class="logo" href="https://cosc.org.pl/">
-      <span class="flag-pl"><i class="fw"></i><i class="fr"></i></span>
-      <span class="name" id="marka">Centrum Obsługi<br>Spraw Cudzoziemców</span>
-    </a>
-  </div>
-</header>
+<header id="site-header"></header>
 <div class="flagbar"></div>
 
-<div class="hero"><div class="wrap">
+<div class="hero cosc-page-intro"><div class="wrap">
   <div class="code">404</div>
   <h1 id="t-naglowek">Tej strony nie ma pod tym adresem</h1>
   <p id="t-lead">Mogła zmienić adres albo w linku jest literówka. Poniżej znajdziesz wyszukiwarkę i skróty do najważniejszych miejsc — a jeśli wolisz zapytać człowieka, napisz do nas.</p>
@@ -179,7 +175,7 @@ footer a{color:#ffd34d;text-decoration:none}
   document.getElementById('q').placeholder = t.placeholder;
   document.getElementById('a-home').href = ES ? 'https://cosc.org.pl/es/' : 'https://cosc.org.pl/';
   document.getElementById('a-wa').href = 'https://wa.me/48539999549?text=' + encodeURIComponent(t.wa);
-  if (ES) document.getElementById('marka').innerHTML = 'Centro de Atenci&oacute;n<br>de Asuntos de Extranjeros';
+  if (ES && document.getElementById('marka')) document.getElementById('marka').innerHTML = 'Centro de Atenci&oacute;n<br>de Asuntos de Extranjeros';
   document.title = (ES ? 'Página no encontrada (404)' : 'Nie znaleziono strony (404)') + ' — cosc.org.pl';
 
   /* kafelki */
@@ -289,13 +285,7 @@ footer a{color:#ffd34d;text-decoration:none}
 })();
 </script>
 <!-- Czat — wstępne rozpoznanie sprawy (kolejność plików istotna) -->
-<script src="/czat-jezyki.js" defer></script>
-<script src="/czat-widget.js"
-        data-endpoint="https://script.google.com/macros/s/AKfycbyOqUYYIvW4OCwY79AFqp2j5BXUTdef43tK42FrsEBVSmFH4hB3lxzr3Oslg9OkO24/exec"
-        data-whatsapp="48539999549"
-        data-akcent="#D4213D"
-        data-tlo="#16244C"
-        data-kroj="'IBM Plex Sans', sans-serif"
-        defer></script>
+
+
 </body>
 </html>
