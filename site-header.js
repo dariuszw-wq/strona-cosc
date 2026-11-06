@@ -1,3 +1,36 @@
+/* Nowa oprawa korzysta z tego samego pliku nagłówka i tego samego czatu. */
+function coscModernHeader(host) {
+  var lang = document.documentElement.lang.slice(0,2);
+  var labels = {
+    pl:['Jak pomagamy','O nas','Poradniki','Kontakt','Więcej','Wybierz język','Strona główna','Cennik','Kalkulator pobytu','Aktualności','Formularze','Centrum Obsługi<br>Spraw Cudzoziemców'],
+    en:['How we help','About us','Guides','Contact','More','Choose language','Home','Prices','Stay calculator','News','Forms','Foreigners’<br>Assistance Centre'],
+    es:['Cómo ayudamos','Quiénes somos','Guías','Contacto','Más','Elegir idioma','Inicio','Precios','Calculadora de estancia','Noticias','Formularios','Centro de Atención<br>a Extranjeros'],
+    uk:['Наша допомога','Про нас','Посібники','Контакти','Ще','Вибрати мову','Головна','Ціни','Калькулятор перебування','Новини','Форми','Центр допомоги<br>іноземцям'],
+    ru:['Наша помощь','О нас','Руководства','Контакты','Ещё','Выбрать язык','Главная','Цены','Калькулятор пребывания','Новости','Формы','Центр помощи<br>иностранцам'],
+    fr:['Nos services','À propos','Guides','Contact','Plus','Choisir la langue','Accueil','Tarifs','Calculateur de séjour','Actualités','Formulaires','Centre d’assistance<br>aux étrangers']
+  };
+  if (!labels[lang]) lang='pl';
+  var t=labels[lang], home=lang==='pl'?'/':'/'+lang+'/';
+  var prices=lang==='en'?'/en/prices-and-services.html':lang==='es'?'/es/precios-y-servicios.html':home+'cennik.html';
+  var calc=lang==='es'?'/es/calculadora-90-180.html':'/kalkulator-90-180.html';
+  var eu='<svg viewBox="0 0 36 24" aria-hidden="true"><rect width="36" height="24" fill="#18388b"/>';
+  for(var i=0;i<12;i++){var a=i*Math.PI/6;eu+='<text x="'+(18+7*Math.sin(a))+'" y="'+(13.5-7*Math.cos(a))+'" text-anchor="middle" fill="#F5C518" font-size="4">★</text>';}
+  eu+='</svg>';
+  var languages={pl:'Polski',en:'English',es:'Español',uk:'Українська',ru:'Русский',fr:'Français'};
+  var choices=Object.keys(languages).map(function(code){
+    var alt=document.querySelector('link[hreflang="'+code+'"]');
+    var href=alt?alt.getAttribute('href'):(code==='pl'?'/':'/'+code+'/');
+    return '<a href="'+href+'" lang="'+code+'"'+(code===lang?' aria-current="page"':'')+'>'+languages[code]+' <span>'+code.toUpperCase()+'</span></a>';
+  }).join('');
+  host.innerHTML='<div class="container header-inner"><a class="brand" href="'+home+'" aria-label="COSC — '+t[6]+'"><strong>COSC</strong><span>'+t[11]+'</span></a><div class="header-flags" aria-hidden="true">'+eu+'<span class="flag-pl"></span></div><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span class="menu-lines" aria-hidden="true"></span><span>Menu</span></button><nav id="main-nav" class="main-nav" aria-label="Menu"><a href="'+home+'#pomoc">'+t[0]+'</a><a href="'+home+'#o-nas">'+t[1]+'</a><a href="'+home+'#poradniki">'+t[2]+'</a><a href="'+home+'#kontakt">'+t[3]+'</a><details class="nav-more"><summary>'+t[4]+' ⌄</summary><div><a href="'+prices+'">'+t[7]+'</a><a href="'+calc+'">'+t[8]+'</a><a href="/aktualnosci.html">'+t[9]+'</a><a href="/formularz-pobyt-czasowy-praca-NOWA.html">'+t[10]+'</a>'+(lang==='pl'?'<a href="/pracodawcy/">Jestem pracodawcą</a>':'')+'</div></details></nav><details class="language"><summary aria-label="'+t[5]+'">'+lang.toUpperCase()+' <span aria-hidden="true">⌄</span></summary><div class="language-list">'+choices+'</div></details></div>';
+  var toggle=host.querySelector('.menu-toggle'),nav=host.querySelector('.main-nav'),language=host.querySelector('.language'),more=host.querySelector('.nav-more');
+  function close(){toggle.setAttribute('aria-expanded','false');nav.classList.remove('is-open');more.open=false;}
+  toggle.addEventListener('click',function(){var open=toggle.getAttribute('aria-expanded')!=='true';toggle.setAttribute('aria-expanded',String(open));nav.classList.toggle('is-open',open);language.open=false;});
+  nav.addEventListener('click',function(e){if(e.target.closest('a'))close();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){if(nav.classList.contains('is-open')){close();toggle.focus();}if(language.open){language.open=false;language.querySelector('summary').focus();}if(more.open){more.open=false;more.querySelector('summary').focus();}}});
+  document.addEventListener('click',function(e){if(!host.contains(e.target))close();if(!language.contains(e.target))language.open=false;if(!more.contains(e.target))more.open=false;});
+  matchMedia('(min-width:1001px)').addEventListener('change',close);
+}
 /*!
  * COSC — SILNIK WSPÓLNEGO NAGŁÓWKA (jedno źródło prawdy dla całej strony)
  * ---------------------------------------------------------------------------
@@ -127,7 +160,7 @@
 
   /* ---- CSS (samodzielny, namespace .csh-) ---- */
   var CSS = ''
-    + '.csh-header{background:linear-gradient(100deg,#6d28d9 0%,#4636c9 55%,#3b2fbf 100%);position:sticky;top:0;z-index:50;box-shadow:0 2px 12px rgba(19,32,58,.25);display:block}'
+    + '.csh-header{background:#16244c;position:sticky;top:0;z-index:50;box-shadow:0 2px 12px rgba(19,32,58,.25);display:block}'
     + '.csh-wrap{max-width:1120px;margin:0 auto;padding:0 16px;display:flex;align-items:center;gap:6px;min-height:66px;flex-wrap:nowrap}'
     + '.csh-logo{display:flex;align-items:center;gap:9px;text-decoration:none;flex:none}'
     + '.csh-flag{flex-shrink:0;width:32px;height:32px;border-radius:6px;box-shadow:0 0 0 1px rgba(255,255,255,.4);overflow:hidden;display:flex;flex-direction:column}'
@@ -135,13 +168,13 @@
     + '.csh-name{color:#fff;font-family:"IBM Plex Serif",Georgia,serif;font-weight:700;font-size:13.5px;line-height:1.15;white-space:nowrap}'
     + '.csh-menu{display:flex;flex-wrap:nowrap;gap:4px;align-items:center;justify-content:flex-end;flex:1 1 auto;min-width:0;white-space:nowrap}'
     + '.csh-menu>a{color:#E9ECF3;text-decoration:none;font-size:13px;font-weight:600;padding:8px 6px;border-radius:8px;transition:background .18s,color .18s}'
-    + '.csh-menu>a:hover{background:rgba(255,255,255,.12);color:#ffd34d}'
+    + '.csh-menu>a:hover{background:rgba(255,255,255,.12);color:#ffffff}'
     + '.csh-cta{background:#d4213d !important;color:#fff !important;font-weight:700;padding:8px 14px;border-radius:8px;box-shadow:0 2px 8px rgba(212,33,61,.35);margin-left:4px}.csh-cta:hover{background:#b81a32 !important;color:#fff !important}'
     + '.csh-more{position:relative;display:flex;align-items:center}'
     + '.csh-more-btn{display:inline-flex;align-items:center;gap:5px;font-family:inherit;font-size:13.5px;font-weight:600;color:#E9ECF3;background:none;border:none;border-radius:8px;padding:8px 10px;cursor:pointer;line-height:1;white-space:nowrap;transition:background .18s,color .18s}'
-    + '.csh-more-btn:hover{background:rgba(255,255,255,.12);color:#ffd34d}'
+    + '.csh-more-btn:hover{background:rgba(255,255,255,.12);color:#ffffff}'
     + '.csh-more-btn .chev{font-size:10px;opacity:.75;transition:transform .2s}'
-    + '.csh-more.open .csh-more-btn{background:rgba(255,255,255,.16);color:#ffd34d}.csh-more.open .csh-more-btn .chev{transform:rotate(180deg)}'
+    + '.csh-more.open .csh-more-btn{background:rgba(255,255,255,.16);color:#ffffff}.csh-more.open .csh-more-btn .chev{transform:rotate(180deg)}'
     + '.csh-more-menu{position:absolute;top:calc(100% + 12px);left:0;min-width:264px;background:#241C86;border:1px solid rgba(201,169,97,.35);border-radius:14px;padding:8px;box-shadow:0 18px 40px rgba(10,16,40,.45);display:flex;flex-direction:column;gap:2px;opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .18s,transform .18s,visibility .18s;z-index:60}'
     + '.csh-more.open .csh-more-menu{opacity:1;visibility:visible;transform:translateY(0)}'
     + '.csh-more-menu a{color:#E9ECF3;text-decoration:none;font-size:14px;font-weight:500;padding:11px 14px;border-radius:9px;white-space:nowrap;transition:background .15s,color .15s}'
@@ -406,6 +439,10 @@
   function mount() {
     var host = document.getElementById('site-header');
     if (!host) return;
+    if (document.body.classList.contains('cosc-modern')) {
+      coscModernHeader(host);
+      return;
+    }
     if (!document.getElementById('csh-style')) {
       var st = document.createElement('style'); st.id = 'csh-style'; st.textContent = CSS; document.head.appendChild(st);
     }

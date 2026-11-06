@@ -1,296 +1,73 @@
 <!DOCTYPE html>
-<html lang="pl">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Problemy z legalnym pobytem cudzoziemców w Polsce — pomoc prawna | COSC</title>
-<meta name="description" content="Pomagamy cudzoziemcom w Polsce: pobyt czasowy i praca, brak decyzji i długie oczekiwanie, błędy i braki we wniosku, zmiana pracodawcy, odmowa i odwołanie.">
-<meta name="keywords" content="problemy z legalnym pobytem, karta pobytu, pobyt czasowy, legalizacja pobytu cudzoziemca, legalna praca cudzoziemca, brak decyzji karta pobytu, długi czas oczekiwania na kartę pobytu, braki formalne wniosku, błędy we wniosku o kartę pobytu, zmiana pracodawcy karta pobytu, odmowa wydania karty pobytu, pobyt nielegalny, odwołanie od decyzji, prawnik dla cudzoziemca">
-<link rel="canonical" href="https://cosc.org.pl/uslugi.html">
-<link rel="alternate" hreflang="pl" href="https://cosc.org.pl/uslugi.html">
-<link rel="alternate" hreflang="en" href="https://cosc.org.pl/en/uslugi.html">
-<link rel="alternate" hreflang="es" href="https://cosc.org.pl/es/uslugi.html">
-<link rel="alternate" hreflang="uk" href="https://cosc.org.pl/uk/uslugi.html">
-<link rel="alternate" hreflang="ru" href="https://cosc.org.pl/ru/uslugi.html">
-<link rel="alternate" hreflang="fr" href="https://cosc.org.pl/fr/uslugi.html">
-<link rel="alternate" hreflang="x-default" href="https://cosc.org.pl/uslugi.html">
-<meta property="og:title" content="Problemy z legalnym pobytem cudzoziemców w Polsce — pomoc prawna | COSC">
-<meta property="og:description" content="Pomagamy cudzoziemcom w Polsce: pobyt czasowy i praca, brak decyzji i długie oczekiwanie, błędy i braki we wniosku, zmiana pracodawcy, odmowa i odwołanie.">
-<meta property="og:url" content="https://cosc.org.pl/uslugi.html">
-<meta property="og:type" content="website">
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="i18n/i18n.css">
-<style>
-:root{--navy:#16244c;--navy-d:#111a3a;--gold:#4636c9;--gold-l:#6d6ae0;--cream:#f4f6fb;--ink:#16244c;--mut:#5B6478;--line:#e6e9f0}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:'IBM Plex Sans',sans-serif;color:var(--ink);background:var(--cream);line-height:1.65;font-size:16.5px}
-h1,h2,h3{font-family:'IBM Plex Serif',serif;color:var(--navy);line-height:1.18}
-a{color:var(--gold)}
-.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
-.flagbar{height:8px;background:linear-gradient(to bottom,#f5f5f5 50%,#d4213d 50%);border-bottom:1px solid rgba(22,36,76,.18);position:sticky;top:66px;z-index:49}
-/* HERO */
-.hero{background:linear-gradient(160deg,#4636c9 0%,#3b2fbf 60%,#2f2699 100%);color:#fff;padding:64px 0 56px;position:relative;overflow:hidden}
-.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:460px;height:460px;border:1px solid rgba(255,255,255,.12);border-radius:50%}
-.eyebrow{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#ffd34d;margin-bottom:12px}
-.hero h1{color:#fff;font-size:clamp(30px,4.4vw,46px);font-weight:600;max-width:900px}
-.hero p.lead{margin:18px 0 0;font-size:17px;color:#dce4f5;max-width:760px}
-/* BANERY */
-.services{padding:56px 0 20px}
-.sec-head{max-width:760px;margin-bottom:34px}
-.sec-head h2{font-size:clamp(24px,3vw,34px)}
-.sec-head p{margin-top:10px;color:var(--mut)}
-.serv{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
-.s-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;display:flex;flex-direction:column;position:relative;overflow:hidden}
-.s-card::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--gold),var(--gold-l));transform:scaleX(0);transform-origin:left;transition:transform .35s ease}
-.s-card:hover::before{transform:scaleX(1)}
-.s-card:hover{border-color:var(--gold);box-shadow:0 20px 60px rgba(27,42,74,.16);transform:translateY(-6px)}
-.s-card h3{font-size:21px;margin-bottom:8px;position:relative;z-index:1}
-.s-card p{font-size:14px;color:var(--mut);flex:1;position:relative;z-index:1}
-.s-card a.go{margin-top:14px;font-size:13.5px;font-weight:700;color:var(--navy);text-decoration:none;display:inline-flex;align-items:center;gap:4px}
-.s-card a.go::after{content:"→";color:var(--gold);transition:transform .25s ease}
-.s-card:hover a.go::after{transform:translateX(5px)}
-.s-card--side{flex-direction:row;align-items:center;gap:16px}
-.s-card--side .mascot-box{flex:none;margin-bottom:0}
-.s-card--side .s-text{flex:1;min-width:0;display:flex;flex-direction:column}
-@media(max-width:520px){.s-card--side{flex-direction:column;align-items:flex-start}}
-.s-num{position:absolute;top:14px;right:18px;font-family:'IBM Plex Serif',serif;font-size:34px;font-weight:700;color:var(--line);z-index:0;pointer-events:none}
-.mascot-box{width:88px;height:88px;border-radius:14px;background:var(--cream);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;margin-bottom:14px;overflow:hidden;position:relative;cursor:pointer}
-.mascot-box video.mascot-video{width:100%;height:100%;object-fit:cover;display:block}
-.mascot-box .snd{position:absolute;bottom:3px;right:3px;background:rgba(22,36,76,.72);color:#fff;font-size:11px;line-height:1;border-radius:8px;padding:3px 5px;pointer-events:none}
-/* SPIS TREŚCI */
-.toc{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px 28px;margin:10px 0 34px;max-width:760px}
-.toc strong{font-size:15px}
-.toc ol{margin:10px 0 0 22px}
-.toc li{margin:5px 0;font-size:15.5px}
-/* SEKCJE ODPOWIEDZI */
-.answer{background:#fff;border:1px solid var(--line);border-radius:16px;padding:32px 34px;margin:0 0 24px;scroll-margin-top:110px}
-.answer h2{font-size:clamp(22px,2.8vw,30px);margin-bottom:14px}
-.answer h3{font-size:19px;margin:22px 0 8px}
-.answer p{margin:0 0 12px;color:#33405e;font-size:15.8px}
-.answer ul{margin:0 0 14px 22px;color:#33405e;font-size:15.5px}
-.answer li{margin:5px 0}
-.note{background:var(--cream);border-left:4px solid var(--gold);padding:12px 16px;border-radius:0 10px 10px 0;margin:14px 0;font-size:15px}
-.answer a.artlink{font-weight:700}
-.mini-cta{margin-top:18px}
-.mini-cta a{display:inline-block;text-decoration:none;font-weight:700;font-size:14px;padding:11px 20px;border-radius:9px;background:var(--gold);color:#fff}
-.mini-cta a:hover{background:#3b2fbf}
-/* ZAKRES */
-.scope{padding:40px 0 8px}
-.scope h2{font-size:clamp(22px,2.6vw,30px);margin-bottom:8px}
-.scope p.sub{color:var(--mut);margin-bottom:22px;max-width:720px}
-.scope ul{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:10px 26px;max-width:920px}
-.scope li{position:relative;padding-left:26px;color:#33405e;font-size:15.5px}
-.scope li::before{content:"✓";position:absolute;left:0;color:var(--gold);font-weight:800}
-/* CTA */
-.cta{background:#241C86;color:#fff;border-radius:18px;padding:38px;margin:44px 0 10px;text-align:center}
-.cta h2{color:#fff;margin:0 0 10px;font-size:clamp(22px,2.6vw,30px)}
-.cta p{color:#dce4f5;max-width:560px;margin:0 auto 20px}
-.btn{display:inline-block;text-decoration:none;font-weight:700;font-size:15px;padding:14px 28px;border-radius:10px;background:#d4213d;color:#fff}
-.btn:hover{background:#b81a32}
-/* FOOTER */
-footer{background:var(--navy);color:#B9C2D4;text-align:center;font-size:13.5px;padding:26px 16px;margin-top:44px}
-footer a{color:#cfd6e4;text-decoration:none}
-@media(max-width:760px){.serv,.scope ul{grid-template-columns:1fr}.answer{padding:24px 20px}}
-</style>
-
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Centrum Obsługi Spraw Cudzoziemców">
-<meta property="og:title" content="Problemy z legalnym pobytem cudzoziemców w Polsce — pomoc prawna | COSC">
-<meta property="og:description" content="Pomagamy cudzoziemcom w Polsce: pobyt czasowy i praca, brak decyzji i długie oczekiwanie, błędy i braki we wniosku, zmiana pracodawcy, odmowa i odwołanie.">
-<meta property="og:url" content="https://cosc.org.pl/uslugi.html">
-<meta property="og:image" content="https://cosc.org.pl/og/strona-glowna.png">
-<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://cosc.org.pl/og/strona-glowna.png">
-</head>
-<body>
-<header id="site-header"></header>
-<div class="flagbar" aria-hidden="true"></div>
-
-
-<section class="hero"><div class="wrap">
-  <span class="eyebrow">Pomoc prawna dla cudzoziemców</span>
-  <h1>Problemy z legalnym pobytem cudzoziemców w Polsce — sprawdź, co zrobić</h1>
-  <p class="lead">Karta pobytu, legalna praca, brak decyzji z urzędu, błędy i braki formalne we wniosku, zmiana pracodawcy, odmowa wydania karty pobytu — zebraliśmy najczęstsze problemy cudzoziemców w Polsce i konkretne rozwiązania. Każdą sprawę prowadzimy od początku do końca, w Twoim języku.</p>
-</div></section>
-
-<!-- Baner czatu: główny kanał pierwszego kontaktu -->
-<section class="czat-baner" style="background:linear-gradient(135deg,#16244c,#2b1f6b);color:#fff;padding:38px 0">
-  <div class="wrap" style="display:flex;align-items:center;gap:26px;flex-wrap:wrap;justify-content:space-between">
-    <div style="flex:1 1 420px">
-      <h2 style="color:#fff;font-size:clamp(21px,2.6vw,29px);margin:0 0 8px">Opisz swoją sprawę — odpowiemy konkretnie</h2>
-      <p style="color:#dfe3f5;font-size:16px;line-height:1.55;margin:0;max-width:640px">Cztery krótkie pytania zamiast pustego okienka. Powiesz nam, czego dotyczy sprawa i na jakim jest etapie, a my skierujemy ją do właściwej osoby. Możesz pisać albo po prostu mówić — w swoim języku.</p>
-    </div>
-    <div style="flex:0 0 auto;display:flex;flex-direction:column;align-items:stretch;gap:8px">
-      <button type="button" data-prc-otworz-czat="baner"
-        style="cursor:pointer;border:none;font-family:inherit;font-size:16.5px;font-weight:700;color:#fff;background:#D4213D;border-radius:12px;padding:16px 30px;box-shadow:0 10px 26px rgba(212,33,61,.4)">Opisz sprawę w czacie →</button>
-      <span style="color:#b9c6e4;font-size:12.5px;text-align:center">1 minuta · bezpłatnie · bez zobowiązań</span>
-    </div>
-  </div>
-</section>
-
-<section class="services"><div class="wrap">
-  <div class="sec-head">
-    <h2>Najczęstsze problemy cudzoziemców w Polsce</h2>
-    <p>Wybierz problem, który dotyczy Ciebie. Kliknij baner, aby przejść do pełnej odpowiedzi: co mówi prawo, jakie są terminy i jak możemy pomóc.</p>
-  </div>
-  <div class="serv">
-    <div class="s-card s-card--side"><div class="s-num">01</div><div class="mascot-box"><video class="mascot-video" src="animacje_kolumbijka/pobyt-czasowy-audio.mp4" poster="animacje_kolumbijka/pobyt-czasowy-poster.jpg" muted playsinline preload="metadata" loop></video><span class="snd">🔊</span></div><div class="s-text"><h3>Pobyt czasowy w Polsce</h3><p>Pomagamy złożyć pierwszy wniosek o pobyt czasowy, kolejny wniosek i uporządkować legalny pobyt — aż do odbioru karty pobytu.</p><a class="go" href="#pobyt-czasowy">Zobacz rozwiązanie</a></div></div>
-    <div class="s-card s-card--side"><div class="s-num">02</div><div class="mascot-box"><video class="mascot-video" src="animacje_kolumbijka/legalna-praca-audio.mp4" poster="animacje_kolumbijka/legalna-praca-poster.jpg" muted playsinline preload="metadata" loop></video><span class="snd">🔊</span></div><div class="s-text"><h3>Legalna praca i pobyt</h3><p>Sprawdzamy, czy możesz pracować legalnie w Polsce i jakie dokumenty są potrzebne — zezwolenie na pracę, zezwolenie jednolite lub oświadczenie.</p><a class="go" href="#legalna-praca">Zobacz rozwiązanie</a></div></div>
-    <div class="s-card s-card--side"><div class="s-num">03</div><div class="mascot-box"><video class="mascot-video" src="animacje_kolumbijka/brak-decyzji-audio.mp4" poster="animacje_kolumbijka/brak-decyzji-poster.jpg" muted playsinline preload="metadata" loop></video><span class="snd">🔊</span></div><div class="s-text"><h3>Brak decyzji, długi czas oczekiwania</h3><p>Reagujemy, gdy sprawa o kartę pobytu trwa zbyt długo, a urząd nie podejmuje działań — ponaglenie i skarga na bezczynność.</p><a class="go" href="#brak-decyzji">Zobacz rozwiązanie</a></div></div>
-    <div class="s-card s-card--side"><div class="s-num">04</div><div class="mascot-box"><video class="mascot-video" src="animacje_kolumbijka/bledy-wniosek-audio.mp4" poster="animacje_kolumbijka/bledy-wniosek-poster.jpg" muted playsinline preload="metadata" loop></video><span class="snd">🔊</span></div><div class="s-text"><h3>Błędy i braki we wniosku</h3><p>Uzupełniamy dokumenty do karty pobytu, poprawiamy wniosek i przygotowujemy sprawę do złożenia — zanim urząd zostawi ją bez rozpoznania.</p><a class="go" href="#bledy-wniosek">Zobacz rozwiązanie</a></div></div>
-    <div class="s-card s-card--side"><div class="s-num">05</div><div class="mascot-box"><video class="mascot-video" src="animacje_kolumbijka/zmiana-pracodawcy-audio.mp4" poster="animacje_kolumbijka/zmiana-pracodawcy-poster.jpg" muted playsinline preload="metadata" loop></video><span class="snd">🔊</span></div><div class="s-text"><h3>Zmiana pracodawcy lub warunków pracy</h3><p>Wyjaśniamy, co trzeba zgłosić wojewodzie i jak nie stracić legalności pobytu oraz pracy przy zmianie pracodawcy.</p><a class="go" href="#zmiana-pracodawcy">Zobacz rozwiązanie</a></div></div>
-    <div class="s-card s-card--side"><div class="s-num">06</div><div class="mascot-box"><video class="mascot-video" src="animacje_kolumbijka/odmowa-odwolanie-audio.mp4" poster="animacje_kolumbijka/odmowa-odwolanie-poster.jpg" muted playsinline preload="metadata" loop></video><span class="snd">🔊</span></div><div class="s-text"><h3>Odmowa, cofnięcie, pobyt nielegalny</h3><p>Odmowa wydania karty pobytu lub cofnięcie zezwolenia to nie koniec. Przygotowujemy odwołania i szukamy dalszego rozwiązania prawnego.</p><a class="go" href="#odmowa-odwolanie">Zobacz rozwiązanie</a></div></div>
-  </div>
-
-  <div class="toc" style="margin-top:34px">
-    <strong>Spis treści</strong>
-    <ol>
-      <li><a href="#pobyt-czasowy">Pobyt czasowy w Polsce — jak uporządkować legalny pobyt</a></li>
-      <li><a href="#legalna-praca">Legalna praca i pobyt — jakie dokumenty są potrzebne</a></li>
-      <li><a href="#brak-decyzji">Brak decyzji i długi czas oczekiwania — co zrobić</a></li>
-      <li><a href="#bledy-wniosek">Błędy i braki formalne we wniosku — jak je naprawić</a></li>
-      <li><a href="#zmiana-pracodawcy">Zmiana pracodawcy lub warunków pracy — co zgłosić</a></li>
-      <li><a href="#odmowa-odwolanie">Odmowa, cofnięcie, pobyt nielegalny — odwołanie od decyzji</a></li>
-    </ol>
-  </div>
-</div></section>
-
-<section style="padding:6px 0 8px"><div class="wrap">
-
-  <article class="answer" id="pobyt-czasowy">
-    <h2>1. Pobyt czasowy w Polsce — jak uporządkować legalny pobyt</h2>
-    <p>Zezwolenie na pobyt czasowy to podstawowy sposób legalizacji pobytu cudzoziemca w Polsce — wydawane maksymalnie na 3 lata, potwierdzone kartą pobytu. Najczęstsze problemy to: zbyt późne złożenie wniosku, zły wybór podstawy pobytu i niekompletne dokumenty do karty pobytu.</p>
-    <h3>Kiedy złożyć wniosek o pobyt czasowy?</h3>
-    <p>Wniosek trzeba złożyć najpóźniej ostatniego dnia legalnego pobytu (wizy, ruchu bezwizowego lub obecnej karty). Złożenie wniosku w terminie i bez braków formalnych daje legalny pobyt na czas całego postępowania. Od 27 kwietnia 2026 r. wniosek składa się wyłącznie elektronicznie w systemie MOS — wniosek papierowy jest pozostawiany bez rozpoznania.</p>
-    <h3>Pierwszy wniosek czy kolejny — czym się różnią?</h3>
-    <p>Karty pobytu czasowego nie przedłuża się — przed upływem ważności składa się nowy, kompletny wniosek. Przy kolejnym wniosku urząd ponownie bada całą Twoją sytuację: pracę, dochód, ubezpieczenie, miejsce zamieszkania. Pomagamy złożyć pierwszy wniosek, kolejny wniosek i uporządkować legalny pobyt, gdy w historii pojawiły się przerwy.</p>
-    <div class="note"><strong>Jak pomagamy:</strong> dobieramy właściwą podstawę pobytu, kompletujemy dokumenty, składamy wniosek w MOS i pilnujemy sprawy do odbioru karty pobytu. Szczegóły: <a class="artlink" href="artykul-karta-pobytu-czasowego.html">Karta pobytu czasowego — wszystko, co musisz wiedzieć</a>.</div>
-    <div class="mini-cta"><a href="kontakt.html">Bezpłatna ocena Twojej sprawy</a></div>
-  </article>
-
-  <article class="answer" id="legalna-praca">
-    <h2>2. Legalna praca i pobyt — jakie dokumenty są potrzebne</h2>
-    <p>Legalna praca cudzoziemca w Polsce wymaga dwóch rzeczy naraz: legalnego pobytu i dokumentu uprawniającego do pracy. Sprawdzamy, czy możesz pracować legalnie i jakie dokumenty są potrzebne w Twojej sytuacji.</p>
-    <h3>Jakie dokumenty pozwalają pracować legalnie w Polsce?</h3>
-    <ul>
-      <li><strong>Zezwolenie jednolite</strong> (pobyt czasowy i praca) — jedna decyzja wojewody łącząca pobyt i pracę u konkretnego pracodawcy.</li>
-      <li><strong>Zezwolenie na pracę</strong> — uzyskiwane przez pracodawcę, wymaga osobnego tytułu pobytowego (np. wizy).</li>
-      <li><strong>Oświadczenie o powierzeniu wykonywania pracy</strong> — szybsza ścieżka dla obywateli wybranych państw.</li>
-    </ul>
-    <h3>Czy mogę pracować, czekając na kartę pobytu?</h3>
-    <p>To zależy od Twojej sytuacji: znaczenie ma m.in. to, czy poprzedni dokument pozwalał na pracę u tego pracodawcy i czy wniosek złożono w terminie. Praca bez wymaganego dokumentu to nielegalne zatrudnienie — ryzyko kar i problemów z kolejną legalizacją pobytu. Zanim zaczniesz pracę, sprawdź swoją sytuację — bezpłatnie ocenimy dokumenty.</p>
-    <div class="note"><strong>Jak pomagamy:</strong> analizujemy Twoje dokumenty i dokumenty pracodawcy, dobieramy najszybszą legalną ścieżkę i prowadzimy sprawę do decyzji.</div>
-    <div class="mini-cta"><a href="kontakt.html">Sprawdź, czy możesz pracować legalnie</a></div>
-  </article>
-
-  <article class="answer" id="brak-decyzji">
-    <h2>3. Brak decyzji i długi czas oczekiwania na kartę pobytu — co zrobić</h2>
-    <p>Długi czas oczekiwania na kartę pobytu to jeden z najczęstszych problemów cudzoziemców w Polsce. Miesiące bez odpowiedzi, brak wezwania z urzędu, niedziałająca infolinia — ale bezczynność urzędu nie jest bez wyjścia.</p>
-    <h3>Co zrobić, gdy urząd nie wydaje decyzji?</h3>
-    <ul>
-      <li><strong>Ponaglenie</strong> — pismo do organu wyższego stopnia, gdy sprawa trwa dłużej, niż przewiduje prawo. Urząd musi się do niego odnieść.</li>
-      <li><strong>Skarga na bezczynność lub przewlekłość</strong> do wojewódzkiego sądu administracyjnego — gdy ponaglenie nie działa; sąd może zobowiązać urząd do wydania decyzji.</li>
-    </ul>
-    <h3>Co zrobić, gdy nie dostałem wezwania z urzędu?</h3>
-    <p>Brak wezwania nie zawsze oznacza, że sprawa idzie dobrze — pismo mogło trafić na zły adres albo do pełnomocnika, którego nie kontrolujesz (np. ustanowionego przez agencję). Sprawdzamy akta sprawy, ustalamy, na jakim etapie jest postępowanie, i przejmujemy korespondencję z urzędem. Więcej: <a class="artlink" href="artykul-brak-wezwania-z-urzedu-karta-pobytu.html">Brak wezwania z urzędu — co robić</a>.</p>
-    <div class="note"><strong>Jak pomagamy:</strong> piszemy ponaglenie, przygotowujemy skargę na bezczynność i reagujemy, gdy sprawa trwa zbyt długo, a urząd nie podejmuje działań.</div>
-    <div class="mini-cta"><a href="kontakt.html">Przyspiesz swoją sprawę</a></div>
-  </article>
-
-  <article class="answer" id="bledy-wniosek">
-    <h2>4. Błędy i braki formalne we wniosku o kartę pobytu — jak je naprawić</h2>
-    <p>Braki formalne wniosku to najczęstszy powód, dla którego sprawa o kartę pobytu kończy się, zanim się zaczęła. Brak podpisu, brak zdjęć, nieopłacona opłata skarbowa, brak wymaganych załączników — urząd wzywa do uzupełnienia, a jeśli nie zdążysz, pozostawia wniosek bez rozpoznania.</p>
-    <h3>Co oznacza pozostawienie wniosku bez rozpoznania?</h3>
-    <p>Urząd traktuje sprawę tak, jakby wniosek nigdy nie wpłynął. Tracisz legalny pobyt wynikający ze złożenia wniosku — a często także termin, w którym można było go złożyć. Dlatego na wezwanie do uzupełnienia braków trzeba odpowiedzieć w wyznaczonym terminie, kompletnie i z potwierdzeniem złożenia.</p>
-    <h3>Jakie błędy we wniosku zdarzają się najczęściej?</h3>
-    <ul>
-      <li>zła podstawa pobytu lub niewłaściwy typ wniosku,</li>
-      <li>rozbieżności między wnioskiem a dokumentami od pracodawcy,</li>
-      <li>brakujące załączniki: ubezpieczenie, dochód, miejsce zamieszkania,</li>
-      <li>błędy techniczne w systemie MOS — zobacz: <a class="artlink" href="artykul-mos-bledy-braki-formalne.html">MOS: błędy i braki formalne</a>.</li>
-    </ul>
-    <div class="note"><strong>Jak pomagamy:</strong> uzupełniamy dokumenty, poprawiamy wniosek i przygotowujemy sprawę do złożenia — a gdy wezwanie już przyszło, odpowiadamy na nie w terminie.</div>
-    <div class="mini-cta"><a href="kontakt.html">Popraw wniosek z nami</a></div>
-  </article>
-
-  <article class="answer" id="zmiana-pracodawcy">
-    <h2>5. Zmiana pracodawcy lub warunków pracy — co zgłosić, żeby nie stracić karty pobytu</h2>
-    <p>Karta pobytu a zmiana pracodawcy to temat, na którym cudzoziemcy tracą legalność pobytu najczęściej. Zezwolenie jednolite wskazuje konkretnego pracodawcę i warunki pracy — nowa praca, inne stanowisko lub niższy etat zwykle wymagają reakcji.</p>
-    <h3>Straciłem pracę — ile mam czasu?</h3>
-    <p>Utratę pracy trzeba zgłosić wojewodzie pisemnie w ciągu <strong>15 dni roboczych</strong>. Zgłoszenie w terminie chroni Cię przed cofnięciem zezwolenia i daje czas na znalezienie nowego pracodawcy oraz złożenie nowego wniosku.</p>
-    <h3>Zmieniam pracodawcę — co dalej?</h3>
-    <p>Co do zasady potrzebna jest zmiana zezwolenia lub nowy wniosek — sama nowa umowa nie wystarczy. Wyjaśniamy, co trzeba zgłosić i jak nie stracić legalności pobytu oraz pracy: <a class="artlink" href="artykul-zmiana-pracodawcy-karta-pobytu.html">Zmiana pracodawcy a karta pobytu</a>.</p>
-    <h3>Kto powinien prowadzić sprawę o kartę pobytu — pracodawca czy prawnik?</h3>
-    <p>Jeśli kartę robił za Ciebie pracodawca lub agencja, sprawa może być prowadzona w ich interesie, nie Twoim — a przy zmianie pracy tracisz kontrolę nad własnym pobytem. Sprawdź swoje prawa: <a class="artlink" href="karta-pobytu-prawnik-czy-pracodawca.html">Karta pobytu — prawnik czy pracodawca?</a></p>
-    <div class="note"><strong>Jak pomagamy:</strong> zgłaszamy utratę pracy w terminie, przygotowujemy nowy wniosek lub zmianę zezwolenia i przejmujemy sprawę od pracodawcy czy agencji.</div>
-    <div class="mini-cta"><a href="kontakt.html">Zmień pracę bez utraty karty</a></div>
-  </article>
-
-  <article class="answer" id="odmowa-odwolanie">
-    <h2>6. Odmowa, cofnięcie zezwolenia, pobyt nielegalny — odwołanie od decyzji</h2>
-    <p>Odmowa wydania karty pobytu, cofnięcie zezwolenia albo pobyt, który stał się nielegalny — to najtrudniejsze, ale wciąż rozwiązywalne problemy z legalizacją pobytu. Wiele decyzji odmownych zapada z powodów formalnych, które można podważyć.</p>
-    <h3>Dostałem decyzję odmowną — ile mam czasu na odwołanie?</h3>
-    <p>Odwołanie od decyzji wojewody składa się w terminie <strong>14 dni</strong> od doręczenia decyzji — do Szefa Urzędu do Spraw Cudzoziemców, za pośrednictwem wojewody. Po tym terminie decyzja staje się ostateczna, dlatego liczy się każdy dzień.</p>
-    <h3>Mój pobyt jest nielegalny — czy da się to naprawić?</h3>
-    <p>W wielu sytuacjach tak — możliwości zależą od tego, jak doszło do utraty legalnego pobytu i jak długo trwa. Analizujemy sprawę i szukamy dalszego rozwiązania prawnego; im szybciej zareagujesz, tym więcej opcji pozostaje otwartych. O cofnięciu i wygaśnięciu zezwoleń: <a class="artlink" href="artykul-cofniecie-uchylenie-wygasniecie-zezwolenia.html">Cofnięcie, uchylenie i wygaśnięcie zezwolenia</a>.</p>
-    <div class="note"><strong>Jak pomagamy:</strong> analizujemy akta, znajdujemy błędy urzędu, przygotowujemy odwołania i — gdy trzeba — skargę do sądu administracyjnego.</div>
-    <div class="mini-cta"><a href="kontakt.html">Odzyskaj swoją sprawę</a></div>
-  </article>
-
-</div></section>
-
-<section class="scope"><div class="wrap">
-  <h2>Pełny zakres pomocy w legalizacji pobytu i pracy</h2>
-  <p class="sub">Obsługujemy całą ścieżkę legalizacji pobytu i zatrudnienia cudzoziemców w Polsce — dla osób prywatnych i firm.</p>
-  <ul>
-    <li>Karta pobytu czasowego (zezwolenie na pobyt czasowy)</li>
-    <li>Karta pobytu stałego i rezydent długoterminowy UE</li>
-    <li>Karta pobytu dla członków rodziny (połączenie z rodziną)</li>
-    <li>Zezwolenie na pracę (typy A–E)</li>
-    <li>Zezwolenie jednolite na pobyt i pracę</li>
-    <li>Oświadczenie o powierzeniu wykonywania pracy</li>
-    <li>Wnioski w systemie MOS (mos.cudzoziemcy.gov.pl)</li>
-    <li>Zmiana pracodawcy na karcie pobytu</li>
-    <li>Ponaglenia i skargi na bezczynność urzędu</li>
-    <li>Odwołania od decyzji odmownych</li>
-    <li>Świadczenia i zasiłki dla cudzoziemców</li>
-    <li>Doradztwo dla pracodawców zatrudniających cudzoziemców</li>
-  </ul>
-</div></section>
-
-<section class="services" style="padding-top:8px"><div class="wrap">
-  <div class="cta">
-    <h2>Bezpłatna ocena Twojej sprawy</h2>
-    <p>Napisz w kilku zdaniach, z czym masz problem. Odezwiemy się w ciągu 24 godzin — w Twoim języku.</p>
-    <a class="btn" href="kontakt.html">Umów bezpłatną konsultację</a>
-  </div>
-</div></section>
-
-<footer>
-  <div class="wrap">
-    <strong>Centrum Obsługi Spraw Cudzoziemców</strong> · Legalizacja pobytu i pracy · <a href="https://cosc.org.pl">cosc.org.pl</a><br>
-    ul. Kuropatwy 34S, 02-892 Warszawa · <a href="tel:+48539999549">+48 539 999 549</a> · <a href="mailto:office@cosc.org.pl">office@cosc.org.pl</a>
-  </div>
-</footer>
-
-<a class="wa-float" href="https://wa.me/48539999549" aria-label="Napisz na WhatsApp" style="position:fixed;bottom:20px;right:20px;width:56px;height:56px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:26px;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.28);z-index:60">✆</a>
-
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
- {"@type":"Question","name":"Kiedy złożyć wniosek o pobyt czasowy w Polsce?","acceptedAnswer":{"@type":"Answer","text":"Najpóźniej ostatniego dnia legalnego pobytu (wizy, ruchu bezwizowego lub obecnej karty pobytu). Od 27 kwietnia 2026 r. wniosek składa się wyłącznie elektronicznie w systemie MOS."}},
- {"@type":"Question","name":"Czy mogę pracować legalnie, czekając na kartę pobytu?","acceptedAnswer":{"@type":"Answer","text":"To zależy od sytuacji — m.in. od tego, czy poprzedni dokument pozwalał na pracę u tego pracodawcy i czy wniosek złożono w terminie. Przed podjęciem pracy warto zweryfikować dokumenty."}},
- {"@type":"Question","name":"Co zrobić, gdy urząd nie wydaje decyzji w sprawie karty pobytu?","acceptedAnswer":{"@type":"Answer","text":"Można złożyć ponaglenie do organu wyższego stopnia, a gdy to nie pomaga — skargę na bezczynność lub przewlekłość do wojewódzkiego sądu administracyjnego."}},
- {"@type":"Question","name":"Co oznacza pozostawienie wniosku o kartę pobytu bez rozpoznania?","acceptedAnswer":{"@type":"Answer","text":"Urząd traktuje sprawę tak, jakby wniosek nigdy nie wpłynął — cudzoziemiec traci legalny pobyt wynikający ze złożenia wniosku. Dzieje się tak, gdy braki formalne nie zostaną uzupełnione w terminie."}},
- {"@type":"Question","name":"Ile mam czasu na zgłoszenie utraty pracy wojewodzie?","acceptedAnswer":{"@type":"Answer","text":"Utratę pracy należy zgłosić wojewodzie pisemnie w ciągu 15 dni roboczych. Zgłoszenie w terminie chroni przed cofnięciem zezwolenia."}},
- {"@type":"Question","name":"Ile mam czasu na odwołanie od decyzji odmownej w sprawie karty pobytu?","acceptedAnswer":{"@type":"Answer","text":"Odwołanie składa się w terminie 14 dni od doręczenia decyzji — do Szefa Urzędu do Spraw Cudzoziemców, za pośrednictwem wojewody."}}
-]}
-</script>
-
-<script src="site-header.js"></script>
-<script src="i18n/i18n.js"></script>
-<script>
+<html lang="pl"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Karta pobytu i legalna praca — zakres pomocy | COSC</title><meta content="Pomagamy cudzoziemcom w Polsce: pobyt czasowy i praca, brak decyzji i długie oczekiwanie, błędy i braki we wniosku, zmiana pracodawcy, odmowa i odwołanie." name="description"/><link rel="canonical" href="https://cosc.org.pl/uslugi.html"><link href="/assets/cosc-v2/favicon.svg" rel="icon"/><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Serif:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="/cosc-v2.css" rel="stylesheet"/><link href="/cosc-article-v2.css" rel="stylesheet"/><script defer="" src="/site-header.js"></script><link rel="alternate" hreflang="pl" href="https://cosc.org.pl/uslugi.html"><link rel="alternate" hreflang="en" href="https://cosc.org.pl/en/uslugi.html"><link rel="alternate" hreflang="es" href="https://cosc.org.pl/es/uslugi.html"><link rel="alternate" hreflang="uk" href="https://cosc.org.pl/uk/uslugi.html"><link rel="alternate" hreflang="ru" href="https://cosc.org.pl/ru/uslugi.html"><link rel="alternate" hreflang="fr" href="https://cosc.org.pl/fr/uslugi.html"><link rel="alternate" hreflang="x-default" href="https://cosc.org.pl/uslugi.html"><meta content="Problemy z legalnym pobytem cudzoziemców w Polsce — pomoc prawna | COSC" property="og:title"/><meta content="Pomagamy cudzoziemcom w Polsce: pobyt czasowy i praca, brak decyzji i długie oczekiwanie, błędy i braki we wniosku, zmiana pracodawcy, odmowa i odwołanie." property="og:description"/><meta content="https://cosc.org.pl/uslugi.html" property="og:url"/><meta content="website" property="og:type"/><meta content="website" property="og:type"/><meta content="Centrum Obsługi Spraw Cudzoziemców" property="og:site_name"/><meta content="Problemy z legalnym pobytem cudzoziemców w Polsce — pomoc prawna | COSC" property="og:title"/><meta content="Pomagamy cudzoziemcom w Polsce: pobyt czasowy i praca, brak decyzji i długie oczekiwanie, błędy i braki we wniosku, zmiana pracodawcy, odmowa i odwołanie." property="og:description"/><meta content="https://cosc.org.pl/uslugi.html" property="og:url"/><meta content="https://cosc.org.pl/og/strona-glowna.png" property="og:image"/><meta content="1200" property="og:image:width"/><meta content="630" property="og:image:height"/></head><body class="article-page cosc-modern"><a class="skip-link" href="#main">Przejdź do treści</a><header id="site-header"></header><main id="main"><div class="article-hero"><div class="container"><nav aria-label="Ścieżka nawigacji" class="breadcrumbs"><a href="index.html">COSC</a><span aria-hidden="true">/</span><a href="index.html#poradniki">Poradniki</a><span aria-hidden="true">/</span><span>Pomoc w legalizacji pobytu</span></nav><p class="eyebrow">Zakres pomocy COSC</p><h1>Problemy z legalnym pobytem cudzoziemców w Polsce — sprawdź, co zrobić</h1><p class="article-meta"></p></div></div><div class="container article-layout"><aside class="article-sidebar"><p class="eyebrow">W tym poradniku</p><nav aria-label="Spis treści"><a href="#sekcja-1">1. Pobyt czasowy w Polsce — jak uporządkować legalny pobyt</a><a href="#sekcja-2">2. Legalna praca i pobyt — jakie dokumenty są potrzebne</a><a href="#sekcja-3">3. Brak decyzji i długi czas oczekiwania na kartę pobytu — co zrobić</a><a href="#sekcja-4">4. Błędy i braki formalne we wniosku o kartę pobytu — jak je naprawić</a><a href="#sekcja-5">5. Zmiana pracodawcy lub warunków pracy — co zgłosić, żeby nie stracić karty pobytu</a><a href="#sekcja-6">6. Odmowa, cofnięcie zezwolenia, pobyt nielegalny — odwołanie od decyzji</a></nav><a class="text-link" href="index.html#poradniki">Wróć do poradników ↗</a></aside><div class="article-body"><article class="answer" id="pobyt-czasowy">
+<h2 id="sekcja-1">1. Pobyt czasowy w Polsce — jak uporządkować legalny pobyt</h2>
+<p>Zezwolenie na pobyt czasowy to podstawowy sposób legalizacji pobytu cudzoziemca w Polsce — wydawane maksymalnie na 3 lata, potwierdzone kartą pobytu. Najczęstsze problemy to: zbyt późne złożenie wniosku, zły wybór podstawy pobytu i niekompletne dokumenty do karty pobytu.</p>
+<h3>Kiedy złożyć wniosek o pobyt czasowy?</h3>
+<p>Wniosek trzeba złożyć najpóźniej ostatniego dnia legalnego pobytu (wizy, ruchu bezwizowego lub obecnej karty). Złożenie wniosku w terminie i bez braków formalnych daje legalny pobyt na czas całego postępowania. Od 27 kwietnia 2026 r. wniosek składa się wyłącznie elektronicznie w systemie MOS — wniosek papierowy jest pozostawiany bez rozpoznania.</p>
+<h3>Pierwszy wniosek czy kolejny — czym się różnią?</h3>
+<p>Karty pobytu czasowego nie przedłuża się — przed upływem ważności składa się nowy, kompletny wniosek. Przy kolejnym wniosku urząd ponownie bada całą Twoją sytuację: pracę, dochód, ubezpieczenie, miejsce zamieszkania. Pomagamy złożyć pierwszy wniosek, kolejny wniosek i uporządkować legalny pobyt, gdy w historii pojawiły się przerwy.</p>
+<div class="note"><strong>Jak pomagamy:</strong> dobieramy właściwą podstawę pobytu, kompletujemy dokumenty, składamy wniosek w MOS i pilnujemy sprawy do odbioru karty pobytu. Szczegóły: <a class="artlink" href="artykul-karta-pobytu-czasowego.html">Karta pobytu czasowego — wszystko, co musisz wiedzieć</a>.</div>
+<div class="mini-cta"><a href="/kontakt.html">Bezpłatna ocena Twojej sprawy</a></div>
+</article><article class="answer" id="legalna-praca">
+<h2 id="sekcja-2">2. Legalna praca i pobyt — jakie dokumenty są potrzebne</h2>
+<p>Legalna praca cudzoziemca w Polsce wymaga dwóch rzeczy naraz: legalnego pobytu i dokumentu uprawniającego do pracy. Sprawdzamy, czy możesz pracować legalnie i jakie dokumenty są potrzebne w Twojej sytuacji.</p>
+<h3>Jakie dokumenty pozwalają pracować legalnie w Polsce?</h3>
+<ul>
+<li><strong>Zezwolenie jednolite</strong> (pobyt czasowy i praca) — jedna decyzja wojewody łącząca pobyt i pracę u konkretnego pracodawcy.</li>
+<li><strong>Zezwolenie na pracę</strong> — uzyskiwane przez pracodawcę, wymaga osobnego tytułu pobytowego (np. wizy).</li>
+<li><strong>Oświadczenie o powierzeniu wykonywania pracy</strong> — szybsza ścieżka dla obywateli wybranych państw.</li>
+</ul>
+<h3>Czy mogę pracować, czekając na kartę pobytu?</h3>
+<p>To zależy od Twojej sytuacji: znaczenie ma m.in. to, czy poprzedni dokument pozwalał na pracę u tego pracodawcy i czy wniosek złożono w terminie. Praca bez wymaganego dokumentu to nielegalne zatrudnienie — ryzyko kar i problemów z kolejną legalizacją pobytu. Zanim zaczniesz pracę, sprawdź swoją sytuację — bezpłatnie ocenimy dokumenty.</p>
+<div class="note"><strong>Jak pomagamy:</strong> analizujemy Twoje dokumenty i dokumenty pracodawcy, dobieramy najszybszą legalną ścieżkę i prowadzimy sprawę do decyzji.</div>
+<div class="mini-cta"><a href="/kontakt.html">Sprawdź, czy możesz pracować legalnie</a></div>
+</article><article class="answer" id="brak-decyzji">
+<h2 id="sekcja-3">3. Brak decyzji i długi czas oczekiwania na kartę pobytu — co zrobić</h2>
+<p>Długi czas oczekiwania na kartę pobytu to jeden z najczęstszych problemów cudzoziemców w Polsce. Miesiące bez odpowiedzi, brak wezwania z urzędu, niedziałająca infolinia — ale bezczynność urzędu nie jest bez wyjścia.</p>
+<h3>Co zrobić, gdy urząd nie wydaje decyzji?</h3>
+<ul>
+<li><strong>Ponaglenie</strong> — pismo do organu wyższego stopnia, gdy sprawa trwa dłużej, niż przewiduje prawo. Urząd musi się do niego odnieść.</li>
+<li><strong>Skarga na bezczynność lub przewlekłość</strong> do wojewódzkiego sądu administracyjnego — gdy ponaglenie nie działa; sąd może zobowiązać urząd do wydania decyzji.</li>
+</ul>
+<h3>Co zrobić, gdy nie dostałem wezwania z urzędu?</h3>
+<p>Brak wezwania nie zawsze oznacza, że sprawa idzie dobrze — pismo mogło trafić na zły adres albo do pełnomocnika, którego nie kontrolujesz (np. ustanowionego przez agencję). Sprawdzamy akta sprawy, ustalamy, na jakim etapie jest postępowanie, i przejmujemy korespondencję z urzędem. Więcej: <a class="artlink" href="/artykul-brak-wezwania-z-urzedu-karta-pobytu.html">Brak wezwania z urzędu — co robić</a>.</p>
+<div class="note"><strong>Jak pomagamy:</strong> piszemy ponaglenie, przygotowujemy skargę na bezczynność i reagujemy, gdy sprawa trwa zbyt długo, a urząd nie podejmuje działań.</div>
+<div class="mini-cta"><a href="/kontakt.html">Przyspiesz swoją sprawę</a></div>
+</article><article class="answer" id="bledy-wniosek">
+<h2 id="sekcja-4">4. Błędy i braki formalne we wniosku o kartę pobytu — jak je naprawić</h2>
+<p>Braki formalne wniosku to najczęstszy powód, dla którego sprawa o kartę pobytu kończy się, zanim się zaczęła. Brak podpisu, brak zdjęć, nieopłacona opłata skarbowa, brak wymaganych załączników — urząd wzywa do uzupełnienia, a jeśli nie zdążysz, pozostawia wniosek bez rozpoznania.</p>
+<h3>Co oznacza pozostawienie wniosku bez rozpoznania?</h3>
+<p>Urząd traktuje sprawę tak, jakby wniosek nigdy nie wpłynął. Tracisz legalny pobyt wynikający ze złożenia wniosku — a często także termin, w którym można było go złożyć. Dlatego na wezwanie do uzupełnienia braków trzeba odpowiedzieć w wyznaczonym terminie, kompletnie i z potwierdzeniem złożenia.</p>
+<h3>Jakie błędy we wniosku zdarzają się najczęściej?</h3>
+<ul>
+<li>zła podstawa pobytu lub niewłaściwy typ wniosku,</li>
+<li>rozbieżności między wnioskiem a dokumentami od pracodawcy,</li>
+<li>brakujące załączniki: ubezpieczenie, dochód, miejsce zamieszkania,</li>
+<li>błędy techniczne w systemie MOS — zobacz: <a class="artlink" href="/artykul-mos-bledy-braki-formalne.html">MOS: błędy i braki formalne</a>.</li>
+</ul>
+<div class="note"><strong>Jak pomagamy:</strong> uzupełniamy dokumenty, poprawiamy wniosek i przygotowujemy sprawę do złożenia — a gdy wezwanie już przyszło, odpowiadamy na nie w terminie.</div>
+<div class="mini-cta"><a href="/kontakt.html">Popraw wniosek z nami</a></div>
+</article><article class="answer" id="zmiana-pracodawcy">
+<h2 id="sekcja-5">5. Zmiana pracodawcy lub warunków pracy — co zgłosić, żeby nie stracić karty pobytu</h2>
+<p>Karta pobytu a zmiana pracodawcy to temat, na którym cudzoziemcy tracą legalność pobytu najczęściej. Zezwolenie jednolite wskazuje konkretnego pracodawcę i warunki pracy — nowa praca, inne stanowisko lub niższy etat zwykle wymagają reakcji.</p>
+<h3>Straciłem pracę — ile mam czasu?</h3>
+<p>Utratę pracy trzeba zgłosić wojewodzie pisemnie w ciągu <strong>15 dni roboczych</strong>. Zgłoszenie w terminie chroni Cię przed cofnięciem zezwolenia i daje czas na znalezienie nowego pracodawcy oraz złożenie nowego wniosku.</p>
+<h3>Zmieniam pracodawcę — co dalej?</h3>
+<p>Co do zasady potrzebna jest zmiana zezwolenia lub nowy wniosek — sama nowa umowa nie wystarczy. Wyjaśniamy, co trzeba zgłosić i jak nie stracić legalności pobytu oraz pracy: <a class="artlink" href="artykul-zmiana-pracodawcy-karta-pobytu.html">Zmiana pracodawcy a karta pobytu</a>.</p>
+<h3>Kto powinien prowadzić sprawę o kartę pobytu — pracodawca czy prawnik?</h3>
+<p>Jeśli kartę robił za Ciebie pracodawca lub agencja, sprawa może być prowadzona w ich interesie, nie Twoim — a przy zmianie pracy tracisz kontrolę nad własnym pobytem. Sprawdź swoje prawa: <a class="artlink" href="/karta-pobytu-prawnik-czy-pracodawca.html">Karta pobytu — prawnik czy pracodawca?</a></p>
+<div class="note"><strong>Jak pomagamy:</strong> zgłaszamy utratę pracy w terminie, przygotowujemy nowy wniosek lub zmianę zezwolenia i przejmujemy sprawę od pracodawcy czy agencji.</div>
+<div class="mini-cta"><a href="/kontakt.html">Zmień pracę bez utraty karty</a></div>
+</article><article class="answer" id="odmowa-odwolanie">
+<h2 id="sekcja-6">6. Odmowa, cofnięcie zezwolenia, pobyt nielegalny — odwołanie od decyzji</h2>
+<p>Odmowa wydania karty pobytu, cofnięcie zezwolenia albo pobyt, który stał się nielegalny — to najtrudniejsze, ale wciąż rozwiązywalne problemy z legalizacją pobytu. Wiele decyzji odmownych zapada z powodów formalnych, które można podważyć.</p>
+<h3>Dostałem decyzję odmowną — ile mam czasu na odwołanie?</h3>
+<p>Odwołanie od decyzji wojewody składa się w terminie <strong>14 dni</strong> od doręczenia decyzji — do Szefa Urzędu do Spraw Cudzoziemców, za pośrednictwem wojewody. Po tym terminie decyzja staje się ostateczna, dlatego liczy się każdy dzień.</p>
+<h3>Mój pobyt jest nielegalny — czy da się to naprawić?</h3>
+<p>W wielu sytuacjach tak — możliwości zależą od tego, jak doszło do utraty legalnego pobytu i jak długo trwa. Analizujemy sprawę i szukamy dalszego rozwiązania prawnego; im szybciej zareagujesz, tym więcej opcji pozostaje otwartych. O cofnięciu i wygaśnięciu zezwoleń: <a class="artlink" href="/artykul-cofniecie-uchylenie-wygasniecie-zezwolenia.html">Cofnięcie, uchylenie i wygaśnięcie zezwolenia</a>.</p>
+<div class="note"><strong>Jak pomagamy:</strong> analizujemy akta, znajdujemy błędy urzędu, przygotowujemy odwołania i — gdy trzeba — skargę do sądu administracyjnego.</div>
+<div class="mini-cta"><a href="/kontakt.html">Odzyskaj swoją sprawę</a></div>
+</article></div></div></main><footer class="footer"><div class="container"><div class="footer-top"><a class="footer-brand" href="index.html#main">COSC<span>Centrum Obsługi<br/>  Spraw Cudzoziemców</span></a><p>Twoje życie w Polsce.<br/>  Z jasnym planem.</p><a href="https://www.facebook.com/CentrumObslugiSprawCudzoziemcow" rel="noopener noreferrer" target="_blank">Facebook <span aria-hidden="true">↗</span></a></div><nav aria-label="Przydatne odnośniki" class="footer-links"><a href="/cennik.html">Pakiety i ceny</a><a href="/swiadczenia-cudzoziemcy.html">Świadczenia i zasiłki</a><a href="/baza-noclegowa.html">Baza noclegowa</a><a href="/przewodnik-po-polsce.html">Przewodnik po Polsce</a><a href="/pracodawcy/">Jestem pracodawcą</a></nav><div class="footer-bottom"><span>© 2026 COSC · Dariusz Włodarczyk Kancelaria TRC</span><div><a href="/regulamin.html">Regulamin</a><a href="/polityka-prywatnosci.html">Polityka prywatności</a><a href="index.html#main">Do góry ↑</a></div></div><p class="legal-note">Treści mają charakter informacyjny i nie stanowią indywidualnej porady prawnej.</p></div></footer><script>
 // Wideo w banerach: hover = podgląd bez dźwięku, klik = odtwarzanie z dźwiękiem
 // (delegacja zdarzeń — odporna na resety innerHTML przez i18n.js)
 (function(){
@@ -318,6 +95,4 @@ footer a{color:#cfd6e4;text-decoration:none}
     document.querySelectorAll('.mascot-video').forEach(function(v){vio.observe(v);});
   }
 })();
-</script>
-</body>
-</html>
+</script></body></html>

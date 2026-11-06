@@ -378,3 +378,8 @@ def main():
 
 if __name__ == '__main__':
     main()
+    # Nowa strona główna ma kompletny, osobny zestaw tłumaczeń.
+    # Uruchomienie ogólnego generatora nie może przywrócić starych tekstów.
+    if 'cosc-modern' in open(os.path.join(ROOT, 'index.html'), encoding='utf-8').read():
+        import runpy
+        runpy.run_path(os.path.join(ROOT, 'narzedzia', 'generuj-home-v2.py'))
