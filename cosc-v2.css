@@ -37,3 +37,5 @@
 .cosc-modern .nav-more{position:relative}.cosc-modern .nav-more summary{cursor:pointer;list-style:none;white-space:nowrap}.cosc-modern .nav-more>div{position:absolute;top:35px;right:0;width:240px;background:#16244c;padding:12px;border:1px solid #ffffff30;box-shadow:0 12px 30px #101b3933}.cosc-modern .nav-more a{display:block;padding:10px;color:white}.cosc-modern .nav-more a:hover{background:#ffffff15}.cosc-modern a:focus-visible,.cosc-modern summary:focus-visible,.cosc-modern button:focus-visible{outline:3px solid #8d83ed;outline-offset:4px}
 @media(max-width:1000px){.cosc-modern .nav-more{padding:15px 0}.cosc-modern .nav-more>div{position:static;width:100%;box-shadow:none;border:0;padding:8px 0}}
 @media(min-width:1001px){.cosc-modern .main-nav{gap:20px}.cosc-modern:lang(fr) .header-flags,.cosc-modern:lang(uk) .header-flags,.cosc-modern:lang(ru) .header-flags{display:none}}
+
+.anchor-alias{display:block;scroll-margin-top:100px}
