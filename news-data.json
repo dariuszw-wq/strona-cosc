@@ -1,6 +1,70 @@
 {
-  "updated": "2026-11-19T07:15:14.490293+00:00",
+  "updated": "2026-11-20T07:15:34.230716+00:00",
   "items": [
+{
+  "id": "2026-11-20-sg-slask-akcja-pobyt-zakonczona-45-zobowiazan-do-powrotu",
+  "added": "2026-11-20",
+  "category": "Bezpieczeństwo",
+  "title": "Akcja „Pobyt” zakończona: 45 decyzji o zobowiązaniu do powrotu po kontrolach legalności pobytu i zatrudnienia",
+  "summary": "Śląski Oddział Straży Granicznej podsumował akcję „Pobyt” prowadzoną 17–18 listopada w województwach śląskim i opolskim. Funkcjonariusze przeprowadzili 72 kontrole legalności pobytu i 17 kontroli legalności zatrudnienia w podmiotach gospodarczych, zweryfikowali 303 cudzoziemców, a 52 osoby naruszyły przepisy. Wydano 45 decyzji o zobowiązaniu do opuszczenia terytorium Polski, dwóch cudzoziemców umieszczono w strzeżonym ośrodku do czasu zakończenia postępowań, wszczęto 3 postępowania karne (narkotyki, fałszowanie dokumentów) i 1 postępowanie wykroczeniowe w sprawie powierzania pracy cudzoziemcom. Z komunikatu wynika, że kontrole pobytu i pracy idą w parze: brak podstawy pobytu zwykle kończy się procedurą powrotową.",
+  "source_name": "Straż Graniczna",
+  "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16451,Zakonczono-akcje-pod-kryptonimem-Pobyt.html",
+  "scope": "PL",
+  "t": {
+    "en": {
+      "title": "Operation \"Pobyt\" concluded: 45 return decisions after inspections of legality of stay and employment",
+      "summary": "The Silesian Division of the Border Guard summarised Operation \"Pobyt\", carried out on 17–18 November in the Silesian and Opole voivodeships. Officers conducted 72 inspections of the legality of stay and 17 inspections of the legality of employment at businesses, verified 303 foreigners, and 52 people violated the rules. 45 decisions obliging foreigners to leave the territory of Poland were issued, two foreigners were placed in a guarded centre pending the completion of proceedings, 3 criminal proceedings were initiated (drugs, document forgery) and 1 misdemeanour proceeding concerning the employment of foreigners. The announcement shows that inspections of stay and work go hand in hand: lack of a legal basis for stay usually ends in return proceedings."
+    },
+    "es": {
+      "title": "Concluye la operación «Pobyt»: 45 decisiones de retorno tras controles de legalidad de estancia y empleo",
+      "summary": "La División de Silesia de la Guardia Fronteriza resumió la operación «Pobyt», realizada el 17 y 18 de noviembre en los voivodatos de Silesia y Opole. Los agentes realizaron 72 controles de legalidad de la estancia y 17 controles de legalidad del empleo en empresas, verificaron a 303 extranjeros y 52 personas infringieron la normativa. Se dictaron 45 decisiones de obligación de abandonar el territorio de Polonia, dos extranjeros fueron internados en un centro vigilado hasta el fin de los procedimientos, se iniciaron 3 procedimientos penales (drogas, falsificación de documentos) y 1 procedimiento por infracción relativo al empleo de extranjeros. Del comunicado se desprende que el control de la estancia y del trabajo van de la mano: la falta de base legal para residir suele acabar en un procedimiento de retorno."
+    },
+    "uk": {
+      "title": "Завершено акцію «Pobyt»: 45 рішень про зобов’язання повернутися після перевірок легальності перебування та працевлаштування",
+      "summary": "Сілезький відділ Прикордонної служби підбив підсумки акції «Pobyt», проведеної 17–18 листопада в Сілезькому та Опольському воєводствах. Співробітники провели 72 перевірки легальності перебування та 17 перевірок легальності працевлаштування в суб’єктах господарювання, перевірили 303 іноземців, а 52 особи порушили правила. Видано 45 рішень про зобов’язання залишити територію Польщі, двох іноземців поміщено до охоронюваного центру до завершення проваджень, розпочато 3 кримінальні провадження (наркотики, підробка документів) та 1 провадження у справі про правопорушення щодо доручення роботи іноземцям. З повідомлення випливає, що контроль перебування й роботи йдуть разом: відсутність підстави для перебування зазвичай закінчується процедурою повернення."
+    },
+    "ru": {
+      "title": "Завершена акция «Pobyt»: 45 решений об обязанности вернуться после проверок легальности пребывания и трудоустройства",
+      "summary": "Силезский отряд Пограничной службы подвёл итоги акции «Pobyt», проведённой 17–18 ноября в Силезском и Опольском воеводствах. Сотрудники провели 72 проверки легальности пребывания и 17 проверок легальности трудоустройства в хозяйствующих субъектах, проверили 303 иностранцев, а 52 человека нарушили правила. Вынесено 45 решений об обязанности покинуть территорию Польши, двое иностранцев помещены в охраняемый центр до завершения производств, возбуждено 3 уголовных дела (наркотики, подделка документов) и 1 производство по делу о правонарушении, связанному с поручением работы иностранцам. Из сообщения следует, что контроль пребывания и работы идут рука об руку: отсутствие основания для пребывания обычно заканчивается процедурой возврата."
+    },
+    "fr": {
+      "title": "Fin de l’opération « Pobyt » : 45 décisions de retour après des contrôles de la légalité du séjour et de l’emploi",
+      "summary": "La division de Silésie des garde-frontières a dressé le bilan de l’opération « Pobyt », menée les 17 et 18 novembre dans les voïvodies de Silésie et d’Opole. Les agents ont effectué 72 contrôles de la légalité du séjour et 17 contrôles de la légalité de l’emploi dans des entreprises, ont vérifié 303 étrangers, et 52 personnes ont enfreint la réglementation. 45 décisions obligeant à quitter le territoire polonais ont été rendues, deux étrangers ont été placés dans un centre fermé dans l’attente de la fin des procédures, 3 procédures pénales ont été ouvertes (stupéfiants, falsification de documents) ainsi qu’1 procédure contraventionnelle relative à l’emploi d’étrangers. Le communiqué montre que les contrôles du séjour et du travail vont de pair : l’absence de base légale de séjour se termine généralement par une procédure de retour."
+    }
+  }
+},
+{
+  "id": "2026-11-20-sg-medyka-zmienione-dane-sis-zakaz-wjazdu-niemcy",
+  "added": "2026-11-20",
+  "category": "Bezpieczeństwo",
+  "title": "Zmiana nazwiska nie usuwa wpisu w SIS: biometria ujawniła zakaz wjazdu do strefy Schengen, cudzoziemiec otrzymał zobowiązanie do powrotu",
+  "summary": "Placówka Straży Granicznej w Medyce podczas kontroli na wyjazd z Polski (13 listopada) ustaliła, że obywatel Mołdawii posłużył się zmienionymi danymi osobowymi. Weryfikacja biometryczna wykazała, że jego wcześniejsze dane widnieją w Systemie Informacyjnym Schengen z zakazem wjazdu wydanym przez władze Niemiec, obowiązującym jeszcze przez prawie 4 lata i dotyczącym całego obszaru Schengen. Cudzoziemcowi przedstawiono zarzut nielegalnego przekroczenia granicy, przyznał się do niego (decyzję podejmie sąd), otrzymał zobowiązanie do powrotu i wyjechał na Ukrainę. Według Bieszczadzkiego Oddziału SG od początku 2026 roku wykryto w ten sposób 25 osób, w większości obywateli Mołdawii. Zakaz wjazdu wpisany do SIS obowiązuje we wszystkich państwach Schengen, a zmiana danych tożsamości nie pozwala go obejść.",
+  "source_name": "Straż Graniczna",
+  "url": "https://www.strazgraniczna.pl/pl/aktualnosci/16448,Zmiana-nazwiska-nie-zmienia-przeszlosci.html",
+  "scope": "PL",
+  "t": {
+    "en": {
+      "title": "Changing a surname does not remove an SIS entry: biometrics revealed an entry ban in the Schengen area, and the foreigner received a return decision",
+      "summary": "During an exit check on 13 November, the Border Guard post in Medyka established that a citizen of Moldova had used altered personal data. Biometric verification showed that his earlier data appeared in the Schengen Information System with an entry ban issued by the German authorities, still in force for almost 4 years and covering the entire Schengen area. The foreigner was charged with illegal crossing of the border and admitted to it (the court will decide), received a return decision and left for Ukraine. According to the Bieszczady Division of the Border Guard, 25 people, mostly citizens of Moldova, have been detected this way since the beginning of 2026. An entry ban recorded in SIS applies in all Schengen states, and changing identity data does not allow it to be circumvented."
+    },
+    "es": {
+      "title": "Cambiar de apellido no elimina una inscripción en el SIS: la biometría reveló una prohibición de entrada en el espacio Schengen y el extranjero recibió una decisión de retorno",
+      "summary": "Durante un control de salida el 13 de noviembre, el puesto de la Guardia Fronteriza en Medyka comprobó que un ciudadano de Moldavia había utilizado datos personales modificados. La verificación biométrica mostró que sus datos anteriores figuraban en el Sistema de Información de Schengen con una prohibición de entrada dictada por las autoridades alemanas, vigente aún durante casi 4 años y válida en todo el espacio Schengen. Al extranjero se le imputó el cruce ilegal de la frontera, lo admitió (decidirá el tribunal), recibió una decisión de retorno y partió hacia Ucrania. Según la División de Bieszczady de la Guardia Fronteriza, desde principios de 2026 se ha detectado así a 25 personas, en su mayoría ciudadanos de Moldavia. Una prohibición de entrada registrada en el SIS rige en todos los Estados Schengen y el cambio de datos de identidad no permite eludirla."
+    },
+    "uk": {
+      "title": "Зміна прізвища не видаляє запис у SIS: біометрія виявила заборону в’їзду в зону Шенген, іноземець отримав зобов’язання повернутися",
+      "summary": "Під час контролю на виїзд з Польщі 13 листопада пост Прикордонної служби в Медиці встановив, що громадянин Молдови використав змінені персональні дані. Біометрична перевірка показала, що його попередні дані внесені до Шенгенської інформаційної системи із забороною в’їзду, виданою владою Німеччини, яка діятиме ще майже 4 роки та охоплює всю зону Шенген. Іноземцю висунули звинувачення в незаконному перетині кордону, він визнав провину (рішення ухвалить суд), отримав зобов’язання повернутися і виїхав в Україну. За даними Бещадського відділу Прикордонної служби, з початку 2026 року таким чином виявлено 25 осіб, переважно громадян Молдови. Заборона в’їзду, внесена до SIS, діє в усіх країнах Шенгену, а зміна особових даних не дозволяє її обійти."
+    },
+    "ru": {
+      "title": "Смена фамилии не удаляет запись в SIS: биометрия выявила запрет въезда в зону Шенген, иностранец получил обязанность вернуться",
+      "summary": "При контроле на выезд из Польши 13 ноября пост Пограничной службы в Медыке установил, что гражданин Молдовы использовал изменённые персональные данные. Биометрическая проверка показала, что его прежние данные внесены в Шенгенскую информационную систему с запретом въезда, выданным властями Германии, который будет действовать ещё почти 4 года и охватывает всю зону Шенген. Иностранцу предъявлено обвинение в незаконном пересечении границы, он признал вину (решение примет суд), получил обязанность вернуться и выехал в Украину. По данным Бещадского отряда Пограничной службы, с начала 2026 года таким образом выявлено 25 человек, в основном граждан Молдовы. Запрет въезда, внесённый в SIS, действует во всех странах Шенгена, а смена данных личности не позволяет его обойти."
+    },
+    "fr": {
+      "title": "Changer de nom ne supprime pas un signalement SIS : la biométrie a révélé une interdiction d’entrée dans l’espace Schengen, l’étranger a reçu une décision de retour",
+      "summary": "Lors d’un contrôle à la sortie le 13 novembre, le poste des garde-frontières de Medyka a établi qu’un ressortissant moldave avait utilisé des données personnelles modifiées. La vérification biométrique a montré que ses données antérieures figuraient dans le Système d’information Schengen avec une interdiction d’entrée émise par les autorités allemandes, encore valable pendant près de 4 ans et couvrant tout l’espace Schengen. L’étranger a été mis en cause pour franchissement illégal de la frontière, l’a reconnu (le tribunal tranchera), a reçu une décision de retour et est reparti en Ukraine. Selon la division de Bieszczady des garde-frontières, 25 personnes, pour la plupart des ressortissants moldaves, ont été détectées de cette manière depuis le début de 2026. Une interdiction d’entrée inscrite au SIS s’applique dans tous les États Schengen et le changement de données d’identité ne permet pas de la contourner."
+    }
+  }
+},
 {
   "id": "2026-11-19-sg-tarnow-nielegalne-zatrudnienie-mandat-3000",
   "added": "2026-11-19",
