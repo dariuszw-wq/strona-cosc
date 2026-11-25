@@ -1,6 +1,39 @@
 {
-  "updated": "2026-11-25T07:19:00.598576+00:00",
+  "updated": "2026-11-25T12:07:50.679176+00:00",
   "items": [
+{
+  "id": "2026-11-25-karta-pobytu-przyspieszenie-sprawy",
+  "added": "2026-11-25",
+  "category": "Urzędy",
+  "scope": "PL",
+  "source_name": "Centrum Obsługi Spraw Cudzoziemców (materiał własny)",
+  "author": "Dariusz Włodarczyk Kancelaria TRC",
+  "url": "artykul-karta-pobytu-przyspieszenie-sprawy.html",
+  "title": "Karta pobytu — nowe możliwości przyspieszenia sprawy",
+  "summary": "Nasza kancelaria wykorzystuje nowe możliwości przyspieszania spraw pobytowych. Monitorujemy postępowania i podejmujemy interwencje, które przyniosły pozytywne rozstrzygnięcia oraz liczne wydane karty pobytu. Możliwości działania oceniamy indywidualnie, bez obietnic wyniku lub terminu.",
+  "t": {
+    "en": {
+      "title": "Residence card — new opportunities to speed up cases",
+      "summary": "Our practice uses new opportunities to speed up residence cases. We monitor proceedings and intervene, with positive decisions and numerous residence cards issued to our clients. We assess each case individually, without promising an outcome or deadline."
+    },
+    "es": {
+      "title": "Tarjeta de residencia: nuevas posibilidades para agilizar los asuntos",
+      "summary": "Nuestro despacho aprovecha nuevas posibilidades para agilizar los asuntos de residencia. Supervisamos los procedimientos e intervenimos, con decisiones favorables y numerosas tarjetas expedidas a nuestros clientes. Evaluamos cada caso individualmente, sin prometer resultados ni plazos."
+    },
+    "uk": {
+      "title": "Карта побиту — нові можливості прискорення справ",
+      "summary": "Наша канцелярія використовує нові можливості прискорення справ щодо перебування. Ми стежимо за провадженнями та втручаємося, що принесло позитивні рішення й численні видані карти побиту нашим клієнтам. Можливості дій оцінюємо індивідуально, без обіцянок результату чи строку."
+    },
+    "ru": {
+      "title": "Карта побыту — новые возможности ускорения дел",
+      "summary": "Наша канцелярия использует новые возможности ускорения дел о пребывании. Мы следим за производствами и принимаем меры, которые принесли положительные решения и многочисленные выданные карты побыту нашим клиентам. Возможности действий оцениваем индивидуально, без обещаний результата или срока."
+    },
+    "fr": {
+      "title": "Carte de séjour : de nouvelles possibilités pour accélérer les dossiers",
+      "summary": "Notre cabinet utilise de nouvelles possibilités pour accélérer les dossiers de séjour. Nous suivons les procédures et intervenons, avec des décisions favorables et de nombreuses cartes délivrées à nos clients. Chaque dossier est évalué individuellement, sans promesse de résultat ni de délai."
+    }
+  }
+},
 {
   "id": "2026-11-25-druk-3400-europejski-portfel-tozsamosci-cudzoziemcy-wojewoda",
   "added": "2026-11-25",
